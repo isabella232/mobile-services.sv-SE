@@ -1,0 +1,83 @@
+---
+description: Den här informationen kan hjälpa dig att felsöka meddelanden i appen.
+keywords: mobile
+seo-description: Den här informationen kan hjälpa dig att felsöka meddelanden i appen.
+seo-title: Felsöka meddelanden i appen
+solution: Marketing Cloud,Analytics
+title: Felsöka meddelanden i appen
+topic: Metrics
+uuid: 8813e8d8-bb1e-46ad-83cd-98ae68f73ce6
+translation-type: tm+mt
+source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
+
+---
+
+
+# Felsökning av meddelanden i appen{#troubleshooting-in-app-messaging}
+
+Den här informationen kan hjälpa dig att felsöka meddelanden i appen.
+
+Om du har uppfyllt alla krav för meddelanden i appen, men meddelanden inte visas, kontrollerar du följande:
+
+## Placerar du den nya konfigurationen och nya SDK i appen?
+
+* Kontrollera att SDK är version 4.2 eller senare och är korrekt konfigurerat.
+
+* Kontrollera att du har ett [meddelandeavsnitt](/help/using/in-app-messaging/in-app-messaging.md) i konfigurationen (den hämtade JSON-filen) eller en fjärrslutpunkt för Meddelanden, så att den kan hämtas från dynamisk tagghantering.
+
+## Mitt helskärmsmeddelande i Android visas inte. Jag använder rätt SDK, konfiguration och mina utlösare uppfylls.
+
+Uppdaterade du manifestfilen för att definiera helskärmsaktiviteten?
+
+## Mitt lokala meddelande i Android fungerar inte.
+
+Kontrollera att den lokala meddelandemottagaren har deklarerats i ditt manifest. Mer information finns i steg 1 i [Meddelanden](/help/android/messaging-main/messaging/messaging.md)i appen.
+
+## Är meddelandet live?
+
+Kontrollera listvyn i kolumnen på sidan Hantera meddelanden i appen och kontrollera om meddelandet är live. **[!UICONTROL Status]**
+
+## Titta på *visa en gång*, *visa alltid*, *visa offlineinställningar* på sidan Målgrupp.
+
+Kontrollera att de här inställningarna är korrekta. Granska alternativen på fliken Målgrupp på **[!UICONTROL Trigger]** sidan. Där kan du ange hur ofta meddelandet ska visas.
+
+## Om starthändelse används som utlösare..
+
+Starta bara en ny session. Information om när en session påbörjas finns `lifecycleTimeout` i [ADBMomobile JSON-konfigurationsfilen](/help/ios/configuration/json-config/json-config.md) .
+
+## Jag har uppdaterat mitt meddelande på distans, men min app visar fortfarande det gamla meddelandet.
+
+Gör något av följande:
+
+* Dynamisk tagghantering kan ta några minuter att uppdatera slutpunkten med den nya definitionen.
+
+   Ge den lite tid och försök igen.
+
+* Konfigurationen uppdateras endast vid en ny start.
+
+   Om appen startades om under tidsgränsen för livscykelsessionen kanske din nya konfiguration inte har hämtats.
+
+## Min bild passar inte in exakt i det utrymme som mallen ger.
+
+Helskärmsmallen för meddelanden i appen stöder visning av en bild från en fjärrserver (Image URL) eller från programpaketet (Bundled Image). Bilden ska ha standardbildformat, till exempel JPG, GIF eller PNG.
+
+På grund av att enhetsskärmar har många olika dimensioner får bilden förmodligen inte plats exakt i det utrymme som mallen ger. Mallen fokuserar alltid på att visa bildens mitt och beskär (stående) eller tonar (liggande) sidorna om bilden inte får plats.
+
+Här följer de exakta placerings- och storleksreglerna för varje orientering:
+
+* **Stående**, där bilden skalas till höjden 195px för telefonen, 529px för surfplattan, centrerad om bildbredden är mindre än enhetsbredden och beskuren om bildbredden är större än enhetsbredden.
+
+* **Liggande**, där bilden skalas till 100 % av enhetens höjd, är bredden 75 % av enheten och med en toning till höger.
+
+   Om du har problem med helskärmsmallen kan du hämta och använda den anpassade HTML-mallen. Mallen Anpassad HTML ger större flexibilitet för bilder och ger fullständig kontroll över mallen.
+
+## Mina meddelanden återspeglar inte ändringar/uppdateringar som jag har gjort i användargränssnittet.
+
+SDK hämtar nya/uppdaterade meddelanden när en livscykel startas. Detta gäller endast när programmet stängs/bakomliggande under längre tid än tidsgränsen för livscykeln och sedan öppnas igen.
+
+Utför följande steg:
+
+1. Rulla URL:en för meddelanden i konfigurationsfilen för att verifiera att fjärrmeddelandet har uppdaterats (till exempel `curl "https://assets.adobedtm.com/b213090c5204bf94318f4ef0539a38b487d10368/scripts/satellite-542c62859662383b1a0008f4.json"`)
+1. Stäng programmet.
+1. Vänta en tidsperiod som är längre än `lifecycleTimeout` i konfigurationsfilen.
+1. Öppna appen, navigera till den plats där meddelandet ska visas och kontrollera att det har uppdaterats.

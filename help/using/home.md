@@ -6,7 +6,7 @@ solution: Marketing Cloud, Analytics, Experience Cloud
 title: Adobe Mobile Services
 uuid: e86a77c9-4ff1-403f-a5a1-4afbdc4e6f68
 translation-type: tm+mt
-source-git-commit: 20fdbba819f7c182a23a01cd06e1738ad83eba38
+source-git-commit: 6cb8c0a12c39287209e9f0060ace179ab563cd61
 
 ---
 
@@ -75,20 +75,15 @@ Utöver användarhandboken kan du hämta SDK:er (Software Development Kits), som
 Inbyggda bibliotek finns för följande plattformar:
 
 * [Android SDK 4.x för Experience Cloud Solutions](https://docs.adobe.com/content/help/en/mobile-services/android/overview.html)
-
 * [iOS SDK 4.x för Experience Cloud Solutions](https://docs.adobe.com/content/help/en/mobile-services/ios/overview.html)
-
 * [Unity Plug-in för iOS och Android 4.x SDK](https://docs.adobe.com/content/help/en/mobile-services/unity/get-started.html)
-
 * [Xamarin Components for Experience Cloud Solutions 4.x SDK](https://docs.adobe.com/content/help/en/mobile-services/xamarin/get-started.html)
-
 * [Universell Windows Platform SDK 4.x for Experience Cloud Solutions](https://docs.adobe.com/content/help/en/mobile-services/universal-windows/overview.html)
-
 * [Windows 8.1 Universal App Store](https://docs.adobe.com/content/help/en/mobile-services/windows-universal-appstore/overview.html)
 
    * [Windows Visual Studio-tillägg för Experience Cloud Solutions 4.x SDK](https://docs.adobe.com/content/help/en/mobile-services/windows-universal-appstore/win-vse-4x.html)
 
-* [BlackBerry 10 SDK 4.x för Experience Cloud Solutions](https://docs.adobe.com/content/help/en/mobile-services/blackberry/overview.html)
+* [BlackBerry 10 SDK 4.x for Experience Cloud Solutions](https://docs.adobe.com/content/help/en/mobile-services/blackberry/overview.html)
 
 ## Komma igång med Adobe Mobile Webinar {#section_420EA66F39FE44B9B531ADF5F5465543}
 

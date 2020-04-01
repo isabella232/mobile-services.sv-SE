@@ -6,7 +6,7 @@ solution: Marketing Cloud, Analytics, Experience Cloud
 title: Adobe Mobile Services
 uuid: e86a77c9-4ff1-403f-a5a1-4afbdc4e6f68
 translation-type: tm+mt
-source-git-commit: 322fdab0ff5eeb54fdbb04502508849e86d05a50
+source-git-commit: 9e3f199582351165d0a76ce5042b5eaeec2cc981
 
 ---
 
@@ -18,6 +18,14 @@ I den här guiden beskrivs teknisk dokumentation och självhjälp för Adobe Mob
 >[!IMPORTANT]
 >
 >Adobe Analytics Mobile Marketing Add-on SKU krävs för att ge Mobile Services tillgång till funktioner för mobilförvärv, djuplänkning, geolokalisering och mobilmeddelanden. Kontakta din Adobe CSM om du vill ha mer information.
+
+## Nu upphör stödet för 4x SDK
+
+Efter den 30 september 2020 kan kunderna fortsätta att ladda ned och använda version 4 SDK:er, men det finns ingen kundtjänst eller tillgång till forum. Adobe Experience Platform Mobile SDK (tidigare kallat v5) har exklusiv support för kommande Adobe Experience Cloud-funktioner.
+
+Mer information finns i [Frågor och svar](https://aep-sdks.gitbook.io/docs/version-4-sdk-end-of-support-faq) om supporten upphör.
+
+Vi rekommenderar att du migrerar till nya Experience Platform Mobile SDK när det är möjligt.
 
 ## Ny Adobe Experience Cloud SDK-version
 
@@ -83,7 +91,7 @@ Inbyggda bibliotek finns för följande plattformar:
 
    * [Windows Visual Studio-tillägg för Experience Cloud Solutions 4.x SDK](/help/windows-appstore/extensions/win-vse-4x.md)
 
-* [BlackBerry 10 SDK 4.x for Experience Cloud Solutions](/help/blackberry/overview.md)
+* [BlackBerry 10 SDK 4.x för Experience Cloud Solutions](/help/blackberry/overview.md)
 
 ## Komma igång med Adobe Mobile Webinar {#section_420EA66F39FE44B9B531ADF5F5465543}
 

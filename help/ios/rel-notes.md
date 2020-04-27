@@ -7,14 +7,23 @@ title: Versionsinformation
 topic: Developer and implementation
 uuid: e1613dc5-02a4-43a7-997a-29b4de98b4d1
 translation-type: tm+mt
-source-git-commit: b608516b0103db3ae0eed1deaa4fb9733a98f7fa
+source-git-commit: c9ee89ef5039c52ebab41a9495f1794c08a415ba
 
 ---
 
 
-# Versionsinformation {#release-notes}
+# Release notes {#release-notes}
 
 Här är versionsinformation, kända fel och snabbkorrigeringsinformation för iOS SDK 4.x för Experience Cloud Solutions:
+
+**24 mars 2020: Version 4.19.2**
+
+* Allmänt - Åtgärdade vissa läckor i målkoden.
+
+**12 mars 2020: Version 4.19.1**
+
+* Allmänt - En potentiell krasch som uppstod när Swift-uppräkningar inkluderades i kontextdata för spårning av anrop har åtgärdats.
+* Mål - Målsessions-ID läggs nu till som kontextdataparametern a.target.sessionId i den interna analysen för Target-träff som skickas till Adobe Analytics.
 
 **4 februari 2020: Version 4.19.0**
 

@@ -8,7 +8,7 @@ title: Konfigurationsmetoder
 topic: Developer and implementation
 uuid: 663aeb6c-1b97-4a3a-8c0e-dd4c2ec28c01
 translation-type: tm+mt
-source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
+source-git-commit: dae60a21286edc28c84b7638da214b824abf0cd3
 
 ---
 
@@ -31,8 +31,7 @@ Här är kodexemplet för den här metoden:
       setContentView(R.layout.main);
       Config.setContext(this.getApplicationContext());
     }
-   ````
-
+   ```
 
 ## SDK-inställningar (Config-klass) {#section_C1EB977043C04D2B93E5A63DB72828B6}
 

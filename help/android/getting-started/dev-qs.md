@@ -8,7 +8,7 @@ title: Kärnimplementering och livscykel
 topic: Developer and implementation
 uuid: af4d11ac-8245-46a0-9b3a-4a0a29cfbbb2
 translation-type: tm+mt
-source-git-commit: c4da3599c858bfbccb7af954df75f94eb7d8e99a
+source-git-commit: dae60a21286edc28c84b7638da214b824abf0cd3
 
 ---
 
@@ -46,10 +46,10 @@ Så här lägger du till SDK- och konfigurationsfilen i projektet:
 1. Lägg till `ADBMobileConfig.json` filen i `assets` mappen i projektet.
 
 1. Högerklicka på projektet på projektnavigeringspanelen.
-1. Välj **[!UICONTROL Open Module Settings]**.
-1. Under **[!UICONTROL Project Settings]** väljer du **[!UICONTROL Libraries]**.
-1. Klicka på **[!UICONTROL +]** ikonen för att lägga till ett nytt bibliotek.
-1. Markera **[!UICONTROL Java]** och navigera till `adobeMobileLibrary.jar` filen.
+1. Välj **[!UICONTROL Öppna modulinställningar]**.
+1. Under **[!UICONTROL Projektinställningar]** väljer du **[!UICONTROL Bibliotek]**.
+1. Klicka på **[!UICONTROL +]** -ikonen för att lägga till ett nytt bibliotek.
+1. Välj **[!UICONTROL Java]** och navigera till `adobeMobileLibrary.jar` filen.
 1. Välj de moduler där du tänker använda mobilbiblioteket.
 1. Click **[!UICONTROL Apply]** and **[!UICONTROL OK]** to close the Module Settings window.
 
@@ -58,12 +58,12 @@ Så här lägger du till SDK- och konfigurationsfilen i projektet:
 Så här lägger du till SDK- och konfigurationsfilen i projektet:
 
 1. Lägg till `ADBMobileConfig.json` filen i `assets` mappen i projektet.
-1. Högerklicka **[!UICONTROL Eclipse IDE]** på projektnamnet i.
-1. Klicka på  **[!UICONTROL Build Path]** > **[!UICONTROL Add External Archives]**.
+1. Högerklicka på projektnamnet i **[!UICONTROL Eclipse IDE]**.
+1. Klicka på **[!UICONTROL Skapa sökväg]** > **[!UICONTROL Lägg till externa arkiv]**.
 1. Välj `adobeMobileLibrary.jar`.
-1. Klicka på **[!UICONTROL Open]**.
-1. Högerklicka på projektet igen och välj **[!UICONTROL Build Path]** > **[!UICONTROL Configure Build Path]**.
-1. Kontrollera att **[!UICONTROL Order and Export]** det **`adobeMobileLibrary.jar`** är markerat på fliken.
+1. Klicka på **[!UICONTROL Öppna]**.
+1. Högerklicka på projektet igen och välj **[!UICONTROL Skapa sökväg]** > **[!UICONTROL Konfigurera byggsökväg]**.
+1. Kontrollera att alternativet **[!UICONTROL är markerat på fliken]** Ordning och Exportera **`adobeMobileLibrary.jar`** .
 
 ## Lägg till programbehörigheter {#section_2EAF73ABF6424647B219A63B33B02CD5}
 
@@ -90,7 +90,7 @@ Följande kod ska läggas till i huvudaktivitetens `onCreate` metod:
      setContentView(R.layout.main);
      Config.setContext(this.getApplicationContext());
    }
-````
+```
 
 ## Implementera livscykelvärden {#section_BA686C09021F474AADDE8690BBB910F7}
 
@@ -151,5 +151,5 @@ Andra livscykelvärden samlas in automatiskt. Mer information finns i [Livscykel
 Utför följande uppgifter:
 
 * [Spåra applägen](/help/android/analytics-main/states.md)
-* [Spåra programåtgärder](/help/android/analytics-main/actions.md)
+* [Spåra appåtgärder](/help/android/analytics-main/actions.md)
 

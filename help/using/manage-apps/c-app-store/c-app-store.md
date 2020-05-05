@@ -8,7 +8,7 @@ title: App Store
 topic: Metrics
 uuid: a194364d-faaf-4995-befd-cf48f9c1f11b
 translation-type: tm+mt
-source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
+source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
 
 ---
 
@@ -19,10 +19,9 @@ Integreringen av `appFigures` dataanslutningen kombinerar kraften i AppFigures, 
 
 >[!TIP]
 >
->När du har konfigurerat integreringen visas menyalternativet och tillhörande rapporter i det vänstra navigeringsfönstret i gränssnittet för **[!UICONTROL App Store]** mobila tjänster.
+>När du har konfigurerat integreringen visas menyalternativet **[!UICONTROL App Store]** och tillhörande rapporter i den vänstra navigeringsrutan i gränssnittet för mobila tjänster.
 
-[appFigures Data Connector for Adobe Analytics](https://marketing.adobe.com/resources/help/en_US/connectors/appfigures/) innehåller följande information:
-<!--REKHA: no idea where this guide lives-->
+[appFigures Data Connector for Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/import/dataconnectors/appfigures/appfigures-overview.html) innehåller följande information:
 
 * Viktiga fördelar och funktioner i integreringen
 * Implementera integreringen, inklusive:

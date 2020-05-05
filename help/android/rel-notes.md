@@ -7,7 +7,7 @@ title: Versionsinformation
 topic: Developer and implementation
 uuid: 16bb4de8-a216-47a8-928c-0b1e1421adcf
 translation-type: tm+mt
-source-git-commit: 712a1107b317f02216e4df8d75fddda67a6f1feb
+source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
 
 ---
 
@@ -47,4 +47,4 @@ Här är versionsinformation, kända fel och snabbkorrigeringsinformation för A
 * Visitor ID-tjänst - Ökade anslutnings- och avläsningstiderna från 2 sekunder till 5 sekunder.
 
 
-Mer information om aktuell och tidigare versionsinformation för alla lösningar finns i [versionsinformationen](https://marketing.adobe.com/resources/help/en_US/whatsnew/)för Adobe Experience Cloud.
+Mer information om aktuell och tidigare versionsinformation för alla lösningar finns i [versionsinformationen](hhttps://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html)för Adobe Experience Cloud.

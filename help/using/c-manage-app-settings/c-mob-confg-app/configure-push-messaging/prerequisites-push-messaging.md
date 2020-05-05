@@ -8,7 +8,7 @@ title: Krav för att aktivera push-meddelanden
 topic: Metrics
 uuid: 194e6e07-b794-4152-a838-a4125c3292d4
 translation-type: tm+mt
-source-git-commit: 92b1e430293fbded666e8af3f01393898c0e5811
+source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
 
 ---
 
@@ -59,19 +59,19 @@ Varje användare måste länka Analytics-lösningskontot från Experience Cloud-
 
 1. Välj företagsnamnet för Analytics i det övre högra hörnet.
 
-1. Klicka **[!UICONTROL Add Organization]** och välj **[!UICONTROL Adobe SiteCatalyst/Adobe Social]** i listrutan.
+1. Klicka på **[!UICONTROL Lägg till organisation]** och välj **[!UICONTROL Adobe SiteCatalyst/Adobe Social]** i listrutan.
 
-1. Skriv företagsnamnet, dina tidigare autentiseringsuppgifter för det angivna företaget och klicka på **[!UICONTROL Link Account]**.
+1. Ange företagsnamnet, dina tidigare autentiseringsuppgifter för det angivna företaget och klicka på **[!UICONTROL Länka konto]**.
 
    Adobe-id:t är nu länkat till ditt Analytics-konto, ditt företag och dina inloggningsuppgifter.
 
-Mer information finns i [Felsökning av kontolänkning](https://marketing.adobe.com/resources/help/en_US/mcloud/organizations.html).
+Mer information finns i [Felsökning av kontolänkning](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/organizations.html).
 
 ## Konfigurera push-tjänster och SDK ID-tjänsten i mobilanvändargränssnittet
 
-Avsnittet är inaktiverat innan du aktiverar ID-tjänsten för ditt program **[!UICONTROL Push Services]** . Men när du har aktiverat ID-tjänsten aktiveras push-tjänsten. Mer information om hur du aktiverar push-tjänster finns i [Konfigurera alternativ](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-visitor.md)för SDK ID-tjänster.
+Innan du aktiverar ID-tjänsten för din app är **[!UICONTROL push-tjänsten]** inaktiverad. Men när du har aktiverat ID-tjänsten aktiveras push-tjänsten. Mer information om hur du aktiverar push-tjänster finns i [Konfigurera alternativ](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-visitor.md)för SDK ID-tjänster.
 
->[!IMPORTANT]: Du måste klicka **[!UICONTROL Save]** för att spara ändringarna och uppdatera push-tjänsterna.
+>[!IMPORTANT]: Du måste klicka på **[!UICONTROL Spara]** för att spara ändringarna och uppdatera push-tjänsterna.
 >
 >Du kan konfigurera en app store-app för Apple och en för Google i varje rapportserie. Om du behöver ytterligare program, till exempel ett för en produktionsmiljö och ett för en utvecklingsmiljö, skapar du en ny app för appbutiken och en ny rapportsserie för varje miljö.
 
@@ -79,15 +79,15 @@ Avsnittet är inaktiverat innan du aktiverar ID-tjänsten för ditt program **[!
 
    * För den **privata nyckeln** drar och släpper du filen med den privata nyckeln i rutan.
 
-      Du kan också klicka **[!UICONTROL Browse]** för att markera filen. Den här filen innehåller den privata nyckeln. Certifikatet kan också inkluderas i den här filen (`.p12`, `pkcs12`, `.pfx`, `.key`, `.pem`).
+      Du kan också klicka på **[!UICONTROL Bläddra]** för att markera filen. Den här filen innehåller den privata nyckeln. Certifikatet kan också inkluderas i den här filen (`.p12`, `pkcs12`, `.pfx`, `.key`, `.pem`).
 
    * Om filen för den **privata nyckeln är krypterad skriver du lösenordet för det privata nyckellösenordet**.
 
-      (Villkorligt) För **certifikatet** drar och släpper du certifikatfilen i rutan. Du kan också klicka **[!UICONTROL Browse]** för att markera filen. Det här fältet är inte obligatoriskt om filen för den privata nyckeln även innehåller certifikatet ( `.cert`, `.cer`, `.crt`, `.pem`).
+      (Villkorligt) För **certifikatet** drar och släpper du certifikatfilen i rutan. Du kan också klicka på **[!UICONTROL Bläddra]** för att markera filen. Det här fältet är inte obligatoriskt om filen för den privata nyckeln även innehåller certifikatet ( `.cert`, `.cer`, `.crt`, `.pem`).
 
 * För **Google** anger du API-nyckeln för programmet.
 
-   Klicka för **[!UICONTROL Test]** att verifiera att appen och mobiltjänsterna är korrekt konfigurerade. Det här alternativet är användbart för felsökning och felsökning.
+   Klicka på **[!UICONTROL Testa]** för att verifiera att appen och mobiltjänsterna är korrekt konfigurerade. Det här alternativet är användbart för felsökning och felsökning.
 
    Skriv enhetens push-token som du vill skicka meddelandet. Du kan skicka meddelandet till flera enheter genom att ange variabler i en kommaseparerad lista.
 

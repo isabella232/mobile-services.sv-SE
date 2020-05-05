@@ -7,7 +7,7 @@ title: ADBMomobile JSON-konfiguration
 topic: Developer and implementation
 uuid: d9708d59-e30a-4f6c-ab1b-d9499855d0c2
 translation-type: tm+mt
-source-git-commit: bb7fc1c1fc6e88549a1673baedae19f808d222f0
+source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
 
 ---
 
@@ -70,7 +70,7 @@ Samma config-fil kan användas för appen på flera plattformar:
 
 * **charset**
 
-   Definierar den teckenuppsättning som du använder för data som skickas till Analytics. Teckenuppsättningen används för att konvertera inkommande data till UTF-8 för lagring och rapportering. Mer information finns i [s.charSet](https://marketing.adobe.com/resources/help/en_US/sc/implement/charset.html).
+   Definierar den teckenuppsättning som du använder för data som skickas till Analytics. Teckenuppsättningen används för att konvertera inkommande data till UTF-8 för lagring och rapportering. Mer information finns i [s.charSet](https://docs.adobe.com/content/help/en/analytics/implementation/vars/config-vars/charset.html).
 
    * Minsta SDK-version: 4.0
 
@@ -272,7 +272,7 @@ Samma config-fil kan användas för appen på flera plattformar:
    * Minsta SDK-version: 4.0
 
 
-## Exempelfil `ADBMobileConfig.json`{#section_52FA7C71A99147AFA9BE08D2177D8DA7}
+## Exempelfil `ADBMobileConfig.json` {#section_52FA7C71A99147AFA9BE08D2177D8DA7}
 
 Here is a sample `ADBMobileConfig.json` file:
 

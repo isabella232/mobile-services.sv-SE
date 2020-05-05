@@ -8,7 +8,7 @@ title: Adobe Experience Platform Identity Service-metoder
 topic: Developer and implementation
 uuid: c5107a7e-273b-4f71-8738-4c603479b24c
 translation-type: tm+mt
-source-git-commit: 8fc515a6e89044b9dac98b3f207c5f43b658a2ec
+source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
 
 ---
 
@@ -23,7 +23,7 @@ Metoderna är prefasta enligt lösningen. Experience Cloud ID-metoder har till e
 
 * **public static String appendToURL(final String URL)**
 
-   Lägger till Adobe-besöksdata i en URL-sträng som ska användas med Adobe JavaScript-biblioteket. Du måste ha Mobile SDK 4.12+ för att kunna använda den här metoden. Mer information finns i [Bifoga hjälpfunktion](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-appendvisitorid.html)för besökar-ID.
+   Lägger till Adobe-besöksdata i en URL-sträng som ska användas med Adobe JavaScript-biblioteket. Du måste ha Mobile SDK 4.12+ för att kunna använda den här metoden. Mer information finns i [Bifoga hjälpfunktion](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/methods/appendvisitorid.html)för besökar-ID.
 
    >[!IMPORTANT]
    >

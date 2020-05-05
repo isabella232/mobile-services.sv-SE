@@ -8,7 +8,7 @@ title: Android SDK 4.x för Experience Cloud Solutions
 topic: Developer and implementation
 uuid: 56f1ff41-0365-41dd-bdde-245c823dff07
 translation-type: tm+mt
-source-git-commit: b690ec677cf5aedfb2673b707f82716af1851124
+source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
 
 ---
 
@@ -49,11 +49,11 @@ Lite information att komma ihåg:
 
 ## Användardokumentation för Adobe Mobile {#section_7583FD5FDED143619048E9744A3F2D21}
 
-Adobes mobiltjänster erbjuder ett användargränssnitt som samlar funktioner för mobilmarknadsföring för mobilappar från hela Adobe Experience Cloud. Mer information om gränssnittet och användardokumentationen finns i [Adobe Mobile Services](https://marketing.adobe.com/resources/help/en_US/mobile/).
+Adobes mobiltjänster erbjuder ett användargränssnitt som samlar funktioner för mobilmarknadsföring för mobilappar från hela Adobe Experience Cloud. Mer information om gränssnittet och användardokumentationen finns i [Adobe Mobile Services](https://docs.adobe.com/content/help/en/mobile-services/using/home.html).
 
 ## Versionsinformation {#section_F8181DC052D44DD2A99AB40A41F6792C}
 
-Den senaste informationen om Experience Cloud-releaser finns i [versionsinformationen](https://marketing.adobe.com/resources/help/en_US/whatsnew/)för Experience Cloud.
+Den senaste informationen om Experience Cloud-releaser finns i [versionsinformationen](https://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html)för Experience Cloud.
 
 ## Använda Bloodhound
 

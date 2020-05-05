@@ -7,7 +7,7 @@ title: Experience Cloud-ID
 topic: Developer and implementation
 uuid: 13628ea8-3cd4-4cfc-8ff6-722c33f7813a
 translation-type: tm+mt
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
 
 ---
 
@@ -18,7 +18,7 @@ Adobe Experience Platform Identity Service tillhandahåller ett universellt bes�
 
 >[!TIP]
 >
->Du behöver inte fylla i Experience Cloud-ID om du inte använder Adobe Experience Platform Identity Service. Mer information finns i [Adobe Experience Platform Identity Service](https://marketing.adobe.com/resources/help/en_US/mcvid/).
+>Du behöver inte fylla i Experience Cloud-ID om du inte använder Adobe Experience Platform Identity Service. Mer information finns i [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/en/id-service/using/home.html).
 
 **Kräver SDK version 4.3 eller senare**
 

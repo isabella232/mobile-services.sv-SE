@@ -7,7 +7,7 @@ title: ADBMobileConfig.json-konfiguration
 topic: Developer and implementation
 uuid: cbcb54a3-4b8f-4651-8ce9-2731ac988545
 translation-type: tm+mt
-source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
+source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
 
 ---
 
@@ -40,7 +40,7 @@ SDK har för närvarande stöd för flera Adobe Experience Cloud-lösningar, ink
 
 * **charset**
 
-   Definierar den teckenuppsättning som du använder för data som skickas till Analytics. Teckenuppsättningen används för att konvertera inkommande data till UTF-8 för lagring och rapportering. Mer information finns i [s.charSet](https://marketing.adobe.com/resources/help/en_US/sc/implement/charset.html).
+   Definierar den teckenuppsättning som du använder för data som skickas till Analytics. Teckenuppsättningen används för att konvertera inkommande data till UTF-8 för lagring och rapportering. Mer information finns i [s.charSet](https://docs.adobe.com/content/help/en/analytics/implementation/vars/config-vars/charset.html).
 
 * **ssl**
 

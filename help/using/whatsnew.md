@@ -8,7 +8,7 @@ title: Versionsinformation
 topic: Metrics
 uuid: 522b0589-d61f-4a9f-952e-ba7ce11af2f9
 translation-type: tm+mt
-source-git-commit: 4b5be6c51c716114e597a80d475f838e23abb1b1
+source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
 
 ---
 
@@ -19,10 +19,10 @@ Ny versionsinformation för Adobe Mobile Services.
 
 **Mobiltjänster**
 
-Releasedatum: 11 **april 2019**
+Release date: **April 11, 2019**
 
 Nya funktioner, uppdateringar och korrigeringar för mobila tjänster:
 
 * **Push-meddelanden**: Stöd för Android Firebase-meddelandetyp har lagts till.
 
-Mer information om aktuell och tidigare versionsinformation för alla lösningar finns i [versionsinformationen](https://marketing.adobe.com/resources/help/en_US/whatsnew/)för Adobe Experience Cloud.
+Mer information om aktuell och tidigare versionsinformation för alla lösningar finns i [versionsinformationen](https://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html)för Adobe Experience Cloud.

@@ -7,7 +7,7 @@ title: Adobe Experience Platform Identity Service-metoder
 topic: Developer and implementation
 uuid: cdd307bc-8b7d-47a8-b77e-00902b9e2968
 translation-type: tm+mt
-source-git-commit: cbbb85b4d117fcaa502a1e01423f1f5d3b2ecc2b
+source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
 
 ---
 
@@ -22,13 +22,14 @@ Metoderna prefixeras enligt lösningen och Experience Cloud ID-metoderna prefixa
 
 * **`+`(null-able NSURL`*`)visitorAppendToURL:(null-able NSURL`*`)url;**
 
-   Lägger till Adobe-besöksdata i en URL-sträng som ska användas med Adobe JavaScript-biblioteket. Om du vill använda den här metoden måste du ha Mobile SDK version 4.12 eller senare. Mer information finns i [Bifoga hjälpfunktion](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-appendvisitorid.html)för besökar-ID.
+   Lägger till Adobe-besöksdata i en URL-sträng som ska användas med Adobe JavaScript-biblioteket. Om du vill använda den här metoden måste du ha Mobile SDK version 4.12 eller senare. Mer information finns i [Bifoga hjälpfunktion](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/methods/appendvisitorid.html)för besökar-ID.
 
    >[!IMPORTANT]
    >
    >Den här metoden kan orsaka ett blockerande nätverksanrop. Anropa inte detta på tidskänsliga trådar.
 
-   * Indata: `URL<NSURL>`En obligatorisk URL-sträng som besökarinformationen ska läggas till i.
+   * Indata: `URL<NSURL>`
+En obligatorisk URL-sträng som besökarinformationen ska läggas till i.
    * `URL<NSURL>`
 En sträng med besökarinformationen tillagd.
 

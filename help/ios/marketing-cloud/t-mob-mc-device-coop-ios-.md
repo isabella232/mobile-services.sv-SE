@@ -5,7 +5,7 @@ seo-title: Experience Cloud Device Co-op
 title: Experience Cloud Device Co-op
 uuid: 434a6f8f-ec24-439d-95f0-a246b384b3b5
 translation-type: tm+mt
-source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
+source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
 
 ---
 
@@ -20,7 +20,7 @@ Om du vill aktivera dina mobilappar för Experience Cloud Device Co-op utför du
 >
 >Den här funktionen kräver iOS SDK version 4.8.5 eller senare.
 
-Från och med SDK version 4.16.1 kan medlemmar i Device Co-op välja sina mobilenhetsdata från Experience Cloud Device Co-op. Mer information finns i [ADBMomobile JSON Config](/help/ios/configuration/json-config/json-config.md) och `visitorAPI.js` metoden för [isCoopSafe](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-coopsafe.html).
+Från och med SDK version 4.16.1 kan medlemmar i Device Co-op välja sina mobilenhetsdata från Experience Cloud Device Co-op. Mer information finns i [ADBMomobile JSON Config](/help/ios/configuration/json-config/json-config.md) och `visitorAPI.js` metoden för [isCoopSafe](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/configurations/coopsafe.html).
 
 1. Implementera Adobe Mobile SDK.
 

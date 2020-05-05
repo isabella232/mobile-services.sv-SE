@@ -7,12 +7,12 @@ title: Versionsinformation
 topic: Developer and implementation
 uuid: e1613dc5-02a4-43a7-997a-29b4de98b4d1
 translation-type: tm+mt
-source-git-commit: c9ee89ef5039c52ebab41a9495f1794c08a415ba
+source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
 
 ---
 
 
-# Release notes {#release-notes}
+# Versionsinformation {#release-notes}
 
 Här är versionsinformation, kända fel och snabbkorrigeringsinformation för iOS SDK 4.x för Experience Cloud Solutions:
 
@@ -69,4 +69,4 @@ Här är versionsinformation, kända fel och snabbkorrigeringsinformation för i
 
 * Visitor ID-tjänst - API-anropet skickar nu ett synkroniseringsanrop till besökar-ID-tjänsten varje gång det anropas. `setPushIdentifier`
 
-Mer information om aktuell och tidigare versionsinformation för alla lösningar finns i [versionsinformationen](https://marketing.adobe.com/resources/help/en_US/whatsnew/)för Adobe Experience Cloud.
+Mer information om aktuell och tidigare versionsinformation för alla lösningar finns i [versionsinformationen](https://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html)för Adobe Experience Cloud.

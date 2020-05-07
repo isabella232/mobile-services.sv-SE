@@ -7,7 +7,10 @@ title: Versionsinformation
 topic: Developer and implementation
 uuid: 16bb4de8-a216-47a8-928c-0b1e1421adcf
 translation-type: tm+mt
-source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
+source-git-commit: a2a2ea4bd3826b061b198e684dd31d9328137d7e
+workflow-type: tm+mt
+source-wordcount: '297'
+ht-degree: 2%
 
 ---
 
@@ -15,6 +18,14 @@ source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
 # Versionsinformation {#release-notes}
 
 Här är versionsinformation, kända fel och snabbkorrigeringsinformation för Android SDK 4.x för Experience Cloud Solutions:
+
+**3 april 2020: 4.18.2**
+
+* I App Messaging - Av säkerhetsskäl har WebViews som har skapats av SDK nu egenskapen setAllowFileAccess lika med false.
+
+**12 mars 2020: 4.18.1**
+
+* Mål - Målsessions-ID läggs nu till som kontextdataparametern a.target.sessionId i den interna Analytics-for-Target-träff som skickas till Adobe Analytics.
 
 **16 januari 2020: 4.18.0**
 

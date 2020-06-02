@@ -1,9 +1,13 @@
 ---
 product: mobile-services
 audience: end-user
-user-guide-title: Mobile Services User Help
+user-guide-title: Användarhjälp för Mobile Services
+user-guide-description: Mobile Services is an end-to-end solution that helps you acquire and engage mobile app users and analyze and optimize their experiences.
 translation-type: tm+mt
-source-git-commit: 6e6b5df2b83591f4bd4eb0db0c664bd36a6abc2c
+source-git-commit: e39a31d765bebf4f80eed47e04056108f424b905
+workflow-type: tm+mt
+source-wordcount: '323'
+ht-degree: 8%
 
 ---
 
@@ -12,7 +16,7 @@ source-git-commit: 6e6b5df2b83591f4bd4eb0db0c664bd36a6abc2c
 
 + [Adobe Mobile Services](home.md)
 + [Versionsinformation](whatsnew.md)
-+ Komma igång {#get-started-ug}
++ Getting started {#get-started-ug}
    + [Komma igång](gs/gs.md)
    + [Roller och behörigheter](gs/c-mob-roles-and-permissions.md)
    + [Loggar in](gs/gs-signin.md)
@@ -91,7 +95,7 @@ source-git-commit: 6e6b5df2b83591f4bd4eb0db0c664bd36a6abc2c
 + Plats {#location-ug}
    + [Platsöversikt](location/location-overview.md)
    + [Översikt (plats)](location/c-location-overview.md)
-   + [Karta](location/c-map-points.md)
+   + [Mappa](location/c-map-points.md)
    + [Hantera intressepunkter](location/t-manage-points.md)
 + Meddelanden {#messaging-ug}
    + [Meddelandeöversikt](in-app-messaging/in-app-messaging.md)

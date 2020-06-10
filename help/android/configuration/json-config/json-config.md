@@ -7,7 +7,10 @@ title: ADBMomobile JSON-konfiguration
 topic: Developer and implementation
 uuid: 1decf605-7bc3-4e73-ad52-1ecd5821599e
 translation-type: tm+mt
-source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
+source-git-commit: e6af295ddc5fea2a3e649b659894e6c6123a3457
+workflow-type: tm+mt
+source-wordcount: '1679'
+ht-degree: 4%
 
 ---
 
@@ -85,7 +88,7 @@ Här är en lista över variablerna i JSON-filen och den SDK-version du behöver
    * Den booleska egenskapen för det objekt `marketingCloud` som, när den är inställd på `true`det, gör att enheten avanmäts från Device Co-Op i Experience Cloud.
    * Standardvärdet är `false`.
    * Den här inställningen används **endast** för Device Co-op-etablerade kunder.
-   För medlemmar i Device Co-op som kräver det här värdet `true`måste du arbeta med Co-op-teamet för att begära en svartlistningsflagga på ditt Device Co-op-konto. Det finns ingen självbetjäningsväg för att aktivera dessa flaggor.
+   För medlemmar i Device Co-op som kräver det här värdet `true`måste du arbeta med Co-op-teamet för att begära en flagga för att neka listan på ditt Device Co-op-konto. Det finns ingen självbetjäningsväg för att aktivera dessa flaggor.
 
    Kom ihåg följande information:
 
@@ -236,7 +239,7 @@ Här är en lista över variablerna i JSON-filen och den SDK-version du behöver
    * Anger hur länge Target väntar på ett svar.
 
 
-## Exempelfil `ADBMobileConfig.json`{#section_4655EF79744649E5A5AE19E3224C472C}
+## Exempelfil `ADBMobileConfig.json` {#section_4655EF79744649E5A5AE19E3224C472C}
 
 Here is a sample `ADBMobileConfig.json` file:
 

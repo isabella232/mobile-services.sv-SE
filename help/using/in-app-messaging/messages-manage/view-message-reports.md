@@ -8,7 +8,10 @@ title: Visa meddelanderapporter
 topic: Metrics
 uuid: 0ac73a81-388f-4dfd-84d5-21b8db4b8c83
 translation-type: tm+mt
-source-git-commit: 44f531ad140827d563255fad197811185c5337c9
+source-git-commit: e6af295ddc5fea2a3e649b659894e6c6123a3457
+workflow-type: tm+mt
+source-wordcount: '473'
+ht-degree: 0%
 
 ---
 
@@ -88,4 +91,4 @@ Här är en lista över de mätvärden som är tillgängliga för push-meddeland
 
 * **[!UICONTROL Blacklisted]**
 
-   Antalet enhetstoken som inte längre är giltiga för att skickas till APNS eller FCM. Det innebär vanligtvis att programmet har avinstallerats från enheten eller att användaren har ändrat sina inställningar för att ta emot meddelanden. Android och iOS skiljer sig åt när tokens räknas som svartlistade. Android-tokens visas omedelbart i det svartlistade antalet. iOS-tokens visas först som publicerade, men baserat på feedback från APNS visas de som svartlistade i efterföljande meddelanden.
+   Antalet enhetstoken som inte längre är giltiga för att skickas till APNS eller FCM. Det innebär vanligtvis att programmet har avinstallerats från enheten eller att användaren har ändrat sina inställningar för att ta emot meddelanden. Android och iOS skiljer sig åt när tokens räknas som neka. Android-tokens visas omedelbart i antalet nekade listor. iOS-tokens visas inledningsvis som publicerade, men baserat på feedback från APNS visas som nekade i efterföljande meddelanden.

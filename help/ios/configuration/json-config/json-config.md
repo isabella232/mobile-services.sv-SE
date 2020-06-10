@@ -7,7 +7,10 @@ title: ADBMomobile JSON-konfiguration
 topic: Developer and implementation
 uuid: d9708d59-e30a-4f6c-ab1b-d9499855d0c2
 translation-type: tm+mt
-source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
+source-git-commit: e6af295ddc5fea2a3e649b659894e6c6123a3457
+workflow-type: tm+mt
+source-wordcount: '1716'
+ht-degree: 7%
 
 ---
 
@@ -86,7 +89,7 @@ Samma config-fil kan användas för appen på flera plattformar:
 
 * **coopUnsafe**
 
-   För medlemmar i Device Co-op som kräver det här värdet måste du `true`arbeta med Co-op-teamet för att begära en svartlistningsflagga på ditt Device Co-op-konto. Det finns ingen självbetjäningsväg för att aktivera dessa flaggor.
+   För medlemmar i Device Co-op som kräver det här värdet måste du `true`arbeta med Co-op-teamet för att begära en flagga för att neka listan på ditt Device Co-op-konto. Det finns ingen självbetjäningsväg för att aktivera dessa flaggor.
 
    Kom ihåg följande information:
 

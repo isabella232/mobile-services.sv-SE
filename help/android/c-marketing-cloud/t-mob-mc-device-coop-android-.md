@@ -5,9 +5,9 @@ seo-title: Experience Cloud Device Co-op
 title: Experience Cloud Device Co-op
 uuid: 7bb8a19c-4b80-4911-879d-f9941baa3b62
 translation-type: tm+mt
-source-git-commit: e6af295ddc5fea2a3e649b659894e6c6123a3457
+source-git-commit: 86ba045b44bf6553e80727c0d61ccdd9a552d16c
 workflow-type: tm+mt
-source-wordcount: '291'
+source-wordcount: '290'
 ht-degree: 2%
 
 ---
@@ -44,7 +44,7 @@ Här finns ytterligare information om `coopUnsafe` flaggan:
 * Standardvärdet är `false`.
 * Den här inställningen används **endast** för Device Co-op-etablerade kunder.
 
-För medlemmar i Device Co-op som kräver det här värdet `true`måste du arbeta med Co-op-teamet för att begära en flagga för att neka listan på ditt Device Co-op-konto. Det finns ingen självbetjäningsväg för att aktivera dessa flaggor.
+För medlemmar i Device Co-op som kräver det här värdet `true`måste du arbeta med Co-op-teamet för att begära en blocklist-flagga på ditt Device Co-op-konto. Det finns ingen självbetjäningsväg för att aktivera dessa flaggor.
 
 Kom ihåg följande information:
 

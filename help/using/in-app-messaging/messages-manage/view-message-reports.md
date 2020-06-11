@@ -8,9 +8,9 @@ title: Visa meddelanderapporter
 topic: Metrics
 uuid: 0ac73a81-388f-4dfd-84d5-21b8db4b8c83
 translation-type: tm+mt
-source-git-commit: e6af295ddc5fea2a3e649b659894e6c6123a3457
+source-git-commit: 86ba045b44bf6553e80727c0d61ccdd9a552d16c
 workflow-type: tm+mt
-source-wordcount: '473'
+source-wordcount: '470'
 ht-degree: 0%
 
 ---
@@ -89,6 +89,6 @@ Här är en lista över de mätvärden som är tillgängliga för push-meddeland
    >
    >Om du har ett ovanligt stort antal fel kontrollerar du konfigurationen för push-tjänster. Om push-tjänster verkar vara rätt konfigurerade kontaktar du Adobes kundtjänst.
 
-* **[!UICONTROL Blacklisted]**
+* **[!UICONTROL Blocklisted]**
 
-   Antalet enhetstoken som inte längre är giltiga för att skickas till APNS eller FCM. Det innebär vanligtvis att programmet har avinstallerats från enheten eller att användaren har ändrat sina inställningar för att ta emot meddelanden. Android och iOS skiljer sig åt när tokens räknas som neka. Android-tokens visas omedelbart i antalet nekade listor. iOS-tokens visas inledningsvis som publicerade, men baserat på feedback från APNS visas som nekade i efterföljande meddelanden.
+   Antalet enhetstoken som inte längre är giltiga för att skickas till APNS eller FCM. Det innebär vanligtvis att programmet har avinstallerats från enheten eller att användaren har ändrat sina inställningar för att ta emot meddelanden. Android och iOS skiljer sig åt när tokens räknas som blocklisted. Android-tokens visas omedelbart i blocklist-antalet. iOS-tokens visas först som publicerade, men baserat på feedback från APNS visas som blocklistade i efterföljande meddelanden.

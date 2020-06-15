@@ -8,9 +8,9 @@ title: Visa meddelanderapporter
 topic: Metrics
 uuid: 0ac73a81-388f-4dfd-84d5-21b8db4b8c83
 translation-type: tm+mt
-source-git-commit: 86ba045b44bf6553e80727c0d61ccdd9a552d16c
+source-git-commit: 33297c9e6537f664222c91a44c20bb9ab2ee310a
 workflow-type: tm+mt
-source-wordcount: '470'
+source-wordcount: '472'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Här är en lista över de mätvärden som är tillgängliga för meddelanden i 
 
 * **[!UICONTROL Cancel]** när en användare trycker på **[!UICONTROL Cancel]** knappen på en varning eller ett helskärmsmeddelande.
 
-* **[!UICONTROL Engagement Rate]**, ett beräknat mått från Adobe Analytics och är resultatet av antalet klickningar delat med antalet visningar.
+* **[!UICONTROL Engagement Rate]**, ett beräknat mått från Adobe Analytics och är resultatet av antalet klickningar dividerat med antalet visningar.
 
 ## Push-meddelanden {#section_BEAFD858CA194185B6F88903446058E9}
 
@@ -89,6 +89,6 @@ Här är en lista över de mätvärden som är tillgängliga för push-meddeland
    >
    >Om du har ett ovanligt stort antal fel kontrollerar du konfigurationen för push-tjänster. Om push-tjänster verkar vara rätt konfigurerade kontaktar du Adobes kundtjänst.
 
-* **[!UICONTROL Blocklisted]**
+* **[!UICONTROL Deny List]**
 
-   Antalet enhetstoken som inte längre är giltiga för att skickas till APNS eller FCM. Det innebär vanligtvis att programmet har avinstallerats från enheten eller att användaren har ändrat sina inställningar för att ta emot meddelanden. Android och iOS skiljer sig åt när tokens räknas som blocklisted. Android-tokens visas omedelbart i blocklist-antalet. iOS-tokens visas först som publicerade, men baserat på feedback från APNS visas som blocklistade i efterföljande meddelanden.
+   Antalet enhetstoken som inte längre är giltiga för att skickas till APNS eller FCM. Det innebär vanligtvis att programmet har avinstallerats från enheten eller att användaren har ändrat sina inställningar för att ta emot meddelanden. Android och iOS skiljer sig åt när tokens räknas som blocklisted. Android-tokens visas omedelbart i neka-listan (blocklist). iOS-tokens visas först som publicerade, men baserat på feedback från APNS visas som blocklistade i efterföljande meddelanden.

@@ -39,7 +39,7 @@ Samma config-fil kan användas för appen på flera plattformar:
 
 * **analyticsForwardingEnabled**
 
-   Egenskapen i `audienceManager` objektet. Om `Audience Manager` är konfigurerad och `analyticsForwardingEnabled` är inställd på `true`vidarebefordras all Analytics-trafik också till Audience Manager. Standardvärdet är `false`.
+   Egenskapen i `audienceManager` objektet. Om `Audience Manager` är konfigurerad och `analyticsForwardingEnabled` är inställd på `true`vidarebefordras all Analytics-trafik till Audience Manager. Standardvärdet är `false`.
 
    * Minsta SDK-version: 4.8.0
 
@@ -93,12 +93,12 @@ Samma config-fil kan användas för appen på flera plattformar:
 
    Kom ihåg följande information:
 
-   * När `coopUnsafe` är inställt på `true`läggs `coop_unsafe=1` alltid till i träffar för Audience Manager och Visitor ID.
-   * Om du aktiverar vidarebefordran på serversidan för Analytics till Audience Manager kan du även se `coop_unsafe=1` Analytics-träffar.
+   * När `coopUnsafe` är inställt på `true`läggs `coop_unsafe=1` alltid till i Audience Manager och besöks-ID-träffar.
+   * Om du aktiverar vidarebefordran på serversidan från Analytics till Audience Manager visas även `coop_unsafe=1` Analytics-träffar.
    Här är ytterligare information:
 
    * Minsta SDK-version: 4.16.1
-   * Den booleska egenskapen för det objekt `marketingCloud` som, när den är inställd på `true`det, gör att enheten avanmäts från Device Co-Op i Experience Cloud.
+   * Den booleska egenskapen för det objekt `marketingCloud` som, när den är inställd på `true`, gör att enheten väljs ut från Experience Cloud Device Co-Op.
    * Standardvärdet är `false`.
    * Den här inställningen används **endast** för Device Co-op-etablerade kunder.
 
@@ -139,7 +139,7 @@ Samma config-fil kan användas för appen på flera plattformar:
 
 * **org**
 
-   Anger Experience Cloud-organisations-ID för Adobe Experience Platform Identity Service.
+   Anger Experience Cloud org-ID för Adobe Experience Platform Identity Service.
 
    * Minsta SDK-version: 4.3
 
@@ -216,7 +216,7 @@ Samma config-fil kan användas för appen på flera plattformar:
 
 * **rsids**
 
-   En eller flera rapportsviter för att ta emot analysdata. Flera rapportpaket-ID:n ska vara kommaavgränsade utan mellanrum.
+   En eller flera rapportsviter som tar emot Analytics-data. Flera rapportpaket-ID:n ska vara kommaavgränsade utan mellanrum.
 
    ```js
    "rsids": "rsid"
@@ -363,7 +363,7 @@ Meddelandenoden genereras automatiskt av Adobe Mobile Services och behöver vanl
 
       * endast helskärmsmall, obligatoriskt
       * html som definierar meddelandet
-   * &quot;image&quot;
+   * &quot;bild&quot;
 
       * endast helskärm, valfritt
       * URL till bilden som ska användas för helskärmsbilden

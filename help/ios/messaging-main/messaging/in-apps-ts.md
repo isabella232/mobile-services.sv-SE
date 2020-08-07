@@ -8,7 +8,10 @@ title: Felsöka meddelanden i appen
 topic: Metrics
 uuid: 58533aa3-2eb2-4597-8525-77e4e5975e56
 translation-type: tm+mt
-source-git-commit: 1154bab39b5215e00d47ad8e66caeec15e4e98de
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '593'
+ht-degree: 0%
 
 ---
 
@@ -89,13 +92,13 @@ Så här visar du meddelanden i appen i helskärmsläge på en iPhone X:
 1. Ställ in lämplig utfyllnad i CSS för det översta gränssnittselementet som:
 
    ```html
-   topelement {
-     padding-top:20px;
-     /*Status bar height on iOS 11.0*/
-     padding-top:constant(safe-area-inset-top);
-     /*Status bar height on iOS 11+ */
-     padding-top:env(safe-area-inset-top);
-     } 
+    topelement {
+      padding-top:20px;
+      /*Status bar height on iOS 11.0*/
+      padding-top:constant(safe-area-inset-top);
+      /*Status bar height on iOS 11+ */
+      padding-top:env(safe-area-inset-top);
+      } 
    ```
 
    De här inställningarna förhindrar att gränssnittselementen kolliderar med statusfältet.

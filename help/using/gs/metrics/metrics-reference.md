@@ -2,13 +2,16 @@
 description: Här är referensinformationen för standardvärden och -dimensioner för mobila enheter.
 keywords: mobile
 seo-description: Här är referensinformationen för standardvärden och -dimensioner för mobila enheter.
-seo-title: Referens för Mobile Metrics and Dimensions
+seo-title: Mobile Metrics and Dimensions Reference
 solution: Marketing Cloud,Analytics
-title: Referens för Mobile Metrics and Dimensions
+title: Mobile Metrics and Dimensions Reference
 topic: Metrics
 uuid: 96170ae7-8553-4f3e-ae01-65e5b664adf4
 translation-type: tm+mt
-source-git-commit: 056bb3edb94c2ceb2961bbe8e4851c20429e1ea2
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '629'
+ht-degree: 1%
 
 ---
 
@@ -19,9 +22,9 @@ Den här informationen hjälper dig att förstå mer om standardvärden och -dim
 
 >[!TIP]
 >
->De mått- och mätbehörigheter som anges i Adobe Analytics gäller för mobiltjänster. När du försöker köra en rapport utan rätt behörigheter inträffar ett fel.
+>Dimensions- och måttbehörigheterna som anges i Adobe Analytics gäller för mobiltjänster. När du försöker köra en rapport utan rätt behörigheter inträffar ett fel.
 
-## Mått {#section_6704C815147D44AF96151D626BEB813C}
+## Mätvärden {#section_6704C815147D44AF96151D626BEB813C}
 
 Här är en lista över standardvärden för mobiler:
 
@@ -38,6 +41,7 @@ Här är en lista över standardvärden för mobiler:
    Utlöses när programmet används en viss dag.
 
    >[!TIP]
+   >
    >Händelsen Daglig engagerad användare lagras inte automatiskt i ett analysmått. Du måste skapa en bearbetningsregel som ställer in en anpassad händelse för att hämta det här måttet.
 
 * **Engagerade användare varje månad**
@@ -47,7 +51,7 @@ Här är en lista över standardvärden för mobiler:
    >[!TIP]
    >Händelsen för Månadsengagerade användare lagras inte automatiskt i ett analysmått. Du måste skapa en bearbetningsregel som ställer in en anpassad händelse för att hämta det här måttet.
 
-* **Startar**
+* **Launches**
 
    Utlöses på en körning som inte är en installation eller uppgradering. Detta utlöses också när programmet tas bort från bakgrunden. Som standard utlöses en ny start när programmet är i bakgrunden i fem eller fler minuter. Hur lång bakgrundstid det tar innan en ny start aktiveras kan konfigureras på sidan Hantera programinställningar **[!UICONTROL SDK Analytics Options]** . Mer information finns i *sessionstimeout (sekunder)* -raden i [Konfigurera SDK-analysalternativ](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-analytics/t-config-analytics.md).
 

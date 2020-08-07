@@ -1,14 +1,17 @@
 ---
-description: Du kan använda den här informationen för att skapa en ny app och konfigurera dess nyckelmått, konfigurera SDK-alternativen för Adobe Analytics och Adobe Audience Manager, konfigurera alternativ för förvärv och ID-tjänster samt hämta konfigurationsfilen, SDK:n samt utvecklings- och testverktygen.
+description: Du kan använda den här informationen för att skapa en ny app och konfigurera dess nyckelmått, konfigurera SDK-alternativen för Adobe Analytics och Adobe Audience Manager, konfigurera alternativ för förvärv och ID-tjänster och hämta konfigurationsfilen, SDK:er samt utvecklings- och provverktygen.
 keywords: mobile
-seo-description: Du kan använda den här informationen för att skapa en ny app och konfigurera dess nyckelmått, konfigurera SDK-alternativen för Adobe Analytics och Adobe Audience Manager, konfigurera alternativ för förvärv och ID-tjänster samt hämta konfigurationsfilen, SDK:n samt utvecklings- och testverktygen.
+seo-description: Du kan använda den här informationen för att skapa en ny app och konfigurera dess nyckelmått, konfigurera SDK-alternativen för Adobe Analytics och Adobe Audience Manager, konfigurera alternativ för förvärv och ID-tjänster och hämta konfigurationsfilen, SDK:er samt utvecklings- och provverktygen.
 seo-title: Lägg till en ny app
 solution: Marketing Cloud,Analytics
 title: Lägg till en ny app
 topic: Metrics
 uuid: 706b5e4d-1318-4a9e-8c69-ffabf51fa02c
 translation-type: tm+mt
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '680'
+ht-degree: 0%
 
 ---
 
@@ -17,7 +20,7 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 Du kan använda den här informationen för att skapa en ny app och konfigurera dess nyckelmått; konfigurera SDK-alternativen för Adobe Analytics och Adobe Audience Manager; konfigurera alternativ för förvärv och ID-tjänster, och hämta konfigurationsfilen, SDK:er samt utvecklar- och provverktygen.
 
-De här instruktionerna hjälper er att lägga till en ny app och konfigurera integreringar mellan Adobe Analytics och Adobe Audience Manager.
+De här instruktionerna hjälper dig att lägga till en ny app och konfigurera integreringar med Adobe Analytics och Adobe Audience Manager.
 
 Innan du kan konfigurera din app måste du lägga till den i användargränssnittet för Adobe Mobile Services. När du har skapat appen skapas rätt konfiguration, och du kan tillhandahålla den här konfigurationen till utvecklare som implementerar Mobile SDK för appen.
 
@@ -79,7 +82,7 @@ Innan du kan konfigurera din app måste du lägga till den i användargränssnit
 
       * **[!UICONTROL Publication]**
 
-         Du kan välja det här alternativet om appen har skapats med Adobe Digital Publishing Suite.
+         Du kan välja det här alternativet om din app har byggts med Adobe Digital Publishing Suite.
 
       * **[!UICONTROL Game]**
 

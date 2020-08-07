@@ -8,7 +8,10 @@ title: Konfigurationsmetoder
 topic: Developer and implementation
 uuid: 663aeb6c-1b97-4a3a-8c0e-dd4c2ec28c01
 translation-type: tm+mt
-source-git-commit: dae60a21286edc28c84b7638da214b824abf0cd3
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '985'
+ht-degree: 22%
 
 ---
 
@@ -249,8 +252,8 @@ Om rapportsviten inte är tidsstämpelaktiverad, kommer träffar att tas bort ti
         super.onResume()
         // assume being called in an Activity class Config.collectLifecycleData(this);
         } 
-        ```
-      
+      ```
+
 * **pauseCollecting &#x200B; LifecycleData**
 
    * Anger för SDK att din app är pausad, så att livscykelvärdena beräknas korrekt. En tidsstämpel `onPause` samlas till exempel in för att bestämma den föregående sessionslängden. Detta anger också en flagga så att livscykeln vet att appen inte kraschade. Mer information finns i [Livscykelvärden](/help/android/metrics.md).

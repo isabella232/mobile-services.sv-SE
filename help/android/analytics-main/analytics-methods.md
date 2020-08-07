@@ -1,25 +1,28 @@
 ---
-description: Här är en lista över Adobe Analytics-metoder som tillhandahålls av Android-biblioteket.
+description: Här är en lista över Adobe Analytics-metoder som finns i Android-biblioteket.
 keywords: android;library;mobile;sdk
-seo-description: Här är en lista över Adobe Analytics-metoder som tillhandahålls av Android-biblioteket.
+seo-description: Här är en lista över Adobe Analytics-metoder som finns i Android-biblioteket.
 seo-title: Analysmetoder
 solution: Marketing Cloud,Analytics
 title: Analysmetoder
 topic: Developer and implementation
 uuid: ac7c640e-9dcc-4724-b561-019cc025d5a7
 translation-type: tm+mt
-source-git-commit: 657e8b93d1516690ad21d6cf504f9c8f611747b6
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '740'
+ht-degree: 28%
 
 ---
 
 
 # Analysmetoder {#analytics-methods}
 
-Här är en lista över Adobe Analytics-metoder som tillhandahålls av Android-biblioteket.
+Här är en lista över Adobe Analytics-metoder som finns i Android-biblioteket.
 
-SDK har för närvarande stöd för flera Adobe Experience Cloud-lösningar], inklusive Analytics], Target], Audience Manager] och Adobe Experience Platform Identity Service]. Metoder prefixeras enligt lösningen, till exempel prefix för Experience Cloud ID-metoder `analytics`.
+SDK har för närvarande stöd för flera Adobe Experience Cloud-lösningar], inklusive Analytics], Target], Audience Manager] och Adobe Experience Platform Identity Service]. Metoder prefix enligt lösningen, till exempel prefix med Experience Cloud ID-metoder `analytics`.
 
-Var och en av följande metoder används för att skicka data till rapportsviten för Adobe Analytics:
+Var och en av följande metoder används för att skicka data till din Adobe Analytics rapportsvit:
 
 * **trackState**
 
@@ -257,7 +260,7 @@ Var och en av följande metoder används för att skicka data till rapportsviten
 
    Hämtar förvärvsdata från angiven Google Play Install Reference URL.
 
-   De data som samlas in från detta API skickas vid installationssessioner som skickas till Analytics och är tillgängliga i Adobe Data Callback.
+   De data som samlas in från detta API skickas vid installationsträffar som skickas till Analytics och är tillgängliga i Adobe Data Callback.
 
    Om referensdata redan har samlats in av SDK, kommer ett anrop till den här metoden att resultera i en no-op.
 

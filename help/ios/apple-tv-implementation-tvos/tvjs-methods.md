@@ -7,7 +7,10 @@ title: TVJS-metoder
 topic: Developer and implementation
 uuid: a7bfa85a-0d6e-4f51-9a9e-70429c2a9806
 translation-type: tm+mt
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '2013'
+ht-degree: 27%
 
 ---
 
@@ -69,6 +72,7 @@ Här är en lista över TVJS-metoder som tillhandahålls av tvOS-biblioteket.
    * `ADBMobilePrivacyStatusOptIn`: Träffar skickas omedelbart.
    * `ADBMobilePrivacyStatusOptOut`: Träffar ignoreras.
    * `ADBMobilePrivacyStatusUnknown`: Om spårning offline är aktiverat sparas träffar tills sekretessstatusen ändras till att anmäla sig (träffar skickas) eller avanmäla dig (träffar ignoreras).
+
    Om spårning offline inte är aktiverat ignoreras träffar tills sekretessstatusen ändras till att anmäla sig.
 
    * Här är syntaxen för den här metoden:
@@ -368,7 +372,7 @@ Här är en lista över TVJS-metoder som tillhandahålls av tvOS-biblioteket.
 
    Avsluta en tidsbestämd åtgärd.
 
-   Om du anger en återanropsfunktion kan du komma åt de slutliga tidsvärdena. Om det inte finns något återanrop, eller om återanropet returnerar true, skickar Adobe SDK automatiskt en träff. När false returneras från återanropet ignoreras den tidsbestämda åtgärden.
+   Om du anger en återanropsfunktion kan du komma åt de slutliga tidsvärdena. Om inget återanrop anges, eller om återanropet returnerar true, skickar Adobe SDK automatiskt en träff. När false returneras från återanropet ignoreras den tidsbestämda åtgärden.
 
    * Här är syntaxen för den här metoden:
 
@@ -423,7 +427,7 @@ Här är en lista över TVJS-metoder som tillhandahålls av tvOS-biblioteket.
 
    Returnerar den automatiskt genererade besökaridentifieraren.
 
-   Detta är ett programspecifikt unikt besökar-ID som genereras av Adobes servrar. Om Adobes servrar inte kan nås vid tidpunkten för genereringen genereras ID:t med Apples CFUID. Värdet genereras vid den första starten och lagras och används från den tidpunkten. Detta ID bevaras mellan programuppgraderingar, sparas och återställs under standardprocessen för säkerhetskopiering av program och tas bort när programmet avinstalleras.
+   Detta är ett programspecifikt unikt besökar-ID som genereras av Adobe servrar. Om det inte går att nå Adobe vid genereringen genereras ID:t med Apples CFUID. Värdet genereras vid den första starten och lagras och används från den tidpunkten. Detta ID bevaras mellan programuppgraderingar, sparas och återställs under standardprocessen för säkerhetskopiering av program och tas bort när programmet avinstalleras.
 
    >[!TIP]
    >
@@ -616,7 +620,7 @@ Här är en lista över TVJS-metoder som tillhandahålls av tvOS-biblioteket.
 
 * **audiensReset**
 
-   Återställer Audience Manager UUID och tömmer den aktuella besökarprofilen.
+   Återställer Audience Manager UID och tömmer den aktuella besökarprofilen.
 
    * Här är kodexemplet för den här metoden:
 
@@ -656,7 +660,7 @@ Här är en lista över TVJS-metoder som tillhandahålls av tvOS-biblioteket.
 
 * **visitorSyncIdentifiers**
 
-   Förutom Experience Cloud-ID kan du ange ytterligare kund-ID:n som ska kopplas till varje besökare. Besökar-API:t godkänner flera kund-ID:n för samma besökare, med en kundtypsidentifierare som avgränsar omfattningen av olika kund-ID:n. Den här metoden motsvarar setCustomerID:n i JavaScript-biblioteket.
+   Förutom Experience Cloud-ID:t kan du ange ytterligare kund-ID:n som ska kopplas till varje besökare. Besökar-API:t godkänner flera kund-ID:n för samma besökare, med en kundtypsidentifierare som avgränsar omfattningen av olika kund-ID:n. Den här metoden motsvarar setCustomerID:n i JavaScript-biblioteket.
 
    * Här är syntaxen för den här metoden:
 

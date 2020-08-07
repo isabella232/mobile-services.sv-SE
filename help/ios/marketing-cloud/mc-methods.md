@@ -1,28 +1,31 @@
 ---
-description: Här är Adobe Experience Platform Identity Service-metoderna som tillhandahålls av iOS-biblioteket.
-seo-description: Här är Adobe Experience Platform Identity Service-metoderna som tillhandahålls av iOS-biblioteket.
+description: Här är Adobe Experience Platform Identity Service-metoder som tillhandahålls av iOS-biblioteket.
+seo-description: Här är Adobe Experience Platform Identity Service-metoder som tillhandahålls av iOS-biblioteket.
 seo-title: Adobe Experience Platform Identity Service-metoder
 solution: Marketing Cloud,Analytics
 title: Adobe Experience Platform Identity Service-metoder
 topic: Developer and implementation
 uuid: cdd307bc-8b7d-47a8-b77e-00902b9e2968
 translation-type: tm+mt
-source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '461'
+ht-degree: 21%
 
 ---
 
 
-# Adobe Experience Platform Identity Service-metoder {#experience-cloud-id-service-methods}
+# Adobe Experience Platform Identity Service methods {#experience-cloud-id-service-methods}
 
-Här är Adobe Experience Platform Identity Service-metoderna som tillhandahålls av iOS-biblioteket.
+Här är Adobe Experience Platform Identity Service-metoder som tillhandahålls av iOS-biblioteket.
 
 SDK har för närvarande stöd för flera Adobe Experience Cloud-lösningar, inklusive Analytics, Target, Audience Manager och Experience Cloud Visitor ID-tjänsten.
 
-Metoderna prefixeras enligt lösningen och Experience Cloud ID-metoderna prefixas `visitor`. Mer information finns i [Aktivera Experience Cloud-ID](/help/ios/marketing-cloud/mcvid.md).
+Metoderna prefixeras enligt lösningen och Experience Cloud ID-metoder prefixeras med `visitor`. Mer information finns i [Aktivera Experience Cloud-ID](/help/ios/marketing-cloud/mcvid.md).
 
 * **`+`(null-able NSURL`*`)visitorAppendToURL:(null-able NSURL`*`)url;**
 
-   Lägger till Adobe-besöksdata i en URL-sträng som ska användas med Adobe JavaScript-biblioteket. Om du vill använda den här metoden måste du ha Mobile SDK version 4.12 eller senare. Mer information finns i [Bifoga hjälpfunktion](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/methods/appendvisitorid.html)för besökar-ID.
+   Lägger till besöksdata från Adobe i en URL-sträng som ska användas med JavaScript-biblioteket Adobe. Om du vill använda den här metoden måste du ha Mobile SDK version 4.12 eller senare. Mer information finns i [Bifoga hjälpfunktion](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/methods/appendvisitorid.html)för besökar-ID.
 
    >[!IMPORTANT]
    >
@@ -63,7 +66,7 @@ En sträng med besökarinformationen tillagd.
 
 * **visitorSyncIdentifiers:**
 
-   Med Experience Cloud-ID kan ni ange ytterligare kund-ID:n som kan kopplas till varje besökare. Besökar-API:t godkänner flera kund-ID:n för samma besökare, med en kundtypsidentifierare som avgränsar omfattningen av olika kund-ID:n. Den här metoden motsvarar den `setCustomerIDs` i JavaScript-biblioteket.
+   Med Experience Cloud-ID:t kan du ange ytterligare kund-ID:n som kan kopplas till varje besökare. Besökar-API:t godkänner flera kund-ID:n för samma besökare, med en kundtypsidentifierare som avgränsar omfattningen av olika kund-ID:n. Den här metoden motsvarar den `setCustomerIDs` i JavaScript-biblioteket.
 
    * Här är syntaxen för den här metoden:
 

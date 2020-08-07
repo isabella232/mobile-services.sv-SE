@@ -5,7 +5,10 @@ seo-title: Videoanalys
 title: Videoanalys
 uuid: 0d2731f3-77a9-4db1-9a8c-1e56c212ecb4
 translation-type: tm+mt
-source-git-commit: 5fbba02eb61679344f638b6465e47b0d9ae5a988
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '866'
+ht-degree: 14%
 
 ---
 
@@ -14,7 +17,7 @@ source-git-commit: 5fbba02eb61679344f638b6465e47b0d9ae5a988
 
 Den allmänna processen att mäta video är mycket lik på alla AppMeasurement-plattformar. I det här avsnittet finns en grundläggande översikt över utvecklaråtgärderna tillsammans med kodexempel.
 
-Mer information om videomätning finns i guiden [Mäta ljud och video i Adobe Analytics](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html) .  I följande tabell visas de mediedata som skickas till Analytics. Använd bearbetningsregler för att mappa kontextdata i kolumnen Kontextdatavariabel till en Analytics-variabel enligt beskrivningen i kolumnen Variabeltyp.
+Mer information om videomätning finns i guiden [Mäta ljud och video i Adobe Analytics](https://docs.adobe.com/content/help/sv-SE/media-analytics/using/media-overview.html) .  I följande tabell visas de mediedata som skickas till Analytics. Använd bearbetningsregler för att mappa kontextdata i kolumnen Kontextdatavariabel till en Analytics-variabel enligt beskrivningen i kolumnen Variabeltyp.
 
 ## Mappa spelarhändelser till analysvariabler
 
@@ -22,7 +25,7 @@ Mer information om videomätning finns i guiden [Mäta ljud och video i Adobe An
 
    (Obligatoriskt) Samlar in namnet på videon, enligt specifikationen i implementeringen, när en besökare visar videon på något sätt.Du kan lägga till klassificeringar för den här variabeln.
 
-   **(Valfritt)** Variabeln Custom Insight ger information om videopausning.
+   **(Valfritt)** Custom Insight-variabeln innehåller information om videopappning.
 
    * Variabelnamn: eVar
       * Standardförfallodatum: Besök
@@ -39,7 +42,7 @@ Mer information om videomätning finns i guiden [Mäta ljud och video i Adobe An
 
    (**Obligatoriskt**) Samlar in videosegmentdata, inklusive segmentnamnet och den ordning i vilken segmentet finns i videon. Den här variabeln fylls i genom att den aktiveras när spelarhändelser spåras automatiskt, eller genom att ett anpassat segmentnamn anges när spelarhändelser spåras manuellt. `segmentByMilestones`
 
-   När en besökare till exempel tittar på det första segmentet i en video kan SiteCatalyst samla in `1:M:0-25` i Segments eVar. Standardmetoden för insamling av videodata samlar in data vid start- (uppspelning), start- och slutpunkterna för video (stopp).
+   När en besökare till exempel tittar på det första segmentet i en video kan SiteCatalyst samla `1:M:0-25` i eVar Segment. Standardmetoden för insamling av videodata samlar in data vid start- (uppspelning), start- och slutpunkterna för video (stopp).
 
    Analyser är den första segmentvyn i början av segmentet när besökaren börjar titta. Efterföljande segmentvyer när segmentet börjar.
 

@@ -8,7 +8,10 @@ title: PhoneGap plug-in-metoder
 topic: Developer and implementation
 uuid: bc3db9ce-81b7-45ec-88aa-6020c1db5d9c
 translation-type: tm+mt
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '1569'
+ht-degree: 34%
 
 ---
 
@@ -218,11 +221,11 @@ Lägg till följande i `html` -taggen i `<head>` filer där du vill använda sp�
 
 * **trackAdobeDeepLink**
 
-   Spårar en Adobe Deep Link-klickning.
+   Spårar en klickbar Adobe-länk.
 
    >[!TIP]
    >
-   >Om livscykelanropet är en starthändelse läggs Adobe Link-data till, annars skickas ett extra anrop.
+   >Om Lifecycle-anropet är en starthändelse läggs Adobe Link-data till, i annat fall skickas ett extra anrop.
 
    * Här är syntaxen för den här metoden:
 
@@ -659,7 +662,7 @@ I huvudaktiviteten som genereras av Cordova anropar du `Config.submitAdvertising
 
 * **audiensSignalWithData**
 
-   Bearbetar en begäran om Audience Manager-tjänst.
+   Bearbetar en tjänstbegäran i Audience Manager.
 
    * Här är syntaxen för den här metoden:
 
@@ -691,7 +694,7 @@ I huvudaktiviteten som genereras av Cordova anropar du `Config.submitAdvertising
 
 * **visitorGetMarketingCloudId**
 
-   Returnerar Experience Cloud-ID:t från ID-tjänsten.
+   Returnerar Experience Cloud-ID från ID-tjänsten.
 
    * Här är syntaxen för den här metoden:
 

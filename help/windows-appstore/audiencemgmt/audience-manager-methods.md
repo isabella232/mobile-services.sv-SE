@@ -1,20 +1,23 @@
 ---
-description: Lista över Audience Manager-metoder som tillhandahålls av biblioteket Windows 8.1 Universal App Store.
-seo-description: Lista över Audience Manager-metoder som tillhandahålls av biblioteket Windows 8.1 Universal App Store.
+description: Lista över Audience Manager-metoder i Windows 8.1 Universal App Store-biblioteket.
+seo-description: Lista över Audience Manager-metoder i Windows 8.1 Universal App Store-biblioteket.
 seo-title: Audience Manager-metoder
 solution: Marketing Cloud,Analytics
 title: Audience Manager-metoder
 topic: Developer and implementation
 uuid: e39c9c3e-fd53-4b46-8fff-88101a064a9c
 translation-type: tm+mt
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '280'
+ht-degree: 26%
 
 ---
 
 
 # Audience Manager-metoder {#audience-manager-methods}
 
-Lista över Audience Manager-metoder som tillhandahålls av biblioteket Windows 8.1 Universal App Store.
+Lista över Audience Manager-metoder i Windows 8.1 Universal App Store-biblioteket.
 
 SDK har för närvarande stöd för flera Adobe Experience Cloud-lösningar, inklusive Analytics, Target och Audience Manager. Metoderna är prefasta enligt lösningen. Audience Manager-metoder har prefixet &quot;AudienceManager&quot;.
 
@@ -94,7 +97,7 @@ Om målgruppshanteraren är konfigurerad i JSON-filen skickas en signal med livs
 
 * **SignalWithData (winJS: signalWithData)**
 
-   Skickar en signal till Audience Manager med egenskaper och hämtar matchande segment som returneras i ett blockåteranrop.
+   Skickar Audience Manager en signal med egenskaper och hämtar matchande segment som returneras i ett blockåteranrop.
 
    * Här är syntaxen för den här metoden:
 

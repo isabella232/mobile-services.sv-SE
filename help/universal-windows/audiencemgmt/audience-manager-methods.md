@@ -7,7 +7,10 @@ title: Audience Manager-metoder
 topic: Developer and implementation
 uuid: efbe8f33-7f53-40a6-b7aa-a36ac718c047
 translation-type: tm+mt
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '276'
+ht-degree: 27%
 
 ---
 
@@ -16,7 +19,7 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 Lista över Audience Manager-metoder som tillhandahålls av Universal Windows Platform-biblioteket.
 
-SDK har för närvarande stöd för flera Adobe Experience Cloud-lösningar, inklusive Analytics, Target och Audience Manager. Metoderna är prefasta enligt lösningen. Audience Manager-metoder har prefixet `AudienceManager`.
+SDK har för närvarande stöd för flera Adobe Experience Cloud-lösningar, inklusive Analytics, Target och Audience Manager. Metoderna är prefasta enligt lösningen. Metoderna Audience Manager har prefixet `AudienceManager`.
 
 >[!TIP]
 >
@@ -111,5 +114,5 @@ Om målgruppshanteraren är konfigurerad i din JSON-fil skickas en signal som in
       traits["trait"] = "b";
       ADB.AudienceManager.signalWithData(traits).then(function (visitorProfile) { 
         // segments come back here in "visitorProfile", normally found in the "segs" object of your json 
-      }); 
-      
+      });
+      ```

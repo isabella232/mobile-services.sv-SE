@@ -7,7 +7,10 @@ solution: Marketing Cloud,Developer
 title: Android-metoder
 uuid: 860af1c4-f57e-4bcb-8308-4e316da9a27b
 translation-type: tm+mt
-source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '1767'
+ht-degree: 39%
 
 ---
 
@@ -57,6 +60,7 @@ Android-metoder för Xamarin-komponenter för Experience Cloud-lösningar 4.x SD
    * `ADBMobilePrivacyStatus.OptIn` - träffar skickas omedelbart.
    * `ADBMobilePrivacyStatus.OptOut` - träffar tas bort.
    * `ADBMobilePrivacyStatus.Unknown` - Om spårning offline är aktiverat sparas träffar tills sekretessstatusen ändras till att anmäla sig (träffar skickas) eller avanmäla sig (träffar ignoreras). Om spårning offline inte är aktiverat ignoreras träffar tills sekretessstatusen ändras för att anmäla sig.
+
    Standardvärdet anges i [filen ADBMobilConfig.json](/help/android/configuration/json-config/json-config.md) .
 
    * Här är syntaxen för den här metoden:
@@ -226,7 +230,7 @@ Android-metoder för Xamarin-komponenter för Experience Cloud-lösningar 4.x SD
 
 * **TrackState**
 
-   Spårar ett apptillstånd med valfria kontextdata. `States` är de vyer som är tillgängliga i din app, till exempel&quot;titelskärm&quot;,&quot;nivå 1&quot;,&quot;paus&quot; och så vidare. Dessa lägen liknar sidor på en webbplats och anropar `TrackState` stegvisa sidvyer. Om läget är tomt visas det som&quot;app name app version (build)&quot; i rapporter. Om det här värdet visas i rapporter måste du ange status för varje `TrackState` anrop.
+   Spårar ett apptillstånd med valfria kontextdata. `States` är de vyer som är tillgängliga i din app, till exempel&quot;titelskärm&quot;,&quot;nivå 1&quot;,&quot;paus&quot; och så vidare. Dessa lägen liknar sidor på en webbplats och anropar `TrackState` stegvisa sidvyer. Om läget är tomt visas det som&quot;app name app version (build)&quot; i rapporter. Om du ser det här värdet i rapporter måste du ange status för varje `TrackState` anrop.
 
    >[!TIP]
    >
@@ -490,7 +494,7 @@ Android-metoder för Xamarin-komponenter för Experience Cloud-lösningar 4.x SD
 
 * **SyncIdentifiers**
 
-   Med Experience Cloud ID kan ni ange ytterligare kund-ID:n som ska kopplas till varje besökare. Besökar-API:t godkänner flera kund-ID:n för samma besökare, med en kundtypsidentifierare som avgränsar omfånget för olika kund-ID:n. Den här metoden motsvarar den `setCustomerIDs` i JavaScript-biblioteket.
+   Med Experience Cloud-ID:t kan du ange ytterligare kund-ID:n som ska kopplas till varje besökare. Besökar-API:t godkänner flera kund-ID:n för samma besökare, med en kundtypsidentifierare som avgränsar omfånget för olika kund-ID:n. Den här metoden motsvarar den `setCustomerIDs` i JavaScript-biblioteket.
 
    * Här är syntaxen för den här metoden:
 

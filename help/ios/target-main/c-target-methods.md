@@ -1,13 +1,16 @@
 ---
 description: Här är en lista över Adobe Target-metoder som finns i iOS-biblioteket.
 seo-description: Här är en lista över Adobe Target-metoder som finns i iOS-biblioteket.
-seo-title: Målmetoder för iOS för Adobe Mobile Services
+seo-title: iOS-målmetoder för Adobe Mobile Services
 solution: Marketing Cloud,Analytics
 title: Målmetoder för iOS
 topic: Developer and implementation
 uuid: 692bcda1-02ba-4902-bd65-15888adf1952
 translation-type: tm+mt
-source-git-commit: 8dc075603544aaab7fdedb1ff10a12f7fa7e21f5
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '656'
+ht-degree: 21%
 
 ---
 

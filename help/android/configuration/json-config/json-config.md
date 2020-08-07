@@ -7,7 +7,7 @@ title: ADBMomobile JSON-konfiguration
 topic: Developer and implementation
 uuid: 1decf605-7bc3-4e73-ad52-1ecd5821599e
 translation-type: tm+mt
-source-git-commit: 86ba045b44bf6553e80727c0d61ccdd9a552d16c
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
 workflow-type: tm+mt
 source-wordcount: '1678'
 ht-degree: 4%
@@ -34,17 +34,18 @@ Här är en lista över variablerna i JSON-filen och den SDK-version du behöver
    * Möjliggör förvärv av mobilappar.
       * `server`, som är förvärvsservern som kontrolleras vid den första starten för en förvärvshänvisare.
       * `appid`, som är det genererade ID som unikt identifierar den här appen på förvärvsservern.
+
    Om det här avsnittet saknas aktiverar du förvärvet av mobilappar och hämtar SDK-konfigurationsfilen igen. Mer information finns i *referenceTimeout* i den här variabellistan.
 
 * **analyticsForwardingEnabled**
    * SDK-version är minst 4.8.0.
    * Standardvärdet är `false`.
 
-      Egenskapen i `audienceManager` objektet. Om Audience Manager är konfigurerat och `analyticsForwardingEnabled` är inställt på `true`vidarebefordras all Analytics-trafik också till Audience Manager.
+      Egenskapen i `audienceManager` objektet. Om Audience Manager är konfigurerat och `analyticsForwardingEnabled` är inställt på `true`vidarebefordras all Analytics-trafik till Audience Manager.
 
 * **backdateSessionInfo**
    * Minsta SDK-version: 4.6.
-   * Gör att Adobe SDK kan uppdatera sessionsinfo.
+   * Aktiverar/inaktiverar möjligheten för Adobe SDK att uppdatera sessionsinfo-träffar.
 
       Sessionsinformationsträffar består för närvarande av krascher och sessionslängd och kan aktiveras eller inaktiveras.
 
@@ -85,14 +86,15 @@ Här är en lista över variablerna i JSON-filen och den SDK-version du behöver
 
 * **coopUnsafe**
    * Minsta SDK-version: 4.16.1
-   * Den booleska egenskapen för det objekt `marketingCloud` som, när den är inställd på `true`det, gör att enheten avanmäts från Device Co-Op i Experience Cloud.
+   * Den booleska egenskapen för det objekt `marketingCloud` som, när den är inställd på `true`, gör att enheten väljs ut från Experience Cloud Device Co-Op.
    * Standardvärdet är `false`.
    * Den här inställningen används **endast** för Device Co-op-etablerade kunder.
-   För medlemmar i Device Co-op som kräver det här värdet `true`måste du arbeta med Co-op-teamet för att begära en blocklist-flagga på ditt Device Co-op-konto. Det finns ingen självbetjäningsväg för att aktivera dessa flaggor.
+
+   För medlemmar i Device Co-op som kräver det här värdet `true`måste du arbeta med Co-op-teamet för att begära en blockeringslista-flagga på ditt Device Co-op-konto. Det finns ingen självbetjäningsväg för att aktivera dessa flaggor.
 
    Kom ihåg följande information:
 
-   * När `coopUnsafe` är inställt på `true`läggs `coop_unsafe=1` alltid till i träffar för Audience Manager och Visitor ID.
+   * När `coopUnsafe` är inställt på `true`läggs `coop_unsafe=1` alltid till i Audience Manager och besöks-ID-träffar.
    * Om du aktiverar vidarebefordran på serversidan för Analytics till Audience Manager visas även `coop_unsafe=1` Analytics-träffar.
 
 
@@ -113,7 +115,7 @@ Här är en lista över variablerna i JSON-filen och den SDK-version du behöver
 * **meddelanden**
 
    * Minsta SDK-version: 4.2
-   * Inställningarna för meddelanden i appen definieras automatiskt av Adobe Mobile Services. Mer information finns i avsnittet *Meddelandebeskrivning* nedan.
+   * Inställningarna för meddelanden i appen definieras automatiskt av Adobe Mobile-tjänster. Mer information finns i avsnittet *Meddelandebeskrivning* nedan.
 
 * **offlineEnabled**
 
@@ -128,14 +130,14 @@ Här är en lista över variablerna i JSON-filen och den SDK-version du behöver
       >
       >Om tidsstämplar är aktiverade i rapportsviten `offlineEnabled` måste **** konfigurationsegenskapen vara true. Om rapportsviten inte är tidsstämpelaktiverad `offlineEnabled` måste **** konfigurationsegenskapen vara false.
       >
-      >Om detta inte är korrekt konfigurerat går data förlorade. Om du är osäker på om en rapportsserie är tidsstämplad eller inte kan du kontakta kundtjänst eller hämta konfigurationsfilen från Adobe Mobile Services.
+      >Om detta inte är korrekt konfigurerat går data förlorade. Om du är osäker på om en rapportsserie är tidsstämplad eller inte kan du kontakta kundtjänst eller hämta konfigurationsfilen från Adobe Mobile-tjänster.
 
       Om du för närvarande rapporterar AppMeasurement-data till en rapportserie som även samlar in data från JavaScript, kan du behöva skapa en separat rapportserie för mobildata eller inkludera en anpassad tidsstämpel för alla JavaScript-träffar som använder `s.timestamp` variabeln.
 
 * **org**
 
    * Minsta SDK-version: 4.3
-   * Anger Experience Cloud-organisations-ID för ID-tjänsten.
+   * Anger ID-tjänstens Experience Cloud-organisations-ID.
 
 * **poi**
    * Minsta SDK-version: 4.0
@@ -150,10 +152,10 @@ Här är en lista över variablerna i JSON-filen och den SDK-version du behöver
              ]
       ```
 
-      Från och med version 4.2 definieras POI i Adobe Mobile-gränssnittet och synkroniseras dynamiskt till programkonfigurationsfilen. Synkroniseringen kräver `analytics.poi` inställningen:
+      Från och med version 4.2 definieras POI i gränssnittet för Adobe Mobile och synkroniseras dynamiskt till programkonfigurationsfilen. Synkroniseringen kräver `analytics.poi` inställningen:
 
       ```javascript
-      “analytics.poi“: `https://assets.adobedtm.com/`
+        “analytics.poi“: `https://assets.adobedtm.com/`
       …/yourfile.json”`,
       ```
 
@@ -179,6 +181,7 @@ Här är en lista över variablerna i JSON-filen och den SDK-version du behöver
       * Ty `optedin`träffar skickas omedelbart.
       * Ty `optedout`träffarna tas bort.
       * Om rapportsviten till `optunknown`exempel är tidsstämpelaktiverad sparas träffar tills sekretessstatusen ändras till att anmäla sig (träffar skickas) eller avanmäla dig (träffar ignoreras).
+
       Om rapportsviten inte är tidsstämpelaktiverad ignoreras träffar tills sekretessstatusen ändras till `optedin`.  Detta anger bara det inledande värdet. Om det här värdet anges eller ändras i koden används det nya värdet tills det ändras igen eller när programmet avinstalleras och installeras om.
 
 
@@ -192,7 +195,7 @@ Här är en lista över variablerna i JSON-filen och den SDK-version du behöver
 
 * **fjärrplatser**
    * Minsta SDK-version: 4.2
-   * Konfigureras automatiskt och definierar Adobe-hanterade slutpunkter för dynamiska konfigurationsfiler.
+   * Konfigureras automatiskt och definierar slutpunkter på Adobe för dynamiska konfigurationsfiler.
 
       Den senaste uppdateringstiden för varje konfigurationsfil kontrolleras mot den aktuella versionen vid varje start och uppdateringarna hämtas och sparas.
       * `analytics.poi` är slutpunkten för POI-konfigurationen som lagras.
@@ -310,7 +313,7 @@ Here is a sample `ADBMobileConfig.json` file:
 
 ## Meddelandebeskrivning {#section_B97D654BA92149CE91F525268D7AD71F}
 
-Meddelandenoden genereras automatiskt av Adobe Mobile Services och behöver vanligtvis inte ändras manuellt. Följande beskrivning tillhandahålls i felsökningssyfte:
+Meddelandenoden genereras automatiskt av Adobe Mobile-tjänster och behöver vanligtvis inte ändras manuellt. Följande beskrivning tillhandahålls i felsökningssyfte:
 
 * &quot;messageId&quot;
 * Genererat ID, obligatoriskt
@@ -338,13 +341,13 @@ Meddelandenoden genereras automatiskt av Adobe Mobile Services och behöver vanl
    * &quot;html&quot;
       * endast helskärmsmall, obligatoriskt
       * html som definierar meddelandet
-   * &quot;image&quot;
+   * &quot;bild&quot;
       * endast helskärm, valfritt
       * URL till bilden som ska användas för helskärmsbilden
    * &quot;altImage&quot;
       * endast helskärm, valfritt
       * namnet på den paketerade bilden som ska användas om den URL som anges i
-         * image
+         * bild
          * går inte att nå
    * &quot;title&quot;
       * helskärm och varning, krävs

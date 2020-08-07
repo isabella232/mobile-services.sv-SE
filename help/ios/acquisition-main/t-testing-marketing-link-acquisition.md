@@ -8,7 +8,10 @@ title: Testa Marketing Link-förvärv
 topic: Developer and implementation
 uuid: 69503e01-182d-44c6-b0fb-e1c012ffa3bd
 translation-type: tm+mt
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+source-git-commit: c64e2fa7cee3cd35c4574e5007406b7604c99499
+workflow-type: tm+mt
+source-wordcount: '559'
+ht-degree: 0%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 Följande instruktioner hjälper er att skicka en kundvärvningskampanj via en Marketing Link som baseras på ett enhets fingeravtryck.
 
 1. Slutför de nödvändiga uppgifterna i [anskaffning](/help/ios/acquisition-main/acquisition.md)av mobilappar.
-1. I Adobe Mobile Services-gränssnittet klickar du på **[!UICONTROL Marketing Links Builder]** och genererar en länk för kundvärvning som anger App Store som mål för iOS-enheter.
+1. I användargränssnittet för Adobe Mobile Services klickar du på **[!UICONTROL Marketing Links Builder]** och genererar en länk för kundvärvning som anger App Store som mål för iOS-enheter.
 
    Exempel:
 
@@ -33,7 +36,8 @@ Följande instruktioner hjälper er att skicka en kundvärvningskampanj via en M
 
    Du bör se contextData i JSON-svaret:
 
-   ```js{"fingerprint":"bae91bb778f0ad52e37f0892961d06ac6a5c935b","endCallbacks":["***"],"timestamp":1464301217,"appguid":"da120731d6c09658b82d8fac78da1d5fc2d09c48e21b3a55f9e2d7344e08425d","contextData":
+   ```js
+   {"fingerprint":"bae91bb778f0ad52e37f0892961d06ac6a5c935b","endCallbacks":["***"],"timestamp":1464301217,"appguid":"da120731d6c09658b82d8fac78da1d5fc2d09c48e21b3a55f9e2d7344e08425d","contextData":
    {"a.launch.campaign.trackingcode":"twdf4546","a.referrer.campaign.name":"iOS Demo","a.referrer.campaign.trackingcode":"twdf4546"}
    ,"adobeData":{"unique_id":"8c14098d7c79e8a180c15e4b2403549d3cc21ea8","deeplinkid":"57477650072932ec6d3a470f"}}
    ```
@@ -48,7 +52,7 @@ Följande instruktioner hjälper er att skicka en kundvärvningskampanj via en M
 1. (Villkorligt) Om SSL-inställningen i appens konfigurationsfil är `false`ska du uppdatera din hämtningslänk så att HTTP-protokollet används i stället för HTTPS.
 1. Klicka på den genererade länken från den mobila enhet som du vill installera appen på.
 
-   Adobes servrar (`c00.adobe.com`) lagrar fingeravtrycket och omdirigerar det till App Store. Appen behöver inte laddas ned för testning.
+   Adobe-servrar (`c00.adobe.com`) lagrar fingeravtrycket och omdirigerar till App Store. Appen behöver inte laddas ned för testning.
 1. Starta programmet första gången från samma mobila enhet som du använde i steg 6.
 
    Du kan ta bort och installera programmet igen om det behövs.

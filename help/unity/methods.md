@@ -7,7 +7,10 @@ solution: Marketing Cloud,Developer
 title: ADBMoble.cs-metoder
 uuid: af504934-febd-45d9-81e2-2a310f4c65dc
 translation-type: tm+mt
-source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '1324'
+ht-degree: 35%
 
 ---
 
@@ -519,7 +522,7 @@ source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
 
 * **VisitorSyncIdentifierare**
 
-   Med Experience Cloud ID kan ni ange ytterligare kund-ID:n som ska kopplas till varje besökare. Besökar-API:t godkänner flera kund-ID:n för samma besökare, tillsammans med en kundtypsidentifierare som avgränsar omfattningen för olika kund-ID:n. Den här metoden motsvarar setCustomerID:n i JavaScript-biblioteket.
+   Med Experience Cloud-ID:t kan du ange ytterligare kund-ID:n som ska kopplas till varje besökare. Besökar-API:t godkänner flera kund-ID:n för samma besökare, tillsammans med en kundtypsidentifierare som avgränsar omfattningen för olika kund-ID:n. Den här metoden motsvarar setCustomerID:n i JavaScript-biblioteket.
 
    * Här är syntaxen för den här metoden:
 

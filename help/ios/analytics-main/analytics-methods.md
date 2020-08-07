@@ -7,7 +7,10 @@ title: Analysmetoder
 topic: Developer and implementation
 uuid: d49fe6de-cb32-4b96-9891-c567310e59a6
 translation-type: tm+mt
-source-git-commit: 82c8e82ce5ce333c2482252e96f928829d322e7e
+source-git-commit: c64e2fa7cee3cd35c4574e5007406b7604c99499
+workflow-type: tm+mt
+source-wordcount: '784'
+ht-degree: 33%
 
 ---
 
@@ -16,9 +19,9 @@ source-git-commit: 82c8e82ce5ce333c2482252e96f928829d322e7e
 
 Här är en lista över Adobe Analytics-metoder som finns i iOS-biblioteket.
 
-SDK har för närvarande stöd för flera Adobe Experience Cloud-lösningar, inklusive Analytics, Target, Audience Manager och Adobe Experience Platform Identity Service. Metoderna är prefasta enligt lösningen. Experience Cloud ID-metoder har prefixet `track`.
+SDK har för närvarande stöd för flera Adobe Experience Cloud-lösningar, inklusive Analytics, Target, Audience Manager och Adobe Experience Platform Identity Service. Metoderna är prefasta enligt lösningen. Experience Cloud ID-metoder har prefix med `track`.
 
-Var och en av dessa metoder används för att skicka data till rapportsviten för Adobe Analytics.
+Var och en av dessa metoder används för att skicka data till din Adobe Analytics rapportsvit.
 
 * **trackState: &#x200B; data:**
 

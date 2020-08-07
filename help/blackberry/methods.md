@@ -1,16 +1,19 @@
 ---
 description: Klasser och metoder från BlackBerry-biblioteket.
 seo-description: Klasser och metoder från BlackBerry-biblioteket.
-seo-title: Adobe Mobile, klass- och metodreferens
-title: Adobe Mobile, klass- och metodreferens
+seo-title: Klass och metodreferens för Adobe Mobile
+title: Klass och metodreferens för Adobe Mobile
 uuid: 1e42d759-be43-4bb3-ac1a-c7d64133d61c
 translation-type: tm+mt
-source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '988'
+ht-degree: 15%
 
 ---
 
 
-# Adobe Mobile, klass- och metodreferens {#adobe-mobile-class-and-method-reference}
+# Klass och metodreferens för Adobe Mobile {#adobe-mobile-class-and-method-reference}
 
 Klasser och metoder från BlackBerry-biblioteket.
 
@@ -145,7 +148,7 @@ SDK har för närvarande stöd för Adobe Analytics, och metoderna finns i separ
 
 ## Analysmetoder {#section_91F4AD0A045D4E4E8F9A93450503E49E}
 
-Var och en av dessa metoder används för att skicka data till rapportsviten för Adobe Analytics.
+Var och en av dessa metoder används för att skicka data till din Adobe Analytics rapportsvit.
 
 * **trackState**
 
@@ -235,7 +238,7 @@ Filen måste `ADBMobileConfig.json` placeras i *resursmappen* .
 
    >[!TIP]
    >
-   >Om tidsstämplar är aktiverade i rapportsviten `offlineEnabled` måste *konfigurationsegenskapen vara* `true`. Om rapportsviten inte är tidsstämpelaktiverad `offlineEnabled` måste ** konfigurationsegenskapen vara false. Om detta inte är korrekt konfigurerat går data förlorade. Om du är osäker på om en rapportsserie är tidsstämplad, kontaktar du [Enterprise Support](https://helpx.adobe.com/contact/enterprise-support.ec.html).
+   >Om tidsstämplar är aktiverade i rapportsviten `offlineEnabled` måste *konfigurationsegenskapen vara* `true`. Om rapportsviten inte är tidsstämpelaktiverad `offlineEnabled` måste ** konfigurationsegenskapen vara false. Om detta inte är korrekt konfigurerat går data förlorade. Om du är osäker på om en rapportsserie är tidsstämplad, kontaktar du [Enterprise Support](https://helpx.adobe.com/se/contact/enterprise-support.ec.html).
 
    Om du för närvarande rapporterar AppMeasurement-data till en rapportserie som även samlar in data från JavaScript, kan du behöva skapa en separat rapportserie för mobildata, eller inkludera en anpassad tidsstämpel för alla JavaScript-träffar med hjälp av `s.timestamp` variabeln.
 

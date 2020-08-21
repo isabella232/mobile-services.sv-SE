@@ -8,7 +8,10 @@ title: Testar anskaffning av marknadsföringslänk
 topic: Developer and implementation
 uuid: d0933dcc-8fc3-4f60-987f-7a54559aacf5
 translation-type: tm+mt
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
+workflow-type: tm+mt
+source-wordcount: '758'
+ht-degree: 1%
 
 ---
 
@@ -22,7 +25,7 @@ Om din mobilapp ännu inte finns i Google Play kan du välja vilken mobilapp som
 Appen måste vara nyligen installerad eller ha data rensade i **[!UICONTROL Settings]** varje gång ett test körs. Detta garanterar att de inledande livscykelvärdena som är kopplade till parametrarna för kampanjfrågesträngen skickas när appen startas första gången.
 
 1. Slutför de nödvändiga uppgifterna när du skaffar [mobilappar](/help/android/acquisition-main/acquisition.md) och se till att du har implementerat sändningsmottagaren korrekt för `INSTALL_REFERRER`.
-1. I Adobe Mobile Services]-gränssnittet klickar du på **[!UICONTROL Acquisition]** > **[!UICONTROL Marketing Links Builder]** och skapar en URL för Acquisition Marketing Link som anger Google Play som mål för Android-enheter.
+1. I användargränssnittet för Adobe Mobile Services klickar du på **[!UICONTROL Acquisition]** > **[!UICONTROL Marketing Links Builder]** och skapar en URL för Acquisition Marketing Link som anger Google Play som mål för Android-enheter.
 
    Mer information finns i [Marketing Links Builder](/help/using/acquisition-main/c-marketing-links-builder/c-marketing-links-builder.md).
 

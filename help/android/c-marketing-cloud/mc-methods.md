@@ -8,22 +8,25 @@ title: Adobe Experience Platform Identity Service-metoder
 topic: Developer and implementation
 uuid: c5107a7e-273b-4f71-8738-4c603479b24c
 translation-type: tm+mt
-source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
+source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
+workflow-type: tm+mt
+source-wordcount: '449'
+ht-degree: 23%
 
 ---
 
 
-# Adobe Experience Platform Identity Service-metoder{#experience-cloud-id-service-methods}
+# Adobe Experience Platform Identity Service methods{#experience-cloud-id-service-methods}
 
 Här är Experience Cloud ID-metoderna som tillhandahålls av Android-biblioteket.
 
-SDK har för närvarande stöd för flera Adobe Experience Cloud-lösningar], inklusive Analytics, Target, Audience Manager och Adobe Experience Platform Identity Service.
+SDK har för närvarande stöd för flera Adobe Experience Cloud-lösningar, inklusive Analytics, Target, Audience Manager och Adobe Experience Platform Identity Service.
 
-Metoderna är prefasta enligt lösningen. Experience Cloud ID-metoder har till exempel prefix `visitor`. Mer information finns i [Experience Cloud ID-konfiguration](/help/android/c-marketing-cloud/mcvid.md).
+Metoderna är prefasta enligt lösningen. Experience Cloud ID-metoder har till exempel prefixet `visitor`. Mer information finns i [Experience Cloud ID-konfiguration](/help/android/c-marketing-cloud/mcvid.md).
 
 * **public static String appendToURL(final String URL)**
 
-   Lägger till Adobe-besöksdata i en URL-sträng som ska användas med Adobe JavaScript-biblioteket. Du måste ha Mobile SDK 4.12+ för att kunna använda den här metoden. Mer information finns i [Bifoga hjälpfunktion](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/methods/appendvisitorid.html)för besökar-ID.
+   Lägger till besöksdata från Adobe i en URL-sträng som ska användas med JavaScript-biblioteket Adobe. Du måste ha Mobile SDK 4.12+ för att kunna använda den här metoden. Mer information finns i [Bifoga hjälpfunktion](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/methods/appendvisitorid.html)för besökar-ID.
 
    >[!IMPORTANT]
    >
@@ -70,7 +73,7 @@ Metoderna är prefasta enligt lösningen. Experience Cloud ID-metoder har till e
 
 * **syncIdentifiers**
 
-   Med Experience Cloud-ID kan ni ange ytterligare kund-ID:n som kan kopplas till varje besökare. Besökar-API:t godkänner flera kund-ID:n för samma besökare, med en kundtypsidentifierare som avgränsar omfånget för olika kund-ID:n. Den här metoden motsvarar den `setCustomerIDs` i JavaScript-biblioteket.
+   Med Experience Cloud-ID:t kan du ange ytterligare kund-ID:n som kan kopplas till varje besökare. Besökar-API:t godkänner flera kund-ID:n för samma besökare, med en kundtypsidentifierare som avgränsar omfattningen för olika kund-ID:n. Den här metoden motsvarar den `setCustomerIDs` i JavaScript-biblioteket.
 
    * Här är syntaxen för den här metoden:
 

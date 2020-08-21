@@ -5,7 +5,10 @@ seo-title: Konfigurera återanslag
 title: Konfigurera återanslag
 uuid: a026575c-057b-4868-b6c8-9514cbc32b4d
 translation-type: tm+mt
-source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
+source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
+workflow-type: tm+mt
+source-wordcount: '430'
+ht-degree: 1%
 
 ---
 
@@ -51,7 +54,7 @@ Tack vare återkopplingar kan du skicka data som samlats in av Adobe Mobile till
       Ange en eller flera datataggar och villkor som utlöser återanslående. Du kan till exempel välja **[!UICONTROL Crashed]** som utlösare och **[!UICONTROL Exists]** som villkor för återanslående när programmet kraschar. Du kan också ange vilka mätvärden som aktiverar återanslående. Du kan till exempel välja **[!UICONTROL Device Name]** som utlösare **[!UICONTROL Equals]** och **[!UICONTROL iPhone 6 Plus]** som villkor för att aktivera återanslående när appen kraschar på iPhone 6 Plus-enheter.
 
    * **[!UICONTROL Trait(s)]**
-   Ange vem som kan se meddelandet när det utlöses. Du kan välja mellan **[!UICONTROL Session Length**, **[!UICONTROL First Launch Date]** och **[!UICONTROL App ID]**.
+   Ange vem som kan se meddelandet när det utlöses. Alternativen är **[!UICONTROL Session Length]**, **[!UICONTROL First Launch Date]**, och **[!UICONTROL App ID]**.
 
 1. Klicka **[!UICONTROL Save]** för att skapa återanslående och lägga till det i **[!UICONTROL Manage Postbacks]** listan.
 

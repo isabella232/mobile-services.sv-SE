@@ -1,16 +1,19 @@
 ---
 description: När du har lagt till biblioteket i ditt projekt kan du göra alla anrop till analysmetoden var som helst i din app (se till att du importerar ADBMomobile.h till din klass).
 seo-description: När du har lagt till biblioteket i ditt projekt kan du göra alla anrop till analysmetoden var som helst i din app (se till att du importerar ADBMomobile.h till din klass).
-seo-title: Analyser
-title: Analyser
+seo-title: 'Analytics  '
+title: 'Analytics  '
 uuid: de018eda-b37d-4afe-83a0-8011381d7aff
 translation-type: tm+mt
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
+workflow-type: tm+mt
+source-wordcount: '656'
+ht-degree: 3%
 
 ---
 
 
-# Analyser {#analytics}
+# Analytics{#analytics}  
 
 När du har lagt till biblioteket i ditt projekt kan du göra alla anrop till analysmetoden var som helst i din app (se till att du importerar ADBMomobile.h till din klass).
 
@@ -30,7 +33,7 @@ Innan du lägger till kod bör du be Analytics Administrator att slutföra följ
 
    ![](assets/enable-lifecycle.png)
 
-Livscykelmätvärden är nu klara att hämtas och Mobile Application Reports] visas på **[!UICONTROL Reports]** -menyn i gränssnittet för marknadsföringsrapporter.
+Livscykelmätvärden är nu klara att hämtas och Mobile Application Reports visas på **[!UICONTROL Reports]** menyn i gränssnittet för marknadsföringsrapporter.
 
 ## Samla in livscykelvärden {#task_25D469C62DF84573AEB5E8E950B96205}
 
@@ -60,13 +63,13 @@ Bearbetningsreglerna ger dig flera fördelar:
 
 Alla värden som du tilldelade direkt till variabler ska i stället läggas till i `data` HashMap.
 
-## Bearbetar regler {#concept_3EA4CD602AF4488A896B0EDD3BA2D969}
+## Behandlingsregler {#concept_3EA4CD602AF4488A896B0EDD3BA2D969}
 
 Bearbetningsregler används för att kopiera data som du skickar i kontextdatavariabler till variabler, props och andra variabler för rapportering.
 
 [Utbildning](https://tv.adobe.com/embed/1181/16506/) i bearbetningsregler på Summit 2013
 
-[Bearbetar regler](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html)
+[Bearbetningsregler](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html)
 
 [Bli behörig att använda bearbetningsregler](https://helpx.adobe.com/analytics/kb/processing-rules-authorization.html)
 

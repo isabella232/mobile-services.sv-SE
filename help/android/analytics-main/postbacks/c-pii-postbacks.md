@@ -5,7 +5,10 @@ seo-title: PII-eftersläpningar
 title: PII-eftersläpningar
 uuid: 8d1f1fb8-6842-478b-a164-e7f727755bd9
 translation-type: tm+mt
-source-git-commit: 70ac08c74e11a68d94d3f10ed6d7fc133d34149d
+source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
+workflow-type: tm+mt
+source-wordcount: '182'
+ht-degree: 0%
 
 ---
 
@@ -14,7 +17,7 @@ source-git-commit: 70ac08c74e11a68d94d3f10ed6d7fc133d34149d
 
 Du kan använda Adobe SDK för att samla in personligt identifierbar information (PII) och skicka den till en tredje parts slutpunkt.
 
-När du vill använda Adobe SDK för att samla in PII-filer ska du skicka ett PII-spårsamtal. Även om det här anropet möjliggör insamling av PII-data, skickar SDK inte automatiskt data till en Adobe-slutpunkt. En PII-typ för återanslående måste konfigureras med rätt slutpunkt.
+När du vill använda Adobe SDK för att samla in PII-filer bör du skicka ett PII-spårsamtal. Även om det här anropet möjliggör insamling av PII-data, skickar SDK inte data automatiskt till en Adobe-slutpunkt. En PII-typ för återanslående måste konfigureras med rätt slutpunkt.
 
 >[!TIP]
 >
@@ -22,7 +25,7 @@ När du vill använda Adobe SDK för att samla in PII-filer ska du skicka ett PI
 
 ## Spåra PII-återanslag {#section_36B967B888CF467EACCDEF61DFA0B12B}
 
-1. Lägg till [biblioteket i ditt projekt och implementera livscykeln.
+1. Lägg till biblioteket i ditt projekt och implementera livscykeln.
 
    Mer information finns i *Lägga till SDK- och konfigurationsfilen i IntelliJ IDEA- eller Eclipse-projektet* i [Core-implementering och livscykel](/help/android/getting-started/dev-qs.md).
 

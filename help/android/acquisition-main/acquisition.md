@@ -1,27 +1,30 @@
 ---
-description: Förvärvningslänkar med unika spårningskoder kan genereras i Adobes mobiltjänster. När en användare hämtar och kör en app från App Store efter att ha klickat på den genererade länken, samlar SDK automatiskt in och skickar förvärvsdata till Adobe Mobile Services.
+description: Förvärvningslänkar med unika spårningskoder kan genereras i Adobe Mobile-tjänster. När en användare hämtar och kör en app från App Store efter att ha klickat på den genererade länken, samlar SDK automatiskt in och skickar hämtningsdata till Adobe Mobile-tjänster.
 keywords: android;library;mobile;sdk
-seo-description: Förvärvningslänkar med unika spårningskoder kan genereras i Adobes mobiltjänster. När en användare hämtar och kör en app från App Store efter att ha klickat på den genererade länken, samlar SDK automatiskt in och skickar förvärvsdata till Adobe Mobile Services.
-seo-title: Förvärv av mobilappar
+seo-description: Förvärvningslänkar med unika spårningskoder kan genereras i Adobe Mobile-tjänster. När en användare hämtar och kör en app från App Store efter att ha klickat på den genererade länken, samlar SDK automatiskt in och skickar hämtningsdata till Adobe Mobile-tjänster.
+seo-title: Mobilförvärv
 solution: Marketing Cloud,Analytics
-title: Förvärv av mobilappar
+title: Mobilförvärv
 topic: Developer and implementation
 uuid: 4d32eae9-e856-4e40-8a29-2b5bccd106e0
 translation-type: tm+mt
-source-git-commit: 8a25259732a916f977f733cd22971b1d847aae5f
+source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
+workflow-type: tm+mt
+source-wordcount: '876'
+ht-degree: 1%
 
 ---
 
 
-# Förvärva mobilappar {#mobile-app-acquisition}
+# Mobile app acquisition {#mobile-app-acquisition}
 
-Förvärvningslänkar med unika spårningskoder kan genereras i Adobes mobiltjänster. När en användare hämtar och kör en app från App Store efter att ha klickat på den genererade länken, samlar SDK automatiskt in och skickar förvärvsdata till Adobe Mobile Services.
+Förvärvningslänkar med unika spårningskoder kan genereras i Adobe Mobile-tjänster. När en användare hämtar och kör en app från App Store efter att ha klickat på den genererade länken, samlar SDK automatiskt in och skickar hämtningsdata till Adobe Mobile-tjänster.
 
 ## Ny version av Adobe Experience Platform Mobile SDK
 
 Letar du efter information och dokumentation om Adobe Experience Platform Mobile SDK? Klicka [här](https://aep-sdks.gitbook.io/docs/) för att få den senaste dokumentationen.
 
-Från om med september 2018 har vi släppt en ny större version av SDK. Dessa nya SDK:er för Adobe Experience Platform Mobile kan konfigureras via [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
+Från om med september 2018 har vi släppt en ny större version av SDK. Dessa nya Adobe Experience Platform Mobile SDK:er kan konfigureras via [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
 
 * Gå till Adobe Experience Platform Launch för att komma igång.
 * Om du vill se vad som finns i Experience Platform SDK-databaserna går du till [Github: Adobe Experience Platform SDKs](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
@@ -30,7 +33,7 @@ Från om med september 2018 har vi släppt en ny större version av SDK. Dessa n
 >
 >Om du vill använda förvärvet **måste** du ha SDK version 4.1 eller senare.
 
-Förvärvningslänkar måste skapas i Adobes mobiltjänster. Mer information finns i [Anskaffning](/help/using/acquisition-main/acquisition-main.md).
+Förvärvningslänkar måste skapas i Adobe Mobile-tjänster. Mer information finns i [Anskaffning](/help/using/acquisition-main/acquisition-main.md).
 
 **I SDK version 4.18.0 och senare**:
 
@@ -119,7 +122,7 @@ void handleGooglePlayReferrer() {
 
 **I SDK version 4.13.1 och senare**:
 
-Om du inte kan använda förvärvslänkarna som skapats i Adobe Mobile Services kan förvärvsuppgifterna fortfarande samlas in och skickas av SDK med Google Play Acquisition.
+Om du inte kan använda de förvärvslänkar som har skapats i Adobe Mobile Services kan förvärvsdata fortfarande samlas in och skickas av SDK med Google Play Acquisition.
 
 Så här samlar du in inhämtningsdata från en Google Play Acquisition-kampanj:
 
@@ -127,7 +130,7 @@ Så här samlar du in inhämtningsdata från en Google Play Acquisition-kampanj:
 
    Anpassade inhämtningsdata kan användas med standardvärdepar för Google Play Acquisition.
 
-* När användaren hämtar och kör en app som ett resultat av en Google Play-butik samlas data från hänvisaren in och skickas till Adobe Mobile Services.
+* När användaren hämtar och kör en app som ett resultat av en Google Play-butik samlas data från referenten in och skickas till Adobe Mobile Services.
 
    * Data lagras och är tillgängliga i den `AdobeDataCallback` instans som registrerades tidigare med SDK:n.
 
@@ -137,11 +140,11 @@ Så här samlar du in inhämtningsdata från en Google Play Acquisition-kampanj:
 
    * Anpassade nycklar som var en del av hämtningsdata från Google Play kommer att namnfördelas med &quot; `a.acquisition.custom.`&quot;
 
-Om du använder förvärvslänkarna som skapades på Adobe Mobile Services lägger du till anpassade data till förvärvslänken genom att utföra följande uppgifter:
+Om du använder förvärvslänkarna som skapades på Adobe Mobile Services lägger du till anpassade data till hämtningslänken genom att utföra följande uppgifter:
 
 1. Lägg till en förvärvsvariabel som prefix med &quot; `adb`&quot;.
 
-   När SDK tar emot inhämtningsdata från Adobe Mobile Services vid den första starten, lagras dessa data och är tillgängliga i den `AdobeDataCallback` instans som registrerats tidigare med SDK. Mer information finns i [Konfigurationsmetoder](/help/android/configuration/methods.md).
+   När SDK tar emot förvärvsdata från Adobe Mobile Services vid första starten lagras data och är tillgängliga i den `AdobeDataCallback` instans som registrerats tidigare med SDK. Mer information finns i [Konfigurationsmetoder](/help/android/configuration/methods.md).
 
 1. Händelsetypen `MobileDataEvent.MOBILE_EVENT_ACQUISITION_INSTALL` eller `MobileDataEvent.MOBILE_EVENT_ACQUISITION_LAUNCH` händelsetypen kommer att användas.
 
@@ -155,7 +158,7 @@ Uppdateringarna i det här avsnittet gör det möjligt för SDK att skicka förv
 
 ## Spåra mobilförvärv {#section_CEA30C652AC8470784B8054E299B80FA}
 
-1. Lägg till biblioteket [i ditt projekt och implementera livscykeln.
+1. Lägg till biblioteket i ditt projekt och implementera livscykeln.
 
    Mer information finns i *Lägga till SDK- och konfigurationsfilen i IntelliJ IDEA- eller Eclipse-projektet* i [Core-implementering och livscykel](/help/android/getting-started/dev-qs.md).
 
@@ -208,7 +211,7 @@ Uppdateringarna i det här avsnittet gör det möjligt för SDK att skicka förv
    >
    >Om du skickar data till flera rapportsviter använder du hämtningsinställningarna (hämtningsserver och appid) från appen som är associerad med den första rapportsviten i din lista över rapportsvits-ID:n.
 
-   Inställningarna `acquisition` genereras av Adobe Mobile Services och bör inte ändras. Mer information om hur du hämtar en anpassad `ADBMobileConfig.json` fil med förkonfigurerade `acquisition` inställningar finns i [Innan du börjar](/help/android/getting-started/requirements.md).
+   Inställningarna `acquisition` genereras av Adobe Mobile-tjänsterna och bör inte ändras. Mer information om hur du hämtar en anpassad `ADBMobileConfig.json` fil med förkonfigurerade `acquisition` inställningar finns i [Innan du börjar](/help/android/getting-started/requirements.md).
 
 När dessa inställningar har aktiverats skickas kundvärvningsdata automatiskt med det inledande livscykelanropet efter att appen startades första gången.
 

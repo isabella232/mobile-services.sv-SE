@@ -7,7 +7,10 @@ title: Snabbstart för utvecklare
 topic: Developer and implementation
 uuid: b368959b-d985-436e-8b3e-97e355a97951
 translation-type: tm+mt
-source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
+source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
+workflow-type: tm+mt
+source-wordcount: '828'
+ht-degree: 0%
 
 ---
 
@@ -109,7 +112,7 @@ När du använder SDK i ett WinJS-projekt ska du dessutom använda en tom strän
 ## Lägg till biblioteks- och konfigurationsfilen i projektet - WinJS {#section_FF83113EBF4742AFA929F4AC28F92DB5}
 
 1. Starta Visual Studio och öppna din lösning.
-1. I **Solution Explorer** högerklickar du **[!UICONTROL References]** och väljer **[!UICONTROL Add Reference**.
+1. Högerklicka i **Solution Explorer****[!UICONTROL References]** och välj **[!UICONTROL Add Reference]**.
 
    Mer information finns i *Markera rätt version* nedan.
 
@@ -174,7 +177,7 @@ Följande är ett exempel på en `ADBMobileConfig.json` fil:
 Uppdatera minst följande värden för de lösningar du använder:
 
 * **Analyser**: `rsids` och `server`
-* **Mål**: `clientCode`
+* **Målgrupp**: `clientCode`
 * **Målgruppshantering**: `server`
 
 Mer information finns i [ADBMobileConfig.json-konfiguration](/help/windows-appstore/c-configuration/methods.md).

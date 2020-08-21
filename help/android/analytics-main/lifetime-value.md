@@ -7,7 +7,10 @@ title: Livstidsvärde för besökare
 topic: Developer and implementation
 uuid: ba0308de-282e-46f9-a14c-19fb6d5c363e
 translation-type: tm+mt
-source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
+source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
+workflow-type: tm+mt
+source-wordcount: '232'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +23,7 @@ Varje gång du skickar ett värde med `trackLifetimeValueIncrease`läggs värdet
 
 ## Spåra besökarens livstidsvärde {#section_390943A49AF841F2941E65D6DF2B3F5A}
 
-1. Lägg till [library in your project and implement lifecycle.
+1. Lägg till biblioteket i ditt projekt och implementera livscykeln.
 
    Mer information finns i *Lägga till SDK- och konfigurationsfilen i IntelliJ IDEA- eller Eclipse-projektet* i [Core-implementering och livscykel](/help/android/getting-started/dev-qs.md).
 1. Importera biblioteket:
@@ -45,7 +48,7 @@ cdata.put("myapp.ImageLiked", imageName);
 Analytics.trackLifetimeValueIncrease(BigDecimal.valueOf(5.0), cdata);
 ```
 
-Kontextdatavärden måste mappas till anpassade variabler i Adobe Mobile Services:
+Kontextdatavärden måste mappas till anpassade variabler i Adobe Mobile-tjänster:
 
 ![](assets/map-variable-context-ltv.png)
 

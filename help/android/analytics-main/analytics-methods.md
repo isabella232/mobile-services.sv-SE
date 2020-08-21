@@ -8,7 +8,7 @@ title: Analysmetoder
 topic: Developer and implementation
 uuid: ac7c640e-9dcc-4724-b561-019cc025d5a7
 translation-type: tm+mt
-source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
 workflow-type: tm+mt
 source-wordcount: '740'
 ht-degree: 28%
@@ -20,7 +20,7 @@ ht-degree: 28%
 
 Här är en lista över Adobe Analytics-metoder som finns i Android-biblioteket.
 
-SDK har för närvarande stöd för flera Adobe Experience Cloud-lösningar], inklusive Analytics], Target], Audience Manager] och Adobe Experience Platform Identity Service]. Metoder prefix enligt lösningen, till exempel prefix med Experience Cloud ID-metoder `analytics`.
+SDK har för närvarande stöd för flera Adobe Experience Cloud-lösningar, inklusive Analytics, Target, Audience Manager och Adobe Experience Platform Identity Service. Metoder prefix enligt lösningen, till exempel prefix med Experience Cloud ID-metoder `analytics`.
 
 Var och en av följande metoder används för att skicka data till din Adobe Analytics rapportsvit:
 

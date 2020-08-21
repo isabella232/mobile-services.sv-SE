@@ -1,24 +1,27 @@
 ---
-description: Information som hjälper dig att använda SDK:t för Windows 8.1 Universal App Store med Adobe Analytics.
-seo-description: Information som hjälper dig att använda SDK:t för Windows 8.1 Universal App Store med Adobe Analytics.
+description: Information som kan hjälpa dig att använda Windows 8.1 Universal App Store SDK med Adobe Analytics.
+seo-description: Information som kan hjälpa dig att använda Windows 8.1 Universal App Store SDK med Adobe Analytics.
 seo-title: Analysmetoder
 solution: Marketing Cloud,Analytics
 title: Analysmetoder
 topic: Developer and implementation
 uuid: 79db105c-216c-4061-97f3-a55954995e67
 translation-type: tm+mt
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
+workflow-type: tm+mt
+source-wordcount: '630'
+ht-degree: 26%
 
 ---
 
 
 # Analysmetoder {#analytics-methods}
 
-Information som hjälper dig att använda SDK:t för Windows 8.1 Universal App Store med Adobe Analytics.
+Information som kan hjälpa dig att använda Windows 8.1 Universal App Store SDK med Adobe Analytics.
 
-SDK har för närvarande stöd för flera Adobe Experience Cloud-lösningar], inklusive Analytics], Target] och Audience Manager]. Metoderna är prefasta enligt lösningen. Analysmetoder har prefixet&quot;Analytics&quot;.
+SDK har för närvarande stöd för flera Adobe Experience Cloud-lösningar, inklusive Analytics, Target och Audience Manager. Metoderna är prefasta enligt lösningen. Analysmetoder har prefixet&quot;Analytics&quot;.
 
-Var och en av dessa metoder används för att skicka data till rapportsviten för Adobe Analytics.
+Var och en av dessa metoder används för att skicka data till din Adobe Analytics rapportsvit.
 
 >[!TIP]
 >

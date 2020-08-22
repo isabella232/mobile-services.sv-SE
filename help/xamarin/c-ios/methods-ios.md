@@ -7,7 +7,10 @@ solution: Marketing Cloud,Developer
 title: iOS-metoder
 uuid: d6a056db-80c1-44d0-970f-c961ad01b0bc
 translation-type: tm+mt
-source-git-commit: f53953831e6471ea64eb2ae06ddae16ca0eab6f6
+source-git-commit: 70c79d404c29a8a35b5eadbb3ad99f953a5166e0
+workflow-type: tm+mt
+source-wordcount: '1749'
+ht-degree: 39%
 
 ---
 
@@ -88,6 +91,7 @@ iOS-metoder för Xamarin-komponenter för Experience Cloud-lösningar 4.x SDK.
    * `ADBMobilePrivacyStatus.OptIn` - träffar skickas omedelbart.
    * `ADBMobilePrivacyStatus.OptOut` - träffar tas bort.
    * ADBMoblePrivacyStatus.Unknown - Om spårning offline är aktiverat sparas träffar tills sekretessstatusen ändras till anmälan (träffar skickas) eller avanmälan (träffar ignoreras). Om spårning offline är inaktiverat ignoreras träffar tills sekretessstatusen ändras för att anmäla sig.
+
    Standardvärdet anges i [ADBMobleConfig.json](/help/ios/configuration/json-config/json-config.md).
 
    * Här är syntaxen för den här metoden:
@@ -210,11 +214,12 @@ iOS-metoder för Xamarin-komponenter för Experience Cloud-lösningar 4.x SDK.
 
 * **TrackState**
 
-   Spårar ett apptillstånd med valfria kontextdata. Lägen är de vyer som är tillgängliga i din app, till exempel&quot;titelskärm&quot;,&quot;nivå 1&quot;,&quot;paus&quot; och så vidare. Dessa lägen liknar sidor på en webbplats och anropar `TrackState` inkrementella sidvyer. Om läget är tomt visas det som&quot;programnamnsversion (build)&quot; i rapporter. Om du ser det här värdet i rapporter måste du ange status för varje `TrackState` anrop.
+   Spårar ett apptillstånd med valfria kontextdata. Lägen är de vyer som är tillgängliga i din app, till exempel&quot;titelskärm&quot;,&quot;nivå 1&quot;,&quot;paus&quot; och så vidare. Dessa lägen liknar sidor på en webbplats och anropar `TrackState` inkrementella sidvyer. Om läget är tomt visas det som&quot;programnamnsversion (build)&quot; i rapporter. Om det här värdet visas i rapporter måste du ange status för varje `TrackState` anrop.
 
-   [!TIP]
-   >Det här är det enda spårningsanropet som ökar sidvisningen.
+   >[!TIP]
    >
+   >Det här är det enda spårningsanropet som ökar sidvisningen.
+
    * Här är syntaxen för den här metoden:
 
       ```objective-c
@@ -234,7 +239,8 @@ iOS-metoder för Xamarin-komponenter för Experience Cloud-lösningar 4.x SDK.
    Spårar en åtgärd i din app. Åtgärder är det som händer i appen och som du vill mäta, till exempel&quot;dödsfall&quot;,&quot;ökad nivå&quot;,&quot;feed-prenumerationer&quot; och andra mätvärden.
 
    >[!TIP]
-   Om du har kod som kan köras medan programmet är i bakgrunden (till exempel en hämtning av bakgrundsdata) använder du `trackActionFromBackground` istället.
+   >
+   >Om du har kod som kan köras medan programmet är i bakgrunden (till exempel en hämtning av bakgrundsdata) använder du `trackActionFromBackground` istället.
 
    * Här är syntaxen för den här metoden:
 
@@ -253,7 +259,8 @@ iOS-metoder för Xamarin-komponenter för Experience Cloud-lösningar 4.x SDK.
    Spårar en åtgärd som inträffade i bakgrunden. Detta förhindrar att livscykelhändelser utlöses i vissa scenarier.
 
    >[!TIP]
-   Den här metoden ska bara anropas i kod som körs medan programmet finns i bakgrunden.
+   >
+   > Den här metoden ska bara anropas i kod som körs medan programmet finns i bakgrunden.
 
    * Här är syntaxen för den här metoden:
 
@@ -336,7 +343,8 @@ iOS-metoder för Xamarin-komponenter för Experience Cloud-lösningar 4.x SDK.
    Starta en tidsbestämd åtgärd med namnåtgärd. Om du anropar den här metoden för en åtgärd som redan har startats, skrivs den tidigare tidsåtgärden över.
 
    >[!TIP]
-   Det här samtalet skickar ingen träff.
+   >
+   >Det här samtalet skickar ingen träff.
 
    * Här är syntaxen för den här metoden:
 
@@ -355,7 +363,8 @@ iOS-metoder för Xamarin-komponenter för Experience Cloud-lösningar 4.x SDK.
    Skicka data för att uppdatera kontextdata som är associerade med den angivna åtgärden. De data som skickas läggs till befintliga data för den angivna åtgärden och skriver över data om samma nyckel redan har definierats för åtgärden.
 
    >[!TIP]
-   Det här samtalet skickar ingen träff.
+   >
+   >Det här samtalet skickar ingen träff.
 
    * Här är syntaxen för den här metoden:
 
@@ -475,7 +484,7 @@ iOS-metoder för Xamarin-komponenter för Experience Cloud-lösningar 4.x SDK.
 
 * **VisitorSyncIdentifierare**
 
-   Med Experience Cloud ID kan ni ange ytterligare kund-ID:n som ska kopplas till varje besökare. Besökar-API:t godkänner flera kund-ID:n för samma besökare, tillsammans med en kundtypsidentifierare som avgränsar omfattningen för olika kund-ID:n. Den här metoden motsvarar setCustomerID:n i JavaScript-biblioteket.
+   Med Experience Cloud-ID:t kan du ange ytterligare kund-ID:n som ska kopplas till varje besökare. Besökar-API:t godkänner flera kund-ID:n för samma besökare, tillsammans med en kundtypsidentifierare som avgränsar omfattningen för olika kund-ID:n. Den här metoden motsvarar setCustomerID:n i JavaScript-biblioteket.
 
    * Här är syntaxen för den här metoden:
 
@@ -531,7 +540,7 @@ iOS-metoder för Xamarin-komponenter för Experience Cloud-lösningar 4.x SDK.
 
 * **TargetCreateOrderConfirmRequest**
 
-   Skapar en `ADBTargetLocationRequest`.
+   Skapar en `ADBTargetLocationRequest`bild.
 
    * Här är syntaxen för den här metoden:
 

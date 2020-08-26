@@ -7,9 +7,9 @@ title: Snabbstart för utvecklare
 topic: Developer and implementation
 uuid: b368959b-d985-436e-8b3e-97e355a97951
 translation-type: tm+mt
-source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
+source-git-commit: 97e6d24b75e770685d440d31aa5ee8924a079501
 workflow-type: tm+mt
-source-wordcount: '828'
+source-wordcount: '826'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ När du använder SDK i ett WinJS-projekt ska du dessutom använda en tom strän
 ## Lägg till biblioteks- och konfigurationsfilen i projektet - C Sharp {#section_93C25D893B4A4CD3B996CF3C5590C8DC}
 
 1. Starta Visual Studio och öppna din lösning.
-1. Högerklicka i **lösningsutforskaren****[!UICONTROL References]** och välj **[!UIUCONTROL Lägg till referens]**.
+1. Högerklicka i **Solution Explorer****[!UICONTROL References]** och välj **[!UICONTROL Add Reference]**.
 
 1. Välj rätt version av biblioteket och bläddra till den associerade `ADBMobile.winmd` filen.
 

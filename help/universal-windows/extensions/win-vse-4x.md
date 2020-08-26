@@ -7,9 +7,9 @@ title: Windows Visual Studio-tillägg för Experience Cloud SDK 4.x
 topic: Developer and implementation
 uuid: e48faf54-8b08-4224-9d80-e553a983129e
 translation-type: tm+mt
-source-git-commit: 38e63d6f4f85c2ced6364baa47646241ac783c12
+source-git-commit: 97e6d24b75e770685d440d31aa5ee8924a079501
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '196'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Det här tillägget är ett mycket enklare sätt att lägga till en referens fö
 
 1. Hämta Windows Universal SDK från [GitHub](https://github.com/Adobe-Marketing-Cloud/mobile-services/releases).
 1. Zippa upp den hämtade filen lokalt.
-1. Dubbelklicka på **[!UICONTRTOL filen ADBMomobileUniversalWindowsVSIX.vsix]** för att öppna installationsprogrammet.
+1. Dubbelklicka på **[!UICONTROL ADBMobileUniversalWindowsVSIX.vsix]** filen för att öppna installationsprogrammet.
 1. Välj **[!UICONTROL Global Location]** och installera biblioteket.
 
 ## Lägg till referenser till ditt projekt {#section_00C14FE9243D4330BE1F4BB56FCF08B1}

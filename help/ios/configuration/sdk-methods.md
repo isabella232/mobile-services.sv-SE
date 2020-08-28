@@ -7,7 +7,10 @@ title: Konfigurationsmetoder
 topic: Developer and implementation
 uuid: 623c7b07-fbb3-4d39-a5c4-e64faec4ca29
 translation-type: tm+mt
-source-git-commit: ea4b054fbeea3967c28ee938aed5997a4c287a0d
+source-git-commit: 527f93ae4ec910d1d1ea3637eb3a62d749a14397
+workflow-type: tm+mt
+source-wordcount: '1198'
+ht-degree: 21%
 
 ---
 
@@ -20,11 +23,12 @@ SDK har för närvarande stöd för flera Adobe Experience Cloud-lösningar, ink
 
 * **setAppExtensionType**
 
-   Konfigurerar SDK-inställningen för Adobe Mobile för att avgöra vilken typ av tillägg som körs.
+   Konfigurerar SDK-inställningen för Adobe Mobile för att avgöra vilken typ av tillägg som körs för närvarande.
 
    Ange något av följande värden:
    * `ADBMobileAppExtensionTypeRegular` - tillägget medföljer ett program som innehåller det.
    * `ADBMobileAppExtensionTypeStandAlone` - tillägget paketeras inte med ett innehållande program.
+
    >[!TIP]
    >
    >Den här metoden bör **bara** användas om appen har ett tillägg eller är ett fristående tillägg. Mer information finns i *ADBMomobileAppExtensionType* nedan.
@@ -120,7 +124,7 @@ Standardvärdet anges i `ADBMobileConfig.json` filen.
 
 * **trackingIdentifier**
 
-   Returnerar den automatiskt genererade besökaridentifieraren. Detta är ett programspecifikt unikt besökar-ID som genereras av Adobes servrar. Om Adobes servrar inte kan nås vid genereringen genereras ID:t med Apples CFUID. Värdet genereras vid den första starten och lagras och används från den tidpunkten och framåt. Detta ID bevaras mellan programuppgraderingar, sparas och återställs under standardprocessen för säkerhetskopiering av program och tas bort vid avinstallation.
+   Returnerar den automatiskt genererade besökaridentifieraren. Detta är ett programspecifikt unikt besökar-ID som genereras av Adobe servrar. Om det inte går att nå Adobe-servrar vid genereringen genereras ID:t med Apples CFUID. Värdet genereras vid den första starten och lagras och används från den tidpunkten och framåt. Detta ID bevaras mellan programuppgraderingar, sparas och återställs under standardprocessen för säkerhetskopiering av program och tas bort vid avinstallation.
 
    >[!TIP]
    >
@@ -354,7 +358,10 @@ Standardvärdet anges i `ADBMobileConfig.json` filen.
    >[!TIP]
    >
    >Hämta IDFA från Apple API:er **endast** om du använder en annonstjänst. Om du hämtar IDFA, och inte använder det på rätt sätt, kan din app refuseras.
-
+   >
+   >Om ditt program kräver IDFA läser du i [Apples dokumentation](https://developer.apple.com/documentation/adsupport) om du vill veta mer om användarens inställningar för annonsspårning och hämtning av IDFA-värdet.
+   >
+   >För iOS 14+ måste det nya ramverket [för genomskinlighet för](https://developer.apple.com/documentation/apptrackingtransparency) appspårning implementeras för att IDFA-värdet ska kunna hämtas.
    * Här är syntaxen för den här metoden:
 
       ```objective-c
@@ -364,7 +371,7 @@ Standardvärdet anges i `ADBMobileConfig.json` filen.
    * Här är kodexemplet för den här metoden:
 
       ```objective-c
-      NSString *idfa = [[[ASIdentifierManager sharedManager]advertisingIdentifier] UUIDString]; 
+      NSString *idfa = // retrieve IDFA using AdSupport (before iOS 14.0) and/or AppTrackingTransparency (iOS 14.0+)
       [ADBMobile setAdvertisingIdentifier:idfa]; 
       ```
 

@@ -1,14 +1,18 @@
 ---
 product: mobile-services
 audience: end-user
-user-guide-title: Mobile Services Android Help
+user-guide-title: Android-guide för mobiltjänster
+breadcrumb-title: Android Guide
 translation-type: tm+mt
-source-git-commit: e3bbde6c27d583ff3ee8b7e86c8e6e73595f5067
+source-git-commit: 18ef20df0a32741685e35cee98a1adf4a1b823a1
+workflow-type: tm+mt
+source-wordcount: '271'
+ht-degree: 6%
 
 ---
 
 
-# Hjälp för Android för mobiltjänster{#android}
+# Android-guide för mobiltjänster{#android}
 
 + [Android SDK 4.x för Experience Cloud Solutions](overview.md)
 + [Versionsinformation](rel-notes.md)
@@ -25,7 +29,7 @@ source-git-commit: e3bbde6c27d583ff3ee8b7e86c8e6e73595f5067
    + [Träffa](configuration/hit-batching.md)
    + [Konfigurationsmetoder](configuration/methods.md)
 + [Livscykelstatistik](metrics.md)
-+ Analyser{#analytics-android}
++ Analytics{#analytics-android} 
    + [Analytics - översikt](analytics-main/analytics-main.md)
    + [Spåra programtillstånd](analytics-main/states.md)
    + [Spåra appåtgärder](analytics-main/actions.md)
@@ -55,7 +59,7 @@ source-git-commit: e3bbde6c27d583ff3ee8b7e86c8e6e73595f5067
    + [Felsöka förvärvningstestning](acquisition-main/troubleshoot-acquisition-testing.md)
 + Meddelanden{#messaging-android}
    + [Meddelandeöversikt](messaging-main/messaging-main-android.md)
-   + Meddelanden i appen{#inapp-messaging}
+   + In-app messaging{#inapp-messaging}
       + [Meddelanden i appen](messaging-main/messaging/messaging.md)
       + [Felsöka meddelanden i programmet](messaging-main/messaging/in-apps-ts.md)
    + Push-meddelanden{#push-messaging}
@@ -63,11 +67,11 @@ source-git-commit: e3bbde6c27d583ff3ee8b7e86c8e6e73595f5067
       + [Implementera push-meddelanden med djuplänkning](messaging-main/push-messaging/t-mob-impl-push-deeplinking-android-4x.md)
       + [Få omfattande push-meddelanden](messaging-main/push-messaging/c-set-up-rich-push-notif-android.md)
       + [Felsöka push-meddelanden](messaging-main/push-messaging/c-troubleshooting-push-messaging.md)
-+ Plats{#location}
++ Location{#location}
    + [Platsöversikt](location/location.md)
    + [Geografisk placering och intressepunkter](location/geo-poi.md)
    + [Beacon tracking](location/beacon.md)
-+ Mål{#target-android}
++ Målgrupp{#target-android}
    + [Målöversikt](target-main/target-main.md)
    + [Målkonfiguration](target-main/target.md)
    + [Målmetoder](target-main/c-target-methods.md)
@@ -79,7 +83,7 @@ source-git-commit: e3bbde6c27d583ff3ee8b7e86c8e6e73595f5067
    + [Adobe Experience Platform Identity Service-metoder](c-marketing-cloud/mc-methods.md)
    + [Experience Cloud Device Co-op](c-marketing-cloud/t-mob-mc-device-coop-android-.md)
 + Audience Manager{#audience-manager-android}
-   + [Audience Manager - översikt](audience-manager/audience-manager.md)
+   + [Översikt över Audience Manager](audience-manager/audience-manager.md)
    + [Audience Manager-konfiguration](audience-manager/audiencemgmt.md)
    + [Audience Manager-metoder](audience-manager/c-audience-manager-methods.md)
 + Wearables{#wearables-android}

@@ -2,8 +2,12 @@
 product: mobile-services
 audience: end-user
 user-guide-title: Mobile Services Windows 8.1 Universal App Store SDK
+breadcrumb-title: Windows 8.1 Universal App Store SDK
 translation-type: tm+mt
-source-git-commit: 7aff336586058302046a728a0b1b0ce12660c1ba
+source-git-commit: 18ef20df0a32741685e35cee98a1adf4a1b823a1
+workflow-type: tm+mt
+source-wordcount: '78'
+ht-degree: 14%
 
 ---
 
@@ -19,8 +23,8 @@ source-git-commit: 7aff336586058302046a728a0b1b0ce12660c1ba
    + [Konfigurationsöversikt](c-configuration/c-configuration.md)
    + [ADBMobileConfig.json-konfiguration](c-configuration/c.json.md)
    + [SDK-metoder](c-configuration/methods.md)
-+ Analyser {#analytics-win-appstore}
-   + [Analyser](analytics/analytics.md)
++ Analytics{#analytics-win-appstore} 
+   + [Analytics](analytics/analytics.md) 
    + Variabeln Produkter {#products-variable}
       + [Variabeln Produkter](analytics/products/products.md)
       + [Produktvariabel med eVars för försäljning och produktspecifika händelser](analytics/products/products-variable-evars-events.md)
@@ -30,5 +34,5 @@ source-git-commit: 7aff336586058302046a728a0b1b0ce12660c1ba
 + [Målmetoder](target/target-methods.md)
 + [Audience Manager-metoder](audiencemgmt/audience-manager-methods.md)
 + [Livscykelstatistik](metrics.md)
-+ [Windows Visual Studio-tillägg för Experience Cloud Solutions 4.x SDK](extensions/win-vse-4x.md)
-+ [Migrering](migration-v3.md)
++ [Windows Visual Studio-tillägg för Experience Cloud SDK 4.x](extensions/win-vse-4x.md)
++ [Versionsmigrering](migration-v3.md)

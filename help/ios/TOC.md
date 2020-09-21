@@ -1,14 +1,18 @@
 ---
 product: mobile-services
 audience: end-user
-user-guide-title: Mobile Services iOS Help
+user-guide-title: iOS-handbok för mobiltjänster
+breadcrumb-title: iOS Guide
 translation-type: tm+mt
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+source-git-commit: 18ef20df0a32741685e35cee98a1adf4a1b823a1
+workflow-type: tm+mt
+source-wordcount: '286'
+ht-degree: 3%
 
 ---
 
 
-# Hjälp om iOS för mobiltjänster {#ios}
+# iOS-handbok för mobiltjänster {#ios}
 
 + [iOS SDK 4.x för Experience Cloud Solutions](overview.md)
 + [Versionsinformation](rel-notes.md)
@@ -27,7 +31,7 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
    + [Konfigurationsmetoder](configuration/sdk-methods.md)
    + [Transportsäkerhet för appar](configuration/app-transport-security.md)
 + [Livscykelstatistik](metrics.md)
-+ Analyser {#analytics-ios}
++ Analytics{#analytics-ios} 
    + [Analytics - översikt](analytics-main/analytics-main.md)
    + [Spåra programtillstånd](analytics-main/states.md)
    + [Spåra appåtgärder](analytics-main/actions.md)
@@ -57,7 +61,7 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
    + [Apple Search Ads](acquisition-main/c-apple-search-ads.md)
 + Meddelanden {#messaging-ios}
    + [Meddelandeöversikt](messaging-main/messaging-main.md)
-   + Meddelanden i appen {#in-app-messaging}
+   + In-app messaging {#in-app-messaging}
       + [Meddelanden i appen](messaging-main/messaging/messaging.md)
       + [Felsökning av meddelanden i appen](messaging-main/messaging/in-apps-ts.md)
    + Push-meddelanden {#push-messaging}
@@ -65,18 +69,18 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
       + [Implementera push-meddelanden med djuplänkning](messaging-main/push-messaging/t-mob-imp-push-deeplinking-ios-4x.md)
       + [Få omfattande push-meddelanden](messaging-main/push-messaging/c-set-up-rich-push-notif-ios.md)
       + [Felsöka push-meddelanden](messaging-main/push-messaging/c-troubleshooting-push-messaging.md)
-+ Plats {#location-ios}
++ Location {#location-ios}
    + [Platsöversikt](location/location.md)
    + [Geografisk placering och intressepunkter](location/geo-poi.md)
    + [Spårning av iBeacon](location/ibeacon.md)
-+ Mål {#target-ios}
++ Målgrupp {#target-ios}
    + [Målöversikt](target-main/target-main.md)
    + [Målmetoder](target-main/c-target-methods.md)
    + [Förhämta innehåll i iOS](target-main/c-mob-target-prefetch-ios.md)
    + [Förhandsvisa mål på iOS](target-main/c-mob-target-preview-ios.md)
 + Experience Cloud {#exp-cloud-ios}
    + [Experience Cloud - översikt](marketing-cloud/marketing-cloud.md)
-   + [Experience Cloud-ID](marketing-cloud/mcvid.md)
+   + [Experience Cloud ID](marketing-cloud/mcvid.md)
    + [Adobe Experience Platform Identity Service-metoder](marketing-cloud/mc-methods.md)
    + [Experience Cloud Device Co-op](marketing-cloud/t-mob-mc-device-coop-ios-.md)
 + [Audience Manager-metoder](amm/aam-methods.md)

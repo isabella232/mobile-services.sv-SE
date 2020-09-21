@@ -1,22 +1,23 @@
 ---
 product: mobile-services
 audience: end-user
-user-guide-title: Användarhjälp för Mobile Services
-user-guide-description: Mobile Services is an end-to-end solution that helps you acquire and engage mobile app users and analyze and optimize their experiences.
+user-guide-title: Handbok för mobiltjänster
+breadcrumb-title: Mobile Services Guide
+user-guide-description: Mobile Services is an end-to-end solution that helps you acquire and engage mobile app users and optimize their experiences.
 translation-type: tm+mt
-source-git-commit: e39a31d765bebf4f80eed47e04056108f424b905
+source-git-commit: 18ef20df0a32741685e35cee98a1adf4a1b823a1
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 8%
+source-wordcount: '321'
+ht-degree: 9%
 
 ---
 
 
-# Användarhjälp för Mobile Services {#using}
+# Handbok för mobiltjänster {#using}
 
 + [Adobe Mobile Services](home.md)
 + [Versionsinformation](whatsnew.md)
-+ Getting started {#get-started-ug}
++ Komma igång {#get-started-ug}
    + [Komma igång](gs/gs.md)
    + [Roller och behörigheter](gs/c-mob-roles-and-permissions.md)
    + [Loggar in](gs/gs-signin.md)
@@ -24,7 +25,7 @@ ht-degree: 8%
    + Mobilstatistik {#mobile-metrics}
       + [Mobilstatistik](gs/metrics/metrics.md)
       + [Visa mobilstatistik](gs/metrics/overview.md)
-      + [Mobilstatistik och dimensionsreferens](gs/metrics/metrics-reference.md)
+      + [Mobil statistik och Dimensioner - referens](gs/metrics/metrics-reference.md)
 + Hantera program {#manage-apps-ug}
    + [Hantera program - översikt](manage-apps/manage-apps.md)
    + [Lägg till en ny app](manage-apps/t-new-app.md)
@@ -92,7 +93,7 @@ ht-degree: 8%
          + [Importera eller exportera förvärvslänkar](acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/c-use-legacy-acquisition-links/c-manage-acquisition-links/t-acquisition-import.md)
          + [Hantera marknadsföringslänkar](acquisition-main/c-marketing-links-builder/c-manage-adobe-links.md)
          + [Skapa förvärvslänkar manuellt](acquisition-main/c-marketing-links-builder/acquisition-link-manual.md)
-+ Plats {#location-ug}
++ Location {#location-ug}
    + [Platsöversikt](location/location-overview.md)
    + [Översikt (plats)](location/c-location-overview.md)
    + [Mappa](location/c-map-points.md)
@@ -107,11 +108,11 @@ ht-degree: 8%
       + [Upplevelse: push-meddelande](in-app-messaging/t-create-push-message/c-experience-push-message.md)
       + [Schema: push-meddelande](in-app-messaging/t-create-push-message/c-schedule-push-message.md)
       + [Felsöka push-meddelanden](in-app-messaging/t-create-push-message/c-troubleshooting-push-messaging.md)
-   + Meddelanden i appen {#inapp-messages}
+   + In-app messages {#inapp-messages}
       + [Skapa ett meddelande i appen](in-app-messaging/t-in-app-message/t-in-app-message.md)
       + [Målgrupp: meddelande i appen](in-app-messaging/t-in-app-message/c-audience-in-app-message.md)
       + [Upplevelse: meddelande i appen](in-app-messaging/t-in-app-message/c-experience-in-app-message.md)
       + [Schema: meddelande i appen](in-app-messaging/t-in-app-message/c-schedule-in-app-message.md)
       + [Felsökning av meddelanden i appen](in-app-messaging/t-in-app-message/in-apps-ts.md)
       + [Utlös ett meddelande i appen när appen öppnas från ett push-meddelande](in-app-messaging/t-mob-trig-in-app-open-app-from-push.md)
-+ [Frågor och svar](faq-mobile.md)
++ [Vanliga frågor](faq-mobile.md)

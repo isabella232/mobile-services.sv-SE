@@ -3,12 +3,15 @@ description: Marknadsförarna kan skapa, spara och redigera länkmål som webb, 
 keywords: mobile
 seo-description: Marknadsförarna kan skapa, spara och redigera länkmål som webb, djup eller andra länkar som kan användas när spårbara marknadsföringslänkar byggs.
 seo-title: 'Mål '
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 'Mål '
 topic: Metrics
 uuid: 0e0e7d22-067c-4a59-abcb-a4826800944d
 translation-type: tm+mt
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '188'
+ht-degree: 1%
 
 ---
 

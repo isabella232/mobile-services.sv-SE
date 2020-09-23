@@ -3,12 +3,15 @@ description: Du kan konfigurera målgruppsalternativ för meddelanden i appen, i
 keywords: mobile
 seo-description: Du kan konfigurera målgruppsalternativ för meddelanden i appen, inklusive alternativ för visning, utlösare och egenskaper.
 seo-title: Målgruppsmeddelande i appen
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Målgruppsmeddelande i appen
 topic: Metrics
 uuid: 6c815d4c-7626-4cf4-9158-3f059c79317a
 translation-type: tm+mt
-source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '534'
+ht-degree: 0%
 
 ---
 
@@ -68,7 +71,7 @@ När du har verifierat mappningen väljer du lämplig matchande eller logisk ope
 
 Följande scenarier hjälper dig att avgöra om du ska välja ett mått eller en variabel som utlösare:
 
-### Mått
+### Mätvärden
 
 Ett mätvärde är ett tal och ett exempel är antalet inköp.
 

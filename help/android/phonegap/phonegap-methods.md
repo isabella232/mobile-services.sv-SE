@@ -3,12 +3,12 @@ description: Du kan använda iOS PhoneGap Plug-in-metoder för att slutföra en 
 keywords: android;library;mobile;sdk
 seo-description: Du kan använda iOS PhoneGap Plug-in-metoder för att slutföra en mängd olika åtgärder.
 seo-title: PhoneGap plug-in-metoder
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: PhoneGap plug-in-metoder
 topic: Developer and implementation
 uuid: bc3db9ce-81b7-45ec-88aa-6020c1db5d9c
 translation-type: tm+mt
-source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '1569'
 ht-degree: 34%

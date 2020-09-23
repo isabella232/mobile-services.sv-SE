@@ -3,12 +3,15 @@ description: Du kan använda sidan Länkmål för att redigera, arkivera, ta bor
 keywords: mobile
 seo-description: Du kan använda sidan Länkmål för att redigera, arkivera, ta bort eller arkivera befintliga mål.
 seo-title: Hantera länkmål
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Hantera länkmål
 topic: Metrics
 uuid: 3a38d40d-b4c7-4f9f-aa6e-979613faaba2
 translation-type: tm+mt
-source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '278'
+ht-degree: 1%
 
 ---
 
@@ -49,6 +52,7 @@ Så här visar du sidan Hantera länkmål:
       1. click **[!UICONTROL View Archive]**.
       1. Markera en eller flera kryssrutor bredvid länknamnen som du vill avarkivera.
       1. Klicka på **[!UICONTROL Unarchive Selected]**.
+
       Alternativet visas bara om du tidigare har arkiverat länkmål. **[!UICONTROL View Archive]**
 
    * **Ta bort**

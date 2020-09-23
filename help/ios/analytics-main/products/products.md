@@ -1,13 +1,16 @@
 ---
 description: Det går inte att ange variabeln products genom att använda bearbetningsregler. I iOS 4.x SDK måste du använda en speciell syntax i parametern context data för att ange produkter direkt i serveranropet.
 seo-description: Det går inte att ange variabeln products genom att använda bearbetningsregler. I iOS 4.x SDK måste du använda en speciell syntax i parametern context data för att ange produkter direkt i serveranropet.
-seo-title: Variabeln Produkter
-solution: Marketing Cloud,Analytics
-title: Variabeln Produkter
+seo-title: Produktvariabel
+solution: Experience Cloud,Analytics
+title: Produktvariabel
 topic: Developer and implementation
 uuid: 6ece4d27-ef86-435c-a6f7-bd76be1c95ca
 translation-type: tm+mt
-source-git-commit: 7aff336586058302046a728a0b1b0ce12660c1ba
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '184'
+ht-degree: 1%
 
 ---
 

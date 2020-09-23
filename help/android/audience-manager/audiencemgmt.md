@@ -3,12 +3,15 @@ description: Ni kan skicka signaler och hämta besökarsegment från målgruppsh
 keywords: android;library;mobile;sdk
 seo-description: Ni kan skicka signaler och hämta besökarsegment från målgruppshantering.
 seo-title: Audience Manager-konfiguration
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Audience Manager-konfiguration
 topic: Developer and implementation
 uuid: f68d5b2e-fa2c-4db6-98ad-d1855a2c45ac
 translation-type: tm+mt
-source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '88'
+ht-degree: 9%
 
 ---
 

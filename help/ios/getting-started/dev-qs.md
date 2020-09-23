@@ -2,12 +2,15 @@
 description: Den här informationen hjälper dig att implementera iOS-biblioteket och samla in livscykelvärden som starter, uppgraderingar, sessioner, engagerade användare och så vidare.
 seo-description: Den här informationen hjälper dig att implementera iOS-biblioteket och samla in livscykelvärden som starter, uppgraderingar, sessioner, engagerade användare och så vidare.
 seo-title: Kärnimplementering och livscykel
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Kärnimplementering och livscykel
 topic: Developer and implementation
 uuid: 96d06325-e424-4770-8659-4b5431318ee3
 translation-type: tm+mt
-source-git-commit: bd8aa0c7ff58e4cf28a67b8a107db52fb30cd3dc
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '636'
+ht-degree: 1%
 
 ---
 
@@ -34,7 +37,7 @@ Så här hämtar du SDK:
    * `ADBMobileConfig.json`, som är SDK-konfigurationsfilen som är anpassad för ditt program.
    * `AdobeMobileLibrary.a`, en bitkodsaktiverad binärfil som innehåller biblioteksbyggen för iOS-enheter (armv7, armv7s, arm64) och simulatorer (i386, x86_64).
 
-      Den här feta binärfilen bör länkas när målet är avsett för en iOS-app.
+      Denna feta binärfil bör länkas när målet är avsett för en iOS-app.
 
    * `AdobeMobileLibrary_Extension.a`, en bitkodsaktiverad binärfil som innehåller biblioteksbyggen för iOS-enheter (armv7, armv7s, arm64) och simulatorer (i386, x86_64).
 
@@ -50,7 +53,7 @@ Så här hämtar du SDK:
 
 >[!IMPORTANT]
 >
->Om du hämtar SDK utanför Adobe Mobile Services-gränssnittet måste filen konfigureras manuellt `ADBMobileConfig.json` . Om du inte har använt Analytics tidigare och Mobile SDK tidigare läser du [Innan du börjar](/help/ios/getting-started/requirements.md) för att konfigurera en utvecklingsrapportsvit och hämta en förifylld version av konfigurationsfilen.
+>Om du hämtar SDK-filen utanför användargränssnittet för Adobe-mobiltjänster måste filen konfigureras manuellt `ADBMobileConfig.json` . Om du inte har använt Analytics tidigare och Mobile SDK tidigare läser du [Innan du börjar](/help/ios/getting-started/requirements.md) för att konfigurera en utvecklingsrapportsvit och hämta en förifylld version av konfigurationsfilen.
 
 ## Lägg till SDK och konfigurationsfilen i ditt projekt {#section_93C25D893B4A4CD3B996CF3C5590C8DC}
 
@@ -61,6 +64,7 @@ Så här hämtar du SDK:
    * Kryssrutan är markerad **[!UICONTROL Copy Items if needed]** .
    * **[!UICONTROL Create groups]** är markerat.
    * Ingen av kryssrutorna i **[!UICONTROL Add to targets]** avsnittet är markerad.
+
    ![](assets/step_3.png)
 
 1. Klicka på **[!UICONTROL Finish]**.
@@ -93,6 +97,7 @@ Så här hämtar du SDK:
       * `SystemConfiguration.framework`
       * `libsqlite3.0.tbd`
       * `AdobeMobileLibrary\_TV.a`
+
    >[!CAUTION]
    >
    > Länkning av mer än en `AdobeMobileLibrary*.a` fil i samma mål resulterar i oväntat beteende eller oförmåga att bygga.
@@ -133,7 +138,7 @@ Om du vill inkludera ytterligare data med livscykelmätanrop använder du `colle
 }
 ```
 
-Ytterligare kontextdatavärden som skickas med `collectLifecycleDataWithAdditionalData` måste mappas till anpassade variabler i Adobe Mobile Services:
+Ytterligare kontextdatavärden som skickas med `collectLifecycleDataWithAdditionalData` måste mappas till anpassade variabler i Adobe Mobile-tjänsterna:
 
 ![](assets/map-variable-lifecycle.png)
 
@@ -144,4 +149,4 @@ Andra livscykelvärden samlas in automatiskt. Mer information finns i [Livscykel
 Utför följande uppgifter:
 
 * [Spåra applägen](/help/ios/analytics-main/states.md)
-* [Spåra programåtgärder](/help/ios/analytics-main/actions.md)
+* [Spåra appåtgärder](/help/ios/analytics-main/actions.md)

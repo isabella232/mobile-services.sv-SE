@@ -2,17 +2,20 @@
 description: Lägen är de olika skärmarna eller vyerna i ditt program.
 seo-description: Lägen är de olika skärmarna eller vyerna i ditt program.
 seo-title: Spåra applägen
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Spåra applägen
 topic: Developer and implementation
 uuid: 69c99d05-5816-4c86-97c5-d218dc26c129
 translation-type: tm+mt
-source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '278'
+ht-degree: 3%
 
 ---
 
 
-# Spåra programtillstånd {#track-app-states}
+# Track app states {#track-app-states}
 
 Lägen är de olika skärmarna eller vyerna i ditt program.
 
@@ -43,7 +46,7 @@ Varje gång ett nytt läge visas i programmet, till exempel när en användare n
    }
    ```
 
-De `"State Name"` rapporteras i `View State` variabeln i Adobe Mobile Services och en vy registreras för varje `trackState` samtal. I andra Analytics-gränssnitt `View State` rapporteras som `Page Name`, och `state views` rapporteras som `page views`.
+De `"State Name"` rapporteras i `View State` variabeln i Adobe Mobile Services och en vy registreras för varje `trackState` anrop. I andra Analytics-gränssnitt `View State` rapporteras som `Page Name`, och `state views` rapporteras som `page views`.
 
 ## Skicka ytterligare data {#section_CFDB4F944496401786A145C209AB387C}
 
@@ -62,7 +65,7 @@ public void onCreate(Bundle savedInstanceState) {
 }
 ```
 
-Kontextdatavärden måste mappas till anpassade variabler i Adobe Mobile Services:
+Kontextdatavärden måste mappas till anpassade variabler i Adobe Mobile-tjänster:
 
 ![](assets/map-variable-context-state.png)
 

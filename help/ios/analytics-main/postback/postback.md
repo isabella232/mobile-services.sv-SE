@@ -2,11 +2,14 @@
 description: Tack vare återkopplingar kan du skicka data som samlas in av SDK till en tredjepartsserver. Genom att utnyttja samma utlösare och egenskaper som du använder för att visa ett meddelande i appen kan du konfigurera SDK:n så att den skickar anpassade data till ett mål från en annan leverantör.
 seo-description: Tack vare återkopplingar kan du skicka data som samlas in av SDK till en tredjepartsserver. Genom att utnyttja samma utlösare och egenskaper som du använder för att visa ett meddelande i appen kan du konfigurera SDK:n så att den skickar anpassade data till ett mål från en annan leverantör.
 seo-title: Eftersläpning
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Översikt över återgång
 uuid: 25e2a5fb-1203-40dd-96cd-b23e0f23376d
 translation-type: tm+mt
-source-git-commit: 83e6968efb0ed1b4ef504286c6cb2e8e4d2eaf94
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '336'
+ht-degree: 0%
 
 ---
 

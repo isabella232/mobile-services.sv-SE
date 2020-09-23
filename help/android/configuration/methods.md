@@ -3,12 +3,12 @@ description: Här är en lista över metoder som finns i Android-biblioteket.
 keywords: android;library;mobile;sdk
 seo-description: Här är en lista över metoder som finns i Android-biblioteket.
 seo-title: Konfigurationsmetoder
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Konfigurationsmetoder
 topic: Developer and implementation
 uuid: 663aeb6c-1b97-4a3a-8c0e-dd4c2ec28c01
 translation-type: tm+mt
-source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '985'
 ht-degree: 22%
@@ -92,7 +92,7 @@ Här är kodexemplet för den här metoden:
       * `MOBILE_PRIVACY_STATUS_OPT_OUT`, där de tas bort.
       * `MOBILE_PRIVACY_STATUS_UNKNOWN`, där din rapportsvit är tidsstämpel aktiverad, kommer träffar att sparas tills sekretessstatusen ändras till att anmäla sig (träffar skickas) eller avanmäla dig (träffar tas bort).
 
-         Om rapportsviten inte är tidsstämpelaktiverad, kommer träffar att tas bort tills sekretessstatusen ändras för att anmäla sig. Standardvärdet anges i `ADBMobileConfig.json` filen.
+         Om rapportsviten inte är tidsstämpelaktiverad ignoreras träffar tills sekretessstatusen ändras till att anmäla sig. Standardvärdet anges i `ADBMobileConfig.json` filen.
    * Här är syntaxen för den här metoden:
 
       ```java
@@ -114,7 +114,7 @@ Här är kodexemplet för den här metoden:
       * `MOBILE_PRIVACY_STATUS_OPT_IN`, där träffar skickas omedelbart. De här träffarna skickas omedelbart.
       * `MOBILE_PRIVACY_STATUS_OPT_OUT`, där de tas bort. De här träffarna ignoreras.
       * `MOBILE_PRIVACY_STATUS_UNKNOWN`, där din rapportsvit är tidsstämpel aktiverad, kommer träffar att sparas tills sekretessstatusen ändras till att anmäla sig (träffar skickas) eller avanmäla dig (träffar tas bort).
-Om rapportsviten inte är tidsstämpelaktiverad, kommer träffar att tas bort tills sekretessstatusen ändras för att anmäla sig.
+Om rapportsviten inte är tidsstämpelaktiverad ignoreras träffar tills sekretessstatusen ändras till att anmäla sig.
    * Här är syntaxen för den här metoden:
 
       ```java

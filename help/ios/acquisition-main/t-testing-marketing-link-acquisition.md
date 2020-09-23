@@ -3,12 +3,12 @@ description: Följande instruktioner hjälper er att skicka en kundvärvningskam
 keywords: android;library;mobile;sdk
 seo-description: Följande instruktioner hjälper er att skicka en kundvärvningskampanj via en Marketing Link som baseras på ett enhets fingeravtryck.
 seo-title: Testa Marketing Link-förvärv
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Testa Marketing Link-förvärv
 topic: Developer and implementation
 uuid: 69503e01-182d-44c6-b0fb-e1c012ffa3bd
 translation-type: tm+mt
-source-git-commit: c64e2fa7cee3cd35c4574e5007406b7604c99499
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '559'
 ht-degree: 0%

@@ -3,12 +3,15 @@ description: Den här informationen hjälper dig att felsöka meddelanden i appe
 keywords: mobile
 seo-description: Den här informationen hjälper dig att felsöka meddelanden i appen.
 seo-title: Felsöka meddelanden i appen
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Felsöka meddelanden i appen
 topic: Metrics
 uuid: 39c3a21d-92c2-4004-b00f-99b6f91d3696
 translation-type: tm+mt
-source-git-commit: 12e01e112debffd877dd62f1fd2505724b2aae7d
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '525'
+ht-degree: 0%
 
 ---
 
@@ -67,5 +70,6 @@ Här följer de exakta placerings- och storleksreglerna för varje orientering:
 * **Liggande**
    * Bilden skalades till 100 % av enhetens höjd.
    * Bredden är 75 % av enheten och tonas ut till höger.
+
    Om du har problem med helskärmsmallen kan du hämta och använda den anpassade HTML-mallen. Den här mallen ger större flexibilitet för bilder och ger fullständig kontroll över mallen.
 

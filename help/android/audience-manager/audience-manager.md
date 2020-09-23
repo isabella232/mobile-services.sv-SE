@@ -1,27 +1,30 @@
 ---
-description: Den här informationen hjälper dig att skicka signaler och hämta besökssegment från Audience Manager.
+description: Den här informationen hjälper dig att skicka signaler och hämta besökarsegment från Audience Manager.
 keywords: android;library;mobile;sdk
-seo-description: Den här informationen hjälper dig att skicka signaler och hämta besökssegment från Audience Manager.
-seo-title: Audience Manager - översikt
-solution: Marketing Cloud,Analytics
-title: Audience Manager - översikt
+seo-description: Den här informationen hjälper dig att skicka signaler och hämta besökarsegment från Audience Manager.
+seo-title: Översikt över Audience Manager
+solution: Experience Cloud,Analytics
+title: Översikt över Audience Manager
 topic: Developer and implementation
 uuid: cfa4106d-13c1-45ba-bee6-6f992aaf9919
 translation-type: tm+mt
-source-git-commit: b690ec677cf5aedfb2673b707f82716af1851124
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '139'
+ht-degree: 8%
 
 ---
 
 
-# Audience Manager - översikt {#audience-manager}
+# Översikt över Audience Manager {#audience-manager}
 
-Informationen i det här avsnittet hjälper dig att skicka signaler och hämta besökarsegment från Audience Manager.
+Informationen i det här avsnittet hjälper dig att skicka signaler och hämta besökssegment från Audience Manager.
 
 ## Ny version av Adobe Experience Platform Mobile SDK
 
 Letar du efter information och dokumentation om Adobe Experience Platform Mobile SDK? Klicka [här](https://aep-sdks.gitbook.io/docs/) för att få den senaste dokumentationen.
 
-Från om med september 2018 har vi släppt en ny större version av SDK. Dessa nya SDK:er för Adobe Experience Platform Mobile kan konfigureras via [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
+Från om med september 2018 har vi släppt en ny större version av SDK. Dessa nya Adobe Experience Platform Mobile SDK:er kan konfigureras via [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
 
 * Gå till Adobe Experience Platform Launch för att komma igång.
 * Om du vill se vad som finns i Experience Platform SDK-databaserna går du till [Github: Adobe Experience Platform SDKs](https://github.com/Adobe-Marketing-Cloud/acp-sdks).

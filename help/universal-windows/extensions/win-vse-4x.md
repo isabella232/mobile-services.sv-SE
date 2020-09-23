@@ -2,12 +2,12 @@
 description: Med dessa tillägg kan du enklare lägga till referenser till Windows SDK för Experience Cloud Solutions 4.x i ditt projekt.
 seo-description: Med dessa tillägg kan du enklare lägga till referenser till Windows SDK för Experience Cloud Solutions 4.x i ditt projekt.
 seo-title: Windows Visual Studio-tillägg för Experience Cloud SDK 4.x
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Windows Visual Studio-tillägg för Experience Cloud SDK 4.x
 topic: Developer and implementation
 uuid: e48faf54-8b08-4224-9d80-e553a983129e
 translation-type: tm+mt
-source-git-commit: 97e6d24b75e770685d440d31aa5ee8924a079501
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '196'
 ht-degree: 0%

@@ -3,12 +3,15 @@ description: Du kan visa nyckeltal för prestandamått för de appar som du sena
 keywords: mobile
 seo-description: Du kan visa nyckeltal för prestandamått för de appar som du senast visade. Som standard kan du visa upp till 12 appar. Du kan ändra datumintervallet och skapa filter för att segmentera data och redigera alla program på sidan Översikt.
 seo-title: Visa mobilmått
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Visa mobilmått
 topic: Metrics
 uuid: 57db0b77-6b0a-4a0c-9aad-0731275233fd
 translation-type: tm+mt
-source-git-commit: bd8aa0c7ff58e4cf28a67b8a107db52fb30cd3dc
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '467'
+ht-degree: 0%
 
 ---
 

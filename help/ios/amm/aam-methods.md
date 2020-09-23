@@ -1,22 +1,25 @@
 ---
-description: Här är en lista över Audience Manager-metoder som finns i iOS-biblioteket.
-seo-description: Här är en lista över Audience Manager-metoder som finns i iOS-biblioteket.
+description: Här är en lista över de Audience Manager-metoder som finns i iOS-biblioteket.
+seo-description: Här är en lista över de Audience Manager-metoder som finns i iOS-biblioteket.
 seo-title: Audience Manager-metoder
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Audience Manager-metoder
 topic: Developer and implementation
 uuid: 97658bd6-4c4f-4875-abe9-36dad4ec8bae
 translation-type: tm+mt
-source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '363'
+ht-degree: 22%
 
 ---
 
 
 # Audience Manager-metoder {#audience-manager-methods}
 
-Här är en lista över Audience Manager-metoder som finns i iOS-biblioteket.
+Här är en lista över de Audience Manager-metoder som finns i iOS-biblioteket.
 
-SDK har för närvarande stöd för flera Adobe Experience Cloud-lösningar, inklusive Analytics, Target, Audience Manager och Adobe Experience Platform Identity Service. Metoderna prefixas enligt lösningen och Audience Manager-metoderna prefixas med &quot; `audience`&quot;.
+SDK har för närvarande stöd för flera Adobe Experience Cloud-lösningar, inklusive Analytics, Target, Audience Manager och Adobe Experience Platform Identity Service. Metoderna prefixeras enligt lösningen och Audience Manager-metoderna prefixas med &quot; `audience`&quot;.
 
 Om Audience Manager är konfigurerat i JSON-filen skickas en signal som innehåller livscykelvärden med `application:didFinishLaunchingWithOptions:`.
 
@@ -72,7 +75,7 @@ Om Audience Manager är konfigurerat i JSON-filen skickas en signal som innehål
 
    Anger DPID och DPUID. När det är inställt läggs båda till för varje signal.
 
-   * Data Provider-ID ( **Data Provider ID)** är det data partner-ID som tilldelas av Audience Manager.
+   * Data Provider ID ( **Data Provider ID)** är det data partner-ID som tilldelas av Audience Manager.
    * Dataleverantörens unika användar-ID (DPUUID) **är** dataleverantörens unika ID för användaren.
 
       >[!IMPORTANT]
@@ -95,7 +98,7 @@ Om Audience Manager är konfigurerat i JSON-filen skickas en signal som innehål
 
 * **audiensReset**
 
-   Återställer Audience Manager UUID och tömmer den aktuella besökarprofilen.
+   Återställer Audience Manager UID och tömmer den aktuella besökarprofilen.
 
    * Här är syntaxen för den här metoden:
 

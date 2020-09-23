@@ -2,18 +2,21 @@
 description: Du kan visa en interaktiv karta som visar dina intressepunkter och andra datamarkörer.
 keywords: mobile
 seo-description: Du kan visa en interaktiv karta som visar dina intressepunkter och andra datamarkörer.
-seo-title: Karta
-solution: Marketing Cloud,Analytics
-title: Karta
+seo-title: Mappa
+solution: Experience Cloud,Analytics
+title: Mappa
 topic: Metrics
 uuid: 3c271738-eb8d-4c26-baaf-54b247bfc4da
 translation-type: tm+mt
-source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '293'
+ht-degree: 1%
 
 ---
 
 
-# Karta {#map}
+# Mappa {#map}
 
 Du kan visa en interaktiv karta som visar POI och andra datamarkörer.
 

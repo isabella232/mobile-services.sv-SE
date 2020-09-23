@@ -3,12 +3,12 @@ description: Den här informationen hjälper dig att felsöka meddelanden i appe
 keywords: mobile
 seo-description: Den här informationen hjälper dig att felsöka meddelanden i appen.
 seo-title: Felsöka meddelanden i appen
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Felsöka meddelanden i appen
 topic: Metrics
 uuid: 58533aa3-2eb2-4597-8525-77e4e5975e56
 translation-type: tm+mt
-source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '593'
 ht-degree: 0%

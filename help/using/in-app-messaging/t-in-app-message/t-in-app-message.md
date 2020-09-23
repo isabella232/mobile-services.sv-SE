@@ -3,17 +3,20 @@ description: Du kan skapa ett meddelande i appen för leverans till mobilanvänd
 keywords: mobile
 seo-description: Du kan skapa ett meddelande i appen för leverans till mobilanvändare. När du skapar meddelandet konfigurerar du meddelandetyp, målgrupp, upplevelse och schema.
 seo-title: Skapa ett meddelande i appen
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Skapa ett meddelande i appen
 topic: Metrics
 uuid: 15b52713-9ffc-4df9-b21a-6b0576a96a54
 translation-type: tm+mt
-source-git-commit: 83e6968efb0ed1b4ef504286c6cb2e8e4d2eaf94
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '120'
+ht-degree: 0%
 
 ---
 
 
-# Skapa ett meddelande i appen{#create-an-in-app-message}
+# Create an in-app message{#create-an-in-app-message}
 
 Du kan skapa ett meddelande i appen för leverans till mobilanvändare. När du skapar meddelandet konfigurerar du meddelandetyp, målgrupp, upplevelse och schema.
 

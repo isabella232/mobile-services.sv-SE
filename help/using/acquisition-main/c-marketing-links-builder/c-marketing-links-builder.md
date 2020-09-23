@@ -3,12 +3,15 @@ description: Builder hjälper er att bygga marknadsföringslänkar som kan dirig
 keywords: mobile
 seo-description: Builder hjälper er att bygga marknadsföringslänkar som kan dirigera användare till appbutiker och app- eller webblänksmål. Marknadsförarna kan välja destinationer baserat på regler, t.ex. enhetstyp eller operativsystem på användarens enhet.
 seo-title: Marketing Links Builder
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Marketing Links Builder
 topic: Metrics
 uuid: 94906393-ffa5-47a6-89f6-1c812bad34af
 translation-type: tm+mt
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '149'
+ht-degree: 6%
 
 ---
 

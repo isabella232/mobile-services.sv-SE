@@ -3,12 +3,15 @@ description: Du kan skapa ett nytt länkmål som dirigerar användarna till en w
 keywords: mobile
 seo-description: Du kan skapa ett nytt länkmål som dirigerar användarna till en webbsida eller en djup länk i appen.
 seo-title: Skapa nytt länkmål
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Skapa nytt länkmål
 topic: Metrics
 uuid: 390e3dea-0221-4f97-980d-a90ca9f162fa
 translation-type: tm+mt
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '391'
+ht-degree: 0%
 
 ---
 

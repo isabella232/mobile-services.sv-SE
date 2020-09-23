@@ -2,12 +2,12 @@
 description: Med livstidsvärdet kan du mäta och rikta in dig på ett livstidsvärde för varje Android-användare. Värdet kan användas för att lagra livstidsinköp, annonsvisningar, videokompletteringar, sociala resurser, fotoöverföringar och så vidare.
 seo-description: Med livstidsvärdet kan du mäta och rikta in dig på ett livstidsvärde för varje Android-användare. Värdet kan användas för att lagra livstidsinköp, annonsvisningar, videokompletteringar, sociala resurser, fotoöverföringar och så vidare.
 seo-title: Livstidsvärde för besökare
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Livstidsvärde för besökare
 topic: Developer and implementation
 uuid: ba0308de-282e-46f9-a14c-19fb6d5c363e
 translation-type: tm+mt
-source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '232'
 ht-degree: 0%

@@ -1,13 +1,13 @@
 ---
-description: Information som kan hjälpa dig med Video Analytics.
-seo-description: Information som kan hjälpa dig med Video Analytics.
-seo-title: Video Analytics
-solution: Marketing Cloud,Analytics
-title: Video Analytics
+description: Information som kan hjälpa dig med videoanalys.
+seo-description: Information som kan hjälpa dig med videoanalys.
+seo-title: Videoanalys
+solution: Experience Cloud,Analytics
+title: Videoanalys
 topic: Developer and implementation
 uuid: 7d4e6668-a1d9-41da-96c8-8baac860c5b0
 translation-type: tm+mt
-source-git-commit: 4b5be6c51c716114e597a80d475f838e23abb1b1
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '898'
 ht-degree: 15%
@@ -15,11 +15,11 @@ ht-degree: 15%
 ---
 
 
-# Video Analytics {#video-analytics}
+# Videoanalys {#video-analytics}
 
-Information som kan hjälpa dig med Video Analytics.
+Information som kan hjälpa dig med videoanalys.
 
-Videomätning beskrivs i detalj i [Mäta ljud och video i guiden för Adobe Analytics](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html/) . Den allmänna processen att mäta video är mycket lik på alla AppMeasurement-plattformar. Det här snabbstartsavsnittet innehåller en grundläggande översikt över utvecklaråtgärderna tillsammans med kodexempel.
+Videomätning beskrivs i detalj i guiden [Mäta ljud och video i Adobe Analytics](https://docs.adobe.com/content/help/sv-SE/media-analytics/using/media-overview.html/) . Den allmänna processen att mäta video är mycket lik på alla AppMeasurement-plattformar. Det här snabbstartsavsnittet innehåller en grundläggande översikt över utvecklaråtgärderna tillsammans med kodexempel.
 
 I följande tabell visas de mediedata som skickas till Analytics. Använd bearbetningsregler för att mappa kontextdata till en Analytics-variabel.
 
@@ -43,14 +43,15 @@ I följande tabell visas de mediedata som skickas till Analytics. Använd bearbe
 
 * **a.media.segment**
 
-   (Obligatoriskt) Samlar in videosegmentdata, inklusive segmentnamnet och den ordning i vilken segmentet finns i videon. Den här variabeln fylls i genom att den aktiveras när spelarhändelser spåras automatiskt, eller genom att ett anpassat segmentnamn anges när spelarhändelser spåras manuellt. `segmentByMilestones` När en besökare till exempel tittar på det första segmentet i en video kan SiteCatalyst samla in följande i `1:M:0-25` segmentet eVar.
+   (Obligatoriskt) Samlar in videosegmentdata, inklusive segmentnamnet och den ordning i vilken segmentet finns i videon. Den här variabeln fylls i genom att den aktiveras när spelarhändelser spåras automatiskt, eller genom att ett anpassat segmentnamn anges när spelarhändelser spåras manuellt. `segmentByMilestones` När en besökare till exempel tittar på det första segmentet i en video kan SiteCatalyst samla in följande i eVar `1:M:0-25` segment.
 
    Standardmetoden för insamling av videodata samlar in data vid följande punkter:
 
    * videostart (spela upp)
    * segment
    * videoslut (stopp)
-   Analytics är den första segmentvyn i början av segmentet när besökaren börjar titta. Efterföljande segmentvyer när segmentet börjar.
+
+   Analyser är den första segmentvyn i början av segmentet när besökaren börjar titta. Efterföljande segmentvyer när segmentet börjar.
 
    * Variabeltyp: eVar
    * Standardförfallodatum: Sidvy

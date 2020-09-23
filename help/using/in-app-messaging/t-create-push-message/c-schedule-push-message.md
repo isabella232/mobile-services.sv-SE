@@ -1,21 +1,24 @@
 ---
-description: I Adobe Mobile Services-gränssnittet kan du schemalägga att ett push-meddelande ska levereras omedelbart, skickas senare och som en återkommande händelse. Dessa händelser kan schemaläggas varje dag, vecka eller månad.
+description: I användargränssnittet för Adobe Mobile Services kan du schemalägga att ett push-meddelande ska levereras omedelbart, skickas senare och som en återkommande händelse. Dessa händelser kan schemaläggas varje dag, vecka eller månad.
 keywords: mobile
-seo-description: I Adobe Mobile Services-gränssnittet kan du schemalägga att ett push-meddelande ska levereras omedelbart, skickas senare och som en återkommande händelse. Dessa händelser kan schemaläggas varje dag, vecka eller månad.
+seo-description: I användargränssnittet för Adobe Mobile Services kan du schemalägga att ett push-meddelande ska levereras omedelbart, skickas senare och som en återkommande händelse. Dessa händelser kan schemaläggas varje dag, vecka eller månad.
 seo-title: Schemalägg push-meddelande
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Schemalägg push-meddelande
 topic: Metrics
 uuid: 6810e27a-016f-4286-8fe2-9972d85fa326
 translation-type: tm+mt
-source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '681'
+ht-degree: 0%
 
 ---
 
 
 # Schema: push-meddelanden{#schedule-push-message}
 
-I Adobe Mobile Services-gränssnittet kan du schemalägga att ett push-meddelande ska levereras omedelbart, skickas senare och som en återkommande händelse. Dessa händelser kan schemaläggas varje dag, vecka eller månad.
+I användargränssnittet för Adobe Mobile Services kan du schemalägga att ett push-meddelande ska levereras omedelbart, skickas senare och som en återkommande händelse. Dessa händelser kan schemaläggas varje dag, vecka eller månad.
 
 >[!TIP]
 >
@@ -74,10 +77,10 @@ Du **måste** förstå följande information innan du schemalägger återkommand
    * **[!UICONTROL Never]**
    * **[!UICONTROL Every day]**
    * **[!UICONTROL Every Tuesday]**
-   * **`<Day x>`i månaden **
+   * **`<Day x>`i månaden**
 
       Vilka alternativ som visas varierar beroende på vilken dag du valde eller skrev som startdag.
-   * **`<nth day>`varje månad **
+   * **`<nth day>`varje månad**
 
       Det visade värdet ändras beroende på vilket datum du valde eller skrev som startdatum.
 

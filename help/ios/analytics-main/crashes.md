@@ -2,12 +2,15 @@
 description: Den här informationen hjälper dig att förstå hur krascher spåras och de bästa sätten att hantera falska krascher.
 seo-description: Den här informationen hjälper dig att förstå hur krascher spåras och de bästa sätten att hantera falska krascher.
 seo-title: Spåra programkrascher
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Spåra programkrascher
 topic: Developer and implementation
 uuid: 4f81988b-198a-4ba9-ad53-78af90e43856
 translation-type: tm+mt
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '529'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +23,7 @@ Den här informationen hjälper dig att förstå hur krascher spåras och de bä
 >
 >Du bör uppgradera till iOS SDK version 4.8.6, som innehåller viktiga ändringar som förhindrar att falska krascher rapporteras.
 
-## När rapporterar Adobe om en krasch?
+## När rapporterar Adobe en krasch?
 
 Om ditt program avslutas utan att först ha bakgrundskorrierats rapporterar SDK att det kraschar nästa gång ditt program startas.
 
@@ -30,7 +33,7 @@ iOS använder systemmeddelanden som gör att utvecklare kan spåra och svara på
 
 Adobe Mobile iOS SDK har en meddelandehanterare som svarar på `UIApplicationDidEnterBackgroundNotification` meddelandet. I den här koden anges ett värde som anger att användaren har bakomliggande app. Om värdet inte hittas vid en efterföljande start rapporteras en krasch.
 
-## Varför kraschar Adobes mått på krascher på det här sättet?
+## Varför mäter Adobe krascher på det här sättet?
 
 Den här metoden för att mäta krascher ger ett högnivåsvar på frågan: *Avslutade användaren min app avsiktligt?*
 
@@ -53,7 +56,7 @@ Följande scenarier kan felaktigt orsaka en krasch som rapporteras av SDK:
    >Bakgrundsaktivitet som ligger utanför tröskelvärdet kan också resultera i en ytterligare false-start. `lifecycleTimeout`
 
 * Om appen startas i bakgrunden på grund av en bakgrundshämtning, platsuppdatering osv. och avslutas av operativsystemet utan att gå till förgrunden, kraschar nästa start (bakgrund eller förgrund).
-* Om du tar bort Adobes pause-flagga från `NSUserDefaults`, medan appen är i bakgrunden, kraschar nästa start eller cv.
+* Om du tar bort pausflaggan för Adobe från `NSUserDefaults`programkoden, medan programmet är i bakgrunden, kraschar nästa start eller cv.
 
 ## Hur kan jag förhindra att falska krascher rapporteras?
 

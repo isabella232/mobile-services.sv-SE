@@ -3,10 +3,13 @@ description: Följande information hjälper dig att felsöka problem med förvä
 keywords: android;Acquisition;testing
 seo-description: Följande information hjälper dig att felsöka problem med förvärvstestning.
 seo-title: Felsökning av värvningstestning
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Felsökning av värvningstestning
 translation-type: tm+mt
-source-git-commit: 1c387b063eedb41a52e044dc824df6a51f173ad2
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '251'
+ht-degree: 0%
 
 ---
 

@@ -3,11 +3,14 @@ description: Det här avsnittet innehåller information om hur du felsöker prob
 keywords: android;library;mobile;sdk
 seo-description: Det här avsnittet innehåller information om hur du felsöker problem som du kan råka ut för under testning av värvning.
 seo-title: Felsöka förvärvningstestning
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Felsöka förvärvningstestning
 topic: Developer and implementation
 translation-type: tm+mt
-source-git-commit: 1c387b063eedb41a52e044dc824df6a51f173ad2
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '248'
+ht-degree: 0%
 
 ---
 

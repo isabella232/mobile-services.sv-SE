@@ -3,12 +3,12 @@ description: Du kan visa meddelanderapporter för meddelanden i programmet och p
 keywords: mobile
 seo-description: Du kan visa meddelanderapporter för meddelanden i programmet och push-meddelanden.
 seo-title: Visa meddelanderapporter
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Visa meddelanderapporter
 topic: Metrics
 uuid: 0ac73a81-388f-4dfd-84d5-21b8db4b8c83
 translation-type: tm+mt
-source-git-commit: 3b6edc10d042658ef1ca17a203877b7ee09d999d
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '470'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Du kan visa meddelanderapporter för meddelanden i programmet och push-meddeland
 >
 >Beroende på vilken typ av meddelande du visar kan rapporten variera.
 
-## Meddelanden i appen {#section_90B79BA58E8141F78538C187EB1BF8C7}
+## In-app messages {#section_90B79BA58E8141F78538C187EB1BF8C7}
 
 Om du visar rapporter för ett meddelande i appen ser rapporten ut ungefär som på följande bild:
 
@@ -87,8 +87,8 @@ Här är en lista över de mätvärden som är tillgängliga för push-meddeland
    * Meddelandet kan ha misslyckats på grund av att push-tjänsten inte konfigurerats korrekt eller att Mobile Services-systemet är avstängt.
    >[!IMPORTANT]
    >
-   >Om du har ett ovanligt stort antal fel kontrollerar du konfigurationen för push-tjänster. Om push-tjänster verkar vara rätt konfigurerade kontaktar du Adobes kundtjänst.
+   >Om du har ett ovanligt stort antal fel kontrollerar du konfigurationen för push-tjänster. Om push-tjänster verkar vara rätt konfigurerade kontaktar du Adobe kundtjänst.
 
 * **[!UICONTROL Blocklisted]**
 
-   Antalet enhetstoken som inte längre är giltiga för att skickas till APNS eller FCM. Det innebär vanligtvis att programmet har avinstallerats från enheten eller att användaren har ändrat sina inställningar för att ta emot meddelanden. Android och iOS skiljer sig åt när tokens räknas som blocklisted. Android-tokens visas omedelbart i blocklist-antalet. iOS-tokens visas först som publicerade, men baserat på feedback från APNS visas som blocklistade i efterföljande meddelanden.
+   Antalet enhetstoken som inte längre är giltiga för att skickas till APNS eller FCM. Det innebär vanligtvis att programmet har avinstallerats från enheten eller att användaren har ändrat sina inställningar för att ta emot meddelanden. Android och iOS skiljer sig åt när variabler räknas som blocklist. Android-tokens visas omedelbart i antalet blockeringslista. iOS-tokens visas först som publicerade, men baserat på feedback från APNS visas som blocklist i efterföljande meddelanden.

@@ -2,12 +2,15 @@
 description: Klasser och metoder som tillhandahålls av Windows 8.1 Universal App Store-biblioteket.
 seo-description: Klasser och metoder som tillhandahålls av Windows 8.1 Universal App Store-biblioteket.
 seo-title: SDK-metoder
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: SDK-metoder
 topic: Developer and implementation
 uuid: 0f558ff4-73d3-4439-9d51-62fbd74d2cea
 translation-type: tm+mt
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '655'
+ht-degree: 21%
 
 ---
 

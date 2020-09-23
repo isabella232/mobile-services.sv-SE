@@ -3,12 +3,15 @@ description: Du kan konfigurera schemaläggningsalternativ för meddelanden i ap
 keywords: mobile
 seo-description: Du kan konfigurera schemaläggningsalternativ för meddelanden i appen, inklusive varaktighet, veckodagar och tid för dagsalternativen.
 seo-title: Schemalägg meddelande i appen
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Schemalägg meddelande i appen
 topic: Metrics
 uuid: d10e691b-105a-4165-a49d-d046ce250acd
 translation-type: tm+mt
-source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '188'
+ht-degree: 0%
 
 ---
 

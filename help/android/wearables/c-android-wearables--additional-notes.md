@@ -2,12 +2,15 @@
 description: Här finns information som hjälper dig att konfigurera Android-tillägget, som gör att du kan samla in data från Android-appen.
 seo-description: Här finns information som hjälper dig att konfigurera Android-tillägget, som gör att du kan samla in data från Android-appen.
 seo-title: Android Wearables Additional Notes
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Android Wearables Additional Notes
 topic: Developer and implementation
 uuid: 3bcf352b-4d46-4ab3-81ec-c27e86fe9be3
 translation-type: tm+mt
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '161'
+ht-degree: 0%
 
 ---
 

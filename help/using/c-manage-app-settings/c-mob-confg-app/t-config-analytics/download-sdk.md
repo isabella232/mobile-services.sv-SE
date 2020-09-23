@@ -3,12 +3,15 @@ description: Den här informationen hjälper dig att hämta SDK för mobiltjäns
 keywords: mobile;android;ios;sdk
 seo-description: Den här informationen hjälper dig att hämta SDK för mobiltjänster och verktyg som kan hjälpa dig med implementeringen av dina mobiltjänster.
 seo-title: Ladda ned SDK och verktyg för mobiler
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Ladda ned SDK och verktyg för mobiler
 topic: Developer and implementation,Metrics
 uuid: 4af757f7-4e4d-4939-9b6a-49a29c220192
 translation-type: tm+mt
-source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '176'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +30,7 @@ Du kan hämta en `ADBMobileConfig.json` fil som är anpassad med de programinst�
 
 ## Inbyggda bibliotek {#section_C2ADC3068D9F4EAEBE5B266852738C90}
 
-Konfigurera appen i Adobe Mobile Services så att du kan hämta ett anpassat paket som innehåller en förifylld version av konfigurationsfilen:
+Konfigurera appen i Adobe Mobile-tjänster så att du kan hämta ett anpassat paket som innehåller en förifylld version av konfigurationsfilen:
 
 * [iOS-instruktioner](/help/ios/getting-started/requirements.md)
 * [Android-instruktioner](/help/android/getting-started/requirements.md)

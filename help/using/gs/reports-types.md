@@ -3,17 +3,20 @@ description: När du anpassar rapporter kan den breda flexibiliteten skapa fråg
 keywords: mobile
 seo-description: När du anpassar rapporter kan den breda flexibiliteten skapa frågor om vilken typ av rapport som passar bäst för att få de data du behöver.
 seo-title: Rapporttyper
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Rapporttyper
 topic: Reports,Metrics
 uuid: 8747b11e-31b1-47bc-ad55-db5ab4ef7078
 translation-type: tm+mt
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '766'
+ht-degree: 0%
 
 ---
 
 
-# Rapporttyper {#report-types}
+# Report Types {#report-types}
 
 När du anpassar rapporter kan den breda flexibiliteten skapa frågor om vilken typ av rapport som passar bäst för att få de data du behöver.
 
@@ -25,7 +28,7 @@ Innan du anpassar rapporter måste du förstå skillnaden mellan ett mått och e
 
 * Dimension
 
-   En dimension används för att beskriva dina data. Dimensioner representeras av en sträng eller ett tal som fungerar som en sträng (till exempel ett postnummer) och används för att ordna och segmentera data. Exempel på vanliga dimensioner är OS-version, kampanjnamn, produktnamn och mobiloperatör. Varje dimension har ett antal specifika värden som är kopplade till den dimensionen. OS-versionen har till exempel värden som _iOS 7_ och _Android 4.1.2_.
+   En dimension används för att beskriva dina data. Dimensioner representeras av en sträng, eller ett tal som fungerar som en sträng (t.ex. ett postnummer), och används för att ordna och segmentera data. Exempel på vanliga dimensioner är OS-version, kampanjnamn, produktnamn och mobiloperatör. Varje dimension har ett antal specifika värden som är kopplade till den dimensionen. OS-versionen har till exempel värden som _iOS 7_ och _Android 4.1.2_.
 
 Här är de typer av rapporter som du kan generera i gränssnittet för mobila enheter:
 

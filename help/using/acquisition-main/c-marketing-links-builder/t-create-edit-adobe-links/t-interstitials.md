@@ -3,12 +3,15 @@ description: Du kan dirigera användare till ett mål beroende på om de har app
 keywords: mobile
 seo-description: Du kan dirigera användare till ett mål beroende på om de har appen installerad (en applänk) eller inte (till en webbplats eller en appbutik).
 seo-title: Insticksannonser
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Insticksannonser
 topic: Metrics
 uuid: 7dce8ab2-2a5d-4384-ac1e-e31dfaa33654
 translation-type: tm+mt
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '370'
+ht-degree: 1%
 
 ---
 

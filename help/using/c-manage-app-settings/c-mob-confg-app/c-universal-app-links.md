@@ -3,12 +3,15 @@ description: Tack vare iOS- och Applänkar (Android) kan du ansluta till djupa l
 keywords: mobile
 seo-description: Tack vare iOS- och Applänkar (Android) kan du ansluta till djupa länkar i iOS- och Android-appar.
 seo-title: Apple Universal Links och Android App Links
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Apple Universal Links och Android App Links
 topic: Metrics
 uuid: 8d6441dc-4307-4454-95ea-d77ec796f918
 translation-type: tm+mt
-source-git-commit: e65add089499f728827321e96e439f04ebb19a73
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '1021'
+ht-degree: 0%
 
 ---
 
@@ -69,7 +72,7 @@ Du kan skapa en marknadsföringslänk som använder en universell länk eller en
 
    c. Under **[!UICONTROL Marketing Link Options]** väljer du **[!UICONTROL Use Universal Links or App Links]**.
 
-   d. Om du konfigurerade webbplatsassociationsdokumenten i avsnittet *Konfigurera platsassociationsdokument i Adobe Mobile Services* ovan, är det här alternativet valt som standard.
+   d. Om du konfigurerade platsassociationsdokumenten i avsnittet *Konfigurera platsassociationsdokument i Adobe Mobile Services* ovan, är det här alternativet markerat som standard.
 
    Om du inte konfigurerade dokumenten är **[!UICONTROL Use Universal Links or App Links]** alternativet inaktiverat och **[!UICONTROL Use Interstitials]** markerat som standard.
 
@@ -120,7 +123,7 @@ Du kan skapa en marknadsföringslänk som använder en universell länk eller en
 
 ### Använd en applänk
 
-1. Skapa en Marketing Link som använder Applänkar i Adobe Mobile Services:
+1. Skapa en Marketing Link som använder applänkar i Adobe Mobile Services:
 
    a. Välj appen från startsidan för Mobiltjänster och klicka på **[!UICONTROL Acquisition]** > **[!UICONTROL Marketing Link Builder]**.
 

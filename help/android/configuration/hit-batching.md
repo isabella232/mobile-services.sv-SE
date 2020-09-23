@@ -3,12 +3,15 @@ description: Om du trycker på gruppering kan program stoppa träffar från att 
 keywords: android;library;mobile;sdk
 seo-description: Om du trycker på gruppering kan program stoppa träffar från att skickas tills antalet träffar i kön har överskridit den konfigurerade gränsen.
 seo-title: Träffa
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Träffa
 topic: Developer and implementation
 uuid: ada35be3-242b-4b2b-a828-9bf998dd58b5
 translation-type: tm+mt
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '183'
+ht-degree: 0%
 
 ---
 

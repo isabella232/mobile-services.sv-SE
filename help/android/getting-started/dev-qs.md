@@ -3,12 +3,15 @@ description: Den här informationen hjälper dig att implementera Android-biblio
 keywords: android;library;mobile;sdk
 seo-description: Den här informationen hjälper dig att implementera Android-biblioteket och samla in livscykelvärden, som starter, uppgraderingar, sessioner, engagerade användare och så vidare.
 seo-title: Kärnimplementering och livscykel
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Kärnimplementering och livscykel
 topic: Developer and implementation
 uuid: af4d11ac-8245-46a0-9b3a-4a0a29cfbbb2
 translation-type: tm+mt
-source-git-commit: dae60a21286edc28c84b7638da214b824abf0cd3
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '535'
+ht-degree: 2%
 
 ---
 
@@ -35,7 +38,7 @@ Den här informationen hjälper dig att implementera Android-biblioteket och sam
    * `ADBMobileConfig.json`, som är SDK-konfigurationsfilen som är anpassad för ditt program.
    >[!IMPORTANT]
    >
-   >Om du hämtar SDK utanför Adobe Mobile Services-gränssnittet måste filen konfigureras manuellt `ADBMobileConfig.json` . Om du inte har använt Analytics eller Mobile SDK tidigare och vill skapa en utvecklingsrapportsserie och hämta en förifylld version av konfigurationsfilen läser du [Innan du börjar](/help/android/getting-started/requirements.md).
+   >Om du hämtar SDK-filen utanför användargränssnittet för Adobe-mobiltjänster måste filen konfigureras manuellt `ADBMobileConfig.json` . Om du inte har använt Analytics eller Mobile SDK tidigare och vill skapa en utvecklingsrapportsserie och hämta en förifylld version av konfigurationsfilen läser du [Innan du börjar](/help/android/getting-started/requirements.md).
 
 ## Lägg till SDK- och config-filen i IntelliJ IDEA- eller Eclipse-projektet {#section_B89510FBB4C646AEA73A185B966E54D3}
 
@@ -46,10 +49,10 @@ Så här lägger du till SDK- och konfigurationsfilen i projektet:
 1. Lägg till `ADBMobileConfig.json` filen i `assets` mappen i projektet.
 
 1. Högerklicka på projektet på projektnavigeringspanelen.
-1. Välj **[!UICONTROL Öppna modulinställningar]**.
-1. Under **[!UICONTROL Projektinställningar]** väljer du **[!UICONTROL Bibliotek]**.
-1. Klicka på **[!UICONTROL +]** -ikonen för att lägga till ett nytt bibliotek.
-1. Välj **[!UICONTROL Java]** och navigera till `adobeMobileLibrary.jar` filen.
+1. Välj **[!UICONTROL Open Module Settings]**.
+1. Under **[!UICONTROL Project Settings]** väljer du **[!UICONTROL Libraries]**.
+1. Click the **[!UICONTROL +]** icon to add a new library.
+1. Markera **[!UICONTROL Java]** och navigera till `adobeMobileLibrary.jar` filen.
 1. Välj de moduler där du tänker använda mobilbiblioteket.
 1. Click **[!UICONTROL Apply]** and **[!UICONTROL OK]** to close the Module Settings window.
 
@@ -58,12 +61,12 @@ Så här lägger du till SDK- och konfigurationsfilen i projektet:
 Så här lägger du till SDK- och konfigurationsfilen i projektet:
 
 1. Lägg till `ADBMobileConfig.json` filen i `assets` mappen i projektet.
-1. Högerklicka på projektnamnet i **[!UICONTROL Eclipse IDE]**.
-1. Klicka på **[!UICONTROL Skapa sökväg]** > **[!UICONTROL Lägg till externa arkiv]**.
+1. Högerklicka **[!UICONTROL Eclipse IDE]** på projektnamnet i.
+1. Klicka på  **[!UICONTROL Build Path]** > **[!UICONTROL Add External Archives]**.
 1. Välj `adobeMobileLibrary.jar`.
-1. Klicka på **[!UICONTROL Öppna]**.
-1. Högerklicka på projektet igen och välj **[!UICONTROL Skapa sökväg]** > **[!UICONTROL Konfigurera byggsökväg]**.
-1. Kontrollera att alternativet **[!UICONTROL är markerat på fliken]** Ordning och Exportera **`adobeMobileLibrary.jar`** .
+1. Klicka på **[!UICONTROL Open]**.
+1. Högerklicka på projektet igen och välj **[!UICONTROL Build Path]** > **[!UICONTROL Configure Build Path]**.
+1. Kontrollera att **[!UICONTROL Order and Export]** det **`adobeMobileLibrary.jar`** är markerat på fliken.
 
 ## Lägg till programbehörigheter {#section_2EAF73ABF6424647B219A63B33B02CD5}
 
@@ -140,7 +143,7 @@ public void onResume() {
 }
 ```
 
-Ytterligare kontextdatavärden som skickas med `collectLifecycleData` måste mappas till anpassade variabler i Adobe Mobile Services:
+Ytterligare kontextdatavärden som skickas med `collectLifecycleData` måste mappas till anpassade variabler i Adobe Mobile-tjänsterna:
 
 ![](assets/map-variable-lifecycle.png)
 

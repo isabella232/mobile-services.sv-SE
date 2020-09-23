@@ -2,12 +2,12 @@
 description: Den här informationen hjälper dig att använda ADBMobil.json-konfigurationsfilen.
 seo-description: Den här informationen hjälper dig att använda ADBMobil.json-konfigurationsfilen.
 seo-title: ADBMomobile JSON-konfiguration
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: ADBMomobile JSON-konfiguration
 topic: Developer and implementation
 uuid: d9708d59-e30a-4f6c-ab1b-d9499855d0c2
 translation-type: tm+mt
-source-git-commit: 86ba045b44bf6553e80727c0d61ccdd9a552d16c
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '1715'
 ht-degree: 7%
@@ -39,13 +39,13 @@ Samma config-fil kan användas för appen på flera plattformar:
 
 * **analyticsForwardingEnabled**
 
-   Egenskapen i `audienceManager` objektet. Om `Audience Manager` är konfigurerad och `analyticsForwardingEnabled` är inställd på `true`vidarebefordras all Analytics-trafik till Audience Manager. Standardvärdet är `false`.
+   Egenskapen i `audienceManager` objektet. Om `Audience Manager` är konfigurerad och `analyticsForwardingEnabled` är inställd på `true`vidarebefordras även all Analytics-trafik till Audience Manager. Standardvärdet är `false`.
 
    * Minsta SDK-version: 4.8.0
 
 * **backdateSessionInfo**
 
-   Gör att Adobe SDK kan uppdatera sessionsinfo.
+   Aktiverar/inaktiverar möjligheten för Adobe SDK att uppdatera sessionsinfo-träffar.
 
    Sessionsinformationsträffar består för närvarande av krascher och sessionslängd och kan aktiveras eller inaktiveras.
 
@@ -60,7 +60,7 @@ Samma config-fil kan användas för appen på flera plattformar:
    * Minsta SDK-version: 4.6
    >[!IMPORTANT]
    >
-   >Senare information om sessionsträffen skickas i ett sessionsinfoserveranrop, och ytterligare serveranrop kan gälla.
+   >Senare information om sessionsträff skickas i ett sessionsinfoserveranrop, och ytterligare serveranrop kan gälla.
 
 
 * **batchLimit**
@@ -89,12 +89,13 @@ Samma config-fil kan användas för appen på flera plattformar:
 
 * **coopUnsafe**
 
-   För medlemmar i Device Co-op som kräver det här värdet måste du `true`arbeta med Co-op-teamet för att begära en blocklist-flagga på ditt Device Co-op-konto. Det finns ingen självbetjäningsväg för att aktivera dessa flaggor.
+   För medlemmar i Device Co-op som kräver det här värdet måste du `true`arbeta med Co-op-teamet för att begära en blockeringslista-flagga på ditt Device Co-op-konto. Det finns ingen självbetjäningsväg för att aktivera dessa flaggor.
 
    Kom ihåg följande information:
 
-   * När `coopUnsafe` är inställt på `true`läggs `coop_unsafe=1` alltid till i Audience Manager och besöks-ID-träffar.
-   * Om du aktiverar vidarebefordran på serversidan från Analytics till Audience Manager visas även `coop_unsafe=1` Analytics-träffar.
+   * När `coopUnsafe` är inställt på `true`läggs `coop_unsafe=1` alltid till i Audience Manager och i besöks-ID-träffar.
+   * Om du aktiverar vidarebefordran på serversidan för Analytics till Audience Manager kan du även se `coop_unsafe=1` om Analytics-träffar.
+
    Här är ytterligare information:
 
    * Minsta SDK-version: 4.16.1
@@ -120,7 +121,7 @@ Samma config-fil kan användas för appen på flera plattformar:
 
 * **meddelanden**
 
-   Inställningarna för meddelanden i appen definieras automatiskt av Adobe Mobile Services. Mer information finns i avsnittet *Meddelandebeskrivning* nedan.
+   Inställningarna för meddelanden i appen definieras automatiskt av Adobe Mobile-tjänster. Mer information finns i avsnittet *Meddelandebeskrivning* nedan.
 
    * Minsta SDK-version: 4.2
 
@@ -133,13 +134,13 @@ Samma config-fil kan användas för appen på flera plattformar:
    * Om tidsstämplar är aktiverade i rapportsviten `offlineEnabled` måste ** konfigurationsegenskapen vara true.
    * Om rapportsviten inte är tidsstämpelaktiverad `offlineEnabled` måste ** konfigurationsegenskapen vara false.
 
-      Om detta inte är korrekt konfigurerat går data förlorade. Om du är osäker på om en rapportsserie är tidsstämplad eller aktiverad kan du kontakta kundtjänst eller hämta konfigurationsfilen från Adobe Mobile Services. Om du för närvarande rapporterar AppMeasurement-data till en rapportserie som även samlar in data från JavaScript, kan du behöva skapa en separat rapportserie för mobildata eller inkludera en anpassad tidsstämpel för alla JavaScript-träffar som använder `s.timestamp` variabeln.
+      Om detta inte är korrekt konfigurerat går data förlorade. Om du är osäker på om en rapportsserie är tidsstämplad eller aktiverad kan du kontakta kundtjänst eller hämta konfigurationsfilen från Adobe Mobile-tjänster. Om du för närvarande rapporterar AppMeasurement-data till en rapportserie som även samlar in data från JavaScript, kan du behöva skapa en separat rapportserie för mobildata eller inkludera en anpassad tidsstämpel för alla JavaScript-träffar som använder `s.timestamp` variabeln.
 
    * Minsta SDK-version: 4.0
 
 * **org**
 
-   Anger Experience Cloud org-ID för Adobe Experience Platform Identity Service.
+   Anger Experience Cloud organisation-ID för Adobe Experience Platform identitetstjänst.
 
    * Minsta SDK-version: 4.3
 
@@ -158,7 +159,7 @@ Samma config-fil kan användas för appen på flera plattformar:
 
    >[!TIP]
    >
-   >Från och med version 4.2 definieras POI i Adobe Mobile-gränssnittet och synkroniseras dynamiskt till programkonfigurationsfilen. Synkroniseringen kräver `analytics.poi` inställningen:
+   >Från och med version 4.2 definieras POI i gränssnittet för Adobe Mobile och synkroniseras dynamiskt till programkonfigurationsfilen. Synkroniseringen kräver `analytics.poi` inställningen:
 
    ```js
    “analytics.poi”: “`https://assets.adobedtm.com/…/yourfile.json`”,
@@ -206,7 +207,7 @@ Samma config-fil kan användas för appen på flera plattformar:
 
 * **fjärrplatser**
 
-   Konfigureras automatiskt och definierar Adobe-hanterade slutpunkter för dynamiska konfigurationsfiler. Den senaste uppdateringstiden för varje konfigurationsfil kontrolleras mot den aktuella versionen vid varje start och uppdateringarna hämtas och sparas.
+   Konfigureras automatiskt och definierar slutpunkter på Adobe för dynamiska konfigurationsfiler. Den senaste uppdateringstiden för varje konfigurationsfil kontrolleras mot den aktuella versionen vid varje start och uppdateringarna hämtas och sparas.
 
    * `analytics.poi` är slutpunkten för POI-konfigurationen som lagras.
 
@@ -216,7 +217,7 @@ Samma config-fil kan användas för appen på flera plattformar:
 
 * **rsids**
 
-   En eller flera rapportsviter som tar emot Analytics-data. Flera rapportpaket-ID:n ska vara kommaavgränsade utan mellanrum.
+   En eller flera rapportsviter för att ta emot analysdata. Flera rapportpaket-ID:n ska vara kommaavgränsade utan mellanrum.
 
    ```js
    "rsids": "rsid"
@@ -346,7 +347,7 @@ Here is a sample `ADBMobileConfig.json` file:
 
 ## Meddelandebeskrivning {#section_B97D654BA92149CE91F525268D7AD71F}
 
-Meddelandenoden genereras automatiskt av Adobe Mobile Services och behöver vanligtvis inte ändras manuellt. Följande beskrivning tillhandahålls i felsökningssyfte:
+Meddelandenoden genereras automatiskt av Adobe Mobile-tjänster och behöver vanligtvis inte ändras manuellt. Följande beskrivning tillhandahålls i felsökningssyfte:
 
 * &quot;messageId&quot;
 

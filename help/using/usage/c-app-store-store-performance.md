@@ -3,19 +3,22 @@ description: I rapporten App Store Overview (App Store-översikt) får du en ög
 keywords: mobile
 seo-description: I rapporten App Store Overview (App Store-översikt) får du en ögonblicksbild av dina mått för appbutiker, inklusive antalet hämtningar, köp i appen, genomsnittlig klassificering, nedladdningsintäkter, intäkter i appen, nedladdningar per land, nedladdningar per appbutik och köp i appen per namn.
 seo-title: App Store - översikt
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: App Store - översikt
 topic: Metrics
 uuid: ac066f31-ec4b-4b67-b839-780c2cd1574e
 translation-type: tm+mt
-source-git-commit: 3b744229b3fc288363be74c3c4adcd71ecc4fad4
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '499'
+ht-degree: 0%
 
 ---
 
 
 # App Store - översikt{#app-store-overview-report}
 
-Rapporten **[!UICONTROL App Store Overview]** ger er en ögonblicksbild av era mått för appbutiker, inklusive antalet nedladdningar, köp i appen, genomsnittlig klassificering, nedladdningsintäkter, intäkter i appen, nedladdningar per land, nedladdningar per appbutik och köp i appen per namn.
+Rapporten ger er en ögonblicksbild av era mått för appbutiker, inklusive antalet nedladdningar, köp i appen, genomsnittlig klassificering, nedladdningsintäkter, intäkter i appen, nedladdningar per land, nedladdningar per appbutik och köp i appen per namn. **[!UICONTROL App Store Overview]**
 
 >[!TIP]
 >
@@ -29,7 +32,7 @@ Du kan klicka på ett mätresultat om du vill dölja eller visa motsvarande rad.
 
 >[!IMPORTANT]
 >
->Mätvärden för App Store, som nedladdningar, rankning, intäkter, omdömen och så vidare i Adobe Analytics, kräver en integrering med en lämplig leverantör av Data Connector. `appFigures` ger för närvarande en integrering, vilket kräver att du köper rätt produkt och/eller tjänst från `appFigures` innan **** du kan aktivera integreringen. Mer information om integrering av Data Connector finns i [Adobe Exchange](https://www.adobeexchange.com/experiencecloud.html).
+>Mätvärden för App Store, t.ex. nedladdningar, rankning, intäkter, omdömen och så vidare, i Adobe Analytics kräver en integrering med en lämplig leverantör. `appFigures` ger för närvarande en integrering, vilket kräver att du köper rätt produkt och/eller tjänst från `appFigures` innan **** du kan aktivera integreringen. Mer information om integreringar med Data Connector finns i [Adobe Exchange](https://www.adobeexchange.com/experiencecloud.html).
 
 >[!TIP]
 >

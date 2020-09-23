@@ -2,12 +2,15 @@
 description: Med tidsbestämda åtgärder kan du mäta tiden i appen och den totala tiden mellan åtgärdens början och slut. SDK beräknar tiden för varje session och den totala tiden mellan sessionerna som behövs för att åtgärden ska kunna slutföras. Du kan använda tidsbestämda åtgärder för att definiera segment och jämföra tiden för inköp, skicka-nivå, utcheckningsflöde och så vidare.
 seo-description: Med tidsbestämda åtgärder kan du mäta tiden i appen och den totala tiden mellan åtgärdens början och slut. SDK beräknar tiden för varje session och den totala tiden mellan sessionerna som behövs för att åtgärden ska kunna slutföras. Du kan använda tidsbestämda åtgärder för att definiera segment och jämföra tiden för inköp, skicka-nivå, utcheckningsflöde och så vidare.
 seo-title: Tidsbestämda åtgärder
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Tidsbestämda åtgärder
 topic: Developer and implementation
 uuid: 5a48a580-b942-4e49-9f1b-078fea7fccdb
 translation-type: tm+mt
-source-git-commit: 97c0dc17bcc624b38e9eb8023eb1d69d02568d11
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '415'
+ht-degree: 0%
 
 ---
 
@@ -72,7 +75,7 @@ cdata.put("myapp.ImageLiked", imageName);
 Analytics.trackTimed​ActionUpdate("TimeUntilPurchase", cdata);
 ```
 
-Kontextdatavärden måste mappas till anpassade variabler i Adobe Mobile Services:
+Kontextdatavärden måste mappas till anpassade variabler i Adobe Mobile-tjänster:
 
 ![](assets/map-variable-context-ltv.png)
 

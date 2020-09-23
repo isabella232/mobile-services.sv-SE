@@ -3,12 +3,15 @@ description: Du kan skapa och hantera intressepunkter, som gör att du kan defin
 keywords: mobile
 seo-description: Du kan skapa och hantera intressepunkter, som gör att du kan definiera geografiska platser som du kan använda för korrelationssyften, mål med meddelanden i appen och så vidare. När en träff skickas i en intressepunkt kopplas den till träffen.
 seo-title: Hantera intressepunkter
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Hantera intressepunkter
 topic: Metrics
 uuid: 7b362534-54fb-43a3-b6b2-dfc8f45ff7c6
 translation-type: tm+mt
-source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '532'
+ht-degree: 0%
 
 ---
 
@@ -66,4 +69,4 @@ Gör så här om du vill använda Plats:
 
 Om du vill ta bort en eller flera POI:er markerar du de tillämpliga kryssrutorna och klickar på **[!UICONTROL Remove Selected]**.
 
-Klicka **[!UICONTROL Import]** eller **[!UICONTROL Export]** för att arbeta med data genom att använda en `.csv` fil i stället för att använda användargränssnittet i Adobe Mobile.
+Klicka **[!UICONTROL Import]** eller **[!UICONTROL Export]** för att arbeta med data genom att använda en `.csv` fil i stället för att använda användargränssnittet för Adobe Mobile.

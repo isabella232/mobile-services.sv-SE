@@ -3,12 +3,15 @@ description: Med denna plugin kan du skicka iOS AppMeasurement-anrop från ditt 
 keywords: phonegap
 seo-description: Med denna plugin kan du skicka iOS AppMeasurement-anrop från ditt PhoneGap-projekt.
 seo-title: PhoneGap-plugin
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: PhoneGap-plugin
 topic: Developer and implementation
 uuid: f88bcf10-1f9e-4c97-b348-40db797c9923
 translation-type: tm+mt
-source-git-commit: 517ae533864aebe9c6a20d877a9638d5d3e2a071
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '296'
+ht-degree: 2%
 
 ---
 
@@ -21,7 +24,7 @@ Med denna plugin kan du skicka iOS AppMeasurement-anrop från ditt PhoneGap-proj
 
 Letar du efter information och dokumentation om Adobe Experience Platform Mobile SDK? Klicka [här](https://aep-sdks.gitbook.io/docs/) för att få den senaste dokumentationen.
 
-Från om med september 2018 har vi släppt en ny större version av SDK. Dessa nya SDK:er för Adobe Experience Platform Mobile kan konfigureras via [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
+Från om med september 2018 har vi släppt en ny större version av SDK. Dessa nya Adobe Experience Platform Mobile SDK:er kan konfigureras via [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
 
 * Gå till Adobe Experience Platform Launch för att komma igång.
 * Om du vill se vad som finns i Experience Platform SDK-databaserna går du till [Github: Adobe Experience Platform SDKs](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
@@ -70,6 +73,7 @@ AppMeasurement-biblioteket kräver följande:
    1. Välj **[!UICONTROL Copy items into destination group's folder (if needed)]**.
    1. Välj **[!UICONTROL Create groups for any added folders]**.
    1. Markera de mål där du vill använda AppMeasurement-kod och klicka på **[!UICONTROL Finish]**.
+
    ![](assets/xcode-settings.png){width=&quot;672&quot;}
 
 1. In the **[!UICONTROL Build Phases]** tab of your project’s target, expand the **[!UICONTROL Link Binary with Libraries]** section and add the following libraries:

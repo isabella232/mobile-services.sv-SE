@@ -2,12 +2,15 @@
 description: Versionsinformation och kända fel för Windows 8.1 Universal App Store SDK 4.x för Experience Cloud Solutions.
 seo-description: Versionsinformation och kända fel för Windows 8.1 Universal App Store SDK 4.x för Experience Cloud Solutions.
 seo-title: Versionsinformation
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Versionsinformation
 topic: Developer and implementation
 uuid: 45634319-7949-4e24-b193-4f876af97a69
 translation-type: tm+mt
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '248'
+ht-degree: 6%
 
 ---
 
@@ -28,4 +31,4 @@ Utöver betydande prestandaökningar har version 4 även följande nya funktione
 | Opt-in/Opt-out | Aktivera och inaktivera analyser snabbt. |
 
 
-Mer information om versionsinformation för alla lösningar finns i versionsinformationen om [Adobe Experience Cloud](https://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html).
+Mer information om versionsinformation för alla lösningar finns i [Adobe Experience Cloud versionsinformation](https://docs.adobe.com/content/help/sv-SE/release-notes/experience-cloud/current.html).

@@ -2,12 +2,15 @@
 description: Information som hjälper dig att använda universella Windows Platform SDK med Adobe Analytics.
 seo-description: Information som hjälper dig att använda universella Windows Platform SDK med Adobe Analytics.
 seo-title: Analysmetoder
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Analysmetoder
 topic: Developer and implementation
 uuid: cc299bb5-ec61-49bf-869a-f3c3bc83359f
 translation-type: tm+mt
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '632'
+ht-degree: 28%
 
 ---
 
@@ -18,7 +21,7 @@ Information som hjälper dig att använda universella Windows Platform SDK med A
 
 SDK har för närvarande stöd för flera Adobe Experience Cloud-lösningar, inklusive Analytics, Target och Audience Manager. Metoderna är prefasta enligt lösningen. Analysmetoder har prefixet&quot;Analytics&quot;.
 
-Var och en av dessa metoder används för att skicka data till rapportsviten för Adobe Analytics.
+Var och en av dessa metoder används för att skicka data till din Adobe Analytics rapportsvit.
 
 >[!TIP]
 >

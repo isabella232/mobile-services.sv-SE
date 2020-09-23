@@ -2,12 +2,15 @@
 description: Bearbetningsregler används för att kopiera data som du skickar i kontextdatavariabler till eVars, props och andra variabler för rapportering.
 seo-description: Bearbetningsregler används för att kopiera data som du skickar i kontextdatavariabler till eVars, props och andra variabler för rapportering.
 seo-title: Bearbetar regler och kontextdata
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Bearbetar regler och kontextdata
 topic: Developer and implementation
 uuid: ea892228-86f5-4980-acb8-45ae43c6996d
 translation-type: tm+mt
-source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '272'
+ht-degree: 3%
 
 ---
 

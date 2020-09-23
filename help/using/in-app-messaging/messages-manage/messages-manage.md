@@ -3,12 +3,15 @@ description: Visa en lista över dina meddelanden i appen och push-meddelanden m
 keywords: mobile
 seo-description: Visa en lista över dina meddelanden i appen och push-meddelanden med information om när varje meddelande uppdaterades senast och om meddelandena är live eller inaktiverade.
 seo-title: Hantera meddelanden
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Hantera meddelanden
 topic: Metrics
 uuid: 4d934ede-0c68-4dd5-ba37-9caf727cc717
 translation-type: tm+mt
-source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '448'
+ht-degree: 0%
 
 ---
 

@@ -3,12 +3,15 @@ description: Den här informationen kan hjälpa dig att felsöka meddelanden i a
 keywords: mobile
 seo-description: Den här informationen kan hjälpa dig att felsöka meddelanden i appen.
 seo-title: Felsöka meddelanden i appen
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Felsöka meddelanden i appen
 topic: Metrics
 uuid: 8813e8d8-bb1e-46ad-83cd-98ae68f73ce6
 translation-type: tm+mt
-source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '635'
+ht-degree: 0%
 
 ---
 
@@ -43,7 +46,7 @@ Kontrollera att de här inställningarna är korrekta. Granska alternativen på 
 
 ## Om starthändelse används som utlösare..
 
-Starta bara en ny session. Information om när en session påbörjas finns `lifecycleTimeout` i [ADBMomobile JSON-konfigurationsfilen](/help/ios/configuration/json-config/json-config.md) .
+Starta bara en ny session. Mer information om när en session börjar finns `lifecycleTimeout` i [ADBMomobile JSON-konfigurationsfilen](/help/ios/configuration/json-config/json-config.md) .
 
 ## Jag har uppdaterat mitt meddelande på distans, men min app visar fortfarande det gamla meddelandet.
 

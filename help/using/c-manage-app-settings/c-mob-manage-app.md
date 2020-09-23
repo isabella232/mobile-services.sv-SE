@@ -3,12 +3,15 @@ description: Ni kan spåra och hantera data som ni får från appen genom att ko
 keywords: mobile
 seo-description: Ni kan spåra och hantera data som ni får från appen genom att konfigurera olika variabler och mätvärden.
 seo-title: Hantera din app
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Hantera din app
 topic: Metrics
 uuid: 0cc356c3-8457-40a7-8c97-7cbc68a5dc0c
 translation-type: tm+mt
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '989'
+ht-degree: 1%
 
 ---
 
@@ -57,30 +60,30 @@ Följande mappningar visas i Analytics som om de skapats i Mobile Services.
 
 * **[!UICONTROL Context Data]**
 
-   Om variabeln är ifylld med en enkel mappning från kontextdata är det här nyckeln som mappas till den. Lämna det här fältet tomt om variabeln fylls i med mer komplexa regler i Administrationsverktyg för analyser.
+   Om variabeln är ifylld med en enkel mappning från kontextdata är det här nyckeln som mappas till den. Lämna det här fältet tomt om variabeln fylls i med mer komplexa regler i Administratörsverktyg för analyser.
 
    Klicka i kontextdatakolumnen och markera den kontextdatavariabel som du vill mappa. Listrutan innehåller variabler som tagits emot under de senaste 30 dagarna, så om de kontextdata du vill mappa inte finns med i listan kan du skriva in dem.
 
 * **[!UICONTROL Persistence (Custom Variables and Custom List Variables)]**
 
-   Med Persistence anger du den punkt där ett värde för en anpassad variabel (eVar) upphör att gälla eller inte längre kopplas till ytterligare träffar. Om en eVar har gått ut när en träff utlöses, kommer värdet None att associeras med den träffen för den eVar-händelsen. Det innebär att inget eVar-värde var aktivt när träffen utlöstes.
+   Med Persistence anger du den punkt där ett värde för en anpassad variabel (eVar) upphör att gälla eller inte längre kopplas till ytterligare träffar. Om en eVar har gått ut när en träff utlöses, kommer värdet Ingen att kopplas till den träffen för den eVar. Det innebär att inget eVar var aktivt när träffen utlöstes.
 
    Du kan välja något av följande alternativ:
 
    * **[!UICONTROL Session]**
 
-      eVar-värdet kvarstår under hela Analytics-besöket.
+      EVar kvarstår under hela Analytics-besöket.
 
    * **[!UICONTROL Tracking Call]**
 
-      eVar-värdet kvarstår bara för det spårningsanrop eller träff på det som det ingick i.
+      EVar kvarstår bara för spårningsanropet eller träffar det där det ingick.
 
    * **[!UICONTROL Never Expire]**
 
-      eVar-värdet kvarstår för alla efterföljande spårningsanrop.
+      EVar kvarstår för alla efterföljande spårningsanrop.
    * **[!UICONTROL Advanced]**
 
-      Adobe Analytics har ett mer avancerat användargränssnitt för att ange beständighet för eVars. Om ett beständigt värde anges för eVar som inte stöds i Mobile Services visas det här värdet i gränssnittet för Mobile Services.
+      Adobe Analytics har ett mer avancerat användargränssnitt för att ange beständighet för eVars. Om ett beständigt värde anges för eVar som inte stöds i Mobile Services visas det här värdet i gränssnittet för mobila tjänster.
 
       Om du vill hantera eVars klickar du **[!UICONTROL Adobe Analytics Report Suite Manager]** > **[!UICONTROL Conversion Variables UI]**.
 
@@ -100,7 +103,7 @@ Du kan aktivera ytterligare variabler med hjälp av listrutan längst ned i varj
 
 Välj ett oanvänt variabelnummer och skriv ett namn. Du kan också ange den kontextdatavariabel som du vill lagra och eventuell ytterligare information.
 
-* **Anpassade mått**
+* **Anpassade mätvärden**
 
    Mätvärden (eller händelser) besvarar frågorna *hur mycket?* eller *hur många?*. Händelser kan stegvis ökas varje gång användaren utför en åtgärd eller håller kvar numeriska värden, t.ex. ett pris. Anpassade mätvärden inkluderar händelser som när en app skapades, PDF- eller CSV-filen hämtades eller exporterades, en kampanj sparades, SDK hämtades, en rapport kördes, en länk till App Store lades till, ett meddelande i appen aktiverades och så vidare.
 

@@ -1,18 +1,21 @@
 ---
 description: 'null'
 seo-description: 'null'
-seo-title: Analyser
-solution: Marketing Cloud,Analytics
-title: Analyser
+seo-title: 'Analytics '
+solution: Experience Cloud,Analytics
+title: 'Analytics '
 topic: Developer and implementation
 uuid: fa0ef6c4-c04d-4695-9eb4-ada4e9920e6c
 translation-type: tm+mt
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '915'
+ht-degree: 2%
 
 ---
 
 
-# Analyser {#analytics}
+# Analytics{#analytics} 
 
 När du har lagt till biblioteket i ditt projekt kan du göra alla anrop till Analytics-metoden var som helst i din app.
 
@@ -40,7 +43,7 @@ Livscykelmätvärden är nu klara att hämtas och Mobile Application Reports vis
 
 ### Nya versioner
 
-Nya versioner av rapporter om mobilapplikationer släpps regelbundet. Nya versioner används inte automatiskt i din rapportsserie. Du måste upprepa de här stegen för att kunna genomföra uppgraderingen. Varje gång du lägger till nya Experience Cloud-funktioner i ditt program rekommenderar vi att du upprepar de här stegen för att se till att du har den senaste konfigurationen.
+Nya versioner av rapporter om mobilapplikationer släpps regelbundet. Nya versioner används inte automatiskt i din rapportsserie. Du måste upprepa de här stegen för att kunna genomföra uppgraderingen. Varje gång du lägger till nya Experience Cloud-funktioner i ditt program rekommenderar vi att du upprepar dessa steg för att vara säker på att du har den senaste konfigurationen.
 
 
 ## Livscykelstatistik {#section_532702562A7A43809407C9A2CBA80E1E}
@@ -139,13 +142,13 @@ Bearbetningsreglerna ger dig flera fördelar:
 Alla värden som du tilldelade direkt till variabler bör läggas till i kontextdata i stället.
 
 
-## Bearbetar regler {#section_66EE762EEA5E4728864166201617DEBF}
+## Behandlingsregler {#section_66EE762EEA5E4728864166201617DEBF}
 
 Bearbetningsregler används för att kopiera data som du skickar i kontextdatavariabler till variabler, props och andra variabler för rapportering.
 
 [Utbildning](https://tv.adobe.com/embed/1181/16506/) i bearbetningsregler på Summit 2013
 
-[Översikt över bearbetningsregler](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html)
+[Översikt över behandlingsregler](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html)
 
 [Bli behörig att använda bearbetningsregler](https://helpx.adobe.com/analytics/kb/processing-rules-authorization.html)
 

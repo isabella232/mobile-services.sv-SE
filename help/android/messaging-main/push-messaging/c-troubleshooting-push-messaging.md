@@ -3,12 +3,15 @@ description: Den här informationen hjälper dig att felsöka push-meddelanden.
 keywords: mobile
 seo-description: Den här informationen hjälper dig att felsöka push-meddelanden.
 seo-title: Felsök push-meddelanden
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Felsök push-meddelanden
 topic: Metrics
 uuid: 9c4a9371-6691-4a2c-a6c1-b9f901a41599
 translation-type: tm+mt
-source-git-commit: 12e01e112debffd877dd62f1fd2505724b2aae7d
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '303'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +30,7 @@ Följande typer av fördröjningar kan associeras med push-meddelanden för mobi
 
 * Väntar på push-tjänst
 
-   Push-tjänsten (APNS eller FCM) kanske inte skickar ut meddelandet omedelbart. Även om det är ovanligt har vi sett en fördröjning på 5-10 minuter. På sidan Meddelanden kan du verifiera att push-meddelandet har skickats till push-tjänsten genom att klicka på **[!UICONTROL View]** länken för meddelandet. I rapporten visas antalet lyckade överföringar till push-tjänsten i **[!UICONTROL Published]** -kolumnen.
+   Push-tjänsten (APNS eller FCM) kanske inte skickar ut meddelandet omedelbart. Även om det är ovanligt har vi sett en fördröjning på 5-10 minuter. På sidan Meddelanden kan du verifiera att push-meddelandet har skickats till push-tjänsten genom att klicka på **[!UICONTROL View]** länken för meddelandet. I rapporten visas antalet lyckade skicka till push-tjänsten i **[!UICONTROL Published]** kolumnen.
 
    >[!TIP]
    >
@@ -35,8 +38,8 @@ Följande typer av fördröjningar kan associeras med push-meddelanden för mobi
 
    Mer information om tjänsternas tillförlitlighet finns i lämplig dokumentation:
 
-   * **APNS**: Tjänstekvalitet [](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW5)
-   * **FCM**: Meddelandets [livstid](https://firebase.google.com/docs/cloud-messaging/concept-options#lifetime)
+   * **APNS**: [Tjänstekvalitet](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW5)
+   * **FCM**: [Meddelandets livstid](https://firebase.google.com/docs/cloud-messaging/concept-options#lifetime)
 
 ## Varför stängs mina push-meddelanden av eller utökas inte?
 

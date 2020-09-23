@@ -2,11 +2,14 @@
 description: Följande information hjälper dig att skicka en länk till en äldre kampanj som baseras på ett enhets fingeravtryck.
 seo-description: Följande information hjälper dig att skicka en länk till en äldre kampanj som baseras på ett enhets fingeravtryck.
 seo-title: Testar tidigare förvärv
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Testar tidigare förvärv
 uuid: e0591f4a-e26b-4fe4-97c1-a6831a926fa5
 translation-type: tm+mt
-source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '268'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +26,7 @@ Om mobilappen ännu inte finns i Google Play kan du välja vilken mobilapp som h
 
 1. Klicka på den genererade länken på den mobila enhet som du vill installera appen på.
 
-   Adobes servrar (`c00.adobe.com`) lagrar fingeravtrycket och dirigerar sedan om till App Store. Appen behöver inte laddas ned för testning.
+   Adobe-servrar (`c00.adobe.com`) lagrar fingeravtrycket och dirigerar sedan om till App Store. Appen behöver inte laddas ned för testning.
 
 1. Starta programmet för första gången på samma mobila enhet som du använde i steg 2.
 

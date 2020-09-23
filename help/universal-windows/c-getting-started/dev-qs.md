@@ -2,12 +2,15 @@
 description: 'null'
 seo-description: 'null'
 seo-title: Snabbstart för utvecklare
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Snabbstart för utvecklare
 topic: Developer and implementation
 uuid: 11c06fcf-d5e4-4858-9a4e-3bf66cdd2a48
 translation-type: tm+mt
-source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '750'
+ht-degree: 1%
 
 ---
 

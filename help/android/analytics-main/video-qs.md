@@ -3,12 +3,15 @@ description: Här är lite information om hur du mäter video på Android med vi
 keywords: android;library;mobile;sdk
 seo-description: Här är lite information om hur du mäter video på Android med videomätningslösningen.
 seo-title: Videoanalys
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Videoanalys
 topic: Developer and implementation
 uuid: a137cc27-dc28-48c0-b08e-2ca17d2c7e1d
 translation-type: tm+mt
-source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '881'
+ht-degree: 13%
 
 ---
 
@@ -19,7 +22,7 @@ Här är lite information om hur du mäter video på Android med videomätningsl
 
 >[!TIP]
 >
->Under videouppspelning skickas vanliga&quot;hjärtslag&quot;-anrop till den här tjänsten för att mäta den tid som spelas upp. Dessa hjärtslagsanrop skickas var 10:e sekund, vilket resulterar i detaljerade videointeraktionsvärden och exaktare videoutfallsrapporter. Mer information om Adobes videomätningslösning finns i [Mäta ljud och video i Adobe Analytics](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html).
+>Under videouppspelning skickas vanliga&quot;hjärtslag&quot;-anrop till den här tjänsten för att mäta den tid som spelas upp. Dessa hjärtslagsanrop skickas var 10:e sekund, vilket resulterar i detaljerade videointeraktionsvärden och exaktare videoutfallsrapporter. Mer information om Adobe videomätningslösning finns i [Mäta ljud och video i Adobe Analytics](https://docs.adobe.com/content/help/sv-SE/media-analytics/using/media-overview.html).
 
 Den allmänna processen att mäta video är densamma på alla plattformar. Innehållet ger en översikt över utvecklaråtgärderna med kodexempel. I följande tabell visas de mediedata som skickas till Analytics. Bearbetningsregler används för att mappa kontextdata till en Analytics-variabel.
 
@@ -30,7 +33,7 @@ Den allmänna processen att mäta video är densamma på alla plattformar. Inneh
       * Standardförfallodatum: Besök
       * Custom Insight (s.prop, används för videopappning)
    * (**Obligatoriskt**) När en besökare tittar på videon på något sätt samlar den här kontextdatavariabeln in videons namn, enligt specifikationen i implementeringen. Du kan lägga till klassificeringar för den här variabeln.
-   * (**Valfritt**) Variabeln Custom Insight innehåller information om videopappning.
+   * (**Valfritt**) Custom Insight-variabeln innehåller information om videopappning.
 
 * **a.media.name**
    * Variabeltyp: Custom Insight (s.prop)
@@ -46,13 +49,14 @@ Den allmänna processen att mäta video är densamma på alla plattformar. Inneh
    * Standardförfallodatum: Sidvy
    * (**Obligatoriskt**) Samlar in videosegmentdata, inklusive segmentnamnet och den ordning i vilken segmentet finns i videon.
 
-      Den här variabeln fylls i genom att den aktiveras när spelarhändelser spåras automatiskt eller genom att ett anpassat segmentnamn anges när spelarhändelser spåras manuellt. `segmentByMilestones` När en besökare till exempel tittar på det första segmentet i en video kan SiteCatalyst samla in följande i Segments eVar: `1:M:0-25`.
+      Den här variabeln fylls i genom att den aktiveras när spelarhändelser spåras automatiskt eller genom att ett anpassat segmentnamn anges när spelarhändelser spåras manuellt. `segmentByMilestones` När en besökare till exempel tittar på det första segmentet i en video kan SiteCatalyst samla in följande i eVar Segment: `1:M:0-25`.
 
       Standardmetoden för insamling av videodata samlar in data vid följande punkter:
 
       * videostart (spela upp)
       * segment
       * videoslut (stopp)
+
       Analyser är den första segmentvyn i början av segmentet när besökaren börjar titta. Efterföljande segmentvyer när segmentet börjar.
 
 

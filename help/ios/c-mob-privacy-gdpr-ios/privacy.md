@@ -2,12 +2,15 @@
 description: Den här informationen hjälper dig med en begäran om att ta bort GDPR-data.
 seo-description: Den här informationen hjälper dig med en begäran om att ta bort GDPR-data.
 seo-title: Ange användarens alternativstatus
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Ange användarens alternativstatus
 topic: Developer and implementation
 uuid: 44a09a25-93c6-4e1a-b69e-710018e8b6c3
 translation-type: tm+mt
-source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '270'
+ht-degree: 0%
 
 ---
 
@@ -18,7 +21,7 @@ Den här informationen hjälper dig med en begäran om att ta bort GDPR-data.
 
 >[!IMPORTANT]
 >
->Från och med Experience Cloud iOS SDK 4.15 anger du sekretessstatus till `unknown` Audience Manager och Experience Cloud ID-träffar.
+>Från och med Experience Cloud iOS SDK 4.15 anger du sekretessstatus som `unknown` för Audience Manager och Experience Cloud ID-träffar.
 
 Du kan kontrollera om Analytics-, Target- och Audience Manager-aktivitet tillåts på en enhet med följande inställningar:
 

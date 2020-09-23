@@ -1,32 +1,35 @@
 ---
-description: Den här informationen hjälper dig att förstå och använda med Adobes mobiltjänster.
+description: Den här informationen hjälper dig att förstå och använda Adobe mobiltjänster.
 keywords: mobile
-seo-description: Den här informationen hjälper dig att förstå och använda med Adobes mobiltjänster.
+seo-description: Den här informationen hjälper dig att förstå och använda Adobe mobiltjänster.
 seo-title: Komma igång
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Komma igång
 topic: Metrics
 uuid: a7ae7c5a-dab8-4603-b4cd-af73a2f09f71
 translation-type: tm+mt
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '1373'
+ht-degree: 1%
 
 ---
 
 
 # Komma igång{#getting-started}
 
-Den här informationen hjälper dig att förstå och använda med Adobes mobiltjänster.
+Den här informationen hjälper dig att förstå och använda Adobe mobiltjänster.
 
-Adobes mobiltjänster består av följande delar:
+Adobe Mobile Services består av följande delar:
 
-* Adobe Mobile Services-gränssnitt
+* Adobe Mobile Services UI
 * Adobe Mobile SDK
 
-För företag som är ute efter det mest effektiva sättet att öka användarengagemanget och visa avkastning på sina investeringar i mobilappar erbjuder Adobe en totallösning, Adobe Mobile Services, för att värva upp och engagera appanvändare och analysera och optimera deras upplevelser.
+För företagsföretag som är ute efter det mest effektiva sättet att öka användarengagemanget och visa på räntabilitet för sina investeringar i mobilappar erbjuder Adobe en totallösning, Adobe Mobile Services, för att värva upp och engagera appanvändare och analysera och optimera deras upplevelser.
 
 Idag skiljer sig mobilappslandskapet avsevärt från när smarttelefonen startades för första gången. Det räcker inte längre att ha en mobilapp för att koppla samman kunderna med ert varumärke. idag måste ni nu skapa en sammanhängande, övertygande kundupplevelse över alla kanaler och använda mobilappen som en strategisk kontaktyta för att engagera era mest lojala, värdefulla kunder. Men att få dessa användare att interagera med appen kräver övertygande innehåll, sammanhangsbaserade meddelanden, intelligent personalisering och integrerad appanalys osv.
 
-## Adobe Mobile Services-gränssnitt {#mobile-services-ui}
+## Adobe Mobile Services UI {#mobile-services-ui}
 
 Användargränssnittet för mobiltjänster stöds i följande webbläsare:
 
@@ -35,13 +38,13 @@ Användargränssnittet för mobiltjänster stöds i följande webbläsare:
 * Apple Safari (de senaste två versionerna)
 * Microsoft Edge (de senaste två versionerna)
 
-Med Adobes mobiltjänster kan ni öka mobilappsengagemanget på följande sätt:
+Adobe mobiltjänster bidrar till att öka mobilappsengagemanget på följande sätt:
 
 ### Hämta
 
-I *Acquire* använder ni betalda, ägda och förtjänade medier för att öka kundvärvningen för appnedladdningar i de ledande appbutikerna. Med Adobes mobiltjänster kan ni snabba upp processen för att värva appanvändare.
+I *Acquire* använder ni betalda, ägda och förtjänade medier för att öka kundvärvningen för appnedladdningar i de ledande appbutikerna. Med Adobe Mobile Services kan ni snabba upp processen för att värva appanvändare.
 
-Adobe Mobile Services tillhandahåller arbetsflöden för kundvärvning, inklusive uppföljning av förvärv och djuplänkning, som mäter hur effektiva era kanaler är när det gäller att värva appanvändare. Med Marketing Links, som spårar vilka användare som kommer från vilken kanal, får ni insyn i vilka förvärvskanaler som är mest effektiva för att skapa lönsamma och engagerade användare.
+Adobe Mobile Services tillhandahåller arbetsflöden för kundvärvning, inklusive kundvärvning och djuplänkning, som mäter hur effektiva era kanaler är när det gäller att värva appanvändare. Med Marketing Links, som spårar vilka användare som kommer från vilken kanal, får ni insyn i vilka förvärvskanaler som är mest effektiva för att skapa lönsamma och engagerade användare.
 
 Med djuplänkning kan du dessutom dirigera användare direkt till det appinnehåll som du vill att de ska se och uppmuntra dem att installera ditt program om det behövs.
 
@@ -58,7 +61,7 @@ Mer information om den här fasen finns i [Anskaffning](/help/using/acquisition-
 
 I *Analyze* kan ni förstå hur konsumenterna använder mobilappen och vad som får dem att konvertera eller komma tillbaka.
 
-Med Adobe Analytics får ni viktiga insikter i hur användarna hämtar, installerar och öppnar era appar. Ni kan också mäta och analysera appinnehåll och användargränssnitt, utföra kohortanalyser, kundvägar och utfall. Med Adobe Analytics kan ni använda ett centralt datalager för att informera om era marknadsföringsbeslut och minska vattentäta skott i era marknadsföringsdata.
+Med Adobe Analytics får du viktiga insikter i hur användarna hämtar, installerar och öppnar appen. Ni kan också mäta och analysera appinnehåll och användargränssnitt, utföra kohortanalyser, kundvägar och utfall. Med Adobe Analytics kan ni använda ett centralt datalager för att informera om era marknadsföringsbeslut och minska vattentäta skott i marknadsföringsdata i organisationen.
 
 Ni kan använda Adobe Audience Manager för att berika era målgruppssegment med omfattande data och leverera mer kontextuella och personliga upplevelser.
 
@@ -82,7 +85,7 @@ I *Engage* kan du använda relevanta push-meddelanden och meddelanden i appen f�
 * Meddelanden i appen utlöses av realtidsanalyser, varningar och nya erbjudanden/innehåll.
 * Förstå vyer, klickfrekvenser och beteende längre ned i kedjan
 
-### Adobe Mobile Messaging
+### Adobe Mobile messaging
 
 Du kan använda push- och in-app-meddelanden för att kommunicera med användarna. Push-meddelanden skickas via operativsystemet på enheten, medan meddelanden i appen skickas när en användare interagerar aktivt med appen. Meddelanden i appen kan vanligtvis innehålla flera olika format, som popup-fönster och interstitialer.
 
@@ -115,9 +118,9 @@ Mer information om testning och Adobe Target finns på [Adobe Target](https://do
 
 ### Geografisk inriktning
 
-En mobil enhet gör att du kan känna till var en konsument befinner sig när de interagerar med appen eller låta den köras i bakgrunden via GPS-positionen. Med geoanpassning kan ni med Adobe Target leverera skräddarsytt, relevant innehåll, erbjudanden eller meddelanden i en tid där närheten är viktig. Du kan rikta in dig på användare som befinner sig inom en viss radie av en viss punkt av intresse eller när de är i närheten av iBeacons och med relevanta push-meddelanden.
+En mobil enhet gör att du kan känna till var en konsument befinner sig när de interagerar med appen eller låta den köras i bakgrunden via GPS-positionen. Med geoanpassning kan Adobe Target leverera skräddarsytt, relevant innehåll, erbjudanden eller meddelanden vid en tidpunkt där närheten är viktig. Du kan rikta in dig på användare som befinner sig inom en viss radie av en viss punkt av intresse eller när de är i närheten av iBeacons och med relevanta push-meddelanden.
 
-Adobe Target för mobilappar utnyttjar nu den förbättrade segmenteringen och rapporteringen via Adobe Analytics fullt ut. Det innebär att Adobe Target kan utnyttja alla viktiga appmätvärden i Analytics genom att använda dem för att målinrikta och personalisera. det ger också en djupare rapportering om testresultat, vilket gör det möjligt för marknadsförarna att bättre förstå vad de ska göra - svaren som kan undgå appmarknadsföraren som har press på sig att få avkastning på appinvesteringar. Integreringen Analytics/Target för appar ger ett kombinerat erbjudande, som är den mest robusta appengagemangslösningen som finns på marknaden.
+Adobe Target för mobilappar drar nu nytta av den förbättrade segmenteringen och rapporteringen via Adobe Analytics. Detta innebär att Adobe Target kan utnyttja alla viktiga appmätvärden i Analytics genom att använda dem för att målinrikta och personalisera. det ger också en djupare rapportering om testresultat, vilket gör det möjligt för marknadsförarna att bättre förstå vad de ska göra - svaren som kan undgå appmarknadsföraren som har press på sig att få avkastning på appinvesteringar. Integreringen Analytics/Target för appar ger ett kombinerat erbjudande, som är den mest robusta appengagemangslösningen som finns på marknaden.
 
 Mer information om plats finns i följande innehåll:
 
@@ -127,7 +130,7 @@ Mer information om plats finns i följande innehåll:
 
 ## Adobe Mobile SDK {#mobile-services-sdk}
 
-Adobe erbjuder en totallösning för mobilmarknadsföring som snabbar upp kundengagemanget inom alla dessa områden. Med en SDK får ni tillgång till funktionerna i Adobe Analytics, Adobe Campaign och Adobe Audience Manager, vilket minskar den tekniska kostnaden för att hantera flera olika SDK:er.
+Adobe erbjuder en totallösning för mobilmarknadsföring som snabbar upp kundengagemanget inom alla dessa områden. Med en SDK får du tillgång till funktionerna i Adobe Analytics, Adobe Campaign och Adobe Audience Manager, vilket minskar den tekniska kostnaden för att hantera flera olika SDK:er.
 
 Adobe Mobile SDK har följande funktioner:
 
@@ -149,13 +152,13 @@ Adobe Mobile SDK har följande funktioner:
 
 * Integrerad
 
-   * En SDK för flera lösningar (Analytics, Campaign och Audience Manager), vilket minskar implementeringstiden och arbetet för utvecklarna.
+   * En SDK för flera lösningar (Analytics, Campaign och Audience Manager), vilket minskar utvecklingstiden och arbetet för utvecklarna.
    * Endast en kodrad krävs för att samla in livscykelstatistik för&quot;baslinje&quot;-appen.
-   * I takt med att ni utvecklar er mobilstrategi kan ni enkelt aktivera Adobe Experience Cloud-funktioner för att värva, analysera och engagera användarna.
+   * När ni utvecklar er mobilstrategi kan ni enkelt aktivera Adobe Experience Cloud-funktioner för att värva, analysera och engagera användare.
 
 * Snabb och lätt
 
    * Minimerar belastningen på enhetsbearbetning för att skicka data till Adobe-servrar och tredjepartssystem.
    * Med liten yta minimeras storleken på det programpaket som skickas till appbutiker.
 
-Mer information om Adobe Mobile SDK finns i [Android SDK 4.x for Experience Solutions](https://docs.adobe.com/content/help/en/mobile-services/android/overview.html) och [iOS SDK 4.x for Experience Cloud Solutions](https://docs.adobe.com/content/help/en/mobile-services/ios/rel-notes.html).
+Mer information om Adobe Mobile SDK finns i [Android SDK 4.x för Experience Solutions](https://docs.adobe.com/content/help/sv-SE/mobile-services/android/overview.html) och [iOS SDK 4.x för Experience Cloud Solutions](https://docs.adobe.com/content/help/en/mobile-services/ios/rel-notes.html).

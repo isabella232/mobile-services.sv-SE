@@ -3,12 +3,15 @@ description: Anskaffningsspårning måste vara aktiverat i SDK-konfigurationen i
 keywords: mobile
 seo-description: Anskaffningsspårning måste vara aktiverat i SDK-konfigurationen innan du kan spåra och rapportera om marknadsföringslänkar.
 seo-title: Konfigurera värvning
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Konfigurera värvning
 topic: Metrics
 uuid: e996e43e-8a77-47a3-a6fb-53f676f92bef
 translation-type: tm+mt
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '204'
+ht-degree: 0%
 
 ---
 

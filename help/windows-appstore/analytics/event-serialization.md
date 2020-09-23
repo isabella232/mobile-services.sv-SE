@@ -2,12 +2,15 @@
 description: Händelseserialisering stöds inte av bearbetningsregler. I mobil-SDK måste du använda en särskild syntax i parametern context data för att ange serialiserade händelser direkt i serveranropet.
 seo-description: Händelseserialisering stöds inte av bearbetningsregler. I mobil-SDK måste du använda en särskild syntax i parametern context data för att ange serialiserade händelser direkt i serveranropet.
 seo-title: Händelseserialisering
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Händelseserialisering
 topic: Developer and implementation
 uuid: a5966d05-e218-446f-9f19-8664a84b74cd
 translation-type: tm+mt
-source-git-commit: 4faf66df50c8b65198fd139bb15927fc2c2849bc
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '104'
+ht-degree: 7%
 
 ---
 

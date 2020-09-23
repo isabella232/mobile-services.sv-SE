@@ -3,12 +3,15 @@ description: Med platsöversiktsrapporten kan du se de olika länder, regioner o
 keywords: mobile
 seo-description: Med platsöversiktsrapporten kan du se de olika länder, regioner och intressepunkter där appen används.
 seo-title: Översikt (plats)
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Översikt (plats)
 topic: Reports,Metrics
 uuid: a701abc3-001b-4015-843f-5fb2c6c80d17
 translation-type: tm+mt
-source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '555'
+ht-degree: 0%
 
 ---
 
@@ -79,5 +82,5 @@ När du har skapat en rapport används dina inställningar för att skapa en anp
 
 Mer information om plats finns i följande innehåll:
 
-* [Karta](/help/using/location/c-map-points.md)
+* [Mappa](/help/using/location/c-map-points.md)
 * [Hantera intressepunkter](/help/using/location/t-manage-points.md)

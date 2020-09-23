@@ -2,11 +2,14 @@
 description: 'Följande förvärvsmetoder tillhandahålls av iOS-biblioteket '
 seo-description: 'Följande förvärvsmetoder tillhandahålls av iOS-biblioteket '
 seo-title: Förvärvsmetoder
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Förvärvsmetoder
 uuid: 6f88de57-793d-4d33-9a54-f6714289fd2c
 translation-type: tm+mt
-source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '93'
+ht-degree: 16%
 
 ---
 

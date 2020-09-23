@@ -3,12 +3,12 @@ description: Du måste slutföra de här åtgärderna innan du konfigurerar Push
 keywords: mobile
 seo-description: Du måste slutföra de här åtgärderna innan du konfigurerar Push Messaging i program.
 seo-title: Krav för att aktivera push-meddelanden
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Krav för att aktivera push-meddelanden
 topic: Metrics
 uuid: 194e6e07-b794-4152-a838-a4125c3292d4
 translation-type: tm+mt
-source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '632'
 ht-degree: 1%

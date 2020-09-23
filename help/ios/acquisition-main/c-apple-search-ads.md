@@ -1,20 +1,23 @@
 ---
-description: Adobe SDK utnyttjar Apples API:er för sökannonsering i appattribut så att utvecklare och marknadsförare kan spåra och attributera appnedladdningar som kommer från sökannonskampanjer i Apple App Store.
-seo-description: Adobe SDK utnyttjar Apples API:er för sökannonsering i appattribut så att utvecklare och marknadsförare kan spåra och attributera appnedladdningar som kommer från sökannonskampanjer i Apple App Store.
+description: Adobe SDK använder Apples API:er för sökannonsering i appattribut för att göra det möjligt för utvecklare och marknadsförare att spåra och attributera appnedladdningar som kommer från sökannonskampanjer i Apple App Store.
+seo-description: Adobe SDK använder Apples API:er för sökannonsering i appattribut för att göra det möjligt för utvecklare och marknadsförare att spåra och attributera appnedladdningar som kommer från sökannonskampanjer i Apple App Store.
 seo-title: Apple Search Ads
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Apple Search Ads
 topic: Developer and implementation
 uuid: 790080e8-067e-4bfd-a169-0027db4fdff3
 translation-type: tm+mt
-source-git-commit: ebcc04ab3e80aafb9d9ec2e1fbc809c743554cb7
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '280'
+ht-degree: 0%
 
 ---
 
 
 # Apple Search Ads {#apple-search-ads}
 
-Adobe SDK utnyttjar Apples API:er för sökannonsering i appattribut så att utvecklare och marknadsförare kan spåra och attributera appnedladdningar som kommer från sökannonskampanjer i Apple App Store. Mer information om sökannonskampanjer finns i [Apple Search Ads](https://searchads.apple.com).
+Adobe SDK använder Apples API:er för sökannonsering i appattribut för att göra det möjligt för utvecklare och marknadsförare att spåra och attributera appnedladdningar som kommer från sökannonskampanjer i Apple App Store. Mer information om sökannonskampanjer finns i [Apple Search Ads](https://searchads.apple.com).
 
 ## Fördelar {#section_CEA30C652AC8470784B8054E299B80FA}
 

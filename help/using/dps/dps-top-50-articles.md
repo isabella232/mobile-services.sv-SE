@@ -3,12 +3,15 @@ description: I rapporten Top 50 Articles visas ett stapeldiagram och en rankad r
 keywords: mobile
 seo-description: I rapporten Top 50 Articles visas ett stapeldiagram och en rankad rapport med de mest lästa artiklarna som visas med appen. Den här rapporten är endast tillgänglig för Digital Publishing Suites-kunder (DPS).
 seo-title: De 50 viktigaste artiklarna
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: De 50 viktigaste artiklarna
 topic: Metrics
 uuid: 341370d1-fa87-43ca-8135-425b3bba272f
 translation-type: tm+mt
-source-git-commit: b11a03226ff6100554d072b4ef523d703b80a6e5
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '243'
+ht-degree: 0%
 
 ---
 

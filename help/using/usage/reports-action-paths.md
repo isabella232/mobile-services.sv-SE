@@ -3,12 +3,15 @@ description: Rapporten Åtgärdssökvägar baseras på sökvägsanalys och visar
 keywords: mobile
 seo-description: Rapporten Åtgärdssökvägar baseras på sökvägsanalys och visar ett bandiagram som representerar de sökvägar som har tagits från ett läge till ett annat i appen.
 seo-title: Rapporten Handlingsvägar
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Rapporten Handlingsvägar
 topic: Reports,Metrics
 uuid: a21e5d9e-fd57-4178-9d64-87181b7f988b
 translation-type: tm+mt
-source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '532'
+ht-degree: 2%
 
 ---
 

@@ -3,12 +3,15 @@ description: Denna information hjälper er att förstå och anpassa de inbyggda 
 keywords: mobile
 seo-description: Denna information hjälper er att förstå och anpassa de inbyggda rapporterna.
 seo-title: Anpassa rapporter
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Anpassa rapporter
 topic: Reports,Metrics
 uuid: 39ba9af3-eaee-44b9-bea4-c8f43a0d2a6c
 translation-type: tm+mt
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '459'
+ht-degree: 2%
 
 ---
 
@@ -32,7 +35,7 @@ I följande exempel visas rapporten Användare och sessioner med den öppna **[!
 
 Följande information beskriver de olika områdena i rapporten och **[!UICONTROL Customize]** järnvägen:
 
-| Nummer | Beskrivning |
+| Siffra | Beskrivning |
 |--- |--- |
 | 1 | I **[!UICONTROL Date Ranges]** den nedrullningsbara listan kan du välja olika datumintervall för rapporten. Alla data i diagrammet (9) och motsvarande tabell (10) respekterar det valda datumintervallet. |
 | 2 | I **[!UICONTROL Show By]** den nedrullningsbara listan kan du välja en tidsbaserad eller dimensionsbaserad visning för rapporten.  I illustrationen ser du att Dagar är valt. Om du tittar på datumen nedanför diagrammet (7) och raderna i tabellen (8) kategoriseras data efter datum i en övertidsrapport. Högst sex mätvärden kan rapporteras för övertidsrapporter genom att ytterligare serier läggs till i rapporten.  Om du väljer en Livscykeldimension kan du visa de 50 översta värdena i en rankad lista, de 5 översta värdena per dag eller vecka eller en uppdelning av de 5 eller 10 översta värdena. |

@@ -2,11 +2,14 @@
 description: Den här informationen hjälper er att skicka en länk till en kampanj för V3-förvärv baserat på ett enhets fingeravtryck.
 seo-description: Den här informationen hjälper er att skicka en länk till en kampanj för V3-förvärv baserat på ett enhets fingeravtryck.
 seo-title: Testar V3-förvärv
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Testar V3-förvärv
 uuid: 89137ccf-4839-4b37-926e-303cf8e511a5
 translation-type: tm+mt
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '618'
+ht-degree: 0%
 
 ---
 
@@ -17,12 +20,12 @@ Den här informationen hjälper er att skicka en länk till en kampanj för V3-f
 
 >[!IMPORTANT]
 >
->V3 Acquisition avser de förvärvslänkar du skapar med Acquisition Builder i Adobe Mobile Services-gränssnittet. Om du vill använda den här funktionen måste du uppgradera till iOS SDK version 4.6.0 eller senare.
+>V3 Acquisition avser de förvärvslänkar du skapar med Acquisition Builder i användargränssnittet för Adobe Mobile Services. Om du vill använda den här funktionen måste du uppgradera till iOS SDK version 4.6.0 eller senare.
 
 Om mobilappen ännu inte finns i App Store väljer du en mobilapp som mål när du skapar kampanjlänken. Detta påverkar bara den app som förvärvsservern dirigerar om dig till efter att du klickat på länken, men det påverkar inte möjligheten att testa länken.
 
 1. Slutför de nödvändiga uppgifterna i [anskaffning](/help/ios/acquisition-main/acquisition.md)av mobilappar.
-1. Navigera till webbsidan **[!UICONTROL Acquisition Builder]** i Adobe Mobile Services-gränssnittet och generera en webbadress för anskaffningskampanj.
+1. Navigera till webbsidan **[!UICONTROL Acquisition Builder]** i användargränssnittet för Adobe Mobile Services och generera en webbadress för anskaffningskampanj.
 
    Exempel:
 
@@ -52,7 +55,7 @@ Om mobilappen ännu inte finns i App Store väljer du en mobilapp som mål när 
 1. (Villkorligt) Om `ssl` inställningen i appens konfigurationsfil är true uppdaterar du hämtningslänken så att HTTPS-protokollet används.
 1. Klicka på den genererade länken från den mobila enhet som du tänker installera appen på.
 
-   Adobes servrar ( `c00.adobe.com`) lagrar fingeravtrycket och omdirigerar det till App Store. Appen behöver inte laddas ned för testning.
+   Adobe-servrar ( `c00.adobe.com`) lagrar fingeravtrycket och omdirigerar till App Store. Appen behöver inte laddas ned för testning.
 1. Starta programmet första gången från samma mobila enhet som du använde i steg 6.
 
    Du kan ta bort och installera programmet igen om det behövs.

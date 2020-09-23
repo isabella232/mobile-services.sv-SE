@@ -2,12 +2,12 @@
 description: Ni kan leverera meddelanden i appen som triggas av alla analysdata eller händelser. Efter implementeringen levereras meddelanden dynamiskt till programmet och kräver ingen koduppdatering.
 seo-description: Ni kan leverera meddelanden i appen som triggas av alla analysdata eller händelser. Efter implementeringen levereras meddelanden dynamiskt till programmet och kräver ingen koduppdatering.
 seo-title: Meddelanden i appen
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Meddelanden i appen
 topic: Developer and implementation
 uuid: 351ee3d2-80b9-4f2d-9696-21f274d89f5a
 translation-type: tm+mt
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '800'
 ht-degree: 3%
@@ -15,7 +15,7 @@ ht-degree: 3%
 ---
 
 
-# Meddelanden i appen {#in-app-messaging}
+# In-app messaging {#in-app-messaging}
 
 Ni kan leverera meddelanden i appen som triggas av alla analysdata eller händelser. Efter implementeringen levereras meddelanden dynamiskt till programmet och kräver ingen koduppdatering.
 
@@ -38,7 +38,7 @@ Letar du efter information och dokumentation om Adobe Experience Platform Mobile
 >
 >Om du vill använda meddelanden i programmet **måste** du ha SDK version 4.2 eller senare.
 
-Du kan skapa meddelanden och regler i Adobe Mobile Services som definierar när meddelanden ska visas. Mer information finns i [Skapa ett meddelande](/help/using/in-app-messaging/t-in-app-message/t-in-app-message.md)i appen. Om du vill visa meddelanden i programmet måste SDK uppdateras. Du kan slutföra de här stegen även om du ännu inte har definierat några meddelanden. När du har definierat meddelanden levereras de dynamiskt till din app och visas utan någon uppdatering för appbutiken.
+Du kan skapa meddelanden och regler i Adobe Mobile-tjänster som definierar när meddelanden ska visas. Mer information finns i [Skapa ett meddelande](/help/using/in-app-messaging/t-in-app-message/t-in-app-message.md)i appen. Om du vill visa meddelanden i programmet måste SDK uppdateras. Du kan slutföra de här stegen även om du ännu inte har definierat några meddelanden. När du har definierat meddelanden levereras de dynamiskt till din app och visas utan någon uppdatering för appbutiken.
 
 ## Aktivera meddelanden i programmet {#section_380DF56C4EE4432A823940E4AE4C9E91}
 
@@ -60,6 +60,7 @@ Du kan skapa meddelanden och regler i Adobe Mobile Services som definierar när 
    * `Theme.Translucent.NoTitleBar.Fullscreen`
    * `Theme.Translucent.NoTitleBar`
    * `Theme.Translucent`
+
    Exempel:
 
    ```java
@@ -116,7 +117,7 @@ Du kan skapa meddelanden och regler i Adobe Mobile Services som definierar när 
    }
    ```
 
-   Om det här objektet inte har konfigurerats hämtar du en uppdaterad `ADBMobileConfig.json` fil från Adobe Mobile Services. Mer information finns i [Innan du börjar](/help/android/getting-started/requirements.md).
+   Om det här objektet inte är konfigurerat hämtar du en uppdaterad `ADBMobileConfig.json` fil från Adobe Mobile Services. Mer information finns i [Innan du börjar](/help/android/getting-started/requirements.md).
 
 ## Spåra meddelanden i appen {#section_B85CDF6929564AAEA79338B55E5CB1E8}
 

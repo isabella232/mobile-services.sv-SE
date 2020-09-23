@@ -2,12 +2,15 @@
 description: Information som hjälper dig att använda ADBMomobile JSON Config-filen.
 seo-description: Information som hjälper dig att använda ADBMomobile JSON Config-filen.
 seo-title: Konfigurationsfil för ADBMobileConfig.json
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Konfigurationsfil för ADBMobileConfig.json
 topic: Developer and implementation
 uuid: a45b91cc-982e-4d6c-a4e4-d2e4b4fa7556
 translation-type: tm+mt
-source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '617'
+ht-degree: 0%
 
 ---
 

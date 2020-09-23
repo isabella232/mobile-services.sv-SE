@@ -3,12 +3,15 @@ description: Du kan mäta olika mätvärden med Adobe Mobile och samla in mätv�
 keywords: mobile
 seo-description: Du kan mäta olika mätvärden med Adobe Mobile och samla in mätvärden som du vill spåra för din app.
 seo-title: Mobila mått
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Mobila mått
 topic: Metrics
 uuid: c4457f4a-9d1c-4fe9-ad4a-9eb2e37feab7
 translation-type: tm+mt
-source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '551'
+ht-degree: 0%
 
 ---
 

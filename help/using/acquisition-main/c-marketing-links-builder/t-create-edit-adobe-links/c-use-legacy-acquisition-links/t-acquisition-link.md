@@ -3,12 +3,15 @@ description: Du kan skapa appbutikslänkar som gör att du kan hämta program di
 keywords: mobile
 seo-description: Du kan skapa appbutikslänkar som gör att du kan hämta program direkt från Apple App Store och Google Play. Med de länkar du skapar kan du attribuera dina lyckade händelser till hämtningarna.
 seo-title: Skapa en förvärvslänk
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Skapa en förvärvslänk
 topic: Metrics
 uuid: bb603013-fca9-44a2-820a-59e1c85d9444
 translation-type: tm+mt
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '450'
+ht-degree: 0%
 
 ---
 
@@ -41,6 +44,7 @@ Ange betalda villkor eller andra sökvillkor för annonsen.
       Välj en appbutik:
       * Apple App Store
       * Google Play
+
       Alternativen för respektive appbutik varierar enligt beskrivningen nedan.
 
    * **[!UICONTROL Browser Region (Apple App Store Only)]**

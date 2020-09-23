@@ -2,12 +2,15 @@
 description: Du kan använda iOS-tillägget för att samla in användningsdata från Apple Watch Apps (WatchOS 1), Today Widgets, Photo Editing widgets och andra iOS-tilläggsappar.
 seo-description: Du kan använda iOS-tillägget för att samla in användningsdata från Apple Watch Apps (WatchOS 1), Today Widgets, Photo Editing widgets och andra iOS-tilläggsappar.
 seo-title: Implementering av iOS-tillägg
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Implementering av iOS-tillägg
 topic: Developer and implementation
 uuid: 8afc03fe-403e-4643-ada1-30e403ede238
 translation-type: tm+mt
-source-git-commit: 718e336b9002fe3d5282697d4302d12a89297181
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '703'
+ht-degree: 0%
 
 ---
 
@@ -20,12 +23,12 @@ Du kan använda iOS-tillägget för att samla in användningsdata från Apple Wa
 
 Letar du efter information och dokumentation om Adobe Experience Platform Mobile SDK? Klicka [här](https://aep-sdks.gitbook.io/docs/) för att få den senaste dokumentationen.
 
-Från om med september 2018 har vi släppt en ny större version av SDK. Dessa nya SDK:er för Adobe Experience Platform Mobile kan konfigureras via [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
+Från om med september 2018 har vi släppt en ny större version av SDK. Dessa nya Adobe Experience Platform Mobile SDK:er kan konfigureras via [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
 
 * Gå till Adobe Experience Platform Launch för att komma igång.
 * Om du vill se vad som finns i Experience Platform SDK-databaserna går du till [Github: Adobe Experience Platform SDKs](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
 
-## Rekommendationer för iOS SDK i stället för wrapper {#section_97577331FD9E4FFBBE05D402C67AEE69}
+## Recommendations för iOS SDK i stället för wrapper {#section_97577331FD9E4FFBBE05D402C67AEE69}
 
 >[!IMPORTANT]
 >
@@ -45,6 +48,7 @@ I de flesta fall när en användare använder bevakningsappen körs innehållsap
 >
 >* Ett mål som ska innehålla appen.
 >* Ett mål för tillägget.
+
 >
 
 

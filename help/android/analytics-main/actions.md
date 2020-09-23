@@ -2,17 +2,20 @@
 description: Åtgärder är de händelser som inträffar i Android-appen och som du vill mäta.
 seo-description: Åtgärder är de händelser som inträffar i Android-appen och som du vill mäta.
 seo-title: Spåra appåtgärder
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Spåra appåtgärder
 topic: Developer and implementation
 uuid: fe01c1df-f6bb-4b32-b3ef-959d2c724af6
 translation-type: tm+mt
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '361'
+ht-degree: 1%
 
 ---
 
 
-# Spåra appåtgärder {#track-app-actions}
+# Track app actions {#track-app-actions}
 
 Åtgärder är de händelser som inträffar i Android-appen och som du vill mäta.
 
@@ -36,7 +39,7 @@ Varje åtgärd har en eller flera motsvarande mätvärden som ökas stegvis varj
    Analytics.trackAction("myapp.ActionName", null);
    ```
 
-1. I Adobe Mobile Services-gränssnittet väljer du din app och klickar på **[!UICONTROL Manage App Settings]**.
+1. I användargränssnittet för Adobe Mobile Services väljer du din app och klickar på **[!UICONTROL Manage App Settings]**.
 1. Klicka på **[!UICONTROL Manage Variables and Metrics]** och klicka på **[!UICONTROL Custom Metrics]** fliken.
 
 1. Mappa kontextdatanamnet som definieras i koden, till exempel `myapp.ActionName`, till en anpassad händelse.
@@ -57,7 +60,7 @@ exampleContextData.put("myapp.social.SocialSource", "Twitter");
 Analytics.trackAction("myapp.SocialShare", exampleContextData);
 ```
 
-Kontextdatavärden måste mappas till anpassade variabler i Adobe Mobile Services:
+Kontextdatavärden måste mappas till anpassade variabler i Adobe Mobile-tjänster:
 
 ![](assets/map-variable-context-action.png)
 

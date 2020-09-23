@@ -3,12 +3,15 @@ description: Du kan skapa marknadsföringslänkar för att få nya mobilappsanv�
 keywords: mobile
 seo-description: Du kan skapa marknadsföringslänkar för att få nya mobilappsanvändare direkt genom att konfigurera URL-parametrarna manuellt.
 seo-title: Skapa förvärvslänkar manuellt
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Skapa förvärvslänkar manuellt
 topic: Metrics
 uuid: d7709203-f793-4982-adaa-9c3c914aca2b
 translation-type: tm+mt
-source-git-commit: 54e3b2d673356a616987537d20758bef8b044db4
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '492'
+ht-degree: 0%
 
 ---
 
@@ -130,7 +133,7 @@ Här är parameterlistan:
 
 * **`ctxa.referrer.campaign.term`**
 
-   Villkor
+   Term
 
    * Exempelvärde: vandrande+stövlar
 

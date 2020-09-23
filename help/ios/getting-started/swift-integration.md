@@ -1,24 +1,27 @@
 ---
-description: iOS Adobe Mobile SDK kan integreras smidigt i ett Swift-projekt med funktionen Mix och Match i i iOS Developer Library.
-seo-description: iOS Adobe Mobile SDK kan integreras smidigt i ett Swift-projekt med funktionen Mix och Match i i iOS Developer Library.
+description: iOS Adobe Mobile SDK kan integreras smidigt i ett Swift-projekt med hjälp av Mix- och Match-funktionen i iOS Developer Library.
+seo-description: iOS Adobe Mobile SDK kan integreras smidigt i ett Swift-projekt med hjälp av Mix- och Match-funktionen i iOS Developer Library.
 seo-title: Snabb integrering
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Snabb integrering
 topic: Developer and implementation
 uuid: 5fb77b57-cbf9-4bcf-8b41-65a933bf9336
 translation-type: tm+mt
-source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '129'
+ht-degree: 0%
 
 ---
 
 
 # Snabb integrering {#swift-integration}
 
-iOS Adobe Mobile SDK kan integreras smidigt i ett Swift-projekt med funktionen Mix och Match i i iOS Developer Library.
+iOS Adobe Mobile SDK kan integreras smidigt i ett Swift-projekt med hjälp av Mix- och Match-funktionen i iOS Developer Library.
 
 Mer information finns i [Språkinteroperabilitet](https://developer.apple.com/documentation/swift#2984801.html).
 
-Om du till exempel använder rubrikmetoden Bridging så som beskrivs i dokumentationen, kan du importera SDK-huvudfilen för Adobe Mobile iOS:
+Om du till exempel använder rubrikmetoden Bridging så som beskrivs i dokumentationen kan du importera SDK-rubrikfilen för Adobe Mobile iOS:
 
 ```
 #import “ADBMobile.h”

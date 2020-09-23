@@ -3,12 +3,15 @@ description: Rapporten Användare och sessioner visar mätvärden för unika bes
 keywords: mobile
 seo-description: Rapporten Användare och sessioner visar mätvärden för unika besökare under den valda tidsramen.
 seo-title: Rapport över användare och sessioner
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Rapport över användare och sessioner
 topic: Reports,Metrics
 uuid: 6d70d7f6-de81-4307-a4f3-14f18fc3c9b3
 translation-type: tm+mt
-source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '182'
+ht-degree: 0%
 
 ---
 

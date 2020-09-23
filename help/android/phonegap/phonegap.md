@@ -3,12 +3,15 @@ description: Med denna plugin kan du skicka Android AppMeasurement-anrop från d
 keywords: android;library;mobile;sdk
 seo-description: Med denna plugin kan du skicka Android AppMeasurement-anrop från ditt PhoneGap-projekt.
 seo-title: PhoneGap plug-in - översikt
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: PhoneGap plug-in - översikt
 topic: Developer and implementation
 uuid: c5c32357-d8df-458a-b0e8-e0c56040241d
 translation-type: tm+mt
-source-git-commit: 1c387b063eedb41a52e044dc824df6a51f173ad2
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '388'
+ht-degree: 1%
 
 ---
 
@@ -21,7 +24,7 @@ Med denna plugin kan du skicka Android AppMeasurement-anrop från ditt PhoneGap-
 
 Letar du efter information och dokumentation om Adobe Experience Platform Mobile SDK? Klicka [här](https://aep-sdks.gitbook.io/docs/) för att få den senaste dokumentationen.
 
-Från om med september 2018 har vi släppt en ny större version av SDK. Dessa nya SDK:er för Adobe Experience Platform Mobile kan konfigureras via [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
+Från om med september 2018 har vi släppt en ny större version av SDK. Dessa nya Adobe Experience Platform Mobile SDK:er kan konfigureras via [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
 
 * Gå till Adobe Experience Platform Launch för att komma igång.
 * Om du vill se vad som finns i Experience Platform SDK-databaserna går du till [Github: Adobe Experience Platform SDKs](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
@@ -100,7 +103,7 @@ android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 <receiver android:name="com.adobe.mobile.MessageNotificationHandler" />
 ```
 
-Om du väljer modal layout när du skapar ett meddelande i Adobes mobiltjänster väljer du något av följande teman:
+Om du väljer modal layout när du skapar ett meddelande i Adobe mobiltjänster väljer du något av följande teman:
 
 * `Theme.Translucent.NoTitleBar.Fullscreen`
 * `Theme.Translucent.NoTitleBar`

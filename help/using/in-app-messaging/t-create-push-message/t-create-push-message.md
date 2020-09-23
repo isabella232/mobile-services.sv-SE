@@ -3,12 +3,15 @@ description: Ni kan skicka push-meddelanden till analyssegment från gränssnitt
 keywords: mobile
 seo-description: Ni kan skicka push-meddelanden till analyssegment från gränssnittet för mobiltjänster för att utnyttja era stabila analysdata samtidigt som ni engagerar användarna.
 seo-title: Skapa ett push-meddelande
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Skapa ett push-meddelande
 topic: Metrics
 uuid: fb2a6026-f7e6-40e6-999e-b43db35d6c69
 translation-type: tm+mt
-source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '180'
+ht-degree: 0%
 
 ---
 

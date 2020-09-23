@@ -3,11 +3,11 @@ description: 'null'
 keywords: Unity
 seo-description: 'null'
 seo-title: ADBMoble.cs-metoder
-solution: Marketing Cloud,Developer
+solution: Experience Cloud
 title: ADBMoble.cs-metoder
 uuid: af504934-febd-45d9-81e2-2a310f4c65dc
 translation-type: tm+mt
-source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '1324'
 ht-degree: 35%
@@ -262,7 +262,7 @@ ht-degree: 35%
 
    Spårar ett apptillstånd med valfria kontextdata. Lägen är de vyer som är tillgängliga i din app, till exempel&quot;titelskärm&quot;,&quot;nivå 1&quot;,&quot;paus&quot; och så vidare. Dessa lägen liknar sidor på en webbplats och anropar `TrackState` stegvisa sidvyer.
 
-   Om läget är tomt visas det som *`app name app version (build)`* i rapporter. Om du ser det här värdet i rapporter måste du ange status för varje `TrackState` anrop.
+   Om läget är tomt visas det som *`app name app version (build)`* i rapporter. Om det här värdet visas i rapporter måste du ange status för varje `TrackState` anrop.
 
    >[!TIP]
    >

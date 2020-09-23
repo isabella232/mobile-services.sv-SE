@@ -2,12 +2,15 @@
 description: Med geopositionering kan du mäta positionsdata genom att använda latitud och longitud samt fördefinierade intressepunkter i dina iOS-appar.
 seo-description: Med geopositionering kan du mäta positionsdata genom att använda latitud och longitud samt fördefinierade intressepunkter i dina iOS-appar.
 seo-title: Geografisk placering och intressepunkter
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Geografisk placering och intressepunkter
 topic: Developer and implementation
 uuid: c800ec85-a33f-425d-b28f-bfe8bf229ae8
 translation-type: tm+mt
-source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '591'
+ht-degree: 1%
 
 ---
 
@@ -18,7 +21,7 @@ Med geopositionering kan du mäta positionsdata genom att använda latitud och l
 
 Varje `trackLocation` samtal skickar följande:
 
-* Latitud, longitud och plats i en intressepunkt (POI) som definieras i Adobes mobiltjänster.
+* Latitud, longitud och plats i en intressepunkt (POI) som definieras i Mobiltjänster i Adobe.
 
    Den här informationen skickas till mobillösningsvariabler för automatisk rapportering.
 
@@ -28,7 +31,7 @@ Varje `trackLocation` samtal skickar följande:
 
 ## Dynamiska POI-uppdateringar {#section_3747B310DD5147E2AAE915E762997712}
 
-Från och med version 4.2 definieras POI i Adobe Mobile-gränssnittet och synkroniseras dynamiskt till programkonfigurationsfilen. Synkroniseringen kräver en `analytics.poi` inställning i `ADBMobile.json` filen:
+Från och med version 4.2 definieras POI i gränssnittet för Adobe Mobile och synkroniseras dynamiskt till programkonfigurationsfilen. Synkroniseringen kräver en `analytics.poi` inställning i `ADBMobile.json` filen:
 
 ```js
 “analytics.poi”: “https://assets.adobedtm.com/…/yourfile.json”,

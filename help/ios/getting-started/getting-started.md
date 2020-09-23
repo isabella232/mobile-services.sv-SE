@@ -2,12 +2,15 @@
 description: 'Följande information hjälper dig att komma igång med iOS SDK för Experience Cloud Solutions '
 seo-description: 'Följande information hjälper dig att komma igång med iOS SDK för Experience Cloud Solutions '
 seo-title: Komma igång - översikt
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Komma igång - översikt
 topic: Developer and implementation
 uuid: a2b9baad-b959-4b9a-893d-99c0f4072e8d
 translation-type: tm+mt
-source-git-commit: a424eb9be750e22e7130dae0d1c54a081ac475cd
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '183'
+ht-degree: 1%
 
 ---
 
@@ -20,7 +23,7 @@ Följande information hjälper dig att komma igång med iOS SDK för Experience 
 
 Letar du efter information och dokumentation om Adobe Experience Platform Mobile SDK? Klicka [här](https://aep-sdks.gitbook.io/docs/) för att få den senaste dokumentationen.
 
-Från om med september 2018 har vi släppt en ny större version av SDK. Dessa nya SDK:er för Adobe Experience Platform Mobile kan konfigureras via [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
+Från om med september 2018 har vi släppt en ny större version av SDK. Dessa nya Adobe Experience Platform Mobile SDK:er kan konfigureras via [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
 
 * Gå till Adobe Experience Platform Launch för att komma igång.
 * Om du vill se vad som finns i Experience Platform SDK-databaserna går du till [Github: Adobe Experience Platform SDKs](https://github.com/Adobe-Marketing-Cloud/acp-sdks).

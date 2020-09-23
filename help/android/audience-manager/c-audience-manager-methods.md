@@ -1,23 +1,26 @@
 ---
-description: Här är en lista över Audience Manager-metoder som finns i Android-biblioteket.
+description: Här är en lista över de Audience Manager-metoder som finns i Android-biblioteket.
 keywords: android;library;mobile;sdk
-seo-description: Här är en lista över Audience Manager-metoder som finns i Android-biblioteket.
+seo-description: Här är en lista över de Audience Manager-metoder som finns i Android-biblioteket.
 seo-title: Audience Manager-metoder
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Audience Manager-metoder
 topic: Developer and implementation
 uuid: 2f6e4664-1306-41d4-9fa7-e3a99f1df4ab
 translation-type: tm+mt
-source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '292'
+ht-degree: 25%
 
 ---
 
 
 # Audience Manager-metoder{#audience-manager-methods}
 
-Här är en lista över Audience Manager-metoder som finns i Android-biblioteket.
+Här är en lista över de Audience Manager-metoder som finns i Android-biblioteket.
 
-SDK har för närvarande stöd för flera Adobe Experience Cloud-lösningar, inklusive Analytics, Target, Audience Manager och Adobe Experience Platform Identity Service. Metoderna är prefasta enligt lösningen. Experience Cloud ID-metoder har till exempel prefix `audience manager`.
+SDK har för närvarande stöd för flera Adobe Experience Cloud-lösningar, inklusive Analytics, Target, Audience Manager och Adobe Experience Platform Identity Service. Metoderna är prefasta enligt lösningen. Experience Cloud ID-metoder har till exempel prefixet `audience manager`.
 
 Om Audience Manager är konfigurerat i JSON-filen skickas en signal som innehåller livscykelvärden med en träff i livscykeln.
 

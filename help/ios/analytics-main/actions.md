@@ -1,18 +1,21 @@
 ---
 description: Åtgärder är de händelser som inträffar i programmet och som du vill mäta. Varje åtgärd har en eller flera motsvarande mätvärden som ökas stegvis varje gång händelsen inträffar. Du kan till exempel spåra en ny prenumeration varje gång en artikel visas eller varje gång en nivå är slutförd. Motsvarande mätvärden för dessa händelser konfigureras som prenumerationer, artiklar som läses och nivåer slutförda.
 seo-description: Åtgärder är de händelser som inträffar i programmet och som du vill mäta. Varje åtgärd har en eller flera motsvarande mätvärden som ökas stegvis varje gång händelsen inträffar. Du kan till exempel spåra en ny prenumeration varje gång en artikel visas eller varje gång en nivå är slutförd. Motsvarande mätvärden för dessa händelser konfigureras som prenumerationer, artiklar som läses och nivåer slutförda.
-seo-title: Spåra programåtgärder
-solution: Marketing Cloud,Analytics
-title: Spåra programåtgärder
+seo-title: Spåra appåtgärder
+solution: Experience Cloud,Analytics
+title: Spåra appåtgärder
 topic: Developer and implementation
 uuid: 62017be1-5395-4d16-bde3-4c40a2c012d4
 translation-type: tm+mt
-source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '519'
+ht-degree: 1%
 
 ---
 
 
-# Spåra appåtgärder {#track-app-actions}
+# Track app actions {#track-app-actions}
 
 Åtgärder är de händelser som inträffar i programmet och som du vill mäta. Varje åtgärd har en eller flera motsvarande mätvärden som ökas stegvis varje gång händelsen inträffar. Du kan till exempel spåra en ny prenumeration varje gång en artikel visas eller varje gång en nivå är slutförd. Motsvarande mätvärden för dessa händelser konfigureras som prenumerationer, artiklar som läses och nivåer slutförda.
 
@@ -40,7 +43,7 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
    >
    >Om koden där du lägger till det här anropet kan köras medan programmet är i bakgrunden, ska du ringa `trackActionFromBackground` i stället för `trackAction`.
 
-1. I Adobe Mobile Services-gränssnittet väljer du din app och klickar på **[!UICONTROL Manage App Settings]**.
+1. I användargränssnittet för Adobe-mobiltjänster väljer du din app och klickar på **[!UICONTROL Manage App Settings]**.
 
 1. Klicka på **[!UICONTROL Manage Variables and Metrics]** och klicka på **[!UICONTROL Custom Metrics]** fliken.
 
@@ -75,5 +78,5 @@ Om du spårar en åtgärd i koden som kan köras när programmet är i bakgrunde
 | Gränssnitt | Rapport |
 |--- |--- |
 | Adobe Mobile Services | **[!UICONTROL Action Paths]** rapport. Visa den ordning i vilken åtgärder utförs i appen. Du kan också klicka **[!UICONTROL Customize]** på en rapport om du vill visa åtgärder som rangordnats, trendats eller i en detaljrapport, eller använda ett filter om du vill visa åtgärder för ett visst segment. |
-| Marknadsföringsrapporter och analyser | **[!UICONTROL Custom Event]** rapport.  När en åtgärd har mappats till en anpassad händelse kan du visa mobilhändelser som liknar alla andra Analytics-händelser. |
+| Marketing reports and analytics | **[!UICONTROL Custom Event]** rapport.  När en åtgärd har mappats till en anpassad händelse kan du visa mobilhändelser som liknar alla andra Analytics-händelser. |
 | Ad hoc-analys | **[!UICONTROL Custom Event]** rapport. När en åtgärd har mappats till en anpassad händelse kan du visa mobilhändelser som liknar alla andra Analytics-händelser. |

@@ -3,12 +3,15 @@ description: Med rapporten Technology kan du se de olika enhetstyper, operativsy
 keywords: mobile
 seo-description: Med rapporten Technology kan du se de olika enhetstyper, operativsystem, operativsystemversioner och mobiloperatörer som appen används på.
 seo-title: Teknikrapport
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Teknikrapport
 topic: Reports,Metrics
 uuid: 4b7322c4-8920-43cd-bb72-5a5bd515ae84
 translation-type: tm+mt
-source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '552'
+ht-degree: 0%
 
 ---
 
@@ -56,7 +59,7 @@ I följande tabell beskrivs standardrapporterna och hur de fylls i i Mobiltjäns
 
 ## Lägg till uppdelningar och mått {#section_15833511E82648869E7B1EFC24EF7B82}
 
-Du kan lägga till uppdelningar och sekundära mätvärden, vilket ändrar höjden på varje målgrupp i förhållande till de andra målgrupperna i diagrammet.
+Du kan lägga till uppdelningar och sekundära mätvärden, vilket ändrar höjden på varje publik i förhållande till de andra målgrupperna i diagrammet.
 
 >[!IMPORTANT]
 >

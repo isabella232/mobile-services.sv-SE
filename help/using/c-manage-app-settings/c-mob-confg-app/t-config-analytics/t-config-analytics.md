@@ -3,12 +3,15 @@ description: Du kan konfigurera SDK Analytics-alternativen på sidan Hantera app
 keywords: mobile
 seo-description: Du kan konfigurera SDK Analytics-alternativen på sidan Hantera appinställningar när du skapar en ny app eller redigerar en befintlig app.
 seo-title: Konfigurera alternativ för SDK-analys
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Konfigurera alternativ för SDK-analys
 topic: Metrics
 uuid: fd3a21d2-6560-4e96-92fe-b99caac5e834
 translation-type: tm+mt
-source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '364'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +28,7 @@ Skriv information i följande fält under **[!UICONTROL SDK Analytics Options]**
 
 * **[!UICONTROL Backdate Session Hits]**
 
-   Aktivera eller inaktivera möjligheten för Adobe SDK att uppdatera sessionsinfo. Sessionsinformationsträffar består för närvarande av krascher och sessionslängd. När det här alternativet är aktiverat kommer Adobe SDK att uppdatera sessionsinformationen till en sekund efter den senaste träffen i föregående session. Detta innebär att krascher och sessionsdata korrelerar med rätt datum då de inträffade. En träff blir inaktuell vid varje ny programstart. När det är inaktiverat kommer Adobe SDK att bifoga sessionsinformationen till den aktuella livscykeln.
+   Aktivera eller inaktivera möjligheten för Adobe SDK att uppdatera sessionsinfo. Sessionsinformationsträffar består för närvarande av krascher och sessionslängd. När det här alternativet är aktiverat kommer Adobe SDK att uppdatera sessionsinformationen som träffats till en sekund efter den senaste träffen i föregående session. Detta innebär att krascher och sessionsdata korrelerar med rätt datum då de inträffade. En träff blir inaktuell vid varje ny programstart. När det är inaktiverat kommer Adobe SDK att bifoga sessionsinformationen till den aktuella livscykeln.
 
 * **[!UICONTROL Privacy]**
 

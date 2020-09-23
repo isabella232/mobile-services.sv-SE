@@ -3,12 +3,12 @@ description: Du kan använda den här informationen för att skapa en ny app och
 keywords: mobile
 seo-description: Du kan använda den här informationen för att skapa en ny app och konfigurera dess nyckelmått, konfigurera SDK-alternativen för Adobe Analytics och Adobe Audience Manager, konfigurera alternativ för förvärv och ID-tjänster och hämta konfigurationsfilen, SDK:er samt utvecklings- och provverktygen.
 seo-title: Lägg till en ny app
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Lägg till en ny app
 topic: Metrics
 uuid: 706b5e4d-1318-4a9e-8c69-ffabf51fa02c
 translation-type: tm+mt
-source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '678'
 ht-degree: 0%

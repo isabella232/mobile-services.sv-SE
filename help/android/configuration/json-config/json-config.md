@@ -2,12 +2,12 @@
 description: Den här informationen hjälper dig att använda ADBMobil.json-konfigurationsfilen.
 seo-description: Den här informationen hjälper dig att använda ADBMobil.json-konfigurationsfilen.
 seo-title: ADBMomobile JSON-konfiguration
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: ADBMomobile JSON-konfiguration
 topic: Developer and implementation
 uuid: 1decf605-7bc3-4e73-ad52-1ecd5821599e
 translation-type: tm+mt
-source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '1678'
 ht-degree: 4%
@@ -94,7 +94,7 @@ Här är en lista över variablerna i JSON-filen och den SDK-version du behöver
 
    Kom ihåg följande information:
 
-   * När `coopUnsafe` är inställt på `true`läggs `coop_unsafe=1` alltid till i Audience Manager och besöks-ID-träffar.
+   * När `coopUnsafe` är inställt på `true`läggs `coop_unsafe=1` alltid till i Audience Manager och i besöks-ID-träffar.
    * Om du aktiverar vidarebefordran på serversidan för Analytics till Audience Manager visas även `coop_unsafe=1` Analytics-träffar.
 
 

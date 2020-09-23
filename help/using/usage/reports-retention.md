@@ -3,12 +3,15 @@ description: Retention-rapporten (tidigare First Launch Cohorts) är en kohortra
 keywords: mobile
 seo-description: Retention-rapporten (tidigare First Launch Cohorts) är en kohortrapport som visar hur många unika användare som har startat din app för första gången och sedan startat appen igen minst en gång under de följande månaderna.
 seo-title: Kvarhållningsrapport
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Kvarhållningsrapport
 topic: Reports,Metrics
 uuid: e7639e7f-c9ed-4b19-9ac5-b36774ea9dd6
 translation-type: tm+mt
-source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '304'
+ht-degree: 0%
 
 ---
 

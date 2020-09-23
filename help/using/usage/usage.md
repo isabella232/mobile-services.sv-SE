@@ -3,12 +3,15 @@ description: Användningsrapporter visar genomsnittlig sessionslängd, dagliga o
 keywords: mobile
 seo-description: Användningsrapporter visar genomsnittlig sessionslängd, dagliga och månatliga användare, uppgraderingar och andra insikter som hjälper dig att förstå hur och hur ofta appen används. Kvarhållningsrapporter visar snabbt användarnas kvarhållningsnivåer 1 dag, 7 dagar och 28 dagar efter den första starten.
 seo-title: Rapporter
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Rapporter
 topic: Reports,Metrics
 uuid: 2abc2bd1-dbae-4af1-9b8d-1df2f6d3a81f
 translation-type: tm+mt
-source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '173'
+ht-degree: 3%
 
 ---
 

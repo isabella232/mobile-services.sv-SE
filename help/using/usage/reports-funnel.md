@@ -3,12 +3,15 @@ description: Trattrapporten identifierar var kunderna övergav en marknadsförin
 keywords: mobile
 seo-description: Trattrapporten identifierar var kunderna övergav en marknadsföringskampanj eller avvände från en definierad konverteringsväg när de interagerade med mobilappen. Du kan också använda Funnel-rapporten för att jämföra åtgärder för olika segment.
 seo-title: Trattrapport
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Trattrapport
 topic: Reports,Metrics
 uuid: 268b4ab9-2e29-4423-9f79-ad93f5231ede
 translation-type: tm+mt
-source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '507'
+ht-degree: 0%
 
 ---
 

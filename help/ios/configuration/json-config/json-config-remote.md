@@ -2,12 +2,15 @@
 description: Du kan läsa in en annan ADBMomobile JSON Config-fil när programmet startas.
 seo-description: Du kan läsa in en annan ADBMomobile JSON Config-fil när programmet startas.
 seo-title: Åsidosätt ADBMomobile JSON-konfigurationssökvägen
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Åsidosätt ADBMomobile JSON-konfigurationssökvägen
 topic: Developer and implementation
 uuid: 0d1be674-c634-4a48-aa31-5701681911b9
 translation-type: tm+mt
-source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '120'
+ht-degree: 1%
 
 ---
 

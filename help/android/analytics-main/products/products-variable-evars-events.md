@@ -3,12 +3,15 @@ description: Här är ett exempel på variabeln products med Merchandising eVars
 keywords: android;library;mobile;sdk
 seo-description: Här är ett exempel på variabeln products med Merchandising eVars och produktspecifika händelser.
 seo-title: Produkterna kan variera med Merchandising eVars och produktspecifika event
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Produkterna kan variera med Merchandising eVars och produktspecifika event
 topic: Developer and implementation
 uuid: 64f822a0-6ccf-48e7-8886-31b93d8198a3
 translation-type: tm+mt
-source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '98'
+ht-degree: 0%
 
 ---
 

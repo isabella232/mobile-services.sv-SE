@@ -3,12 +3,15 @@ description: Den här informationen hjälper dig att anpassa de inbyggda rapport
 keywords: mobile
 seo-description: Den här informationen hjälper dig att anpassa de inbyggda rapporterna genom att lägga till ytterligare filter (segment).
 seo-title: Lägg till filter i rapporter
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Lägg till filter i rapporter
 topic: Reports,Metrics
 uuid: 19c395cc-2e07-4588-825b-f2f8b10a87c1
 translation-type: tm+mt
-source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '348'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ Den här informationen hjälper dig att anpassa de inbyggda rapporterna genom at
 
 >[!IMPORTANT]
 >
->Mätvärden för mobilappar finns också i marknadsföringsrapporter och analyser, ad hoc-analyser, datalager och andra analysrapporteringsgränssnitt. Om en uppdelning- eller rapporttyp inte är tillgänglig i Adobe Mobile kan den genereras med ett annat rapporteringsgränssnitt.
+>Mätvärden för mobilappar finns också i marknadsföringsrapporter och -analyser, ad hoc-analyser, data warehouse och andra analysrapporteringsgränssnitt. Om det inte finns någon nedbrytning- eller rapporttyp i Adobe Mobile kan den genereras med ett annat rapporteringsgränssnitt.
 
 I det här exemplet anpassar vi **[!UICONTROL Users & Sessions]** rapporten, men instruktionerna gäller för alla rapporter.
 
@@ -54,7 +57,7 @@ I det här exemplet anpassar vi **[!UICONTROL Users & Sessions]** rapporten, men
 
    ![](assets/customize5.png)
 
-   Du kan anpassa den här rapporten mer. I iOS 8.3 kan du lägga till måttet First Launches med ett iOS 8.3-filter för operativsystemsversion för att se hur många iOS 8.3-kunder som uppgraderade sina appar och startade första gången.
+   Du kan anpassa den här rapporten mer. Från iOS 8.3 kan du lägga till måttet First Launches med ett iOS 8.3-operativsystemsfilter för att se hur många iOS 8.3-kunder som uppgraderade sina appar och startade första gången.
 1. Klicka **[!UICONTROL First Launches]** på **[!UICONTROL Add Filter]**, klicka **[!UICONTROL Add Rule]**, välj **[!UICONTROL Operating Systems]** i listrutan och välj **[!UICONTROL iOS]**.
 1. Klicka **[!UICONTROL And]** på, välj **[!UICONTROL Operating System Versions]** i listrutan och välj **[!UICONTROL iOS 8.3]**.
 
@@ -68,4 +71,4 @@ I det här exemplet anpassar vi **[!UICONTROL Users & Sessions]** rapporten, men
 
    ![](assets/customize7.png)
 
-   Testa de olika alternativen på rapportanpassningsmenyn och se till att du bokmärker dina favoriter. Rapport-URL:er i Adobe Mobile fungerar och kan skickas med e-post eller läggas till i dina favoriter.
+   Testa de olika alternativen på rapportanpassningsmenyn och se till att du bokmärker dina favoriter. Rapports-URL:er i Adobe Mobile fungerar och kan skickas med e-post eller läggas till i dina favoriter.

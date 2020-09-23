@@ -2,13 +2,16 @@
 description: Det går inte att ange variabeln products genom att använda bearbetningsregler. I Mobile SDK måste du använda en speciell syntax i parametern kontextdata för att ange produkter på serveranropet.
 keywords: android;library;mobile;sdk
 seo-description: Det går inte att ange variabeln products genom att använda bearbetningsregler. I Mobile SDK måste du använda en speciell syntax i parametern kontextdata för att ange produkter på serveranropet.
-seo-title: Variabeln Produkter
-solution: Marketing Cloud,Analytics
-title: Variabeln Produkter
+seo-title: Produktvariabel
+solution: Experience Cloud,Analytics
+title: Produktvariabel
 topic: Developer and implementation
 uuid: f4484022-cb8b-4dea-9209-5a110ba607df
 translation-type: tm+mt
-source-git-commit: 7aff336586058302046a728a0b1b0ce12660c1ba
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '185'
+ht-degree: 1%
 
 ---
 

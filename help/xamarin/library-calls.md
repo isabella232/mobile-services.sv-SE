@@ -3,11 +3,14 @@ description: Information som hjälper dig att ringa anrop till plugin-programmet
 keywords: Xamarin
 seo-description: Information som hjälper dig att ringa anrop till plugin-programmet från dina skript.
 seo-title: Göra anrop till biblioteket
-solution: Marketing Cloud,Developer
+solution: Experience Cloud
 title: Göra anrop till biblioteket
 uuid: a480201a-4090-4662-8dd8-56f62144cd93
 translation-type: tm+mt
-source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '108'
+ht-degree: 0%
 
 ---
 

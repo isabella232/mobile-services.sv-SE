@@ -2,12 +2,12 @@
 description: Versionsinformation och kända fel för Android SDK 4.x för Experience Cloud Solutions.
 seo-description: Versionsinformation och kända fel för Android SDK 4.x för Experience Cloud Solutions.
 seo-title: Versionsinformation
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Versionsinformation
 topic: Developer and implementation
 uuid: 16bb4de8-a216-47a8-928c-0b1e1421adcf
 translation-type: tm+mt
-source-git-commit: a2a2ea4bd3826b061b198e684dd31d9328137d7e
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 2%
@@ -58,4 +58,4 @@ Här är versionsinformation, kända fel och snabbkorrigeringsinformation för A
 * Visitor ID-tjänst - Ökade anslutnings- och avläsningstiderna från 2 sekunder till 5 sekunder.
 
 
-Mer information om aktuell och tidigare versionsinformation för alla lösningar finns i [versionsinformationen](hhttps://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html)för Adobe Experience Cloud.
+Mer information om aktuell och tidigare versionsinformation om alla lösningar finns i [Adobe Experience Cloud versionsinformation](hhttps://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html).

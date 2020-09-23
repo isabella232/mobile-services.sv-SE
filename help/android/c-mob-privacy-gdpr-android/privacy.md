@@ -2,12 +2,15 @@
 description: Den här informationen hjälper dig med en begäran om att ta bort GDPR-data.
 seo-description: Den här informationen hjälper dig med en begäran om att ta bort GDPR-data.
 seo-title: Ange användarens avanmälningsstatus
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Ange användarens avanmälningsstatus
 topic: Developer and implementation
 uuid: f8a3e6be-44dd-494e-9cda-dbbac86d6772
 translation-type: tm+mt
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '266'
+ht-degree: 0%
 
 ---
 

@@ -2,11 +2,14 @@
 description: Du kan använda den här informationen för att spåra djupa och fördröjda länkar i dina mobilappar med hjälp av Adobe Mobile iOS SDK.
 seo-description: Du kan använda den här informationen för att spåra djupa och fördröjda länkar i dina mobilappar med hjälp av Adobe Mobile iOS SDK.
 seo-title: Spåra djuplänkar
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Spåra djuplänkar
 uuid: 08dc2820-7fd3-419f-ac2d-dcf12532578a
 translation-type: tm+mt
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '321'
+ht-degree: 0%
 
 ---
 
@@ -62,7 +65,7 @@ Dessa nycklar är förmappade variabler för rapportering i Adobe Analytics. Mer
 
 ### Spåra fördröjda djuplänkar
 
-1. Registrera Adobe Data Callback.
+1. Registrera Adobe-dataåteranrop.
 
    ```objective-c
    [ADBMobile registerAdobeDataCallback:^(ADBMobileDataEvent event, NSDictionary * _Nullable adobeData) { 

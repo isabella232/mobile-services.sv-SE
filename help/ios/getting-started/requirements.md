@@ -2,12 +2,15 @@
 description: Följ de här stegen för att konfigurera en rapportserie för att samla in appdata för iOS.
 seo-description: Följ de här stegen för att konfigurera en rapportserie för att samla in appdata för iOS.
 seo-title: Innan du börjar
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Innan du börjar
 topic: Developer and implementation
 uuid: 04133f68-3618-41fd-8a13-aec5b6f04df6
 translation-type: tm+mt
-source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '563'
+ht-degree: 4%
 
 ---
 
@@ -24,7 +27,7 @@ Analysadministratörer och apputvecklare måste utföra följande uppgifter:
 
 Så här konfigurerar du en rapportserie och samlar in data om mobilappar:
 
-1. Fyll i ett av avsnitten i [Logga in på Adobe Mobile Services-gränssnittet](/help/ios/getting-started/getting-started.md).
+1. Fyll i ett av avsnitten i [Logga in på användargränssnittet](/help/ios/getting-started/getting-started.md)för Adobe Mobile Services.
 1. Skapa ett Analytics-konto för varje apputvecklare.
 
 Programutvecklare har nu tillgång till de rapportsviter du har skapat.
@@ -37,26 +40,26 @@ Programutvecklare har nu tillgång till de rapportsviter du har skapat.
 
 1. Kontrollera att Analytics-administratören har slutfört stegen i avsnittet *Analysadministratörer* ovan.
 
-1. Verifiera att Analytics-administratören har slutfört ett av avsnitten i *Logga in i Adobe Mobile Services-gränssnittet* nedan.
+1. Kontrollera att Analytics-administratören har slutfört ett av avsnitten i *Logga in i användargränssnittet* för Adobe Mobile Services nedan.
 1. När rapportsviten har konfigurerats slutför du stegen i *Hämta SDK* nedan.
 
 Mer information om roller och behörigheter finns i [Roller och behörigheter](/help/using/gs/c-mob-roles-and-permissions.md).
 
 ## Logga in på användargränssnittet för Adobe Mobile Services {#section_690A2EC4572E47869F183974E932A6A8}
 
-Adobes mobiltjänster är det primära rapporteringsgränssnittet för mobilappsanalyser och målinriktning. När du har utfört de här stegen kan du hämta en konfigurationsfil som är förkonfigurerad med din datainsamlingsserver, rapportserie och många andra inställningar.
+Adobe mobiltjänster är det primära rapporteringsgränssnittet för mobilappsanalys och målinriktning. När du har utfört de här stegen kan du hämta en konfigurationsfil som är förkonfigurerad med din datainsamlingsserver, rapportserie och många andra inställningar.
 
-Du kan logga in på Adobes mobiltjänster på något av följande sätt:
+Du kan logga in på Adobe Mobile Services på något av följande sätt:
 
 * **Experience Cloud**
 
-   Logga in på [Experience Cloud](https://marketing.adobe.com) med ditt Adobe ID.
+   Logga in på [Experience Cloud](https://marketing.adobe.com) med din Adobe ID.
 
-   Den här metoden förutsätter att ditt företag har etablerats och att du har länkat ditt Analytics-konto. Mer information om etablering finns i [Hantera Experience Cloud-användare och -produkter](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/admin-getting-started.html). Mer information om hur du länkar ditt konto finns i [Organisationer och kontolänkning](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/organizations.html).
+   Den här metoden förutsätter att ditt företag har etablerats och att du har länkat ditt Analytics-konto. Mer information om etablering finns i [Hantera användare och produkter](https://docs.adobe.com/content/help/sv-SE/core-services/interface/manage-users-and-products/admin-getting-started.html)i Experience Cloud. Mer information om hur du länkar ditt konto finns i [Organisationer och kontolänkning](https://docs.adobe.com/content/help/sv-SE/core-services/interface/manage-users-and-products/organizations.html).
 
    >[!TIP]
    >
-   >Om du är osäker på om ditt företag har etablerats i Experience Cloud kan du använda ditt befintliga Adobe Analytics-konto.
+   >Om du är osäker på om ditt företag har etablerats i Experience Cloud använder du ditt befintliga Adobe Analytics-konto.
 
 * **Adobe Analytics**
 

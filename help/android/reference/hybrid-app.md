@@ -2,12 +2,15 @@
 description: Om appen öppnar mobilt webbinnehåll måste besökarna inte identifieras separat när de förflyttar sig mellan den inbyggda och mobila webben.
 seo-description: Om appen öppnar mobilt webbinnehåll måste besökarna inte identifieras separat när de förflyttar sig mellan den inbyggda och mobila webben.
 seo-title: Spårning av besökare mellan en app och en mobil webbsajt
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Spårning av besökare mellan en app och en mobil webbsajt
 topic: Developer and implementation
 uuid: 073572e4-4c55-4b27-b4a7-e4349ccde7bf
 translation-type: tm+mt
-source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '508'
+ht-degree: 0%
 
 ---
 
@@ -69,11 +72,11 @@ På träffar från mobilwebbinnehållet kontrollerar du att `mid` parametern fin
 
 Kontrollera att Adobe SDK som paketeras i det överordnade programmet är version 4.12.0 eller senare.
 
-**Jag ser inte Adobe-ID:n i min URL.**
+**Jag ser inte Adobe ID:n i min URL.**
 
 * Kontrollera följande:
    * Den URL-sträng som används för att öppna webbvyn genererades av `Visitor.appendToURL(urlString)`.
-   * Adobe-id:n är kodade.
+   * Adobe-ID:n är kodade.
 Kontrollera att frågeparametern visas i URL:en för att se till att ID:n som läggs till i den URL som öppnas `adobe_mc` .
 
 ### Min app `mid` är inte identisk med min webbvy.
@@ -90,5 +93,5 @@ Om dessa felsökningssteg inte löser dina problem kan du kontakta Adobe Experie
 
 >[!IMPORTANT]
 >
->För att Adobe ska kunna validera implementeringen måste du dela ett exempelprogram och den tillhörande webbplatsen.
+>Om du vill att Adobe ska kunna validera implementeringen måste du dela ett exempelprogram och den associerade platsen.
 

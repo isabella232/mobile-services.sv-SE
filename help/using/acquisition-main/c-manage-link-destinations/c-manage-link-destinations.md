@@ -3,12 +3,15 @@ description: På sidan Hantera länkmål kan du skapa, redigera, arkivera/ta bor
 keywords: mobile
 seo-description: På sidan Hantera länkmål kan du skapa, redigera, arkivera/ta bort länkmål. Dessa mål kan kallas textbundna när du skapar marknadsföringslänkar, push-meddelanden eller meddelanden i appen.
 seo-title: Skapa och hantera länkmål
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Skapa och hantera länkmål
 topic: Metrics
 uuid: 43930e3a-6a11-40c6-8a61-6732a673dac7
 translation-type: tm+mt
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '161'
+ht-degree: 1%
 
 ---
 

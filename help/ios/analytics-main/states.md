@@ -2,17 +2,20 @@
 description: Lägen är de olika skärmarna eller vyerna i ditt program. Varje gång ett nytt läge visas i programmet, till exempel när en användare navigerar från startsidan till nyhetsflödet, ska ett spårlägesanrop skickas. I iOS spåras ett läge vanligtvis i metoden viewDidnLoad för varje vy.
 seo-description: Lägen är de olika skärmarna eller vyerna i ditt program. Varje gång ett nytt läge visas i programmet, till exempel när en användare navigerar från startsidan till nyhetsflödet, ska ett spårlägesanrop skickas. I iOS spåras ett läge vanligtvis i metoden viewDidnLoad för varje vy.
 seo-title: Spåra applägen
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Spåra applägen
 topic: Developer and implementation
 uuid: 12cca4eb-1f15-4cec-a58f-76b69eaff99d
 translation-type: tm+mt
-source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '376'
+ht-degree: 2%
 
 ---
 
 
-# Spåra programtillstånd {#track-app-states}
+# Track app states {#track-app-states}
 
 Lägen är de olika skärmarna eller vyerna i ditt program. Varje gång ett nytt läge visas i programmet, till exempel när en användare navigerar från startsidan till nyhetsflödet, ska ett spårlägesanrop skickas. I iOS spåras ett läge vanligtvis i metoden viewDidnLoad för varje vy.
 
@@ -38,7 +41,7 @@ Lägen är de olika skärmarna eller vyerna i ditt program. Varje gång ett nytt
                     data:nil];
    ```
 
-I Adobe Mobile Services **[!UICONTROL State Name]** rapporteras variabeln och en vy registreras för varje *`View State`* `trackState` anrop. I andra Analytics-gränssnitt **[!UICONTROL View State]** rapporteras som **[!UICONTROL Page Name]** och lägesvyer rapporteras som sidvyer.
+I Adobe Mobile-tjänster **[!UICONTROL State Name]** rapporteras variabeln i *`View State`* och en vy registreras för varje `trackState` anrop. I andra Analytics-gränssnitt **[!UICONTROL View State]** rapporteras som **[!UICONTROL Page Name]** och lägesvyer rapporteras som sidvyer.
 
 ## Skicka ytterligare data {#section_CFDB4F944496401786A145C209AB387C}
 

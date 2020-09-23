@@ -2,12 +2,15 @@
 description: Från och med WatchOS 2 körs WatchKit-tilläggen på en Apple Watch-enhet. Program som körs i den här miljön kräver WatchConnectivity-ramverket för att dela data med den iOS-app som de innehåller.
 seo-description: Från och med WatchOS 2 körs WatchKit-tilläggen på en Apple Watch-enhet. Program som körs i den här miljön kräver WatchConnectivity-ramverket för att dela data med den iOS-app som de innehåller.
 seo-title: Apple Watch-implementering med WatchOS 2
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Apple Watch-implementering med WatchOS 2
 topic: Developer and implementation
 uuid: 9498467e-db5e-411e-a00e-d19841f485de
 translation-type: tm+mt
-source-git-commit: 718e336b9002fe3d5282697d4302d12a89297181
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '530'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +27,7 @@ Från och med WatchOS 2 kan WatchKit-tilläggen köras på en Apple Watch. Progr
 
 Letar du efter information och dokumentation om Adobe Experience Platform Mobile SDK? Klicka [här](https://aep-sdks.gitbook.io/docs/) för att få den senaste dokumentationen.
 
-Från om med september 2018 har vi släppt en ny större version av SDK. Dessa nya SDK:er för Adobe Experience Platform Mobile kan konfigureras via [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
+Från om med september 2018 har vi släppt en ny större version av SDK. Dessa nya Adobe Experience Platform Mobile SDK:er kan konfigureras via [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
 
 * Gå till Adobe Experience Platform Launch för att komma igång.
 * Om du vill se vad som finns i Experience Platform SDK-databaserna går du till [Github: Adobe Experience Platform SDKs](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
@@ -38,6 +41,7 @@ Från om med september 2018 har vi släppt en ny större version av SDK. Dessa n
 >* The containing app
 >* Appen WatchKit
 >* Tillägget WatchKit
+
 >
 
 
@@ -156,7 +160,7 @@ Utför följande steg i Xcode-projektet:
    } 
    ```
 
-## Ytterligare information {#section_7BCDB5CF0D424DCA97883753D1881233}
+## Additional Information {#section_7BCDB5CF0D424DCA97883753D1881233}
 
 Kom ihåg följande information:
 

@@ -3,12 +3,15 @@ description: Här är mätvärden och mått som kan mätas automatiskt av mobilb
 keywords: android;library;mobile;sdk
 seo-description: Här är mätvärden och mått som kan mätas automatiskt av mobilbiblioteket, efter att livscykeln har implementerats, och en länk för att felsöka livscykeldata.
 seo-title: Livscykelstatistik
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Livscykelstatistik
 topic: Developer and implementation
 uuid: a8f3ebac-be3b-4948-82bb-105d46cfff6d
 translation-type: tm+mt
-source-git-commit: 1c387b063eedb41a52e044dc824df6a51f173ad2
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '1240'
+ht-degree: 2%
 
 ---
 
@@ -21,32 +24,32 @@ I det här avsnittet finns information om mått och mått som kan mätas automat
 
 Letar du efter information och dokumentation om Adobe Experience Platform Mobile SDK? Klicka [här](https://aep-sdks.gitbook.io/docs/) för att få den senaste dokumentationen.
 
-Från om med september 2018 har vi släppt en ny större version av SDK. Dessa nya SDK:er för Adobe Experience Platform Mobile kan konfigureras via [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
+Från om med september 2018 har vi släppt en ny större version av SDK. Dessa nya Adobe Experience Platform Mobile SDK:er kan konfigureras via [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
 
 * Gå till Adobe Experience Platform Launch för att komma igång.
 * Om du vill se vad som finns i Experience Platform SDK-databaserna går du till [Github: Adobe Experience Platform SDKs](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
 
-## Livscykelvärden och dimensioner {#section_78F036C4296F4BA3A47C2044F79C86C1}
+## Lifecycle metrics and dimensions {#section_78F036C4296F4BA3A47C2044F79C86C1}
 
 När livscykelmätvärden är konfigurerade skickas de i kontextdataparametrar till Analytics, i parametrar till Target för varje mbox-anrop och som en signal till målgruppshanteringen. Analyserna och Target har samma format, medan målgruppshanteringen använder olika prefix för varje mätvärde.
 
 För Analytics hämtas och rapporteras kontextdata som skickas med varje livscykelspårningsanrop automatiskt med hjälp av mätvärden eller dimensioner, och undantagen noteras.
 
-### Mått
+### Mätvärden
 
 * **Första starten**
 
    Utlöses vid första körningen efter installation eller ominstallation.
 
    * Kontextdata/målparameter för analyser: `a.InstallEvent`
-   * Audience Manager-signal: `c_a_InstallEvent`
+   * Audience Manager Signal: `c_a_InstallEvent`
 
 * **Uppgraderingar**
 
    Utlöses vid första körningen efter en uppgradering eller när versionsnumret ändras.
 
    * Kontextdata/målparameter för analyser: `a.UpgradeEvent`
-   * Audience Manager-signal: `c_a_UpgradeEvent`
+   * Audience Manager Signal: `c_a_UpgradeEvent`
 
 * **Dagliga engagerade användare**
 
@@ -57,7 +60,7 @@ För Analytics hämtas och rapporteras kontextdata som skickas med varje livscyk
    >Det här måttet lagras inte automatiskt i ett Analytics-mått. Du måste skapa en bearbetningsregel som ställer in en anpassad händelse för att hämta det här måttet.
 
    * Kontextdata/målparameter för analyser: `a.DailyEngUserEvent`
-   * Audience Manager-signal: `c_a_DailyEngUserEvent`
+   * Audience Manager Signal: `c_a_DailyEngUserEvent`
 
 * **Engagerade användare varje månad**
 
@@ -68,9 +71,9 @@ För Analytics hämtas och rapporteras kontextdata som skickas med varje livscyk
    >Det här måttet lagras inte automatiskt i ett Analytics-mått. Du måste skapa en bearbetningsregel som ställer in en anpassad händelse för att hämta det här måttet.
 
    * Kontextdata/målparameter för analyser: `a.MonthlyEngUserEvent`
-   * Audience Manager-signal: `c_a_MonthlyEngUserEvent`
+   * Audience Manager Signal: `c_a_MonthlyEngUserEvent`
 
-* **Startar**
+* **Launches**
 
    Utlöses vid varje körning, inklusive krascher och installationer. Utlöses också vid ett återköp från bakgrunden när tidsgränsen för livscykelsessionen har överskridits.
 
@@ -79,24 +82,24 @@ För Analytics hämtas och rapporteras kontextdata som skickas med varje livscyk
    >Det här måttet lagras inte automatiskt i ett Analytics-mått. Du måste skapa en bearbetningsregel som ställer in en anpassad händelse för att hämta det här måttet.
 
    * Kontextdata/målparameter för analyser: `a.LaunchEvent`
-   * Audience Manager-signal: `c_a_LaunchEvent`
+   * Audience Manager Signal: `c_a_LaunchEvent`
 
 * **Krascher**
 
-   Utlöses när programmet inte är bakgrundsbelagt innan det stängs. Händelsen skickas när programmet startas efter kraschen.  Adobe Mobile-kraschrapporter implementerar inte en global hanterare för ej infångade undantag.
+   Utlöses när programmet inte är bakgrundsbelagt innan det stängs. Händelsen skickas när programmet startas efter kraschen.  Kraschrapportering för Adobe Mobile implementerar inte en global hanterare för ej infångade undantag.
 
    * Kontextdata/målparameter för analyser: `a.CrashEvent`
-   * Audience Manager-signal: `c_a_CrashEvent`
+   * Audience Manager Signal: `c_a_CrashEvent`
 
 * **Längd på föregående session**
 
    Rapporterar antalet sekunder som en tidigare programsession varade, baserat på hur länge programmet var öppet och i förgrunden.
 
    * Kontextdata/målparameter för analyser: `a.PrevSessionLength`
-   * Audience Manager-signal: `c_a_PrevSessionLength`
+   * Audience Manager Signal: `c_a_PrevSessionLength`
 
 
-### Dimensioner
+### Mått
 
 * **Installationsdatum**
 
@@ -205,30 +208,30 @@ För Analytics hämtas och rapporteras kontextdata som skickas med varje livscyk
 
 Följande mått och mått hämtas in i mobillösningens variabler med den metod som anges i kolumnen **Beskrivning** .
 
-### Mått
+### Mätvärden
 
 * **Total åtgärdstid**
 
    Fylls i med `trackTimedAction` metoder.
 
    * Kontextdata/målparameter för analyser: `a.action.time.total`
-   * Audience Manager Trait: `c_a_action_time_total`
+   * Audience Manager: `c_a_action_time_total`
 
 * **Åtgärdstid i app**
 
    Fylls i med `trackTimedAction` metoder.
 
    * Kontextdata/målparameter för analyser: `a.action.time.inapp`
-   * Audience Manager Trait: `c_a_action_time_inapp`
+   * Audience Manager: `c_a_action_time_inapp`
 
 * **Livstidsvärde (händelse)**
 
    Fylls i med `trackLifetimeValue` metoder.
 
    * Kontextdata/målparameter för analyser: `a.ltv.amount`
-   * Audience Manager Trait: `c_a_ltv_amount`
+   * Audience Manager: `c_a_ltv_amount`
 
-### Dimensioner
+### Mått
 
 * **Placering (ned till 10 km)**
 
@@ -238,7 +241,7 @@ Följande mått och mått hämtas in i mobillösningens variabler med den metod 
 
       * `a.loc.lat.a`
       * `a.loc.lon.a`
-   * Audience Manager-egenskaper:
+   * Audience Manager traits:
 
       * `c_a_loc_lat_a`
       * `c_a_loc_lon_a`
@@ -252,7 +255,7 @@ Följande mått och mått hämtas in i mobillösningens variabler med den metod 
 
       * `a.loc.lat.b`
       * `a.loc.lon.b`
-   * Audience Manager-egenskaper:
+   * Audience Manager traits:
 
       * `c_a_loc_lat_b`
       * `c_a_loc_lon_b`
@@ -266,7 +269,7 @@ Följande mått och mått hämtas in i mobillösningens variabler med den metod 
 
       * `a.loc.lat.c`
       * `a.loc.lon.c`
-   * Audience Manager-egenskaper:
+   * Audience Manager traits:
 
       * `c_a_loc_lat_c`
       * `c_a_loc_lon_c`
@@ -277,60 +280,60 @@ Följande mått och mått hämtas in i mobillösningens variabler med den metod 
    Fylls i av trackLocation-metoder när enheten finns inom en definierad POI.
 
    * Kontextdata/målparametrar för analyser: `a.loc.poi`
-   * Audience Manager Trait: `c_a_loc_poi`
+   * Audience Manager: `c_a_loc_poi`
 
 * **Avstånd till intressecentrum**
 
    Fylls i av trackLocation-metoder när enheten finns inom en definierad POI.
 
    * Kontextdata/målparametrar för analyser: `a.loc.dist`
-   * Audience Manager Trait: `c_a_loc_dist`
+   * Audience Manager: `c_a_loc_dist`
 
 * **Livstidsvärde (konverteringsvariabel)**
 
    Fylls i av trackLifetimeValue-metoder.
 
    * Kontextdata/målparametrar för analyser: `a.ltv.amount`
-   * Audience Manager Trait: `c_a_ltv_amount`
+   * Audience Manager: `c_a_ltv_amount`
 
 * **Spårningskod**
 
-   Fylls i vid köp av mobilappar och genereras automatiskt av Adobes mobiltjänster.
+   Fylls i av Mobilappsköp och genereras automatiskt av Adobe mobiltjänster.
 
    * Kontextdata/målparametrar för analyser: `a.referrer.campaign.trackingcode`
-   * Audience Manager Trait: `c_a_referrer_campaign_trackingcode`
+   * Audience Manager: `c_a_referrer_campaign_trackingcode`
 
 * **Campaign**
 
    Namnet på kampanjen, som också lagras i kampanjvariabeln. Fylls i av Anskaffning av mobilapp.
 
    * Kontextdata/målparametrar för analyser: `a.referrer.campaign.name`
-   * Audience Manager Trait: `c_a_referrer_campaign_name`
+   * Audience Manager: `c_a_referrer_campaign_name`
 
 * **Kampanjinnehåll**
 
    Namnet eller ID för innehållet som visade länken. Fylls i av Anskaffning av mobilapp.
 
    * Kontextdata/målparametrar för analyser: `a.referrer.campaign.content`
-   * Audience Manager Trait: `c_a_referrer_campaign_content`
+   * Audience Manager: `c_a_referrer_campaign_content`
 
-* **Kampanjmedium**
+* **Kampanj mellan**
 
    Marknadsföringsmedium, t.ex. en banderoll eller ett e-postmeddelande. Fylls i av Anskaffning av mobilapp.
 
    * Kontextdata/målparametrar för analyser: `a.referrer.campaign.medium`
-   * Audience Manager Trait: `c_a_referrer_campaign_medium`
+   * Audience Manager: `c_a_referrer_campaign_medium`
 
 * **Kampanjkälla**
 
    Ursprunglig hänvisare, till exempel ett nyhetsbrev eller ett nätverk för sociala medier. Fylls i av Anskaffning av mobilapp.
 
    * Kontextdata/målparametrar för analyser: `a.referrer.campaign.source`
-   * Audience Manager Trait: `c_a_referrer_campaign_source`
+   * Audience Manager: `c_a_referrer_campaign_source`
 
 * **Kampanjperiod**
 
    Betalnyckelord eller andra termer som du vill spåra med förvärvet. Fylls i av Anskaffning av mobilapp.
 
    * Kontextdata/målparametrar för analyser: `a.referrer.campaign.term`
-   * Audience Manager Trait: `c_a_referrer_campaign_term`
+   * Audience Manager: `c_a_referrer_campaign_term`

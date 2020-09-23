@@ -1,18 +1,21 @@
 ---
 description: 'null'
 seo-description: 'null'
-seo-title: Analyser
-solution: Marketing Cloud,Analytics
-title: Analyser
+seo-title: 'Analytics '
+solution: Experience Cloud,Analytics
+title: 'Analytics '
 topic: Developer and implementation
 uuid: c2cef3d3-77a7-4a8e-bbe4-3db10a77996a
 translation-type: tm+mt
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '912'
+ht-degree: 2%
 
 ---
 
 
-# Analyser {#analytics}
+# Analytics{#analytics} 
 
 När du har lagt till biblioteket i ditt projekt kan du göra alla anrop till Analytics-metoden var som helst i din app.
 
@@ -40,7 +43,7 @@ Livscykelmätvärden är nu klara att hämtas och Mobile Application Reports vis
 
 ### Nya versioner
 
-Nya versioner av rapporter om mobilapplikationer släpps regelbundet. Nya versioner används inte automatiskt i din rapportsserie. Du måste upprepa de här stegen för att kunna genomföra uppgraderingen. Varje gång du lägger till nya Experience Cloud-funktioner i ditt program rekommenderar vi att du upprepar de här stegen för att se till att du har den senaste konfigurationen.
+Nya versioner av rapporter om mobilapplikationer släpps regelbundet. Nya versioner används inte automatiskt i din rapportsserie. Du måste upprepa de här stegen för att kunna genomföra uppgraderingen. Varje gång du lägger till nya Experience Cloud-funktioner i ditt program rekommenderar vi att du upprepar dessa steg för att vara säker på att du har den senaste konfigurationen.
 
 ## Livscykelstatistik {#section_532702562A7A43809407C9A2CBA80E1E}
 
@@ -132,7 +135,7 @@ Bearbetningsreglerna ger dig flera fördelar:
 
 Alla värden som du tilldelade direkt till variabler bör läggas till i kontextdata i stället.
 
-## Bearbetar regler {#section_66EE762EEA5E4728864166201617DEBF}
+## Behandlingsregler {#section_66EE762EEA5E4728864166201617DEBF}
 
 Bearbetningsregler används för att kopiera data som du skickar i kontextdatavariabler till variabler, props och andra variabler för rapportering.
 

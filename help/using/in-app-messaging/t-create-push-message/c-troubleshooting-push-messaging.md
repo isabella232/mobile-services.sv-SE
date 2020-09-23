@@ -3,12 +3,12 @@ description: Den här informationen kan hjälpa dig att felsöka push-meddelande
 keywords: mobile
 seo-description: Den här informationen kan hjälpa dig att felsöka push-meddelanden.
 seo-title: Felsökning av push-meddelanden
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Felsökning av push-meddelanden
 topic: Metrics
 uuid: c7be4ab7-0cfe-4296-84a8-01412f4fd93f
 translation-type: tm+mt
-source-git-commit: 86ba045b44bf6553e80727c0d61ccdd9a552d16c
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '729'
 ht-degree: 0%
@@ -50,7 +50,7 @@ Följande typer av fördröjningar kan associeras med push-meddelanden för mobi
    API-nyckeln kan vara ogiltig av följande orsaker:
 
    * Den angivna API-nyckeln är inte en servernyckel med rätt GCM API-nyckelvärde.
-   * Servernyckeln har tillåtit IP-adresserna och blockerar Adobes servrar från att skicka ett push-meddelande.
+   * Servernyckeln tillåter IP-adresser och blockerar Adobe-servrar från att skicka ett push-meddelande.
 
 * **Bestämma API-nyckelns giltighet**
 
@@ -91,19 +91,19 @@ Följande exempel visar hur du kan lösa ett push-fel när du använder ett VRS.
 
 Följande kund har två iOS-appar:
 
-* Programnamn: PhotoShop_app_iOS
-   * Överordnad RSID: AllaAdobe PhotoShop_apps
-   * VRSID: PhotoShop_iOS_app_SF
+* Programnamn: Photoshop_app_iOS
+   * Överordnad RSID: AllaAdobe Photoshop_apps
+   * VRSID: Photoshop_iOS_app_SF
    * VRSID-definitionssegment: `a.appid contains “PhotoShop_iOS_app_SF”`
-* Programnamn: PhotoShop_app_iOS
-   * Överordnad RSID: AllaAdobe PhotoShop_apps
-   * RSID: PhotoShop_iOS_app_LA
+* Programnamn: Photoshop_app_iOS
+   * Överordnad RSID: AllaAdobe Photoshop_apps
+   * RSID: Photoshop_iOS_app_LA
    * VRSID-definitionssegment: `a.os contains “iOS”`
 
-Om en Photoshop-anställd i det här exemplet skickar en push till appen *PhotoShop_iOS_app_SF* får alla *användare av appen* Photoshop_iOS_app_SF det push-meddelande som de förväntar sig. Men om medarbetaren skickar ett meddelande till appen *PhotoShop_iOS_app_LA* eftersom dess VRSID-definitionssegment är felaktigt (i stället`iOS` för `a.os contains "PhotoShop_iOS_app_LA"`) skickas meddelandet till **alla** iOS-användare i *Alla Adobe PhotoShop_apps*. Även om meddelandet fortfarande skickas till *Photoshop_iOS_app_LA* -användare blockerar meddelandet även push-ID:n för *PhotoShop_iOS_app_SF* -användare eftersom *PhotoShop_iOS_app_SF* -appen har ett annat certifikat. Om segmentet hade definierats som `a.os contains “PhotoShop_iOS_app_LA”`skulle push-meddelandet bara ha skickats till *PhotoShop_iOS_app_LA* -användare.
+Om en Photoshop-anställd i det här exemplet skickar en push till *Photoshop_iOS_app_SF* -appen får alla användare av *Photoshop_iOS_app_SF-appen* ett push-meddelande som förväntat. Men om medarbetaren skickar ett meddelande till *Photoshop_iOS_app_LA* -appen eftersom dess VRSID-definitionssegment är felaktigt (i stället`iOS` för `a.os contains "PhotoShop_iOS_app_LA"`) skickas meddelandet till **alla** iOS-användare i *AllAdobe Photoshop_apps*. Meddelandet skickas fortfarande till *Photoshop_iOS_app_LA* -användare, men meddelandet blocklist även push-ID:n för *Photoshop_iOS_app_SF* -användare eftersom *Photoshop_iOS_app_SF* -appen har ett annat certifikat. Om segmentet hade definierats som `a.os contains “PhotoShop_iOS_app_LA”`skulle push-meddelandet ha skickats till endast *Photoshop_iOS_app_LA* -användare.
 
-Om det skickas med push-certifikatet *PhotoShop_IOS_app_LA* återgår push-identifierarna för *PhotoShop_iOS_app_SF* som `invalid`.
+Om det skickas med push-certifikatet *Photoshop_IOS_app_LA* återställs push-identifierarna för *Photoshop_iOS_app_SF* som `invalid`.
 
 >[!CAUTION]
 >
->När du har skapat ett push-meddelande för en app som använder ett VRS-system och klickat **[!UICONTROL Save & Send]** visas en varning som påminner dig om att varje app som visas **måste** ha ett giltigt certifikat. Om varje program **inte** har ett giltigt certifikat kan målgruppssegmenten blockeras i oändlighet och du kanske inte kan skicka fler push-meddelanden till de berörda användarna. Mer information om målgruppssegment finns i [Målgrupp: definiera och konfigurera målgruppsalternativ för push-meddelanden](/help/using/in-app-messaging/t-create-push-message/c-audience-push-message.md).
+>När du har skapat ett push-meddelande för en app som använder ett VRS-system och klickat **[!UICONTROL Save & Send]** visas en varning som påminner dig om att varje app som visas **måste** ha ett giltigt certifikat. Om varje program **inte** har ett giltigt certifikat kan målgruppssegmenten vara oändligt blocklist och du kanske inte kan skicka fler push-meddelanden till de berörda användarna. Mer information om målgruppssegment finns i [Målgrupp: definiera och konfigurera målgruppsalternativ för push-meddelanden](/help/using/in-app-messaging/t-create-push-message/c-audience-push-message.md).

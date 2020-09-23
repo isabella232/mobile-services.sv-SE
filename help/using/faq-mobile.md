@@ -1,31 +1,34 @@
 ---
-description: Vanliga frågor och svar om Adobes mobiltjänster och en allmän beskrivning av funktioner.
+description: Vanliga frågor och svar om Adobe Mobile Services och en allmän beskrivning av funktioner.
 keywords: mobile
-seo-description: Vanliga frågor och svar om Adobes mobiltjänster och en allmän beskrivning av funktioner.
+seo-description: Vanliga frågor och svar om Adobe Mobile Services och en allmän beskrivning av funktioner.
 seo-title: Vanliga frågor
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Vanliga frågor
 topic: Metrics
 uuid: 62a9241c-2ada-483a-a594-b023916cb0b6
 translation-type: tm+mt
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '1115'
+ht-degree: 2%
 
 ---
 
 
 # Vanliga frågor {#frequently-asked-questions}
 
-Följande tabell innehåller en lista med vanliga frågor och svar om Adobes mobiltjänster:
+Följande tabell innehåller en lista med vanliga frågor och svar om Adobe Mobile Services:
 
 ## Adobe Mobile SDK {#section_9C2181F7B39A4BEB8EE6BCEFCF14C72F}
 
 ### Gör du ofta uppdateringar med SDK:n?
 
-Ja, vi gör ständigt uppdateringar för att du ska få tillgång till avancerade, standardiserade och säkra SDK:er. Vi släpper vanligtvis en ny version varje månad. Dessa SDK-uppdateringar är ersättningar vid programbortfall (för version 4x) som underlättar implementeringen. Mer information om våra uppdateringar finns i [versionsinformationen](https://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html).
+Ja, vi gör ständigt uppdateringar för att du ska få tillgång till avancerade, standardiserade och säkra SDK:er. Vi släpper vanligtvis en ny version varje månad. Dessa SDK-uppdateringar är ersättningar vid programbortfall (för version 4x) som underlättar implementeringen. Mer information om våra uppdateringar finns i [versionsinformationen](https://docs.adobe.com/content/help/sv-SE/release-notes/experience-cloud/current.html).
 
 ### Vilken SDK-version ska jag använda?
 
-Våra nuvarande SDK:er finns i version 4.11. Mer information finns i [versionsinformationen](https://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html).
+Våra nuvarande SDK:er finns i version 4.11. Mer information finns i [versionsinformationen](https://docs.adobe.com/content/help/sv-SE/release-notes/experience-cloud/current.html).
 
 ### Var kan jag ladda ned SDK:erna?
 
@@ -37,7 +40,7 @@ När du har skapat en ny programrapportsserie går du till Hantera appinställni
 
 ### Har Adobe Mobile SDK stöd för IPv6 för iOS?
 
-Adobes SDK för mobiler använder iOS- och Android-standardnätverksstackarna. För iOS använder SDK NSURLSession (iOS version 7+) och NSURLConnection (iOS version 7 och senare) som är helt kompatibla med IPv6. Utvecklare som har skapat eller använt sin egen nätverksstack kanske vill granska om det finns andra orsaker till att minska risken. Här är ytterligare information från Apple:
+SDK:erna för Adobe Mobile använder iOS- och Android-standardnätverksstackarna. För iOS använder SDK NSURLSession (iOS version 7+) och NSURLConnection (iOS version 7 och senare) som är helt kompatibla med IPv6. Utvecklare som har skapat eller använt sin egen nätverksstack kanske vill granska om det finns andra orsaker till att minska risken. Här är ytterligare information från Apple:
 
 *Om du skriver en klientapp med nätverks-API:er på hög nivå, som NSURLSession och CFNetwork, och du ansluter efter namn, behöver du inte ändra något för att appen ska fungera med IPv6-adresser.* Mer information finns i [Stöd för IPv6 DNS64/NAT64-nätverk](https://developer.apple.com/library/content/documentation/NetworkingInternetWeb/Conceptual/NetworkingOverview/UnderstandingandPreparingfortheIPv6Transition/UnderstandingandPreparingfortheIPv6Transition.html#__/apple_ref/doc/uid/TP40010220-CH213-SW1).
 
@@ -54,11 +57,11 @@ Mer information finns i Tips och tricks för [bearbetningsregler](https://docs.a
 
 ### Kan jag skicka analysdata till flera rapportsviter?
 
-Ja. SDK:erna gör det möjligt att skicka data till flera rapportsviter i Adobe Analytics. Om du vill samla in data i flera rapportsviter med hjälp av en bildbegäran anger du ID:n för flera rapportsviter i **[!UICONTROL rsids]** fältet under **[!UICONTROL analytics]** avsnittet i `ADBMobileConfig.json` filen, avgränsade med kommatecken och utan blanksteg. Mer information finns i [ADBMomobile JSON Config](/help/ios/configuration/json-config/json-config.md).
+Ja. Med SDK:erna kan du skicka data till flera Adobe Analytics rapporteringsprogram. Om du vill samla in data i flera rapportsviter med hjälp av en bildbegäran anger du ID:n för flera rapportsviter i **[!UICONTROL rsids]** fältet under **[!UICONTROL analytics]** avsnittet i `ADBMobileConfig.json` filen, avgränsade med kommatecken och utan blanksteg. Mer information finns i [ADBMomobile JSON Config](/help/ios/configuration/json-config/json-config.md).
 
 ### Hur skiljer sig mobilbesöken från lanseringar?
 
-SDK:n mäter när en användare öppnar appen för första gången eller återgår till appen efter att ha varit utanför appen längre tid än det angivna timeoutvärdet. Den vanliga tidsgränsen är 5 minuter (300 sekunder) i **[!UICONTROL lifecycleTimeout]** fältet, som finns i `ADBMobileConfig.json` filen. Ett besök är en beräkning på serversidan som görs av Adobe Analytics och som baseras på den första och den sista dataträffen som skickas av SDK utan att tidsgränsen för besöket överskrids. Sessionstimeout anges vanligtvis till 30 minuter för en rapportsvit. Även om besök kommer från traditionell webbanalys ger de här träffarna fortfarande värdefulla insikter om hur användarna kommer in i och avslutar er app.
+SDK:n mäter när en användare öppnar appen för första gången eller återgår till appen efter att ha varit utanför appen längre tid än det angivna timeoutvärdet. Den vanliga tidsgränsen är 5 minuter (300 sekunder) i **[!UICONTROL lifecycleTimeout]** fältet, som finns i `ADBMobileConfig.json` filen. Ett besök är en beräkning på serversidan som görs av Adobe Analytics och som baseras på det första och sista dataträffet som skickas av SDK utan att tidsgränsen för besöket överskrids. Sessionstimeout anges vanligtvis till 30 minuter för en rapportsvit. Även om besök kommer från traditionell webbanalys ger de här träffarna fortfarande värdefulla insikter om hur användarna kommer in i och avslutar er app.
 
 ## Meddelanden {#section_5EFDD2B2EBA543C09902FF979C89F2EC}
 
@@ -72,7 +75,7 @@ Ja, vi tillhandahåller en anpassad push-nyttolast som kan kodas i JSON. Android
 
 ### Finns det storleksbegränsningar för meddelanden i appen?
 
-Publicerade och aktiva meddelanden i appen som skapats i Adobe Mobile Services lagras på en server med en storleksbegränsning på 15 MB per programrapporteringsserie. Begränsningen gäller för meddelandeinnehåll och -resurser hos Adobe, men det finns inga begränsningar för vilka resurser meddelandet i appen kan referera till på andra värdar eller i appen.
+Publicerade och aktiva meddelanden i appen som skapats i Adobe Mobile Services lagras på en server med en storleksbegränsning på 15 MB per programrapporteringsserie. Begränsningen gäller för meddelandeinnehåll och -resurser på Adobe, men det finns inga begränsningar för vilka resurser meddelandet i appen kan referera till på andra värdar eller i appen.
 
 ### Kan jag använda min egen HTML-kod för meddelanden i appen?
 
@@ -88,7 +91,7 @@ Push-meddelanden skickas med befintliga Adobe Analytics-segment eller anpassade 
 
 Du kan inte använda samma namn på meddelanden i appen, push-meddelanden eller markeringslänk i flera appar som använder samma överordnade rapportserie eller VRS. Lös problemet genom att ange ett annat namn för meddelandet i appen, push-meddelandet eller Marketing Link.
 
-## Plats {#section_01208FE3B7764E0DADDCB9AD9E1FCD87}
+## Location {#section_01208FE3B7764E0DADDCB9AD9E1FCD87}
 
 ### Finns det någon gräns för hur många intressepunkter jag kan ha?
 
@@ -98,7 +101,7 @@ Det finns ingen specifik begränsning, men för idealiska prestanda och på grun
 
 ### Kan jag attribuera kampanjer till aktiviteter i appen?
 
-Ja. Adobe Mobile Services kan hjälpa er att bygga marknadsföringstricks som hjälper er att marknadsföra och driva trafik till era appar och koppla kundvärvningskampanjer till analyser och konverteringar i appen. Mer information finns i [Anskaffning](/help/using/acquisition-main/acquisition-main.md).
+Ja. Adobe mobiltjänster kan hjälpa er att bygga marknadsföringstricks som hjälper er att marknadsföra och driva trafik till era appar och koppla kundvärvningskampanjer till analyser och konverteringar i appen. Mer information finns i [Anskaffning](/help/using/acquisition-main/acquisition-main.md).
 
 ### Hur skapar jag länkar för att skaffa och spåra nya appanvändare?
 

@@ -3,12 +3,15 @@ description: Du kan konfigurera appen så att den använder Apple Push Notificat
 keywords: mobile
 seo-description: Du kan konfigurera appen så att den använder Apple Push Notification Service (APNS) eller Firebase Cloud Messaging (FCM).
 seo-title: Konfigurera appen att använda APNS eller FCM
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Konfigurera appen att använda APNS eller FCM
 topic: Metrics
 uuid: fa411f2a-ba47-4499-bbe5-1aedef6b49ad
 translation-type: tm+mt
-source-git-commit: 608384f1fee2a05699ff13fbd51c3cc43aeb693c
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '588'
+ht-degree: 11%
 
 ---
 
@@ -27,7 +30,7 @@ Så här konfigurerar du Android-appen så att den använder FCM i det här scen
 
 1. Klicka på **[!UICONTROL Get Started]** och välj **[!UICONTROL Add Project]**.
 
-1. Ange ett projektnamn och om du väljer att gå till Google Analytics för Firebase-data klickar du i kryssrutan för att godkänna villkoren för kontrollanten.
+1. Ange ett projektnamn och om du väljer Google Analytics för Firebase-data klickar du i kryssrutan för att godkänna villkoren för kontrollant.
 
 1. Klicka **[!UICONTROL Create project]** och vänta på att projektet ska skapas.
 

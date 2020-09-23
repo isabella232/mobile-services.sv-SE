@@ -3,12 +3,15 @@ description: Följande information hjälper dig att skicka en länk till en äld
 keywords: android;library;mobile;sdk
 seo-description: Följande information hjälper dig att skicka en länk till en äldre kundvärvningskampanj på en Android-enhet.
 seo-title: Testar tidigare förvärv
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Testar tidigare förvärv
 topic: Developer and implementation
 uuid: bb7ace96-68eb-4f43-b3cf-af80730b9cee
 translation-type: tm+mt
-source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '319'
+ht-degree: 0%
 
 ---
 
@@ -42,4 +45,4 @@ Om sändningen lyckas visas ett svar som liknar det nedan:
 Broadcasting: Intent { act=com.android.vending.INSTALL_REFERRER cmp=com.example.analyticsecommtest/com.google.analytics.tracking.android.AnalyticsReceiver has extras) } Broadcast completed: result=0
 ```
 
-Du ser också en bildförfrågan som skickas till Adobes datainsamlingsservrar. Om SDK väntar på den fullständiga tidslängden för referenstimeout, som du angav i steg 1, med en bildbegäran som inte innehåller kampanjparametrar, misslyckades sändningen.
+Du ser även en bildbegäran som skickas till Adobe datainsamlingsservrar. Om SDK väntar på den fullständiga tidslängden för referenstimeout, som du angav i steg 1, med en bildbegäran som inte innehåller kampanjparametrar, misslyckades sändningen.

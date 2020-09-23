@@ -2,12 +2,15 @@
 description: Den här informationen hjälper dig att migrera från version 3.x eller 2.x av iOS-biblioteket till version 4.x.
 seo-description: Den här informationen hjälper dig att migrera från version 3.x eller 2.x av iOS-biblioteket till version 4.x.
 seo-title: Migrera till iOS-biblioteket 4.x
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Migrera till iOS-biblioteket 4.x
 topic: Developer and implementation
 uuid: 5668972b-f355-4e03-9df0-8c82ddf6809b
 translation-type: tm+mt
-source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '895'
+ht-degree: 2%
 
 ---
 
@@ -169,7 +172,7 @@ Ersätt följande metoder i koden med ett anrop till `trackState` eller `trackAc
 * `track (trackState)`
 * `trackLink (trackAction)`
 
-## Anpassat besökar-ID {#section_2CF930C13BA64F04959846E578B608F3}
+## Custom visitor ID {#section_2CF930C13BA64F04959846E578B608F3}
 
 Ersätt `visitorID` variabeln med ett anrop till `setUserIdentifier:`.
 

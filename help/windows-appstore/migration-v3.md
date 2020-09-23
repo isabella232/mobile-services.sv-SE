@@ -1,20 +1,23 @@
 ---
-description: I det här avsnittet beskrivs hur du migrerar från 3.x-versionen av en tidigare Windows Mobile SDK till Windows 8.1 Universal App Store 4.x SDK för Experience Cloud Solutions.
-seo-description: I det här avsnittet beskrivs hur du migrerar från 3.x-versionen av en tidigare Windows Mobile SDK till Windows 8.1 Universal App Store 4.x SDK för Experience Cloud Solutions.
+description: I det här avsnittet beskrivs hur du migrerar från 3.x-versionen av en tidigare Windows Mobile SDK till Windows 8.1 Universal App Store 4.x SDK för Experience Cloud-lösningar.
+seo-description: I det här avsnittet beskrivs hur du migrerar från 3.x-versionen av en tidigare Windows Mobile SDK till Windows 8.1 Universal App Store 4.x SDK för Experience Cloud-lösningar.
 seo-title: Migrera till 4.x SDK:er
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Migrera till 4.x SDK:er
 topic: Developer and implementation
 uuid: e0fe3b7b-cda5-4a91-834c-2c7e17a501a3
 translation-type: tm+mt
-source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '683'
+ht-degree: 0%
 
 ---
 
 
 # Migrera till 4.x SDK:er {#migrate-to-the-x-sdks}
 
-I det här avsnittet beskrivs hur du migrerar från 3.x-versionen av en tidigare Windows Mobile SDK till Windows 8.1 Universal App Store 4.x SDK för Experience Cloud Solutions.
+I det här avsnittet beskrivs hur du migrerar från 3.x-versionen av en tidigare Windows Mobile SDK till Windows 8.1 Universal App Store 4.x SDK för Experience Cloud-lösningar.
 
 I och med övergången till version 4.x är alla funktioner nu tillgängliga via statiska metoder, så att du slipper hålla reda på dina egna objekt.
 
@@ -107,7 +110,7 @@ Ersätt följande metoder i hela koden med ett anrop till `trackState` eller `tr
 * `Track` (TrackAction)
 * `TrackLinkURL` (TrackAction)
 
-## Anpassat besökar-ID {#section_2CF930C13BA64F04959846E578B608F3}
+## Custom visitor ID {#section_2CF930C13BA64F04959846E578B608F3}
 
 Ersätt `visitorID` variabeln med ett anrop till `setUserIdentifier`.
 

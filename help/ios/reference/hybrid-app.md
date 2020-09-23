@@ -2,17 +2,20 @@
 description: Om appen öppnar mobilt webbinnehåll måste du se till att besökarna inte identifieras separat när de förflyttar sig mellan den inbyggda och mobila webben.
 seo-description: Om appen öppnar mobilt webbinnehåll måste du se till att besökarna inte identifieras separat när de förflyttar sig mellan den inbyggda och mobila webben.
 seo-title: Spårning av besökare mellan en app och en mobil webbplats
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Spårning av besökare mellan en app och en mobil webbplats
 topic: Developer and implementation
 uuid: 2d951de6-3954-4379-a4ff-99b9695b9869
 translation-type: tm+mt
-source-git-commit: 9257d6b6c2c14d0422cda65fcc9c677ac5ac47a9
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '528'
+ht-degree: 0%
 
 ---
 
 
-# Spårning av besökare mellan en app och en mobil webbsajt {#visitor-tracking-between-an-app-and-mobile-web}
+# Spårning av besökare mellan en app och en mobil webbsajt  {#visitor-tracking-between-an-app-and-mobile-web}
 
 Om appen öppnar mobilt webbinnehåll måste du se till att besökarna inte identifieras separat när de förflyttar sig mellan den inbyggda och mobila webben.
 
@@ -66,13 +69,13 @@ På träffar från mobilens webbinnehåll kontrollerar du att `mid` parametern f
 
 Kontrollera att Adobe SDK som paketeras i det överordnade programmet är version 4.12.0 eller senare.
 
-### Jag ser inte Adobe-ID:n i min URL.
+### Jag ser inte Adobe ID:n i min URL.
 
 Kontrollera följande:
 
-* URL-strängen som används för att öppna webbvyn genererades av `[ADBMobile visitorAppendToURL:]`
+* URL-strängen som används för att öppna webbvyn genererades av  `[ADBMobile visitorAppendToURL:]`
 
-* Adobe-id:n är kodade.
+* Adobe-ID:n är kodade.
 
    Kontrollera att ID:n har lagts till i den URL som öppnas genom att leta efter parametern `adobe_mc` query.
 

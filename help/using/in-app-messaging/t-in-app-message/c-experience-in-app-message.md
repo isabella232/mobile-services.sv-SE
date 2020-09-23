@@ -3,12 +3,15 @@ description: Konfigurera upplevelsealternativ för meddelanden i appen, inklusiv
 keywords: mobile
 seo-description: Konfigurera upplevelsealternativ för meddelanden i appen, inklusive typ (helskärm, varning eller meddelanden) och alternativ för visning, text och knappar.
 seo-title: Experience In-App Message
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Experience In-App Message
 topic: Metrics
 uuid: 4c6d6756-47fb-4f1b-8338-0b0c9b0fceb0
 translation-type: tm+mt
-source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '624'
+ht-degree: 0%
 
 ---
 
@@ -41,6 +44,7 @@ Välj meddelandetyp för din kampanj i appen:
 
       1. Klicka **[!UICONTROL Browse]** och hämta en HTML-fil eller dra ett HTML-dokument till fönstret.
       1. Klicka **[!UICONTROL Download Example]** för att visa exempel på anpassat HTML-innehåll.
+
       >[!TIP]
       >
       >Det här alternativet visas bara när du väljer meddelandetypen **[!Fhelskärm]** .
@@ -50,6 +54,7 @@ Välj meddelandetyp för din kampanj i appen:
 1. Fyll i fälten i **[!UICONTROL Display]** avsnittet:
 
    * **[!UICONTROL Theme]**
+
    Välj ett tema för meddelandet.
 
    * **[!UICONTROL Layout]**
@@ -91,6 +96,7 @@ Välj meddelandetyp för din kampanj i appen:
       * `{trackingId}`, som ersätts med stödet (korrelerar med *s_vi* cookie).
       * `{messageId}`, som ersätts med det unika ID:t för meddelandet i appen.
       * `{lifetimeValue}`, som ersätts med livstidsvärdet eller 0 om det inte finns något livstidsvärde.
+
       Här följer ett exempel på hur du spårar användar-ID: `https://www.mysite.com?uid={userId}`.
 
       Om klicknings-URL:en använder `https://` eller `https://`öppnas URL:en i enhetens webbläsare utanför appen. Annars har varje plattform stöd för scheman som gör att du kan öppna eller referera till appen om appen har utvecklats för att stödja det anpassade schemat.

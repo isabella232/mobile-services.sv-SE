@@ -3,12 +3,12 @@ description: Förvärvningslänkar med unika spårningskoder kan genereras i Ado
 keywords: android;library;mobile;sdk
 seo-description: Förvärvningslänkar med unika spårningskoder kan genereras i Adobe Mobile-tjänster. När en användare hämtar och kör en app från App Store efter att ha klickat på den genererade länken, samlar SDK automatiskt in och skickar hämtningsdata till Adobe Mobile-tjänster.
 seo-title: Mobilförvärv
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Mobilförvärv
 topic: Developer and implementation
 uuid: 4d32eae9-e856-4e40-8a29-2b5bccd106e0
 translation-type: tm+mt
-source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '876'
 ht-degree: 1%

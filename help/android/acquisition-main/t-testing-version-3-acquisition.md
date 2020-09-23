@@ -3,12 +3,15 @@ description: Den här informationen hjälper dig att skicka en länk till en kam
 keywords: android;library;mobile;sdk
 seo-description: Den här informationen hjälper dig att skicka en länk till en kampanj för version 3 på en Android-enhet.
 seo-title: Testa version 3 - förvärv
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Testa version 3 - förvärv
 topic: Developer and implementation
 uuid: 5e38b43d-389e-4412-99e5-3e6223b6ad28
 translation-type: tm+mt
-source-git-commit: 657e8b93d1516690ad21d6cf504f9c8f611747b6
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '815'
+ht-degree: 1%
 
 ---
 
@@ -19,7 +22,7 @@ Den här informationen hjälper dig att skicka en länk till en kampanj för ver
 
 >[!IMPORTANT]
 >
->Förvärv i V3 avser de förvärvslänkar du skapar med förvärvsverktyget i Adobe Mobile Services-gränssnittet. Om du vill använda den här funktionen måste du uppgradera till Android SDK 4.x för Experience Cloud Solutions 4.6.0 eller senare.
+>Förvärv i V3 avser de förvärvslänkar du skapar med förvärvsverktyget i användargränssnittet för Adobe Mobile Services. Om du vill använda den här funktionen måste du uppgradera till Android SDK 4.x för Experience Cloud Solutions 4.6.0 eller senare.
 
 Om mobilappen inte finns i Google Play kan du välja vilken mobilapp som helst som mål när du skapar kampanjlänken. Detta påverkar bara den app som förvärvsservern dirigerar om dig till efter att du klickat på länken, men det påverkar inte möjligheten att testa länken. Frågesträngsparametrar skickas till Google Play-butiken, som skickas till appen vid installationen som en del av en kampanjsändning. Testning av mobilappsförvärv kräver simulering av den här typen av sändning.
 
@@ -31,7 +34,7 @@ Appen måste vara nyligen installerad eller ha data rensade i **[!UICONTROL Sett
 
 1. Slutför de nödvändiga uppgifterna i [förvärvet](/help/android/acquisition-main/acquisition.md) av mobilappar och se till att du har implementerat sändningsmottagaren korrekt för `INSTALL_REFERRER`.
 
-1. I Adobe Mobile Services-gränssnittet klickar du på **[!UICONTROL Acquisition]** > **[!UICONTROL Marketing Links Builder]** och skapar en URL för Acquisition Marketing Link som anger Google Play som mål för Android-enheter.
+1. I användargränssnittet för Adobe Mobile Services klickar du på **[!UICONTROL Acquisition]** > **[!UICONTROL Marketing Links Builder]** och skapar en URL för Acquisition Marketing Link som anger Google Play som mål för Android-enheter.
 
    Mer information finns i [Marketing Links Builder](/help/using/acquisition-main/c-marketing-links-builder/c-marketing-links-builder.md).
 
@@ -81,6 +84,7 @@ Appen måste vara nyligen installerad eller ha data rensade i **[!UICONTROL Sett
    1. Ersätt `com.adobe.android` med programmets paketnamn.
    1. Uppdatera mottagarreferensen med den för var kampanjspårningsmottagaren finns i din app
    1. Ersätt värden som är kopplade till `utm_content`.
+
    Om sändningen lyckas kan du förvänta dig ett svar som liknar följande exempel:
 
    `Broadcasting: Intent

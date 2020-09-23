@@ -2,12 +2,12 @@
 description: Lista över Audience Manager-metoder i Windows 8.1 Universal App Store-biblioteket.
 seo-description: Lista över Audience Manager-metoder i Windows 8.1 Universal App Store-biblioteket.
 seo-title: Audience Manager-metoder
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Audience Manager-metoder
 topic: Developer and implementation
 uuid: e39c9c3e-fd53-4b46-8fff-88101a064a9c
 translation-type: tm+mt
-source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '280'
 ht-degree: 26%

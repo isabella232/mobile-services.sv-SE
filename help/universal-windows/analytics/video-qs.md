@@ -2,12 +2,15 @@
 description: Information som kan hjälpa dig med videoanalys.
 seo-description: Information som kan hjälpa dig med videoanalys.
 seo-title: Videoanalys
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Videoanalys
 topic: Developer and implementation
 uuid: f45dac3b-cd2e-4fba-a3b2-c243640ecfa4
 translation-type: tm+mt
-source-git-commit: 1c0b7dadc28f772e903baa8605016e70f05081d7
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '899'
+ht-degree: 15%
 
 ---
 
@@ -16,7 +19,7 @@ source-git-commit: 1c0b7dadc28f772e903baa8605016e70f05081d7
 
 Information som kan hjälpa dig med videoanalys.
 
-Videomätning beskrivs i detalj i guiden [Mäta video och ljud i Adobe Analytics](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html) . Den allmänna processen att mäta video är mycket lik på alla AppMeasurement-plattformar. Det här snabbstartsavsnittet innehåller en grundläggande översikt över utvecklaråtgärderna tillsammans med kodexempel.
+Videomätning beskrivs i detalj i guiden [Mäta video och ljud i Adobe Analytics](https://docs.adobe.com/content/help/sv-SE/media-analytics/using/media-overview.html) . Den allmänna processen att mäta video är mycket lik på alla AppMeasurement-plattformar. Det här snabbstartsavsnittet innehåller en grundläggande översikt över utvecklaråtgärderna tillsammans med kodexempel.
 
 I följande tabell visas de mediedata som skickas till Analytics. Använd bearbetningsregler för att mappa kontextdata till en Analytics-variabel.
 
@@ -24,7 +27,7 @@ I följande tabell visas de mediedata som skickas till Analytics. Använd bearbe
 
    (**Obligatoriskt**) Samlar in namnet på videon, enligt specifikationen i implementeringen, när en besökare visar videon på något sätt.Du kan lägga till klassificeringar för den här variabeln.
 
-   (**Valfritt**) Variabeln Custom Insight innehåller information om videopappning.
+   (**Valfritt**) Custom Insight-variabeln innehåller information om videopappning.
 
    * Variabeltyp: eVar
    * Standardförfallodatum: Besök
@@ -41,7 +44,7 @@ I följande tabell visas de mediedata som skickas till Analytics. Använd bearbe
 
    (**Obligatoriskt**) Samlar in videosegmentdata, inklusive segmentnamnet och den ordning i vilken segmentet finns i videon.
 
-   Den här variabeln fylls i genom att den aktiveras när spelarhändelser spåras automatiskt, eller genom att ett anpassat segmentnamn anges när spelarhändelser spåras manuellt. `segmentByMilestones` När en besökare till exempel tittar på det första segmentet i en video kan SiteCatalyst samla in följande i `1:M:0-25` segmenten eVar.
+   Den här variabeln fylls i genom att den aktiveras när spelarhändelser spåras automatiskt, eller genom att ett anpassat segmentnamn anges när spelarhändelser spåras manuellt. `segmentByMilestones` När en besökare till exempel tittar på det första segmentet i en video kan SiteCatalyst samla in följande i eVar `1:M:0-25` Segment.
 
    Standardmetoden för insamling av videodata samlar in data vid följande punkter: videostart (uppspelning), segmentstart och videoslut (stopp). Analyser är den första segmentvyn i början av segmentet när besökaren börjar titta. Efterföljande segmentvyer när segmentet börjar.
 

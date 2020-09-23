@@ -2,12 +2,15 @@
 description: Med geopositionering kan du mäta positionsdata genom att använda latitud och longitud samt fördefinierade intressepunkter i dina Android-appar.
 seo-description: Med geopositionering kan du mäta positionsdata genom att använda latitud och longitud samt fördefinierade intressepunkter i dina Android-appar.
 seo-title: Geografisk placering och intressepunkter
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Geografisk placering och intressepunkter
 topic: Developer and implementation
 uuid: b8209370-cbc4-40f9-97d8-017e2d74a377
 translation-type: tm+mt
-source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '594'
+ht-degree: 1%
 
 ---
 
@@ -75,7 +78,7 @@ Location currentLocation = new Location("my location here");
 Analytics.trackLocation(currentLocation, locationContextData);
 ```
 
-Kontextdatavärden måste mappas till anpassade variabler i Adobe Mobile Services-gränssnittet:
+Kontextdatavärden måste mappas till anpassade variabler i användargränssnittet för Adobe Mobile Services:
 
 ![](assets/map-location-context-data.png)
 

@@ -3,12 +3,15 @@ description: Rapporten Delning via sociala medier visar en solbränsvisualiserin
 keywords: mobile
 seo-description: Rapporten Delning via sociala medier visar en solbränsvisualisering för dina befintliga data. Den här rapporten är endast tillgänglig för kunder som har Digital Publishing Suites (DPS).
 seo-title: Delning via sociala medier
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Delning via sociala medier
 topic: Metrics
 uuid: 900e58aa-c1d3-4590-af44-df67575214a4
 translation-type: tm+mt
-source-git-commit: b11a03226ff6100554d072b4ef523d703b80a6e5
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '137'
+ht-degree: 0%
 
 ---
 

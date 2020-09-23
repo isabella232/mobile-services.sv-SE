@@ -3,12 +3,12 @@ description: Du kan konfigurera upplevelsealternativ för push-meddelanden och o
 keywords: mobile
 seo-description: Du kan konfigurera upplevelsealternativ för push-meddelanden och omfattande push-meddelanden, inklusive namn, meddelandetext och målalternativ. Du kan också konfigurera avancerade alternativ, inklusive nyttolastalternativ och anpassade alternativ för iOS-enheter.
 seo-title: Experience Push-meddelande
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Experience Push-meddelande
 topic: Metrics
 uuid: 1a8baf3e-9fea-452c-b0fc-4ba8ac270861
 translation-type: tm+mt
-source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '750'
 ht-degree: 0%

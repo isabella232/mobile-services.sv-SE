@@ -1,20 +1,23 @@
 ---
-description: I det här avsnittet beskrivs hur du migrerar från 3.x-versionen av en tidigare Windows-mobil SDK till den universella Windows Platform 4.x SDK för Experience Cloud-lösningar.
-seo-description: I det här avsnittet beskrivs hur du migrerar från 3.x-versionen av en tidigare Windows-mobil SDK till den universella Windows Platform 4.x SDK för Experience Cloud-lösningar.
+description: I det här avsnittet beskrivs hur du migrerar från 3.x-versionen av en tidigare Windows Mobile SDK till Universal Windows Platform 4.x SDK för Experience Cloud-lösningar.
+seo-description: I det här avsnittet beskrivs hur du migrerar från 3.x-versionen av en tidigare Windows Mobile SDK till Universal Windows Platform 4.x SDK för Experience Cloud-lösningar.
 seo-title: Migrera till 4.x
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Migrera till 4.x
 topic: Developer and implementation
 uuid: bdd6c5cd-3892-4e99-b69e-77105ad66e25
 translation-type: tm+mt
-source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '705'
+ht-degree: 0%
 
 ---
 
 
 # Migrera till 4.x SDK:er{#migrate-to-x}
 
-I det här avsnittet beskrivs hur du migrerar från 3.x-versionen av Windows Mobile SDK till universella Windows Platform 4.x SDK för Experience Cloud-lösningar.
+I det här avsnittet beskrivs hur du migrerar från 3.x-versionen av Windows Mobile SDK till Universal Windows Platform 4.x SDK för Experience Cloud-lösningar.
 
 I och med övergången till version 4.x är alla funktioner nu tillgängliga via statiska metoder. Du behöver inte längre hålla reda på dina egna objekt.
 

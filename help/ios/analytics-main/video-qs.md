@@ -2,12 +2,12 @@
 description: Här är lite information om hur du mäter video på iOS med hjälp av videomätning i milstolpe.
 seo-description: Här är lite information om hur du mäter video på iOS med hjälp av videomätning i milstolpe.
 seo-title: Videoanalys
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Videoanalys
 topic: Developer and implementation
 uuid: d75fa415-78f6-4f50-a563-76949f040138
 translation-type: tm+mt
-source-git-commit: c64e2fa7cee3cd35c4574e5007406b7604c99499
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '952'
 ht-degree: 14%
@@ -23,7 +23,7 @@ Här är lite information om hur du mäter video på iOS med hjälp av videomät
 >
 >Under videouppspelning skickas vanliga&quot;hjärtslag&quot;-anrop till den här tjänsten för att mäta den tid som spelas upp. Dessa hjärtslagsanrop skickas var 10:e sekund, vilket resulterar i detaljerade videointeraktionsvärden och exaktare videoutfallsrapporter. Mer information finns i [Mäta ljud och video i Adobe Analytics](https://docs.adobe.com/content/help/sv-SE/media-analytics/using/media-overview.html).
 
-Den allmänna processen att mäta video är mycket lik på alla plattformar. Innehållet ger en grundläggande översikt över utvecklaråtgärderna med kodexempel.
+Den allmänna processen att mäta video är mycket lik på alla plattformar. Det här innehållet ger en grundläggande översikt över utvecklaråtgärderna med kodexempel.
 
 ## Mappa spelarhändelser till analysvariabler {#section_E84987F878AB4A3A83AE700FEC4C9D4D}
 

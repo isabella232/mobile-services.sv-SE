@@ -3,12 +3,15 @@ description: Du kan använda den här informationen för att få en förståelse
 keywords: android;library;mobile;sdk
 seo-description: Du kan använda den här informationen för att få en förståelse för återanslående och hur de fungerar.
 seo-title: Exempel på återgång
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Exempel på återgång
 topic: Developer and implementation
 uuid: 8010cd00-d42b-4e16-8403-692fab2550f1
 translation-type: tm+mt
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '141'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ Du kan använda den här informationen för att få en förståelse för vilka �
 
 >[!CAUTION]
 >
->Det här exemplet finns endast i informationssyfte. Filen bör konfigureras i Adobe Mobile-gränssnittet och får inte ändras manuellt. `ADBMobileConfig.json` En manuellt redigerad konfigurationsfil kan vara farlig om konfigurationen av fjärrmeddelanden är aktiverad.
+>Det här exemplet finns endast i informationssyfte. Filen bör konfigureras i användargränssnittet för Adobe Mobile och får inte ändras manuellt. `ADBMobileConfig.json` En manuellt redigerad konfigurationsfil kan vara farlig om konfigurationen av fjärrmeddelanden är aktiverad.
 
 ## `ADBMobileConfig.json` definition {#section_8751E8176F3546C09420341A39758AFF}
 
@@ -52,7 +55,7 @@ Du kan använda den här informationen för att få en förståelse för vilka �
 ] 
 ```
 
-## Kodexempel {#section_D063DE82976D4EDEA97E804BD1C4718F}
+## Code sample {#section_D063DE82976D4EDEA97E804BD1C4718F}
 
 ```js
 HashMap<String, Object> contextData = new HashMap<String, Object>(); 

@@ -3,12 +3,15 @@ description: Den här informationen hjälper er att anpassa de inbyggda rapporte
 keywords: mobile
 seo-description: Den här informationen hjälper er att anpassa de inbyggda rapporterna genom att lägga till ytterligare serier (mätvärden) eller appar i olika rapportsviter för att jämföra data.
 seo-title: Lägg till serier (mått) i rapporter
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Lägg till serier (mått) i rapporter
 topic: Reports,Metrics
 uuid: 84fdfb1f-70e6-4c02-9b3b-526e9c924f74
 translation-type: tm+mt
-source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '295'
+ht-degree: 2%
 
 ---
 
@@ -19,7 +22,7 @@ Den här informationen hjälper er att anpassa de inbyggda rapporterna genom att
 
 >[!IMPORTANT]
 >
->Mätvärden för mobilappar finns också i marknadsföringsrapporter och analyser, ad hoc-analyser, datalager och andra analysrapporteringsgränssnitt. Om en uppdelning- eller rapporttyp inte är tillgänglig i Adobe Mobile kan den genereras med ett annat rapporteringsgränssnitt.
+>Mätvärden för mobilappar finns också i marketing reports and analytics, ad hoc-analyser, data warehouse och andra analysrapporteringsgränssnitt. Om det inte finns någon nedbrytning- eller rapporttyp i Adobe Mobile kan den genereras med ett annat rapporteringsgränssnitt.
 
 I det här exemplet anpassar vi **[!UICONTROL Users & Sessions]** rapporten, men instruktionerna kan gälla för alla rapporter.
 

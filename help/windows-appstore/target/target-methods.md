@@ -2,12 +2,15 @@
 description: Lista över Target-metoder i Windows 8.1 Universal App Store-biblioteket.
 seo-description: Lista över Target-metoder i Windows 8.1 Universal App Store-biblioteket.
 seo-title: Målmetoder
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Målmetoder
 topic: Developer and implementation
 uuid: 8c35b31c-c70b-4dba-8759-173342a301e9
 translation-type: tm+mt
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '281'
+ht-degree: 32%
 
 ---
 

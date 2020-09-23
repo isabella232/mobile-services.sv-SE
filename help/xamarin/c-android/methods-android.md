@@ -3,11 +3,11 @@ description: Android-metoder för Xamarin-komponenter för Experience Cloud-lös
 keywords: Xamarin
 seo-description: Android-metoder för Xamarin-komponenter för Experience Cloud-lösningar 4.x SDK.
 seo-title: Android-metoder
-solution: Marketing Cloud,Developer
+solution: Experience Cloud
 title: Android-metoder
 uuid: 860af1c4-f57e-4bcb-8308-4e316da9a27b
 translation-type: tm+mt
-source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '1767'
 ht-degree: 39%
@@ -230,7 +230,7 @@ Android-metoder för Xamarin-komponenter för Experience Cloud-lösningar 4.x SD
 
 * **TrackState**
 
-   Spårar ett apptillstånd med valfria kontextdata. `States` är de vyer som är tillgängliga i din app, till exempel&quot;titelskärm&quot;,&quot;nivå 1&quot;,&quot;paus&quot; och så vidare. Dessa lägen liknar sidor på en webbplats och anropar `TrackState` stegvisa sidvyer. Om läget är tomt visas det som&quot;app name app version (build)&quot; i rapporter. Om du ser det här värdet i rapporter måste du ange status för varje `TrackState` anrop.
+   Spårar ett apptillstånd med valfria kontextdata. `States` är de vyer som är tillgängliga i din app, till exempel&quot;titelskärm&quot;,&quot;nivå 1&quot;,&quot;paus&quot; och så vidare. Dessa lägen liknar sidor på en webbplats och anropar `TrackState` stegvisa sidvyer. Om läget är tomt visas det som&quot;app name app version (build)&quot; i rapporter. Om det här värdet visas i rapporter måste du ange status för varje `TrackState` anrop.
 
    >[!TIP]
    >
@@ -555,7 +555,7 @@ Android-metoder för Xamarin-komponenter för Experience Cloud-lösningar 4.x SD
 
 * **CreateOrderConfirmRequest**
 
-   Skapar en `ADBTargetLocationRequest`.
+   Skapar en `ADBTargetLocationRequest`bild.
 
    * Här är syntaxen för den här metoden:
 

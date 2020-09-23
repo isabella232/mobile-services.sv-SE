@@ -3,12 +3,12 @@ description: Här är Experience Cloud ID-metoderna som tillhandahålls av Andro
 keywords: android;library;mobile;sdk
 seo-description: Här är Experience Cloud ID-metoderna som tillhandahålls av Android-biblioteket.
 seo-title: Adobe Experience Platform Identity Service-metoder
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Adobe Experience Platform Identity Service-metoder
 topic: Developer and implementation
 uuid: c5107a7e-273b-4f71-8738-4c603479b24c
 translation-type: tm+mt
-source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 23%
@@ -73,7 +73,7 @@ Metoderna är prefasta enligt lösningen. Experience Cloud ID-metoder har till e
 
 * **syncIdentifiers**
 
-   Med Experience Cloud-ID:t kan du ange ytterligare kund-ID:n som kan kopplas till varje besökare. Besökar-API:t godkänner flera kund-ID:n för samma besökare, med en kundtypsidentifierare som avgränsar omfattningen för olika kund-ID:n. Den här metoden motsvarar den `setCustomerIDs` i JavaScript-biblioteket.
+   Med Experience Cloud-ID:t kan du ange ytterligare kund-ID:n som kan kopplas till varje besökare. Besökar-API:t godkänner flera kund-ID:n för samma besökare, med en kundtypsidentifierare som avgränsar omfånget för olika kund-ID:n. Den här metoden motsvarar den `setCustomerIDs` i JavaScript-biblioteket.
 
    * Här är syntaxen för den här metoden:
 

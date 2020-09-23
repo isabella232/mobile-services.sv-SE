@@ -2,17 +2,20 @@
 description: Den här informationen hjälper dig att använda meddelanden i appen i dina iOS-appar.
 seo-description: Den här informationen hjälper dig att använda meddelanden i appen i dina iOS-appar.
 seo-title: Meddelanden i appen
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Meddelanden i appen
 topic: Developer and implementation
 uuid: 21fa6a94-bb7f-4c78-843b-a50f1974db22
 translation-type: tm+mt
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '410'
+ht-degree: 0%
 
 ---
 
 
-# Meddelanden i appen {#in-app-messaging}
+# In-app messaging {#in-app-messaging}
 
 Den här informationen hjälper dig att använda meddelanden i appen i dina iOS-appar.
 
@@ -69,7 +72,7 @@ Lite information att komma ihåg:
    >
    >`messages` eller `remotes` krävs.
 
-   Om dessa objekt inte är konfigurerade hämtar du en uppdaterad `ADBMobileConfig.json` fil från Adobe Mobile Services. Mer information finns i [Core Implementation och Lifecycle](/help/ios/getting-started/requirements.md).
+   Om dessa objekt inte är konfigurerade hämtar du en uppdaterad `ADBMobileConfig.json` fil från Adobe Mobile-tjänster. Mer information finns i [Core Implementation och Lifecycle](/help/ios/getting-started/requirements.md).
 
 ## Spåra meddelanden i appen {#section_B85CDF6929564AAEA79338B55E5CB1E8}
 
@@ -90,6 +93,7 @@ SDK:erna för iOS-mobiltjänster spårar följande mått för dina meddelanden i
 
    * **[!UICONTROL Impressions]**: när användaren utlöser meddelandet.
    * **[!UICONTROL Opens]**: när användaren öppnar programmet från meddelandet.
+
    Här är ett exempel på hur du inkluderar öppen spårning:
 
    ```objective-c
@@ -107,9 +111,9 @@ SDK:erna för iOS-mobiltjänster spårar följande mått för dina meddelanden i
 
 ## Lokal reservbild {#section_DEACC1CE549B4573B556A44A52409941}
 
-När du skapar ett helskärmsmeddelande i Adobe Mobile Services kan du välja att ange en reservbild. Om det inte går att hämta den avsedda bilden från webben försöker SDK att läsa in bilden med samma namn från programpaketet. På så sätt kan du visa meddelandet i sin ursprungliga form även om användaren är offline eller om den förinställda bilden inte är tillgänglig.
+När du skapar ett helskärmsmeddelande i Adobe Mobile-tjänster kan du välja att ange en reservbild. Om det inte går att hämta den avsedda bilden från webben försöker SDK att läsa in bilden med samma namn från programpaketet. På så sätt kan du visa meddelandet i sin ursprungliga form även om användaren är offline eller om den förinställda bilden inte är tillgänglig.
 
-Resursnamnet för reservbilden anges när meddelandet konfigureras i Adobe Mobile Services.
+Resursnamnet för reservbild anges när meddelandet konfigureras i Adobe Mobile-tjänster.
 
 >[!IMPORTANT]
 >

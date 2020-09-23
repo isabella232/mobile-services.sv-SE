@@ -3,12 +3,12 @@ description: Ni kan definiera och konfigurera målgruppsalternativ för push-med
 keywords: mobile
 seo-description: Ni kan definiera och konfigurera målgruppsalternativ för push-meddelanden, inklusive datumintervallalternativ, analyssegment och anpassade segment.
 seo-title: Målgrupper Definiera och konfigurera målgruppssegment för push-meddelanden
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Målgrupper Definiera och konfigurera målgruppssegment för push-meddelanden
 topic: Metrics
 uuid: efd410e7-3b6c-4cf4-a26f-b11688adc491
 translation-type: tm+mt
-source-git-commit: 86ba045b44bf6553e80727c0d61ccdd9a552d16c
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '989'
 ht-degree: 0%
@@ -24,13 +24,13 @@ Ni kan definiera och konfigurera målgruppsalternativ för push-meddelanden, ink
 
 När ett målgruppssegment för push-meddelanden skapas kan segmentet omfatta användare från en eller flera appar, eftersom rapportsviter eller virtuella rapportsviter kan innehålla data från en eller flera appar. Mer information om virtuella rapportsviter finns i [Virtuella rapportsviter](/help/using/manage-apps/c-mob-vrs.md).
 
-I Adobes mobiltjänster kan marknadsförare bara pusha till en app per plattform. Om marknadsförarna försöker att skicka till segment som innehåller användare från flera appar visas en varning om att om man fortsätter kan det leda till allvarliga push-fel och den potentiella blockeringen av användare. Om du får ett push-fel läser du *Lösa push-fel* i [Felsöka push-meddelanden](/help/using/in-app-messaging/t-create-push-message/c-schedule-push-message.md).
+I Adobe Mobile Services kan marknadsförarna bara pusha till en app per plattform. Om marknadsförarna försöker skicka till segment som innehåller användare från flera appar visas en varning om att om man fortsätter kan det leda till allvarliga push-fel och att användare blocklist. Om du får ett push-fel läser du *Lösa push-fel* i [Felsöka push-meddelanden](/help/using/in-app-messaging/t-create-push-message/c-schedule-push-message.md).
 
 Mer information om hur du använder data från Audience Manager i segmentdefinitionen finns i [Audience Analytics](https://docs-author-stg.corp.adobe.com/content/help/en/analytics/integration/audience-analytics/mc-audiences-aam.html).
 
 >[!IMPORTANT]
 >
->Om appanvändare blockeras kan marknadsförarna **aldrig** skicka push-meddelanden till de berörda användarna igen.
+>Om appanvändare är blocklist kan marknadsförarna **aldrig** skicka push-meddelanden till de berörda användarna igen.
 
 Om du väljer ett målgruppssegment som innehåller användare i flera appar kan du se följande varning:
 
@@ -65,9 +65,9 @@ Detta garanterar att push-meddelanden skickas till ett målgruppssegment som **b
 
 Här är några exempel som hjälper dig att förstå hur du definierar segment på rätt sätt:
 
-**Gör**: Marketer tillhandahåller push-certifikat för iOS- och Android-versionerna av ett program, till exempel för Adobe Photoshop. Marknadsföraren kan skicka ett push-meddelande till ett användarsegment som sträcker sig över båda plattformarna.
+**Gör**: Marketern tillhandahåller push-certifikat för iOS- och Android-versionerna av ett program, till exempel för Adobe Photoshop. Marknadsföraren kan skicka ett push-meddelande till ett användarsegment som sträcker sig över båda plattformarna.
 
-**Gör inte**: Marknadsförarna tillhandahåller push-certifikat för iOS- och Android-versioner av ett program, till exempel för Adobe Photoshop. Om marknadsföraren skapar och knuffar till ett segment med *alla aktiva användare de senaste 30 dagarna* får bara användarna av Adobe Photoshop iOS och Android-appen push-funktionen, och alla användare av Adobe Illustrator iOS- och Android-appen blockeras. Mer information finns i *Lösa push-meddelandefel* i [Troubleshooting Push Messaging](/help/using/in-app-messaging/t-create-push-message/c-troubleshooting-push-messaging.md).
+**Gör inte**: Marknadsförarna tillhandahåller push-certifikat för iOS- och Android-versioner av ett program, till exempel för Adobe Photoshop. Om marknadsföraren skapar och push-ar till ett segment med *alla aktiva användare de senaste 30 dagarna* får bara användare av Adobe Photoshop iOS och Android-appen push-funktionen, och alla Adobe Illustrator iOS- och Android-appanvändare blocklist. Mer information finns i *Lösa push-meddelandefel* i [Troubleshooting Push Messaging](/help/using/in-app-messaging/t-create-push-message/c-troubleshooting-push-messaging.md).
 
 ## Konfigurera målgruppssegment {#section_A92C60885A30421B8150820EC1CCBF13}
 
@@ -111,7 +111,7 @@ Här är några exempel som hjälper dig att förstå hur du definierar segment 
 
    * **[!UICONTROL Analytics Segments]**
 
-      Välj ett befintligt Adobe Analytics-segment i listrutan. Mer information finns i [Skapa segment](https://docs.adobe.com/content/help/en/analytics/components/segmentation/segmentation-workflow/seg-build.html).
+      Markera ett befintligt Adobe Analytics-segment i listrutan. Mer information finns i [Skapa segment](https://docs.adobe.com/content/help/en/analytics/components/segmentation/segmentation-workflow/seg-build.html).
 
    * **[!UICONTROL Custom Segments]**
 

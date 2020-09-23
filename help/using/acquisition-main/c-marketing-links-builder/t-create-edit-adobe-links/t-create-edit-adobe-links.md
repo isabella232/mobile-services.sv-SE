@@ -3,12 +3,15 @@ description: Du kan skapa eller redigera marknadsföringslänkar för att skapa 
 keywords: mobile
 seo-description: Du kan skapa eller redigera marknadsföringslänkar för att skapa en djup länk till din mobilapp eller webbplats.
 seo-title: Skapa eller redigera marknadsföringslänkar
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Skapa eller redigera marknadsföringslänkar
 topic: Metrics
 uuid: 305a8265-38de-4d19-8c79-b3912f5aae7c
 translation-type: tm+mt
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '564'
+ht-degree: 1%
 
 ---
 
@@ -86,6 +89,7 @@ Du kan skapa eller redigera marknadsföringslänkar för att skapa en djup länk
       * **[!UICONTROL Web Link]**
       * **[!UICONTROL App Deep Link]**
       * **[!UICONTROL Hybrid Link]**
+
       >[!TIP]
       >
       >När du använder **[!UICONTROL Web Link]** måltypen med en länk till appbutiken spåras inte förvärvet. Använd måltypen om du vill spåra förvärv **[!UICONTROL App Store]** .

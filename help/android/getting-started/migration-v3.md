@@ -3,12 +3,15 @@ description: Den här informationen hjälper dig att migrera från 3.x- eller 2.
 keywords: android;library;mobile;sdk
 seo-description: Den här informationen hjälper dig att migrera från 3.x- eller 2.x-versionen av Android-biblioteket till version 4.x.
 seo-title: Migrera till Android 4.x-biblioteket
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Migrera till Android 4.x-biblioteket
 topic: Developer and implementation
 uuid: 906e83bb-2faf-4aa2-ac9b-3fba6b833c7e
 translation-type: tm+mt
-source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '880'
+ht-degree: 2%
 
 ---
 
@@ -164,7 +167,7 @@ Ersätt följande metoder med ett anrop till `trackState` eller `trackAction`:
    * `track (trackState)`
    * `trackLink (trackAction)`
 
-## Anpassat besökar-ID {#section_2CF930C13BA64F04959846E578B608F3}
+## Custom visitor ID {#section_2CF930C13BA64F04959846E578B608F3}
 
 Ersätt `visitorID` variabeln med ett anrop till `setUserIdentifier`.
 

@@ -3,12 +3,12 @@ description: Här är referensinformationen för standardvärden och -dimensione
 keywords: mobile
 seo-description: Här är referensinformationen för standardvärden och -dimensioner för mobila enheter.
 seo-title: Mobile Metrics and Dimensions Reference
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Mobile Metrics and Dimensions Reference
 topic: Metrics
 uuid: 96170ae7-8553-4f3e-ae01-65e5b664adf4
 translation-type: tm+mt
-source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '629'
 ht-degree: 1%

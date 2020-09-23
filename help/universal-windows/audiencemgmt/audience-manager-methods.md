@@ -2,12 +2,12 @@
 description: Lista över Audience Manager-metoder som tillhandahålls av Universal Windows Platform-biblioteket.
 seo-description: Lista över Audience Manager-metoder som tillhandahålls av Universal Windows Platform-biblioteket.
 seo-title: Audience Manager-metoder
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Audience Manager-metoder
 topic: Developer and implementation
 uuid: efbe8f33-7f53-40a6-b7aa-a36ac718c047
 translation-type: tm+mt
-source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '276'
 ht-degree: 27%

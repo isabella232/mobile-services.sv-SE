@@ -2,12 +2,12 @@
 description: Versionsinformation och kända fel för iOS SDKs 4.x för Experience Cloud Solutions.
 seo-description: Versionsinformation och kända fel för iOS SDKs 4.x för Experience Cloud Solutions.
 seo-title: Versionsinformation
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Versionsinformation
 topic: Developer and implementation
 uuid: e1613dc5-02a4-43a7-997a-29b4de98b4d1
 translation-type: tm+mt
-source-git-commit: 48c3addeb929f3356990ef55b44f93dd4bb2f728
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '422'
 ht-degree: 3%
@@ -25,12 +25,12 @@ Här är versionsinformation, kända fel och snabbkorrigeringsinformation för i
 
 **24 mars 2020: Version 4.19.2**
 
-* Allmänt - Åtgärdade vissa läckor i Target-kod.
+* Allmänt - Åtgärdade vissa läckor i målkoden.
 
 **12 mars 2020: Version 4.19.1**
 
 * Allmänt - En potentiell krasch som uppstod när Swift-uppräkningar inkluderades i kontextdata för spårning av anrop har åtgärdats.
-* Target - Target sessions-ID läggs nu till som kontextdataparametern a.target.sessionId i den interna Analytics for Target-träffen som skickas till Adobe Analytics.
+* Mål - Målsessions-ID läggs nu till som kontextdataparametern a.target.sessionId i den interna analysen för målträff som skickas till Adobe Analytics.
 
 **4 februari 2020: Version 4.19.0**
 
@@ -49,7 +49,7 @@ Här är versionsinformation, kända fel och snabbkorrigeringsinformation för i
    * Korrigerade ett fel där Push click-through-nyttolasten inte kunde användas som egenskaper för meddelanden i appen.
    * Korrigerade ett kraschproblem.
 
-* Allmänt - Korrigerade ett fel där SDK-data synkroniserades med den kopplade watchOS-appen på varje Analytics-anrop.
+* Allmänt - Korrigerade ett fel där SDK-data synkroniserades med den kopplade watchOS-appen i varje Analytics-anrop.
 
 **2 augusti 2019: Version 4.18.7**
 
@@ -67,7 +67,7 @@ Här är versionsinformation, kända fel och snabbkorrigeringsinformation för i
 
 **5 juni 2019: Version 4.18.5**
 
-* Analytics - Lägg till push-anmälningsstatus till livscykeldata när push-meddelanden är aktiverade.
+* Analys - Lägg till push-anmälningsstatus till livscykeldata när push-meddelanden är aktiverade.
 
 **24 maj 2019: Version 4.18.4**
 
@@ -76,4 +76,4 @@ Här är versionsinformation, kända fel och snabbkorrigeringsinformation för i
 
 * Visitor ID-tjänst - API-anropet skickar nu ett synkroniseringsanrop till besökar-ID-tjänsten varje gång det anropas. `setPushIdentifier`
 
-Mer information om aktuell och tidigare versionsinformation för alla lösningar finns i [versionsinformationen](https://docs.adobe.com/content/help/sv-SE/release-notes/experience-cloud/current.html)för Adobe Experience Cloud.
+Mer information om aktuell och tidigare versionsinformation om alla lösningar finns i [Adobe Experience Cloud versionsinformation](https://docs.adobe.com/content/help/sv-SE/release-notes/experience-cloud/current.html).

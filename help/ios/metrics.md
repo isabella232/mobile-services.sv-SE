@@ -2,12 +2,15 @@
 description: I följande tabell visas de mått och mått som mobilbiblioteket kan mäta automatiskt efter att livscykeln har implementerats.
 seo-description: I följande tabell visas de mått och mått som mobilbiblioteket kan mäta automatiskt efter att livscykeln har implementerats.
 seo-title: Livscykelvärden
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Livscykelvärden
 topic: Developer and implementation
 uuid: b795e383-d59b-4a3c-9e14-ffe8fb58412c
 translation-type: tm+mt
-source-git-commit: a6608bf4d36a6fb6aca00f50cc058c09dbd931b1
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '1108'
+ht-degree: 1%
 
 ---
 
@@ -20,13 +23,13 @@ Här är mätvärden och mått som kan mätas automatiskt av mobilbiblioteket ef
 
 Letar du efter information och dokumentation om Adobe Experience Platform Mobile SDK? Klicka [här](https://aep-sdks.gitbook.io/docs/) för att få den senaste dokumentationen.
 
-Från om med september 2018 har vi släppt en ny större version av SDK. Dessa nya SDK:er för Adobe Experience Platform Mobile kan konfigureras via [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
+Från om med september 2018 har vi släppt en ny större version av SDK. Dessa nya Adobe Experience Platform Mobile SDK:er kan konfigureras via [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
 
 * Gå till [Experience Platform Launch](https://launch.adobe.com/)för att komma igång.
 * Om du vill se vad som finns i Experience Platform SDK-databaserna går du till [Github: Adobe Experience Platform SDKs](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
 
 
-## Livscykelvärden och dimensioner {#section_78F036C4296F4BA3A47C2044F79C86C1}
+## Lifecycle metrics and dimensions {#section_78F036C4296F4BA3A47C2044F79C86C1}
 
 När livscykelmätvärden har konfigurerats skickas mätvärdena i kontextdataparametrar till Analytics, parametrar till Target med varje mbox-anrop och som en signal till Audience Manager. Analytics och Target har samma format, medan Audience Manager använder olika prefix för varje mätvärde.
 
@@ -36,62 +39,62 @@ För Analytics hämtas och rapporteras kontextdata som skickas med varje livscyk
 >
 >Undantag anges i beskrivningen.
 
-### Mått
+### Mätvärden
 
 * **Första starten**
 
    Utlöses vid första körningen efter installation eller ominstallation.
 
    * Parametern Analytics Context Data/Target: `a.InstallEvent`
-   * Audience Manager-signal: `c_a_InstallEvent`
+   * Audience Manager signal: `c_a_InstallEvent`
 
 * **Uppgraderingar**
 
    Utlöses vid första körningen efter uppgraderingen eller när som helst när versionsnumret ändras.
 
    * Parametern Analytics Context Data/Target: `a.UpgradeEvent`
-   * Audience Manager-signal: `c_a_UpgradeEvent`
+   * Audience Manager signal: `c_a_UpgradeEvent`
 
 * **Dagliga engagerade användare**
 
    Utlöses när programmet används en viss dag.
 
    * Parametern Analytics Context Data/Target: `a.DailyEngUserEvent`
-   * Audience Manager-signal: `c_a_DailyEngUserEvent`
+   * Audience Manager signal: `c_a_DailyEngUserEvent`
 
 * **Engagerade användare varje månad**
 
    Utlöses när programmet används under en viss månad.
 
    * Parametern Analytics Context Data/Target: `a.MonthlyEngUserEvent`
-   * Audience Manager-signal: `c_a_MonthlyEngUserEvent`
+   * Audience Manager signal: `c_a_MonthlyEngUserEvent`
 
-* **Startar**
+* **Launches**
 
    Utlöses vid varje körning, inklusive krascher och installationer. Utlöses också när programmet återupptas från bakgrunden efter att tidsgränsen för livscykelsessionen har överskridits.
 
    * Parametern Analytics Context Data/Target: `a.LaunchEvent`
-   * Audience Manager-signal: `c_a_LaunchEvent`
+   * Audience Manager signal: `c_a_LaunchEvent`
 
 * **Krascher**
 
-   Utlöses när programmet inte är bakgrundsbelagt innan det stängs. Händelsen skickas när programmet startas igen efter kraschen.  Adobe Mobile-kraschrapporter implementerar inte en global hanterare för ej infångade undantag.
+   Utlöses när programmet inte är bakgrundsbelagt innan det stängs. Händelsen skickas när programmet startas igen efter kraschen.  Kraschrapportering för Adobe Mobile implementerar inte en global hanterare för ej infångade undantag.
 
    * Parametern Analytics Context Data/Target: `a.CrashEvent`
-   * Audience Manager-signal: `c_a_CrashEvent`
+   * Audience Manager signal: `c_a_CrashEvent`
 
 * **Längd på föregående session**
 
    Rapporterar antalet sekunder som en tidigare programsession varade baserat på hur länge programmet var öppet och i förgrunden.
 
    * Parametern Analytics Context Data/Target: `a.PrevSessionLength`
-   * Audience Manager-signal: `c_a_PrevSessionLength`
+   * Audience Manager signal: `c_a_PrevSessionLength`
 
 >[!IMPORTANT]
 >
 > Mätvärdena för *Daglig engagerad användare* och *Månadsengagerad användare* lagras inte automatiskt i en analyssiffra. Du måste skapa en bearbetningsregel som ställer in en anpassad händelse för att hämta dessa mått.
 
-#### Dimensioner
+#### Mått
 
 * **Installationsdatum**
 
@@ -192,7 +195,7 @@ För Analytics hämtas och rapporteras kontextdata som skickas med varje livscyk
 
 Följande mått och mått hämtas in i mobillösningsvariabler med den listade metoden.
 
-### Mått
+### Mätvärden
 
 * **Total åtgärdstid**
 
@@ -216,7 +219,7 @@ Följande mått och mått hämtas in i mobillösningsvariabler med den listade m
    * Audience Management-egenskap: `c_a_ltv_amount`
 
 
-### Dimensioner
+### Mått
 
 * **Placering (ned till 10 km)**
 
@@ -283,7 +286,7 @@ Följande mått och mått hämtas in i mobillösningsvariabler med den listade m
 
 * **Spårningskod**
 
-   Fylls i av Anskaffning av mobilapp. Genereras automatiskt av Adobes mobiltjänster.
+   Fylls i av Anskaffning av mobilapp. Genereras automatiskt av Adobe mobiltjänster.
 
    * Parametern Analytics Context Data/Target: `a.referrer.campaign.trackingcode`
    * Audience Management-egenskap: `c_a_referrer_campaign_trackingcode`
@@ -302,7 +305,7 @@ Följande mått och mått hämtas in i mobillösningsvariabler med den listade m
    * Parametern Analytics Context Data/Target: `a.referrer.campaign.content`
    * Audience Management-egenskap: `c_a_referrer_campaign_content`
 
-* **Kampanjmedium**
+* **Kampanj mellan**
 
    Marknadsföringsmedium, som banner eller e-post. Fylls i av Anskaffning av mobilapp.
 

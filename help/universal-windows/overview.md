@@ -7,7 +7,7 @@ title: Universell Windows Platform SDK 4.x för Experience Cloud Solutions
 topic: Developer and implementation
 uuid: 23a5bc0a-54f0-42a7-af1e-c8cbb509dfce
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: bc11c1e7a4a11657ee89c40ddcbd37377ce50bb5
 workflow-type: tm+mt
 source-wordcount: '214'
 ht-degree: 1%
@@ -39,4 +39,4 @@ Mer information finns i dokumentationen [för](/help/using/home.md)Adobe Mobile 
 
 >[!IMPORTANT]
 >
->Från och med **den 30 april 2017** har Adobe Bloodhound lossnat. Från och med den 1 maj 2017 kommer inga ytterligare förbättringar att göras och ingen ytterligare support för tekniker eller Adobe Expert Care kommer att ges.
+>Från och med **den 30 april 2017** har Adobe Bloodhound solnedgång. Från och med den 1 maj 2017 kommer inga ytterligare förbättringar att göras och ingen ytterligare support för tekniker eller Adobe Expert Care kommer att ges.

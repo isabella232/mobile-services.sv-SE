@@ -7,7 +7,7 @@ title: Analysmetoder
 topic: Developer and implementation
 uuid: d49fe6de-cb32-4b96-9891-c567310e59a6
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: bc11c1e7a4a11657ee89c40ddcbd37377ce50bb5
 workflow-type: tm+mt
 source-wordcount: '784'
 ht-degree: 33%

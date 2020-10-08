@@ -8,7 +8,7 @@ title: Analytics - översikt
 topic: Developer and implementation
 uuid: cc9fa1d9-bc48-4d03-854a-f7b263580a91
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: bc11c1e7a4a11657ee89c40ddcbd37377ce50bb5
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 0%
@@ -34,8 +34,8 @@ Från om med september 2018 har vi släppt en ny större version av SDK. Dessa n
 I SDK:er används identifierare för att spåra användare, och här är hierarkin med identifierare:
 
 1. Anpassad besökaridentifierare (VID)
-2. Analysspårnings-ID (AID)
-3. Experience Cloud-ID (MID)
+1. Analysspårnings-ID (AID)
+1. Experience Cloud-ID (MID)
 
 >[!TIP]
 >

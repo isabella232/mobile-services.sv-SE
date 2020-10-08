@@ -7,7 +7,7 @@ title: Windows 8.1 Universal App Store SDK 4.x för Experience Cloud Solutions
 topic: Developer and implementation
 uuid: a06d8cf2-5d2d-49a8-86ac-102e2934ea59
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: bc11c1e7a4a11657ee89c40ddcbd37377ce50bb5
 workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 1%
@@ -43,4 +43,4 @@ Läs mer i dokumentationen [för](/help/using/home.md)Adobe Mobile services.
 
 >[!IMPORTANT]
 >
->Från och med **den 30 april 2017** har Adobe Bloodhound lossnat. Från och med den 1 maj 2017 kommer inga ytterligare förbättringar att göras och ingen ytterligare support för tekniker eller Adobe Expert Care kommer att ges.
+>Från och med **den 30 april 2017** har Adobe Bloodhound solnedgång. Från och med den 1 maj 2017 kommer inga ytterligare förbättringar att göras och ingen ytterligare support för tekniker eller Adobe Expert Care kommer att ges.

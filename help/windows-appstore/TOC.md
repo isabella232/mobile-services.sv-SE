@@ -6,8 +6,8 @@ breadcrumb-title: Windows 8.1 Universal App Store SDK
 translation-type: tm+mt
 source-git-commit: 18ef20df0a32741685e35cee98a1adf4a1b823a1
 workflow-type: tm+mt
-source-wordcount: '78'
-ht-degree: 14%
+source-wordcount: '83'
+ht-degree: 13%
 
 ---
 
@@ -35,4 +35,4 @@ ht-degree: 14%
 + [Audience Manager-metoder](audiencemgmt/audience-manager-methods.md)
 + [Livscykelstatistik](metrics.md)
 + [Windows Visual Studio-tillägg för Experience Cloud SDK 4.x](extensions/win-vse-4x.md)
-+ [Versionsmigrering](migration-v3.md)
++ [Migrering](migration-v3.md)

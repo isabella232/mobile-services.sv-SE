@@ -6,7 +6,7 @@ breadcrumb-title: BlackBerry Guide
 translation-type: tm+mt
 source-git-commit: 18ef20df0a32741685e35cee98a1adf4a1b823a1
 workflow-type: tm+mt
-source-wordcount: '29'
+source-wordcount: '31'
 ht-degree: 3%
 
 ---

@@ -8,7 +8,7 @@ title: Spåra djupa länkar
 topic: Developer and implementation
 uuid: ebb1c08c-a246-40b3-9ac6-4606a14b4c5a
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: e28340249c22d9f121d5c21205227ee758fb9e1b
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 3%
@@ -16,7 +16,7 @@ ht-degree: 3%
 ---
 
 
-# Spåra djuplänkar {#tracking-deep-links}
+# Spåra djuplänkar
 
 Du kan använda den här informationen för att spåra djupa och fördröjda länkar i dina mobilappar med hjälp av Adobe Mobile Android SDK.
 

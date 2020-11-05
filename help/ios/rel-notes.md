@@ -7,10 +7,10 @@ title: Versionsinformation
 topic: Developer and implementation
 uuid: e1613dc5-02a4-43a7-997a-29b4de98b4d1
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 6c8020b88d22489f86853274d29dbceee504aa06
 workflow-type: tm+mt
-source-wordcount: '422'
-ht-degree: 3%
+source-wordcount: '469'
+ht-degree: 2%
 
 ---
 
@@ -18,6 +18,11 @@ ht-degree: 3%
 # Versionsinformation {#release-notes}
 
 Här är versionsinformation, kända fel och snabbkorrigeringsinformation för iOS SDK 4.x för Experience Cloud Solutions:
+
+**4 november 2020: Version 4.20.0**
+
+* Visitor ID-tjänst - En tillagd statusparameter för device_medgivande när setAdvertisingIdentifier anropas efter att annonsspårning har aktiverats/inaktiverats.
+* Analys - Ett fel som fördröjde Analytics-träffar från att skickas på en installation när iAd.framework är länkat och enheten har Begränsad annonsuppspårning aktiverat har åtgärdats.
 
 **16 juli 2020: Version 4.19.3**
 

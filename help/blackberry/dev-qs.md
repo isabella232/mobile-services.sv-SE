@@ -5,6 +5,9 @@ description: Med hjälp av snabbstartsguiden för BlackBerry-utvecklare kan du f
 seo-description: Med hjälp av snabbstartsguiden för BlackBerry-utvecklare kan du förstå hur du implementerar BlackBerry-biblioteket för Adobe Mobile Services.
 translation-type: tm+mt
 source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
+workflow-type: tm+mt
+source-wordcount: '341'
+ht-degree: 1%
 
 ---
 
@@ -34,7 +37,7 @@ När du har delat upp den hämtade SDK-filen kontrollerar du att följande filer
 ## Lägg till SDK:er i ditt projekt
 
 1. Högerklicka på projektet och välj **[!UICONTROL Configure]** > **[!UICONTROL Add Library]**.
-1. Markera **[!UICONTROL External library]** och klicka **[!UICONTROL Next]**.
+1. Markera **[!UICONTROL External library]** och klicka på **[!UICONTROL Next]**.
 1. Klicka **[!UICONTROL Browse]** bredvid **[!UICONTROL Device library]** fältet.
 1. Navigate to the `ADBMobile-4.0.0BETA-BlackBerry` folder.
 1. I `Device-Debug` mappen markerar du `libADBMobileShared.so` och klickar på **[!UICONTROL Open]**.

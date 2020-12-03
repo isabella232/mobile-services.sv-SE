@@ -6,6 +6,9 @@ title: Utlös ett meddelande i appen när appen öppnas från ett push-meddeland
 uuid: e1c8e29d-1c2b-47b2-8ab2-6b6e15df86f6
 translation-type: tm+mt
 source-git-commit: 114bce95e41c8e13695689dd2da2dbc04cb17ad7
+workflow-type: tm+mt
+source-wordcount: '308'
+ht-degree: 0%
 
 ---
 
@@ -41,5 +44,6 @@ Du kan ange att utlösaren för meddelanden i appen ska vara det push-meddelande
 
    * När du har sparat meddelandet i appen tar det ca 45 sekunder för den värdbaserade konfigurationsfilen att uppdateras med det nya meddelandet.
    * Programmet söker efter uppdateringar av konfigurationsfiler (det nya meddelandet i appen) när det finns en **ny** start, så du måste se till att programmet startar en ny start när du klickar på push-meddelandet.
+
    Det innebär vanligtvis att du måste se till att tidsgränsen för sessionen har uppnåtts. Standardtidsgränsen är 5 minuter.
 

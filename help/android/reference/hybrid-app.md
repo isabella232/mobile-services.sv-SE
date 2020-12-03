@@ -39,7 +39,7 @@ Så här använder du samma besökar-ID i appen och på mobilwebben:
 
    Mer information finns i *Lägga till SDK- och konfigurationsfilen i IntelliJ IDEA- eller Eclipse-projektet* i [Core-implementering och livscykel](/help/android/getting-started/dev-qs.md).
 
-1. Om du vill lägga till besökarinformation till den URL som används för att öppna webbvyn ringer du `visitorAppendToURL`:
+1. Om du vill lägga till besöksinformation till den URL som används för att öppna webbvyn ringer du `visitorAppendToURL`:
 
    ```java
    String urlString = "https://www.mydomain.com/index.php"; 

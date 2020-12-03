@@ -6,6 +6,9 @@ title: Konfigurera din app
 uuid: c088e12d-73b6-40c4-b8cc-ec3bb3d3aa4a
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+workflow-type: tm+mt
+source-wordcount: '368'
+ht-degree: 0%
 
 ---
 

@@ -6,6 +6,9 @@ title: Använd äldre förvärvslänkar
 uuid: cee84d33-e7f9-428e-89a1-83554e7f4c5e
 translation-type: tm+mt
 source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
+workflow-type: tm+mt
+source-wordcount: '122'
+ht-degree: 0%
 
 ---
 

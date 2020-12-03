@@ -6,6 +6,9 @@ title: PII-eftersläpningar
 uuid: 08f76a52-75dd-4fc1-b4cc-4f5eef93d0f7
 translation-type: tm+mt
 source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
+workflow-type: tm+mt
+source-wordcount: '178'
+ht-degree: 0%
 
 ---
 
@@ -14,7 +17,7 @@ source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
 Du kan använda Adobe SDK för att samla in personligt identifierbar information (PII) och skicka den till en tredje parts slutpunkt.
 
-När du vill använda Adobe SDK för att samla in PII-filer ska du skicka ett PII-spårsamtal. Även om det här anropet möjliggör insamling av PII-data, skickar SDK inte automatiskt data till någon Adobe-slutpunkt. En PII-typ för återanslående måste konfigureras med rätt slutpunkt.
+När du vill använda Adobe SDK för att samla in PII-filer bör du skicka ett PII-spårsamtal. Även om det här anropet möjliggör insamling av PII-data, skickar SDK inte data automatiskt till någon Adobe-slutpunkt. En PII-typ för återanslående måste konfigureras med rätt slutpunkt.
 
 >[!TIP]
 >

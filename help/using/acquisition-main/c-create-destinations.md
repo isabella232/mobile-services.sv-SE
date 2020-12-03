@@ -1,7 +1,7 @@
 ---
 description: Marknadsförarna kan skapa, spara och redigera länkmål som webb, djup eller andra länkar som kan användas när spårbara marknadsföringslänkar byggs.
 keywords: mobile
-seo-description: Marknadsförarna kan skapa, spara och redigera länkmål som webb, djup eller andra länkar som kan användas när spårbara marknadsföringslänkar byggs.
+seo-description: Marknadsförarna kan skapa, spara och redigera länkmål, som webb, djup eller andra länkar, som kan användas när spårbara marknadsföringslänkar byggs.
 seo-title: 'Mål '
 solution: Experience Cloud,Analytics
 title: 'Mål '

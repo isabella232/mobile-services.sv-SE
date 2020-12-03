@@ -9,7 +9,7 @@ translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '622'
-ht-degree: 9%
+ht-degree: 13%
 
 ---
 
@@ -24,7 +24,7 @@ I den här guiden beskrivs teknisk dokumentation och självhjälp för Adobe Mob
 
 ## Nu upphör stödet för 4x SDK
 
-Efter den 30 september 2020 kan kunderna fortsätta att ladda ned och använda version 4 SDK:er, men det finns ingen kundtjänst eller tillgång till forum. Adobe Experience Platform Mobile SDK (tidigare kallat v5) stöder endast kommande funktioner och funktioner i Adobe Experience Cloud.
+Efter den 30 september 2020 kan kunderna fortsätta att ladda ned och använda version 4 SDK:er, men det finns ingen kundtjänst eller tillgång till forum. Adobe Experience Platform Mobile SDK (tidigare kallad v5) har endast stöd för kommande funktioner och funktionalitet i Adobe Experience Cloud.
 
 Mer information finns i [Frågor och svar](https://aep-sdks.gitbook.io/docs/version-4-sdk-end-of-support-faq) om supporten upphör.
 

@@ -6,6 +6,9 @@ title: Spåra fördröjda djuplänkar från tredje part
 uuid: 5525b609-e926-44b9-b0f5-38e9dd7c9761
 translation-type: tm+mt
 source-git-commit: 4b5be6c51c716114e597a80d475f838e23abb1b1
+workflow-type: tm+mt
+source-wordcount: '413'
+ht-degree: 0%
 
 ---
 
@@ -16,11 +19,11 @@ Använd iOS SDK för att implementera spårning av fördröjda djuplänkar från
 
 ## Klassisk Adobe Mobile SDK-djuplänkning {#section_D114FA1EB9664EAA82E036A990694B26}
 
-Adobe Mobile SDK har för närvarande stöd för djuplänkning där apputvecklaren förväntas anropa API:t och skicka URL:en för djuplänkning, som är den fingeravtrycks-URL som genereras i Adobe Mobile Services under konfigurationen. `trackAdobeDeepLink` SDK:n skickar fingeravtrycksdata till skrivaren för att hämta inhämtningsdata och lägger till dem i installations-/startanalysen för att anropa kontextdata som en del av livscykeln. Dessutom lägger SDK även till data för borttagning av länkar från URL-parametrar för överordnad länk. Mer information om djuplänkning finns i [Spåra djuplänkar](/help/ios/acquisition-main/tracking-deep-links/tracking-deep-links.md).
+Adobe Mobile SDK har för närvarande stöd för djuplänkning där apputvecklaren förväntas anropa `trackAdobeDeepLink` API:t och skicka URL:en för djuplänkning, som är den fingeravtrycks-URL som genereras i Adobe Mobile Services under konfigurationen. SDK:n skickar fingeravtrycksdata till skrivaren för att hämta inhämtningsdata och lägger till dem i installations-/startanalysen för att anropa kontextdata som en del av livscykeln. Dessutom lägger SDK även till data för borttagning av länkar från URL-parametrar för överordnad länk. Mer information om djuplänkning finns i [Spåra djuplänkar](/help/ios/acquisition-main/tracking-deep-links/tracking-deep-links.md).
 
 ## Djuplänkning på Facebook {#section_6A9DACB54A2F4CDEBE9C744DEFADFDED}
 
-En annonsskapare kan skapa en annons på Facebook som en länk. När användare klickar på annonsen på Facebook går den direkt till den information som de är intresserade av appen i. Den djupa länken är **inte** en fingerskrivars-URL. Under annonskonfigurationen finns det dock ett alternativ för att ange en webblänk-URL från tredje part. En apputvecklare som använder Experience Clouds SDK för mobiler och tjänster förväntas ange den Mobile Services-konfigurerade URL:en för fingeravtryck i det här fältet. Om allt är korrekt konfigurerat skickar Facebook SDK den här URL:en till programmet när appen installeras eller startas.
+En annonsskapare kan skapa en annons på Facebook som en länk. När användare klickar på annonsen på Facebook går den direkt till den information som de är intresserade av appen i. Den djupa länken är **inte** en fingerskrivars-URL. Under annonskonfigurationen finns det dock ett alternativ för att ange en webblänk-URL från tredje part. En apputvecklare som använder Experience Cloud Mobile SDK:er och tjänster förväntas ange den Mobile Services-konfigurerade URL:en för fingeravtryck i det här fältet. Om allt är korrekt konfigurerat skickar Facebook SDK den här URL:en till programmet när appen installeras eller startas.
 
 ## Konfigurera SDK:er {#section_834CD3109175432B8173ECB6EA7DE315}
 

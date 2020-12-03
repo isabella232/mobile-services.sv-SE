@@ -1,8 +1,8 @@
 ---
 description: När du har lagt till biblioteket i ditt projekt kan du göra alla anrop till analysmetoden var som helst i din app (se till att du importerar ADBMomobile.h till din klass).
 seo-description: När du har lagt till biblioteket i ditt projekt kan du göra alla anrop till analysmetoden var som helst i din app (se till att du importerar ADBMomobile.h till din klass).
-seo-title: 'Analytics  '
-title: 'Analytics  '
+seo-title: 'Analytics '
+title: 'Analytics '
 uuid: de018eda-b37d-4afe-83a0-8011381d7aff
 translation-type: tm+mt
 source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
@@ -13,7 +13,7 @@ ht-degree: 3%
 ---
 
 
-# Analytics{#analytics}  
+# Analytics{#analytics} 
 
 När du har lagt till biblioteket i ditt projekt kan du göra alla anrop till analysmetoden var som helst i din app (se till att du importerar ADBMomobile.h till din klass).
 

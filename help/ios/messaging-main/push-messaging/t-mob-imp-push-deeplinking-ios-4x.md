@@ -1,18 +1,21 @@
 ---
-description: När du har konfigurerat URL:en för djuplänkning i Adobe Mobile Services-gränssnittet finns den här URL:en i push-nyttolasten med adb_deplink-nyckeln.
-seo-description: När du har konfigurerat URL:en för djuplänkning i Adobe Mobile Services-gränssnittet finns den här URL:en i push-nyttolasten med adb_deplink-nyckeln.
+description: När du har konfigurerat URL:en för djuplänkning i användargränssnittet för Adobe Mobile Services, kommer den här URL:en att finnas i push-nyttolasten med nyckeln adb_deplink.
+seo-description: När du har konfigurerat URL:en för djuplänkning i användargränssnittet för Adobe Mobile Services, kommer den här URL:en att finnas i push-nyttolasten med nyckeln adb_deplink.
 seo-title: Implementera push-meddelanden med djup länkning
 title: Implementera push-meddelanden med djup länkning
 uuid: ee9590fc-8bd3-4111-9221-9011d9edbd84
 translation-type: tm+mt
 source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
+workflow-type: tm+mt
+source-wordcount: '192'
+ht-degree: 1%
 
 ---
 
 
 # Implementera push-meddelanden med djuplänkning {#implement-push-messaging-with-deep-linking}
 
-När du har konfigurerat URL:en för djuplänkning i Adobe Mobile Services-gränssnittet finns den här URL:en i push-nyttolasten med `adb_deeplink` nyckeln.
+När du har konfigurerat URL:en för djuplänkning i användargränssnittet för Adobe Mobile Services kommer den här URL:en att finnas i push-nyttolasten med `adb_deeplink` nyckeln.
 
 1. I AppDelegate kan du få tillbaka URL:en för djuplänken och hantera den på egen hand på följande platser:
 

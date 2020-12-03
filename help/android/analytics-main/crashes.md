@@ -33,7 +33,7 @@ För att få korrekt kraschrapportering måste du anropa `pauseCollectingLifeCyc
 
 Mer information om Android-aktivitetens livscykel finns i [Aktiviteter](https://developer.android.com/guide/components/activities.html).
 
-*Den här Android-livscykelbilden skapades och[delades av Android Open Source Project](https://source.android.com/)och används enligt villkoren i[Creative Commons 2.5 Attribution License](https://creativecommons.org/licenses/by/2.5/).*
+*Den här Android-livscykelbilden skapades och [delades av Android Open Source Project](https://source.android.com/) och används enligt villkoren i [Creative Commons 2.5 Attribution License](https://creativecommons.org/licenses/by/2.5/).*
 
 ## Vad kan orsaka en falsk krasch?
 

@@ -1,30 +1,33 @@
 ---
 description: En virtuell rapportsvit (VRS) är en rapportsserie som skapas genom att en eller flera segmentdefinitioner tillämpas på en rapportsvit. På så sätt kan användare underhålla sina data i en rapportserie men hantera data som om de fanns i separata rapportsviter.
 seo-description: En virtuell rapportsvit (VRS) är en rapportsserie som skapas genom att en eller flera segmentdefinitioner tillämpas på en rapportsvit. På så sätt kan användare underhålla sina data i en rapportserie men hantera data som om de fanns i separata rapportsviter.
-seo-title: Virtuella rapportsviter
-title: Virtuella rapportsviter
+seo-title: Virtual Report Suites
+title: Virtual Report Suites
 uuid: 3f467cad-43e7-4cd0-889b-89f8c61febbd
 translation-type: tm+mt
 source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
+workflow-type: tm+mt
+source-wordcount: '1049'
+ht-degree: 4%
 
 ---
 
 
-# Virtuella rapportsviter {#virtual-report-suites}
+# Virtual report suites {#virtual-report-suites}
 
 En virtuell rapportsvit (VRS) är en rapportsserie som skapas genom att en eller flera segmentdefinitioner tillämpas på en rapportsvit. På så sätt kan användare underhålla sina data i en rapportserie, men hantera data som om de fanns i separata rapportsviter.
 
 Appar som använder VRS gör samma sak som appar som använder en vanlig rapportserie, förutom att hantera följande funktioner:
 
-* Bearbetar regler
+* Behandlingsregler
 * evar/props/listvars/events
 * Tidsstämpelaktiverat alternativ
-* Dimensionsflaggor (livscykel, plats och så vidare)
+* Dimension-flaggor (livscykel, plats osv.)
 * Klassificeringar
 
 Dessa värden hanteras i den överordnade rapportsviten och delas med de VRS som tillhör samma överordnade rapportsvit.
 
-Följande områden kan nås i Adobe Mobile Services-gränssnittet oberoende av den överordnade rapportsviten:
+Följande områden är tillgängliga i användargränssnittet för mobila tjänster i Adobe, oberoende av den överordnade rapportsviten:
 
 * Konfigurationsfilen
 * Hantera intressepunkter
@@ -53,9 +56,9 @@ Ett VRS kan hjälpa dig att utföra följande uppgifter:
 >
 >Endast Adobe Analytics-administratörer kan skapa och ändra virtuella rapportsviter i Adobe Analytics. Mer information om hur du skapar en virtuell rapportserie finns i [Skapa virtuella rapportsviter](https://docs.adobe.com/content/help/en/analytics/components/virtual-report-suites/vrs-workflow/vrs-create.html).
 
-Varje VRS har ett unikt ID. Om du vill visa det överordnade rapportens programpaket-ID i Adobe Mobile Services-gränssnittet går du till sidan Hantera appinställningar i **[!UICONTROL App Information]** avsnittet och klickar på **[!UICONTROL More Details]**.
+Varje VRS har ett unikt ID. Om du vill visa det överordnade rapportsvitens-ID i användargränssnittet för Adobe Mobile Services klickar du på Hantera appinställningar i **[!UICONTROL App Information]** avsnittet **[!UICONTROL More Details]**.
 
-I Adobe Mobile Services-gränssnittet kan du använda ett VRS för att skapa en app och segmentera data till en viss grupp i organisationen. På så sätt kan t.ex. en affärsanvändare i Spanien inte se de data som är relevanta för en affärsanvändare i Japan.
+I användargränssnittet för Adobe-mobiltjänster kan du använda ett VRS-system för att skapa en app och segmentera data till en viss grupp i organisationen. På så sätt kan t.ex. en affärsanvändare i Spanien inte se de data som är relevanta för en affärsanvändare i Japan.
 
 >[!TIP]
 >
@@ -63,7 +66,7 @@ I Adobe Mobile Services-gränssnittet kan du använda ett VRS för att skapa en 
 
 Ett VRS är en segmentdefinition på serversidan som är kopplad till en överordnad rapportserie. Därför kan du inte samla in data till ett VRS eftersom SDK endast skickar träffar till den överordnade rapportsviten, som i sin tur registrerar träffar.
 
-## Virtuellt rapportpaket i Adobe Mobile Services och datainsamling {#section_8ED8FBA5B44044D9ABC2151A39C577D4}
+## Virtuellt rapportpaket för Adobe Mobile Services och datainsamling {#section_8ED8FBA5B44044D9ABC2151A39C577D4}
 
 I Adobe Mobile Services kan du skapa en app som baseras på en överordnad rapportsvit eller en virtuell rapportsvit. När du skapar en app som baseras på en virtuell rapportserie rekommenderar vi att du justerar VRS-segmentet med definitionen av appen.
 
@@ -75,7 +78,7 @@ För att dina push-meddelanden ska kunna skickas korrekt måste målgruppssegmen
 
 ## Förstå tidszoner {#section_498E1EED22D741C3BDED44F01FACA72A}
 
-Tidszonsegenskapen på sidan Hantera programinställningar skiljer sig från tidszonsegenskapen som du använder för att skapa VRS i Adobe Analytics. Egenskapen på sidan Hantera appinställningar ärvs från den överordnade rapportsviten, som används för att skicka data till Adobe Analytics. Den egenskap du anger när du skapar VRS i Adobe Analytics används för att visa rapporter i gränssnittet för mobila tjänster och kan skilja sig från den överordnade rapportsviten.
+Tidszonsegenskapen på sidan Hantera programinställningar skiljer sig från tidszonsegenskapen som du använder för att skapa VRS i Adobe Analytics. Egenskapen på sidan Hantera programinställningar ärvs från den överordnade rapportsviten, som används för att skicka data till Adobe Analytics. Den egenskap du anger när du skapar VRS i Adobe Analytics används för att visa rapporter i gränssnittet för mobila tjänster och kan skilja sig från den överordnade rapportsviten.
 
 ## Välj en virtuell rapportsvit i gränssnittet för mobila tjänster {#section_3212D0FC01FD43DCAF30FBAA354CD6E4}
 
@@ -115,7 +118,7 @@ Här är egenskaperna för VRS:
 | `analytics.referrerTimeout` | Nej | Ja |  |
 | `analytics.backdateSessionInfo` | Ja | Ja |  |
 
-## Ytterligare information {#section_4C4446F1FBE64F659BC0A2362C9F3E59}
+## Additional Information {#section_4C4446F1FBE64F659BC0A2362C9F3E59}
 
 Här är ytterligare information om virtuella rapportsviter:
 

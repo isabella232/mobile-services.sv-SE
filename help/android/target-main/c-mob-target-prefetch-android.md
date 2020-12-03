@@ -1,22 +1,25 @@
 ---
-description: Förhämtningsfunktionen i Adobe Target använder Android-mobilens SDK för att hämta innehåll som kan erbjudas så få gånger som möjligt genom att cachelagra serversvaren.
-seo-description: Förhämtningsfunktionen i Adobe Target använder Android-mobilens SDK för att hämta innehåll som kan erbjudas så få gånger som möjligt genom att cachelagra serversvaren.
+description: Adobe Target förhämtningsfunktion använder Android Mobile SDK:er för att hämta innehåll så få gånger som möjligt genom att cachelagra serversvaren.
+seo-description: Adobe Target förhämtningsfunktion använder Android Mobile SDK:er för att hämta innehåll så få gånger som möjligt genom att cachelagra serversvaren.
 seo-title: Förhämta erbjudandeinnehåll i Android
 title: Förhämta erbjudandeinnehåll i Android
 uuid: 063451b8-e191-4d58-8ed8-1723e310ad1a
 translation-type: tm+mt
 source-git-commit: fa7375ac8a1345d81748bcf635791c46d3943fed
+workflow-type: tm+mt
+source-wordcount: '791'
+ht-degree: 4%
 
 ---
 
 
 # Förhämta erbjudandeinnehåll i Android {#prefetch-offer-content-in-android}
 
-Förhämtningsfunktionen i Adobe Target använder Android-mobilens SDK för att hämta innehåll som kan erbjudas så få gånger som möjligt genom att cachelagra serversvaren.
+Adobe Target förhämtningsfunktion använder Android Mobile SDK:er för att hämta innehåll så få gånger som möjligt genom att cachelagra serversvaren.
 
 >[!IMPORTANT]
 >
->Förhämtningsfunktionen i Mobile SDK för Android stöds inte för aktivitetstyperna Automatiskt mål, Automatisk allokering och Automatiserad personalisering i Adobe Target.
+>Förhämtningsfunktionen i Mobile SDK för Android stöds inte för aktivitetstyperna Automatiskt mål, Automatisk allokering och Automated Personalization i Adobe Target.
 
 Den här processen minskar inläsningstiden, förhindrar flera nätverksanrop och gör att Adobe Target kan meddelas vilken mbox som mobilappsanvändaren har besökt. Allt innehåll hämtas och cachelagras under förhämtningsanropet, och det här innehållet hämtas från cachen för alla framtida anrop som innehåller cachelagrat innehåll för det angivna mbox-namnet.
 
@@ -207,7 +210,7 @@ Den här klassen kapslar in mbox-namnet, standardinnehållet, mbox-parametrar oc
    * **Typ**: Target.TargetCallback`<String>`
 
 
-## Kodexempel {#section_BF7F49763D254371B4656E17953D520C}
+## Code sample {#section_BF7F49763D254371B4656E17953D520C}
 
 Här är ett exempel på hur du förhämtar innehåll med Android SDK:n:
 

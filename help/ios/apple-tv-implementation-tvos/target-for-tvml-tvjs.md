@@ -1,18 +1,21 @@
 ---
-description: Du kan använda Adobe Target i dina TVML-/TVJS-appar genom att göra direkta ersättningar av dina XML-filer. Ange områden på sidan som ska ersättas av Target-innehåll med hjälp av det anpassade XML-elementet ADBTarget.
-seo-description: Du kan använda Adobe Target i dina TVML-/TVJS-appar genom att göra direkta ersättningar av dina XML-filer. Ange områden på sidan som ska ersättas av Target-innehåll med hjälp av det anpassade XML-elementet ADBTarget.
+description: Du kan utnyttja Adobe Target i dina TVML-/TVJS-appar genom att göra direkta ersättningar av dina XML-filer. Ange områden på sidan som ska ersättas av Target-innehåll med hjälp av det anpassade XML-elementet ADBTarget.
+seo-description: Du kan utnyttja Adobe Target i dina TVML-/TVJS-appar genom att göra direkta ersättningar av dina XML-filer. Ange områden på sidan som ska ersättas av Target-innehåll med hjälp av det anpassade XML-elementet ADBTarget.
 seo-title: Adobe Target for TVML/TVJS
 title: Adobe Target for TVML/TVJS
 uuid: afd5a583-5266-43f2-8cb0-0ace89c53a57
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+workflow-type: tm+mt
+source-wordcount: '502'
+ht-degree: 0%
 
 ---
 
 
 # Adobe Target for TVML/TVJS{#adobe-target-for-tvml-tvjs}
 
-Du kan använda Adobe Target i dina TVML-/TVJS-appar genom att göra direkta ersättningar av dina XML-filer. Ange områden på sidan som ska ersättas av Target-innehåll med hjälp av det anpassade XML-elementet ADBTarget.
+Du kan utnyttja Adobe Target i dina TVML-/TVJS-appar genom att göra direkta ersättningar av dina XML-filer. Ange områden på sidan som ska ersättas av Target-innehåll med hjälp av det anpassade XML-elementet ADBTarget.
 
 >[!IMPORTANT]
 >
@@ -22,7 +25,7 @@ Du kan använda Adobe Target i dina TVML-/TVJS-appar genom att göra direkta ers
 
 1. Identifiera den `.xml` fil där du vill använda målplatsen.
 1. Lägg till ett `ADBTarget` element i filen som ett underordnat element till `<document>` elementet.
-1. Om Target inte hittar din Mbox-plats, eller om det gör en timeout, används värdet mellan dina `<ADBTarget>` - och `</ADBTarget>` -taggar som standardinnehåll.
+1. Om Target inte kan hitta din Mbox-plats, eller om det gör en timeout, används värdet mellan dina `<ADBTarget>` - och `</ADBTarget>` -taggar som standardinnehåll.
 
 ## Konfigurera din mbox i Target {#section_F2DA140C34B0421D976046F825B23123}
 

@@ -38,7 +38,7 @@ Om du vill använda samma besökar-ID i appen och på mobilwebben och skicka app
 1. Lägg till biblioteket i ditt projekt och implementera livscykeln.
 
    Mer information finns i *Lägga till SDK- och konfigurationsfilen i projektet* i [Core Implementation och Lifecycle](/help/ios/getting-started/dev-qs.md).
-1. Om du vill lägga till besökarinformation till den URL som används för att öppna webbvyn ringer du `visitorAppendToURL`:
+1. Om du vill lägga till besöksinformation till den URL som används för att öppna webbvyn ringer du `visitorAppendToURL`:
 
    ```objective-c
    NSURL *url = [NSURL URLWithString:@”https://www.mydomain.com/index.php"]; 

@@ -6,6 +6,9 @@ title: Roller och behörigheter
 uuid: ad350f8d-ef51-4519-98aa-3025bc0f5588
 translation-type: tm+mt
 source-git-commit: c7cac006340e01d0fd1f6afe3419e6fd17294a98
+workflow-type: tm+mt
+source-wordcount: '595'
+ht-degree: 6%
 
 ---
 
@@ -20,7 +23,7 @@ Följande roller hanterar behörigheter i gränssnittet för mobila tjänster:
 
 ### Analysadministratör
 
-En Analytics Admin hanterar användargrupper och tilldelar behörigheter, varav en är Mobile App Admin. Experience Cloud Admin länkar ditt Adobe ID till ditt Adobe Analytics-konto, som gör att du kan logga in på gränssnittet för mobila tjänster med ditt Adobe ID. Mer information om Experience Cloud Administrator finns i [Administration - Användarhantering och Frågor och svar](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/admin-getting-started.html).
+En Analytics Admin hanterar användargrupper och tilldelar behörigheter, varav en är Mobile App Admin. Experience Cloud Admin länkar din Adobe ID till ditt Adobe Analytics-konto så att du kan logga in på användargränssnittet för mobila tjänster med hjälp av din Adobe ID. Mer information om Experience Cloud Administrator finns i [Administration - Användarhantering och Frågor och svar](https://docs.adobe.com/content/help/sv-SE/core-services/interface/manage-users-and-products/admin-getting-started.html).
 
 >[!TIP]
 >
@@ -94,7 +97,7 @@ Här är rollerna i gränssnittet för mobila tjänster, med deras relevanta beh
 
 Mer information om grupper och användare finns i:
 
-* [Inställningar för användargrupp](https://docs.adobe.com/content/help/en/analytics/admin/user-product-management/user-groups/groups.html)
+* [Inställningar för användargrupp](https://docs.adobe.com/content/help/sv-SE/analytics/admin/user-product-management/user-groups/groups.html)
 * [Lägga till en användare i en grupp](https://docs.adobe.com/content/help/en/analytics/admin/user-product-management/user-management/t-add-user-to-group.html)
 
 ### Användare av mobiltjänster
@@ -106,7 +109,7 @@ Den här rollen har endast behörighet att visa och kan ge feedback i gränssnit
 
    >[!IMPORTANT]
    >
-   >Användarna kan bara se de rapportsviter de har tillgång till i Adobe Analytics.
+   >Användare kan bara se de rapportsviter som de har tillgång till i Adobe Analytics.
 
 * Visa appinställningar
 

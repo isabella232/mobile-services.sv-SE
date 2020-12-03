@@ -1,22 +1,25 @@
 ---
-description: Funktionen för förhämtning i Adobe Target använder iOS Mobile SDK:er för att hämta innehåll som kan erbjudas så få gånger som möjligt genom att cachelagra serversvaren.
-seo-description: Funktionen för förhämtning i Adobe Target använder iOS Mobile SDK:er för att hämta innehåll som kan erbjudas så få gånger som möjligt genom att cachelagra serversvaren.
+description: Adobe Target förhämtningsfunktion använder iOS Mobile SDK:er för att hämta innehåll så få gånger som möjligt genom att cachelagra serversvaren.
+seo-description: Adobe Target förhämtningsfunktion använder iOS Mobile SDK:er för att hämta innehåll så få gånger som möjligt genom att cachelagra serversvaren.
 seo-title: Förhämta innehåll i iOS
 title: Förhämta innehåll i iOS
 uuid: fef58042-65e2-4579-b8f1-d21554d2af57
 translation-type: tm+mt
 source-git-commit: fa7375ac8a1345d81748bcf635791c46d3943fed
+workflow-type: tm+mt
+source-wordcount: '760'
+ht-degree: 5%
 
 ---
 
 
 # Förhämta innehåll i iOS {#prefetch-offer-content-in-ios}
 
-Funktionen för förhämtning i Adobe Target använder iOS Mobile SDK:er för att hämta innehåll som kan erbjudas så få gånger som möjligt genom att cachelagra serversvaren.
+Adobe Target förhämtningsfunktion använder iOS Mobile SDK:er för att hämta innehåll så få gånger som möjligt genom att cachelagra serversvaren.
 
 >[!IMPORTANT]
 >
->Förhämtningsfunktionen i Mobile SDK för iOS stöds inte för aktivitetstyperna Automatiskt mål, Automatisk allokering och Automatiserad personalisering i Adobe Target.
+>Förhämtningsfunktionen i Mobile SDK för iOS stöds inte för aktivitetstyperna Automatiskt mål, Automatisk allokering och Automated Personalization i Adobe Target.
 
 Den här processen minskar inläsningstiden, förhindrar flera nätverksanrop och gör att Adobe Target kan meddelas vilken mbox som mobilappsanvändaren har besökt. Allt innehåll hämtas och cachelagras under förhämtningsanropet, och det här innehållet hämtas från cachen för alla framtida anrop som innehåller cachelagrat innehåll för det angivna mbox-namnet.
 
@@ -192,7 +195,7 @@ Den här klassen kapslar in mbox-namnet, standardinnehållet, mbox-parametrar oc
 
    * **Typ**: Funktion
 
-## Kodexempel {#section_BF7F49763D254371B4656E17953D520C}
+## Code sample {#section_BF7F49763D254371B4656E17953D520C}
 
 Här följer ett exempel på hur du förhämtar innehåll med iOS SDK:er:
 

@@ -6,6 +6,9 @@ title: Ta emot omfattande push-meddelanden
 uuid: 0dbda409-cf49-4eb8-90ee-baf27911dc07
 translation-type: tm+mt
 source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
+workflow-type: tm+mt
+source-wordcount: '222'
+ht-degree: 0%
 
 ---
 

@@ -6,6 +6,9 @@ title: Ta emot omfattande push-meddelanden
 uuid: 4a0340a6-666b-49b6-907a-9afc966dfdba
 translation-type: tm+mt
 source-git-commit: dca3663986b3ecc6e9fb736cc99513279715225c
+workflow-type: tm+mt
+source-wordcount: '216'
+ht-degree: 0%
 
 ---
 
@@ -32,7 +35,7 @@ Om appen finns i förgrunden hanteras push-meddelandet av appen som utökar `Fir
 >
 >Klassen som innehåller implementeringen hanterar de data som tas emot. `onMessageReceived()`
 
-Om push-meddelandet innehåller en medie-URL är URL:en tillgänglig i den `RemoteMessage` parameter som skickas till `onMessageReceived()` funktionen. Nyckeln som ska användas visas `attachment-url` i följande kodexempel:
+Om push-meddelandet innehåller en medie-URL är URL:en tillgänglig i den parameter `RemoteMessage` som skickas till `onMessageReceived()` funktionen. Nyckeln som ska användas visas `attachment-url` i följande kodexempel:
 
 ```java
 public class MyFirebaseMessagingService extends FirebaseMessagingService {

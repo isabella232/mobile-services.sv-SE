@@ -6,6 +6,9 @@ title: Förhandsvisa mål på Android
 uuid: f3c82d64-009c-4929-a5e6-3677b2977889
 translation-type: tm+mt
 source-git-commit: 83e6968efb0ed1b4ef504286c6cb2e8e4d2eaf94
+workflow-type: tm+mt
+source-wordcount: '139'
+ht-degree: 10%
 
 ---
 

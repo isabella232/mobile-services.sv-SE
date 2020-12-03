@@ -6,6 +6,9 @@ title: Kom igång
 uuid: 769cba99-ff82-4fa0-a14a-83b5f0495b04
 translation-type: tm+mt
 source-git-commit: e5ed5005c3f98d27b514a634e485f0f941138b2d
+workflow-type: tm+mt
+source-wordcount: '99'
+ht-degree: 6%
 
 ---
 

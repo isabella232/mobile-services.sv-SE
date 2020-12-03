@@ -43,7 +43,7 @@ ht-degree: 1%
    >
    >Om koden där du lägger till det här anropet kan köras medan programmet är i bakgrunden, ska du ringa `trackActionFromBackground` i stället för `trackAction`.
 
-1. I användargränssnittet för Adobe-mobiltjänster väljer du din app och klickar på **[!UICONTROL Manage App Settings]**.
+1. I användargränssnittet för Adobe Mobile Services väljer du din app och klickar på **[!UICONTROL Manage App Settings]**.
 
 1. Klicka på **[!UICONTROL Manage Variables and Metrics]** och klicka på **[!UICONTROL Custom Metrics]** fliken.
 

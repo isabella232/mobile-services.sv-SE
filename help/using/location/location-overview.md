@@ -6,6 +6,9 @@ seo-title: Platsöversikt
 title: Platsöversikt
 translation-type: tm+mt
 source-git-commit: 41aa0a994bd0ad1e6f5421cf368d78b616ff9170
+workflow-type: tm+mt
+source-wordcount: '105'
+ht-degree: 4%
 
 ---
 
@@ -18,4 +21,4 @@ Letar du efter information och dokumentation om Adobe Experience Platform Mobile
 
 >[!IMPORTANT]
 >
->Från om med september 2018 har vi släppt en ny större version av SDK. Dessa nya SDK:er för Adobe Experience Platform Mobile kan konfigureras via [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html). Gå till [https://launch.adobe.com/](https://launch.adobe.com/)för att komma igång. Om du vill se vad som finns i Experience Platform SDK-databaserna går du till [Github: Adobe Experience Platform SDKs](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
+>Från om med september 2018 har vi släppt en ny större version av SDK. Dessa nya Adobe Experience Platform Mobile SDK:er kan konfigureras via [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html). Gå till [https://launch.adobe.com/](https://launch.adobe.com/)för att komma igång. Om du vill se vad som finns i Experience Platform SDK-databaserna går du till [Github: Adobe Experience Platform SDKs](https://github.com/Adobe-Marketing-Cloud/acp-sdks).

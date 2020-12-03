@@ -33,7 +33,7 @@ Olika `.dll/.winmd` filer tillhandahålls för varje arkitektur som stöds (x86,
 
 >[!IMPORTANT]
 >
->Versionen av `ADBMobile.winmd` återspeglar inte versionen av biblioteket. Filen `.winmd` innehåller bara metadata och har versionsnumret `255.255.255.255`, vilket är godkänt enligt Microsoft. Mer information finns i [Hur lägger jag till sammansättningsinformation för en DLL-fil för en WinRT C++/CX-komponent?](https://social.msdn.microsoft.com/Forums/windowsapps/en-US/6bcccaee-aa53-4770-bd5b-1205977f1ca7/how-do-i-add-assembly-information-for-a-winrt-c-cx-component-dll?forum=winappswithnativecode). Om du vill kontrollera vilken version av biblioteket du använder kontrollerar du den underliggande `ADBMobile.dll` filens version.
+>Versionen av `ADBMobile.winmd` återspeglar inte versionen av biblioteket. Filen innehåller bara metadata och har ett versionsnummer `.winmd` `255.255.255.255`som fungerar enligt Microsoft. Mer information finns i [Hur lägger jag till sammansättningsinformation för en DLL-fil för en WinRT C++/CX-komponent?](https://social.msdn.microsoft.com/Forums/windowsapps/en-US/6bcccaee-aa53-4770-bd5b-1205977f1ca7/how-do-i-add-assembly-information-for-a-winrt-c-cx-component-dll?forum=winappswithnativecode). Om du vill kontrollera vilken version av biblioteket du använder kontrollerar du den underliggande `ADBMobile.dll` filens version.
 
 ## Syntaxskillnader {#section_A02DE120B6D240F5AFFE7509755C4F14}
 

@@ -1,18 +1,21 @@
 ---
-description: När du har konfigurerat URL:en för djuplänkning i Adobe Mobile Services-gränssnittet finns den här URL:en i push-nyttolasten med adb_deplink-nyckeln.
-seo-description: När du har konfigurerat URL:en för djuplänkning i Adobe Mobile Services-gränssnittet finns den här URL:en i push-nyttolasten med adb_deplink-nyckeln.
+description: När du har konfigurerat URL:en för djuplänkning i användargränssnittet för Adobe Mobile Services, kommer den här URL:en att finnas i push-nyttolasten med nyckeln adb_deplink.
+seo-description: När du har konfigurerat URL:en för djuplänkning i användargränssnittet för Adobe Mobile Services, kommer den här URL:en att finnas i push-nyttolasten med nyckeln adb_deplink.
 seo-title: Implementera push-meddelanden med djup länkning
 title: Implementera push-meddelanden med djup länkning
 uuid: e24f9248-8d48-4e57-84af-3a05b72e2a09
 translation-type: tm+mt
 source-git-commit: 13ff2cb549c4b82a4e0285e1c7c6b3f9c1a5bd4b
+workflow-type: tm+mt
+source-wordcount: '186'
+ht-degree: 0%
 
 ---
 
 
 # Implementera push-meddelanden med djuplänkning {#implement-push-messaging-with-deep-linking}
 
-När du har konfigurerat URL:en för djuplänkning i Adobe Mobile Services-gränssnittet finns den här URL:en i push-nyttolasten med adb_deplink-nyckeln.
+När du har konfigurerat URL:en för djuplänkning i användargränssnittet för Adobe Mobile Services, kommer den här URL:en att finnas i push-nyttolasten med nyckeln adb_deplink.
 
 Du kan hämta URL:en genom att ringa `remoteMessage.getData().get("adb_deeplink")` i `FirebaseMessagingService`.
 

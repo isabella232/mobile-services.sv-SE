@@ -6,6 +6,9 @@ title: Spåra fördröjda djuplänkar från tredje part
 uuid: 4c798e47-7988-4a06-a191-6c4d05f6ee61
 translation-type: tm+mt
 source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
+workflow-type: tm+mt
+source-wordcount: '513'
+ht-degree: 0%
 
 ---
 
@@ -40,7 +43,7 @@ Om programmet är korrekt konfigurerat bör API:t göra det möjligt att samla i
 >
 >Kontrollera att djuplänkens URL har en nyckel som heter `a.deeplink.id`. Om URL-adressen saknar parametern för djuplänk-ID läggs URL-parametrarna inte till i kontextdata.
 
-Om länken kan tillskrivas ett förvärv lagrar Adobe Mobile SDK förvärvsuppgifterna från den djupa Facebook-länken som användes för att ringa `trackAdobeDeepLink()`. Dessa data kommer att vara tillgängliga för Adobe Mobile SDK i framtida starter. Om ett återanrop har registrerats används även Adobes återanrop för att skicka data tillbaka till klienten.
+Om länken kan tillskrivas ett förvärv lagrar Adobe Mobile SDK förvärvsdata från den djupa Facebook-länk som användes för att ringa `trackAdobeDeepLink()`. Dessa data kommer att vara tillgängliga för Adobe Mobile SDK i framtida starter. Om ett återanrop har registrerats kommer återanropet i Adobe också att användas för att skicka tillbaka data till klienten.
 
 ## Aktivera djuplänkning i ett Android-program {#section_64C15E269E89424B8E3D029F88094620}
 

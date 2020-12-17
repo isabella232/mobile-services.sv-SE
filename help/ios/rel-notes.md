@@ -7,9 +7,9 @@ title: Versionsinformation
 topic: Developer and implementation
 uuid: e1613dc5-02a4-43a7-997a-29b4de98b4d1
 translation-type: tm+mt
-source-git-commit: 6c8020b88d22489f86853274d29dbceee504aa06
+source-git-commit: b6c9154e925ce0a0530d4c8f0871a97198ecd840
 workflow-type: tm+mt
-source-wordcount: '469'
+source-wordcount: '518'
 ht-degree: 2%
 
 ---
@@ -18,6 +18,12 @@ ht-degree: 2%
 # Versionsinformation {#release-notes}
 
 Här är versionsinformation, kända fel och snabbkorrigeringsinformation för iOS SDK 4.x för Experience Cloud Solutions:
+
+**15 december 2020: Version 4.21.0**
+
+* Allmänt - SDK distribueras nu med XCFrameworks för att stödja maskinvara med den nya Apple M1-arkitekturen samtidigt som stödet för den befintliga Intel-arkitekturen bibehålls.
+   * VIKTIGT! För uppgradering till AdobeMobile XCFrameworks krävs Xcode 12.0 eller senare
+   * VIKTIGT! Om du använder Cocoapods krävs Cocoapods 1.10.0 eller senare för uppgradering till AdobeMobile XCFrameworks
 
 **4 november 2020: Version 4.20.0**
 
@@ -49,8 +55,8 @@ Här är versionsinformation, kända fel och snabbkorrigeringsinformation för i
 
 * I App Messaging:
 
-   * På enheter som kör iOS 10 eller senare används nu ramverket för att schemalägga lokala meddelanden för program som är länkade till `UserNotifications` `UserNotifications.framework`.
-   * Helskärmsmeddelanden använder nu WKWebViews från `WebKit.framework`som måste länkas i Xcode-projektet.
+   * På enheter som kör iOS 10 eller senare används `UserNotifications`-ramverket nu för att schemalägga lokala meddelanden för program som är länkade till `UserNotifications.framework`.
+   * Helskärmsmeddelanden använder nu WKWebViews från `WebKit.framework`, som måste länkas i Xcode-projektet.
    * Korrigerade ett fel där Push click-through-nyttolasten inte kunde användas som egenskaper för meddelanden i appen.
    * Korrigerade ett kraschproblem.
 
@@ -60,13 +66,13 @@ Här är versionsinformation, kända fel och snabbkorrigeringsinformation för i
 
 * Återställde en ändring som introducerades i version 4.18.6 som i vissa miljöer orsakade en krasch på enheter som kör en iOS-version som är äldre än 11.0.
 
-* Adobe Target: Egenskapen har lagts till i `requestLocationParameters` , `ADBTargetRequestObject`vilket gör det möjligt att skicka scriptId med Target-begäranden.
+* Adobe Target: Egenskapen `requestLocationParameters` har lagts till i `ADBTargetRequestObject`, vilket gör att intrycks-ID kan skickas med Target-begäranden.
 
 **18 juli 2019: Version 4.18.6**
 
-* Adobe Target: Alla begäranden inkluderar nu klienten och klienten `sessionId` i URL-frågeparametrarna.
+* Adobe Target: Alla begäranden inkluderar nu klienten och `sessionId` i URL-frågeparametrarna.
 * Adobe Target: Korrigerade en minnesläcka.
-* Tjänst för besökar-ID: API:erna `visitorAppendToURL` och `visitorGetUrlVariablesAsync` API:erna dubbelkodar inte längre sina returvärden.
+* Tjänst för besökar-ID: API:erna `visitorAppendToURL` och `visitorGetUrlVariablesAsync` dubbelkodar inte längre sina returvärden.
 
    Den dubbla kodningen gjorde att returvärdena från dessa API:er flaggerades av vissa säkerhetsgranskningar.
 
@@ -79,6 +85,6 @@ Här är versionsinformation, kända fel och snabbkorrigeringsinformation för i
 * Tjänst för besökar-ID - Ökade returtidsgränsen för
    `visitorGetUrlVariablesAsync` API till 30 sekunder.
 
-* Visitor ID-tjänst - API-anropet skickar nu ett synkroniseringsanrop till besökar-ID-tjänsten varje gång det anropas. `setPushIdentifier`
+* Visitor ID-tjänst - API-anropet `setPushIdentifier` skickar nu ett synkroniseringsanrop till besökar-ID-tjänsten varje gång det anropas.
 
-Mer information om aktuell och tidigare versionsinformation om alla lösningar finns i [Adobe Experience Cloud versionsinformation](https://docs.adobe.com/content/help/sv-SE/release-notes/experience-cloud/current.html).
+Mer information om aktuell och tidigare versionsinformation för alla lösningar finns i [Adobe Experience Cloud Release Notes](https://docs.adobe.com/content/help/sv-SE/release-notes/experience-cloud/current.html).

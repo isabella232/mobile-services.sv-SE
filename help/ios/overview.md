@@ -7,9 +7,9 @@ title: iOS SDK 4.x för Experience Cloud Solutions
 topic: Developer and implementation
 uuid: 8b374cee-1432-460b-aac2-70623dd80a04
 translation-type: tm+mt
-source-git-commit: bc11c1e7a4a11657ee89c40ddcbd37377ce50bb5
+source-git-commit: 1b888d0184e20d2134edbc488d36c09d0492a334
 workflow-type: tm+mt
-source-wordcount: '454'
+source-wordcount: '538'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,20 @@ ht-degree: 0%
 # iOS SDK 4.x för Experience Cloud Solutions{#ios-sdk-x-for-experience-cloud-solutions}
 
 Med iOS SDK 4.x för Experience Cloud Solutions kan ni mäta iPhone- och iPad-applikationer från Apple, leverera riktat innehåll inifrån apparna samt utnyttja och samla in målgruppsdata via Audience Manager.
+
+>[!IMPORTANT]
+>
+>Från och med version 4.21.0 har iOS SDK minst den version av Xcode 12 som krävs. Om du använder Cocoapods för att hantera beroenden i din app kräver Adobe SDK version 1.10.0 eller senare av Cocopods.
+
+Om du använder 4.21.0 eller senare läser du dokumentationen med följande ändringar i åtanke:
+
+* När en binär biblioteksfil nämns bör XCFramwork-ersättaren användas i stället:
+   * `AdobeMobileLibrary.a` > `AdobeMobile.xcframework`
+   * `AdobeMobileLibrary_Extension.a` >  `AdobeMobileExtension.xcframework`
+   * `AdobeMobileLibrary_Watch.a` >  `AdobeMobileWatch.xcframework`
+   * `AdobeMobileLibrary_TV.a` >  `AdobeMobileTV.xcframework`
+* Rubrikfilen `ADBMobile.h` är inbäddad i varje XCFramwork.
+* Om du lägger till Adobe XCFrameworks manuellt i ditt projekt måste du se till att de inte är inbäddade.
 
 >[!IMPORTANT]
 >
@@ -34,13 +48,13 @@ Letar du efter information och dokumentation om Adobe Experience Platform Mobile
 Från om med september 2018 har vi släppt en ny större version av SDK. Dessa nya Adobe Experience Platform Mobile SDK:er kan konfigureras via [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
 
 * Gå till Adobe Experience Platform Launch för att komma igång.
-* Om du vill se vad som finns i Experience Platform SDK-databaserna går du till [Github: Adobe Experience Platform SDKs](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
+* Om du vill se vad som finns i Experience Platform SDK-databaserna går du till [Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
 
 Lite information att komma ihåg:
 
 * iOS 8 eller senare stöds
 
-   För iOS 11 eller senare **måste** du ha SDK version 4.13.8 eller senare.
+   För iOS 11 eller senare måste du **ha SDK version 4.13.8 eller senare.**
 
 * I version 4.2 av denna SDK och senare skickas nu alla träffar med HTTP-POST.
 
@@ -58,4 +72,4 @@ Mer information om gränssnittet för mobiltjänster och användardokumentatione
 
 >[!IMPORTANT]
 >
->Från och med **den 30 april 2017** har Adobe Bloodhound solnedgång. Från och med den 1 maj 2017 kommer inga ytterligare förbättringar att göras och ingen ytterligare support för tekniker eller Adobe Expert Care kommer att ges.
+>Från och med den **30 april 2017** har Adobe Bloodhound solnedgångar. Från och med den 1 maj 2017 kommer inga ytterligare förbättringar att göras och ingen ytterligare support för tekniker eller Adobe Expert Care kommer att ges.

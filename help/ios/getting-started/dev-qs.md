@@ -7,9 +7,9 @@ title: Kärnimplementering och livscykel
 topic: Developer and implementation
 uuid: 96d06325-e424-4770-8659-4b5431318ee3
 translation-type: tm+mt
-source-git-commit: b2fce063a2c97eecb2abc1a21ad8e8ab56fc151b
+source-git-commit: c7400359bc19150926a67b991ba219a7fa187442
 workflow-type: tm+mt
-source-wordcount: '865'
+source-wordcount: '841'
 ht-degree: 1%
 
 ---
@@ -39,20 +39,21 @@ Så här hämtar du SDK:
 
 1. Ladda ned, zippa upp filen `[Your_App_Name_]AdobeMobileLibrary-4.*-iOS.zip` och kontrollera att du har följande programvarukomponenter i katalogen `AdobeMobileLibrary`:
 
+   * `ADBMobile.h` - Objective-C-huvudfilen som används för iOS SDK.
    * `ADBMobileConfig.json` - SDK-konfigurationsfilen som är anpassad för din app.
-   * `AdobeMobile.xcframework` - innehåller två binära fetter, en för iOS-enheter (armv7, armv7s, arm64) och simulatorer (i386, x86_64, arm64). Innehåller även `ADBMobile.h`-huvudfilen för SDK.
+   * `AdobeMobile.xcframework` - innehåller två binära fetter, en för iOS-enheter (armv7, armv7s, arm64) och simulatorer (i386, x86_64, arm64).
 
       Denna XCFramwork ska vara länkad när en iOS-app används.
 
-   * `AdobeMobileExtension.xcframework` - innehåller två binära fetter, en för iOS-enheter (armv7, armv7s, arm64) och simulatorer (i386, x86_64, arm64). Innehåller även `ADBMobile.h`-huvudfilen för SDK.
+   * `AdobeMobileExtension.xcframework` - innehåller två binära fetter, en för iOS-enheter (armv7, armv7s, arm64) och simulatorer (i386, x86_64, arm64).
 
       Denna XCFramwork ska vara länkad när den har ett iOS-tillägg som mål.
 
-   * `AdobeMobileWatch.xcframework` - innehåller två binära fetter, en för watchOS-enheter (arm64_32, armv7k) och simulatorer (i386, x86_64, arm64). Innehåller även `ADBMobile.h`-huvudfilen för SDK.
+   * `AdobeMobileWatch.xcframework` - innehåller två binära fetter, en för watchOS-enheter (arm64_32, armv7k) och simulatorer (i386, x86_64, arm64).
 
       Denna XCFramwork ska vara länkad när en Apple Watch-app (watchOS) används som mål.
 
-   * `AdobeMobileTV.xcframework` - innehåller två binära fetter, en för tvOS-enheter (arm64) och simulatorer (x86_64, arm64). Innehåller även `ADBMobile.h`-huvudfilen för SDK.
+   * `AdobeMobileTV.xcframework` - innehåller två binära fetter, en för tvOS-enheter (arm64) och simulatorer (x86_64, arm64).
 
       Denna XCFramwork ska vara länkad när en Apple TV-app (tvOS) används som mål.
 

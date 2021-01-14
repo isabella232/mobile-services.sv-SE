@@ -7,9 +7,9 @@ title: Versionsinformation
 topic: Developer and implementation
 uuid: e1613dc5-02a4-43a7-997a-29b4de98b4d1
 translation-type: tm+mt
-source-git-commit: b6c9154e925ce0a0530d4c8f0871a97198ecd840
+source-git-commit: 53d407056dd89dcf32d1895231999b2d92e879ec
 workflow-type: tm+mt
-source-wordcount: '518'
+source-wordcount: '533'
 ht-degree: 2%
 
 ---
@@ -18,6 +18,10 @@ ht-degree: 2%
 # Versionsinformation {#release-notes}
 
 Här är versionsinformation, kända fel och snabbkorrigeringsinformation för iOS SDK 4.x för Experience Cloud Solutions:
+
+**13 januari 2021: Version 4.21.1**
+
+* Allmänt - Ett problem som kunde orsaka SQLite-undantag när programmet stängdes har åtgärdats.
 
 **15 december 2020: Version 4.21.0**
 

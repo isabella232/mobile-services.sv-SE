@@ -8,9 +8,9 @@ title: Konfigurera alternativ för SDK-förvärv
 topic: Metrics
 uuid: 50ce51ad-39bf-4ac7-bd94-757443d11ca7
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: aab04abeb5edb6be886002e27ef1c5340b0a8f0d
 workflow-type: tm+mt
-source-wordcount: '163'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Du kan konfigurera alternativen för SDK-förvärv på sidan Hantera appinställ
 
    * **[!UICONTROL Enable]**
 
-      Skapa appbutikslänkar som gör att du kan hämta program direkt från Apple App Store och Google Play. Länkarna du skapar hjälper dig att attribuera dina lyckade händelser till hämtningarna. Mer information finns i [Anskaffning](//help/using/acquisition-main/acquisition-main.md).
+      Skapa appbutikslänkar som gör att du kan hämta program direkt från Apple App Store och Google Play. Länkarna du skapar hjälper dig att attribuera dina lyckade händelser till hämtningarna. Mer information finns i [Förvärv](/help/using/acquisition-main/acquisition-main.md).
 
    * **[!UICONTROL Referrer Timeout (Seconds)]**
 
@@ -34,4 +34,4 @@ Du kan konfigurera alternativen för SDK-förvärv på sidan Hantera appinställ
 
    * **[!UICONTROL More Details]**
 
-      Klicka på **[!UICONTROL More Details]** länken för att visa programmets spårnings-ID.
+      Klicka på länken **[!UICONTROL More Details]** för att visa programmets spårnings-ID.

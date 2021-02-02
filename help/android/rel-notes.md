@@ -7,10 +7,10 @@ title: Versionsinformation
 topic: Developer and implementation
 uuid: 16bb4de8-a216-47a8-928c-0b1e1421adcf
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 8b5842068c602f3f9b1c020c1c9a686eb0e56b74
 workflow-type: tm+mt
-source-wordcount: '297'
-ht-degree: 2%
+source-wordcount: '303'
+ht-degree: 1%
 
 ---
 
@@ -29,9 +29,9 @@ Här är versionsinformation, kända fel och snabbkorrigeringsinformation för A
 
 **16 januari 2020: 4.18.0**
 
-* Anskaffning - Ett nytt API har lagts till `Analytics.processGooglePlayInstallReferrerUrl(final String url)`som stöd för Google Play Install Reference-API:er.
+* Förvärv - Ett nytt API, `Analytics.processGooglePlayInstallReferrerUrl(final String url)`, har lagts till som stöd för Google Play Install Reference-API:er.
 
-   Mer information om Install Reference API:er finns i Använda InstallBroadcast [ändå? Växla till API:t Play Reference senast 1 mars 2020](https://android-developers.googleblog.com/2019/11/still-using-installbroadcast-switch-to.html) .
+   Mer information om Install Reference API:er finns i [Använder du fortfarande InstallBroadcast? Växla till API:t Play Reference senast 1 mars 2020](https://android-developers.googleblog.com/2019/11/still-using-installbroadcast-switch-to.html).
 
 **20 september 2019: Version 4.17.10**
 
@@ -41,7 +41,7 @@ Här är versionsinformation, kända fel och snabbkorrigeringsinformation för A
 
 * Adobe Target: Alla begäranden inkluderar nu klienten och sessionId i URL-frågeparametrarna.
 * Meddelanden i appen: Korrigerade ett problem där Android-appar kraschade när ett meddelande stals med en tom klickbar-URL.
-* Tjänst för besökar-ID: API:erna `Visitor.appendToURL` och `Visitor.getUrlVariablesAsync` API:erna dubbelkodar inte längre sina returvärden.
+* Tjänst för besökar-ID: API:erna `Visitor.appendToURL` och `Visitor.getUrlVariablesAsync` dubbelkodar inte längre sina returvärden.
 
    Den dubbla kodningen gjorde att returvärdena från dessa API:er flaggerades av vissa säkerhetsgranskningar.
 
@@ -53,9 +53,10 @@ Här är versionsinformation, kända fel och snabbkorrigeringsinformation för A
 **24 maj 2019: Version 4.17.6**
 
 * besökar-ID-tjänsten -
-   `setPushIdentifier` API-anrop skickar nu asynkrona anrop till besökar-ID-tjänsten varje gång det anropas.
+   `setPushIdentifier` API-anrop skickar nu ett synkroniseringsanrop till besökar-ID-tjänsten varje gång det anropas.
 
-* Visitor ID-tjänst - Ökade anslutnings- och avläsningstiderna från 2 sekunder till 5 sekunder.
+* Tjänst för besökar-ID - Ökade anslutningen och läsningen
+timeout från 2 sekunder till 5 sekunder.
 
 
-Mer information om aktuell och tidigare versionsinformation om alla lösningar finns i [Adobe Experience Cloud versionsinformation](hhttps://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html).
+Mer information om aktuell och tidigare versionsinformation för alla lösningar finns i [Adobe Experience Cloud Release Notes](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html).

@@ -1,43 +1,39 @@
 ---
 cloud: experience-cloud
 product: mobile-services
-solution-title: Läs mer & Support
-solution-hub-url: https://helpx.adobe.com/support/experience-cloud/core-services.html
-solution-icon: help/assets/experience-cloud-logo-24.png
-getting-started-title: Komma igång
-getting-started-url: https://docs.adobe.com/content/help/en/mobile-services/using/get-started-ug/gs.html
-tutorials-title: Självstudiekurser
-tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
-git-repo: https://github.com/AdobeDocs/mobile-services.en
+solution: Experience Cloud Services
+type: Dokumentation
+git-repo: https://git.corp.adobe.com/AdobeDocs/mobile-services.sv-SE
 index: true
 translation-type: tm+mt
-source-git-commit: aad8cec624ea2dd4741d1cc3d1d76af5dba44227
+source-git-commit: c6929017a865464a98242bfa7559d174712bbb7e
+workflow-type: tm+mt
+source-wordcount: '158'
+ht-degree: 74%
 
 ---
 
 
-<!-- We need a better link for Tutorials. We can do this after we hit stage -->
-
 # Metadata för intern användning
 
-Filen metadata.md innehåller metadata på postnivå som skickas till TOC.md-filer för användarhandboken i svaret. Om du vill ändra metadata.md-innehåll för en användarhandbok gör du det i en TOC.md-fil.
+Filen metadata.md innehåller metadata på arkivnivå som skickas till användarhandbokens TOC.md-filer i arkivet. Om du vill ändra innehåll i metadata.md för någon användarhandbok gör du detta i en TOC.md-fil.
 
-| metadata | vad den gör |
+| metadata | vad gör den |
 |--- |--- |
-| solution-title | Används i artikelrubriken som länk |
-| solution-hub-url | Öppnar navet för hjälpfunktioner |
-| solution-icon | Visar lösningsikonen bredvid lösningsrubriken. Inte implementerat ännu |
-| getting-started-title | Används sällan när självstudiekurser inte är lämpliga |
-| getting-started-url | Länk till hjälpsidan Komma igång |
-| självstudiekurser-titel | Används sällan när självstudiekurser inte är lämpliga |
-| tutorials-url | Länka till videosjälvstudiekurser - antingen hjälpstudiekurser eller självstudiekurser på engelska |
-| mini-toc-nivåer | Anger antalet rubriknivåer som visas i den högra listen. standard är 2 |
-| git-repo | Anger platsen för samarbetssvaret. Använd github.com-spegeln för offentliga dokument |
+| lösning-titel | Används i artikelrubriken som en länk |
+| lösning-hubb-url | Öppnar den centrala helpx-sidan |
+| lösning-ikon | Visar lösningsikonen bredvid lösningstiteln Inte implementerat ännu |
+| getting-started-title | Används sällan när Tutorials inte är lämpligt |
+| komma-igång-url | Länk till startsidan i helpx |
+| självstudiekurser-titel | Används sällan när Tutorials inte är lämpligt |
+| självstudiekurser-url | Länk till videosjälvstudiekurser – antingen helpx-självstudiekurser eller KT-självstudiekurser |
+| mini-toc-nivåer | Anger antalet rubriknivåer som visas i det högra fältet. standard är två |
+| git-arkiv | Anger platsen för samarbetssvaret. Använd github.com-spegeln för offentliga dokument |
 | index | set index=no for soft launch |
 
 I filen TOC.md
 
-| metadata | vad den gör |
+| metadata | vad gör den |
 |--- |--- |
-| user-guide-title | Används i artikelrubriken som länk |
-| user-guide-url | Öppnar navet för hjälpfunktioner |
+| användar-handbok-titel | Används i artikelrubriken som en länk |
+| användar-handbok-url | Öppnar den centrala helpx-sidan |

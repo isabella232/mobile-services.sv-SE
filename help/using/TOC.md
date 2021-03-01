@@ -13,7 +13,7 @@ ht-degree: 9%
 ---
 
 
-# Handbok för mobiltjänster {#using}
+# Handbok för mobila tjänster {#using}
 
 + [Adobe Mobile Services](home.md)
 + [Versionsinformation](whatsnew.md)
@@ -36,7 +36,7 @@ ht-degree: 9%
       + [Ta bort ett program](manage-apps/t-delete-apps.md)
 + Hantera appinställningar {#manage-app-settings-ug}
    + [Hantera appinställningar](c-manage-app-settings/c-manage-app-settings.md)
-   + Konfigurera din app {#configuring-app}
+   + Konfigurerar din app {#configuring-app}
       + [Konfigurera din app](c-manage-app-settings/c-mob-confg-app/c-mob-confg-app.md)
       + [Konfigurera alternativ för SDK-analys](c-manage-app-settings/c-mob-confg-app/t-config-analytics/t-config-analytics.md)
       + [Ladda ned SDK och verktyg för mobiler](c-manage-app-settings/c-mob-confg-app/t-config-analytics/download-sdk.md)
@@ -85,7 +85,7 @@ ht-degree: 9%
          + [Marketing Links Builder](acquisition-main/c-marketing-links-builder/c-marketing-links-builder.md)
          + [Skapa eller redigera marknadsföringslänkar](acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/t-create-edit-adobe-links.md)
          + [Insticksannonser](acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/t-interstitials.md)
-      + Länkar för äldre värvning {#legacy-acquisition-links}
+      + Äldre värvningslänkar {#legacy-acquisition-links}
          + [Använd äldre förvärvslänkar](acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/c-use-legacy-acquisition-links/c-use-legacy-acquisition-links.md)
          + [Skapa en förvärvslänk](acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/c-use-legacy-acquisition-links/t-acquisition-link.md)
          + [Hantera förvärvslänkar](acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/c-use-legacy-acquisition-links/c-manage-acquisition-links/c-manage-acquisition-links.md)
@@ -93,7 +93,7 @@ ht-degree: 9%
          + [Importera eller exportera förvärvslänkar](acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/c-use-legacy-acquisition-links/c-manage-acquisition-links/t-acquisition-import.md)
          + [Hantera marknadsföringslänkar](acquisition-main/c-marketing-links-builder/c-manage-adobe-links.md)
          + [Skapa förvärvslänkar manuellt](acquisition-main/c-marketing-links-builder/acquisition-link-manual.md)
-+ Location {#location-ug}
++ Plats {#location-ug}
    + [Platsöversikt](location/location-overview.md)
    + [Översikt (plats)](location/c-location-overview.md)
    + [Mappa](location/c-map-points.md)
@@ -108,7 +108,7 @@ ht-degree: 9%
       + [Upplevelse: push-meddelande](in-app-messaging/t-create-push-message/c-experience-push-message.md)
       + [Schema: push-meddelande](in-app-messaging/t-create-push-message/c-schedule-push-message.md)
       + [Felsöka push-meddelanden](in-app-messaging/t-create-push-message/c-troubleshooting-push-messaging.md)
-   + In-app messages {#inapp-messages}
+   + Meddelanden i appen {#inapp-messages}
       + [Skapa ett meddelande i appen](in-app-messaging/t-in-app-message/t-in-app-message.md)
       + [Målgrupp: meddelande i appen](in-app-messaging/t-in-app-message/c-audience-in-app-message.md)
       + [Upplevelse: meddelande i appen](in-app-messaging/t-in-app-message/c-experience-in-app-message.md)

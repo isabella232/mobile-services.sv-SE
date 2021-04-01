@@ -1,12 +1,12 @@
 ---
-cloud: experience-cloud
+cloud: Experience Cloud
 product: mobile-services
 solution: Experience Cloud Services
 type: Dokumentation
 git-repo: https://git.corp.adobe.com/AdobeDocs/mobile-services.sv-SE
 index: true
 translation-type: tm+mt
-source-git-commit: c6929017a865464a98242bfa7559d174712bbb7e
+source-git-commit: a8b02c717381421799c933c0ce4f3735284c7b3c
 workflow-type: tm+mt
 source-wordcount: '158'
 ht-degree: 74%

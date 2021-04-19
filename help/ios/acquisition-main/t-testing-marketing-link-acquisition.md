@@ -1,27 +1,27 @@
 ---
 description: Följande instruktioner hjälper er att skicka en kundvärvningskampanj via en Marketing Link som baseras på ett enhets fingeravtryck.
-keywords: android;library;mobile;sdk
+keywords: android;bibliotek;mobil;sdk
 seo-description: Följande instruktioner hjälper er att skicka en kundvärvningskampanj via en Marketing Link som baseras på ett enhets fingeravtryck.
 seo-title: Testa Marketing Link-förvärv
 solution: Experience Cloud,Analytics
 title: Testa Marketing Link-förvärv
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 69503e01-182d-44c6-b0fb-e1c012ffa3bd
+exl-id: 2fb02b36-172e-4c16-9ef9-13f8288ab8a4
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '563'
 ht-degree: 0%
 
 ---
 
-
-# Testa Marketing Link-förvärv {#testing-marketing-link-acquisition}
+# Testar Marketing Link-förvärv {#testing-marketing-link-acquisition}
 
 Följande instruktioner hjälper er att skicka en kundvärvningskampanj via en Marketing Link som baseras på ett enhets fingeravtryck.
 
-1. Slutför de nödvändiga uppgifterna i [anskaffning](/help/ios/acquisition-main/acquisition.md)av mobilappar.
-1. I användargränssnittet för Adobe Mobile Services klickar du på **[!UICONTROL Marketing Links Builder]** och genererar en länk för kundvärvning som anger App Store som mål för iOS-enheter.
+1. Slutför de nödvändiga uppgifterna i [Anskaffning av mobilapp](/help/ios/acquisition-main/acquisition.md).
+1. I användargränssnittet för Adobe Mobile Services klickar du på **[!UICONTROL Marketing Links Builder]** och skapar en länk för kundvärvning som anger App Store som mål för iOS-enheter.
 
    Exempel:
 
@@ -46,10 +46,10 @@ Följande instruktioner hjälper er att skicka en kundvärvningskampanj via en M
 
    | Inställning | Värde |
    |--- |--- |
-   | förvärv | Servern bör vara `c00.adobe.com`. `appid` ska vara lika med *`appid`* er förvärvslänk. |
+   | förvärv | Servern ska vara `c00.adobe.com`. `appid` ska vara lika med   *`appid`* er förvärvslänk. |
    | analys | `referrerTimeout` ska ha ett värde som är större än 0. |
 
-1. (Villkorligt) Om SSL-inställningen i appens konfigurationsfil är `false`ska du uppdatera din hämtningslänk så att HTTP-protokollet används i stället för HTTPS.
+1. (Villkorligt) Om SSL-inställningen i appens konfigurationsfil är `false`, ska du uppdatera din förvärvslänk så att den använder HTTP-protokollet i stället för HTTPS.
 1. Klicka på den genererade länken från den mobila enhet som du vill installera appen på.
 
    Adobe-servrar (`c00.adobe.com`) lagrar fingeravtrycket och omdirigerar till App Store. Appen behöver inte laddas ned för testning.
@@ -77,15 +77,15 @@ Följande instruktioner hjälper er att skicka en kundvärvningskampanj via en M
 
    * `Analytics - Unable to parse acquisition service response (no contextData parameter in response)`
 
-      Det finns ingen `contextData` parameter i svaret.
+      Det finns ingen `contextData`-parameter i svaret.
 
    * `Analytics - Acquisition referrer data was not complete, ignoring`
 
-      `a.referrer.campaign.name` ingår inte i `contextData`.
+      `a.referrer.campaign.name` ingår inte i  `contextData`.
 
    * `Analytics - Acquisition referrer timed out`
 
-      Det gick inte att hämta svaret inom den tid som definieras av `referrerTimeout`. Öka värdet och försök igen. Du bör också kontrollera att du har öppnat förvärvningslänken innan du installerar appen och att du använder samma nätverk när du klickar på URL:en och öppnar appen.
+      Det gick inte att hämta svaret i den tid som är definierad av `referrerTimeout`. Öka värdet och försök igen. Du bör också kontrollera att du har öppnat förvärvningslänken innan du installerar appen och att du använder samma nätverk när du klickar på URL:en och öppnar appen.
 
 Kom ihåg följande information:
 
@@ -95,11 +95,11 @@ Kom ihåg följande information:
 
 * Med HTTP-övervakningsverktyg kan träffar som skickas från appen övervakas för att bekräfta förvärvsattribueringen.
 
-   Du bör se en `/v3/<appid>/start` begäran och en `/v3/<appid>/end` begäran som skickas till förvärvsservern.
+   Du bör se en `/v3/<appid>/start`-begäran och en `/v3/<appid>/end`-begäran som skickas till förvärvsservern.
 
 * Variationer i användaragenten som skickas kan göra att attribueringen misslyckas.
 
-   Se till att `https://c00.adobe.com/v3/<appid>/start` och `https://c00.adobe.com/v3/<appid>/end` ha samma användaragentvärden.
+   Se till att `https://c00.adobe.com/v3/<appid>/start` och `https://c00.adobe.com/v3/<appid>/end` har samma användaragentvärden.
 
 * Förvärvningslänken och träffen från SDK bör använda samma HTTP/HTTPS-protokoll.
 

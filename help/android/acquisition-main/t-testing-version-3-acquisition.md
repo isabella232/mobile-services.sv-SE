@@ -1,22 +1,22 @@
 ---
 description: Den här informationen hjälper dig att skicka en länk till en kampanj för version 3 på en Android-enhet.
-keywords: android;library;mobile;sdk
+keywords: android;bibliotek;mobil;sdk
 seo-description: Den här informationen hjälper dig att skicka en länk till en kampanj för version 3 på en Android-enhet.
 seo-title: Testa version 3 - förvärv
 solution: Experience Cloud,Analytics
 title: Testa version 3 - förvärv
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 5e38b43d-389e-4412-99e5-3e6223b6ad28
+exl-id: 2ce78e2e-da51-4af8-a461-ec6c642a7854
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '819'
 ht-degree: 1%
 
 ---
 
-
-# Testar förvärvet av V3 {#testing-version-acquisition}
+# Testar V3-förvärv {#testing-version-acquisition}
 
 Den här informationen hjälper dig att skicka en länk till en kampanj för version 3 på en Android-enhet.
 
@@ -30,9 +30,9 @@ Om mobilappen inte finns i Google Play kan du välja vilken mobilapp som helst s
 >
 >Om du implementerar med Google Play Install Reference API:er kan du inte testa förvärvet innan appen finns i Google Play.
 
-Appen måste vara nyligen installerad eller ha data rensade i **[!UICONTROL Settings]** varje gång ett test körs. Detta garanterar att de inledande livscykelvärdena som är kopplade till parametrarna för kampanjfrågesträngen skickas när appen startas första gången.
+Appen måste vara nyligen installerad, eller ha data rensade i **[!UICONTROL Settings]**, varje gång ett test körs. Detta garanterar att de inledande livscykelvärdena som är kopplade till parametrarna för kampanjfrågesträngen skickas när appen startas första gången.
 
-1. Slutför de nödvändiga uppgifterna i [förvärvet](/help/android/acquisition-main/acquisition.md) av mobilappar och se till att du har implementerat sändningsmottagaren korrekt för `INSTALL_REFERRER`.
+1. Slutför de nödvändiga uppgifterna i [Anskaffning av mobilapp](/help/android/acquisition-main/acquisition.md) och kontrollera att du har implementerat sändningsmottagaren korrekt för `INSTALL_REFERRER`.
 
 1. I användargränssnittet för Adobe Mobile Services klickar du på **[!UICONTROL Acquisition]** > **[!UICONTROL Marketing Links Builder]** och skapar en URL för Acquisition Marketing Link som anger Google Play som mål för Android-enheter.
 
@@ -51,7 +51,7 @@ Appen måste vara nyligen installerad eller ha data rensade i **[!UICONTROL Sett
 
 1. Kopiera det unika ID:t efter `utm_content%3D`.
 
-   I föregående exempel är ID:t `91b52ce097b1464b9b47cb2995c493cc6ab2c3a3`.
+   I föregående exempel är ID `91b52ce097b1464b9b47cb2995c493cc6ab2c3a3`.
 
 1. Skapa länken för kundvärvningen genom att använda det unika ID:t från steg 3 med följande format:
 
@@ -71,19 +71,19 @@ Appen måste vara nyligen installerad eller ha data rensade i **[!UICONTROL Sett
 
    | Inställning | Värde |
    |--- |--- |
-   | förvärv | Servern bör vara `c00.adobe.com`.   *`appid`*  ska vara lika med `appid` er förvärvslänk. |
+   | förvärv | Servern ska vara `c00.adobe.com`.   *`appid`*  ska vara lika med  `appid`  er förvärvslänk. |
    | analys | För testningsändamål ställer du in att referenspunktens tidsgräns ska tillåta tillräckligt med tid (60 sekunder eller mer) för att skicka sändningen manuellt. Du kan återställa den ursprungliga timeout-inställningen efter testningen. |
 
 1. Anslut enheten till en dator, avinstallera och installera programmet igen.
 1. Starta ADB Shell och starta programmet på enheten.
-1. Skicka en sändning med följande `adb` kommando:
+1. Skicka en sändning med följande `adb`-kommando:
 
    `am broadcast -a com.android.vending.INSTALL_REFERRER -n com.adobe.android/com.adobe.android.YourBroadcastReceiver --es "referrer" "utm_source=adb_acq_v3&utm_campaign=adb_acq_v3&utm_content=<unique id get on step 5>"`
 
 1. Utför följande steg:
    1. Ersätt `com.adobe.android` med programmets paketnamn.
    1. Uppdatera mottagarreferensen med den för var kampanjspårningsmottagaren finns i din app
-   1. Ersätt värden som är kopplade till `utm_content`.
+   1. Ersätt värden som är associerade med `utm_content`.
 
    Om sändningen lyckas kan du förvänta dig ett svar som liknar följande exempel:
 
@@ -103,28 +103,28 @@ Följande tabell innehåller ytterligare information om möjliga fel:
 
 | Fel | Beskrivning |
 |--- |--- |
-| Analys - Det går inte att avkoda svar(*String*). | Svaret har fel format. |
+| Analys - Det går inte att avkoda svar (*String*). | Svaret har fel format. |
 | Analys - Det går inte att analysera svaret (*ett JSON-svar*). | JSON-strängen har fel format. |
 | Analys - Det går inte att parsa ett svar på en förvärvstjänst (ingen contextData-parameter i svaret). | Det finns ingen contextData-parameter i svaret. |
 | Analys - Referensdata för värvning var inte fullständiga (inga `a.referrer.campaign.name` i kontextdata), ignoreras. | `a.referrer.campaign.name`  ingår inte i contextData. |
-| Analys - Anskaffningsreferenten nådde tidsgränsen. | Det gick inte att hämta svaret inom den tid som definierats av `referrerTimeout`. Öka värdet och försök igen.  Du bör även kontrollera att du har öppnat förvärvningslänken innan du installerar appen. |
+| Analys - Anskaffningsreferenten nådde tidsgränsen. | Det gick inte att hämta svaret inom den tid som är definierad av `referrerTimeout`. Öka värdet och försök igen.  Du bör även kontrollera att du har öppnat förvärvningslänken innan du installerar appen. |
 
 Kom ihåg följande information:
 
 * Hits som skickas från appen kan övervakas med HTTP-övervakningsverktyg för att verifiera förvärvsattribueringen.
-* Mer information om hur du sänder `INSTALL_REFERRER`finns i [Testa Google Play Campaign Measurement](https://developers.google.com/analytics/solutions/testing-play-campaigns) i handboken för Google Developers.
+* Mer information om hur du sänder `INSTALL_REFERRER` finns i [Testa Google Play Campaign Measurement](https://developers.google.com/analytics/solutions/testing-play-campaigns) i handboken för Google Developers.
 
 * En felkorrigering släpptes för förvärv på Android 4.8.2.
 
    Uppgradera SDK till den senaste versionen innan du testar.
 
-* Du kan använda det medföljande Java-verktyget för att få tillgång till det unika ID:t och den sändande installationsreferenten, som i sin tur hjälper dig att få information i steg 3 till 12. `acquisitionTest.jar`
+* Du kan använda det medföljande Java-verktyget `acquisitionTest.jar` för att få det unika ID:t och den sändande installationsreferenten, som i sin tur hjälper dig att få fram informationen i steg 3 till 12.
 
    **Installera Java-verktyget**
 
 Så här installerar du Java-verktyget:
 
-1. Ladda ned [`acquisitionTester.zip`](/help/android/assets/acquisitionTester.zip) filen.
+1. Hämta filen [`acquisitionTester.zip`](/help/android/assets/acquisitionTester.zip).
 
 1. Extrahera .jar-filen.
 

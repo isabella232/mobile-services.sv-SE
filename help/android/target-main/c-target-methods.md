@@ -1,20 +1,20 @@
 ---
 description: Här är en lista över Adobe Target-metoder som finns i Android-biblioteket.
-keywords: android;library;mobile;sdk
+keywords: android;bibliotek;mobil;sdk
 seo-description: Här är en lista över Adobe Target-metoder som finns i Android-biblioteket.
 seo-title: Målmetoder för Android
 solution: Experience Cloud,Analytics
 title: Målmetoder för Android
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 8e9808b2-ba80-4646-ba05-8e62d4fde065
+exl-id: 0c7a6718-d078-4a2b-a2c9-d5cd50263939
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '603'
+source-wordcount: '607'
 ht-degree: 23%
 
 ---
-
 
 # Målmetoder för Android{#target-methods}
 
@@ -24,7 +24,7 @@ SDK har för närvarande stöd för flera Adobe Experience Cloud-lösningar, ink
 
 >[!TIP]
 >
->[Livscykelvärden](/help/android/metrics.md) skickas som parametrar till varje mbox-inläsning.
+>[Livscykelmetrisk ](/help/android/metrics.md) skickas som parametrar till varje mbox-inläsning.
 
 ## Klassreferens: TargetLocationRequest {#section_A8CC898922164E819EC730DC92A6742B}
 
@@ -56,10 +56,10 @@ public static final String TARGET_PARAMETER_MBOX_HOST           = "mboxHost";
 
 >[!IMPORTANT]
 >
->* Om du använder SDK:er **före** version 4.14.0 finns mer information om parameterbegränsningar i [https://developers.adobetarget.com/api/#input-parameters](https://developers.adobetarget.com/api/#input-parameters) .
+>* Om du använder SDK:er **före** version 4.14.0, se [https://developers.adobetarget.com/api/#input-parameters](https://developers.adobetarget.com/api/#input-parameters) för parameterbegränsningar.
    >
    >
-* Om du använder SDK:er version 4.14.0 **eller senare**, se [https://developers.adobetarget.com/api/#batch-input-parameters](https://developers.adobetarget.com/api/#batch-input-parameters) för parameterbegränsningar.
+* Om du använder SDK:er version 4.14.0 **eller senare** läser du [https://developers.adobetarget.com/api/#batch-input-parameters](https://developers.adobetarget.com/api/#batch-input-parameters) för parameterbegränsningar.
 
 
 * **loadRequest**
@@ -125,37 +125,37 @@ public static final String TARGET_PARAMETER_MBOX_HOST           = "mboxHost";
 
          Namnet på målrutan/målplatsen som du vill hämta.
 
-         * **Typ:** Sträng
+         * **text:** String
       * **defaultContent**
 
          Värdet returneras i återanropet om målservern inte kan nås eller om användaren inte är berättigad till kampanjen.
 
-         * **Typ:** Sträng
+         * **text:** String
       * **profileParameters**
 
          Värden i den här ordlistan placeras i objektet &quot;profileParameters&quot; i begäran till Target.
 
-         * **Typ:** Karta `<String, Object>`
+         * **text:** Karta  `<String, Object>`
       * **orderParameters**
 
          Värden i den här ordlistan placeras i objektet &quot;order&quot; i begäran till Target.
 
-         * **Typ:** Karta `<String, Object>`
+         * **text:** Karta  `<String, Object>`
       * **mboxParameters**
 
          Värden i den här ordlistan skickas i begäran till Target.
 
-         * **Typ:** Karta `<String, Object>`
+         * **text:** Karta  `<String, Object>`
       * **requestLocationParameters**
 
          Värden i den här ordlistan placeras i objektet &quot;requestLocation&quot; i begäran till Target.
 
-         * **Typ:** Karta `<String, Object>`
+         * **text:** Karta  `<String, Object>`
       * **callback**
 
          Den här metoden anropas med innehållet i erbjudandet från målservern. Om målservern inte kan nås eller om användaren inte är berättigad till kampanjen returneras defaultContent.
 
-         * **Typ:** TargetCallback `<String>`
+         * **Typ:** TargetCallback  `<String>`
    * Här är exempelkoden för den här metoden:
 
       ```java
@@ -172,7 +172,7 @@ public static final String TARGET_PARAMETER_MBOX_HOST           = "mboxHost";
       });
       ```
 
-      Mer information om det underliggande mål-API:t finns i [Leverans](https://docs.adobe.com/dev/products/target/reference/delivery.html) i hjälpen för målutvecklare.
+      Mer information om det underliggande mål-API:t finns i [Delivery](https://docs.adobe.com/dev/products/target/reference/delivery.html) i hjälpen för målutvecklare.
 
 
 

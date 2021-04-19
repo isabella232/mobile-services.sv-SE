@@ -4,16 +4,16 @@ seo-description: Ett exempel på variabeln products med Merchandising eVars och 
 seo-title: Produkterna kan variera med Merchandising eVars och produktspecifika event
 solution: Experience Cloud,Analytics
 title: Produkterna kan variera med Merchandising eVars och produktspecifika event
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 94e882e4-b19d-4c48-9dfb-331465490347
+exl-id: 3a90f624-da13-4c26-9e4c-3a4af33bc5ee
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '86'
 ht-degree: 0%
 
 ---
-
 
 # Produktvariabel med eVars för försäljning och produktspecifika händelser{#products-variable-with-merchandising-evars-and-product-specific-events}
 
@@ -40,5 +40,4 @@ ADB.Analytics.trackState("Order Confirmation", cdata);
 
 >[!TIP]
 >
->Om du utlöser en produktspecifik händelse med hjälp av *`&&products`* variabeln måste du även ange den händelsen i *`&&events`* variabeln, annars filtreras händelsen bort under bearbetningen.
-
+>Om du utlöser en produktspecifik händelse med variabeln *`&&products`* måste du även ange den händelsen i variabeln *`&&events`*, annars filtreras händelsen bort under bearbetningen.

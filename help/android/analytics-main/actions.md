@@ -4,28 +4,28 @@ seo-description: Åtgärder är de händelser som inträffar i Android-appen och
 seo-title: Spåra appåtgärder
 solution: Experience Cloud,Analytics
 title: Spåra appåtgärder
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: fe01c1df-f6bb-4b32-b3ef-959d2c724af6
+exl-id: 495a6aa8-781d-4499-ad46-e19d57cccf40
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '361'
 ht-degree: 1%
 
 ---
 
-
-# Track app actions {#track-app-actions}
+# Spåra appåtgärder {#track-app-actions}
 
 Åtgärder är de händelser som inträffar i Android-appen och som du vill mäta.
 
-Varje åtgärd har en eller flera motsvarande mätvärden som ökas stegvis varje gång händelsen inträffar. Du kan till exempel skicka ett `trackAction` samtal för varje ny prenumeration varje gång en artikel visas eller varje gång en nivå är slutförd. Åtgärder spåras inte automatiskt, så du måste anropa `trackAction` när en händelse som du vill spåra inträffar och mappa åtgärden till en anpassad händelse.
+Varje åtgärd har en eller flera motsvarande mätvärden som ökas stegvis varje gång händelsen inträffar. Du kan till exempel skicka ett `trackAction`-samtal för varje ny prenumeration varje gång en artikel visas eller varje gång en nivå har slutförts. Åtgärder spåras inte automatiskt, så du måste anropa `trackAction` när en händelse som du vill spåra inträffar och mappa åtgärden till en anpassad händelse.
 
-## Spåra åtgärder {#section_380DF56C4EE4432A823940E4AE4C9E91}
+## Spårningsåtgärder {#section_380DF56C4EE4432A823940E4AE4C9E91}
 
 1. Lägg till biblioteket i ditt projekt och implementera livscykeln.
 
-   Mer information finns i *Lägga till SDK- och konfigurationsfilen i IntelliJ IDEA- eller Eclipse-projektet* i [Core-implementering och livscykel](/help/android/getting-started/dev-qs.md).
+   Mer information finns i *Lägg till SDK- och konfigurationsfilen i IntelliJ IDEA- eller Eclipse-projektet* i [Core-implementering och livscykel](/help/android/getting-started/dev-qs.md).
 
 1. Importera biblioteket:
 
@@ -33,20 +33,20 @@ Varje åtgärd har en eller flera motsvarande mätvärden som ökas stegvis varj
    import com.adobe.mobile.*;
    ```
 
-1. När den åtgärd som du vill spåra inträffar i appen ska du ringa `trackAction` för att skicka en träff för den här åtgärden:
+1. När den åtgärd som du vill spåra inträffar i appen ringer du `trackAction` för att skicka en träff för den här åtgärden:
 
    ```java
    Analytics.trackAction("myapp.ActionName", null);
    ```
 
 1. I användargränssnittet för Adobe Mobile Services väljer du din app och klickar på **[!UICONTROL Manage App Settings]**.
-1. Klicka på **[!UICONTROL Manage Variables and Metrics]** och klicka på **[!UICONTROL Custom Metrics]** fliken.
+1. Klicka på **[!UICONTROL Manage Variables and Metrics]** och klicka på fliken **[!UICONTROL Custom Metrics]**.
 
 1. Mappa kontextdatanamnet som definieras i koden, till exempel `myapp.ActionName`, till en anpassad händelse.
 
    ![](assets/map-event-context-data.png)
 
-Du kan också ange att en prop ska innehålla alla åtgärdsvärden genom att mappa en anpassad prop med ett namn som **[!UICONTROL Custom Actions]** och ange värdet som `a.action`.
+Du kan också ange att en prop ska innehålla alla åtgärdsvärden genom att mappa en anpassad prop med namnet **[!UICONTROL Custom Actions]** och ange värdet `a.action`.
 
 ![](assets/map-custom-prop.png)
 
@@ -68,7 +68,6 @@ Kontextdatavärden måste mappas till anpassade variabler i Adobe Mobile-tjänst
 
 | Gränssnitt | Rapport |
 |--- |--- |
-| Adobe Mobile Services | **[!UICONTROL Action Paths]** rapport.  Visa den ordning i vilken åtgärder utförs i appen. Du kan också klicka **[!UICONTROL Customize]** på en rapport om du vill visa åtgärder som rangordnats, trendats eller i en detaljrapport, eller använda ett filter om du vill visa åtgärder för ett visst segment. |
+| Adobe Mobile Services | **[!UICONTROL Action Paths]** rapport.  Visa den ordning i vilken åtgärder utförs i appen. Du kan också klicka på **[!UICONTROL Customize]** i en rapport om du vill visa åtgärder som rangordnats, trendats eller i en detaljrapport, eller använda ett filter om du vill visa åtgärder för ett visst segment. |
 | Marknadsföringsrapporter och analyser | **[!UICONTROL Custom Event]** rapport.  När en åtgärd har mappats till en anpassad händelse kan du visa mobilhändelser som liknar alla andra Analytics-händelser. |
 | Ad hoc-analys | **[!UICONTROL Custom Event]** rapport.  När en åtgärd har mappats till en anpassad händelse kan du visa mobilhändelser som liknar alla andra Analytics-händelser. |
-

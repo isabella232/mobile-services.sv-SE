@@ -1,32 +1,34 @@
 ---
 description: Du kan skapa appbutikslänkar som gör att du kan hämta program direkt från Apple App Store och Google Play. Med de länkar du skapar kan du attribuera dina lyckade händelser till hämtningarna.
-keywords: mobile
+keywords: mobil
 seo-description: Du kan skapa appbutikslänkar som gör att du kan hämta program direkt från Apple App Store och Google Play. Med de länkar du skapar kan du attribuera dina lyckade händelser till hämtningarna.
 seo-title: Skapa en förvärvslänk
 solution: Experience Cloud,Analytics
 title: Skapa en förvärvslänk
-topic: Metrics
+topic-fix: Metrics
 uuid: bb603013-fca9-44a2-820a-59e1c85d9444
+exl-id: bc351d1e-c7da-4418-ac5a-9e5f989dd566
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '451'
 ht-degree: 0%
 
 ---
-
 
 # Skapa en förvärvslänk{#create-an-acquisition-link}
 
 Du kan skapa appbutikslänkar som gör att du kan hämta program direkt från Apple App Store och Google Play. Med de länkar du skapar kan du attribuera dina lyckade händelser till hämtningarna.
 
 1. Klicka på **[!UICONTROL Acquisition]** > **[!UICONTROL Manage Acquisition Links]** > **[!UICONTROL Create New]**.
-1. Skriv följande information i **[!UICONTROL Link Information]** avsnittet:
+1. Skriv följande information i avsnittet **[!UICONTROL Link Information]**:
 
-   * (**Obligatoriskt**) **[!UICONTROL Name]** Ange ett beskrivande namn för App Link.
+   * (**Obligatorisk**) **[!UICONTROL Name]**
+Ange ett beskrivande namn för App Link.
    * **[!UICONTROL Tracking Code]**
-Ange önskad spårningskod eller klicka **[!UICONTROL Generate]** för att skapa en ny spårningskod.
-   * (**Obligatoriskt**) **[!UICONTROL Source]** Ange den ursprungliga referenten, till exempel&quot;nyhetsbrev&quot; eller&quot;hemsida&quot;.
+Ange önskad spårningskod eller klicka  **[!UICONTROL Generate]** för att skapa en ny spårningskod.
+   * (**Obligatorisk**) **[!UICONTROL Source]**
+Ange den ursprungliga referenten, till exempel&quot;nyhetsbrev&quot; eller&quot;hemsida&quot;.
    * **[!UICONTROL Medium]**
 Ange marknadsföringsmediet, till exempel&quot;banner&quot; eller&quot;email&quot;.
    * **[!UICONTROL Content]**
@@ -37,7 +39,7 @@ Ange betalda villkor eller andra sökvillkor för annonsen.
    >
    >Värdena i fälten ovan kan inte ändras efter att förvärvningslänken har skapats.
 
-1. Skriv information i fälten i **[!UICONTROL Add App Store Link]** avsnittet.
+1. Skriv information i fälten i avsnittet **[!UICONTROL Add App Store Link]**.
 
    * **[!UICONTROL App Store]**
 
@@ -63,7 +65,7 @@ Ange betalda villkor eller andra sökvillkor för annonsen.
 
       * Om du inte känner till program-ID:t i Apple App Store kan du söka efter appen efter dess namn.
 
-         Du kan begränsa sökningen genom att välja en valfri region i **[!UICONTROL In Region]** listrutan.
+         Du kan begränsa sökningen genom att välja en valfri region i listrutan **[!UICONTROL In Region]**.
 
       * Om du inte känner till paketnamnet för Google Play kan du söka efter appnamnet med dess namn.
    * **[!UICONTROL App ID (Apple App Store only)]**
@@ -76,9 +78,9 @@ Ange betalda villkor eller andra sökvillkor för annonsen.
 
 
 
-1. Om du vill spara konfigurationen och generera länken klickar du på **[!UICONTROL Add]** > **[!UICONTROL Save]**.
+1. Klicka på **[!UICONTROL Add]** > **[!UICONTROL Save]** om du vill spara konfigurationen och skapa länken.
 
-   Den nyligen skapade länken visas i **[!UICONTROL App Store Links]** avsnittet.
+   Den nyligen skapade länken visas i avsnittet **[!UICONTROL App Store Links]**.
 
    ![butikslänk](assets/apps_store_links.png)
 

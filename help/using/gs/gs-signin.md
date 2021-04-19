@@ -1,20 +1,20 @@
 ---
 description: Du kan logga in på Adobe Mobile Services med en webbläsare.
-keywords: mobile;change password;log in;log out;login;logout;sign in;signin
+keywords: mobil;ändra lösenord;logga in;logga ut;logga ut;logga ut;logga in;logga in;logga in
 seo-description: Du kan logga in på Adobe Mobile Services med en webbläsare.
 seo-title: Loggar in
 solution: Experience Cloud,Analytics
 title: Loggar in
-topic: Metrics
+topic-fix: Metrics
 uuid: d6ea0ca1-3511-4133-9d41-21ea2d2f7b3a
+exl-id: 12b447bd-f53b-43b4-b333-6b805f42fb75
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '314'
+source-wordcount: '326'
 ht-degree: 3%
 
 ---
-
 
 # Loggar in {#signing-in}
 
@@ -31,7 +31,7 @@ Så här loggar du in på användargränssnittet för Adobe Mobile Services med 
 1. I en webbläsare skriver du [https://mobilemarketing.adobe.com](https://mobilemarketing.adobe.com).
 1. Klicka på **[!UICONTROL Sign in with your Adobe ID]**.
 1. Skriv din e-postadress.
-1. Klicka **[!UICONTROL Choose an account for]** i **[!UICONTROL Adobe ID]**.
+1. Klicka på **[!UICONTROL Adobe ID]** i **[!UICONTROL Choose an account for]**.
 
 1. Skriv ditt lösenord.
 1. Klicka på **[!UICONTROL Sign in]**.
@@ -44,13 +44,13 @@ Så här loggar du in på användargränssnittet för Adobe Mobile Services med 
 1. I en webbläsare skriver du [https://mobilemarketing.adobe.com](https://mobilemarketing.adobe.com)
 1. Klicka på **[!UICONTROL Sign in with your Adobe ID]**.
 1. Skriv din e-postadress.
-1. Klicka **[!UICONTROL Choose an account for]** i **[!UICONTROL Enterprise ID]**.
+1. Klicka på **[!UICONTROL Enterprise ID]** i **[!UICONTROL Choose an account for]**.
 
 1. Du omdirigeras till inloggningssidan för Enterprise.
 
    >[!IMPORTANT]
    >
-   >Om du klickar på **[!UICONTROL Facebook]** eller **[!UICONTROL Google]** vill logga in måste e-postadressen för ditt Facebook- och Google-konto matcha e-postadressen för Adobe ID- eller Enterprise ID-kontot som har åtkomst till Adobe Analytics. Om dina inloggningsuppgifter för Facebook eller Google inte överensstämmer med din e-postadress för Adobe eller Enterprise ID kontaktar du administratören.
+   >Om du klickar på **[!UICONTROL Facebook]** eller **[!UICONTROL Google]** för att logga in måste e-postadressen för ditt Facebook- och Google-konto matcha e-postadressen för Adobe ID- eller Enterprise ID-kontot som har åtkomst till Adobe Analytics. Om dina inloggningsuppgifter för Facebook eller Google inte överensstämmer med din e-postadress för Adobe eller Enterprise ID kontaktar du administratören.
 
 ### Analys-ID
 
@@ -65,14 +65,14 @@ Så här loggar du in på användargränssnittet för Adobe Mobile Services med 
 
 Återställ lösenordet på något av följande sätt:
 
-* **Adobe Experience Cloud** Om du använder din Adobe ID:
+* **Adobe Experience** CloudOm du använder din Adobe ID:
 
-   1. Klicka på **[!UICONTROL Sign in with Adobe ID]** och klicka på **[!UICONTROL Forgot password?]** länken.
+   1. Klicka på **[!UICONTROL Sign in with Adobe ID]** och klicka på länken **[!UICONTROL Forgot password?]**.
    1. Skriv e-postkontot som är kopplat till din Adobe ID och klicka på **[!UICONTROL Send]**.
    1. Följ instruktionerna för att återställa lösenordet i det e-postmeddelande du får.
 
-* **Adobe Analytics** Om du använder ditt företag, ditt användarnamn och lösenord:
+* **Adobe** AnalyticsOm du använder ditt företag, ditt användarnamn och lösenord:
 
-   1. Klicka på **[!UICONTROL Forget Password?]** länken.
+   1. Klicka på länken **[!UICONTROL Forget Password?]**.
    1. Skriv ditt företagsnamn, ditt användarnamn och klicka på **[!UICONTROL Continue]**.
    1. Följ instruktionerna i det e-postmeddelande som du får.

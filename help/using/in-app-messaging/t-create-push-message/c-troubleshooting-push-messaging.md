@@ -1,20 +1,20 @@
 ---
 description: Den här informationen kan hjälpa dig att felsöka push-meddelanden.
-keywords: mobile
+keywords: mobil
 seo-description: Den här informationen kan hjälpa dig att felsöka push-meddelanden.
 seo-title: Felsökning av push-meddelanden
 solution: Experience Cloud,Analytics
 title: Felsökning av push-meddelanden
-topic: Metrics
+topic-fix: Metrics
 uuid: c7be4ab7-0cfe-4296-84a8-01412f4fd93f
+exl-id: 56feb8e1-e196-4b70-8240-6e41581ca602
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '729'
+source-wordcount: '730'
 ht-degree: 0%
 
 ---
-
 
 # Felsöka push-meddelanden{#troubleshooting-push-messaging}
 
@@ -32,7 +32,7 @@ Följande typer av fördröjningar kan associeras med push-meddelanden för mobi
 
 * **Väntar på push-tjänsten**
 
-   Push-tjänsten (APNS eller GCM) kanske inte skickar ut meddelandet omedelbart. Även om det är ovanligt har det förekommit väntetider på upp till 5-10 minuter. Du kan verifiera att push-meddelandet har skickats till push-tjänsten genom att titta i **[!UICONTROL Report]** vyn över push-meddelandet, hitta meddelandet i **[!UICONTROL Message History]** tabellen och titta på **[!UICONTROL Published]** antalet.
+   Push-tjänsten (APNS eller GCM) kanske inte skickar ut meddelandet omedelbart. Även om det är ovanligt har det förekommit väntetider på upp till 5-10 minuter. Du kan verifiera att push-meddelandet har skickats till push-tjänsten genom att titta i vyn **[!UICONTROL Report]** i push-meddelandet, hitta meddelandet i tabellen **[!UICONTROL Message History]** och titta på antalet **[!UICONTROL Published]**.
 
    >[!TIP]
    >
@@ -41,7 +41,7 @@ Följande typer av fördröjningar kan associeras med push-meddelanden för mobi
    Mer information om tillförlitligheten i tjänsten finns i:
 
    * [Tjänstekvalitet](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW5l)
-   * [Ett meddelandes](https://developers.google.com/cloud-messaging/concept-options#lifetime)livstid.
+   * [Ett meddelandes](https://developers.google.com/cloud-messaging/concept-options#lifetime) livstid.
 
 ## Varför är min Android GCM API-nyckel ogiltig?
 
@@ -73,7 +73,7 @@ Följande typer av fördröjningar kan associeras med push-meddelanden för mobi
    canonical_ids":0,"results":[{"error":"InvalidRegistration"}]}
    ```
 
-   Du kan också kontrollera giltigheten för en registreringstoken genom att ersätta `"ABC"` den med token.
+   Du kan också kontrollera giltigheten för en registreringstoken genom att ersätta `"ABC"` med token.
 
 ## Varför fungerar inte mitt APNS-certifikat?
 
@@ -81,7 +81,7 @@ Ditt APNS-certifikat kan vara ogiltigt av följande orsaker:
 
 * Du kanske använder ett sandlådecertifikat i stället för produktionscertifikatet.
 * Du använder ett nytt produktions-/sandlådecertifikat som inte stöds.
-* Du använder `.p8` fil i stället för en `.p12` fil.
+* Du använder `.p8`-filen i stället för en `.p12`-fil.
 
 ## Åtgärdar fel i push-meddelanden
 
@@ -100,10 +100,10 @@ Följande kund har två iOS-appar:
    * RSID: Photoshop_iOS_app_LA
    * VRSID-definitionssegment: `a.os contains “iOS”`
 
-Om en Photoshop-anställd i det här exemplet skickar en push till *Photoshop_iOS_app_SF* -appen får alla användare av *Photoshop_iOS_app_SF-appen* ett push-meddelande som förväntat. Men om medarbetaren skickar ett meddelande till *Photoshop_iOS_app_LA* -appen eftersom dess VRSID-definitionssegment är felaktigt (i stället`iOS` för `a.os contains "PhotoShop_iOS_app_LA"`) skickas meddelandet till **alla** iOS-användare i *AllAdobe Photoshop_apps*. Meddelandet skickas fortfarande till *Photoshop_iOS_app_LA* -användare, men meddelandet blocklist även push-ID:n för *Photoshop_iOS_app_SF* -användare eftersom *Photoshop_iOS_app_SF* -appen har ett annat certifikat. Om segmentet hade definierats som `a.os contains “PhotoShop_iOS_app_LA”`skulle push-meddelandet ha skickats till endast *Photoshop_iOS_app_LA* -användare.
+I det här exemplet får alla användare av *Photoshop_iOS_app_SF*_iOS_app_SF *push-meddelandet som förväntat om en Photoshop-anställd skickar en push-åtgärd till* appen Photoshop_iOS_app_SF. Men om medarbetaren skickar ett meddelande till *Photoshop_iOS_app_LA*-appen eftersom dess VRSID-definitionssegment är felaktigt (`iOS` i stället för `a.os contains "PhotoShop_iOS_app_LA"`) skickas meddelandet till **alla** iOS-användare i *AllaAdobe Photoshop_appar*. Meddelandet skickas fortfarande till *Photoshop_iOS_app_LA*-användare, men meddelandet blocklist även push-ID:n för *Photoshop_iOS_app_SF*-användare eftersom *Photoshop_iOS_app_SF*-appen har ett annat certifikat. Om segmentet hade definierats som `a.os contains “PhotoShop_iOS_app_LA”` skulle push-meddelandet bara ha skickats till *Photoshop_iOS_app_LA*-användare.
 
-Om det skickas med push-certifikatet *Photoshop_IOS_app_LA* återställs push-identifierarna för *Photoshop_iOS_app_SF* som `invalid`.
+Om det skickas med *Photoshop_IOS_app_LA*-push-certifikatet återgår push-identifierarna för *Photoshop_iOS_app_SF* som `invalid`.
 
 >[!CAUTION]
 >
->När du har skapat ett push-meddelande för en app som använder ett VRS-system och klickat **[!UICONTROL Save & Send]** visas en varning som påminner dig om att varje app som visas **måste** ha ett giltigt certifikat. Om varje program **inte** har ett giltigt certifikat kan målgruppssegmenten vara oändligt blocklist och du kanske inte kan skicka fler push-meddelanden till de berörda användarna. Mer information om målgruppssegment finns i [Målgrupp: definiera och konfigurera målgruppsalternativ för push-meddelanden](/help/using/in-app-messaging/t-create-push-message/c-audience-push-message.md).
+>När du har skapat ett push-meddelande för ett program som använder ett VRS-system och klickat på **[!UICONTROL Save & Send]** visas en varning som påminner dig om att alla program som listas **måste** har ett giltigt certifikat. Om varje program **inte** har ett giltigt certifikat kan målgruppssegmenten vara oändligt blocklist och du kanske inte kan skicka push-meddelanden till de berörda användarna i framtiden. Mer information om målgruppssegment finns i [Målgrupp: definiera och konfigurera målgruppsalternativ för push-meddelanden](/help/using/in-app-messaging/t-create-push-message/c-audience-push-message.md).

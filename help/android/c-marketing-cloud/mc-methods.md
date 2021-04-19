@@ -1,22 +1,22 @@
 ---
 description: Här är Experience Cloud ID-metoderna som tillhandahålls av Android-biblioteket.
-keywords: android;library;mobile;sdk
+keywords: android;bibliotek;mobil;sdk
 seo-description: Här är Experience Cloud ID-metoderna som tillhandahålls av Android-biblioteket.
 seo-title: Adobe Experience Platform Identity Service-metoder
 solution: Experience Cloud,Analytics
 title: Adobe Experience Platform Identity Service-metoder
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: c5107a7e-273b-4f71-8738-4c603479b24c
+exl-id: 8eb98c3f-c6ef-4593-ad3a-f566f4d4b6a2
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '453'
 ht-degree: 23%
 
 ---
 
-
-# Adobe Experience Platform Identity Service methods{#experience-cloud-id-service-methods}
+# Adobe Experience Platform Identity Service-metoder{#experience-cloud-id-service-methods}
 
 Här är Experience Cloud ID-metoderna som tillhandahålls av Android-biblioteket.
 
@@ -26,7 +26,7 @@ Metoderna är prefasta enligt lösningen. Experience Cloud ID-metoder har till e
 
 * **public static String appendToURL(final String URL)**
 
-   Lägger till besöksdata från Adobe i en URL-sträng som ska användas med JavaScript-biblioteket Adobe. Du måste ha Mobile SDK 4.12+ för att kunna använda den här metoden. Mer information finns i [Bifoga hjälpfunktion](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/methods/appendvisitorid.html)för besökar-ID.
+   Lägger till besöksdata från Adobe i en URL-sträng som ska användas med JavaScript-biblioteket Adobe. Du måste ha Mobile SDK 4.12+ för att kunna använda den här metoden. Mer information finns i [Bifoga hjälpfunktion för besökar-ID](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/methods/appendvisitorid.html).
 
    >[!IMPORTANT]
    >
@@ -69,11 +69,11 @@ Metoderna är prefasta enligt lösningen. Experience Cloud ID-metoder har till e
 
       >[!IMPORTANT]
       >
-      >Den här metoden kan orsaka ett blockerande nätverksanrop och bör **inte** anropas från en gränssnittstråd.
+      >Den här metoden kan orsaka ett blockerande nätverksanrop och ska **inte** anropas från en gränssnittstråd.
 
 * **syncIdentifiers**
 
-   Med Experience Cloud-ID:t kan du ange ytterligare kund-ID:n som kan kopplas till varje besökare. Besökar-API:t godkänner flera kund-ID:n för samma besökare, med en kundtypsidentifierare som avgränsar omfånget för olika kund-ID:n. Den här metoden motsvarar den `setCustomerIDs` i JavaScript-biblioteket.
+   Med Experience Cloud-ID:t kan du ange ytterligare kund-ID:n som kan kopplas till varje besökare. Besökar-API:t godkänner flera kund-ID:n för samma besökare, med en kundtypsidentifierare som avgränsar omfånget för olika kund-ID:n. Den här metoden motsvarar `setCustomerIDs` i JavaScript-biblioteket.
 
    * Här är syntaxen för den här metoden:
 
@@ -93,7 +93,7 @@ Metoderna är prefasta enligt lösningen. Experience Cloud ID-metoder har till e
 
    Synkroniserar angiven identifierartyp och angivet värde med tjänsten för besökar-ID.
 
-   Ange `authenticationState` ett av följande värden:
+   Ange `authenticationState` som ett av följande värden:
 
    * `VisitorID.VisitorIDAuthenticationState.VISITOR_ID_AUTHENTICATION_STATE_UNKNOWN`
    * `VisitorID.VisitorIDAuthenticationState.VISITOR_ID_AUTHENTICATION_STATE_AUTHENTICATED`
@@ -115,7 +115,7 @@ Metoderna är prefasta enligt lösningen. Experience Cloud ID-metoder har till e
 
    Synkroniserar angivna identifierare till ID-tjänsten.
 
-   Ange `authenticationState` ett av följande värden:
+   Ange `authenticationState` som ett av följande värden:
    * `VisitorID.VisitorIDAuthenticationState.VISITOR_ID_AUTHENTICATION_STATE_UNKNOWN`
    * `VisitorID.VisitorIDAuthenticationState.VISITOR_ID_AUTHENTICATION_STATE_AUTHENTICATED`
    * `VisitorID.VisitorIDAuthenticationState.VISITOR_ID_AUTHENTICATION_STATE_LOGGED_OUT`
@@ -136,7 +136,7 @@ Metoderna är prefasta enligt lösningen. Experience Cloud ID-metoder har till e
 
 * **getIdentifiers**
 
-   Hämtar en lista med skrivskyddade `ADBVisitorID` objekt.
+   Hämtar en lista med skrivskyddade `ADBVisitorID`-objekt.
 
    * Här är syntaxen för den här metoden:
 

@@ -4,28 +4,28 @@ seo-description: Den här informationen hjälper dig med en begäran om att ta b
 seo-title: Ange användarens alternativstatus
 solution: Experience Cloud,Analytics
 title: Ange användarens alternativstatus
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 44a09a25-93c6-4e1a-b69e-710018e8b6c3
+exl-id: 8fd30bea-6316-46ac-9787-8ca594545d1b
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 0%
 
 ---
 
-
-# Ange användarens avanmälningsstatus {#setting-the-user-s-opt-status}
+# Anger användarens alternativstatus {#setting-the-user-s-opt-status}
 
 Den här informationen hjälper dig med en begäran om att ta bort GDPR-data.
 
 >[!IMPORTANT]
 >
->Från och med Experience Cloud iOS SDK 4.15 anger du sekretessstatus som `unknown` för Audience Manager och Experience Cloud ID-träffar.
+>Från och med Experience Cloud iOS SDK 4.15 gäller att om du anger sekretessstatusen till `unknown` även Audience Manager och Experience Cloud ID-träffar.
 
 Du kan kontrollera om Analytics-, Target- och Audience Manager-aktivitet tillåts på en enhet med följande inställningar:
 
-* `privacyDefault` i [ADBMomobile JSON Config](/help/ios/configuration/json-config/json-config.md).
+* `privacyDefault` i  [ADBMomobile JSON Config](/help/ios/configuration/json-config/json-config.md).
 
    Den här inställningen styr den inledande inställningen som kvarstår tills den ändras i koden.
 
@@ -55,9 +55,9 @@ Här är information om respektive sekretessstatus:
 
 * **Okänd**
 
-   * Analyser: Om spårning offline **är** aktiverat sparas träffar tills sekretessstatusen ändras till anmälan (träffar skickas) eller avanmälan (träffar ignoreras).
+   * Analyser: Om spårning offline **är** aktiverat, sparas träffar tills sekretessstatusen ändras till anmälan (träffar skickas) eller avanmälan (träffar ignoreras).
 
-      Om spårning offline inte **är** aktiverat ignoreras träffar tills sekretessstatusen ändras till att anmäla sig.
+      Om spårning offline **inte är** aktiverat, ignoreras träffar tills sekretessstatusen ändras till att anmäla sig.
 
    * Mål: Mbox-begäranden skickas.
    * Audience Manager: Signaler och ID-synk skickas.
@@ -77,4 +77,3 @@ Här är information om respektive sekretessstatus:
  [ADBMobile setPrivacyStatus:ADBMobilePrivacyStatusUnknown]; 
 }
 ```
-

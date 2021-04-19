@@ -1,20 +1,20 @@
 ---
 description: Här är en lista över de Audience Manager-metoder som finns i Android-biblioteket.
-keywords: android;library;mobile;sdk
+keywords: android;bibliotek;mobil;sdk
 seo-description: Här är en lista över de Audience Manager-metoder som finns i Android-biblioteket.
 seo-title: Audience Manager-metoder
 solution: Experience Cloud,Analytics
 title: Audience Manager-metoder
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 2f6e4664-1306-41d4-9fa7-e3a99f1df4ab
+exl-id: 707b40b8-e56e-4c26-8b59-87c5d71cad0c
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '292'
+source-wordcount: '296'
 ht-degree: 25%
 
 ---
-
 
 # Audience Manager-metoder{#audience-manager-methods}
 
@@ -26,7 +26,7 @@ Om Audience Manager är konfigurerat i JSON-filen skickas en signal som innehål
 
 * **getVisitorProfile**
 
-   Returnerar den besökarprofil som senast hämtades och, om ingen signal har skickats, returneras `null`. Besökarprofilen sparas i `SharedPreferences` så att du enkelt kan komma åt den när du startar appen.
+   Returnerar den besökarprofil som senast hämtades och, om ingen signal har skickats, returnerar `null`. Besökarprofilen sparas i `SharedPreferences` så att du enkelt kommer åt den när du startar appen flera gånger.
 
    * Här är syntaxen för den här metoden:
 
@@ -76,7 +76,7 @@ Om Audience Manager är konfigurerat i JSON-filen skickas en signal som innehål
 
    Anger DPID och DPUID, och dessa värden skickas med varje signal.
 
-   Om det DPUID-värde som skickas till den här metoden innehåller tecken som inte är URL-säkra måste kunderna koda parametern innan de skickar den till SDK.
+   Om det DPUID-värde som skickas till den här metoden innehåller tecken som inte är URL-säkra, måste kunderna koda parametern innan de skickar den till SDK.
 
    * Här är syntaxen för den här metoden:
 

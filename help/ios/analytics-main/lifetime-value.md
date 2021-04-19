@@ -4,28 +4,28 @@ seo-description: Livstidsvärdet gör att du kan mäta och inrikta dig på ett l
 seo-title: Livslängd för besökare
 solution: Experience Cloud,Analytics
 title: Livslängd för besökare
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: d830d18b-4313-43bb-8d75-3789869d0f1d
+exl-id: f1b684b1-9919-400d-a88a-6d4a0809d9e1
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '173'
 ht-degree: 0%
 
 ---
 
-
-# Livslängd för besökare {#visitor-lifetime-value}
+# Livslängdsvärde för besökare {#visitor-lifetime-value}
 
 Livstidsvärdet gör att du kan mäta och inrikta dig på ett livstidsvärde för varje användare.
 
-Varje gång du skickar ett värde med `trackLifetimeValueIncrease`läggs värdet till det befintliga värdet. Livstidsvärdet lagras på enheten och kan hämtas när som helst genom att anropa `lifetimeValue`. Detta kan användas för att lagra livstidsinköp, annonsvisningar, videokompletteringar, sociala resurser, fotoöverföringar och så vidare.
+Varje gång du skickar ett värde med `trackLifetimeValueIncrease` läggs värdet till det befintliga värdet. Livstidsvärdet lagras på enheten och kan hämtas när som helst genom att anropa `lifetimeValue`. Detta kan användas för att lagra livstidsinköp, annonsvisningar, videokompletteringar, sociala resurser, fotoöverföringar och så vidare.
 
 ## Spåra besökarens livstidsvärde {#section_390943A49AF841F2941E65D6DF2B3F5A}
 
 1. Lägg till biblioteket i ditt projekt och implementera livscykeln.
 
-   Mer information finns i *Lägga till SDK- och konfigurationsfilen i projektet* i [Core Implementation och Lifecycle](/help/ios/getting-started/dev-qs.md).
+   Mer information finns i *Lägg till SDK- och konfigurationsfilen i ditt projekt* i [Core Implementation och Lifecycle](/help/ios/getting-started/dev-qs.md).
 1. Importera biblioteket:
 
    ```objective-c
@@ -51,4 +51,3 @@ NSMutableDictionary *contextData = [NSMutableDictionary dictionary];
 Kontextdatavärden måste mappas till anpassade variabler:
 
 ![](assets/map-variable-context-ltv.png)
-

@@ -4,16 +4,16 @@ seo-description: Från och med Android SDK version 4.5 har ett nytt Android-till
 seo-title: Android Wearables - komma igång
 solution: Experience Cloud,Analytics
 title: Android Wearables - komma igång
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: bfe5d41e-b17c-4634-80ac-7a38671ecb81
+exl-id: 79cfaa48-d9b2-4518-8b31-d7041898a71b
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '291'
 ht-degree: 0%
 
 ---
-
 
 # Android Wearables: komma igång{#android-wearables-getting-started}
 
@@ -21,16 +21,16 @@ Från och med Android SDK version 4.5 har ett nytt Android-tillägg lagts till s
 
 ## Konfigurera SDK för en handdator (Android Studio) {#section_262237484EC44C58953891B105F0D000}
 
-Mer information om hur du importerar SDK till ditt projekt finns i [Core Implementation och Lifecycle](/help/android/getting-started/dev-qs.md).
+Mer information om hur du importerar SDK till ditt projekt finns i [Core Implementation and Lifecycle](/help/android/getting-started/dev-qs.md).
 
-1. Lägg till `ADBMobileConfig.json` filen i projektmappen.
-1. Lägg till `adobeMobileLibrary-*.jar` filen i mappen libs eller se till att projektet refererar till filen.
+1. Lägg till `ADBMobileConfig.json`-filen i projektmappen.
+1. Lägg till filen `adobeMobileLibrary-*.jar` i mappen libs eller kontrollera att projektet refererar till den här filen.
 
    >[!TIP]
    >
-   >Du kan behöva synkronisera övertoningsprojektet när du har lagt till `.jar` filen.
+   >Du kan behöva synkronisera övertoningsprojektet när du har lagt till filen `.jar`.
 
-1. I `onCreate` metoden tillåter du SDK-åtkomst till programkontexten genom att använda `Config.setContext`:
+1. I metoden `onCreate` tillåter du SDK-åtkomst till programkontexten med `Config.setContext`:
 
    ```java
    @Override 
@@ -43,7 +43,7 @@ Mer information om hur du importerar SDK till ditt projekt finns i [Core Impleme
    }
    ```
 
-1. Lägg till följande kod i `AndroidManifest.xml` filen:
+1. Lägg till följande kod i `AndroidManifest.xml`-filen:
 
    ```java
        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> 
@@ -91,7 +91,7 @@ Mer information om hur du importerar SDK till ditt projekt finns i [Core Impleme
    }
    ```
 
-1. Lägg till `WearListenerService` i `AndroidManifest.xml` filen:
+1. Lägg till `WearListenerService` i `AndroidManifest.xml`-filen:
 
    ```java
    If you are using Google Play Services  < 8.2 
@@ -124,8 +124,8 @@ Mer information om hur du importerar SDK till ditt projekt finns i [Core Impleme
 
 1. Gör något av följande:
 
-   * Lägg till samma `ADBMobileConfig.json` fil i resursmappen för ditt bärbara projekt.
-   * Ändra övertoningskonfigurationen så att den används `ADBMobileConfig.json` i resursmappen i den handhållna appen:
+   * Lägg till samma `ADBMobileConfig.json`-fil i resursmappen för ditt bärbara projekt.
+   * Ändra övertoningskonfigurationen så att den använder `ADBMobileConfig.json` i resursmappen för handdatorprogrammet:
 
       ```java
       android { 
@@ -138,11 +138,11 @@ Mer information om hur du importerar SDK till ditt projekt finns i [Core Impleme
       }
       ```
 
-1. Lägg till `adobeMobileLibrary-*.jar` filen i mappen libs eller se till att projektet refererar till den.
+1. Lägg till filen `adobeMobileLibrary-*.jar` i mappen libs eller se till att projektet refererar till den.
 
    Du kan behöva synkronisera övertoningsprojektet när du har lagt till filen jar.
 
-1. I `onCreate` metoden tillåter du SDK-åtkomst till programkontexten med `Config.setContext`:
+1. I metoden `onCreate` tillåt SDK-åtkomst till programkontexten med `Config.setContext`:
 
    ```java
    @Override 
@@ -178,7 +178,7 @@ Mer information om hur du importerar SDK till ditt projekt finns i [Core Impleme
    }
    ```
 
-1. Lägg till `WearListenerService` i `AndroidManifest.xml` filen:
+1. Lägg till `WearListenerService` i `AndroidManifest.xml`-filen:
 
    ```java
    If you are using Google Play Services  < 8.2 
@@ -205,4 +205,3 @@ Mer information om hur du importerar SDK till ditt projekt finns i [Core Impleme
    Please find more information from google's blog https://android-developers.googleblog.com/2016/04/deprecation-of-bindlistener.html. 
    Permalink Edit
    ```
-

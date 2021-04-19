@@ -1,20 +1,20 @@
 ---
 description: Vanliga frågor och svar om Adobe Mobile Services och en allmän beskrivning av funktioner.
-keywords: mobile
+keywords: mobil
 seo-description: Vanliga frågor och svar om Adobe Mobile Services och en allmän beskrivning av funktioner.
 seo-title: Vanliga frågor
 solution: Experience Cloud,Analytics
 title: Vanliga frågor
-topic: Metrics
+topic-fix: Metrics
 uuid: 62a9241c-2ada-483a-a594-b023916cb0b6
+exl-id: d7dfc36e-56f0-498a-ad50-93fee90cb6ff
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '1115'
+source-wordcount: '1116'
 ht-degree: 2%
 
 ---
-
 
 # Vanliga frågor {#frequently-asked-questions}
 
@@ -28,40 +28,40 @@ Ja, vi gör ständigt uppdateringar för att du ska få tillgång till avancerad
 
 ### Vilken SDK-version ska jag använda?
 
-Våra nuvarande SDK:er finns i version 4.11. Mer information finns i [versionsinformationen](https://docs.adobe.com/content/help/sv-SE/release-notes/experience-cloud/current.html).
+Våra nuvarande SDK:er finns i version 4.11. Mer information finns i [Versionsinformationen](https://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html).
 
 ### Var kan jag ladda ned SDK:erna?
 
-SDK:erna för enskilda mobilplattformar kan laddas ned genom att gå till [Hantera appinställningar](/help/using/c-manage-app-settings/c-manage-app-settings.md) .
+SDK:erna för enskilda mobilplattformar kan laddas ned genom att gå till [Hantera appinställningar](/help/using/c-manage-app-settings/c-manage-app-settings.md).
 
 ### Hur konfigurerar jag SDK:erna?
 
-När du har skapat en ny programrapportsserie går du till Hantera appinställningar och konfigurerar alla nödvändiga alternativ på programinformationssidan. När du har sparat konfigurationen hämtar du de SDK:er som krävs från nederkanten av sidan Hantera appinställningar. SDK kommer att levereras förkonfigurerat med de alternativ som du har sparat och finns i filen i SDK- `ADBMobileConfig.json` paketet. Om du ändrar några SDK-inställningar på sidan Hantera programinställningar kontrollerar du att du hämtar SDK-filerna igen eller uppdaterar din `ADBMobileConfig.json` fil med de ändringar som krävs.
+När du har skapat en ny programrapportsserie går du till Hantera appinställningar och konfigurerar alla nödvändiga alternativ på programinformationssidan. När du har sparat konfigurationen hämtar du de SDK:er som krävs från nederkanten av sidan Hantera appinställningar. SDK kommer att levereras förkonfigurerat med de alternativ som du har sparat och finns i filen `ADBMobileConfig.json` i SDK-paketet. Om du ändrar några SDK-inställningar på sidan Hantera programinställningar kontrollerar du att du hämtar SDK-filerna igen eller uppdaterar din `ADBMobileConfig.json`-fil med de ändringar som krävs.
 
 ### Har Adobe Mobile SDK stöd för IPv6 för iOS?
 
 SDK:erna för Adobe Mobile använder iOS- och Android-standardnätverksstackarna. För iOS använder SDK NSURLSession (iOS version 7+) och NSURLConnection (iOS version 7 och senare) som är helt kompatibla med IPv6. Utvecklare som har skapat eller använt sin egen nätverksstack kanske vill granska om det finns andra orsaker till att minska risken. Här är ytterligare information från Apple:
 
-*Om du skriver en klientapp med nätverks-API:er på hög nivå, som NSURLSession och CFNetwork, och du ansluter efter namn, behöver du inte ändra något för att appen ska fungera med IPv6-adresser.* Mer information finns i [Stöd för IPv6 DNS64/NAT64-nätverk](https://developer.apple.com/library/content/documentation/NetworkingInternetWeb/Conceptual/NetworkingOverview/UnderstandingandPreparingfortheIPv6Transition/UnderstandingandPreparingfortheIPv6Transition.html#__/apple_ref/doc/uid/TP40010220-CH213-SW1).
+*Om du skriver en klientapp med nätverks-API:er på hög nivå, som NSURLSession och CFNetwork, och du ansluter efter namn, behöver du inte ändra något för att appen ska fungera med IPv6-adresser.* Mer information finns i  [Stöd för IPv6 DNS64/NAT64-nätverk](https://developer.apple.com/library/content/documentation/NetworkingInternetWeb/Conceptual/NetworkingOverview/UnderstandingandPreparingfortheIPv6Transition/UnderstandingandPreparingfortheIPv6Transition.html#__/apple_ref/doc/uid/TP40010220-CH213-SW1).
 
 
 ## Adobe Analytics {#section_78EC9D83791F477AAED678720CEBA9F6}
 
 ### Vad är Lifecycle Metrics?
 
-Livscykelstatistik är körklara mått som samlas in automatiskt när SDK implementeras första gången i din app. Mer information finns i [Lifecycle Metrics (Android)](/help/android/metrics.md) and [Lifecycle Metrics (iOS)](/help/ios/metrics.md).
+Livscykelstatistik är körklara mått som samlas in automatiskt när SDK implementeras första gången i din app. Mer information finns i [Lifecycle Metrics (Android)](/help/android/metrics.md) och [Lifecycle Metrics (iOS)](/help/ios/metrics.md).
 
 ### Hur felsöker jag bearbetningsregler?
 
-Mer information finns i Tips och tricks för [bearbetningsregler](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules-tips.html).
+Mer information finns i [Tips och tricks för bearbetningsregler](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules-tips.html).
 
 ### Kan jag skicka analysdata till flera rapportsviter?
 
-Ja. Med SDK:erna kan du skicka data till flera Adobe Analytics rapporteringsprogram. Om du vill samla in data i flera rapportsviter med hjälp av en bildbegäran anger du ID:n för flera rapportsviter i **[!UICONTROL rsids]** fältet under **[!UICONTROL analytics]** avsnittet i `ADBMobileConfig.json` filen, avgränsade med kommatecken och utan blanksteg. Mer information finns i [ADBMomobile JSON Config](/help/ios/configuration/json-config/json-config.md).
+Ja. Med SDK:erna kan du skicka data till flera Adobe Analytics rapporteringsprogram. Om du vill samla in data i flera rapportsviter med hjälp av en bildbegäran anger du ID:n för flera rapportsviter i fältet **[!UICONTROL rsids]** under **[!UICONTROL analytics]** i filen `ADBMobileConfig.json`, avgränsade med kommatecken och utan blanksteg. Mer information finns i [ADBMomobile JSON Config](/help/ios/configuration/json-config/json-config.md).
 
 ### Hur skiljer sig mobilbesöken från lanseringar?
 
-SDK:n mäter när en användare öppnar appen för första gången eller återgår till appen efter att ha varit utanför appen längre tid än det angivna timeoutvärdet. Den vanliga tidsgränsen är 5 minuter (300 sekunder) i **[!UICONTROL lifecycleTimeout]** fältet, som finns i `ADBMobileConfig.json` filen. Ett besök är en beräkning på serversidan som görs av Adobe Analytics och som baseras på det första och sista dataträffet som skickas av SDK utan att tidsgränsen för besöket överskrids. Sessionstimeout anges vanligtvis till 30 minuter för en rapportsvit. Även om besök kommer från traditionell webbanalys ger de här träffarna fortfarande värdefulla insikter om hur användarna kommer in i och avslutar er app.
+SDK:n mäter när en användare öppnar appen för första gången eller återgår till appen efter att ha varit utanför appen längre tid än det angivna timeoutvärdet. Den vanliga tidsgränsen är 5 minuter (300 sekunder) i fältet **[!UICONTROL lifecycleTimeout]**, som finns i filen `ADBMobileConfig.json`. Ett besök är en beräkning på serversidan som görs av Adobe Analytics och som baseras på det första och sista dataträffet som skickas av SDK utan att tidsgränsen för besöket överskrids. Sessionstimeout anges vanligtvis till 30 minuter för en rapportsvit. Även om besök kommer från traditionell webbanalys ger de här träffarna fortfarande värdefulla insikter om hur användarna kommer in i och avslutar er app.
 
 ## Meddelanden {#section_5EFDD2B2EBA543C09902FF979C89F2EC}
 
@@ -79,11 +79,11 @@ Publicerade och aktiva meddelanden i appen som skapats i Adobe Mobile Services l
 
 ### Kan jag använda min egen HTML-kod för meddelanden i appen?
 
-Ja, vi stöder anpassad HTML för dina meddelanden i appen. Mer information finns i [Upplevelse: Meddelande](/help/using/in-app-messaging/t-in-app-message/c-experience-in-app-message.md)i appen.
+Ja, vi stöder anpassad HTML för dina meddelanden i appen. Mer information finns i [Upplevelse: Meddelande i appen](/help/using/in-app-messaging/t-in-app-message/c-experience-in-app-message.md).
 
 ### Vilka utlösare kan jag använda för att skicka push-meddelanden eller meddelanden i appen?
 
-Marknadsförarna kan välja alla Analytics-data eller -händelser som skickas som en utlösare för att visa meddelanden i appen. Meddelanden i appen använder utlösare som inträffar lokalt på enheten. Om flera utlösare väljs måste alla utlösare inträffa i samma träff för att meddelandet ska kunna visas. Mer information finns i [Upplevelse: Meddelande](/help/using/in-app-messaging/t-in-app-message/c-experience-in-app-message.md)i appen.
+Marknadsförarna kan välja alla Analytics-data eller -händelser som skickas som en utlösare för att visa meddelanden i appen. Meddelanden i appen använder utlösare som inträffar lokalt på enheten. Om flera utlösare väljs måste alla utlösare inträffa i samma träff för att meddelandet ska kunna visas. Mer information finns i [Upplevelse: Meddelande i appen](/help/using/in-app-messaging/t-in-app-message/c-experience-in-app-message.md).
 
 Push-meddelanden skickas med befintliga Adobe Analytics-segment eller anpassade segment som kan skapas utifrån tidigare insamlade analysdata. Mer information finns i [Upplevelse: Push-meddelande](/help/using/in-app-messaging/t-create-push-message/c-experience-push-message.md).
 
@@ -91,7 +91,7 @@ Push-meddelanden skickas med befintliga Adobe Analytics-segment eller anpassade 
 
 Du kan inte använda samma namn på meddelanden i appen, push-meddelanden eller markeringslänk i flera appar som använder samma överordnade rapportserie eller VRS. Lös problemet genom att ange ett annat namn för meddelandet i appen, push-meddelandet eller Marketing Link.
 
-## Location {#section_01208FE3B7764E0DADDCB9AD9E1FCD87}
+## Plats {#section_01208FE3B7764E0DADDCB9AD9E1FCD87}
 
 ### Finns det någon gräns för hur många intressepunkter jag kan ha?
 
@@ -101,7 +101,7 @@ Det finns ingen specifik begränsning, men för idealiska prestanda och på grun
 
 ### Kan jag attribuera kampanjer till aktiviteter i appen?
 
-Ja. Adobe mobiltjänster kan hjälpa er att bygga marknadsföringstricks som hjälper er att marknadsföra och driva trafik till era appar och koppla kundvärvningskampanjer till analyser och konverteringar i appen. Mer information finns i [Anskaffning](/help/using/acquisition-main/acquisition-main.md).
+Ja. Adobe mobiltjänster kan hjälpa er att bygga marknadsföringstricks som hjälper er att marknadsföra och driva trafik till era appar och koppla kundvärvningskampanjer till analyser och konverteringar i appen. Mer information finns i [Förvärv](/help/using/acquisition-main/acquisition-main.md).
 
 ### Hur skapar jag länkar för att skaffa och spåra nya appanvändare?
 

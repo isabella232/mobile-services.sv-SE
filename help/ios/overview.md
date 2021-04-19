@@ -4,16 +4,16 @@ seo-description: Med iOS SDK 4.x för Experience Cloud Solutions kan ni mäta iP
 seo-title: iOS SDK 4.x för Experience Cloud Solutions
 solution: Experience Cloud,Analytics
 title: iOS SDK 4.x för Experience Cloud Solutions
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 8b374cee-1432-460b-aac2-70623dd80a04
+exl-id: d4dbddf7-c8be-4936-adfb-2f7aa07a0dd4
 translation-type: tm+mt
-source-git-commit: c7400359bc19150926a67b991ba219a7fa187442
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '530'
 ht-degree: 0%
 
 ---
-
 
 # iOS SDK 4.x för Experience Cloud Solutions{#ios-sdk-x-for-experience-cloud-solutions}
 

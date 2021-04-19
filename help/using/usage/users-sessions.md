@@ -1,22 +1,22 @@
 ---
 description: Rapporten Användare och sessioner visar mätvärden för unika besökare under den valda tidsramen.
-keywords: mobile
+keywords: mobil
 seo-description: Rapporten Användare och sessioner visar mätvärden för unika besökare under den valda tidsramen.
 seo-title: Rapport över användare och sessioner
 solution: Experience Cloud,Analytics
 title: Rapport över användare och sessioner
-topic: Reports,Metrics
+topic-fix: Reports,Metrics
 uuid: 6d70d7f6-de81-4307-a4f3-14f18fc3c9b3
+exl-id: a764a8a9-6490-4cb7-ad4f-68c9dd41c774
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '182'
+source-wordcount: '183'
 ht-degree: 0%
 
 ---
 
-
-# Rapport över användare och sessioner{#users-and-sessions}
+# Rapport om användare och sessioner{#users-and-sessions}
 
 Rapporten Användare och sessioner visar mätvärden för unika besökare under den valda tidsramen.
 
@@ -26,16 +26,16 @@ Du kan konfigurera följande alternativ för den här rapporten:
 
 * **[!UICONTROL Time Period]**
 
-   Klicka på **[!UICONTROL Calendar]** ikonen för att välja en egen punkt eller för att välja en förinställd tidsperiod i listrutan.
+   Klicka på ikonen **[!UICONTROL Calendar]** för att välja en anpassad punkt eller för att välja en förinställd tidsperiod i listrutan.
 
 * **[!UICONTROL Customize]**
 
-   Anpassa era rapporter genom att ändra **[!UICONTROL Show By]** alternativen, lägga till mätvärden och filter, lägga till ytterligare serier (mätvärden) med mera. Mer information finns i [Anpassa rapporter](/help/using/usage/reports-customize/t-reports-customize.md).
+   Anpassa dina rapporter genom att ändra **[!UICONTROL Show By]**-alternativen, lägga till mätvärden och filter, lägga till ytterligare serier (mätvärden) med mera. Mer information finns i [Anpassa rapporter](/help/using/usage/reports-customize/t-reports-customize.md).
 
 * **[!UICONTROL Filter]**
 
-   Klicka **[!UICONTROL Filter]** för att skapa ett filter som spänner över olika rapporter för att se hur ett segment fungerar i alla mobilrapporter. Med ett klisterlappsfilter kan du definiera ett filter som ska användas på alla rapporter som inte är avsedda för målning. Mer information finns i [Lägga till klisterfilter](/help/using/usage/reports-customize/t-sticky-filter.md).
+   Klicka på **[!UICONTROL Filter]** för att skapa ett filter som sträcker sig över olika rapporter för att se hur ett segment fungerar i alla mobila rapporter. Med ett klisterlappsfilter kan du definiera ett filter som ska användas på alla rapporter som inte är avsedda för målning. Mer information finns i [Lägg till klisterfilter](/help/using/usage/reports-customize/t-sticky-filter.md).
 
 * **[!UICONTROL Download]**
 
-   Klicka **[!UICONTROL PDF]** eller **[!UICONTROL CSV]** för att ladda ned eller öppna dokument och dela med användare som inte har tillgång till Mobile Services eller för att använda filen i presentationer.
+   Klicka på **[!UICONTROL PDF]** eller **[!UICONTROL CSV]** för att hämta eller öppna dokument och dela med användare som inte har tillgång till Mobile Services eller för att använda filen i presentationer.

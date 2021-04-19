@@ -4,10 +4,10 @@ seo-description: Information som hjälper dig att använda tillägg med universe
 seo-title: Tillägg
 solution: Experience Cloud,Analytics
 title: Tillägg
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 94bde8cf-f9d5-4374-a9a1-c2c3509cdbb7
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '64'
 ht-degree: 0%

@@ -1,34 +1,34 @@
 ---
 description: Här är en lista över Adobe Analytics-metoder som finns i Android-biblioteket.
-keywords: android;library;mobile;sdk
+keywords: android;bibliotek;mobil;sdk
 seo-description: Här är en lista över Adobe Analytics-metoder som finns i Android-biblioteket.
 seo-title: Analysmetoder
 solution: Experience Cloud,Analytics
 title: Analysmetoder
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: ac7c640e-9dcc-4724-b561-019cc025d5a7
+exl-id: 7914d13e-40a2-4ae2-b759-2660817c2058
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '740'
+source-wordcount: '744'
 ht-degree: 28%
 
 ---
-
 
 # Analysmetoder {#analytics-methods}
 
 Här är en lista över Adobe Analytics-metoder som finns i Android-biblioteket.
 
-SDK har för närvarande stöd för flera Adobe Experience Cloud-lösningar, inklusive Analytics, Target, Audience Manager och Adobe Experience Platform Identity Service. Metoder prefix enligt lösningen, till exempel prefix med Experience Cloud ID-metoder `analytics`.
+SDK har för närvarande stöd för flera Adobe Experience Cloud-lösningar, inklusive Analytics, Target, Audience Manager och Adobe Experience Platform Identity Service. Metoderna prefixas enligt lösningen, till exempel har Experience Cloud ID-metoder prefixet `analytics`.
 
 Var och en av följande metoder används för att skicka data till din Adobe Analytics rapportsvit:
 
 * **trackState**
 
-   Spårar ett apptillstånd med valfria kontextdata. Lägen är de vyer som är tillgängliga i din app, till exempel `home dashboard`, `app settings`och `cart`så vidare. Dessa lägen liknar sidor på en webbplats och anropar `trackState` stegvisa sidvyer.
+   Spårar ett apptillstånd med valfria kontextdata. Lägen är de vyer som är tillgängliga i din app, till exempel `home dashboard`, `app settings`, `cart` och så vidare. Dessa lägen liknar sidor på en webbplats och `trackState` anropar stegvisa sidvyer.
 
-   Om `state` är tomt `app name app version (build)` visas det i rapporter. Om du ser det här värdet i rapporter måste du ange det `state` i varje `trackState` samtal.
+   Om `state` är tomt visas `app name app version (build)` i rapporter. Om det här värdet visas i rapporter måste du ange `state` för varje `trackState`-anrop.
 
    >[!TIP]
    >
@@ -46,9 +46,10 @@ Var och en av följande metoder används för att skicka data till din Adobe Ana
       Analytics.trackState("loginScreen", null);
       ```
 
-* **trackAction** Tracks an action in your app.
+* ****
+trackActionTracks an action in your app.
 
-   Åtgärder som du vill mäta, t.ex. `logons`, `banner taps`, `feed subscriptions`och andra mätvärden, som finns i appen.
+   Åtgärder som du vill mäta, t.ex. `logons`, `banner taps`, `feed subscriptions` och andra mått, som finns i din app.
 
    * Här är syntaxen för den här metoden:
 
@@ -62,7 +63,8 @@ Var och en av följande metoder används för att skicka data till din Adobe Ana
       Analytics.trackAction("heroBannerTouched", null);
       ```
 
-* **getTrackingIdentifier** Returnerar den automatiskt genererade besökaridentifieraren för Analytics.
+* ****
+getTrackingIdentifierReturnerar den automatiskt genererade besökaridentifieraren för Analytics.
 
    Detta är ett programspecifikt, unikt besökar-ID som genereras vid den första starten och som lagras och används från den tidpunkten och framåt. ID:t bevaras mellan programuppgraderingar och tas bort när programmet avinstalleras.
 
@@ -96,7 +98,7 @@ Var och en av följande metoder används för att skicka data till din Adobe Ana
 
 * **trackLifetime &#x200B; ValueIncrease**
 
-   Lägger `amount` till användarens livstidsvärde.
+   Lägger till `amount` till användarens livstidsvärde.
 
    * Här är syntaxen för den här metoden:
 
@@ -135,7 +137,7 @@ Var och en av följande metoder används för att skicka data till din Adobe Ana
 
 * **trackTimed &#x200B; ActionUpdate**
 
-   Skicka in `contextData` för att uppdatera kontextdata som är associerade med `action`. Det `data` som skickas läggs till i befintliga data för åtgärden, och om samma nyckel redan har definierats för `action`skrivs data över.
+   Ange `contextData` för att uppdatera kontextdata som är associerade med `action`. Det `data` som skickas läggs till i befintliga data för åtgärden, och om samma nyckel redan har definierats för `action` skrivs data över.
 
    >[!TIP]
    >
@@ -157,11 +159,11 @@ Var och en av följande metoder används för att skicka data till din Adobe Ana
 
 * **trackTimed &#x200B; ActionEnd**
 
-   Avsluta en tidsbestämd åtgärd. Om du anger `block`det kan du komma åt de slutliga tidsvärdena och ändra `data` innan du skickar den sista träffen.
+   Avsluta en tidsbestämd åtgärd. Om du anger `block` kan du komma åt de slutliga tidsvärdena och ändra `data` innan du skickar den sista träffen.
 
    >[!TIP]
    >
-   >Om du anger `block`det måste du återvända `true` för att skicka en träff. Om du skickar `null` för `block` skickas den sista träffen.
+   >Om du anger `block` måste du returnera `true` för att skicka en träff. Om du skickar `null` för `block` skickas den sista träffen.
 
    * Här är syntaxen för den här metoden:
 

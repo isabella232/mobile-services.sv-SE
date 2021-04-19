@@ -4,16 +4,16 @@ seo-description: Med tidsbestämda åtgärder kan du mäta tiden i appen och den
 seo-title: Tidsbestämda åtgärder
 solution: Experience Cloud,Analytics
 title: Tidsbestämda åtgärder
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: dbcbac5a-6345-49f6-b050-0db05292f005
+exl-id: 3499766b-55f6-4861-8291-2269d56ba983
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '403'
 ht-degree: 0%
 
 ---
-
 
 # Tidsbestämda åtgärder {#timed-actions}
 
@@ -34,7 +34,7 @@ Med ett valfritt återanrop kan du utföra ytterligare åtgärder när tidsåtg�
 
 1. Lägg till biblioteket i ditt projekt och implementera livscykeln.
 
-   Mer information finns i *Lägga till SDK- och konfigurationsfilen i projektet* i [Core Implementation och Lifecycle](/help/ios/getting-started/dev-qs.md).
+   Mer information finns i *Lägg till SDK- och konfigurationsfilen i ditt projekt* i [Core Implementation och Lifecycle](/help/ios/getting-started/dev-qs.md).
 1. Importera biblioteket:
 
    ```objective-c
@@ -48,14 +48,14 @@ Med ett valfritt återanrop kan du utföra ytterligare åtgärder när tidsåtg�
                                data:@{@"ExperienceName" : experience}];
    ```
 
-1. (Valfritt) Om du vill lägga till ytterligare kontextdata när som helst kan du anropa `trackTimedActionUpdate` med det tidsbestämda åtgärdsnamnet.
+1. (Valfritt) Om du vill lägga till ytterligare kontextdata kan du anropa `trackTimedActionUpdate` med det tidsbestämda åtgärdsnamnet.
 
    ```objective-c
    [ADBMobile trackTimedActionUpdate:@"TimeUntilPurchase"  
                                 data:@{@"myapp.ImageLiked" : imageName}];
    ```
 
-1. När händelsen har slutförts anropar du `trackTimedActionEnd` och skickar det tidsinställda åtgärdsnamnet och `TimedActionBlock` (återanrop), som söker upp alla data och beräknar varaktighet.
+1. När händelsen har slutförts anropar du `trackTimedActionEnd` och skickar det tidsbestämda åtgärdsnamnet och `TimedActionBlock` (callback), som söker upp alla data och beräknar varaktigheter.
 
    Tidsbestämda händelsemått sparas i mobillösningens variabler för automatisk rapportering.
 
@@ -101,4 +101,3 @@ Kontextdatavärden måste mappas till anpassade variabler:
                                         return YES; //return YES to send the hit, NO to cancel 
                                      }];
 ```
-

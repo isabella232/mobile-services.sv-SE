@@ -1,22 +1,22 @@
 ---
 description: Den här informationen kan hjälpa dig att felsöka meddelanden i appen.
-keywords: mobile
+keywords: mobil
 seo-description: Den här informationen kan hjälpa dig att felsöka meddelanden i appen.
 seo-title: Felsöka meddelanden i appen
 solution: Experience Cloud,Analytics
 title: Felsöka meddelanden i appen
-topic: Metrics
+topic-fix: Metrics
 uuid: 8813e8d8-bb1e-46ad-83cd-98ae68f73ce6
+exl-id: 6be5beef-3bde-49f8-9ec0-c5d32bd43045
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '636'
 ht-degree: 0%
 
 ---
 
-
-# Felsökning av meddelanden i appen{#troubleshooting-in-app-messaging}
+# Felsökning av meddelanden i programmet{#troubleshooting-in-app-messaging}
 
 Den här informationen kan hjälpa dig att felsöka meddelanden i appen.
 
@@ -26,7 +26,7 @@ Om du har uppfyllt alla krav för meddelanden i appen, men meddelanden inte visa
 
 * Kontrollera att SDK är version 4.2 eller senare och är korrekt konfigurerat.
 
-* Kontrollera att du har ett [meddelandeavsnitt](/help/using/in-app-messaging/in-app-messaging.md) i konfigurationen (den hämtade JSON-filen) eller en fjärrslutpunkt för Meddelanden, så att den kan hämtas från dynamisk tagghantering.
+* Kontrollera att du har ett [Meddelandeavsnitt](/help/using/in-app-messaging/in-app-messaging.md) i konfigurationen (den hämtade JSON-filen) eller en fjärrslutpunkt för Meddelanden, så att den kan hämtas från dynamisk tagghantering.
 
 ## Mitt helskärmsmeddelande i Android visas inte. Jag använder rätt SDK, konfiguration och mina utlösare uppfylls.
 
@@ -34,19 +34,19 @@ Uppdaterade du manifestfilen för att definiera helskärmsaktiviteten?
 
 ## Mitt lokala meddelande i Android fungerar inte.
 
-Kontrollera att den lokala meddelandemottagaren har deklarerats i ditt manifest. Mer information finns i steg 1 i [Meddelanden](/help/android/messaging-main/messaging/messaging.md)i appen.
+Kontrollera att den lokala meddelandemottagaren har deklarerats i ditt manifest. Mer information finns i steg 1 i [Meddelanden i appen](/help/android/messaging-main/messaging/messaging.md).
 
 ## Är meddelandet live?
 
-Kontrollera listvyn i kolumnen på sidan Hantera meddelanden i appen och kontrollera om meddelandet är live. **[!UICONTROL Status]**
+Kontrollera listvyn i kolumnen **[!UICONTROL Status]** på sidan Hantera meddelanden i appen och kontrollera om meddelandet är live.
 
-## Titta på *visa en gång*, *visa alltid*, *visa offlineinställningar* på sidan Målgrupp.
+## Titta på *visa en gång*, *visa alltid*, *visa offline*-inställningar på målsidan.
 
-Kontrollera att de här inställningarna är korrekta. Granska alternativen på fliken Målgrupp på **[!UICONTROL Trigger]** sidan. Där kan du ange hur ofta meddelandet ska visas.
+Kontrollera att de här inställningarna är korrekta. Granska alternativen på fliken **[!UICONTROL Trigger]** på sidan Målgrupp, där du kan ange hur ofta meddelandet ska visas.
 
 ## Om starthändelse används som utlösare..
 
-Starta bara en ny session. Mer information om när en session börjar finns `lifecycleTimeout` i [ADBMomobile JSON-konfigurationsfilen](/help/ios/configuration/json-config/json-config.md) .
+Starta bara en ny session. Information om när en session börjar finns i `lifecycleTimeout` i filen [ADBMomobile JSON config](/help/ios/configuration/json-config/json-config.md).
 
 ## Jag har uppdaterat mitt meddelande på distans, men min app visar fortfarande det gamla meddelandet.
 

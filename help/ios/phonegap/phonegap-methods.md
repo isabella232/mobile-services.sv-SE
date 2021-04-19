@@ -5,22 +5,22 @@ seo-description: Du kan använda iOS PhoneGap Plug-in-metoder för att utföra e
 seo-title: PhoneGap Plug-in-metoder
 solution: Experience Cloud,Analytics
 title: PhoneGap Plug-in-metoder
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: bd830fe5-804a-4d0a-bbb6-99a6d8da6a03
+exl-id: 7ffdf008-1605-471f-93fb-f9c6b38a3bcb
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '1730'
+source-wordcount: '1731'
 ht-degree: 33%
 
 ---
 
-
-# PhoneGap plug-in-metoder {#phonegap-plug-in-methods}
+# PhoneGap-plug-in-metoder {#phonegap-plug-in-methods}
 
 Du kan använda iOS PhoneGap Plug-in-metoder för att slutföra en mängd olika åtgärder.
 
-Lägg till följande i `html` -taggen i `<head>` filer där du vill använda spårning:
+I `html`-filer där du vill använda spårning lägger du till följande i taggen `<head>`:
 
 ```html
 <script type="text/javascript" charset="utf-8" src="ADB_Helper.js"></script>
@@ -34,8 +34,8 @@ Lägg till följande i `html` -taggen i `<head>` filer där du vill använda sp�
 
    * `ADB.optedIn`, där träffar skickas omedelbart.
    * `ADB.optedOut`, där träffar tas bort.
-   * `ADB.optUnknown`Om rapportsviten **är** tidsstämpelaktiverad sparas träffar tills sekretessstatusen ändras till anmälan (träffar skickas) eller avanmälan (träffar ignoreras). Om rapportsviten inte **är** tidsstämpelaktiverad, kommer träffar att tas bort tills sekretessstatusen ändras till att anmäla sig.\
-      Standardvärdet anges i `ADBMobileConfig.json` filen.
+   * `ADB.optUnknown`Om rapportsviten  **** är tidsstämpelaktiverad sparas träffar tills sekretessstatusen ändras till att anmäla sig (träffar skickas) eller avanmäla dig (träffar ignoreras). Om rapportsviten **inte är** tidsstämpelaktiverad ignoreras träffar tills sekretessstatusen ändras till att anmäla sig.\
+      Standardvärdet anges i filen `ADBMobileConfig.json`.
 
       * Här är kodexemplet för den här metoden:
 
@@ -45,12 +45,12 @@ Lägg till följande i `html` -taggen i `<head>` filer där du vill använda sp�
 
 * **setPrivacyStatus**
 
-   Anger sekretessstatus för den aktuella användaren till `status`. Du kan ange en av följande statusar:
+   Anger den aktuella användarens sekretessstatus till `status`. Du kan ange en av följande statusar:
    * `ADB.optedIn`, där träffar skickas omedelbart.
    * `ADB.optedOut`, där träffar tas bort.
-   * `ADB.optUnknown` - Om rapportsviten **är** tidsstämpelaktiverad sparas träffar tills sekretessstatusen ändras till anmälan (träffar skickas) eller avanmälan (träffar ignoreras).
+   * `ADB.optUnknown` - Om rapportsviten är  **** tidsstämpelaktiverad sparas träffar tills sekretessstatusen ändras till att anmäla sig (träffar skickas) eller avanmäla dig (träffar ignoreras).
 
-      Om rapportsviten inte **är** tidsstämpelaktiverad, kommer träffar att tas bort tills sekretessstatusen ändras till att anmäla sig.
+      Om rapportsviten **inte är** tidsstämpelaktiverad ignoreras träffar tills sekretessstatusen ändras till att anmäla sig.
 
    * Här är kodexemplet för den här metoden:
 
@@ -94,7 +94,7 @@ Lägg till följande i `html` -taggen i `<head>` filer där du vill använda sp�
 
    >[!TIP]
    >
-   >Om ditt program uppgraderar från Experience Cloud 3.x till 4.x SDK hämtas det tidigare besökar-ID:t (anpassat eller automatiskt genererat) och lagras som en anpassad användaridentifierare (se `getUserIdentifier` nedan). Detta bevarar besöksdata mellan uppgraderingar av SDK. För nya installationer på 4.x SDK används användaridentifieraren `null`och spårningsidentifieraren.
+   >Om ditt program uppgraderar från Experience Cloud 3.x till 4.x SDK hämtas det tidigare besökar-ID:t (anpassat eller automatiskt genererat) och lagras som en anpassad användaridentifierare (se `getUserIdentifier` nedan). Detta bevarar besöksdata mellan uppgraderingar av SDK. För nya installationer på 4.x SDK är användaridentifieraren `null` och spårnings-ID används.
 
    * Här är kodexemplet för den här metoden:
 
@@ -144,7 +144,7 @@ Lägg till följande i `html` -taggen i `<head>` filer där du vill använda sp�
 
    >[!IMPORTANT]
    >
-   >Anrop `keepLifecycleSessionAlive` förhindrar att programmet startar en ny session nästa gång det återupptas från bakgrunden. Du bör bara använda den här metoden om programmet registrerar sig för meddelanden i bakgrunden.
+   >Om du anropar `keepLifecycleSessionAlive` hindras programmet från att starta en ny session nästa gång det återupptas från bakgrunden. Du bör bara använda den här metoden om programmet registrerar sig för meddelanden i bakgrunden.
 
    * Här är kodexemplet för den här metoden:
 
@@ -202,7 +202,7 @@ Lägg till följande i `html` -taggen i `<head>` filer där du vill använda sp�
 
 * **collectLifecycleData**
 
-   Anger för SDK att livscykeldata ska samlas in för användning i alla lösningar i SDK. Mer information finns i [Livscykelstatistik](/help/ios/metrics.md).
+   Anger för SDK att livscykeldata ska samlas in för användning i alla lösningar i SDK. Mer information finns i [Livscykelmått](/help/ios/metrics.md).
 
    * Här är kodexemplet för den här metoden:
 
@@ -285,7 +285,7 @@ Lägg till följande i `html` -taggen i `<head>` filer där du vill använda sp�
 
 * **trackState**
 
-   Spårar ett apptillstånd med valfria kontextdata. Lägen är de vyer som är tillgängliga i din app, till exempel `home dashboard`, `app settings`och `cart`så vidare. Dessa lägen liknar sidor på en webbplats och anropar `trackState` stegvisa sidvyer. cData är ett JSON-objekt med nyckelvärdepar som skickas i kontextdata.
+   Spårar ett apptillstånd med valfria kontextdata. Lägen är de vyer som är tillgängliga i din app, till exempel `home dashboard`, `app settings`, `cart` och så vidare. Dessa lägen liknar sidor på en webbplats och `trackState` anropar stegvisa sidvyer. cData är ett JSON-objekt med nyckelvärdepar som skickas i kontextdata.
 
    * Här är syntaxen för den här metoden:
 
@@ -305,7 +305,7 @@ Lägg till följande i `html` -taggen i `<head>` filer där du vill använda sp�
 
 * **trackAction**
 
-   Spårar en åtgärd i din app. Åtgärder är sådant som inträffar i appen och som du vill mäta, inkludera `logins`, `banner taps`och `feed subscriptions` andra mätvärden.
+   Spårar en åtgärd i din app. Åtgärder är sådant som inträffar i appen som du vill mäta, inklusive `logins`, `banner taps`, `feed subscriptions` och andra mått.
 
    * Här är syntaxen för den här metoden:
 
@@ -345,7 +345,7 @@ Lägg till följande i `html` -taggen i `<head>` filer där du vill använda sp�
 
 * **trackLocation**
 
-   Skickar de aktuella x- och y-koordinaterna. Intressepunkterna som definierats i filen används också för att avgöra om platsen som angetts som en parameter finns i någon av dina POI:er. `ADBMobileConfig.json` Om de aktuella koordinaterna finns i en definierad POI fylls en kontextdatavariabel i och skickas med `trackLocation` anropet.
+   Skickar de aktuella x- och y-koordinaterna. Intressepunkterna som definierats i filen `ADBMobileConfig.json` används också för att avgöra om platsen som angetts som en parameter finns i någon av dina POI. Om de aktuella koordinaterna finns i en definierad POI fylls en kontextdatavariabel i och skickas med anropet `trackLocation`.
 
    * Här är syntaxen för den här metoden:
 
@@ -361,7 +361,7 @@ Lägg till följande i `html` -taggen i `<head>` filer där du vill använda sp�
 
 * **trackLifetime &#x200B; ValueIncrease**
 
-   Lägger `amount` till användarens livstidsvärde.
+   Lägger till `amount` till användarens livstidsvärde.
 
    * Här är syntaxen för den här metoden:
 
@@ -397,7 +397,7 @@ Lägg till följande i `html` -taggen i `<head>` filer där du vill använda sp�
 
 * **trackTimed &#x200B; ActionUpdate**
 
-   Skicka in `cData` för att uppdatera kontextdata som är associerade med den angivna `action`. Den `cData` inskickade filen läggs till i befintliga data för den angivna åtgärden och skriver över data om samma nyckel redan har definierats för `action`.
+   Ange `cData` för att uppdatera kontextdata som är associerade med angiven `action`. `cData` som skickas läggs till i befintliga data för den angivna åtgärden och skriver över data om samma nyckel redan har definierats för `action`.
 
    >[!TIP]
    >
@@ -440,7 +440,7 @@ Lägg till följande i `html` -taggen i `<head>` filer där du vill använda sp�
 
 * **targetLoadRequest**
 
-   Skickar begäran till den konfigurerade `Target` servern och returnerar erbjudandets strängvärde.
+   Skickar begäran till din konfigurerade `Target`-server och returnerar erbjudandets strängvärde.
 
    * Här är syntaxen för den här metoden:
 
@@ -529,7 +529,7 @@ Lägg till följande i `html` -taggen i `<head>` filer där du vill använda sp�
 
 * **targetSessionID**
 
-   Hämtar värdet för den `SessionID` cookie som returnerades för besökaren av målservern.
+   Hämtar värdet för den `SessionID`-cookie som returnerats för den här besökaren av målservern.
 
    * Här är syntaxen för den här metoden:
 
@@ -545,7 +545,7 @@ Lägg till följande i `html` -taggen i `<head>` filer där du vill använda sp�
 
 * **targetPcID**
 
-   Hämtar värdet för den `PcID` cookie som returnerades för besökaren av målservern.
+   Hämtar värdet för den `PcID`-cookie som returnerats för den här besökaren av målservern.
 
    * Här är syntaxen för den här metoden:
 
@@ -612,7 +612,7 @@ Lägg till följande i `html` -taggen i `<head>` filer där du vill använda sp�
 
 ## Annonsidentifierare {#section_194607D101B047A19C51B19E176E1500}
 
-I det `AppDelegate` som genereras av Cordova anropar du `[ADBMobile setAdvertisingIdentifier:]` i metoden `application:didFinishLaunchingWithOptions:` delegate. Mer information finns i [Konfigurationsmetoder](/help/ios/configuration/sdk-methods.md).
+I `AppDelegate` som genererats av Cordova anropar du `[ADBMobile setAdvertisingIdentifier:]` i delegeringsmetoden `application:didFinishLaunchingWithOptions:`. Mer information finns i [Konfigurationsmetoder](/help/ios/configuration/sdk-methods.md).
 
 ## Audience Manager-metoder {#section_1FD12B29A0AF41D3BEACBB3D624EA0E4}
 
@@ -815,4 +815,3 @@ I det `AppDelegate` som genereras av Cordova anropar du `[ADBMobile setAdvertisi
       ```java
       ADB.visitorGetIDs(function(value){alert(value);},function(value){alert('fail');}); 
       ```
-

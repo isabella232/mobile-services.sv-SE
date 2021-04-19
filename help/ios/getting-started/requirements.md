@@ -4,16 +4,16 @@ seo-description: Följ de här stegen för att konfigurera en rapportserie för 
 seo-title: Innan du börjar
 solution: Experience Cloud,Analytics
 title: Innan du börjar
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 04133f68-3618-41fd-8a13-aec5b6f04df6
+exl-id: 83da7cf5-3211-484d-bfe8-7b3b4999eea2
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '563'
 ht-degree: 4%
 
 ---
-
 
 # Innan du börjar {#before-you-start}
 
@@ -27,7 +27,7 @@ Analysadministratörer och apputvecklare måste utföra följande uppgifter:
 
 Så här konfigurerar du en rapportserie och samlar in data om mobilappar:
 
-1. Fyll i ett av avsnitten i [Logga in på användargränssnittet](/help/ios/getting-started/getting-started.md)för Adobe Mobile Services.
+1. Fyll i ett av avsnitten i [Logga in på användargränssnittet för Adobe Mobile Services](/help/ios/getting-started/getting-started.md).
 1. Skapa ett Analytics-konto för varje apputvecklare.
 
 Programutvecklare har nu tillgång till de rapportsviter du har skapat.
@@ -38,10 +38,10 @@ Programutvecklare har nu tillgång till de rapportsviter du har skapat.
 
 ### Apputvecklare
 
-1. Kontrollera att Analytics-administratören har slutfört stegen i avsnittet *Analysadministratörer* ovan.
+1. Kontrollera att Analytics-administratören har slutfört stegen i *Analysadministratörer*-avsnittet ovan.
 
-1. Kontrollera att Analytics-administratören har slutfört ett av avsnitten i *Logga in i användargränssnittet* för Adobe Mobile Services nedan.
-1. När rapportsviten har konfigurerats slutför du stegen i *Hämta SDK* nedan.
+1. Kontrollera att Analytics-administratören har slutfört ett av avsnitten i *Logga in på användargränssnittet för Adobe Mobile Services* nedan.
+1. När rapportsviten har konfigurerats slutför du stegen i *Hämta SDK*-avsnittet nedan.
 
 Mer information om roller och behörigheter finns i [Roller och behörigheter](/help/using/gs/c-mob-roles-and-permissions.md).
 
@@ -55,7 +55,7 @@ Du kan logga in på Adobe Mobile Services på något av följande sätt:
 
    Logga in på [Experience Cloud](https://marketing.adobe.com) med din Adobe ID.
 
-   Den här metoden förutsätter att ditt företag har etablerats och att du har länkat ditt Analytics-konto. Mer information om etablering finns i [Hantera användare och produkter](https://docs.adobe.com/content/help/sv-SE/core-services/interface/manage-users-and-products/admin-getting-started.html)i Experience Cloud. Mer information om hur du länkar ditt konto finns i [Organisationer och kontolänkning](https://docs.adobe.com/content/help/sv-SE/core-services/interface/manage-users-and-products/organizations.html).
+   Den här metoden förutsätter att ditt företag har etablerats och att du har länkat ditt Analytics-konto. Mer information om etablering finns i [Hantera användare och produkter av Experience Cloud](https://docs.adobe.com/content/help/sv-SE/core-services/interface/manage-users-and-products/admin-getting-started.html). Mer information om hur du länkar ditt konto finns i [Organisationer och kontolänkning](https://docs.adobe.com/content/help/sv-SE/core-services/interface/manage-users-and-products/organizations.html).
 
    >[!TIP]
    >
@@ -63,7 +63,7 @@ Du kan logga in på Adobe Mobile Services på något av följande sätt:
 
 * **Adobe Analytics**
 
-   Klicka **[!UICONTROL Sign in with Analytics]** och ange företagsnamnet för Analytics, ditt användarnamn och ditt lösenord.
+   Klicka på **[!UICONTROL Sign in with Analytics]** och ange företagsnamnet för Analytics, ditt användarnamn och ditt lösenord.
 
 ## Skapa en rapportsvit {#section_7BC602ED1ABA42C6AB722F506B5219F3}
 
@@ -71,9 +71,9 @@ Så här skapar du en rapportserie för att samla in appdata och definiera en ap
 
 1. Klicka på **[!UICONTROL Create New App]**.
 
-   Om knappen inte visas klickar du på **[!UICONTROL Manage Apps]** > **[!UICONTROL Add]**.
+   Om du inte ser den här knappen klickar du på **[!UICONTROL Manage Apps]** > **[!UICONTROL Add]**.
 
-1. In the **[!UICONTROL Report Suite]** drop-down, select **[!UICONTROL New Report Suite]**.
+1. Välj **[!UICONTROL New Report Suite]** i listrutan **[!UICONTROL Report Suite]**.
 
 1. Ange namnet på din app och välj ett unikt rapportsprogram-ID.
 
@@ -82,23 +82,22 @@ Så här skapar du en rapportserie för att samla in appdata och definiera en ap
 
    Med den här mallen kan tidsstämplar samla in offlinedata och aktivera mobillösningens variabler för att hämta livscykelvärden.
 
-1. Markera **[!UICONTROL Timezone]**, **[!UICONTROL Currency]** och klicka på **[!UICONTROL Save]**.
+1. Välj din **[!UICONTROL Timezone]**, din **[!UICONTROL Currency]** och klicka på **[!UICONTROL Save]**.
 
-## Ladda ned SDK {#section_044C17DF82BC4FD8A3E409C456CE9A46}
+## Hämta SDK {#section_044C17DF82BC4FD8A3E409C456CE9A46}
 
 Så här hämtar du mobil-SDK:
 
 1. Logga in på Mobiltjänster och öppna appen på något av följande sätt:
 
-   * Välj din app i **[!UICONTROL All Apps]** listrutan.
+   * Välj din app i listrutan **[!UICONTROL All Apps]**.
    * Leta reda på appen i den högra rutan och öppna den.
 
 1. Klicka på **[!UICONTROL Manage App Settings]**.
-1. Bläddra **[!UICONTROL App SDK Downloads]** till **[!UICONTROL App SDK Downloads]** avsnittet i avsnittet.
+1. I avsnittet **[!UICONTROL App SDK Downloads]** bläddrar du till avsnittet **[!UICONTROL App SDK Downloads]**.
 
 1. Hämta SDK och exempelappen för din plattform.
 
 >[!TIP]
 >
 >En konfigurationsfil för din app inkluderas automatiskt i SDK-nedladdningen, så du behöver inte hämta filen separat. Om du redan har laddat ned SDK och vill få uppdaterade inställningar hämtar du konfigurationsfilen igen.
-

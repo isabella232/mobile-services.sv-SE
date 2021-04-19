@@ -4,26 +4,26 @@ seo-description: Här är en lista över Adobe Target-metoder som finns i iOS-bi
 seo-title: iOS-målmetoder för Adobe Mobile Services
 solution: Experience Cloud,Analytics
 title: Målmetoder för iOS
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 692bcda1-02ba-4902-bd65-15888adf1952
+exl-id: ba03f865-970c-4b48-af35-749f05b273d8
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '656'
-ht-degree: 21%
+ht-degree: 22%
 
 ---
-
 
 # Målmetoder för iOS {#target-methods}
 
 Här är en lista över Adobe Target-metoder som finns i iOS-biblioteket.
 
-SDK har för närvarande stöd för flera Adobe Experience Cloud-lösningar, inklusive Analytics, Target, Audience Manager och Adobe Experience Platform Identity Service. Metoderna är prefasta enligt lösningen. Målmetoder har till exempel prefixet `target`.
+SDK har för närvarande stöd för flera Adobe Experience Cloud-lösningar, inklusive Analytics, Target, Audience Manager och Adobe Experience Platform Identity Service. Metoderna är prefasta enligt lösningen. Målmetoderna har till exempel prefixet `target`.
 
 >[!TIP]
 >
->Livscykelmätvärden skickas som parametrar till varje mbox-belastning. Mer information finns i [Livscykelvärden](/help/ios/metrics.md). Om du skickar Target-begäranden inuti `didFinishLaunching` delegatmetoden lägger du till ett `[ADBMobile trackAction:data:]` - eller `[ADBMobile trackState:data:]` -anrop före Target-implementeringskoden. På så sätt innehåller Target-begäranden alla livscykeldata.
+>Livscykelmätvärden skickas som parametrar till varje mbox-belastning. Mer information finns i [Livscykelvärden](/help/ios/metrics.md). Om du skickar Target-begäranden inuti delegatmetoden `didFinishLaunching` lägger du till ett `[ADBMobile trackAction:data:]`- eller `[ADBMobile trackState:data:]`-anrop före Target-implementeringskoden. På så sätt innehåller Target-begäranden alla livscykeldata.
 
 ## Klassreferens: ADBTargetLocationRequest
 
@@ -55,17 +55,17 @@ NSString *const ADBTargetParameterMboxHost;
 
 >[!IMPORTANT]
 >
->* Om du använder SDK:er **före** version 4.14.0 kan du läsa [Indataparametrar](https://developers.adobetarget.com/api/#input-parameters) för parameterbegränsningar.
+>* Om du använder SDK:er **före** version 4.14.0, se [Indataparametrar](https://developers.adobetarget.com/api/#input-parameters) för parameterbegränsningar.
    >
    >
-* Om du använder SDK:er version 4.14.0 **eller senare** kan du läsa [Gruppindataparametrar](https://developers.adobetarget.com/api/#batch-input-parameters) för parameterbegränsningar.
+* Om du använder SDK:er version 4.14.0 **eller efter** finns det parameterbegränsningar i [batchindataparametrar](https://developers.adobetarget.com/api/#batch-input-parameters).
 
 
 ### Metoder
 
 * **targetLoadRequest: &#x200B; återanrop**
 
-   Skickar begäran till den konfigurerade målservern och returnerar strängvärdet för erbjudandet som genereras i ett block `callback`.
+   Skickar begäran till den konfigurerade målservern och returnerar strängvärdet för erbjudandet som genereras i ett `callback`-block.
 
    * Här är syntaxen för den här metoden:
 
@@ -155,7 +155,7 @@ NSString *const ADBTargetParameterMboxHost;
                                  }];
       ```
 
-      Mer information om det underliggande Target-API:t finns i [Adobe Target-utvecklare](https://docs.adobe.com/dev/products/target/reference/delivery.html).
+      Mer information om det underliggande mål-API:t finns i [Adobe Target-utvecklare](https://docs.adobe.com/dev/products/target/reference/delivery.html).
 
 
 
@@ -194,7 +194,7 @@ NSString *const ADBTargetParameterMboxHost;
 
 * **targetCreateOrder &#x200B; ConfirmRequestWithName: &#x200B; orderId: &#x200B; orderTotal: &#x200B; productPurchasedId: &#x200B; parametrar**
 
-   Skapar en `ADBTargetLocationRequest`bild.
+   Skapar en `ADBTargetLocationRequest`.
 
    * Här är syntaxen för den här metoden:
 

@@ -1,22 +1,22 @@
 ---
 description: Här är referensinformationen för standardvärden och -dimensioner för mobila enheter.
-keywords: mobile
+keywords: mobil
 seo-description: Här är referensinformationen för standardvärden och -dimensioner för mobila enheter.
 seo-title: Mobile Metrics and Dimensions Reference
 solution: Experience Cloud,Analytics
 title: Mobile Metrics and Dimensions Reference
-topic: Metrics
+topic-fix: Metrics
 uuid: 96170ae7-8553-4f3e-ae01-65e5b664adf4
+exl-id: ddfbf11e-a4c3-4d59-92b3-1d192dc3e7cd
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '630'
 ht-degree: 1%
 
 ---
 
-
-# Mobilstatistik och dimensionsreferens {#mobile-metrics-and-dimensions-reference}
+# Mobilmått och dimensionsreferens {#mobile-metrics-and-dimensions-reference}
 
 Den här informationen hjälper dig att förstå mer om standardvärden och -dimensioner för mobila enheter.
 
@@ -53,10 +53,10 @@ Här är en lista över standardvärden för mobiler:
 
 * **Launches**
 
-   Utlöses på en körning som inte är en installation eller uppgradering. Detta utlöses också när programmet tas bort från bakgrunden. Som standard utlöses en ny start när programmet är i bakgrunden i fem eller fler minuter. Hur lång bakgrundstid det tar innan en ny start aktiveras kan konfigureras på sidan Hantera programinställningar **[!UICONTROL SDK Analytics Options]** . Mer information finns i *sessionstimeout (sekunder)* -raden i [Konfigurera SDK-analysalternativ](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-analytics/t-config-analytics.md).
+   Utlöses på en körning som inte är en installation eller uppgradering. Detta utlöses också när programmet tas bort från bakgrunden. Som standard utlöses en ny start när programmet är i bakgrunden i fem eller fler minuter. Mängden bakgrundstid innan en ny start aktiveras kan konfigureras i **[!UICONTROL SDK Analytics Options]** på sidan Hantera programinställningar. Mer information finns i *Sessionstimeout (sekunder)*-raden i [Konfigurera alternativ för SDK-analys](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-analytics/t-config-analytics.md).
 
    >[!IMPORTANT]
-   >Eftersom besöken i [!UICONTROL Adobe Analytics] och mobilappstarter [!UICONTROL Adobe Mobile Services] beräknas kan du se olika resultat i rapporteringen. Mer information finns i [Jämför besök och starta](https://helpx.adobe.com/analytics/kb/compare-visits-and-mobile-app-launches.html)mobilappar.
+   >Eftersom besöken i [!UICONTROL Adobe Analytics] och mobilappstarter i [!UICONTROL Adobe Mobile Services] beräknas, kan du se olika resultat i rapporteringen. Mer information finns i [Jämför besök och startprogram för mobilappar](https://helpx.adobe.com/analytics/kb/compare-visits-and-mobile-app-launches.html).
 
 * **Krascher**
 
@@ -75,7 +75,7 @@ Här är en lista över mobila standarddimensioner:
 
 * **Installationsdatum**
 
-   Datum för första start efter installationen. Datumet är i formatet *MM/DD/ÅÅÅÅ* .
+   Datum för första start efter installationen. Datumet är i formatet *MM/DD/ÅÅÅÅ*.
 
 * **Program-ID**
 

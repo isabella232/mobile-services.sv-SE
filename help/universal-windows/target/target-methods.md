@@ -4,16 +4,16 @@ seo-description: Lista över Target-metoder som tillhandahålls av Universal Win
 seo-title: Målmetoder
 solution: Experience Cloud,Analytics
 title: Målmetoder
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 2ad5953b-7850-446a-8053-b3715b86329b
+exl-id: d7aeee41-1c34-4f98-8455-e9f429287cfc
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '265'
 ht-degree: 34%
 
 ---
-
 
 # Målmetoder {#target-methods}
 
@@ -21,11 +21,11 @@ Lista över Target-metoder som tillhandahålls av Universal Windows Platform-bib
 
 SDK har för närvarande stöd för flera Adobe Experience Cloud-lösningar, inklusive Analytics, Target och Audience Manager.
 
-[Livscykelmätvärden](/help/universal-windows/metrics.md) skickas som parametrar till varje mbox-inläsning.
+[Livscykelmetrisk ](/help/universal-windows/metrics.md) skickas som parametrar till varje mbox-inläsning.
 
 >[!TIP]
 >
->När du använder `winmd` metoder från winJS (JavaScript) får alla metoder automatiskt sin första bokstav nedsänkt.
+>När du använder `winmd`-metoder från winJS (JavaScript) kommer den första bokstaven automatiskt att sänkas för alla metoder.
 
 ## Klassreferens: TargetLocationRequest
 
@@ -73,7 +73,7 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
 
 * **LoadRequest (winJS: loadRequest)**
 
-   Skickar `request` till den konfigurerade målservern och returnerar strängvärdet för erbjudandet som genereras i ett block `callback`.
+   Skickar `request` till den konfigurerade målservern och returnerar strängvärdet för erbjudandet som genererats i ett block `callback`.
 
    * Här är syntaxen för den här metoden:
 
@@ -92,7 +92,7 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
 
 * **CreateRequest (winJS: createRequest)**
 
-   Skapar ett `TargetLocationRequest` objekt med de angivna parametrarna.
+   Skapar ett `TargetLocationRequest`-objekt med de angivna parametrarna.
 
    * Här är syntaxen för den här metoden:
 
@@ -109,7 +109,7 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
 
 * **CreateOrder &#x200B; ConfirmRequest (winJS: createOrder &#x200B; ConfirmRequest)**
 
-   Skapar ett `TargetLocationRequest` objekt med de angivna parametrarna.
+   Skapar ett `TargetLocationRequest`-objekt med de angivna parametrarna.
 
    * Här är syntaxen för den här metoden:
 

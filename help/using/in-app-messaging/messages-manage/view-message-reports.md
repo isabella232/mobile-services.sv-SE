@@ -1,27 +1,27 @@
 ---
 description: Du kan visa meddelanderapporter för meddelanden i programmet och push-meddelanden.
-keywords: mobile
+keywords: mobil
 seo-description: Du kan visa meddelanderapporter för meddelanden i programmet och push-meddelanden.
 seo-title: Visa meddelanderapporter
 solution: Experience Cloud,Analytics
 title: Visa meddelanderapporter
-topic: Metrics
+topic-fix: Metrics
 uuid: 0ac73a81-388f-4dfd-84d5-21b8db4b8c83
+exl-id: b8a2dd7a-02e1-47ce-9e8e-c1419b707b44
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '470'
+source-wordcount: '471'
 ht-degree: 0%
 
 ---
-
 
 # Visa meddelanderapporter{#view-message-reports}
 
 Du kan visa meddelanderapporter för meddelanden i programmet och push-meddelanden.
 
-1. Klicka på ![rapportikonen](assets/icon_report.png) i **[!UICONTROL Report]** kolumnen för ett meddelande.
-1. (**Valfritt**) Skapa ett klisterfilter för rapporten eller ändra tidsperioden genom att klicka på **[!UICONTROL Calendar]** ikonen.
+1. Klicka på ![rapportikonen](assets/icon_report.png) i **[!UICONTROL Report]**-kolumnen för ett meddelande.
+1. (**Valfritt**) Skapa ett klisterfilter för rapporten eller ändra tidsperioden genom att klicka på ikonen **[!UICONTROL Calendar]**.
 
    Mer information om hur du skapar ett klisterfilter finns i [Lägga till ett klisterfilter](/help/using/usage/reports-customize/t-sticky-filter.md).
 
@@ -29,7 +29,7 @@ Du kan visa meddelanderapporter för meddelanden i programmet och push-meddeland
 >
 >Beroende på vilken typ av meddelande du visar kan rapporten variera.
 
-## In-app messages {#section_90B79BA58E8141F78538C187EB1BF8C7}
+## Meddelanden i appen {#section_90B79BA58E8141F78538C187EB1BF8C7}
 
 Om du visar rapporter för ett meddelande i appen ser rapporten ut ungefär som på följande bild:
 
@@ -41,9 +41,9 @@ Här är en lista över de mätvärden som är tillgängliga för meddelanden i 
 
 * **[!UICONTROL Impression]**, när ett meddelande utlöses.
 
-* **[!UICONTROL Click through]**, när en användare trycker på **[!UICONTROL Click Through]** knappen på ett varningsmeddelande eller helskärmsmeddelande och när en användare öppnar programmet från ett lokalt meddelande.
+* **[!UICONTROL Click through]**, när en användare trycker på  **[!UICONTROL Click Through]** knappen på ett varningsmeddelande eller helskärmsmeddelande och när en användare öppnar programmet från ett lokalt meddelande.
 
-* **[!UICONTROL Cancel]** när en användare trycker på **[!UICONTROL Cancel]** knappen på en varning eller ett helskärmsmeddelande.
+* **[!UICONTROL Cancel]** när en användare trycker på  **[!UICONTROL Cancel]** knappen på en varning eller ett helskärmsmeddelande.
 
 * **[!UICONTROL Engagement Rate]**, ett beräknat mått från Adobe Analytics och är resultatet av antalet klickningar dividerat med antalet visningar.
 

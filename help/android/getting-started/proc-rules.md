@@ -4,16 +4,16 @@ seo-description: Bearbetningsregler används för att kopiera data som du skicka
 seo-title: Bearbetar regler och kontextdata
 solution: Experience Cloud,Analytics
 title: Bearbetar regler och kontextdata
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: ea892228-86f5-4980-acb8-45ae43c6996d
+exl-id: 543201fd-8118-485f-8235-26ec8f9bbb11
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '272'
 ht-degree: 3%
 
 ---
-
 
 # Bearbetar regler och kontextdata {#processing-rules-and-context-data}
 
@@ -37,7 +37,7 @@ Tänk på följande information när du arbetar med bearbetningsregler:
    "eVar1":"jimbo"
    ```
 
-   Detta kan göra det *lite* enklare när du slutför engångsmappningen i bearbetningsreglerna, men du förlorar läsbarheten vid felsökning och framtida koduppdateringar, vilket kan vara svårare. Vi rekommenderar i stället att du använder beskrivande namn för nycklar och värden:
+   Detta kan göra det *något* enklare när du slutför engångsmappningen i bearbetningsregler, men du förlorar läsbarheten under felsökning och framtida koduppdateringar, vilket kan vara svårare. Vi rekommenderar i stället att du använder beskrivande namn för nycklar och värden:
 
    ```js
    "username":"jimbo"
@@ -58,4 +58,3 @@ Tänk på följande information när du arbetar med bearbetningsregler:
 >[!TIP]
 >
 >Adobe reserverar namnutrymmet `"a."`. För att undvika kollisioner är det enda andra kravet att kontextdatavariabler är unika i ditt inloggningsföretag.
-

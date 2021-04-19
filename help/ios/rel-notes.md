@@ -4,16 +4,16 @@ seo-description: Versionsinformation och kända fel för iOS SDKs 4.x för Exper
 seo-title: Versionsinformation
 solution: Experience Cloud,Analytics
 title: Versionsinformation
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: e1613dc5-02a4-43a7-997a-29b4de98b4d1
+exl-id: dd1e6bab-65e7-4a68-b3ec-21fb1a08aca2
 translation-type: tm+mt
-source-git-commit: 53d407056dd89dcf32d1895231999b2d92e879ec
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 2%
 
 ---
-
 
 # Versionsinformation {#release-notes}
 

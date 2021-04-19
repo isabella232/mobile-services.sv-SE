@@ -4,22 +4,22 @@ seo-description: Det går inte att ange variabeln products genom att använda be
 seo-title: Produktvariabel
 solution: Experience Cloud,Analytics
 title: Produktvariabel
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 6ece4d27-ef86-435c-a6f7-bd76be1c95ca
+exl-id: c945add4-5358-44f6-b445-554b0df056c1
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '184'
 ht-degree: 1%
 
 ---
 
-
-# Variabeln Produkter {#products-variable}
+# Produktvariabel {#products-variable}
 
 Det går inte att ange variabeln products genom att använda bearbetningsregler. I iOS 4.x SDK måste du använda en speciell syntax i parametern context data för att ange produkter direkt i serveranropet.
 
-Om du vill ställa in *`products`* variabeln anger du en kontextdatanyckel till `"&&products"`och anger värdet med den syntax som är definierad för *`products`* variabeln:
+Om du vill ställa in variabeln *`products`* anger du en kontextdatanyckel till `"&&products"` och anger värdet med den syntax som är definierad för variabeln *`products`*:
 
 ```objective-c
 [contextData setObject:@"Category;Product;Quantity;Price[,Category;Product;Quantity;Price]" forKey:@"&&products"];
@@ -48,4 +48,4 @@ NSMutableDictionary *contextData = [NSMutableDictionary dictionary];
 
 ![](assets/map-products.png)
 
-Du behöver inte mappa *`products`* variabeln med bearbetningsregler eftersom den ställs in direkt på SDK:ns bildbegäran.
+Du behöver inte mappa variabeln *`products`* med bearbetningsregler eftersom den anges direkt på SDK:ns bildbegäran.

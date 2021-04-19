@@ -1,20 +1,20 @@
 ---
 description: Du kan använda den här informationen för att få en förståelse för återanslående och hur de fungerar.
-keywords: android;library;mobile;sdk
+keywords: android;bibliotek;mobil;sdk
 seo-description: Du kan använda den här informationen för att få en förståelse för återanslående och hur de fungerar.
 seo-title: Exempel på återgång
 solution: Experience Cloud,Analytics
 title: Exempel på återgång
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 8010cd00-d42b-4e16-8403-692fab2550f1
+exl-id: 2ff41066-e2ee-425f-8aff-e5e3f3e5f0f5
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '141'
+source-wordcount: '145'
 ht-degree: 0%
 
 ---
-
 
 # Exempel på återgång {#postbacks-example}
 
@@ -22,9 +22,9 @@ Du kan använda den här informationen för att få en förståelse för vilka �
 
 >[!CAUTION]
 >
->Det här exemplet finns endast i informationssyfte. Filen bör konfigureras i användargränssnittet för Adobe Mobile och får inte ändras manuellt. `ADBMobileConfig.json` En manuellt redigerad konfigurationsfil kan vara farlig om konfigurationen av fjärrmeddelanden är aktiverad.
+>Det här exemplet finns endast i informationssyfte. Filen `ADBMobileConfig.json` bör konfigureras i användargränssnittet för Adobe Mobile och får inte ändras manuellt. En manuellt redigerad konfigurationsfil kan vara farlig om konfigurationen av fjärrmeddelanden är aktiverad.
 
-## `ADBMobileConfig.json` definition {#section_8751E8176F3546C09420341A39758AFF}
+## `ADBMobileConfig.json` definition  {#section_8751E8176F3546C09420341A39758AFF}
 
 ```js
 "messages": [ 
@@ -55,7 +55,7 @@ Du kan använda den här informationen för att få en förståelse för vilka �
 ] 
 ```
 
-## Code sample {#section_D063DE82976D4EDEA97E804BD1C4718F}
+## Kodexempel {#section_D063DE82976D4EDEA97E804BD1C4718F}
 
 ```js
 HashMap<String, Object> contextData = new HashMap<String, Object>(); 
@@ -64,6 +64,6 @@ contextData.put("user.zip", "90210");
 Analytics.trackState("MainMenu", contextData);
 ```
 
-Eftersom det här spårningsanropet är `“MainMenu”`i läget utlöses det ovanstående återanslående meddelandet. URL:en ersätter alla mallvariabler med värden från träffen. Om man utgår ifrån att användarens föregående session var 132 sekunder lång och att användaren använder Android SDK version 4.6.0 ser den resulterande URL-adressen ut så här:
+Eftersom det här spårningsanropet är `“MainMenu”` utlöser det ovanstående återanslående meddelandet. URL:en ersätter alla mallvariabler med värden från träffen. Om man utgår ifrån att användarens föregående session var 132 sekunder lång och att användaren använder Android SDK version 4.6.0 ser den resulterande URL-adressen ut så här:
 
 `https://my.server.com/?user=bob&zip=90210&c16=4.6.0-AN&c27=cln,132`

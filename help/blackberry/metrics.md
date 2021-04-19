@@ -1,28 +1,28 @@
 ---
 description: Här är mätvärden och mått som kan mätas automatiskt av mobilbiblioteket, efter att livscykeln har implementerats, och en länk för att felsöka livscykeldata.
-keywords: android;library;mobile;sdk
+keywords: android;bibliotek;mobil;sdk
 seo-description: Här är mätvärden och mått som kan mätas automatiskt av mobilbiblioteket, efter att livscykeln har implementerats, och en länk för att felsöka livscykeldata.
 seo-title: Livscykelstatistik
 solution: Experience Cloud,Analytics
 title: Livscykelstatistik
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 5a371f11-6521-410f-a01f-fc3b285b050f
+exl-id: d7436411-65bd-4cf7-ae3e-cec829a7690a
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '888'
+source-wordcount: '892'
 ht-degree: 0%
 
 ---
-
 
 # Livscykelstatistik {#lifecycle-metrics}
 
 Här är mätvärden och mått som kan mätas automatiskt av mobilbiblioteket, efter att livscykeln har implementerats, och en länk för att felsöka livscykeldata.
 
-Mer information finns i kunskapsbasen under [Felsök livscykeldata](https://helpx.adobe.com/analytics/kb/troubleshoot-lifecycle-data.html).
+Mer information finns i kunskapsbasen på [Troubleshoot Lifecycle data](https://helpx.adobe.com/analytics/kb/troubleshoot-lifecycle-data.html).
 
-## Lifecycle metrics and dimensions {#section_78F036C4296F4BA3A47C2044F79C86C1}
+## Livscykelvärden och dimensioner {#section_78F036C4296F4BA3A47C2044F79C86C1}
 
 När livscykelmätvärden är konfigurerade skickas de i kontextdataparametrar till Analytics, i parametrar till Target för varje mbox-anrop och som en signal till målgruppshanteringen. Analyserna och Target har samma format, medan målgruppshanteringen använder olika prefix för varje mätvärde.
 
@@ -57,7 +57,7 @@ För Analytics hämtas och rapporteras kontextdata som skickas med varje livscyk
 
 * **Engagerade användare varje månad**
 
-   Utlöses när programmet används under en viss månad.  >>>>
+   Utlöses när programmet används under en viss månad.  >>>
 
    >[!IMPORTANT]
    >
@@ -201,7 +201,7 @@ Följande mått och mått hämtas in i mobillösningsvariabler med den listade m
 
 * **Placering (ned till 10 km)**
 
-   Fylls i med `trackLocation` metoder.
+   Fylls i av `trackLocation`-metoder.
 
    * Kontextdata för analys/Target-parameter:
 
@@ -215,7 +215,7 @@ Följande mått och mått hämtas in i mobillösningsvariabler med den listade m
 
 * **Plats (ned till 100 m)**
 
-   Fylls i med `trackLocation` metoder.
+   Fylls i av `trackLocation`-metoder.
 
    * Kontextdata för analys/Target-parameter:
 
@@ -229,7 +229,7 @@ Följande mått och mått hämtas in i mobillösningsvariabler med den listade m
 
 * **Plats (ned till 1 m)**
 
-   Fylls i med `trackLocation` metoder.
+   Fylls i av `trackLocation`-metoder.
 
    * Kontextdata för analys/Target-parameter:
 
@@ -243,7 +243,7 @@ Följande mått och mått hämtas in i mobillösningsvariabler med den listade m
 
 * **Intressepunktens namn**
 
-   Fylls i av `trackLocation` metoder när enheten är inom en definierad POI.
+   Fylls i av `trackLocation`-metoder när enheten finns inom en definierad POI.
 
    * Kontextdata för analys/Target-parameter:
 
@@ -255,7 +255,7 @@ Följande mått och mått hämtas in i mobillösningsvariabler med den listade m
 
 * **Avstånd till intressecentrum**
 
-   Fylls i av `trackLocation` metoder när enheten är inom en definierad POI.
+   Fylls i av `trackLocation`-metoder när enheten finns inom en definierad POI.
 
    * Kontextdata för analys/Target-parameter:
 

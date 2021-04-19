@@ -1,20 +1,20 @@
 ---
 description: Du kan konfigurera schemaläggningsalternativ för meddelanden i appen, inklusive varaktighet, veckodagar och tid för dagsalternativen.
-keywords: mobile
+keywords: mobil
 seo-description: Du kan konfigurera schemaläggningsalternativ för meddelanden i appen, inklusive varaktighet, veckodagar och tid för dagsalternativen.
 seo-title: Schemalägg meddelande i appen
 solution: Experience Cloud,Analytics
 title: Schemalägg meddelande i appen
-topic: Metrics
+topic-fix: Metrics
 uuid: d10e691b-105a-4165-a49d-d046ce250acd
+exl-id: bd7103ff-f14f-436b-a6c4-c477535cffe2
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '188'
-ht-degree: 0%
+source-wordcount: '189'
+ht-degree: 1%
 
 ---
-
 
 # Schema: meddelande i appen {#schedule-in-app-message}
 
@@ -24,9 +24,9 @@ Du kan konfigurera schemaläggningsalternativ för meddelanden i appen, inklusiv
 >
 >Datumintervall definieras av din tidszon. Specifika dagar och tidsintervall är relativa till användarens enhet.
 
-1. Klicka på **[!UICONTROL Messaging]** > **[!UICONTROL Manage Messages]** > **[!UICONTROL Create Message]** > **[!UICONTROL Create In-App]** i appen.
+1. Klicka på **[!UICONTROL Messaging]** > **[!UICONTROL Manage Messages]** > **[!UICONTROL Create Message]** > **[!UICONTROL Create In-App]** i din app.
 1. Klicka på **[!UICONTROL Schedule]**.
-1. Fyll i följande fält i **[!UICONTROL Duration]** avsnittet:
+1. Fyll i följande fält i avsnittet **[!UICONTROL Duration]**:
 
    * **[!UICONTROL Every Day]**
 
@@ -34,9 +34,9 @@ Du kan konfigurera schemaläggningsalternativ för meddelanden i appen, inklusiv
 
    * **[!UICONTROL Start and End]**
 
-      Använd **[!UICONTROL Calendar]** ikonerna för att välja ett start- och slutdatum för meddelandet.
+      Använd ikonerna **[!UICONTROL Calendar]** för att välja ett start- och slutdatum för meddelandet.
 
-1. Fyll i följande fält i **[!UICONTROL Days of the Week]** avsnittet:
+1. Fyll i följande fält i avsnittet **[!UICONTROL Days of the Week]**:
 
    * **[!UICONTROL Every Day]**
 
@@ -46,7 +46,7 @@ Du kan konfigurera schemaläggningsalternativ för meddelanden i appen, inklusiv
 
       Klicka på veckodagarna för att välja vilka dagar du vill visa meddelandet.
 
-1. Fyll i följande fält i **[!UICONTROL Time of Day]** avsnittet:
+1. Fyll i följande fält i avsnittet **[!UICONTROL Time of Day]**:
 
    * **[!UICONTROL All Day ]**
 

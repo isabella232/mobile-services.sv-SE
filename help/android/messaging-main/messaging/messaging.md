@@ -4,18 +4,18 @@ seo-description: Ni kan leverera meddelanden i appen som triggas av alla analysd
 seo-title: Meddelanden i appen
 solution: Experience Cloud,Analytics
 title: Meddelanden i appen
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 351ee3d2-80b9-4f2d-9696-21f274d89f5a
+exl-id: ca9414d1-86e6-4bb2-a2d6-57df37df2403
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '800'
 ht-degree: 3%
 
 ---
 
-
-# In-app messaging {#in-app-messaging}
+# Meddelanden i appen {#in-app-messaging}
 
 Ni kan leverera meddelanden i appen som triggas av alla analysdata eller händelser. Efter implementeringen levereras meddelanden dynamiskt till programmet och kräver ingen koduppdatering.
 
@@ -27,26 +27,26 @@ Letar du efter information och dokumentation om Adobe Experience Platform Mobile
 >
 >Från om med september 2018 har vi släppt en ny större version av SDK. Dessa nya Adobe Experience Platform Mobile SDK:er kan konfigureras via [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
 
-* Gå till [Launch](https://launch.adobe.com/)för att komma igång.
-* Om du vill se vad som finns i Experience Platform SDK-databaserna går du till [Github: Adobe Experience Platform SDKs](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
+* Gå till [Starta](https://launch.adobe.com/) för att komma igång.
+* Om du vill se vad som finns i Experience Platform SDK-databaserna går du till [Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
 
 >[!IMPORTANT]
 >
-> Om du använder Adobe Experience Platform Mobile SDK:er med Adobe Launch **måste** du också installera Adobe Analytics Mobile Services-tillägget för att kunna använda Adobe Mobile Services-funktioner som meddelanden i appen och push-meddelanden. Mer information finns i [Adobe Analytics - Mobiltjänster](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services). Mer information om hur du använder push-meddelanden och meddelanden i appen med Experience Cloud SDK:er finns i [Konfigurera push-meddelanden](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services#set-up-push-messaging) och [Konfigurera meddelanden](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services#set-up-in-app-messaging)i appen.
+> Om du använder Adobe Experience Platform Mobile SDK:er med Adobe Launch måste du **även** installera Adobe Analytics Mobile Services-tillägget för att kunna använda Adobe Mobile Services-funktioner som meddelanden i appen och push-meddelanden. Mer information finns i [Adobe Analytics - Mobiltjänster](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services). Mer information om hur du använder push-meddelanden och meddelanden i appen med Experience Cloud SDK:er finns i [Konfigurera push-meddelanden](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services#set-up-push-messaging) och [Konfigurera meddelanden i appen](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services#set-up-in-app-messaging).
 
 >[!IMPORTANT]
 >
->Om du vill använda meddelanden i programmet **måste** du ha SDK version 4.2 eller senare.
+>Om du vill använda meddelanden i programmet måste du **ha SDK version 4.2 eller senare.**
 
-Du kan skapa meddelanden och regler i Adobe Mobile-tjänster som definierar när meddelanden ska visas. Mer information finns i [Skapa ett meddelande](/help/using/in-app-messaging/t-in-app-message/t-in-app-message.md)i appen. Om du vill visa meddelanden i programmet måste SDK uppdateras. Du kan slutföra de här stegen även om du ännu inte har definierat några meddelanden. När du har definierat meddelanden levereras de dynamiskt till din app och visas utan någon uppdatering för appbutiken.
+Du kan skapa meddelanden och regler i Adobe Mobile-tjänster som definierar när meddelanden ska visas. Mer information finns i [Skapa ett meddelande i appen](/help/using/in-app-messaging/t-in-app-message/t-in-app-message.md). Om du vill visa meddelanden i programmet måste SDK uppdateras. Du kan slutföra de här stegen även om du ännu inte har definierat några meddelanden. När du har definierat meddelanden levereras de dynamiskt till din app och visas utan någon uppdatering för appbutiken.
 
-## Aktivera meddelanden i programmet {#section_380DF56C4EE4432A823940E4AE4C9E91}
+## Aktiverar meddelanden i programmet {#section_380DF56C4EE4432A823940E4AE4C9E91}
 
 1. Lägg till biblioteket i ditt projekt och implementera livscykeln.
 
-   Mer information finns i *Lägga till SDK- och konfigurationsfilen i IntelliJ IDEA- eller Eclipse-projektet* i [Core-implementering och livscykel](/help/android/getting-started/dev-qs.md).
+   Mer information finns i *Lägg till SDK- och konfigurationsfilen i IntelliJ IDEA- eller Eclipse-projektet* i [Core-implementering och livscykel](/help/android/getting-started/dev-qs.md).
 
-1. Uppdatera `AndroidManifest.xml` filen för att deklarera helskärmsaktiviteten och aktivera meddelandehanteraren:
+1. Uppdatera `AndroidManifest.xml`-filen för att deklarera helskärmsaktiviteten och aktivera meddelandehanteraren:
 
    ```java
    <activity  
@@ -77,7 +77,7 @@ Du kan skapa meddelanden och regler i Adobe Mobile-tjänster som definierar när
    import com.adobe.mobile.*;
    ```
 
-1. I varje `collectLifecycleData` samtal skickar du `this` en referens till din aktuella aktivitet:
+1. I varje `collectLifecycleData`-anrop skickar du `this` för att ange en referens till din aktuella aktivitet:
 
    ```java
    @Override 
@@ -86,13 +86,13 @@ Du kan skapa meddelanden och regler i Adobe Mobile-tjänster som definierar när
    }
    ```
 
-1. Kontrollera att `ADBMobileConfig.json` filen innehåller de inställningar som krävs för meddelanden i appen.
+1. Kontrollera att filen `ADBMobileConfig.json` innehåller de inställningar som krävs för meddelanden i appen.
 
    >[!IMPORTANT]
    >
-   >`messages` eller `remotes` krävs.
+   >`messages` eller  `remotes` krävs.
 
-   För att meddelanden i appen ska uppdateras dynamiskt vid start måste objektet vara `remotes` närvarande och korrekt konfigurerat:
+   För att meddelanden i programmet ska uppdateras dynamiskt vid start måste `remotes`-objektet finnas och vara korrekt konfigurerat:
 
    ```js
    “messages”: [ 
@@ -117,24 +117,24 @@ Du kan skapa meddelanden och regler i Adobe Mobile-tjänster som definierar när
    }
    ```
 
-   Om det här objektet inte är konfigurerat hämtar du en uppdaterad `ADBMobileConfig.json` fil från Adobe Mobile Services. Mer information finns i [Innan du börjar](/help/android/getting-started/requirements.md).
+   Om det här objektet inte har konfigurerats hämtar du en uppdaterad `ADBMobileConfig.json`-fil från Adobe Mobile-tjänster. Mer information finns i [Innan du startar](/help/android/getting-started/requirements.md).
 
-## Spåra meddelanden i appen {#section_B85CDF6929564AAEA79338B55E5CB1E8}
+## Spåra meddelanden i programmet {#section_B85CDF6929564AAEA79338B55E5CB1E8}
 
 Android-mobilens SDK:er spårar följande mått för dina meddelanden i appen:
 
 * För meddelanden i helskärmsläge och aviseringsformat i appen:
 
    * **Impressions**: när användaren utlöser ett meddelande i appen.
-   * **Klicka igenom**: när användaren trycker på **[!UICONTROL Click through]**.
-   * **Avbryter**: när användaren trycker på **[!UICONTROL Cancel]**.
+   * **Klicka igenom**: när användaren trycker på  **[!UICONTROL Click through]**.
+   * **Avbryter**: när användaren trycker på  **[!UICONTROL Cancel]**.
 
 * För anpassade meddelanden i helskärmsläge i appen måste HTML-innehållet i meddelandet innehålla rätt kod för att meddela SDK-spårning om följande knappar:
 
-   * **Exempelspårning för klickning** (omdirigering):
+   * **Exempelspårning för klickning**  (omdirigering):
 
       `adbinapp://confirm/?url=https://www.yoursite.com`
-   * **Exemplspårning för avbryt** (stäng):
+   * **Exemplspårning för avbryt**  (stäng):
 
       `adbinapp://cancel`
 
@@ -146,7 +146,7 @@ När du skapar ett helskärmsmeddelande kan du välja att ange en reservbild. Om
 >
 >Resursnamnet för reservbilden anges när du konfigurerar meddelandet i Adobe Mobile Services och du måste se till att den angivna resursen är tillgänglig.
 
-## Konfigurera meddelandeikoner {#section_DDA28BDBCBB748BCBECF3AB50A177D48}
+## Konfigurerar meddelandeikoner {#section_DDA28BDBCBB748BCBECF3AB50A177D48}
 
 Följande metoder använder du för att konfigurera de små och stora ikoner som visas i meddelandeområdet och den stora ikonen som visas när meddelanden visas i meddelandelådan.
 

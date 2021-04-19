@@ -1,20 +1,20 @@
 ---
 description: Du kan ta bort en eller flera förvärvslänkar när de inte längre behövs.
-keywords: mobile
+keywords: mobil
 seo-description: Du kan ta bort en eller flera förvärvslänkar när de inte längre behövs.
 seo-title: Ta bort värvningslänkar
 solution: Experience Cloud,Analytics
 title: Ta bort värvningslänkar
-topic: Metrics
+topic-fix: Metrics
 uuid: e7362348-ca24-4f1c-b37f-eca6d2b0da6d
+exl-id: 4c007ec6-40ba-468f-8bfc-0930a04c59c1
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '98'
-ht-degree: 1%
+source-wordcount: '99'
+ht-degree: 2%
 
 ---
-
 
 # Ta bort värvningslänkar{#delete-acquisition-links}
 
@@ -30,5 +30,4 @@ När du inte längre behöver förvärvslänkar kan du ta bort dem.
 
    >[!TIP]
    >
-   >Alternativet visas **[!UICONTROL Delete Selection]** inte förrän du väljer en eller flera förvärvslänkar.
-
+   >Alternativet **[!UICONTROL Delete Selection]** visas inte förrän du väljer en eller flera förvärvslänkar.

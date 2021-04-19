@@ -1,26 +1,26 @@
 ---
 description: Du kan skapa ett nytt länkmål som dirigerar användarna till en webbsida eller en djup länk i appen.
-keywords: mobile
+keywords: mobil
 seo-description: Du kan skapa ett nytt länkmål som dirigerar användarna till en webbsida eller en djup länk i appen.
 seo-title: Skapa nytt länkmål
 solution: Experience Cloud,Analytics
 title: Skapa nytt länkmål
-topic: Metrics
+topic-fix: Metrics
 uuid: 390e3dea-0221-4f97-980d-a90ca9f162fa
+exl-id: 2d2f5938-1461-43e2-a375-45c18afc9d5a
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '392'
 ht-degree: 0%
 
 ---
-
 
 # Skapa ett nytt länkmål {#create-new-link-destination}
 
 Du kan skapa ett nytt länkmål som dirigerar användarna till en webbsida eller en djup länk i appen.
 
-1. Klicka på i gränssnittet för mobila tjänster **[!UICONTROL Manage Apps]**.
+1. Klicka på **[!UICONTROL Manage Apps]** i gränssnittet för mobila tjänster.
 1. Klicka på appens namn för att visa dess app informationssida.
 1. Klicka på **[!UICONTROL Manage Link Destinations]**.
 1. Klicka på **[!UICONTROL Create New]**.
@@ -39,7 +39,7 @@ Du kan skapa ett nytt länkmål som dirigerar användarna till en webbsida eller
 
       * **[!UICONTROL Web Link]**
 
-         Skriv till exempel en webb-HTTP- eller HTTPS-URL`https://adobe.com`. Webblänksmål dirigerar användare till en URL. Du kan t.ex. dirigera användare till en produktlinje på en webbutik.
+         Skriv en webb-HTTP- eller HTTPS-URL, till exempel`https://adobe.com`. Webblänksmål dirigerar användare till en URL. Du kan t.ex. dirigera användare till en produktlinje på en webbutik.
 
       * **[!UICONTROL Hybrid Link]**
 
@@ -49,7 +49,7 @@ Välj det program som är associerat med länken som du ska ange.
 
       >[!TIP]
       >
-      >Den här informationen krävs bara om du har valt en App Deep Link (App Deep Link) eller en Hybrid Link (Hybrid Link) i **[!UICONTROL Link Type]**. Om appen inte visas i urvalslistan klickar du för **[!UICONTROL Add New App]** att referera till en ny app från en appbutik.
+      >Den här informationen krävs bara om du har valt en App Deep Link eller en Hybrid Link i **[!UICONTROL Link Type]**. Om appen inte visas i urvalslistan klickar du på **[!UICONTROL Add New App]** för att referera till en ny app från en appbutik.
 
    * **[!UICONTROL Link type]**
 

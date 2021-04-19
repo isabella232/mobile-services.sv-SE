@@ -1,20 +1,20 @@
 ---
 description: Du kan dirigera användare till ett mål beroende på om de har appen installerad (en applänk) eller inte (till en webbplats eller en appbutik).
-keywords: mobile
+keywords: mobil
 seo-description: Du kan dirigera användare till ett mål beroende på om de har appen installerad (en applänk) eller inte (till en webbplats eller en appbutik).
 seo-title: Insticksannonser
 solution: Experience Cloud,Analytics
 title: Insticksannonser
-topic: Metrics
+topic-fix: Metrics
 uuid: 7dce8ab2-2a5d-4384-ac1e-e31dfaa33654
+exl-id: b6d4588f-4f28-4c1b-9291-f4b9154d84f7
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '371'
 ht-degree: 1%
 
 ---
-
 
 # Insticksannonser{#interstitials}
 
@@ -37,7 +37,7 @@ Så här konfigurerar du en interstititet när du skapar en marknadsföringslän
       Här är kraven för HTML-sidan:
 
       * Måste vara en HTML-fil.
-      * Måste innehålla `%%DEST%%` platshållarna och `%%FALLBACK%%` .
+      * Måste innehålla platshållarna `%%DEST%%` och `%%FALLBACK%%`.
       * Den överförda HTML-koden hanteras i en `<iframe>`.
 
          Du måste se till att länkmålen pekar på ett överordnat fönster. Du kan inkludera `<base target="_parent" />` i `<head>` eller ange en målegenskap för varje `<a/>` individuellt.
@@ -64,7 +64,7 @@ Så här konfigurerar du en interstititet när du skapar en marknadsföringslän
       Det här fältet uppdaterar textknappen om en djup länk misslyckas. Användarna uppmanas att prova den djupa länken innan de kan välja ett annat alternativ. En reservlösning kan till exempel vara till en appbutik för att hämta och installera appen eller ta användare till företagets webbplats. Med reservtexten kan användarna se att det finns ett annat alternativ om den djupa länken misslyckas.
 
 
-1. (**Valfritt**) Klicka på ikonerna ovanför bilden för att se hur det interaktiva ser ut att rotera och på olika enheter.
+1. (**Valfritt**) Klicka på ikonerna ovanför bilden för att se hur interstitialen ser ut att rotera och på olika enheter.
 
    Du kan ändra eller redigera bilden utanför Mobiltjänster för att se till att bilden visas korrekt i olika situationer.
 1. Klicka på **[!UICONTROL Save]**.

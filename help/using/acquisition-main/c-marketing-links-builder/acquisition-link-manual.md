@@ -1,20 +1,20 @@
 ---
 description: Du kan skapa marknadsföringslänkar för att få nya mobilappsanvändare direkt genom att konfigurera URL-parametrarna manuellt.
-keywords: mobile
+keywords: mobil
 seo-description: Du kan skapa marknadsföringslänkar för att få nya mobilappsanvändare direkt genom att konfigurera URL-parametrarna manuellt.
 seo-title: Skapa förvärvslänkar manuellt
 solution: Experience Cloud,Analytics
 title: Skapa förvärvslänkar manuellt
-topic: Metrics
+topic-fix: Metrics
 uuid: d7709203-f793-4982-adaa-9c3c914aca2b
+exl-id: aef9fe3e-32dc-4ec0-9eda-f64cc5e486a3
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '493'
 ht-degree: 0%
 
 ---
-
 
 # Skapa förvärvslänkar manuellt {#create-acquisition-link-manually}
 
@@ -22,13 +22,13 @@ Du kan skapa marknadsföringslänkar för att få nya mobilappsanvändare direkt
 
 >[!IMPORTANT]
 >
->Den här funktionen kräver SDK version 4.6 eller senare. Mer information finns i Förutsättningar för [värvning](/help/using/acquisition-main/c-acquisition-prerequisites.md).
+>Den här funktionen kräver SDK version 4.6 eller senare. Mer information finns i [Förutsättningar för anskaffning](/help/using/acquisition-main/c-acquisition-prerequisites.md).
 
 I följande diagram visas komponenterna i en manuellt byggd spårningslänk och de olika URL-parametrar som du måste konfigurera när du skapar hämtningslänkar manuellt.
 
 ![](assets/acquisition_url.png)
 
-Den här länken är konfigurerad för att utföra en plattformsspecifik omdirigering till Google Play Store eller Apple App Store för en mobilapp. Om målet inte kan fastställas har standardarkivet angetts till Apple App Store. När appen har installerats kopplas den `my.custom.key:test` anpassade kontextnyckeln till installationsträdet för Analytics.
+Den här länken är konfigurerad för att utföra en plattformsspecifik omdirigering till Google Play Store eller Apple App Store för en mobilapp. Om målet inte kan fastställas har standardarkivet angetts till Apple App Store. När appen har installerats kopplas den anpassade kontextnyckeln `my.custom.key:test` till installationsträdet för Analytics.
 
 Om du vill skapa länkar manuellt använder du följande URL-format:
 
@@ -40,14 +40,14 @@ Om du vill skapa länkar manuellt använder du följande URL-format:
 
 För iOS måste du använda rätt protokoll:
 
-* Använd **HTTP** om du använder iOS SDK:er före version 4.7.0, eller om du använder iOS SDK 4.7.0 eller senare, och om **[!UICONTROL Use HTTPS]** **inte** är markerat på sidan Hantera programinställningar.
-* Använd **HTTPS** om du använder iOS SDK 4.7.0 eller senare och **[!UICONTROL Use HTTPS]****är** markerat på sidan Hantera programinställningar.
+* Använd **HTTP** om du använder iOS SDK före version 4.7.0 eller om du använder iOS SDK 4.7.0 eller senare och om **[!UICONTROL Use HTTPS]** är **inte** inte är markerat på sidan Hantera programinställningar.
+* Använd **HTTPS** om du använder iOS SDK 4.7.0 eller senare och **[!UICONTROL Use HTTPS]** **är** markerat på sidan Hantera programinställningar.
 
 Om följande villkor är uppfyllda:
 
-* `{mobile-services-app-hash}` matchar program-ID:t i `acquisition:appid ` konfigurationsfilen.
+* `{mobile-services-app-hash}` matchar programmets identifierare i  `acquisition:appid ` konfigurationsfilen.
 
-   Du hittar `{mobile-services-app-hash}` sidan Hantera appinställningar under Alternativ för SDK-värvning i fältet Spårnings-ID.
+   Du hittar `{mobile-services-app-hash}` på sidan Hantera appinställningar under Alternativ för SDK-värvning i fältet Spårnings-ID.
 
    ![](assets/tracking-id.png)
 
@@ -93,7 +93,7 @@ Här är parameterlistan:
 
 * **`ctx*`**
 
-   Tangenter som `ctx` föregås av placeras i kontextdata för den resulterande starträtningen.
+   Tangenter som har prefixet `ctx` finns i kontextdata för den resulterande startträffen.
 
    * Exempelvärde: `ctxmy.custom.key=myValue`
 
@@ -146,4 +146,3 @@ Tänk på följande information när du skapar förvärvslänkar manuellt:
    Ett exempel på ett butiks-ID är `a_g_id`/ `a_i_id`.
 
 * Om målarkivet inte kan bestämmas automatiskt och inget standardvärde anges returneras ett 404-fel.
-

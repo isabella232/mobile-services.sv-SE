@@ -5,16 +5,16 @@ seo-description: Med denna plugin kan du skicka iOS AppMeasurement-anrop från d
 seo-title: PhoneGap-plugin
 solution: Experience Cloud,Analytics
 title: PhoneGap-plugin
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: f88bcf10-1f9e-4c97-b348-40db797c9923
+exl-id: c20b2f85-b8d4-47c7-8177-106c7ddfe083
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '297'
 ht-degree: 2%
 
 ---
-
 
 # PhoneGap plug-in{#phonegap-plug-in}
 
@@ -27,7 +27,7 @@ Letar du efter information och dokumentation om Adobe Experience Platform Mobile
 Från om med september 2018 har vi släppt en ny större version av SDK. Dessa nya Adobe Experience Platform Mobile SDK:er kan konfigureras via [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
 
 * Gå till Adobe Experience Platform Launch för att komma igång.
-* Om du vill se vad som finns i Experience Platform SDK-databaserna går du till [Github: Adobe Experience Platform SDKs](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
+* Om du vill se vad som finns i Experience Platform SDK-databaserna går du till [Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
 
 
 ## Skapa ett PhoneGap-projekt
@@ -42,20 +42,20 @@ Information om hur du skapar ett PhoneGap-projekt finns i [PhoneGap](https://hel
    cordova plugin add adobe-mobile-services
    ```
 
-## Installera plugin-programmet manuellt {#section_D53BA60D488C4DB8AD2BDF90439C180A}
+## Installera plugin-programmet {#section_D53BA60D488C4DB8AD2BDF90439C180A} manuellt
 
 ### Inkludera AppMeasurement-biblioteket
 
 Så här inkluderar du AppMeasurement:
 
-1. Dra `ADBMobile_PhoneGap.h` och `ADBMobile_PhoneGap.m` till **[!UICONTROL Plugins]** mappen i Xcode-projektet.
+1. Dra `ADBMobile_PhoneGap.h` och `ADBMobile_PhoneGap.m` till mappen **[!UICONTROL Plugins]** i Xcode-projektet.
 1. Ange följande inställningar:
 
    1. Välj **[!UICONTROL Copy items into destination group's folder (if needed)]**.
    1. Välj de mål där du vill använda AppMeasurement-kod.
 
-1. Dra `ADB_Helper.js` till `www` mappen i projektet.
-1. Öppna `res/xml` och registrera ett nytt plugin-program i `config.xml` mappen genom att lägga till följande:
+1. Dra `ADB_Helper.js` till mappen `www` i projektet.
+1. Öppna `config.xml` i mappen `res/xml` och registrera ett nytt plugin-program genom att lägga till följande:
 
    ```
    <feature name="ADBMobile_PhoneGap"> 
@@ -68,15 +68,15 @@ Så här inkluderar du AppMeasurement:
 AppMeasurement-biblioteket kräver följande:
 
 1. Starta Xcode IDE och öppna appen.
-1. Dra **[!UICONTROL AdobeMobile]** mappen till Xcode-projektet och fyll i följande inställningar:
+1. Dra mappen **[!UICONTROL AdobeMobile]** till Xcode-projektet och fyll i följande inställningar:
 
    1. Välj **[!UICONTROL Copy items into destination group's folder (if needed)]**.
    1. Välj **[!UICONTROL Create groups for any added folders]**.
-   1. Markera de mål där du vill använda AppMeasurement-kod och klicka på **[!UICONTROL Finish]**.
+   1. Välj de mål där du vill använda AppMeasurement-kod och klicka på **[!UICONTROL Finish]**.
 
    ![](assets/xcode-settings.png){width=&quot;672&quot;}
 
-1. In the **[!UICONTROL Build Phases]** tab of your project’s target, expand the **[!UICONTROL Link Binary with Libraries]** section and add the following libraries:
+1. Expandera **[!UICONTROL Link Binary with Libraries]**-avsnittet på fliken **[!UICONTROL Build Phases]** i ditt projekts mål och lägg till följande bibliotek:
 
    * `libsqlite3.dylib`
    * `SystemConfiguration.framework`
@@ -85,9 +85,8 @@ AppMeasurement-biblioteket kräver följande:
 
 ## Implementera anpassad spårning {#section_FD102B3CDAA4492FB04E56BF17E28663}
 
-Lägg till följande i `html` -taggen i `<head>` filer där du vill använda spårning:
+I `html`-filer där du vill använda spårning lägger du till följande i taggen `<head>`:
 
 ```html
 <script type="text/javascript" charset="utf-8" src="ADB_Helper.js"></script>
 ```
-

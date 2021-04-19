@@ -1,30 +1,30 @@
 ---
 description: Ni kan spåra och hantera data som ni får från appen genom att konfigurera olika variabler och mätvärden.
-keywords: mobile
+keywords: mobil
 seo-description: Ni kan spåra och hantera data som ni får från appen genom att konfigurera olika variabler och mätvärden.
 seo-title: Hantera din app
 solution: Experience Cloud,Analytics
 title: Hantera din app
-topic: Metrics
+topic-fix: Metrics
 uuid: 0cc356c3-8457-40a7-8c97-7cbc68a5dc0c
+exl-id: 599fef94-c188-47f5-b9d6-25a7c8cb07bc
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '989'
+source-wordcount: '990'
 ht-degree: 1%
 
 ---
-
 
 # Hantera din app {#managing-your-app}
 
 Ni kan spåra och hantera data som ni får från appen genom att konfigurera olika variabler och mätvärden.
 
-## Hantera variabler och mätvärden {#section_EC2D58AC334F4ED49E764B81C2423A62}
+## Hantera variabler och mått {#section_EC2D58AC334F4ED49E764B81C2423A62}
 
 * **Standardvariabler och -mått**
 
-   Varje program innehåller variabler och mätvärden för att spåra kundvagn och inköpsaktiviteter. Viss inköpsinformation kan inte hanteras med bearbetningsregler, så SDK visar speciella `"&&products"` kontextdata. Du kan till exempel ha variabler som varukorgstillägg, varukorgsborttagningar, utcheckningar, order och så vidare. Kontextdata måste mappas till data i Adobe Analytics. Om variabeln är ifylld med en enkel mappning från kontextdata är det här nyckeln som mappas till den. Lämna det tomt om variabeln fylls i med mer komplexa regler i Administrationsverktyg för analyser.
+   Varje program innehåller variabler och mätvärden för att spåra kundvagn och inköpsaktiviteter. Viss inköpsinformation kan inte hanteras med bearbetningsregler, så SDK visar speciella `"&&products"`-kontextdata. Du kan till exempel ha variabler som varukorgstillägg, varukorgsborttagningar, utcheckningar, order och så vidare. Kontextdata måste mappas till data i Adobe Analytics. Om variabeln är ifylld med en enkel mappning från kontextdata är det här nyckeln som mappas till den. Lämna det tomt om variabeln fylls i med mer komplexa regler i Administrationsverktyg för analyser.
 
    Mer information om dessa variabler och mätvärden finns i:
 
@@ -39,18 +39,18 @@ Ni kan spåra och hantera data som ni får från appen genom att konfigurera oli
 
 Klicka på **[!UICONTROL Manage App Settings]** > **[!UICONTROL Manage Variables & Metrics]** > **[!UICONTROL Custom Variables]**.
 
-Dessa mappningar anropar samma API som används i [bearbetningsregler](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html).
+Dessa mappningar anropar samma API som används i [Bearbetningsregler](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html).
 
 ![Kontextdatamappning](assets/custom_data_content.png)
 
 Här är en lista med anpassade variabler som du kan konfigurera:
 
-* Svaret **[!UICONTROL Custom Properties]** (eller svaren) på frågan&quot;vem?&quot; Props kan anges till ett textvärde som associeras med andra variabler och mätvärden som skickas i samma träff. Värdena kan användas för att filtrera rapporter eller kan listas i rangordning efter ett associerat mått.
+* **[!UICONTROL Custom Properties]** (eller props) besvarar frågan&quot;vem?&quot; Props kan anges till ett textvärde som associeras med andra variabler och mätvärden som skickas i samma träff. Värdena kan användas för att filtrera rapporter eller kan listas i rangordning efter ett associerat mått.
 
    När ett värde anges för en egenskap i ett spårningsanrop (eller träff) gäller det bara det anropet.
 
-* Svaret **[!UICONTROL Custom Variables]** (eller evar) besvarar även frågan&quot;vilken?&quot; Ett var-värde kan dock inte bara användas för den träff det skickas in, utan även för variabler och mätvärden som skickas i efterföljande träffar tills värdet förfaller eller ett nytt värde anges.
-* Variablerna fungerar **[!UICONTROL Custom List Variables (or Multi-Value Variables)]** på samma sätt, förutom att du kan samla in flera värden i en träff. Mer information finns i [Lista variabler](https://docs.adobe.com/content/help/en/analytics/implementation/javascript-implementation/variables-analytics-reporting/page-variables.html).
+* **[!UICONTROL Custom Variables]** (eller evar) svarar även på frågan&quot;vem?&quot; Ett var-värde kan dock inte bara användas för den träff det skickas in, utan även för variabler och mätvärden som skickas i efterföljande träffar tills värdet förfaller eller ett nytt värde anges.
+* **[!UICONTROL Custom List Variables (or Multi-Value Variables)]** fungerar på samma sätt som variabler förutom att de tillåter att du hämtar flera värden vid en träff. Mer information finns i [Lista variabler](https://docs.adobe.com/content/help/en/analytics/implementation/javascript-implementation/variables-analytics-reporting/page-variables.html).
 
 Följande mappningar visas i Analytics som om de skapats i Mobile Services.
 
@@ -72,20 +72,20 @@ Följande mappningar visas i Analytics som om de skapats i Mobile Services.
 
    * **[!UICONTROL Session]**
 
-      EVar kvarstår under hela Analytics-besöket.
+      eVar kvarstår under hela Analytics-besöket.
 
    * **[!UICONTROL Tracking Call]**
 
-      EVar kvarstår bara för spårningsanropet eller träffar det där det ingick.
+      eVar kvarstår bara för spårningsanropet eller träffar det där det ingick.
 
    * **[!UICONTROL Never Expire]**
 
-      EVar kvarstår för alla efterföljande spårningsanrop.
+      eVar kvarstår för alla efterföljande spårningsanrop.
    * **[!UICONTROL Advanced]**
 
       Adobe Analytics har ett mer avancerat användargränssnitt för att ange beständighet för eVars. Om ett beständigt värde anges för eVar som inte stöds i Mobile Services visas det här värdet i gränssnittet för mobila tjänster.
 
-      Om du vill hantera eVars klickar du **[!UICONTROL Adobe Analytics Report Suite Manager]** > **[!UICONTROL Conversion Variables UI]**.
+      Om du vill hantera eVars klickar du på **[!UICONTROL Adobe Analytics Report Suite Manager]** > **[!UICONTROL Conversion Variables UI]**.
 
    * **[!UICONTROL List Support]**
 
@@ -105,7 +105,7 @@ Välj ett oanvänt variabelnummer och skriv ett namn. Du kan också ange den kon
 
 * **Anpassade mätvärden**
 
-   Mätvärden (eller händelser) besvarar frågorna *hur mycket?* eller *hur många?*. Händelser kan stegvis ökas varje gång användaren utför en åtgärd eller håller kvar numeriska värden, t.ex. ett pris. Anpassade mätvärden inkluderar händelser som när en app skapades, PDF- eller CSV-filen hämtades eller exporterades, en kampanj sparades, SDK hämtades, en rapport kördes, en länk till App Store lades till, ett meddelande i appen aktiverades och så vidare.
+   Mätvärden (eller händelser) besvarar frågorna *hur mycket?* eller  *hur många?*. Händelser kan stegvis ökas varje gång användaren utför en åtgärd eller håller kvar numeriska värden, t.ex. ett pris. Anpassade mätvärden inkluderar händelser som när en app skapades, PDF- eller CSV-filen hämtades eller exporterades, en kampanj sparades, SDK hämtades, en rapport kördes, en länk till App Store lades till, ett meddelande i appen aktiverades och så vidare.
 
    Välj någon av följande anpassade måtttyper:
 

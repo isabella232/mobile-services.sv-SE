@@ -1,20 +1,20 @@
 ---
 description: Du kan använda sidan Länkmål för att redigera, arkivera, ta bort eller arkivera befintliga mål.
-keywords: mobile
+keywords: mobil
 seo-description: Du kan använda sidan Länkmål för att redigera, arkivera, ta bort eller arkivera befintliga mål.
 seo-title: Hantera länkmål
 solution: Experience Cloud,Analytics
 title: Hantera länkmål
-topic: Metrics
+topic-fix: Metrics
 uuid: 3a38d40d-b4c7-4f9f-aa6e-979613faaba2
+exl-id: 5d2ab0db-6371-434e-bf92-6013e78c8d8f
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '279'
 ht-degree: 1%
 
 ---
-
 
 # Hantera länkmål{#manage-link-destinations}
 
@@ -22,8 +22,8 @@ Du kan använda sidan Länkmål för att redigera, arkivera, ta bort eller arkiv
 
 Så här visar du sidan Hantera länkmål:
 
-1. Klicka på i gränssnittet för mobila tjänster **[!UICONTROL Manage Apps]**.
-1. Klicka på Appinformationssidan **[!UICONTROL Manage Link Destinations]**.
+1. Klicka på **[!UICONTROL Manage Apps]** i gränssnittet för mobila tjänster.
+1. Klicka på **[!UICONTROL Manage Link Destinations]** på appinformationssidan.
 
    ![Länka mål](assets/link_destinations_list.png)
 
@@ -39,7 +39,7 @@ Så här visar du sidan Hantera länkmål:
 
    * **Arkiv**
 
-      Du kan arkivera länkmål som du vill behålla, men du vill ta bort dem från **[!UICONTROL Link Destinations]** listan.
+      Du kan arkivera länkmål som du vill behålla, men du vill ta bort dem från **[!UICONTROL Link Destinations]**-listan.
 
       Om du vill arkivera länkmål markerar du en eller flera kryssrutor bredvid länknamnen och klickar på **[!UICONTROL Archive Selected]**. Eftersom länkmålet är arkiverat och kan tas bort när som helst behöver du inte bekräfta åtgärden.
 
@@ -49,19 +49,16 @@ Så här visar du sidan Hantera länkmål:
 
       Så här avarkiverar du ett länkmål:
 
-      1. click **[!UICONTROL View Archive]**.
+      1. klicka på **[!UICONTROL View Archive]**.
       1. Markera en eller flera kryssrutor bredvid länknamnen som du vill avarkivera.
       1. Klicka på **[!UICONTROL Unarchive Selected]**.
 
-      Alternativet visas bara om du tidigare har arkiverat länkmål. **[!UICONTROL View Archive]**
+      Alternativet **[!UICONTROL View Archive]** visas bara om du tidigare arkiverat länkmål.
 
    * **Ta bort**
 
-      Om du vill ta bort ett länkmål markerar du en eller flera kryssrutor bredvid de länkar du vill ta bort, klickar **[!UICONTROL Delete Selected]** och klickar på **[!UICONTROL Delete]** för att bekräfta åtgärden.
+      Om du vill ta bort ett länkmål markerar du en eller flera kryssrutor bredvid de länkar du vill ta bort, klickar på **[!UICONTROL Delete Selected]** och sedan på **[!UICONTROL Delete]** för att bekräfta åtgärden.
 
       >[!IMPORTANT]
       >
       >Att ta bort ett länkmål är **permanent**. Om du är osäker på om du vill ta bort ett länkmål använder du arkivalternativet.
-
-
-

@@ -1,20 +1,20 @@
 ---
 description: Här är ett exempel på variabeln products med Merchandising eVars och produktspecifika händelser.
-keywords: android;library;mobile;sdk
+keywords: android;bibliotek;mobil;sdk
 seo-description: Här är ett exempel på variabeln products med Merchandising eVars och produktspecifika händelser.
 seo-title: Produkterna kan variera med Merchandising eVars och produktspecifika event
 solution: Experience Cloud,Analytics
 title: Produkterna kan variera med Merchandising eVars och produktspecifika event
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 64f822a0-6ccf-48e7-8886-31b93d8198a3
+exl-id: 2ede6341-3068-4423-a509-c0ec3a2db5e8
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '98'
+source-wordcount: '102'
 ht-degree: 0%
 
 ---
-
 
 # Produktvariabel med eVars för försäljning och produktspecifika händelser {#products-variable-with-merchandising-evars-and-product-specific-events}
 
@@ -40,5 +40,4 @@ Analytics.trackState("Order Confirmation", cdata);
 
 >[!TIP]
 >
->Om du utlöser en produktspecifik händelse med hjälp av *`&&products`* variabeln måste du även ange den händelsen i *`&&events`* variabeln. Om du inte anger den händelsen filtreras den bort under bearbetningen.
-
+>Om du utlöser en produktspecifik händelse med hjälp av variabeln *`&&products`* måste du även ange den händelsen i variabeln *`&&events`*. Om du inte anger den händelsen filtreras den bort under bearbetningen.

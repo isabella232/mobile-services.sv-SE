@@ -4,22 +4,22 @@ seo-description: Med geopositionering kan du mäta positionsdata genom att anvä
 seo-title: Geografisk placering och intressepunkter
 solution: Experience Cloud,Analytics
 title: Geografisk placering och intressepunkter
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: c800ec85-a33f-425d-b28f-bfe8bf229ae8
+exl-id: 732c3863-2010-4d04-a17b-a656e857f567
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '591'
 ht-degree: 1%
 
 ---
 
-
-# Geografisk placering och intressepunkter {#geo-location-and-points-of-interest}
+# Geografisk plats och intressepunkter {#geo-location-and-points-of-interest}
 
 Med geopositionering kan du mäta positionsdata genom att använda latitud och longitud samt fördefinierade intressepunkter i dina iOS-appar.
 
-Varje `trackLocation` samtal skickar följande:
+Varje `trackLocation`-anrop skickar följande:
 
 * Latitud, longitud och plats i en intressepunkt (POI) som definieras i Mobiltjänster i Adobe.
 
@@ -27,11 +27,11 @@ Varje `trackLocation` samtal skickar följande:
 
 * Avstånd från centrum och precision skickas som kontextdata.
 
-   Dessa variabler hämtas inte automatiskt. Du måste mappa dessa kontextdatavariabler genom att använda instruktionerna i *Skicka ytterligare data* nedan.
+   Dessa variabler hämtas inte automatiskt. Du måste mappa dessa kontextdatavariabler genom att använda instruktionerna i *Skicka ytterligare data*-avsnittet nedan.
 
 ## Dynamiska POI-uppdateringar {#section_3747B310DD5147E2AAE915E762997712}
 
-Från och med version 4.2 definieras POI i gränssnittet för Adobe Mobile och synkroniseras dynamiskt till programkonfigurationsfilen. Synkroniseringen kräver en `analytics.poi` inställning i `ADBMobile.json` filen:
+Från och med version 4.2 definieras POI i gränssnittet för Adobe Mobile och synkroniseras dynamiskt till programkonfigurationsfilen. Synkroniseringen kräver en `analytics.poi`-inställning i filen `ADBMobile.json`:
 
 ```js
 “analytics.poi”: “https://assets.adobedtm.com/…/yourfile.json”,
@@ -39,20 +39,20 @@ Från och med version 4.2 definieras POI i gränssnittet för Adobe Mobile och s
 
 Mer information finns i [ADBMomobile JSON Config](/help/ios/configuration/json-config/json-config.md).
 
-Om detta inte är konfigurerat måste en uppdaterad version av `ADBMobile.json` filen hämtas och läggas till i ditt program. Mer information och instruktioner finns i *Hämta SDK och testverktygen* i [Innan du börjar](/help/ios/getting-started/requirements.md).
+Om detta inte är konfigurerat måste en uppdaterad version av `ADBMobile.json`-filen hämtas och läggas till i din app. Mer information och instruktioner finns i *Hämta SDK- och testverktygen* i [Innan du börjar](/help/ios/getting-started/requirements.md).
 
-## Spåra geografiska platser och POI {#section_B1616E400A7548F9A672F97FEC75AE27}
+## Spåra geografiska platser och POI:er {#section_B1616E400A7548F9A672F97FEC75AE27}
 
 1. Lägg till biblioteket i ditt projekt och implementera livscykeln.
 
-   Mer information finns i *Lägga till SDK- och konfigurationsfilen i projektet* i [Core Implementation och Lifecycle](/help/ios/getting-started/dev-qs.md).
+   Mer information finns i *Lägg till SDK- och konfigurationsfilen i ditt projekt* i [Core Implementation och Lifecycle](/help/ios/getting-started/dev-qs.md).
 1. Importera biblioteket:
 
    ```objective-c
    #import "ADBMobile.h"
    ```
 
-1. Ring `trackLocation` för att spåra aktuell plats:
+1. Ring `trackLocation` för att spåra den aktuella platsen:
 
    ```objective-c
    CLLocation *currentLocation = location; 
@@ -63,9 +63,9 @@ Om detta inte är konfigurerat måste en uppdaterad version av `ADBMobile.json` 
    >
    >Du kan ringa `trackLocation` när som helst.
 
-   Om du vill ta reda på platsen som skickas till `trackLocation` samtalet använder du [Hämta användarens plats](https://developer.apple.com/Library/ios/documentation/UserExperience/Conceptual/LocationAwarenessPG/CoreLocation/CoreLocation.html).
+   Använd [Hämta användarens plats](https://developer.apple.com/Library/ios/documentation/UserExperience/Conceptual/LocationAwarenessPG/CoreLocation/CoreLocation.html) för att fastställa platsen som skickas till `trackLocation`-anropet.
 
-Om platsen identifieras som i en definierad POI-radie skickas dessutom en `a.loc.poi` kontextdatavariabel med `trackLocation` träffen och rapporteras som en POI i platsrapporter. En `a.loc.dist` sammanhangsvariabel skickas också med avståndet i meter från de definierade koordinaterna.
+Om platsen identifieras som i en definierad POI-radie skickas dessutom en `a.loc.poi`-kontextdatavariabel in med `trackLocation`-träffen och rapporteras som en POI i platsrapporter. En `a.loc.dist`-kontextvariabel skickas också med avståndet i meter från de definierade koordinaterna.
 
 ## Skicka ytterligare data {#section_3EBE813E54A24F6FB669B2478B5661F9}
 
@@ -94,26 +94,25 @@ Koordinaterna lat = 40,93231, lon = -111.93152 representerar en plats med 1 m pr
 * `a.loc.lon.b` = 31
 * `a.loc.lon.c` = 52
 
-Vissa precisionsnivåer kan visas som &quot;00&quot; beroende på den aktuella platsens precision. Om platsen till exempel för närvarande är exakt 100 m, `a.loc.lat.c` och `a.loc.lon.c` fylls med &quot;00&quot;.
+Vissa precisionsnivåer kan visas som &quot;00&quot; beroende på den aktuella platsens precision. Om platsen till exempel är exakt 100 m kommer `a.loc.lat.c` och `a.loc.lon.c` att fyllas med &quot;00&quot;.
 
 ## Ytterligare information {#section_931AC1E0D88147E29FE1B6E3CC1E9550}
 
 Kom ihåg följande information:
 
-* En `trackLocation` begäran skickas som motsvarar ett `trackAction` samtal.
+* En `trackLocation`-begäran skickar motsvarande ett `trackAction`-anrop.
 
-* POI skickas inte som en del av normala samtal `trackAction` och `trackState` samtal, så du måste använda ett `trackLocation` anrop för att spåra POI.
+* POI skickas inte som en del av normala `trackAction`- och `trackState`-anrop, så du måste använda ett `trackLocation`-anrop för att spåra POI.
 
 * `trackLocation` anropas så ofta som krävs för att spåra plats och POI.
 
-   Vi rekommenderar att du ringer `trackLocation` när appen startar och sedan efter behov utifrån programmets krav.
+   Vi rekommenderar att du ringer `trackLocation` när programmet startas och sedan efter behov utifrån programmets krav.
 
 * POI fylls bara i efter att de har definierats i appkonfigurationsfilen.
 
-   De tillämpas inte på tidigare skickade `trackLocation` samtal.
-* `trackLocation` anrop har stöd för att skicka ytterligare kontextdata som liknar `trackAction` anrop.
+   De används inte för tidigare `trackLocation`-anrop som skickats.
+* `trackLocation` anrop har stöd för att skicka ytterligare kontextdata som liknar  `trackAction` anrop.
 
 * När två POI har överlappande diametrar används den första POI som innehåller den aktuella platsen.
 
    Om dina POI överlappar ska du ange POI i ordning från den mest granulära till den minst granulära för att säkerställa att den mest detaljerade POI rapporteras.
-

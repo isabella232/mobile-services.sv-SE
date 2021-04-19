@@ -1,20 +1,20 @@
 ---
 description: Visar mått och mått som kan mätas automatiskt av mobilbiblioteket.
-keywords: android;library;mobile;sdk
+keywords: android;bibliotek;mobil;sdk
 seo-description: Visar mått och mått som kan mätas automatiskt av mobilbiblioteket.
 seo-title: Livscykelstatistik
 solution: Experience Cloud,Analytics
 title: Livscykelstatistik
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: f958c3ef-1d79-4b30-8966-ef74bd48a5d6
+exl-id: 19572f15-c5df-40fe-9979-3a5bdd581f2b
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '917'
+source-wordcount: '921'
 ht-degree: 0%
 
 ---
-
 
 # Livscykelstatistik {#lifecycle-metrics}
 
@@ -23,7 +23,7 @@ Visar mått och mått som kan mätas automatiskt av mobilbiblioteket.
 Mer information finns i [Felsöka livscykeldata](https://helpx.adobe.com/analytics/kb/troubleshoot-lifecycle-data.html).
 
 
-## Lifecycle metrics and dimensions {#section_78F036C4296F4BA3A47C2044F79C86C1}
+## Livscykelvärden och dimensioner {#section_78F036C4296F4BA3A47C2044F79C86C1}
 
 När livscykelmätvärden är konfigurerade skickas de i kontextdataparametrar till Analytics, i parametrar till Target för varje mbox-anrop och som en signal till målgruppshanteringen. Analyserna och Target har samma format, medan målgruppshanteringen använder olika prefix för varje mätvärde.
 
@@ -100,7 +100,7 @@ För Analytics hämtas och rapporteras kontextdata som skickas med varje livscyk
 
 * **Program-ID**
 
-   Sparar programnamnet och versionen i `[AppName] [BundleVersion]` formatet. Ett exempel på det här formatet är `myapp 1.1`.
+   Sparar programnamnet och versionen i formatet `[AppName] [BundleVersion]`. Ett exempel på det här formatet är `myapp 1.1`.
 
    * Parametern Analytics Context Data/Target: `a.AppID`
    * Audience Manager signal: `c_a_AppID`
@@ -203,20 +203,20 @@ Följande mått och mått hämtas in i mobillösningens variabler med följande 
 
 * **Total åtgärdstid**
 
-   Fylls i med `trackTimedAction` metoder.
+   Fylls i av `trackTimedAction`-metoder.
 
    * Parametern Analytics Context Data/Target: `a.action.time.total`
    * Audience Manager signal: `c_a_action_time_total`
 
 * **Åtgärdstid i app**
 
-   Fylls i med `trackTimedAction` metoder.
+   Fylls i av `trackTimedAction`-metoder.
    * Parametern Analytics Context Data/Target: `a.action.time.inapp`
    * Audience Manager signal: `c_a_action_time_inapp`
 
 * **Livstidsvärde (händelse)**
 
-   Fylls i med `trackLifetimeValue` metoder.
+   Fylls i av `trackLifetimeValue`-metoder.
 
    * Parametern Analytics Context Data/Target: `a.ltv.amount`
    * Audience Manager signal: `c_a_ltv_amount`
@@ -225,7 +225,7 @@ Följande mått och mått hämtas in i mobillösningens variabler med följande 
 
 * **Placering (ned till 10 km)**
 
-   Fylls i med `trackLocation` metoder.
+   Fylls i av `trackLocation`-metoder.
 
    * Analyskontextdata/målparametrar:
 
@@ -239,7 +239,7 @@ Följande mått och mått hämtas in i mobillösningens variabler med följande 
 
 * **Plats (ned till 100 m)**
 
-   Fylls i med `trackLocation` metoder.
+   Fylls i av `trackLocation`-metoder.
 
    * Analyskontextdata/målparametrar:
 
@@ -253,7 +253,7 @@ Följande mått och mått hämtas in i mobillösningens variabler med följande 
 
 * **Plats (ned till 1 m)**
 
-   Fylls i med `trackLocation` metoder.
+   Fylls i av `trackLocation`-metoder.
 
    * Analyskontextdata/målparametrar:
 
@@ -267,21 +267,21 @@ Följande mått och mått hämtas in i mobillösningens variabler med följande 
 
 * **Intressepunktens namn**
 
-   Fylls i av `trackLocation` metoder när enheten är i en definierad POI.
+   Fylls i av `trackLocation`-metoder när enheten är i en definierad POI.
 
    * Parametern Analytics Context Data/Target: `a.loc.poi`
    * Audience Manager: `c_a_loc_poi`
 
 * **Avstånd till intressecentrum**
 
-   Fylls i av `trackLocation` metoder när enheten är inom en definierad POI.
+   Fylls i av `trackLocation`-metoder när enheten finns inom en definierad POI.
 
    * Parametern Analytics Context Data/Target: `a.loc.dist`
    * Audience Manager: `c_a_loc_dist`
 
 * **Livstidsvärde (konverteringsvariabel)**
 
-   Fylls i med `trackLifetimeValue` metoder.
+   Fylls i av `trackLifetimeValue`-metoder.
 
    * Parametern Analytics Context Data/Target: `a.ltv.amount`
    * Audience Manager: `c_a_ltv_amount`

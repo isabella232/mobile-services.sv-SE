@@ -4,16 +4,16 @@ seo-description: Här är en lista över metoder som finns i iOS-biblioteket.
 seo-title: Konfigurationsmetoder
 solution: Experience Cloud,Analytics
 title: Konfigurationsmetoder
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 623c7b07-fbb3-4d39-a5c4-e64faec4ca29
+exl-id: b6841808-8fa8-4090-8cb3-ce647a3d5d08
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '1198'
 ht-degree: 21%
 
 ---
-
 
 # Konfigurationsmetoder {#configuration-methods}
 
@@ -31,7 +31,7 @@ SDK har för närvarande stöd för flera Adobe Experience Cloud-lösningar, ink
 
    >[!TIP]
    >
-   >Den här metoden bör **bara** användas om appen har ett tillägg eller är ett fristående tillägg. Mer information finns i *ADBMomobileAppExtensionType* nedan.
+   >Den här metoden ska **endast** användas om din app har ett tillägg eller är ett fristående tillägg. Mer information finns i *ADBMomobileAppExtensionType* nedan.
 
    * Här är syntaxen för den här metoden:
 
@@ -70,7 +70,7 @@ SDK har för närvarande stöd för flera Adobe Experience Cloud-lösningar, ink
    * `ADBMobilePrivacyStatusOptIn` - träffar skickas omedelbart.
    * `ADBMobilePrivacyStatusOptOut` - träffar tas bort.
    * `ADBMobilePrivacyStatusUnknown` - Om spårning offline är aktiverat sparas träffar tills sekretessstatusen ändras till att anmäla sig (träffar skickas) eller avanmäla sig (träffar ignoreras). Om spårning offline inte är aktiverat ignoreras träffar tills sekretessstatusen ändras för att anmäla sig.
-Standardvärdet anges i `ADBMobileConfig.json` filen.
+Standardvärdet anges i filen `ADBMobileConfig.json`.
 
    * Här är syntaxen för den här metoden:
 
@@ -86,7 +86,7 @@ Standardvärdet anges i `ADBMobileConfig.json` filen.
 
 * **setPrivacyStatus**
 
-   Anger sekretessstatus för den aktuella användaren till `status`.
+   Anger den aktuella användarens sekretessstatus till `status`.
 
    Ange något av följande värden:
 
@@ -128,7 +128,7 @@ Standardvärdet anges i `ADBMobileConfig.json` filen.
 
    >[!TIP]
    >
-   >Om ditt program uppgraderar från Experience Cloud 3.x till 4.x SDK hämtas det tidigare anpassade eller automatiskt genererade besökar-ID:t och lagras som en anpassad användaridentifierare. Mer information finns på `userIdentifier` raden nedan. Detta bevarar besöksdata mellan SDK-uppgraderingar. För nya installationer på 4.x SDK används användaridentifieraren `nil` och spårningsidentifieraren.
+   >Om ditt program uppgraderar från Experience Cloud 3.x till 4.x SDK hämtas det tidigare anpassade eller automatiskt genererade besökar-ID:t och lagras som en anpassad användaridentifierare. Mer information finns på `userIdentifier`-raden nedan. Detta bevarar besöksdata mellan SDK-uppgraderingar. För nya installationer på 4.x SDK är användaridentifieraren `nil` och spårnings-ID används.
 
    * Här är syntaxen för den här metoden:
 
@@ -144,13 +144,13 @@ Standardvärdet anges i `ADBMobileConfig.json` filen.
 
 * **userIdentifier**
 
-   Om en anpassad identifierare har angetts returneras användaridentifieraren. Om ingen anpassad identifierare anges `nil` returneras. Standardvärdet är `nil`.
+   Om en anpassad identifierare har angetts returneras användaridentifieraren. Om ingen anpassad identifierare anges returneras `nil`. Standardvärdet är `nil`.
 
    >[!TIP]
    >
    >Om ditt program uppgraderar från Experience Cloud 3.x till 4.x SDK hämtas det tidigare anpassade eller automatiskt genererade besökar-ID:t och lagras som en anpassad användaridentifierare. Detta bevarar besöksdata mellan uppgraderingar av SDK.
 
-   För nya installationer på 4.x SDK är användaridentifieraren `nil` tills den har angetts.
+   För nya installationer på 4.x SDK är användaridentifieraren `nil` tills den anges.
 
    * Här är syntaxen för den här metoden:
 
@@ -198,7 +198,7 @@ Standardvärdet anges i `ADBMobileConfig.json` filen.
 
 * **setDebugLogging**
 
-   Anger loggningsinställningar för felsökning till `debug`.
+   Anger inställningen för felsökningsloggning till `debug`.
 
    * Här är syntaxen för den här metoden:
 
@@ -238,7 +238,7 @@ Standardvärdet anges i `ADBMobileConfig.json` filen.
 
    >[!TIP]
    >
-   >Den önskade platsen att anropa den här metoden finns i `application:didFinishLaunchingWithOptions:`.
+   >Den rekommenderade platsen att anropa den här metoden är i `application:didFinishLaunchingWithOptions:`.
 
    * Här är syntaxen för den här metoden:
 
@@ -260,7 +260,7 @@ Standardvärdet anges i `ADBMobileConfig.json` filen.
 
    >[!IMPORTANT]
    >
-   >Data som skickas till SDK via `collectLifecycleDataWithAdditionalData:` sparas av SDK i `NSUserDefaults`. SDK:n kommer att ta bort värden i `NSDictionary` parametern som inte är av typen `NSString` eller `NSNumber`. Om du vill använda `collectLifecycleDataWithAdditionalData:`måste du ha SDK **version 4.4** eller senare.
+   >Data som skickas till SDK via `collectLifecycleDataWithAdditionalData:` bevaras av SDK i `NSUserDefaults`. SDK:n kommer att ta bort värden i parametern `NSDictionary` som inte är av typen `NSString` eller `NSNumber`. Om du vill använda `collectLifecycleDataWithAdditionalData:` måste du ha SDK **version 4.4** eller senare.
 
    * Här är syntaxen för den här metoden:
 
@@ -280,7 +280,7 @@ Standardvärdet anges i `ADBMobileConfig.json` filen.
 
    >[!IMPORTANT]
    >
-   >I metoden `applicationDidEnterBackground` delegate måste du först anropa `pauseCollectingLifecycleData` metoden.
+   >I delegatmetoden `applicationDidEnterBackground` måste du först anropa metoden `pauseCollectingLifecycleData`.
    >
    >API:t tillhandahålls för att åtgärda problemet på iPhone7/7s eller äldre enheter med iOS 13, där sessionslängdsmåttet blev onormalt. Detta beror på några okända ändringar som har gjorts i iOS 13, där iOS inte lämnar tillräckligt med tid för att bakgrundsaktiviteten ska slutföras när du säkerhetskopierar programmet.
 
@@ -314,7 +314,7 @@ Standardvärdet anges i `ADBMobileConfig.json` filen.
 
    >[!IMPORTANT]
    >
-   >För att kunna använda `overrideConfigPath`måste du ha SDK version 4.2 eller senare.
+   >Om du vill använda `overrideConfigPath` måste du ha SDK version 4.2 eller senare.
 
    * Här är syntaxen för den här metoden:
 
@@ -335,7 +335,7 @@ Standardvärdet anges i `ADBMobileConfig.json` filen.
 
    >[!IMPORTANT]
    >
-   >Den här metoden bör bara användas i `application:didRegisterForRemoteNotificationsWithDeviceToken:` metoden.
+   >Den här metoden bör bara användas i metoden `application:didRegisterForRemoteNotificationsWithDeviceToken:`.
 
    * Här är syntaxen för den här metoden:
 
@@ -359,9 +359,9 @@ Standardvärdet anges i `ADBMobileConfig.json` filen.
    >
    >Hämta IDFA från Apple API:er **endast** om du använder en annonstjänst. Om du hämtar IDFA, och inte använder det på rätt sätt, kan din app refuseras.
    >
-   >Om ditt program kräver IDFA läser du i [Apples dokumentation](https://developer.apple.com/documentation/adsupport) om du vill veta mer om användarens inställningar för annonsspårning och hämtning av IDFA-värdet.
+   >Om ditt program kräver IDFA läser du [Apples dokumentation](https://developer.apple.com/documentation/adsupport) för att få information om användarens inställningar för annonsspårning och hämtning av IDFA-värdet.
    >
-   >För iOS 14+ måste det nya ramverket [för genomskinlighet för](https://developer.apple.com/documentation/apptrackingtransparency) appspårning implementeras för att IDFA-värdet ska kunna hämtas.
+   >För iOS 14+ måste det nya [ramverket för appspårning av genomskinlighet](https://developer.apple.com/documentation/apptrackingtransparency) implementeras för att IDFA-värdet ska kunna hämtas.
    * Här är syntaxen för den här metoden:
 
       ```objective-c
@@ -388,4 +388,3 @@ typedef NS_ENUM(NSUInteger, ADBMobileAppExtensionType) {
     ADBMobileAppExtensionTypeStandAlone = 1 /*!< Enum value ADBMobileAppExtensionTypeStandAlone. */ 
 };
 ```
-

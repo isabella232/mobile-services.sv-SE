@@ -1,22 +1,22 @@
 ---
 description: När du anpassar rapporter kan den breda flexibiliteten skapa frågor om vilken typ av rapport som passar bäst för att få de data du behöver.
-keywords: mobile
+keywords: mobil
 seo-description: När du anpassar rapporter kan den breda flexibiliteten skapa frågor om vilken typ av rapport som passar bäst för att få de data du behöver.
 seo-title: Rapporttyper
 solution: Experience Cloud,Analytics
 title: Rapporttyper
-topic: Reports,Metrics
+topic-fix: Reports,Metrics
 uuid: 8747b11e-31b1-47bc-ad55-db5ab4ef7078
+exl-id: ba7af2f5-8c84-4c49-a793-5fbaa8947566
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '766'
+source-wordcount: '767'
 ht-degree: 0%
 
 ---
 
-
-# Report Types {#report-types}
+# Rapporttyper {#report-types}
 
 När du anpassar rapporter kan den breda flexibiliteten skapa frågor om vilken typ av rapport som passar bäst för att få de data du behöver.
 
@@ -28,7 +28,7 @@ Innan du anpassar rapporter måste du förstå skillnaden mellan ett mått och e
 
 * Dimension
 
-   En dimension används för att beskriva dina data. Dimensioner representeras av en sträng, eller ett tal som fungerar som en sträng (t.ex. ett postnummer), och används för att ordna och segmentera data. Exempel på vanliga dimensioner är OS-version, kampanjnamn, produktnamn och mobiloperatör. Varje dimension har ett antal specifika värden som är kopplade till den dimensionen. OS-versionen har till exempel värden som _iOS 7_ och _Android 4.1.2_.
+   En dimension används för att beskriva dina data. Dimensioner representeras av en sträng, eller ett tal som fungerar som en sträng (t.ex. ett postnummer), och används för att ordna och segmentera data. Exempel på vanliga dimensioner är OS-version, kampanjnamn, produktnamn och mobiloperatör. Varje dimension har ett antal specifika värden som är kopplade till den dimensionen. OS-versionsdimensionen har till exempel värden som _iOS 7_ och _Android 4.1.2_.
 
 Här är de typer av rapporter som du kan generera i gränssnittet för mobila enheter:
 
@@ -70,10 +70,10 @@ Du kan visa rapporten i en självstudiekurs som beskriver hur du interagerar med
 
 Så här startar du självstudiekursen:
 
-1. Klicka på i Hantera appinställningar **[!UICONTROL Usage]**.
+1. Klicka på **[!UICONTROL Usage]** i Hantera appinställningar.
 
 1. Klicka på **[!UICONTROL Technology]** > **[!UICONTROL Technology Breakdown]**.
-1. Klicka på informationsikonen i rapportens namnlist **[!UICONTROL Customize]** och klicka på informationsikonen.
+1. Klicka på **[!UICONTROL Customize]** i rapportens namnlist och klicka på informationsikonen.
 
 ![](assets/report_technology.png)
 

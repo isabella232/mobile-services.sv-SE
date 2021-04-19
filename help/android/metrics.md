@@ -1,22 +1,22 @@
 ---
 description: Här är mätvärden och mått som kan mätas automatiskt av mobilbiblioteket, efter att livscykeln har implementerats, och en länk för att felsöka livscykeldata.
-keywords: android;library;mobile;sdk
+keywords: android;bibliotek;mobil;sdk
 seo-description: Här är mätvärden och mått som kan mätas automatiskt av mobilbiblioteket, efter att livscykeln har implementerats, och en länk för att felsöka livscykeldata.
 seo-title: Livscykelstatistik
 solution: Experience Cloud,Analytics
 title: Livscykelstatistik
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: a8f3ebac-be3b-4948-82bb-105d46cfff6d
+exl-id: 1e50318d-894c-4039-ba45-71cb9edbc5b5
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '1240'
+source-wordcount: '1244'
 ht-degree: 2%
 
 ---
 
-
-# Livscykelstatistik{#lifecycle-metrics}
+# Livscykelvärden{#lifecycle-metrics}
 
 I det här avsnittet finns information om mått och mått som kan mätas automatiskt av mobilbiblioteket, efter att livscykeln har implementerats, och en länk för att felsöka livscykeldata. Mer information om felsökning finns i [Felsöka livscykeldata](https://helpx.adobe.com/analytics/kb/troubleshoot-lifecycle-data.html).
 
@@ -27,9 +27,9 @@ Letar du efter information och dokumentation om Adobe Experience Platform Mobile
 Från om med september 2018 har vi släppt en ny större version av SDK. Dessa nya Adobe Experience Platform Mobile SDK:er kan konfigureras via [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
 
 * Gå till Adobe Experience Platform Launch för att komma igång.
-* Om du vill se vad som finns i Experience Platform SDK-databaserna går du till [Github: Adobe Experience Platform SDKs](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
+* Om du vill se vad som finns i Experience Platform SDK-databaserna går du till [Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
 
-## Lifecycle metrics and dimensions {#section_78F036C4296F4BA3A47C2044F79C86C1}
+## Livscykelvärden och dimensioner {#section_78F036C4296F4BA3A47C2044F79C86C1}
 
 När livscykelmätvärden är konfigurerade skickas de i kontextdataparametrar till Analytics, i parametrar till Target för varje mbox-anrop och som en signal till målgruppshanteringen. Analyserna och Target har samma format, medan målgruppshanteringen använder olika prefix för varje mätvärde.
 
@@ -110,7 +110,7 @@ För Analytics hämtas och rapporteras kontextdata som skickas med varje livscyk
 
 * **Program-ID**
 
-   Sparar programnamnet och versionen i `[AppName] [BundleVersion]` formatet. Ett exempel på det här formatet är `myapp 1.1`.
+   Sparar programnamnet och versionen i formatet `[AppName] [BundleVersion]`. Ett exempel på det här formatet är `myapp 1.1`.
 
    * Kontextdata/målparameter för analyser: `a.AppID`
    * Audience Manager: `c_a_AppID`
@@ -206,27 +206,27 @@ För Analytics hämtas och rapporteras kontextdata som skickas med varje livscyk
 
 ## Ytterligare mobilstatistik och dimensioner {#section_0B32BBF9CA734103BEDB5E755FFE5B31}
 
-Följande mått och mått hämtas in i mobillösningens variabler med den metod som anges i kolumnen **Beskrivning** .
+Följande mått och mått hämtas i mobillösningens variabler med den metod som listas i kolumnen **Beskrivning**.
 
 ### Mätvärden
 
 * **Total åtgärdstid**
 
-   Fylls i med `trackTimedAction` metoder.
+   Fylls i av `trackTimedAction`-metoder.
 
    * Kontextdata/målparameter för analyser: `a.action.time.total`
    * Audience Manager: `c_a_action_time_total`
 
 * **Åtgärdstid i app**
 
-   Fylls i med `trackTimedAction` metoder.
+   Fylls i av `trackTimedAction`-metoder.
 
    * Kontextdata/målparameter för analyser: `a.action.time.inapp`
    * Audience Manager: `c_a_action_time_inapp`
 
 * **Livstidsvärde (händelse)**
 
-   Fylls i med `trackLifetimeValue` metoder.
+   Fylls i av `trackLifetimeValue`-metoder.
 
    * Kontextdata/målparameter för analyser: `a.ltv.amount`
    * Audience Manager: `c_a_ltv_amount`
@@ -235,7 +235,7 @@ Följande mått och mått hämtas in i mobillösningens variabler med den metod 
 
 * **Placering (ned till 10 km)**
 
-   Fylls i med `trackLocation` metoder.
+   Fylls i av `trackLocation`-metoder.
 
    * Kontextdata/målparametrar för analyser:
 

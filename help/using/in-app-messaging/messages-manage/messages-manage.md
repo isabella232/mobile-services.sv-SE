@@ -1,20 +1,20 @@
 ---
 description: Visa en lista över dina meddelanden i appen och push-meddelanden med information om när varje meddelande uppdaterades senast och om meddelandena är live eller inaktiverade.
-keywords: mobile
+keywords: mobil
 seo-description: Visa en lista över dina meddelanden i appen och push-meddelanden med information om när varje meddelande uppdaterades senast och om meddelandena är live eller inaktiverade.
 seo-title: Hantera meddelanden
 solution: Experience Cloud,Analytics
 title: Hantera meddelanden
-topic: Metrics
+topic-fix: Metrics
 uuid: 4d934ede-0c68-4dd5-ba37-9caf727cc717
+exl-id: 96436104-fe5d-4f50-80a9-9b6ad7401de2
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '448'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
-
 
 # Hantera meddelanden{#manage-messages}
 
@@ -22,7 +22,7 @@ Visa en lista över dina meddelanden i appen och push-meddelanden med informatio
 
 Du kan duplicera, aktivera/inaktivera samt arkivera/avarkivera meddelanden. Du kan också visa en rapport som visar antalet användare som har visat meddelandet och antalet användare som har klickat genom meddelandet.
 
-Om du vill hantera meddelanden klickar du på ***ditt_app_name*** > **[!UICONTROL Messaging]** > **[!UICONTROL Manage Messages]**.
+Om du vill hantera meddelanden klickar du på ***ditt_programnamn*** > **[!UICONTROL Messaging]** > **[!UICONTROL Manage Messages]**.
 
 ![](assets/manage_messages.png)
 
@@ -30,11 +30,11 @@ Här finns ytterligare information om de uppgifter du kan utföra i meddelanden:
 
 * **Söka och filtrera meddelanden**
 
-   Använd sökrutan högst upp i listan för att söka efter och filtrera meddelanden. Allt du skriver i sökrutan visar matchande meddelanden från listan. Sökningen fungerar i alla tabellkolumner. Du kan t.ex. skriva `Draft` så att endast meddelanden med den statusen visas. Du kan även skriva en användares namn för att endast visa meddelanden som har uppdaterats av den användaren.
+   Använd sökrutan högst upp i listan för att söka efter och filtrera meddelanden. Allt du skriver i sökrutan visar matchande meddelanden från listan. Sökningen fungerar i alla tabellkolumner. Du kan till exempel skriva `Draft` om du bara vill visa meddelanden med den statusen. Du kan även skriva en användares namn för att endast visa meddelanden som har uppdaterats av den användaren.
 
    Förutom sökrutan kan du även klicka på valfri kolumnrubrik för att sortera listan i stigande eller fallande ordning efter innehållet i den kolumnen.
 
-   Om du till exempel sorterar kolumnen i stigande ordning visas alla meddelanden i appen före dina push-meddelanden. **[!UICONTROL Message Type]** Om du sorterar kolumnen i fallande ordning visas dina senast uppdaterade meddelanden högst upp i listan. **[!UICONTROL Last Updated]**
+   Om du till exempel sorterar kolumnen **[!UICONTROL Message Type]** i stigande ordning visas alla meddelanden i appen före push-meddelandena. Om du sorterar kolumnen **[!UICONTROL Last Updated]** i fallande ordning visas dina senast uppdaterade meddelanden högst upp i listan.
 
 * **Duplicera meddelanden**
 
@@ -44,7 +44,7 @@ Här finns ytterligare information om de uppgifter du kan utföra i meddelanden:
 
       Om du vill duplicera ett meddelande för samma program skriver du ett nytt namn för meddelandet. Om du behåller samma namn för att skriva över det ursprungliga meddelandet. Om du duplicerar ett meddelande för ett annat program kan du behålla samma namn utan att skriva över det ursprungliga meddelandet.
 
-   1. Klicka **[!UICONTROL Duplicate]** eller **[!UICONTROL Overwrite]** vid behov.
+   1. Klicka på **[!UICONTROL Duplicate]** eller **[!UICONTROL Overwrite]** efter behov.
 
 * **Inaktivera eller aktivera meddelanden**
 
@@ -66,4 +66,3 @@ Här finns ytterligare information om de uppgifter du kan utföra i meddelanden:
 
    1. Klicka på **[!UICONTROL View Archive]**.
    1. Markera kryssrutan bredvid minst ett arkiverat meddelande och klicka på **[!UICONTROL Unarchive Selected]**.
-

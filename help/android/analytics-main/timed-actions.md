@@ -4,16 +4,16 @@ seo-description: Med tidsbestämda åtgärder kan du mäta tiden i appen och den
 seo-title: Tidsbestämda åtgärder
 solution: Experience Cloud,Analytics
 title: Tidsbestämda åtgärder
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 5a48a580-b942-4e49-9f1b-078fea7fccdb
+exl-id: d9851440-6e65-4d89-a6b3-81c8abd2bf06
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 0%
 
 ---
-
 
 # Tidsbestämda åtgärder {#timed-actions}
 
@@ -34,7 +34,7 @@ Med ett valfritt återanrop kan du utföra ytterligare åtgärder när tidsåtg�
 
 1. Lägg till biblioteket i ditt projekt och implementera livscykeln.
 
-   Mer information finns i *Lägga till SDK- och konfigurationsfilen i IntelliJ IDEA- eller Eclipse-projektet* i [Core-implementering och -livscykel](/help/android/getting-started/dev-qs.md).
+   Mer information finns i *Lägga till SDK- och konfigurationsfilen i IntelliJ IDEA- eller Eclipse-projektet* i [Core-implementering och livscykel](/help/android/getting-started/dev-qs.md).
 1. Importera biblioteket:
 
    ```java
@@ -57,7 +57,7 @@ Med ett valfritt återanrop kan du utföra ytterligare åtgärder när tidsåtg�
    Analytics.trackTimed​ActionUpdate("TimeUntilPurchase", cdata);
    ```
 
-1. När händelsen har slutförts anropar du `trackTimedActionEnd` och skickar det tidsinställda åtgärdsnamnet och `TimedActionBlock` (återanrop), som söker upp alla data och beräknar varaktighet.
+1. När händelsen har slutförts anropar du `trackTimedActionEnd` och skickar det tidsbestämda åtgärdsnamnet och `TimedActionBlock` (callback), som söker upp alla data och beräknar varaktigheter.
 
    ```java
    Analytics.trackTimedActionEnd("TimeUntilPurchase", cdata);
@@ -104,4 +104,3 @@ Analytics.trackTimedActionEnd("TimeUntilPurchase", new Analytics.TimedActionBloc
  } 
 });
 ```
-

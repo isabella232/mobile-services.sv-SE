@@ -4,16 +4,16 @@ seo-description: I det här avsnittet beskrivs hur du migrerar från 3.x-version
 seo-title: Migrera till 4.x
 solution: Experience Cloud,Analytics
 title: Migrera till 4.x
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: bdd6c5cd-3892-4e99-b69e-77105ad66e25
+exl-id: 68de505b-dcff-4a78-9f01-b1d103846281
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '705'
 ht-degree: 0%
 
 ---
-
 
 # Migrera till 4.x SDK:er{#migrate-to-x}
 
@@ -25,9 +25,9 @@ I följande avsnitt får du hjälp med att migrera från version 3.x till versio
 
 ## Ta bort oanvända egenskaper {#section_145222EAA20F4CC2977DD883FDDBBFC5}
 
-En ny `ADBMobileConfig.json` fil finns förmodligen med i nedladdningen. Den här filen innehåller programspecifika, globala inställningar och ersätter de flesta konfigurationsvariabler som användes i tidigare versioner.
+Du märkte antagligen att en ny `ADBMobileConfig.json`-fil ingår i hämtningen. Den här filen innehåller programspecifika, globala inställningar och ersätter de flesta konfigurationsvariabler som användes i tidigare versioner.
 
-Här är ett exempel på en `ADBMobileConfig.json` fil:
+Här är ett exempel på en `ADBMobileConfig.json`-fil:
 
 ```js
 { 
@@ -61,7 +61,7 @@ I följande tabeller visas de konfigurationsvariabler som du behöver flytta til
 
 Följande tabell innehåller en lista med variabler i SDK:erna för 3.x och det nya namnet i SDK:erna för 4.x:
 
-| Konfigurationsvariabel/metod | Variabel i `ADBMobileConfig.json` filen. |
+| Konfigurationsvariabel/metod | Variabel i `ADBMobileConfig.json`-filen. |
 |--- |--- |
 | offlineTrackingEnabled | &quot;offlineEnabled&quot; |
 | reportSuiteIDs | &quot;rsids&quot; |
@@ -75,17 +75,17 @@ Följande tabell innehåller en lista med variabler i SDK:erna för 3.x och det 
 
 ## Uppdatera spårningsanrop och spårningsvariabler {#section_96E7D9B3CDAC444789503B7E7F139AB9}
 
-I stället för att använda det webbfokuserade `Track` och `TrackLink` anropet använder version 4 SDK två metoder som är lite mer användbara i mobilvärlden:
+I stället för att använda de webbfokuserade `Track`- och `TrackLink`-anropen använder version 4 SDK två metoder som gör lite mer relevanta i den mobila världen:
 
-* `TrackState` Lägen är de vyer som är tillgängliga i din app, till exempel&quot;heminstrumentpanel&quot;,&quot;appinställningar&quot;,&quot;kundvagn&quot; och så vidare. Dessa lägen liknar sidor på en webbplats och anropar `trackState` stegvisa sidvyer.
+* `TrackState` Lägen är de vyer som är tillgängliga i din app, till exempel&quot;heminstrumentpanel&quot;,&quot;appinställningar&quot;,&quot;kundvagn&quot; och så vidare. Dessa lägen liknar sidor på en webbplats och `trackState` anropar stegvisa sidvyer.
 
 * `TrackAction` Åtgärder är det som händer i appen som du vill mäta, till exempel&quot;inloggningar&quot;,&quot;banderollknappar&quot;,&quot;flödesprenumerationer&quot; och andra mätvärden. Dessa anrop ökar inte sidvyerna.
 
-Parametern `contextData` för båda dessa metoder innehåller namnvärdespar som skickas som kontextdata.
+Parametern `contextData` för båda dessa metoder innehåller namn/värde-par som skickas som kontextdata.
 
 ### Event, props, eVars
 
-Om du har tittat på [SDK-metoderna](/help/universal-windows/c-configuration/methods.md)undrar du antagligen var du ska sätta händelser, eVars, props, heirs och lists. I version 4 kan du inte längre tilldela dessa typer av variabler direkt i appen. I stället använder SDK kontextdata och bearbetningsregler för att mappa appdata till Analytics-variabler för rapportering.
+Om du har tittat på [SDK-metoderna](/help/universal-windows/c-configuration/methods.md) undrar du antagligen var du ska ange händelser, eVars, props, heirs och lists. I version 4 kan du inte längre tilldela dessa typer av variabler direkt i appen. I stället använder SDK kontextdata och bearbetningsregler för att mappa appdata till Analytics-variabler för rapportering.
 
 Bearbetningsreglerna har följande fördelar:
 
@@ -95,11 +95,11 @@ Bearbetningsreglerna har följande fördelar:
 
 Mer information finns i avsnittet *Bearbetningsregler* i [Analysöversikt](/help/universal-windows/analytics/analytics.md).
 
-Alla värden som du tilldelade direkt till variabler bör läggas till i kontextdata i stället. Detta innebär att anrop till `SetProp`, `SetEvar`och tilldelningar till beständiga kontextdata ska tas bort och värdena läggas till i kontextdata.
+Alla värden som du tilldelade direkt till variabler bör läggas till i kontextdata i stället. Det innebär att anrop till `SetProp`, `SetEvar` och tilldelningar till beständiga kontextdata ska tas bort och värdena läggas till i kontextdata.
 
 ### AppSection/Server, GeoZip, transaktions-ID, Campaign och andra standardvariabler
 
-Alla andra data som du angav för mätningsobjektet, inklusive variablerna ovan, ska läggas till i kontextdata i stället. Det innebär att den enda data som skickas in med ett `TrackState` eller `TrackAction` anrop är nyttolasten i `data` parametern.
+Alla andra data som du angav för mätningsobjektet, inklusive variablerna ovan, ska läggas till i kontextdata i stället. Det innebär att den enda data som skickas in med ett `TrackState`- eller `TrackAction`-anrop är nyttolasten i parametern `data`.
 
 **Ersätt spårningsanrop**
 
@@ -112,13 +112,13 @@ Ersätt följande metoder i hela koden med ett anrop till `trackState` eller `tr
 * Track (TrackAction)
 * TrackLinkURL (TrackAction)
 
-## Tjänst för anpassat ID {#section_2CF930C13BA64F04959846E578B608F3}
+## Anpassad ID-tjänst {#section_2CF930C13BA64F04959846E578B608F3}
 
-Ersätt `visitorID` variabeln med ett anrop till `setUserIdentifier`.
+Ersätt variabeln `visitorID` med ett anrop till `setUserIdentifier`.
 
-## Spårning offline {#section_5D4CD8CD1BE041A79A8657E31C0D24C6}
+## Offlinespårning {#section_5D4CD8CD1BE041A79A8657E31C0D24C6}
 
-Spårning offline är aktiverat i `ADBMobileConfig.json` filen. All annan offlinekonfiguration görs automatiskt.
+Spårning offline är aktiverat i `ADBMobileConfig.json`-filen. All annan offlinekonfiguration görs automatiskt.
 
 Ta bort anrop till följande metoder i hela koden:
 
@@ -127,7 +127,7 @@ Ta bort anrop till följande metoder i hela koden:
 * SetOnline
 * SetOffline
 
-## Variabeln Produkter {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
+## Produktvariabel {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
 
 Eftersom variabeln products inte är tillgänglig i bearbetningsregler kan du använda följande syntax för att ange `products`:
 
@@ -141,4 +141,4 @@ ADB.Analytics.trackAction("product view", cdata);
 
 ![](assets/prod-view.png)
 
-Värdet för `"&&products"` (i det här exemplet är `";Cool Shoe`&quot;) ska följa produktsträngssyntaxen för den typ av händelse som du spårar.
+Värdet `"&&products"` (i det här exemplet är `";Cool Shoe`) ska följa produktsträngssyntaxen för den typ av händelse som du spårar.

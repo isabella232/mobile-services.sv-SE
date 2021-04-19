@@ -4,16 +4,16 @@ seo-description: Från och med iOS 10 kan du med Apple skapa ett tillägg som ka
 seo-title: Implementering av fristående tillägg
 solution: Experience Cloud,Analytics
 title: Implementering av fristående tillägg
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 9b47f082-b78f-4611-968d-014c32ede6bc
+exl-id: b51247b6-c4ba-4a00-9ba0-1824450ac067
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '268'
 ht-degree: 0%
 
 ---
-
 
 # Fristående implementering av tillägg {#stand-alone-extension-implementation}
 
@@ -27,7 +27,7 @@ Från och med iOS 10 kan du med Apple skapa ett tillägg som kallas för ett fri
 
 Så här konfigurerar du ditt fristående tillägg:
 
-1. Se till att `ADBMobileConfig.json` filen är medlem i tilläggets mål.
+1. Kontrollera att `ADBMobileConfig.json`-filen är medlem i måltillägget.
 1. Länka följande bibliotek och ramverk:
 
    * `AdobeMobileLibrary_Extension.a`
@@ -46,7 +46,7 @@ Så här konfigurerar du ditt fristående tillägg:
 
 Här är ytterligare information:
 
-* Ytterligare ett kontextdatavärde har lagts till för att ange om data kommer från din app eller ditt tillägg: `a.RunMode`
+* Ett ytterligare kontextdatavärde, `a.RunMode`, har lagts till för att ange om data kommer från din app eller ditt tillägg:
 
    * `a.RunMode = Application`
 
@@ -56,4 +56,3 @@ Här är ytterligare information:
       Detta värde innebär att träffen kom från tillägget.
 
 * Inget livscykelanrop aktiveras för iOS-tilläggsprogram.
-

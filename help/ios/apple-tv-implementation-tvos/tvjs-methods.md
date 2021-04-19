@@ -4,16 +4,16 @@ seo-description: Här är en lista över TVJS-metoder som tillhandahålls av tvO
 seo-title: TVJS-metoder
 solution: Experience Cloud,Analytics
 title: TVJS-metoder
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: a7bfa85a-0d6e-4f51-9a9e-70429c2a9806
+exl-id: 4e0c6a29-953d-49fc-b44f-533dd393ffb1
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '2013'
 ht-degree: 27%
 
 ---
-
 
 # TVJS-metoder {#tvjs-methods}
 
@@ -49,7 +49,7 @@ Här är en lista över TVJS-metoder som tillhandahålls av tvOS-biblioteket.
    * `ADBMobilePrivacyStatusOptOut`: Träffar ignoreras.
    * `ADBMobilePrivacyStatusUnknown`: Om spårning offline är aktiverat sparas träffar tills sekretessstatusen ändras till anmälan (träffar skickas) eller avanmälan (träffar ignoreras).
 
-      Om spårning offline inte är aktiverat ignoreras träffar tills sekretessstatusen ändras till att anmäla sig. Standardvärdet anges i `ADBMobileConfig.json` filen.
+      Om spårning offline inte är aktiverat ignoreras träffar tills sekretessstatusen ändras till att anmäla sig. Standardvärdet anges i filen `ADBMobileConfig.json`.
 
    * Här är syntaxen för den här metoden:
 
@@ -261,7 +261,7 @@ Här är en lista över TVJS-metoder som tillhandahålls av tvOS-biblioteket.
 
    Skickar de aktuella latitud- och longitudkoordinaterna.
 
-   I används även intressepunkter (POI) som definieras i `ADBMobileConfig.json` filen för att avgöra om platsen som du angav som parameter finns i någon av dina POI. Om de aktuella koordinaterna finns i en definierad POI fylls en kontextdatavariabel i och skickas med `trackLocation` anropet.
+   Intressepunkter (POI) som definieras i filen `ADBMobileConfig.json` används också för att avgöra om platsen som du angav som parameter finns i någon av dina POI. Om de aktuella koordinaterna finns i en definierad POI fylls en kontextdatavariabel i och skickas med anropet `trackLocation`.
 
    * Här är syntaxen för den här metoden:
 
@@ -388,7 +388,7 @@ Här är en lista över TVJS-metoder som tillhandahålls av tvOS-biblioteket.
          * Typ: `function(inAppDuration, totalDuration, data)`
          * Återanropsmetod som kommer att ha `inAppDuration` (tal), `totalDuration` (tal) och `data` (kontextdataobjekt) i sina parametrar.
 
-            Du kan förhindra att den sista träffen skickas av SDK genom att returnera `false` din återanropsfunktion.
+            Du kan förhindra att den sista träffen skickas av SDK genom att returnera `false` i återanropsfunktionen.
       * Här är kodexemplet för den här metoden:
 
          ```objective-c
@@ -431,7 +431,7 @@ Här är en lista över TVJS-metoder som tillhandahålls av tvOS-biblioteket.
 
    >[!TIP]
    >
-   >Om ditt program uppgraderar från Experience Cloud 3.x till 4.x SDK hämtas det tidigare anpassade eller automatiskt genererade besökar-ID:t och lagras som en anpassad användaridentifierare. Detta bevarar besöksdata mellan SDK-uppgraderingar. För nya installationer på 4.x SDK används användaridentifieraren `nil`och spårningsidentifieraren. Mer information finns på raden userIdentifier nedan.
+   >Om ditt program uppgraderar från Experience Cloud 3.x till 4.x SDK hämtas det tidigare anpassade eller automatiskt genererade besökar-ID:t och lagras som en anpassad användaridentifierare. Detta bevarar besöksdata mellan SDK-uppgraderingar. För nya installationer på 4.x SDK är användaridentifieraren `nil` och spårningsidentifieraren används. Mer information finns på raden userIdentifier nedan.
 
    * Här är syntaxen för den här metoden:
 
@@ -512,7 +512,7 @@ Här är en lista över TVJS-metoder som tillhandahålls av tvOS-biblioteket.
 
    Returnerar den besökarprofil som senast hämtades.
 
-   Returnerar null om ingen signal har skickats ännu. Besökarprofilen sparas i `NSUserDefaults` så att du enkelt kan komma åt den när du startar appen.
+   Returnerar null om ingen signal har skickats ännu. Besökarprofilen sparas i `NSUserDefaults` så att du enkelt kommer åt den när du startar appen flera gånger.
 
    * Här är syntaxen för den här metoden:
 
@@ -726,7 +726,8 @@ Här är en lista över TVJS-metoder som tillhandahålls av tvOS-biblioteket.
          * Typ: `String`
          * Värdet på den identifierare som du synkroniserar.
       * Parameter: `authState`
-         * Typ: Användarens ADBMobleVisitorAuthenticationStateAuthentication-tillstånd. Möjliga värden är:
+         * Typ: ADBMobilVisitorAuthenticationState
+Användarens autentiseringstillstånd. Möjliga värden är:
             * `ADBMobileVisitorAuthenticationStateUnknown`
             * `ADBMobileVisitorAuthenticationStateAuthenticated`
             * `ADBMobileVisitorAuthenticationStateLoggedOut`

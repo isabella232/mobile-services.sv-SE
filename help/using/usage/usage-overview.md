@@ -1,20 +1,20 @@
 ---
 description: Översiktsrapporten innehåller en ögonblicksbild av dina nyckeltal.
-keywords: mobile
+keywords: mobil
 seo-description: Översiktsrapporten innehåller en ögonblicksbild av dina nyckeltal.
 seo-title: Översiktsrapport
 solution: Experience Cloud,Analytics
 title: Översiktsrapport
-topic: Reports,Metrics
+topic-fix: Reports,Metrics
 uuid: 5f7088af-4b25-4fe5-afda-4844597c78f9
+exl-id: db681d0e-b784-4415-b248-f92df5b780cc
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '115'
+source-wordcount: '116'
 ht-degree: 0%
 
 ---
-
 
 # Översiktsrapport{#overview}
 
@@ -24,9 +24,8 @@ Här är ett exempel på den här rapporten:
 
 ![](assets/report_usage_overview.png)
 
-Du kan ändra datumintervallet för rapporten genom att klicka på kalenderikonen överst till höger. Du kan också skapa ett klisterfilter som spänner över olika rapporter för att se hur ett segment fungerar i alla mobila rapporter. Mer information om hur du skapar ett klisterfilter finns i [Lägg till klisterlappsfilter](/help/using/usage/reports-customize/t-sticky-filter.md).
+Du kan ändra datumintervallet för rapporten genom att klicka på kalenderikonen överst till höger. Du kan också skapa ett klisterfilter som spänner över olika rapporter för att se hur ett segment fungerar i alla mobila rapporter. Mer information om hur du skapar ett klisterfilter finns i [Lägg till klisterfilter](/help/using/usage/reports-customize/t-sticky-filter.md).
 
 >[!TIP]
 >
->Du konfigurerar nyckelmåtten för den här rapporten när du skapar programmet. Mer information finns i [Konfigurera programmet](/help/using/c-manage-app-settings/c-mob-confg-app/c-mob-confg-app.md).
-
+>Du konfigurerar nyckelmåtten för den här rapporten när du skapar programmet. Mer information finns i [Konfigurera din app](/help/using/c-manage-app-settings/c-mob-confg-app/c-mob-confg-app.md).

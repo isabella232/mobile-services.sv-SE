@@ -4,18 +4,18 @@ seo-description: Information som hjälper dig att använda ADBMomobile JSON Conf
 seo-title: ADBMobileConfig.json-konfiguration
 solution: Experience Cloud,Analytics
 title: ADBMobileConfig.json-konfiguration
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: cbcb54a3-4b8f-4651-8ce9-2731ac988545
+exl-id: 57d50d30-651c-4943-835e-1cbce7467baf
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '620'
 ht-degree: 1%
 
 ---
 
-
-# Konfigurationsfil för ADBMobileConfig.json {#adbmobileconfig-json-config}
+# ADBMobileConfig.json-konfigurationsfil {#adbmobileconfig-json-config}
 
 Information som hjälper dig att använda ADBMomobile JSON Config-filen.
 
@@ -23,7 +23,7 @@ SDK har för närvarande stöd för flera Adobe Experience Cloud-lösningar, ink
 
 * **rsids**
 
-   (**Krävs av Analytics**) En eller flera rapportsviter för att ta emot analysdata. Flera rapportpaket-ID:n ska vara kommaavgränsade utan mellanrum.
+   (**Krävs av Analytics**) En eller flera rapportsviter för att ta emot Analytics-data. Flera rapportpaket-ID:n ska vara kommaavgränsade utan mellanrum.
 
    * Här är syntaxen för den här metoden:
 
@@ -37,9 +37,9 @@ SDK har för närvarande stöd för flera Adobe Experience Cloud-lösningar, ink
 
 * **server**
 
-   (**Krävs av analys och målgruppshantering**). Analys- eller Audience Management-servern, baserad på den överordnade noden. Den här variabeln ska fyllas i med serverdomänen, utan ett `"https://"` - eller `"https://"` protokollprefix. Protokollprefixet hanteras automatiskt av biblioteket baserat på `ssl` variabeln.
+   (**Krävs av analys- och målgruppshantering**). Analys- eller Audience Management-servern, baserad på den överordnade noden. Den här variabeln ska fyllas i med serverdomänen, utan ett `"https://"`- eller `"https://"`-protokollprefix. Protokollprefixet hanteras automatiskt av biblioteket baserat på variabeln `ssl`.
 
-   Om `ssl` så är `true`fallet skapas en säker anslutning till den här servern. Om `ssl`så `false`är fallet skapas en osäker anslutning till den här servern.
+   Om `ssl` är `true` skapas en säker anslutning till den här servern. Om `ssl`är `false` skapas en osäker anslutning till den här servern.
 
 * **charset**
 
@@ -47,15 +47,15 @@ SDK har för närvarande stöd för flera Adobe Experience Cloud-lösningar, ink
 
 * **ssl**
 
-   Aktiverar (`true`) eller inaktiverar (`false`) sändning av mätdata via SSL (`HTTPS`). Standardvärdet är `false`.
+   Aktiverar (`true`) eller inaktiverar (`false`) att skicka mätdata via SSL (`HTTPS`). Standardvärdet är `false`.
 
 * **offlineEnabled**
 
-   När det är aktiverat (`true`) köas träffar när enheten är offline och skickas senare när enheten är online. Din rapportsvit måste vara tidsstämpelaktiverad för att du ska kunna använda offline-spårning.
+   När det här alternativet är aktiverat (`true`) köas träffar när enheten är offline och skickas senare när enheten är online. Din rapportsvit måste vara tidsstämpelaktiverad för att du ska kunna använda offline-spårning.
 
-   Om tidsstämplar är aktiverade i rapportsviten `offlineEnabled` måste *konfigurationsegenskapen vara* `true`. Om rapportsviten inte är tidsstämpelaktiverad `offlineEnabled` måste *konfigurationsegenskapen vara* `false`.
+   Om tidsstämplar är aktiverade för rapportsviten måste `offlineEnabled` konfigurationsegenskapen *vara* `true`. Om rapportsviten inte är tidsstämpelaktiverad måste `offlineEnabled` konfigurationsegenskapen *vara* `false`.
 
-   Om detta inte är korrekt konfigurerat går data förlorade. Om du är osäker på om en rapportsserie är tidsstämplad eller inte kontaktar du Kundtjänst. Om du för närvarande rapporterar AppMeasurement-data till en rapportserie som även samlar in data från JavaScript, kan du behöva skapa en separat rapportserie för mobildata eller inkludera en anpassad tidsstämpel för alla JavaScript-träffar med hjälp av `s.timestamp` variabeln.
+   Om detta inte är korrekt konfigurerat går data förlorade. Om du är osäker på om en rapportsserie är tidsstämplad eller inte kontaktar du Kundtjänst. Om du för närvarande rapporterar AppMeasurement-data till en rapportserie som även samlar in data från JavaScript, kan du behöva skapa en separat rapportserie för mobildata eller inkludera en anpassad tidsstämpel för alla JavaScript-träffar med variabeln `s.timestamp`.
 
    Standardvärdet är `false`.
 
@@ -69,7 +69,7 @@ SDK har för närvarande stöd för flera Adobe Experience Cloud-lösningar, ink
 
    Skicka träffar gruppvis.
 
-   Om värdet till exempel är `50`köas träffar tills 50 lagras, skickas alla köade träffar. Kräver `offlineEnabled=true`och standardvärdet är `0` (ingen gruppering).
+   Om värdet till exempel är `50` köas träffar tills 50 lagras, skickas alla köade träffar. Kräver `offlineEnabled=true` och standardvärdet är `0` (ingen gruppering).
 
 * **privacyDefault**
 
@@ -85,7 +85,7 @@ SDK har för närvarande stöd för flera Adobe Experience Cloud-lösningar, ink
 
 * **poi**
 
-   Varje POI-array innehåller POI-namnet, latituden, longituden och radien (i meter) för punktens område. POI-namnet kan vara vilken sträng som helst. När ett `trackLocation` anrop skickas, om de aktuella koordinaterna finns i en definierad POI, fylls en kontextdatavariabel i och skickas med `trackLocation` anropet.
+   Varje POI-array innehåller POI-namnet, latituden, longituden och radien (i meter) för punktens område. POI-namnet kan vara vilken sträng som helst. När ett `trackLocation`-anrop skickas och de aktuella koordinaterna finns inom en definierad POI fylls en kontextdatavariabel i och skickas med `trackLocation`-anropet.
 
    * Här är kodexemplet för variabeln:
 
@@ -98,13 +98,13 @@ SDK har för närvarande stöd för flera Adobe Experience Cloud-lösningar, ink
 
 * **clientCode**
 
-   (**Krävs av Target**) Din tilldelade klientkod.
+   (**Krävs av mål**) Din tilldelade klientkod.
 
 * **timeout**
 
    Avgör hur långt målet väntar på ett svar.
 
-Följande är ett exempel på en `ADBMobileConfig.json` fil:
+Följande är ett exempel på en `ADBMobileConfig.json`-fil:
 
 ```js
 { 

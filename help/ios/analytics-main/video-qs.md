@@ -4,16 +4,16 @@ seo-description: Här är lite information om hur du mäter video på iOS med hj
 seo-title: Videoanalys
 solution: Experience Cloud,Analytics
 title: Videoanalys
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: d75fa415-78f6-4f50-a563-76949f040138
+exl-id: d4d11ca0-1280-49db-8983-5b6d83856482
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '952'
 ht-degree: 14%
 
 ---
-
 
 # Videoanalys {#video-analytics}
 
@@ -23,7 +23,7 @@ Här är lite information om hur du mäter video på iOS med hjälp av videomät
 >
 >Under videouppspelning skickas vanliga&quot;hjärtslag&quot;-anrop till den här tjänsten för att mäta den tid som spelas upp. Dessa hjärtslagsanrop skickas var 10:e sekund, vilket resulterar i detaljerade videointeraktionsvärden och exaktare videoutfallsrapporter. Mer information finns i [Mäta ljud och video i Adobe Analytics](https://docs.adobe.com/content/help/sv-SE/media-analytics/using/media-overview.html).
 
-Den allmänna processen att mäta video är mycket lik på alla plattformar. Det här innehållet ger en grundläggande översikt över utvecklaråtgärderna med kodexempel.
+Den allmänna processen att mäta video är mycket lik på alla plattformar. Innehållet ger en grundläggande översikt över utvecklaråtgärderna med kodexempel.
 
 ## Mappa spelarhändelser till analysvariabler {#section_E84987F878AB4A3A83AE700FEC4C9D4D}
 
@@ -48,7 +48,7 @@ I följande tabell visas de mediedata som skickas till Analytics. Använd bearbe
 
 * **a.media.segment**
 
-   (Obligatoriskt) Samlar in videosegmentdata, inklusive segmentnamnet och den ordning i vilken segmentet finns i videon. Den här variabeln fylls i genom att den aktiveras när spelarhändelser spåras automatiskt, eller genom att ett anpassat segmentnamn anges när spelarhändelser spåras manuellt. `segmentByMilestones` När en besökare till exempel tittar på det första segmentet i en video kan SiteCatalyst samla in följande i var: `1:M:0-25` Segments.
+   (Obligatoriskt) Samlar in videosegmentdata, inklusive segmentnamnet och den ordning i vilken segmentet finns i videon. Den här variabeln fylls i genom att variabeln `segmentByMilestones` aktiveras när spelarhändelser spåras automatiskt, eller genom att ett anpassat segmentnamn anges när spelarhändelser spåras manuellt. När en besökare till exempel tittar på det första segmentet i en video kan SiteCatalyst samla in följande i segmenten `1:M:0-25`.
 
    Standardmetoden för insamling av videodata samlar in data vid följande punkter:
 
@@ -97,9 +97,9 @@ I följande tabell visas de mediedata som skickas till Analytics. Använd bearbe
    * Variabeltyp: Händelse
    * Typ: Räknare
 
-## Konfigurera mediainställningar {#section_929945D4183C428AAF3B983EFD3E2500}
+## Konfigurera medieinställningar {#section_929945D4183C428AAF3B983EFD3E2500}
 
-Konfigurera ett `ADBMediaSettings` objekt med de inställningar som du vill använda för att spåra video:
+Konfigurera ett `ADBMediaSettings`-objekt med de inställningar du vill använda för att spåra video:
 
 ```objective-c
 ADBMediaSettings *mediaSettings = [ADBMobile mediaCreateSettingsWithName:MEDIA_NAME  
@@ -126,7 +126,7 @@ mediaSettings.trackSeconds = 30; // sends a hit every 30 seconds
 
 ## Spåra spelarhändelser {#section_C7F43AECBC0D425390F7FCDF3035B65D}
 
-För att mäta videouppspelning måste metoderna `mediaPlay`, `mediaStop`och `mediaClose` anropas vid rätt tidpunkt. När spelaren exempelvis pausas `mediaStop`. `mediaPlay` anropas när uppspelningen startar eller återupptas.
+För att mäta videouppspelning måste metoderna `mediaPlay`, `mediaStop` och `mediaClose` anropas vid rätt tidpunkt. Om spelaren exempelvis är pausad är `mediaStop`. `mediaPlay` anropas när uppspelningen startar eller återupptas.
 
 I följande exempel visas hur du konfigurerar meddelanden och anropar mediemetoder för att mäta video:
 
@@ -228,7 +228,7 @@ NSUInteger eventType
 
 * **mediaCreateSettings &#x200B; WithName: &#x200B; length: &#x200B; playerName: &#x200B; playerID:**
 
-   Returnerar ett `ADBMediaSettings` objekt med angivna parametrar.
+   Returnerar ett `ADBMediaSettings`-objekt med angivna parametrar.
 
    * Här är syntaxen för den här metoden:
 
@@ -250,7 +250,7 @@ NSUInteger eventType
 
 * **mediaAdCreateSettings &#x200B; WithName: &#x200B; length: &#x200B; playerName: &#x200B; parentName: &#x200B; parentPod: &#x200B; parentPodPosition: &#x200B; CPM:**
 
-   Returnerar ett `ADBMediaSettings` objekt som ska användas för att spåra en annonsvideo.
+   Returnerar ett `ADBMediaSettings`-objekt som ska användas för att spåra en annonsvideo.
 
    * Här är syntaxen för den här metoden:
 
@@ -278,7 +278,7 @@ NSUInteger eventType
 
 * **mediaOpenWithSettings: &#x200B; callback:**
 
-   Öppnar ett `ADBMediaSettings` objekt för spårning.
+   Öppnar ett `ADBMediaSettings`-objekt för spårning.
 
    * Här är syntaxen för den här metoden:
 
@@ -296,7 +296,7 @@ NSUInteger eventType
 
 * **mediaClose:**
 
-   Stänger medieobjektet med namnet *name*.
+   Stänger medieobjektet *namn*.
 
    * Här är syntaxen för den här metoden:
 
@@ -312,7 +312,7 @@ NSUInteger eventType
 
 * **mediaPlay: &#x200B; förskjutning:**
 
-   Spelar upp medieobjektet med namnet *name* vid angiven *förskjutning* (i sekunder).
+   Spelar upp medieobjektet *name* vid angiven *offset* (i sekunder).
 
    * Här är syntaxen för den här metoden:
 
@@ -328,7 +328,7 @@ NSUInteger eventType
 
 * **mediaComplete: &#x200B; offset:**
 
-   Markera medieobjektet som slutfört manuellt vid den *angivna förskjutningen* (i sekunder).
+   Markera medieobjektet som slutfört manuellt vid *förskjutningen* som anges (i sekunder).
 
    * Här är syntaxen för den här metoden:
 
@@ -344,7 +344,7 @@ NSUInteger eventType
 
 * **mediaStop: &#x200B; offset:**
 
-   Meddelar mediemodulen att videon har stoppats eller pausats vid den angivna *förskjutningen*.
+   Meddelar mediemodulen att videon har stoppats eller pausats vid angiven *offset*.
 
    * Här är syntaxen för den här metoden:
 
@@ -383,4 +383,3 @@ NSUInteger eventType
       ```objective-c
       + (void) mediaTrack:(NSString *)name withData:(NSDictionary *)data;
       ```
-

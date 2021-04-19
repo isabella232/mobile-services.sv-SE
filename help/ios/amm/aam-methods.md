@@ -4,28 +4,28 @@ seo-description: Här är en lista över de Audience Manager-metoder som finns i
 seo-title: Audience Manager-metoder
 solution: Experience Cloud,Analytics
 title: Audience Manager-metoder
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 97658bd6-4c4f-4875-abe9-36dad4ec8bae
+exl-id: b843a52f-2b83-4e19-9f43-895bd582d4ef
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 22%
 
 ---
 
-
 # Audience Manager-metoder {#audience-manager-methods}
 
 Här är en lista över de Audience Manager-metoder som finns i iOS-biblioteket.
 
-SDK har för närvarande stöd för flera Adobe Experience Cloud-lösningar, inklusive Analytics, Target, Audience Manager och Adobe Experience Platform Identity Service. Metoderna prefixeras enligt lösningen och Audience Manager-metoderna prefixas med &quot; `audience`&quot;.
+SDK har för närvarande stöd för flera Adobe Experience Cloud-lösningar, inklusive Analytics, Target, Audience Manager och Adobe Experience Platform Identity Service. Metoderna har prefixet enligt lösningen och Audience Manager-metoderna har prefixet `audience`.
 
 Om Audience Manager är konfigurerat i JSON-filen skickas en signal som innehåller livscykelvärden med `application:didFinishLaunchingWithOptions:`.
 
 * **publikVisitorProfil**
 
-   Returnerar den besökarprofil som senast hämtades och, om ingen signal har skickats, returneras `null`. Besökarprofilen sparas i `NSUserDefaults` så att du enkelt kan komma åt den när du startar appen.
+   Returnerar den besökarprofil som senast hämtades och, om ingen signal har skickats, returnerar `null`. Besökarprofilen sparas i `NSUserDefaults` så att du enkelt kommer åt den när du startar appen flera gånger.
 
    * Här är syntaxen för den här metoden:
 
@@ -75,8 +75,8 @@ Om Audience Manager är konfigurerat i JSON-filen skickas en signal som innehål
 
    Anger DPID och DPUID. När det är inställt läggs båda till för varje signal.
 
-   * Data Provider ID ( **Data Provider ID)** är det data partner-ID som tilldelas av Audience Manager.
-   * Dataleverantörens unika användar-ID (DPUUID) **är** dataleverantörens unika ID för användaren.
+   * **Data Provider ID (DPID)** är det data partner-ID som tilldelas av Audience Manager.
+   * **Dataleverantörens unika användar-ID (DPUID)** är dataleverantörens unika ID för användaren.
 
       >[!IMPORTANT]
       >

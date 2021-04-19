@@ -1,20 +1,20 @@
 ---
 description: Du kan konfigurera SDK Analytics-alternativen på sidan Hantera appinställningar när du skapar en ny app eller redigerar en befintlig app.
-keywords: mobile
+keywords: mobil
 seo-description: Du kan konfigurera SDK Analytics-alternativen på sidan Hantera appinställningar när du skapar en ny app eller redigerar en befintlig app.
 seo-title: Konfigurera alternativ för SDK-analys
 solution: Experience Cloud,Analytics
 title: Konfigurera alternativ för SDK-analys
-topic: Metrics
+topic-fix: Metrics
 uuid: fd3a21d2-6560-4e96-92fe-b99caac5e834
+exl-id: f2c35b65-1052-4bfc-af9d-8778e4ff0522
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '365'
 ht-degree: 0%
 
 ---
-
 
 # Konfigurera alternativ för SDK-analys {#configure-sdk-analytics-options}
 
@@ -51,6 +51,6 @@ Skriv information i följande fält under **[!UICONTROL SDK Analytics Options]**
 
 * **[!UICONTROL More Details]**
 
-   Klicka på **[!UICONTROL More Details]** länken för att visa rapportsvitens ID och spårningsserver, aktivera eller inaktivera spårning offline och visa den teckenkodningsmodell som används (till exempel UTF-8).
+   Klicka på länken **[!UICONTROL More Details]** om du vill visa rapportsvitens ID och spårningsservern, aktivera eller inaktivera spårning offline och visa den teckenkodningsmodell som används (till exempel UTF-8).
 
    När spårning offline är aktiverat kommer data som genereras av enheten när den är offline att tidsstämplas och skickas senare. Om det här alternativet är inaktiverat ignoreras offlinedata.

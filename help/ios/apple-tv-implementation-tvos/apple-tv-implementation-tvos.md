@@ -4,16 +4,16 @@ seo-description: Den här informationen hjälper dig att implementera Apple TV m
 seo-title: Apple TV-implementering med tvOS
 solution: Experience Cloud,Analytics
 title: Apple TV-implementering med tvOS
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: d1571ea2-a5de-4b96-a527-72abbf51fab8
+exl-id: 35b7f02d-ae48-4c6f-9a3a-6d106a1026ad
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 1%
 
 ---
-
 
 # Apple TV-implementering med tvOS {#apple-tv-implementation-with-tvos}
 
@@ -26,7 +26,7 @@ Letar du efter information och dokumentation om Adobe Experience Platform Mobile
 Från om med september 2018 har vi släppt en ny större version av SDK. Dessa nya Adobe Experience Platform Mobile SDK:er kan konfigureras via [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
 
 * Gå till Adobe Experience Platform Launch för att komma igång.
-* Om du vill se vad som finns i Experience Platform SDK-databaserna går du till [Github: Adobe Experience Platform SDKs](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
+* Om du vill se vad som finns i Experience Platform SDK-databaserna går du till [Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
 
 ## Översikt
 
@@ -34,7 +34,7 @@ Med Apple TV kan du nu skapa program som kan köras i den inbyggda tvOS-miljön.
 
 >[!TIP]
 >
->Stöd för tvOS finns från och med `AdobeMobileLibrary` version 4.7.0.
+>Stöd för tvOS finns från och med version 4.7.0 i `AdobeMobileLibrary`.
 
 ## Komma igång {#section_CAB40A5B5FC745068C8A5DF8F9AB6199}
 
@@ -47,40 +47,39 @@ Med Apple TV kan du nu skapa program som kan köras i den inbyggda tvOS-miljön.
 Utför följande steg i Xcode-projektet:
 
 1. Dra mappen AdobeMobileLibrary till ditt projekt.
-1. Kontrollera att `ADBMobileConfig.json` filen är medlem i ditt mål.
-1. On the **[!UICONTROL Build Phases]** tab of your tvOS app’s target, expand the **[!UICONTROL Link Binary with Libraries]** section and add the following libraries:
+1. Kontrollera att `ADBMobileConfig.json`-filen är medlem i ditt mål.
+1. Expandera **[!UICONTROL Link Binary with Libraries]**-avsnittet på fliken **[!UICONTROL Build Phases]** i din tvOS-app och lägg till följande bibliotek:
 
    * `AdobeMobileLibrary_TV.a`
    * `libsqlite3.0.tbd`
    * `SystemConfiguration.framework`
 
-Mer information finns i iOS-dokumentationen för [iOS](https://developer.apple.com/ios/resources/).
+Mer information finns i iOS-dokumentationen om [iOS](https://developer.apple.com/ios/resources/).
 
 ## Konfigurera en TVML/TVJS-app för tvOS {#section_AB2EC8C326654F3387658EBBD990BB12}
 
-1. Dra `AdobeMobileLibrary` mappen till projektet.
-1. Kontrollera att `ADBMobileConfig.json` filen är medlem i ditt mål.
-1. On the **[!UICONTROL Build Phases]** tab of your tvOS app’s target, expand the **[!UICONTROL Link Binary with Libraries]** section and add the following libraries:
+1. Dra mappen `AdobeMobileLibrary` till ditt projekt.
+1. Kontrollera att `ADBMobileConfig.json`-filen är medlem i ditt mål.
+1. Expandera **[!UICONTROL Link Binary with Libraries]**-avsnittet på fliken **[!UICONTROL Build Phases]** i din tvOS-app och lägg till följande bibliotek:
 
    * `AdobeMobileLibrary_TV.a`
    * `libsqlite3.0.tbd`
    * `SystemConfiguration.framework`
 
-1. Importera SDK i implementeringsfilen för din `TVApplicationControllerDelegate` klass.
+1. Importera SDK:n i implementeringsfilen för klassen `TVApplicationControllerDelegate`.
 
    ```objective-c
    #import “ADBMobile.h"
    ```
 
-1. I metoden `application:didFinishLaunchWithOptions:` för din `TVApplicationControllerDelegate` klass skickar du objektet `TVApplicationController` till SDK med `installTVMLHooks:` metoden .
+1. I metoden `application:didFinishLaunchWithOptions:` för klassen `TVApplicationControllerDelegate` skickar du `TVApplicationController`-objektet till SDK med metoden `installTVMLHooks:`.
 
-   Adobe SDK behöver tillgång till appens `TVApplicationController` för att kunna registrera sig i appens JSContext. I det här steget kan du anropa de inbyggda metoderna i Adobe SDK från dina JavaScript-filer.
+   Adobe SDK behöver tillgång till din apps `TVApplicationController` för att kunna registrera sig i JSContext för din app. I det här steget kan du anropa de inbyggda metoderna i Adobe SDK från dina JavaScript-filer.
 
    ```objective-c
    [ADBMobile installTVMLHooks:appController];
    ```
 
-1. I dina JavaScript-filer använder du objektet för att komma åt de inbyggda metoderna i Adobe SDK. `ADBMobile`
+1. I dina JavaScript-filer använder du `ADBMobile`-objektet för att komma åt de inbyggda metoderna i Adobe SDK.
 
    En fullständig lista över tillgängliga metoder finns i [TVJS-metoder](/help/ios/apple-tv-implementation-tvos/tvjs-methods.md).
-

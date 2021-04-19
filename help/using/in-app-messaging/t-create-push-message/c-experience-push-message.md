@@ -1,31 +1,31 @@
 ---
 description: Du kan konfigurera upplevelsealternativ för push-meddelanden och omfattande push-meddelanden, inklusive namn, meddelandetext och målalternativ. Du kan också konfigurera avancerade alternativ, inklusive nyttolastalternativ och anpassade alternativ för iOS-enheter.
-keywords: mobile
+keywords: mobil
 seo-description: Du kan konfigurera upplevelsealternativ för push-meddelanden och omfattande push-meddelanden, inklusive namn, meddelandetext och målalternativ. Du kan också konfigurera avancerade alternativ, inklusive nyttolastalternativ och anpassade alternativ för iOS-enheter.
 seo-title: Experience Push-meddelande
 solution: Experience Cloud,Analytics
 title: Experience Push-meddelande
-topic: Metrics
+topic-fix: Metrics
 uuid: 1a8baf3e-9fea-452c-b0fc-4ba8ac270861
+exl-id: 9158487e-6ac5-4f17-a8ff-15de0360ab60
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '750'
+source-wordcount: '751'
 ht-degree: 0%
 
 ---
-
 
 # Upplevelse: push-meddelande {#experience-push-message}
 
 Du kan konfigurera upplevelsealternativ för push-meddelanden och omfattande push-meddelanden, inklusive namn, meddelandetext och målalternativ. Du kan också konfigurera avancerade alternativ, inklusive nyttolastalternativ och anpassade alternativ för iOS-enheter.
 
-1. Klicka på Publiksidan för ett nytt push-meddelande **[!UICONTROL Experience]**.
+1. Klicka på **[!UICONTROL Experience]** på målsidan för ett nytt push-meddelande.
 
    ![push-meddelandeskärm](assets/experience-push-message.png)
 
 1. Skriv ett namn för det här meddelandet.
-1. Skriv information i följande fält i **[!UICONTROL Message]** avsnittet:
+1. Skriv information i följande fält i avsnittet **[!UICONTROL Message]**:
 
    * **[!UICONTROL Content]**
 
@@ -33,12 +33,12 @@ Du kan konfigurera upplevelsealternativ för push-meddelanden och omfattande pus
 
    * **[!UICONTROL Media URL]**
 
-      Skriv URL-adressen till den mediefil som du vill använda i push-meddelandet. Mer information om hur du använder avancerade push-meddelanden finns i *Krav för push-meddelanden* nedan.
+      Skriv URL-adressen till den mediefil som du vill använda i push-meddelandet. Information om krav för att använda push-meddelanden finns i *Krav för push-meddelanden* nedan.
 
       >[!IMPORTANT]
       >
       >Kom ihåg följande om du vill visa en bild eller en video i ett push-meddelande:
-      > * Data hanteras `attachment-url` i push-nyttolasten.
+      > * `attachment-url`-data hanteras i push-nyttolasten.
       > * Medie-URL:en måste kunna hantera begäranden om spikes.
 
 
@@ -48,7 +48,7 @@ Du kan konfigurera upplevelsealternativ för push-meddelanden och omfattande pus
 
       >[!TIP]
       >
-      >När du använder typerna * **[!UICONTROL Web Link]** eller **[!UICONTROL Custom Link]** destination spåras inte måltypen. Bara **[!UICONTROL Deep Links]** spåras.
+      >När du använder måltyperna * **[!UICONTROL Web Link]** eller **[!UICONTROL Custom Link]** spåras inte måltypen. Endast **[!UICONTROL Deep Links]** spåras.
 
 ## Krav för avancerade push-meddelanden
 
@@ -87,7 +87,7 @@ Mer information om hur du konfigurerar avancerade push-meddelanden finns i följ
 
 Så här konfigurerar du ett push-meddelande på Experience-sidan:
 
-1. (**Valfritt**) Klicka på **[!UICONTROL Show Advanced Options]** länken för att konfigurera ytterligare alternativ:
+1. (**Valfritt**) Klicka på länken **[!UICONTROL Show Advanced Options]** för att konfigurera ytterligare alternativ:
 
    * **[!UICONTROL Payload: Data]**
 
@@ -95,7 +95,7 @@ Så här konfigurerar du ett push-meddelande på Experience-sidan:
 
    * **[!UICONTROL Apple Options: Category]**
 
-      Ange en kategori för push-meddelanden och lokala meddelanden. Mer information finns i [Hantera ditt programs aviseringsstöd](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/SupportingNotificationsinYourApp.html#//apple_ref/doc/uid/TP40008194-CH4-SW9) i *iOS Developer Library*.
+      Ange en kategori för push-meddelanden och lokala meddelanden. Mer information finns i [Hantera ditt programs meddelandestöd](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/SupportingNotificationsinYourApp.html#//apple_ref/doc/uid/TP40008194-CH4-SW9) i *iOS Developer Library*.
 
    * **[!UICONTROL Apple Options: Sound]**
 
@@ -109,7 +109,7 @@ Så här konfigurerar du ett push-meddelande på Experience-sidan:
 
    * **[!UICONTROL x Summary]**
 
-      Döljer förhandsgranskningsfönstret. Klicka på ![Förhandsgranska](assets/icon_preview.png) för att visa förhandsgranskningsfönstret igen.
+      Döljer förhandsgranskningsfönstret. Klicka på ![förhandsgranska](assets/icon_preview.png) för att visa förhandsgranskningsfönstret igen.
 
    * **[!UICONTROL Change the orientation]**
 
@@ -125,14 +125,14 @@ Så här konfigurerar du ett push-meddelande på Experience-sidan:
 
    * **[!UICONTROL Preview on a user's tablet]**
 
-      Om du vill förhandsgranska meddelandet på en surfplatta klickar du på ![surfplatteikonen](assets/icon_tablet.png).
+      Om du vill förhandsgranska meddelandet på en surfplatta klickar du på ikonen ![surfplatta](assets/icon_tablet.png).
    Längst ned i förhandsgranskningsfönstret kan du visa en beskrivning av målgruppen som du valde i föregående steg.
 
-1. (**Valfritt**) Klicka **[!UICONTROL Test]** för att skicka meddelandet till angivna enheter för testning.
+1. (**Valfritt**) Klicka på **[!UICONTROL Test]** om du vill skicka meddelandet till angivna enheter för testning.
 1. Markera tjänsten och skriv push-tokens för minst en enhet som du vill skicka meddelandet till.
 
    Ange token i en kommaavgränsad lista för att skicka meddelandet till mer än en enhet.
 
 1. Konfigurera schemaläggningsalternativen för meddelandet.
 
-   Mer information finns i [Schemalägg: push-meddelande](/help/using/in-app-messaging/t-create-push-message/c-schedule-push-message.md).
+   Mer information finns i [Schema: push-meddelande](/help/using/in-app-messaging/t-create-push-message/c-schedule-push-message.md).

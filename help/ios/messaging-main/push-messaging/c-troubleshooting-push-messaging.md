@@ -1,20 +1,20 @@
 ---
 description: Den här informationen hjälper dig att felsöka push-meddelanden.
-keywords: mobile
+keywords: mobil
 seo-description: Den här informationen hjälper dig att felsöka push-meddelanden.
 seo-title: Felsökning av push-meddelanden
 solution: Experience Cloud,Analytics
 title: Felsökning av push-meddelanden
-topic: Metrics
+topic-fix: Metrics
 uuid: 87d7dcb6-82a8-46e3-a6ed-7f895a22f2af
+exl-id: dda84d30-2a7b-496c-b8f3-3bd6b97076aa
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '356'
+source-wordcount: '357'
 ht-degree: 0%
 
 ---
-
 
 # Felsöka push-meddelanden {#troubleshooting-push-messaging}
 
@@ -38,10 +38,10 @@ Följande typer av fördröjningar kan associeras med push-meddelanden för mobi
    >
    >Push-tjänsterna garanterar inte att ett meddelande skickas. Mer information om tjänsternas tillförlitlighet finns i lämplig dokumentation:
    >
-   >* **APNS**: [Tjänstekvalitet](https://developer.apple.com/documentation/usernotifications)
+   >* **APNS**:  [Tjänstekvalitet](https://developer.apple.com/documentation/usernotifications)
       >
       >
-   * **GCM**: [Meddelandets livstid](https://developers.google.com/cloud-messaging/concept-options)
+   * **GCM**:  [Meddelandets livstid](https://developers.google.com/cloud-messaging/concept-options)
 
 
 ## Hur förnyar jag mitt Apple Push Service-certifikat?
@@ -49,7 +49,7 @@ Följande typer av fördröjningar kan associeras med push-meddelanden för mobi
 För att skicka push-meddelanden krävs ett giltigt push-tjänstcertifikat. Mobiltjänster meddelar dig när ditt certifikat snart upphör att gälla eller har gått ut. Om du får det här meddelandet följer du de här stegen för att förnya certifikatet:
 
 1. Klicka på **[!UICONTROL Manage App Settings]**.
-2. Om du vill ta bort det aktuella certifikatet bläddrar du till **[!UICONTROL Push Services]** och klickar **[!UICONTROL Delete]**.
+2. Om du vill ta bort det aktuella certifikatet bläddrar du till **[!UICONTROL Push Services]** och klickar på **[!UICONTROL Delete]**.
 3. Konfigurera och testa ett nytt certifikat.
 
    Mer information finns i [Krav för att aktivera push-meddelanden](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/prerequisites-push-messaging.md)

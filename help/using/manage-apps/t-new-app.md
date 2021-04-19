@@ -1,20 +1,20 @@
 ---
 description: Du kan använda den här informationen för att skapa en ny app och konfigurera dess nyckelmått, konfigurera SDK-alternativen för Adobe Analytics och Adobe Audience Manager, konfigurera alternativ för förvärv och ID-tjänster och hämta konfigurationsfilen, SDK:er samt utvecklings- och provverktygen.
-keywords: mobile
+keywords: mobil
 seo-description: Du kan använda den här informationen för att skapa en ny app och konfigurera dess nyckelmått, konfigurera SDK-alternativen för Adobe Analytics och Adobe Audience Manager, konfigurera alternativ för förvärv och ID-tjänster och hämta konfigurationsfilen, SDK:er samt utvecklings- och provverktygen.
 seo-title: Lägg till en ny app
 solution: Experience Cloud,Analytics
 title: Lägg till en ny app
-topic: Metrics
+topic-fix: Metrics
 uuid: 706b5e4d-1318-4a9e-8c69-ffabf51fa02c
+exl-id: 30dca517-61ac-495b-aa91-3febd1cb8639
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '678'
+source-wordcount: '679'
 ht-degree: 0%
 
 ---
-
 
 # Lägg till en ny app{#add-a-new-app}
 
@@ -26,8 +26,8 @@ Innan du kan konfigurera din app måste du lägga till den i användargränssnit
 
 1. Logga in på Adobe Mobile Services och utför någon av följande uppgifter:
 
-   * Klicka **[!UICONTROL Create New]** för att skapa ett program.
-   * Om du vill lägga till fler program klickar du på Hantera appar i den vänstra navigeringsmenyn och klickar på **[!UICONTROL Add]**.
+   * Klicka på **[!UICONTROL Create New]** för att skapa en app.
+   * Om du vill lägga till fler program klickar du på Hantera program på den vänstra navigeringsmenyn och sedan på **[!UICONTROL Add]**.
 
       Mer information om inloggning finns i [Logga in](/help/using/gs/gs-signin.md).
 
@@ -49,7 +49,7 @@ Innan du kan konfigurera din app måste du lägga till den i användargränssnit
 
    * **[!UICONTROL Copy Settings From]**
 
-      Variabler, händelser, bearbetningsregler och andra inställningar ställs in i den nya rapportsviten precis som i den här rapportsviten. En rapportsvit som skapats i Mobiltjänster är offline-aktiverad (eller tidsstämplad) endast om rapportsviten som användes var Mobile App Template eller om du skapar en rapportsvit som är offline-aktiverad. **[!UICONTROL Copy Settings From]**
+      Variabler, händelser, bearbetningsregler och andra inställningar ställs in i den nya rapportsviten precis som i den här rapportsviten. En rapportsvit som skapats i Mobiltjänster är offline-aktiverad (eller tidsstämplad) endast om rapporteringssviten **[!UICONTROL Copy Settings From]** var Mobile App Template, eller om du skapar en rapportsserie som är offline-aktiverad.
 
    * **[!UICONTROL Timezone]**
 
@@ -60,11 +60,11 @@ Innan du kan konfigurera din app måste du lägga till den i användargränssnit
       Intäkter spåras och rapporteras som denna typ av valuta.
    >[!TIP]
    >
-   >Mer information om hur du använder en virtuell rapporteringssvit (VRS) finns i [Virtuella rapportsvit](/help/using/manage-apps/c-mob-vrs.md).
+   >Information om hur du använder en VRS (Virtual Reporting Suite) finns i [Virtual Report Suites](/help/using/manage-apps/c-mob-vrs.md).
 
    * **[!UICONTROL Icon]**
 
-      (**Valfritt**) Om du vill bläddra till och välja en ikon för ditt program klickar du på **[!UICONTROL Icon]**.
+      (**Valfritt**) Klicka på **[!UICONTROL Icon]** om du vill bläddra till och välja en ikon för din app.
 
    * **[!UICONTROL Name]**
 
@@ -78,7 +78,7 @@ Innan du kan konfigurera din app måste du lägga till den i användargränssnit
 
       * **[!UICONTROL Standard]**
 
-         Du kan lämna alternativet **[!UICONTROL Standard]** markerat för de flesta appar.
+         Du kan låta alternativet **[!UICONTROL Standard]** vara markerat för de flesta appar.
 
       * **[!UICONTROL Publication]**
 
@@ -86,13 +86,13 @@ Innan du kan konfigurera din app måste du lägga till den i användargränssnit
 
       * **[!UICONTROL Game]**
 
-         Det här alternativet liknar **[!UICONTROL Standard]** alternativet, förutom att terminologin som används i rapporterna **[!UICONTROL Game]** uppdateras till villkor för spel. Användare ändras till exempel till spelare. Spelspecifika rapporter visas automatiskt för spelprogram.
+         Det här alternativet liknar alternativet **[!UICONTROL Standard]**, förutom att **[!UICONTROL Game]** uppdaterar terminologin som används i rapporterna till villkor för spel. Användare ändras till exempel till spelare. Spelspecifika rapporter visas automatiskt för spelprogram.
    * **[!UICONTROL Description]**
 
-      (**Valfritt**) Skriv en beskrivning för programmet.
+      (**Valfritt**) Ange en beskrivning för programmet.
 
 
 
-1. Klicka **[!UICONTROL Save]** för att lägga till det nya programmet.
+1. Klicka på **[!UICONTROL Save]** för att lägga till den nya appen.
 
    När appen har lagts till kan du kontrollera sidan Programinformation om hur du konfigurerar ytterligare alternativ. Mer information finns i [Hantera appinställningar](/help/using/c-manage-app-settings/c-manage-app-settings.md).

@@ -1,22 +1,22 @@
 ---
 description: Du kan konfigurera appen så att den använder Apple Push Notification Service (APNS) eller Firebase Cloud Messaging (FCM).
-keywords: mobile
+keywords: mobil
 seo-description: Du kan konfigurera appen så att den använder Apple Push Notification Service (APNS) eller Firebase Cloud Messaging (FCM).
 seo-title: Konfigurera appen att använda APNS eller FCM
 solution: Experience Cloud,Analytics
 title: Konfigurera appen att använda APNS eller FCM
-topic: Metrics
+topic-fix: Metrics
 uuid: fa411f2a-ba47-4499-bbe5-1aedef6b49ad
+exl-id: 9064e1f3-f176-4699-b1e6-90f29e1af0d3
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '588'
-ht-degree: 11%
+source-wordcount: '589'
+ht-degree: 12%
 
 ---
 
-
-# Konfigurera appen så att den använder APNS eller FCM{#configure-app-to-use-apns-or-fcm}
+# Konfigurera appen att använda APNS eller FCM{#configure-app-to-use-apns-or-fcm}
 
 Du kan konfigurera appen så att den använder Apple Push Notification Service (APNS) eller Firebase Cloud Messaging (FCM).
 
@@ -32,17 +32,17 @@ Så här konfigurerar du Android-appen så att den använder FCM i det här scen
 
 1. Ange ett projektnamn och om du väljer Google Analytics för Firebase-data klickar du i kryssrutan för att godkänna villkoren för kontrollant.
 
-1. Klicka **[!UICONTROL Create project]** och vänta på att projektet ska skapas.
+1. Klicka på **[!UICONTROL Create project]** och vänta tills projektet har skapats.
 
-1. Klicka på det skapade projektet och **[!UICONTROL Project Overview]** sidan för det skapade projektet ska visas. Klicka på knappen med Android-ikonen för att lägga till en Android-app i projektet.
+1. Klicka på det skapade projektet och **[!UICONTROL Project Overview]**-sidan för det skapade projektet ska visas. Klicka på knappen med Android-ikonen för att lägga till en Android-app i projektet.
 
 1. Ange programpaketets namn, programmets smeknamn och signeringscertifikatet om det behövs.
 
-1. Följ de ytterligare steg som föreslås i installationsguiden. När du har verifierat Firebase-konfigurationen genom att testa kommunikationen med Firebase-servrarna går du tillbaka till **[!UICONTROL Project Overview]** sidan.
+1. Följ de ytterligare steg som föreslås i installationsguiden. När du har verifierat Firebase-konfigurationen genom att testa kommunikationen med Firebase-servrarna går du tillbaka till sidan **[!UICONTROL Project Overview]**.
 
-1. Klicka på kugghjulsikonen till höger om **[!UICONTROL Project Overview]** knappen och klicka på **[!UICONTROL Project Settings]**.
+1. Klicka på kugghjulsikonen till höger om knappen **[!UICONTROL Project Overview]** och klicka på **[!UICONTROL Project Settings]**.
 
-1. Klicka på **[!UICONTROL Cloud Messaging]** fliken.
+1. Klicka på fliken **[!UICONTROL Cloud Messaging]**.
 
 1. Kopiera **[!UICONTROL Legacy server key]** och **[!UICONTROL Sender ID]** för senare bruk.
 
@@ -64,9 +64,9 @@ Så här konfigurerar du Android-appen så att den använder FCM i det här scen
 
 1. Klicka på **[!UICONTROL Get Started]**. Detta öppnar projektindexsidan. Hitta det Firebase-aktiverade projektet som är länkat till Android-appen och klicka på projektkortet.
 
-1. Projektets **[!UICONTROL Project Overview]** innehåll ska sedan läsas in. Klicka på kugghjulsikonen till höger om **[!UICONTROL Project Overview]** knappen och klicka på **[!UICONTROL Project Settings]**.
+1. **[!UICONTROL Project Overview]** för projektet ska sedan läsas in. Klicka på kugghjulsikonen till höger om knappen **[!UICONTROL Project Overview]** och klicka på **[!UICONTROL Project Settings]**.
 
-1. Klicka på **[!UICONTROL Cloud Messaging]** fliken.
+1. Klicka på fliken **[!UICONTROL Cloud Messaging]**.
 
 1. Kopiera **[!UICONTROL Legacy server key]** och **[!UICONTROL Sender ID]** för senare bruk.
 
@@ -89,7 +89,7 @@ Så här konfigurerar du din iOS-app att använda APNS:
 1. Gå till [https://developer.apple.com/account](https://developer.apple.com/account) och logga in på ditt [Apple Developer-konto](https://developer.apple.com/account).
 1. Under **[!UICONTROL iOS Apps]** väljer du **[!UICONTROL Identifiers]**.
 1. Om du har ett program-ID konfigurerat för push går du till steg 11.
-1. Klicka på **[!UICONTROL +]** knappen för att skapa ett nytt program-ID.
+1. Tryck på knappen **[!UICONTROL +]** för att skapa ett nytt program-ID.
 1. Skriv en beskrivning av program-ID.
 1. Ange ett program-ID-suffix.
 
@@ -121,9 +121,8 @@ Så här hämtar du ditt SSL-certifikat och din privata nyckel (APNS):
 
 1. Expandera certifikatet och kontrollera att det innehåller en privat nyckel.
 1. Högerklicka på den privata nyckeln och välj **[!UICONTROL  Export " *`<name of key>`*]**.
-1. Ange nödvändig information i dialogrutan och spara den nya `.p12` filen.
+1. Ange nödvändig information i dialogrutan och spara den nya `.p12`-filen.
 
    Du behöver inte ange något lösenord.
 
-1. I **[!UICONTROL Private Key]** skriver du `.p12` filen.
-
+1. I **[!UICONTROL Private Key]** skriver du `.p12`-filen.

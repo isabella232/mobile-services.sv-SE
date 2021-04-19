@@ -4,28 +4,28 @@ seo-description: Här är Adobe Experience Platform Identity Service-metoder som
 seo-title: Adobe Experience Platform Identity Service-metoder
 solution: Experience Cloud,Analytics
 title: Adobe Experience Platform Identity Service-metoder
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: cdd307bc-8b7d-47a8-b77e-00902b9e2968
+exl-id: 82a246fc-f679-4fa5-b9c0-dc909a7e7d93
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 21%
 
 ---
 
-
-# Adobe Experience Platform Identity Service methods {#experience-cloud-id-service-methods}
+# Adobe Experience Platform Identity Service-metoder {#experience-cloud-id-service-methods}
 
 Här är Adobe Experience Platform Identity Service-metoder som tillhandahålls av iOS-biblioteket.
 
 SDK har för närvarande stöd för flera Adobe Experience Cloud-lösningar, inklusive Analytics, Target, Audience Manager och Experience Cloud Visitor ID-tjänsten.
 
-Metoderna prefixeras enligt lösningen och Experience Cloud ID-metoder prefixeras med `visitor`. Mer information finns i [Aktivera Experience Cloud-ID](/help/ios/marketing-cloud/mcvid.md).
+Metoderna har prefixet enligt lösningen och Experience Cloud ID-metoderna har prefixet `visitor`. Mer information finns i [Aktivera Experience Cloud-ID](/help/ios/marketing-cloud/mcvid.md).
 
-* **`+`(null-able NSURL `*`)visitorAppendToURL:(null-able NSURL `*`)url;**
+* **`+`(null-able NSURL  `*`)visitorAppendToURL:(null-able NSURL  `*`)url;**
 
-   Lägger till besöksdata från Adobe i en URL-sträng som ska användas med JavaScript-biblioteket Adobe. Om du vill använda den här metoden måste du ha Mobile SDK version 4.12 eller senare. Mer information finns i [Bifoga hjälpfunktion](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/methods/appendvisitorid.html)för besökar-ID.
+   Lägger till besöksdata från Adobe i en URL-sträng som ska användas med JavaScript-biblioteket Adobe. Om du vill använda den här metoden måste du ha Mobile SDK version 4.12 eller senare. Mer information finns i [Bifoga hjälpfunktion för besökar-ID](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/methods/appendvisitorid.html).
 
    >[!IMPORTANT]
    >
@@ -62,11 +62,11 @@ En sträng med besökarinformationen tillagd.
 
       >[!IMPORTANT]
       >
-      >Den här metoden kan orsaka ett blockerande nätverksanrop och bör **inte** anropas från en gränssnittstråd.
+      >Den här metoden kan orsaka ett blockerande nätverksanrop och ska **inte** anropas från en gränssnittstråd.
 
 * **visitorSyncIdentifiers:**
 
-   Med Experience Cloud-ID:t kan du ange ytterligare kund-ID:n som kan kopplas till varje besökare. Besökar-API:t godkänner flera kund-ID:n för samma besökare, med en kundtypsidentifierare som avgränsar omfattningen av olika kund-ID:n. Den här metoden motsvarar den `setCustomerIDs` i JavaScript-biblioteket.
+   Med Experience Cloud-ID:t kan du ange ytterligare kund-ID:n som kan kopplas till varje besökare. Besökar-API:t godkänner flera kund-ID:n för samma besökare, med en kundtypsidentifierare som avgränsar omfattningen av olika kund-ID:n. Den här metoden motsvarar `setCustomerIDs` i JavaScript-biblioteket.
 
    * Här är syntaxen för den här metoden:
 
@@ -82,7 +82,7 @@ En sträng med besökarinformationen tillagd.
 
 * **visitorSyncIdentifiers:authenticationState:**
 
-   Synkroniserar angivna identifierare till ID-tjänsten. Ange `authState` ett av följande värden:
+   Synkroniserar angivna identifierare till ID-tjänsten. Ange `authState` som ett av följande värden:
 
    * `ADBMobileVisitorAuthenticationStateUnknown`
    * `ADBMobileVisitorAuthenticationStateAuthenticated`
@@ -102,7 +102,7 @@ En sträng med besökarinformationen tillagd.
 
 * **visitorSyncIdentifierWithType:identifier:authenticationState:**
 
-   Synkroniserar angiven identifierartyp och angivet värde med ID-tjänsten. Ange `authState` ett av följande värden:
+   Synkroniserar angiven identifierartyp och angivet värde med ID-tjänsten. Ange ett av följande värden i `authState`:
 
    * `ADBMobileVisitorAuthenticationStateUnknown`
    * `ADBMobileVisitorAuthenticationStateAuthenticated`
@@ -125,7 +125,7 @@ En sträng med besökarinformationen tillagd.
 
 * **visitorGetIDs**
 
-   Hämtar en array med skrivskyddade `ADBVisitorID` objekt.
+   Hämtar en array med skrivskyddade `ADBVisitorID`-objekt.
 
    * Här är syntaxen för den här metoden:
 
@@ -159,7 +159,7 @@ En sträng med besökarinformationen tillagd.
       }];
       ```
 
-## Gränssnittet ADBVisitorID {#section_2FF74454D25C4ADABAC5E43CBFAAEC26}
+## ADBVisitorID-gränssnitt {#section_2FF74454D25C4ADABAC5E43CBFAAEC26}
 
 **Offentliga metoder:**
 
@@ -169,11 +169,10 @@ En sträng med besökarinformationen tillagd.
 - (ADBMobileVisitorAuthenticationState) authenticationState; 
 ```
 
-## ADBMomobileVisitorAuthenticationState enum {#section_A55A3F336DDF4F838900632087F51430}
+## ADBMobleVisitorAuthenticationState enum {#section_A55A3F336DDF4F838900632087F51430}
 
 ```objective-c
 ADBMobileVisitorAuthenticationStateUnknown, 
 ADBMobileVisitorAuthenticationStateAuthenticated, 
 ADBMobileVisitorAuthenticationStateLoggedOut
 ```
-

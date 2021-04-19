@@ -4,16 +4,16 @@ seo-description: Adobe Experience Platform Identity Service tillhandahåller ett
 seo-title: Experience Cloud ID-konfiguration
 solution: Experience Cloud,Analytics
 title: Experience Cloud ID-konfiguration
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 8ebdf2bf-c581-448f-9542-f99a19784fe7
+exl-id: 97dc6768-bf31-4a0d-a460-9caf9ecda5fb
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 2%
 
 ---
-
 
 # Experience Cloud ID-konfiguration {#experience-cloud-id-configuration}
 
@@ -31,7 +31,7 @@ Så här aktiverar du Experience Cloud-ID:
 
 1. Lägg till biblioteket i ditt projekt och implementera livscykeln.
 
-   Mer information finns i *Lägga till SDK- och konfigurationsfilen i IntelliJ IDEA- eller Eclipse-projektet* i [Core-implementering och livscykel](/help/android/getting-started/dev-qs.md).
+   Mer information finns i *Lägg till SDK- och konfigurationsfilen i IntelliJ IDEA- eller Eclipse-projektet* i [Core-implementering och livscykel](/help/android/getting-started/dev-qs.md).
 
 1. Importera biblioteket:
 
@@ -39,7 +39,7 @@ Så här aktiverar du Experience Cloud-ID:
    import com.adobe.mobile.*;
    ```
 
-1. Kontrollera att `ADBMobileConfig.json` filen innehåller `marketingCloudorg`:
+1. Kontrollera att `ADBMobileConfig.json`-filen innehåller `marketingCloudorg`:
 
    ```js
    "marketingCloud" : { 
@@ -57,6 +57,6 @@ Så här aktiverar du Experience Cloud-ID:
    >
    >Du måste inkludera `@AdobeOrg`.
 
-   Om dessa ID:n inte har konfigurerats hämtar du en uppdaterad `ADBMobileConfig.json` fil från Adobe Mobile-tjänster. Mer information finns i [Innan du börjar](/help/android/getting-started/requirements.md).
+   Om dessa ID:n inte har konfigurerats hämtar du en uppdaterad `ADBMobileConfig.json`-fil från Adobe Mobile-tjänster. Mer information finns i [Innan du startar](/help/android/getting-started/requirements.md).
 
 När konfigurationen är klar genereras ett Experience Cloud-ID som ingår i alla träffar. Andra ID:n, till exempel anpassade och automatiskt genererade ID:n, fortsätter att skickas med varje träff.

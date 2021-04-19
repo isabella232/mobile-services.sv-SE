@@ -1,20 +1,20 @@
 ---
 description: Du kan använda sidan Marketing Links för att skapa, använda och arkivera marknadsföringslänkar.
-keywords: mobile
+keywords: mobil
 seo-description: Du kan använda sidan Marketing Links för att skapa, använda och arkivera marknadsföringslänkar.
 seo-title: Hantera marknadsföringslänkar
 solution: Experience Cloud,Analytics
 title: Hantera marknadsföringslänkar
-topic: Metrics
+topic-fix: Metrics
 uuid: 98ac3520-89ed-4513-83f6-120dda9d0157
+exl-id: 678c18fe-b282-4eab-a248-e00dfd53cecd
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '188'
+source-wordcount: '189'
 ht-degree: 0%
 
 ---
-
 
 # Hantera marknadsföringslänkar{#manage-marketing-links}
 
@@ -30,12 +30,11 @@ Utför följande uppgifter på sidan Marketing Links:
 
    Om du vill visa listan över marknadsföringslänkar klickar du på **[!UICONTROL Acquisition]** > **[!UICONTROL Marketing Links Builder]** på startsidan för Mobiltjänster.
 
-   I **[!UICONTROL Clicks]** kolumnen visas antalet användare som har klickat på länken Marknadsföring. I **[!UICONTROL First Launches]** kolumnen visas antalet första starter för programmet. Detta värde visar antalet användare som valde att installera appen och starta den efter att ha klickat på länken Marketing.
+   Kolumnen **[!UICONTROL Clicks]** visar antalet användare som har klickat på marknadslänken. Kolumnen **[!UICONTROL First Launches]** visar antalet första starter för programmet. Detta värde visar antalet användare som valde att installera appen och starta den efter att ha klickat på länken Marketing.
 
 * **Arkivera eller arkivera marknadsföringslänkar**
 
    * Om du vill arkivera en marknadsföringslänk markerar du kryssrutan bredvid en länk och klickar på **[!UICONTROL Archive Selected]**.
-   * Om du vill avarkivera en marknadsföringsklipp klickar du **[!UICONTROL View Archive]** på en länk och klickar på **[!UICONTROL Unarchive Selected]**.
+   * Om du vill avarkivera ett marknadsföringsklipp klickar du på **[!UICONTROL View Archive]**, markerar en länk och klickar på **[!UICONTROL Unarchive Selected]**.
 
       Endast tidigare arkiverade marknadsföringslänkar visas på sidan Visa arkiv.
-

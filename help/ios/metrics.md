@@ -4,16 +4,16 @@ seo-description: I följande tabell visas de mått och mått som mobilbiblioteke
 seo-title: Livscykelvärden
 solution: Experience Cloud,Analytics
 title: Livscykelvärden
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: b795e383-d59b-4a3c-9e14-ffe8fb58412c
+exl-id: b51b6c41-843f-499d-9cf2-7ce96ed82fc0
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '1108'
 ht-degree: 1%
 
 ---
-
 
 # Livscykelstatistik {#lifecycle-metrics}
 
@@ -25,11 +25,11 @@ Letar du efter information och dokumentation om Adobe Experience Platform Mobile
 
 Från om med september 2018 har vi släppt en ny större version av SDK. Dessa nya Adobe Experience Platform Mobile SDK:er kan konfigureras via [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
 
-* Gå till [Experience Platform Launch](https://launch.adobe.com/)för att komma igång.
-* Om du vill se vad som finns i Experience Platform SDK-databaserna går du till [Github: Adobe Experience Platform SDKs](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
+* Gå till [Experience Platform Launch](https://launch.adobe.com/) för att komma igång.
+* Om du vill se vad som finns i Experience Platform SDK-databaserna går du till [Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
 
 
-## Lifecycle metrics and dimensions {#section_78F036C4296F4BA3A47C2044F79C86C1}
+## Livscykelvärden och dimensioner {#section_78F036C4296F4BA3A47C2044F79C86C1}
 
 När livscykelmätvärden har konfigurerats skickas mätvärdena i kontextdataparametrar till Analytics, parametrar till Target med varje mbox-anrop och som en signal till Audience Manager. Analytics och Target har samma format, medan Audience Manager använder olika prefix för varje mätvärde.
 
@@ -92,7 +92,7 @@ För Analytics hämtas och rapporteras kontextdata som skickas med varje livscyk
 
 >[!IMPORTANT]
 >
-> Mätvärdena för *Daglig engagerad användare* och *Månadsengagerad användare* lagras inte automatiskt i en analyssiffra. Du måste skapa en bearbetningsregel som ställer in en anpassad händelse för att hämta dessa mått.
+> Måtten *Dagliga engagerade användare* och *Månadsengagerade användare* lagras inte automatiskt i ett analysmått. Du måste skapa en bearbetningsregel som ställer in en anpassad händelse för att hämta dessa mått.
 
 #### Mått
 
@@ -105,7 +105,7 @@ För Analytics hämtas och rapporteras kontextdata som skickas med varje livscyk
 
 * **Program-ID**
 
-   Sparar programnamnet och versionen i `[AppName] [BundleVersion]` formatet. Exempel, `myapp 1.1`.
+   Sparar programnamnet och versionen i formatet `[AppName] [BundleVersion]`. Exempel, `myapp 1.1`.
 
    * Data/mål för analyskontext: `a.AppID`
    * Målgruppshantering: `c_a_AppID`
@@ -188,7 +188,7 @@ För Analytics hämtas och rapporteras kontextdata som skickas med varje livscyk
    * Målgruppshantering: `c_a_Resolution`
    >[!IMPORTANT]
    >
-   >De *dagar som gått sedan den senaste uppgraderingen*, *Startar sedan den senaste uppgraderingen* och dimensionerna för *transportföretagets namn* lagras inte automatiskt i en Analytics-variabel. Du måste skapa en bearbetningsregel för att kopiera värdena till en Analytics-variabel för rapportering.
+   >*Dagarna sedan den senaste uppgraderingen*, *Startar sedan den senaste uppgraderingen* och dimensionerna *för transportföretaget* lagras inte automatiskt i en Analytics-variabel. Du måste skapa en bearbetningsregel för att kopiera värdena till en Analytics-variabel för rapportering.
 
 
 ## Ytterligare mobilstatistik och dimensioner {#section_0B32BBF9CA734103BEDB5E755FFE5B31}
@@ -223,7 +223,7 @@ Följande mått och mått hämtas in i mobillösningsvariabler med den listade m
 
 * **Placering (ned till 10 km)**
 
-   Fylls i med `trackLocation` metoder.
+   Fylls i av `trackLocation`-metoder.
 
    * Parametern Analytics Context Data/Target:
 
@@ -251,7 +251,7 @@ Följande mått och mått hämtas in i mobillösningsvariabler med den listade m
 
 * **Plats (ned till 1 m)**
 
-   Fylls i med `trackLocation` metoder.
+   Fylls i av `trackLocation`-metoder.
 
    * Parametern Analytics Context Data/Target:
 

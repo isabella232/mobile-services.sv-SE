@@ -1,22 +1,22 @@
 ---
 description: Du kan konfigurera alternativen för Adobe Experience Platform identitetstjänst på sidan Hantera appinställningar när du skapar en ny app eller redigerar en befintlig app.
-keywords: mobile
+keywords: mobil
 seo-description: Du kan konfigurera alternativen för Adobe Experience Platform identitetstjänst på sidan Hantera appinställningar när du skapar en ny app eller redigerar en befintlig app.
 seo-title: Konfigurera tjänstalternativ för SDK ID
 solution: Experience Cloud,Analytics
 title: Konfigurera tjänstalternativ för SDK ID
-topic: Metrics
+topic-fix: Metrics
 uuid: e69b57f7-153a-4a95-9c1e-c07fe29dea2d
+exl-id: e44ca332-9723-4ffc-ac24-52a620f32783
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '198'
 ht-degree: 16%
 
 ---
 
-
-# Konfigurera tjänstalternativ för SDK ID {#configure-sdk-id-service-options}
+# Konfigurera alternativ för tjänsten SDK ID {#configure-sdk-id-service-options}
 
 Du kan konfigurera alternativen för Adobe Experience Cloud identitetstjänst på sidan Hantera appinställningar när du skapar en ny app eller redigerar en befintlig app.
 
@@ -27,4 +27,4 @@ Aktivera det här alternativet om du vill använda ID-tjänsten. Mer information
 
    * **[!UICONTROL Organization]**
 Välj din organisation i listrutan.
-An [!UICONTROL Experience Cloud] organization is the entity that enables an administrator to configure groups and users, and to control single sign-on in the [!UICONTROL Experience Cloud]. Organisationen fungerar som ett inloggningsföretag som omfattar alla produkter och lösningar i Experience Cloud. Vanligtvis är organisationen ditt företags namn, men ett företag kan ha många organisationer. Mer information finns i [Organisationer och kontolänkning](https://docs.adobe.com/content/help/sv-SE/core-services/interface/manage-users-and-products/organizations.html).
+En [!UICONTROL Experience Cloud]-organisation är den enhet som gör det möjligt för en administratör att konfigurera grupper och användare samt att styra enkel inloggning i [!UICONTROL Experience Cloud]. Organisationen fungerar som ett inloggningsföretag som omfattar alla produkter och lösningar i Experience Cloud. Vanligtvis är organisationen ditt företags namn, men ett företag kan ha många organisationer. Mer information finns i [Organisationer och kontolänkning](https://docs.adobe.com/content/help/sv-SE/core-services/interface/manage-users-and-products/organizations.html).

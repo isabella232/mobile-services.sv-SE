@@ -4,16 +4,16 @@ seo-description: Adobe Experience Platform Identity Service tillhandahåller ett
 seo-title: Experience Cloud ID
 solution: Experience Cloud,Analytics
 title: Experience Cloud ID
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 13628ea8-3cd4-4cfc-8ff6-722c33f7813a
+exl-id: aa7db365-ad21-431f-bff6-2a6da212dd0c
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 3%
 
 ---
-
 
 # Experience Cloud ID {#experience-cloud-id}
 
@@ -25,18 +25,18 @@ Adobe Experience Platform Identity Service tillhandahåller ett universellt bes�
 
 **Kräver SDK version 4.3 eller senare**
 
-## Enable the Experience Cloud ID {#section_79F984271C3B4366B7B04F864F4FF8C2}
+## Aktivera Experience Cloud-ID {#section_79F984271C3B4366B7B04F864F4FF8C2}
 
 1. Lägg till biblioteket i ditt projekt och implementera livscykeln.
 
-   Mer information finns i *Lägga till SDK- och konfigurationsfilen i projektet* i [Core Implementation och Lifecycle](/help/ios/getting-started/dev-qs.md).
+   Mer information finns i *Lägg till SDK- och konfigurationsfilen i ditt projekt* i [Core Implementation och Lifecycle](/help/ios/getting-started/dev-qs.md).
 1. Importera biblioteket:
 
    ```objective-c
    #import "ADBMobile.h"
    ```
 
-1. Kontrollera att `ADBMobileConfig.json` filerna innehåller `marketingCloud``org`:
+1. Kontrollera att `ADBMobileConfig.json`-filerna innehåller `marketingCloud` `org`:
 
    ```js
    "marketingCloud" : { 
@@ -50,6 +50,6 @@ Adobe Experience Platform Identity Service tillhandahåller ett universellt bes�
    >
    >Du måste inkludera `@AdobeOrg`.
 
-   Om dessa värden inte finns kan du hämta en uppdaterad `ADBMobileConfig.json` fil från Adobe Mobile Services. Mer information finns i [ADBMomobile JSON-konfiguration](/help/ios/getting-started/requirements.md).
+   Om dessa värden inte finns kan du hämta en uppdaterad `ADBMobileConfig.json`-fil från Adobe Mobile-tjänster. Mer information finns i [ADBMomobile JSON config](/help/ios/getting-started/requirements.md).
 
 Efter konfigurationen genereras ett Experience Cloud-ID och inkluderas i alla träffar. Andra besökar-ID:n, som anpassade och automatiskt genererade, kommer att fortsätta skickas med varje träff.

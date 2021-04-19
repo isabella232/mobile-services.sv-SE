@@ -4,32 +4,32 @@ seo-description: Lista över Audience Manager-metoder som tillhandahålls av Uni
 seo-title: Audience Manager-metoder
 solution: Experience Cloud,Analytics
 title: Audience Manager-metoder
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: efbe8f33-7f53-40a6-b7aa-a36ac718c047
+exl-id: a7b4001d-d90f-4a8a-a801-d66e56ea43b5
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '276'
 ht-degree: 27%
 
 ---
 
-
 # Audience Manager-metoder{#audience-manager-methods}
 
 Lista över Audience Manager-metoder som tillhandahålls av Universal Windows Platform-biblioteket.
 
-SDK har för närvarande stöd för flera Adobe Experience Cloud-lösningar, inklusive Analytics, Target och Audience Manager. Metoderna är prefasta enligt lösningen. Metoderna Audience Manager har prefixet `AudienceManager`.
+SDK har för närvarande stöd för flera Adobe Experience Cloud-lösningar, inklusive Analytics, Target och Audience Manager. Metoderna är prefasta enligt lösningen. Audience Manager-metoder har prefixet `AudienceManager`.
 
 >[!TIP]
 >
->När du använder `winmd` metoder från winJS (JavaScript) får alla metoder automatiskt sin första bokstav nedsänkt.
+>När du använder `winmd`-metoder från winJS (JavaScript) kommer den första bokstaven automatiskt att sänkas för alla metoder.
 
 Om målgruppshanteraren är konfigurerad i din JSON-fil skickas en signal som innehåller livscykelvärden in med livscykelträffen.
 
 * **GetVisitorProfile (winJS: getVisitorProfile)**
 
-   Returnerar den besökarprofil som senast hämtades. Returneras `null` om ingen signal har skickats ännu. Besökarprofilen sparas i `SharedPreferences` så att du enkelt kan komma åt den när du startar appen.
+   Returnerar den besökarprofil som senast hämtades. Returnerar `null` om ingen signal har skickats ännu. Besökarprofilen sparas i `SharedPreferences` så att du enkelt kan komma åt den när du startar programmet flera gånger.
 
    * Här är syntaxen för den här metoden:
 

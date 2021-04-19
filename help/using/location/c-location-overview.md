@@ -1,24 +1,24 @@
 ---
 description: Med platsöversiktsrapporten kan du se de olika länder, regioner och intressepunkter där appen används.
-keywords: mobile
+keywords: mobil
 seo-description: Med platsöversiktsrapporten kan du se de olika länder, regioner och intressepunkter där appen används.
 seo-title: Översikt (plats)
 solution: Experience Cloud,Analytics
 title: Översikt (plats)
-topic: Reports,Metrics
+topic-fix: Reports,Metrics
 uuid: a701abc3-001b-4015-843f-5fb2c6c80d17
+exl-id: 9a9f4f64-251f-48d4-a838-af14a357c575
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '556'
 ht-degree: 0%
 
 ---
 
-
 # Översikt (plats){#overview-location}
 
-I **[!UICONTROL Location Overview]** rapporten kan du se de olika länder, regioner och intressepunkter (POI) där appen används.
+Med **[!UICONTROL Location Overview]**-rapporten kan du se de olika länder, regioner och intressepunkter (POI) där appen används.
 
 Den här rapporten innehåller en solbränsvisualisering för era befintliga data, och du kan använda rapporten för att identifiera målgruppssegment (samlingar av besökare) för målinriktning. Att skapa och hantera målgrupper liknar att skapa och använda segment, förutom att du kan göra målgrupperna tillgängliga i Experience Cloud.
 
@@ -30,15 +30,15 @@ Den här visualiseringen ger till exempel basrapporten med uppdelningar. I visua
 
 >[!TIP]
 >
->Förutom den här informationen kan du se en självstudiekurs i produkten som beskriver hur du interagerar med soldiagram. Du startar självstudiekursen genom att klicka **[!UICONTROL Location Breakdown]** i rapportens namnlist och sedan klicka på **[!UICONTROL i]** ikonen .
+>Förutom den här informationen kan du se en självstudiekurs i produkten som beskriver hur du interagerar med soldiagram. Starta självstudiekursen genom att klicka på **[!UICONTROL Location Breakdown]** i rapportens namnlist och klicka på ikonen **[!UICONTROL i]**.
 
 ![](assets/location.png)
 
-Soldiagram är interaktivt. Du kan ändra tidsperioden genom att klicka på **[!UICONTROL Calendar]** ikonen i det övre högra hörnet. För musen över någon del av diagrammet för att visa mer information. På följande bild kan du till exempel se det totala antalet och procentandelen användare som använder din app i USA.
+Soldiagram är interaktivt. Du kan ändra tidsperioden genom att klicka på ikonen **[!UICONTROL Calendar]** i det övre högra hörnet. För musen över någon del av diagrammet för att visa mer information. På följande bild kan du till exempel se det totala antalet och procentandelen användare som använder din app i USA.
 
 ![](assets/location_mouse.png)
 
-I den här bilden kan du växla mellan att visa information om de tio viktigaste länderna, regionerna och de tre översta genom att klicka på knapparna i det övre högra hörnet **[!UICONTROL Categories]** **[!UICONTROL Points of Interest]**.
+På den här bilden kan du med **[!UICONTROL Categories]**-knapparna i det övre högra hörnet växla mellan att visa information om de tio viktigaste länderna, regionerna och de tre översta **[!UICONTROL Points of Interest]**.
 
 Här är visualiseringen när du väljer **[!UICONTROL Country]**:
 
@@ -56,7 +56,7 @@ Du kan klicka på ett sekundärt mått till höger för att lägga till det i vi
 
 ![](assets/location_secondary.png)
 
-## Lägg till uppdelningar och mätvärden {#section_15833511E82648869E7B1EFC24EF7B82}
+## Lägg till delningar och mätvärden {#section_15833511E82648869E7B1EFC24EF7B82}
 
 Du kan lägga till uppdelningar och sekundära mätvärden, vilket ändrar höjden på varje publik i förhållande till de andra målgrupperna i diagrammet.
 
@@ -64,11 +64,11 @@ Du kan lägga till uppdelningar och sekundära mätvärden, vilket ändrar höjd
 >
 >Ju fler ringar du lägger till i solbrännet, desto längre tid tar det att bearbeta.
 
-Om du vill lägga till uppdelningar och sekundära mätvärden klickar du **[!UICONTROL Location Breakdown]** i rapportens namnlist och sedan på **[!UICONTROL Customize]** den högra listen.
+Klicka på **[!UICONTROL Location Breakdown]** i rapportens namnlist och klicka på **[!UICONTROL Customize]** för att öppna den högra listen om du vill lägga till delvärden och sekundära värden.
 
 ![](assets/location_rail.png)
 
-När du klickar på **[!UICONTROL Add Breakdown]** eller **[!UICONTROL Add Metric]** visas ett nytt objekt med samma namn som det föregående objektet i respektive lista. Klicka på den nyligen skapade detaljnivån eller mätvärdet för att öppna en listruta där du kan välja ett nytt objekt.
+När du klickar på **[!UICONTROL Add Breakdown]** eller **[!UICONTROL Add Metric]** visas ett nytt objekt med samma namn som föregående objekt i respektive lista. Klicka på den nyligen skapade detaljnivån eller mätvärdet för att öppna en listruta där du kan välja ett nytt objekt.
 
 ## Skapa ett klisterfilter {#section_365999D49FC744ECBF9273132497E06C}
 

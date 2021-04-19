@@ -4,16 +4,16 @@ seo-description: Bearbetningsregler används för att kopiera data som du skicka
 seo-title: Bearbetar regler och kontextdata
 solution: Experience Cloud,Analytics
 title: Bearbetar regler och kontextdata
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 51338ccd-fa52-4d9c-97c4-947a4100465d
+exl-id: a3968160-42c4-4671-b541-c14639b8a451
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 3%
 
 ---
-
 
 # Bearbetar regler och kontextdata{#processing-rules-and-context-data}
 
@@ -21,10 +21,10 @@ Bearbetningsregler används för att kopiera data som du skickar i kontextdatava
 
 Mer information finns i följande innehåll:
 
-* [Utbildning](https://tv.adobe.com/embed/1181/16506/) i bearbetningsregler på Summit 2013
+* [Utbildning](https://tv.adobe.com/embed/1181/16506/)  av bearbetningsregler@ Summit 2013
 * Bli behörig att använda bearbetningsregler
 
-   Mer information om bearbetningsregler finns i Översikt över [](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html)bearbetningsregler.
+   Mer information om bearbetningsregler finns i [Översikt över bearbetningsregler](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html).
 
 Tänk på följande information när du arbetar med bearbetningsregler:
 
@@ -46,7 +46,7 @@ Tänk på följande information när du arbetar med bearbetningsregler:
    "eVar1":"jimbo"
    ```
 
-   Detta kan göra det *lite* enklare när du utför engångsmappning i bearbetningsregler, men du förlorar läsbarheten under felsökning och framtida koduppdateringar, vilket kan vara svårare. Använd i stället beskrivande namn för nycklar och värden:
+   Detta kan göra det *något* enklare när du utför engångsmappning i bearbetningsregler, men du förlorar läsbarheten under felsökning och framtida koduppdateringar, vilket kan vara svårare. Använd i stället beskrivande namn för nycklar och värden:
 
    ```js
    "username":"jimbo"
@@ -66,5 +66,4 @@ Tänk på följande information när du arbetar med bearbetningsregler:
 
 >[!TIP]
 >
->Adobe reserverar namnutrymmet &quot; `a.`&quot;. Förutom den begränsningen, för att undvika kollisioner, är det enda kravet att kontextdatavariabler är unika i ditt inloggningsföretag.
-
+>Adobe reserverar namnutrymmet `a.`. Förutom den begränsningen, för att undvika kollisioner, är det enda kravet att kontextdatavariabler är unika i ditt inloggningsföretag.

@@ -1,20 +1,20 @@
 ---
 description: Du kan skapa och hantera intressepunkter, som gör att du kan definiera geografiska platser som du kan använda för korrelationssyften, mål med meddelanden i appen och så vidare. När en träff skickas i en intressepunkt kopplas den till träffen.
-keywords: mobile
+keywords: mobil
 seo-description: Du kan skapa och hantera intressepunkter, som gör att du kan definiera geografiska platser som du kan använda för korrelationssyften, mål med meddelanden i appen och så vidare. När en träff skickas i en intressepunkt kopplas den till träffen.
 seo-title: Hantera intressepunkter
 solution: Experience Cloud,Analytics
 title: Hantera intressepunkter
-topic: Metrics
+topic-fix: Metrics
 uuid: 7b362534-54fb-43a3-b6b2-dfc8f45ff7c6
+exl-id: 9598b06b-fb6a-436c-811c-f74015cc2ab0
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '532'
+source-wordcount: '533'
 ht-degree: 0%
 
 ---
-
 
 # Hantera intressepunkter {#manage-points-of-interest}
 
@@ -23,12 +23,12 @@ Du kan skapa och hantera POI:er, som gör att du kan definiera geografiska plats
 Kontrollera följande krav innan du kan använda Plats:
 
 * Ni måste ha Analytics - Mobile Apps eller Analytics Premium.
-* Du måste aktivera **[!UICONTROL Location Reports]** för appen.
-* Om du använder en version av iOS SDK eller Android SDK som är äldre än version 4.2 måste du hämta en ny konfigurationsfil och ge den till programutvecklarna när du har lagt till ny **[!UICONTROL Points of Interest]** version.
+* Du måste aktivera **[!UICONTROL Location Reports]** för programmet.
+* Om du använder en version av iOS SDK eller Android SDK som är äldre än version 4.2 måste du hämta en ny konfigurationsfil och ge den till programutvecklarna när du har lagt till en ny **[!UICONTROL Points of Interest]**.
 
-   Om du använder iOS SDK eller Android SDK version 4.2 eller senare behöver du inte skicka in någon appuppdatering till butiken för att uppdatera din **[!UICONTROL Points of Interest]**. När du klickar **[!UICONTROL Save]** på sidan Hantera intressepunkter paketeras ändringarna i **[!UICONTROL Points of Interest]** listan och konfigurationsfilen för live-appen uppdateras. När du sparar uppdateras även listan med punkter i appen på användarenheterna, så länge appen använder den uppdaterade SDK:n och konfigurationen med en fjärr-POI-URL.
+   Om du använder iOS SDK eller Android SDK version 4.2 eller senare behöver du inte skicka in någon appuppdatering till butiken för att uppdatera din **[!UICONTROL Points of Interest]**. När du klickar på **[!UICONTROL Save]** på sidan Hantera intressepunkter paketeras ändringarna i listan **[!UICONTROL Points of Interest]** och konfigurationsfilen för den aktiva appen uppdateras. När du sparar uppdateras även listan med punkter i appen på användarenheterna, så länge appen använder den uppdaterade SDK:n och konfigurationen med en fjärr-POI-URL.
 
-För att en träff ska tilldelas till en användare på användarens enhet **[!UICONTROL Points of Interest]** måste platsen aktiveras för appen.
+För att en träff ska tilldelas till en **[!UICONTROL Points of Interest]** på användarens enhet måste platsen vara aktiverad för appen.
 
 Gör så här om du vill använda Plats:
 
@@ -41,17 +41,17 @@ Gör så här om du vill använda Plats:
 
    * **[!UICONTROL Point Name]**
 
-      Skriv **[!UICONTROL Point of Location]** namnet.
+      Skriv namnet **[!UICONTROL Point of Location]**.
 
       Det kan vara namnet på en stad, ett land eller en region. Du kan också skapa en **[!UICONTROL Point of Location]** runt vissa platser, till exempel sportarenor eller företag.
 
    * **[!UICONTROL Latitude ]**
 
-      Ange latituden för **[!UICONTROL Point of Location]** objektet. Den här informationen finns från andra källor, bland annat Internet.
+      Skriv latituden för **[!UICONTROL Point of Location]**. Den här informationen finns från andra källor, bland annat Internet.
 
    * **[!UICONTROL Longitude]**
 
-      Skriv in longituden för **[!UICONTROL Point of Location]**. Den här informationen finns från andra källor, bland annat Internet.
+      Skriv longituden för **[!UICONTROL Point of Location]**. Den här informationen finns från andra källor, bland annat Internet.
 
    * **[!UICONTROL Radius (Meters)]**
 
@@ -59,7 +59,7 @@ Gör så här om du vill använda Plats:
 
    * **[!UICONTROL Map Icon]**
 
-      Välj en ikon som ska visas i [översikts](/help/using/location/c-location-overview.md) - och [kartrapporterna](/help/using/location/c-map-points.md) .
+      Välj en ikon som ska visas i [översikten](/help/using/location/c-location-overview.md) och [kartan](/help/using/location/c-map-points.md)-rapporterna.
 
 1. Lägg till ytterligare POI efter behov.
 
@@ -69,4 +69,4 @@ Gör så här om du vill använda Plats:
 
 Om du vill ta bort en eller flera POI:er markerar du de tillämpliga kryssrutorna och klickar på **[!UICONTROL Remove Selected]**.
 
-Klicka **[!UICONTROL Import]** eller **[!UICONTROL Export]** för att arbeta med data genom att använda en `.csv` fil i stället för att använda användargränssnittet för Adobe Mobile.
+Klicka på **[!UICONTROL Import]** eller **[!UICONTROL Export]** om du vill arbeta med data genom att använda en `.csv`-fil i stället för att använda användargränssnittet för Adobe Mobile.

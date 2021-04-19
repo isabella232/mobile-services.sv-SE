@@ -4,22 +4,22 @@ seo-description: Med Adobe Mobile och Adobe Mobile SDK kan du skicka push-meddel
 seo-title: Push-meddelanden
 solution: Experience Cloud,Analytics
 title: Push-meddelanden
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 729d4010-3733-4dff-b188-ad45bd3e7cc4
+exl-id: 4472e0b9-1d00-4e1a-8653-f3976b74c078
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '439'
 ht-degree: 8%
 
 ---
 
-
 # Push-meddelanden {#push-messaging}
 
 Med Adobe Mobile och Adobe Mobile SDK kan du skicka push-meddelanden till dina användare. Med SDK kan du även enkelt rapportera användare som har öppnat din app efter att ha klickat igenom ett push-meddelande.
 
-Om du vill använda push-meddelanden **måste** du ha SDK version 4.6 eller senare.
+Om du vill använda push-meddelanden måste du **ha SDK version 4.6 eller senare.**
 
 >[!IMPORTANT]
 >
@@ -33,9 +33,9 @@ Om du vill använda push-meddelanden **måste** du ha SDK version 4.6 eller sena
 >
 >Om ditt program redan är konfigurerat för att använda meddelanden via FCM (Firebase Cloud Messaging) kan vissa av följande steg redan vara slutförda.
 
-1. Kontrollera att `ADBMobileConfig.json` filen innehåller de inställningar som krävs för push-meddelanden.
+1. Kontrollera att filen `ADBMobileConfig.json` innehåller de inställningar som krävs för push-meddelanden.
 
-   Objektet måste ha sin `"marketingCloud"` `"org"` egenskap konfigurerad för push-meddelanden.
+   `"marketingCloud"`-objektet måste ha egenskapen `"org"` konfigurerad för push-meddelanden.
 
    ```js
    "marketingCloud": { 
@@ -51,17 +51,17 @@ Om du vill använda push-meddelanden **måste** du ha SDK version 4.6 eller sena
    String token = FirebaseInstanceId.getInstance().getToken();
    ```
 
-1. Registrerings-ID/-token måste skickas till SDK med hjälp av `Config.setPushIdentifier(final String registrationId)` metoden.
+1. Registrerings-ID/-token måste skickas till SDK med metoden `Config.setPushIdentifier(final String registrationId)`.
 
    ```js
    Config.setPushIdentifier(token); // token was obtained in step 2
    ```
 
-1. Aktivera rapportering genom att skicka aktiviteten i `collectLifecycleData` metoden.
+1. Aktivera rapportering genom att skicka aktiviteten i metoden `collectLifecycleData`.
 
    Här följer kraven för att aktivera push-klickningsrapportering:
 
-   * I din implementering av `FireBaseMessageService`måste det Bundle-objekt som innehåller meddelandedata, som skickas till `onMessageReceived` metoden med RemoteMessage-objektet, läggas till i den återgivning som används för att öppna målaktiviteten med en klickning. Detta kan göras med hjälp av `putExtras` metoden. Mer information finns i [putExtras](https://developer.android.com/reference/android/content/Intent.html#putExtras(android.os.Bundle))).
+   * I din implementering av `FireBaseMessageService` måste det Bundle-objekt som innehåller meddelandedata, som skickas till metoden `onMessageReceived` med RemoteMessage-objektet, läggas till i den Intent som används för att öppna målaktiviteten med en klickning. Detta kan göras med metoden `putExtras`. Mer information finns i [putExtras](https://developer.android.com/reference/android/content/Intent.html#putExtras(android.os.Bundle))).
 
    ```java
    Intent intent = new Intent(this, MainActivity.class);
@@ -70,13 +70,10 @@ Om du vill använda push-meddelanden **måste** du ha SDK version 4.6 eller sena
       intent.putExtras(message.toIntent().getExtras());
    ```
 
-   * I målaktiviteten för klickningen måste aktiviteten skickas till SDK med `collectLifecycleData` anropet.
+   * I målaktiviteten för klickningen måste aktiviteten skickas till SDK med anropet `collectLifecycleData`.
 
       Kom ihåg följande information:
 
       * Använd `Config.collectLifecycleData(this)` eller `Config.collectLifecycleData(this, contextData)`.
 
       * Använd **inte** `Config.collectLifecycleData()`.
-
-
-

@@ -1,26 +1,26 @@
 ---
 description: Du kan visa nyckeltal för prestandamått för de appar som du senast visade. Som standard kan du visa upp till 12 appar. Du kan ändra datumintervallet och skapa filter för att segmentera data och redigera alla program på sidan Översikt.
-keywords: mobile
+keywords: mobil
 seo-description: Du kan visa nyckeltal för prestandamått för de appar som du senast visade. Som standard kan du visa upp till 12 appar. Du kan ändra datumintervallet och skapa filter för att segmentera data och redigera alla program på sidan Översikt.
 seo-title: Visa mobilmått
 solution: Experience Cloud,Analytics
 title: Visa mobilmått
-topic: Metrics
+topic-fix: Metrics
 uuid: 57db0b77-6b0a-4a0c-9aad-0731275233fd
+exl-id: aab6448d-4362-4c75-949a-7a519da76606
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '467'
-ht-degree: 0%
+source-wordcount: '468'
+ht-degree: 1%
 
 ---
-
 
 # Visa mobilstatistik {#display-mobile-metrics}
 
 Du kan visa nyckeltal för prestandamått för de appar som du senast visade. Som standard kan du visa upp till 12 appar. Du kan ändra datumintervallet och skapa filter för att segmentera data och redigera alla program på sidan Översikt.
 
-De mätvärden som visas för varje app avspeglar de nyckeltal som du valde när du skapade appen. Mer information finns i [Lägga till ett nytt program](/help/using/manage-apps/t-new-app.md).
+De mätvärden som visas för varje app avspeglar de nyckeltal som du valde när du skapade appen. Mer information finns i [Lägg till en ny app](/help/using/manage-apps/t-new-app.md).
 
 Om det program du vill visa inte visas söker du efter det genom att skriva programmets namn eller genom att klicka på listrutan i **[!UICONTROL All Apps]**.
 
@@ -38,21 +38,21 @@ Du kan utföra följande åtgärder på sidan Översikt:
 
    Så här skapar du ett filter:
 
-   1. Klicka på **[!UICONTROL Filter]** ikonen för att visa **[!UICONTROL Sticky Filter]** dialogrutan.
-   1. Klicka **[!UICONTROL Add Rule]** och välj ett alternativ i listrutan. Skriv sedan den information som behövs.
+   1. Klicka på ikonen **[!UICONTROL Filter]** för att visa dialogrutan **[!UICONTROL Sticky Filter]**.
+   1. Klicka på **[!UICONTROL Add Rule]**, välj ett alternativ i listrutan och ange nödvändig information.
 
-      Du kan till exempel välja **[!UICONTROL App Version]** och skriva `4.5` för versionen. Du kan välja **[!UICONTROL Device Type]** och skriva `Android`.
+      Du kan till exempel välja **[!UICONTROL App Version]** och skriva `4.5` som version. Du kan välja **[!UICONTROL Device Type]** och skriva `Android`.
 
       >[!TIP]
       >
-      >Du kan skapa komplexa filter med hjälp av programsatserna *AND* och *OR* .
+      >Du kan skapa komplexa filter med hjälp av *AND*- och *OR*-satser.
 
    1. Klicka på **[!UICONTROL Update]**.
    >[!TIP]
    >
-   >En blå bubbla visas bredvid **[!UICONTROL Filter]** -ikonen för att ange antalet aktiva filter.
+   >En blå bubbla visas bredvid ikonen **[!UICONTROL Filter]** för att ange antalet aktiva filter.
 
-   Om du vill avbryta filter klickar du på **[!UICONTROL Filter]** ikonen och sedan på **[!UICONTROL Cancel]**.
+   Om du vill avbryta filter klickar du på ikonen **[!UICONTROL Filter]** och sedan på **[!UICONTROL Cancel]**.
 
 * **Visa nyckeltal för prestandaindikatorer**
 
@@ -63,6 +63,6 @@ Du kan utföra följande åtgärder på sidan Översikt:
 1. Klicka på kugghjulsikonen i en app för att öppna sidan App Information.
 1. Redigera programmets inställningar.
 
-   Mer information om de olika inställningarna finns i [Konfigurera appen](/help/using/c-manage-app-settings/c-mob-confg-app/c-mob-confg-app.md).
+   Mer information om de olika inställningarna finns i [Konfigurera din app](/help/using/c-manage-app-settings/c-mob-confg-app/c-mob-confg-app.md).
 
 1. Klicka på **[!UICONTROL Save]**.

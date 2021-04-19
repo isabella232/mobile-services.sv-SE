@@ -4,16 +4,16 @@ seo-description: Den här informationen hjälper dig att implementera iOS-biblio
 seo-title: Kärnimplementering och livscykel
 solution: Experience Cloud,Analytics
 title: Kärnimplementering och livscykel
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 96d06325-e424-4770-8659-4b5431318ee3
+exl-id: 5fb2d534-c2e8-480a-aaee-0e71dd55feb6
 translation-type: tm+mt
-source-git-commit: c7400359bc19150926a67b991ba219a7fa187442
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '841'
 ht-degree: 1%
 
 ---
-
 
 # Core-implementering och livscykel {#core-implementation-and-lifecycle}
 

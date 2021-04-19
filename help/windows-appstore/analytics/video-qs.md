@@ -4,22 +4,22 @@ seo-description: Information som kan hjälpa dig med videoanalys.
 seo-title: Videoanalys
 solution: Experience Cloud,Analytics
 title: Videoanalys
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 7d4e6668-a1d9-41da-96c8-8baac860c5b0
+exl-id: 86d70a6f-db12-4f94-a37f-4b1d4b99e0f1
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '898'
 ht-degree: 15%
 
 ---
 
-
 # Videoanalys {#video-analytics}
 
 Information som kan hjälpa dig med videoanalys.
 
-Videomätning beskrivs i detalj i guiden [Mäta ljud och video i Adobe Analytics](https://docs.adobe.com/content/help/sv-SE/media-analytics/using/media-overview.html/) . Den allmänna processen att mäta video är mycket lik på alla AppMeasurement-plattformar. Det här snabbstartsavsnittet innehåller en grundläggande översikt över utvecklaråtgärderna tillsammans med kodexempel.
+Videomätning beskrivs i detalj i [Mäta ljud och video i Adobe Analytics](https://docs.adobe.com/content/help/sv-SE/media-analytics/using/media-overview.html/)-guiden. Den allmänna processen att mäta video är mycket lik på alla AppMeasurement-plattformar. Det här snabbstartsavsnittet innehåller en grundläggande översikt över utvecklaråtgärderna tillsammans med kodexempel.
 
 I följande tabell visas de mediedata som skickas till Analytics. Använd bearbetningsregler för att mappa kontextdata till en Analytics-variabel.
 
@@ -27,7 +27,7 @@ I följande tabell visas de mediedata som skickas till Analytics. Använd bearbe
 
    (Obligatoriskt) Samlar in namnet på videon, enligt specifikationen i implementeringen, när en besökare visar videon på något sätt.Du kan lägga till klassificeringar för den här variabeln.
 
-   (**Valfritt**) Custom Insight-variabeln innehåller information om videopappning.
+   (**Valfritt**) Custom Insight-variabeln innehåller information om videopassning.
 
    * Variabeltyp: eVar
    * Standardförfallodatum: Besök
@@ -43,7 +43,7 @@ I följande tabell visas de mediedata som skickas till Analytics. Använd bearbe
 
 * **a.media.segment**
 
-   (Obligatoriskt) Samlar in videosegmentdata, inklusive segmentnamnet och den ordning i vilken segmentet finns i videon. Den här variabeln fylls i genom att den aktiveras när spelarhändelser spåras automatiskt, eller genom att ett anpassat segmentnamn anges när spelarhändelser spåras manuellt. `segmentByMilestones` När en besökare till exempel tittar på det första segmentet i en video kan SiteCatalyst samla in följande i eVar `1:M:0-25` segment.
+   (Obligatoriskt) Samlar in videosegmentdata, inklusive segmentnamnet och den ordning i vilken segmentet finns i videon. Den här variabeln fylls i genom att variabeln `segmentByMilestones` aktiveras när spelarhändelser spåras automatiskt, eller genom att ett anpassat segmentnamn anges när spelarhändelser spåras manuellt. När en besökare till exempel tittar på det första segmentet i en video kan SiteCatalyst samla in följande i eVar `1:M:0-25` segment.
 
    Standardmetoden för insamling av videodata samlar in data vid följande punkter:
 
@@ -93,9 +93,9 @@ I följande tabell visas de mediedata som skickas till Analytics. Använd bearbe
    * Typ: Räknare
 
 
-## Konfigurera mediainställningar {#section_929945D4183C428AAF3B983EFD3E2500}
+## Konfigurera medieinställningar {#section_929945D4183C428AAF3B983EFD3E2500}
 
-Konfigurera ett `MediaSettings` objekt med de inställningar som du vill använda för att spåra video:
+Konfigurera ett `MediaSettings`-objekt med de inställningar du vill använda för att spåra video:
 
 ```js
 var mySettings = ADB.Media.settingsWith("name", 10, "playerName", "playerId");
@@ -103,7 +103,7 @@ var mySettings = ADB.Media.settingsWith("name", 10, "playerName", "playerId");
 
 ## Spåra spelarhändelser {#section_C7F43AECBC0D425390F7FCDF3035B65D}
 
-För att mäta videouppspelning måste metoderna `Play`, `Stop`och `Close` anropas vid rätt tidpunkt. När spelaren exempelvis pausas `Stop`. `Play` anropas när uppspelningen startar eller återupptas.
+För att mäta videouppspelning måste metoderna `Play`, `Stop` och `Close` anropas vid rätt tidpunkt. Om spelaren exempelvis är pausad är `Stop`. `Play` anropas när uppspelningen startar eller återupptas.
 
 ## Klasser {#section_16838332727348F990305C0C6B0D795C}
 
@@ -134,7 +134,7 @@ property bool isMediaAd;
 
 * **SettingsWith (winJS: settingsWith)**
 
-   Returnerar ett `MediaSetting` objekt med angivna parametrar.
+   Returnerar ett `MediaSetting`-objekt med angivna parametrar.
 
    * Här är syntaxen för den här metoden:
 
@@ -150,7 +150,7 @@ property bool isMediaAd;
 
 * **AdSettingsWith (winJS: adSettingsWith**
 
-   Returnerar ett `MediaSettings` objekt som ska användas för att spåra en annonsvideo.
+   Returnerar ett `MediaSettings`-objekt som ska användas för att spåra en annonsvideo.
 
    * Här är syntaxen för den här metoden:
 
@@ -182,7 +182,7 @@ property bool isMediaAd;
 
 * **Close (winJS: stäng)**
 
-   Spårar en mediestängning för medieobjektet med namnet *name*.
+   Spårar en mediestängning för medieobjektet *namn*.
 
    * Här är syntaxen för den här metoden:
 
@@ -198,7 +198,7 @@ property bool isMediaAd;
 
 * **Play (winJS: play)**
 
-   Spårar en mediespelning för mediaobjektet med namnet *`name`* vid den angivna *förskjutningen* (i sekunder).
+   Spårar en mediespelning för medieobjektet *`name`* vid angiven *offset* (i sekunder).
 
    * Här är syntaxen för den här metoden:
 
@@ -214,7 +214,7 @@ property bool isMediaAd;
 
 * **Complete (winJS: complete)**
 
-   Markera medieobjektet som slutfört manuellt vid den *angivna förskjutningen* (i sekunder).
+   Markera medieobjektet som slutfört manuellt vid *förskjutningen* som anges (i sekunder).
 
    * Här är syntaxen för den här metoden:
 
@@ -230,7 +230,7 @@ property bool isMediaAd;
 
 * **Stop (winJS: stop)**
 
-   Meddelar mediemodulen att videon har stoppats eller pausats vid den angivna *förskjutningen*.
+   Meddelar mediemodulen att videon har stoppats eller pausats vid angiven *offset*.
 
    * Här är syntaxen för den här metoden:
 
@@ -275,4 +275,3 @@ property bool isMediaAd;
       ```js
       ADB.Media.track("mediaName", null);
       ```
-

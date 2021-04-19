@@ -1,26 +1,26 @@
 ---
 description: Det går inte att ange variabeln products genom att använda bearbetningsregler. I Mobile SDK måste du använda en speciell syntax i parametern kontextdata för att ange produkter på serveranropet.
-keywords: android;library;mobile;sdk
+keywords: android;bibliotek;mobil;sdk
 seo-description: Det går inte att ange variabeln products genom att använda bearbetningsregler. I Mobile SDK måste du använda en speciell syntax i parametern kontextdata för att ange produkter på serveranropet.
 seo-title: Produktvariabel
 solution: Experience Cloud,Analytics
 title: Produktvariabel
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: f4484022-cb8b-4dea-9209-5a110ba607df
+exl-id: 1d850ce1-6fd4-463e-8949-8b8cf40d8467
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '185'
+source-wordcount: '189'
 ht-degree: 1%
 
 ---
 
-
-# Variabeln Produkter {#products-variable}
+# Produktvariabel {#products-variable}
 
 Det går inte att ange variabeln products genom att använda bearbetningsregler. I Mobile SDK måste du använda en speciell syntax i parametern kontextdata för att ange produkter på serveranropet.
 
-Om du vill ställa in *variabeln products* anger du en kontextdatanyckel till `"&&products"`och anger värdet med den syntax som är definierad för *variabeln products* :
+Om du vill ställa in variabeln *products* anger du en kontextdatanyckel till `"&&products"` och anger värdet med den syntax som är definierad för variabeln *products*:
 
 ```java
 cdata.put("&&products", "Category;Product;Quantity;Price[,Category;Product;Quantity;Price]");
@@ -49,4 +49,4 @@ Variabeln *products* ställs in på bildbegäran och de andra variablerna ställ
 
 ![](assets/map-products.png)
 
-Du behöver inte mappa *produktvariabeln* med bearbetningsregler eftersom den här variabeln ställs in direkt på SDK:ns bildbegäran.
+Du behöver inte mappa variabeln *products* med bearbetningsregler eftersom variabeln anges direkt på SDK:ns bildbegäran.

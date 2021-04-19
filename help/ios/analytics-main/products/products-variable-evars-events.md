@@ -4,16 +4,16 @@ seo-description: Här är ett exempel på variabeln products med Merchandising e
 seo-title: Produkterna kan variera med Merchandising eVars och produktspecifika event
 solution: Experience Cloud,Analytics
 title: Produkterna kan variera med Merchandising eVars och produktspecifika event
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: f913211e-97ad-4237-bfe4-7ded01295caf
+exl-id: f438190d-0d2d-4bcd-a1c7-156e46e61162
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '98'
 ht-degree: 0%
 
 ---
-
 
 # Produktvariabel med eVars för försäljning och produktspecifika händelser {#products-variable-with-merchandising-evars-and-product-specific-events}
 
@@ -39,5 +39,4 @@ NSMutableDictionary *contextData = [NSMutableDictionary dictionary];
 
 >[!TIP]
 >
->Om du utlöser en produktspecifik händelse med hjälp av *`&&products`* variabeln måste du även ange den händelsen i *`&&events`* variabeln. Om du inte anger den händelsen filtreras den bort under bearbetningen.
-
+>Om du utlöser en produktspecifik händelse med hjälp av variabeln *`&&products`* måste du även ange den händelsen i variabeln *`&&events`*. Om du inte anger den händelsen filtreras den bort under bearbetningen.

@@ -1,20 +1,20 @@
 ---
 description: Du kan visa en interaktiv karta som visar dina intressepunkter och andra datamarkörer.
-keywords: mobile
+keywords: mobil
 seo-description: Du kan visa en interaktiv karta som visar dina intressepunkter och andra datamarkörer.
 seo-title: Mappa
 solution: Experience Cloud,Analytics
 title: Mappa
-topic: Metrics
+topic-fix: Metrics
 uuid: 3c271738-eb8d-4c26-baaf-54b247bfc4da
+exl-id: a7e75333-2919-44bf-9963-f40cdee2d6b6
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '293'
+source-wordcount: '294'
 ht-degree: 1%
 
 ---
-
 
 # Mappa {#map}
 
@@ -31,7 +31,7 @@ Här är viktig information att komma ihåg:
 
    Andra datamarkörer, till exempel Launches (Starta)), visas i svart. Klicka på en markör för att visa mer information.
 
-Klicka på ![lager](assets/map_layers.png) för att välja följande alternativ:
+Klicka på ![lager](assets/map_layers.png) om du vill välja följande alternativ:
 
 * **[!UICONTROL Map ]**
 
@@ -56,16 +56,16 @@ Du kan konfigurera följande alternativ för den här rapporten:
 
 * **[!UICONTROL Time Period]**
 
-   Klicka på **[!UICONTROL Calendar]** ikonen för att välja en egen punkt eller för att välja en förinställd tidsperiod i listrutan.
+   Klicka på ikonen **[!UICONTROL Calendar]** för att välja en anpassad punkt eller för att välja en förinställd tidsperiod i listrutan.
 
 * **[!UICONTROL Customize]**
 
-   Anpassa era rapporter genom att ändra **[!UICONTROL Show By]** alternativen, lägga till mätvärden och filter, lägga till ytterligare serier (mätvärden) med mera. Mer information finns i [Anpassa rapporter](/help/using/usage/reports-customize/t-reports-customize.md).
+   Anpassa dina rapporter genom att ändra **[!UICONTROL Show By]**-alternativen, lägga till mätvärden och filter, lägga till ytterligare serier (mätvärden) med mera. Mer information finns i [Anpassa rapporter](/help/using/usage/reports-customize/t-reports-customize.md).
 
 * **[!UICONTROL Filter]**
 
-   Klicka **[!UICONTROL Filter]** för att skapa ett filter som spänner över olika rapporter för att se hur ett segment fungerar i alla mobilrapporter. Med ett klisterlappsfilter kan du definiera ett filter som ska användas på alla rapporter som inte är avsedda för målning. Mer information finns i [Lägga till ett klisterfilter](/help/using/usage/reports-customize/t-sticky-filter.md).
+   Klicka på **[!UICONTROL Filter]** för att skapa ett filter som sträcker sig över olika rapporter för att se hur ett segment fungerar i alla mobila rapporter. Med ett klisterlappsfilter kan du definiera ett filter som ska användas på alla rapporter som inte är avsedda för målning. Mer information finns i [Lägga till ett klisterfilter](/help/using/usage/reports-customize/t-sticky-filter.md).
 
 * **[!UICONTROL Download]**
 
-   Klicka **[!UICONTROL PDF]** eller **[!UICONTROL CSV]** för att ladda ned eller öppna dokument och dela med användare som inte har tillgång till Mobile Services eller för att använda filen i presentationer.
+   Klicka på **[!UICONTROL PDF]** eller **[!UICONTROL CSV]** för att hämta eller öppna dokument och dela med användare som inte har tillgång till Mobile Services eller för att använda filen i presentationer.

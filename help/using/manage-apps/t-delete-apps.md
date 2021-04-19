@@ -1,22 +1,22 @@
 ---
 description: Du kan ta bort ett program från Adobe Mobile.
-keywords: mobile
+keywords: mobil
 seo-description: Du kan ta bort ett program från Adobe Mobile.
 seo-title: Ta bort ett program
 solution: Experience Cloud,Analytics
 title: Ta bort ett program
-topic: Metrics
+topic-fix: Metrics
 uuid: 1721cce5-b368-4f05-a40b-e3f2348d96d8
+exl-id: 70b95aed-9e22-470b-b278-6c015334e92a
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '99'
-ht-degree: 3%
+source-wordcount: '100'
+ht-degree: 4%
 
 ---
 
-
-# Ta bort ett program{#delete-an-app}
+# Ta bort en app{#delete-an-app}
 
 Du kan ta bort ett program från gränssnittet för mobiltjänster.
 

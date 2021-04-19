@@ -4,16 +4,16 @@ seo-description: Versionsinformation och kända fel för Android SDK 4.x för Ex
 seo-title: Versionsinformation
 solution: Experience Cloud,Analytics
 title: Versionsinformation
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 16bb4de8-a216-47a8-928c-0b1e1421adcf
+exl-id: 5cc3d031-5952-4e9b-b551-9402d3c05ccb
 translation-type: tm+mt
-source-git-commit: 8b5842068c602f3f9b1c020c1c9a686eb0e56b74
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '303'
 ht-degree: 1%
 
 ---
-
 
 # Versionsinformation {#release-notes}
 

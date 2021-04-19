@@ -1,22 +1,22 @@
 ---
 description: Med Android SDK 4.x för Experience Cloud Solutions kan ni mäta Android-applikationer, leverera riktat innehåll i appen och utnyttja och samla in målgruppsdata via målgruppshantering.
-keywords: android;library;mobile;sdk
+keywords: android;bibliotek;mobil;sdk
 seo-description: Med Android SDK 4.x för Experience Cloud Solutions kan ni mäta Android-applikationer, leverera riktat innehåll i appen och utnyttja och samla in målgruppsdata via målgruppshantering.
 seo-title: Android SDK 4.x för Experience Cloud Solutions
 solution: Experience Cloud,Analytics
 title: Android SDK 4.x för Experience Cloud Solutions
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 56f1ff41-0365-41dd-bdde-245c823dff07
+exl-id: c2454e94-a9af-42f3-ab45-14f68531faab
 translation-type: tm+mt
-source-git-commit: bc11c1e7a4a11657ee89c40ddcbd37377ce50bb5
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '451'
 ht-degree: 4%
 
 ---
 
-
-# Android SDK 4.x för Experience Cloud{#android-sdk-x-for-experience-cloud-solutions}
+# Android SDK 4.x för Experience Cloud-lösningar{#android-sdk-x-for-experience-cloud-solutions}
 
 Med Android SDK 4.x för Experience Cloud Solutions kan ni mäta Android-applikationer, leverera riktat innehåll i appen och utnyttja och samla in målgruppsdata via målgruppshantering.
 
@@ -27,7 +27,7 @@ Letar du efter information och dokumentation om Adobe Experience Platform Mobile
 Från om med september 2018 har vi släppt en ny större version av SDK. Dessa nya Adobe Experience Platform Mobile SDK:er kan konfigureras via [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
 
 * Gå till Adobe Experience Platform Launch för att komma igång.
-* Om du vill se vad som finns i Experience Platform SDK-databaserna går du till [Github: Adobe Experience Platform SDKs](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
+* Om du vill se vad som finns i Experience Platform SDK-databaserna går du till [Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
 
 >[!IMPORTANT]
 >
@@ -35,7 +35,7 @@ Från om med september 2018 har vi släppt en ny större version av SDK. Dessa n
 
 >[!IMPORTANT]
 >
->Även om du kan konfigurera funktioner i användargränssnittet fungerar dessa funktioner inte förrän du hämtar den genererade konfigurationsfilen och lägger till den i SDK:n. Information om hur du hämtar och konfigurerar SDK:er finns i [Core Implementation och Lifecycle](/help/android/getting-started/dev-qs.md).
+>Även om du kan konfigurera funktioner i användargränssnittet fungerar dessa funktioner inte förrän du hämtar den genererade konfigurationsfilen och lägger till den i SDK:n. Information om hur du hämtar och konfigurerar SDK:er finns i [Core Implementation and Lifecycle](/help/android/getting-started/dev-qs.md).
 
 SDK:erna har stöd för följande versioner av Android:
 
@@ -56,10 +56,10 @@ Adobe Mobile-tjänsterna utgör ett gränssnitt som samlar funktioner för mobil
 
 ## Versionsinformation {#section_F8181DC052D44DD2A99AB40A41F6792C}
 
-Den senaste informationen om Experience Cloud finns i [versionsinformationen](https://docs.adobe.com/content/help/sv-SE/release-notes/experience-cloud/current.html)för Experience Cloud.
+Den senaste informationen om Experience Cloud finns i [Versionsinformation för Experience Cloud](https://docs.adobe.com/content/help/sv-SE/release-notes/experience-cloud/current.html).
 
 ## Använda Bloodhound
 
 >[!IMPORTANT]
 >
->Från och med **den 30 april 2017** har Adobe Bloodhound solnedgång. Från och med den 1 maj 2017 kommer inga ytterligare förbättringar att göras och ingen ytterligare support för tekniker eller Adobe Expert Care kommer att ges.
+>Från och med den **30 april 2017** har Adobe Bloodhound solnedgångar. Från och med den 1 maj 2017 kommer inga ytterligare förbättringar att göras och ingen ytterligare support för tekniker eller Adobe Expert Care kommer att ges.

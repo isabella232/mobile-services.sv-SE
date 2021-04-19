@@ -4,16 +4,16 @@ seo-description: Lista över Audience Manager-metoder i Windows 8.1 Universal Ap
 seo-title: Audience Manager-metoder
 solution: Experience Cloud,Analytics
 title: Audience Manager-metoder
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: e39c9c3e-fd53-4b46-8fff-88101a064a9c
+exl-id: b10d7274-0fc6-4822-a40b-1192b71592b9
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '280'
 ht-degree: 26%
 
 ---
-
 
 # Audience Manager-metoder {#audience-manager-methods}
 
@@ -29,7 +29,7 @@ Om målgruppshanteraren är konfigurerad i JSON-filen skickas en signal med livs
 
 * **GetVisitorProfile (winJS: getVisitorProfile)**
 
-   Returnerar den besökarprofil som senast hämtades. Returneras `null` om ingen signal har skickats ännu. Besökarprofilen sparas i `SharedPreferences` så att du enkelt kan komma åt den när du startar appen.
+   Returnerar den besökarprofil som senast hämtades. Returnerar `null` om ingen signal har skickats ännu. Besökarprofilen sparas i `SharedPreferences` så att du enkelt kan komma åt den när du startar programmet flera gånger.
 
    * Här är syntaxen för den här metoden:
 
@@ -115,4 +115,3 @@ Om målgruppshanteraren är konfigurerad i JSON-filen skickas en signal med livs
         // segments come back here in "visitorProfile", normally found in the "segs" object of your json 
       }); 
       ```
-

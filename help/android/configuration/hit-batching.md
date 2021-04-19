@@ -1,30 +1,30 @@
 ---
 description: Om du trycker på gruppering kan program stoppa träffar från att skickas tills antalet träffar i kön har överskridit den konfigurerade gränsen.
-keywords: android;library;mobile;sdk
+keywords: android;bibliotek;mobil;sdk
 seo-description: Om du trycker på gruppering kan program stoppa träffar från att skickas tills antalet träffar i kön har överskridit den konfigurerade gränsen.
 seo-title: Träffa
 solution: Experience Cloud,Analytics
 title: Träffa
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: ada35be3-242b-4b2b-a828-9bf998dd58b5
+exl-id: 74147f09-52fc-46dc-b4dd-2bf60b039f6e
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '183'
+source-wordcount: '187'
 ht-degree: 0%
 
 ---
 
-
-# Träffa {#hit-batching}
+# Tryck på batchvis {#hit-batching}
 
 Om du trycker på gruppering kan program stoppa träffar från att skickas tills antalet träffar i kön har överskridit den konfigurerade gränsen.
 
 >[!IMPORTANT]
 >
->Om du vill använda träffbatchning **måste** du aktivera offlinespårning och ha SDK version 4.1 eller senare
+>Om du vill använda träffgruppering måste du **aktivera offlinespårning och ha SDK version 4.1 eller senare**
 
-Om du vill aktivera träffgrupper uppdaterar du din `ADBMobileConfig.json` fil och anger ett värde för `batchLimit`:
+Uppdatera din `ADBMobileConfig.json`-fil och ange ett värde för `batchLimit` om du vill aktivera träffbatchbearbetning:
 
 ```js
 "analytics": {
@@ -33,11 +33,11 @@ Om du vill aktivera träffgrupper uppdaterar du din `ADBMobileConfig.json` fil o
 }
 ```
 
-När värdet är större än 0 köar SDK antalet träffar som är lika med *`batchLimit`* värdet. När det här tröskelvärdet har passerats skickas alla träffar i kön.
+När värdet är större än 0 köar SDK antalet träffar som är lika med *`batchLimit`*-värdet. När det här tröskelvärdet har passerats skickas alla träffar i kön.
 
 Följande metoder används för gruppbearbetning av träffar:
 
-* `Analytics.getQueueSize` returnerar ett värde `long` med antalet träffar i gruppbearbetningskön.
+* `Analytics.getQueueSize` returnerar en  `long` med antalet träffar i gruppbearbetningskön.
 
 * `Analytics.sendQueuedHits` tvingar biblioteket att skicka alla träffar i kön oavsett hur många träffar som står i kö.
 * `Analytics.clearQueue` tar bort alla träffar från kön utan att skicka dem.

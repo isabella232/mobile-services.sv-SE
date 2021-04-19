@@ -1,22 +1,22 @@
 ---
 description: Förvärvningslänkar med unika spårningskoder kan genereras i Adobe Mobile-tjänster. När en användare hämtar och kör en app från App Store efter att ha klickat på den genererade länken, samlar SDK automatiskt in och skickar hämtningsdata till Adobe Mobile-tjänster.
-keywords: android;library;mobile;sdk
+keywords: android;bibliotek;mobil;sdk
 seo-description: Förvärvningslänkar med unika spårningskoder kan genereras i Adobe Mobile-tjänster. När en användare hämtar och kör en app från App Store efter att ha klickat på den genererade länken, samlar SDK automatiskt in och skickar hämtningsdata till Adobe Mobile-tjänster.
 seo-title: Mobilförvärv
 solution: Experience Cloud,Analytics
 title: Mobilförvärv
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 4d32eae9-e856-4e40-8a29-2b5bccd106e0
+exl-id: 266f0266-38f5-410b-ae14-92874fb0e7ce
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '880'
 ht-degree: 1%
 
 ---
 
-
-# Mobile app acquisition {#mobile-app-acquisition}
+# Förvärva mobilappar {#mobile-app-acquisition}
 
 Förvärvningslänkar med unika spårningskoder kan genereras i Adobe Mobile-tjänster. När en användare hämtar och kör en app från App Store efter att ha klickat på den genererade länken, samlar SDK automatiskt in och skickar hämtningsdata till Adobe Mobile-tjänster.
 
@@ -27,19 +27,19 @@ Letar du efter information och dokumentation om Adobe Experience Platform Mobile
 Från om med september 2018 har vi släppt en ny större version av SDK. Dessa nya Adobe Experience Platform Mobile SDK:er kan konfigureras via [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
 
 * Gå till Adobe Experience Platform Launch för att komma igång.
-* Om du vill se vad som finns i Experience Platform SDK-databaserna går du till [Github: Adobe Experience Platform SDKs](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
+* Om du vill se vad som finns i Experience Platform SDK-databaserna går du till [Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
 
 >[!IMPORTANT]
 >
->Om du vill använda förvärvet **måste** du ha SDK version 4.1 eller senare.
+>Om du vill använda förvärvet måste du **ha SDK version 4.1 eller senare.**
 
-Förvärvningslänkar måste skapas i Adobe Mobile-tjänster. Mer information finns i [Anskaffning](/help/using/acquisition-main/acquisition-main.md).
+Förvärvningslänkar måste skapas i Adobe Mobile-tjänster. Mer information finns i [Förvärv](/help/using/acquisition-main/acquisition-main.md).
 
 **I SDK version 4.18.0 och senare**:
 
-Från och med 1 mars 2020 har Google ersatt sändningsmekanismen install_reference. Mer information finns i [Använda InstallBroadcast? Växla till API:t Play Reference senast 1 mars 2020](https://android-developers.googleblog.com/2019/11/still-using-installbroadcast-switch-to.html). Om du vill fortsätta samla in installationsreferensinformation från Google Play-butiken uppdaterar du programmet till SDK version 4.18.0 eller senare.
+Från och med 1 mars 2020 har Google ersatt sändningsmekanismen install_reference. Mer information finns i [Använder du fortfarande InstallBroadcast? Växla till API:t Play Reference senast 1 mars 2020](https://android-developers.googleblog.com/2019/11/still-using-installbroadcast-switch-to.html). Om du vill fortsätta samla in installationsreferensinformation från Google Play-butiken uppdaterar du programmet till SDK version 4.18.0 eller senare.
 
-I stället för att skapa en `BroadcastReceiver`behöver du med den borttagna versionen samla in URL:en för installationsreferenten från ett nytt Google API och skicka den resulterande URL:en till SDK:n.
+I stället för att skapa en `BroadcastReceiver` måste du samla in installationsreferentens URL från ett nytt Google API och skicka den resulterande URL:en till SDK:n.
 
 1. Lägg till paketet Google Play Install Reference i din gradle-fils beroenden:
 
@@ -132,11 +132,11 @@ Så här samlar du in inhämtningsdata från en Google Play Acquisition-kampanj:
 
 * När användaren hämtar och kör en app som ett resultat av en Google Play-butik samlas data från referenten in och skickas till Adobe Mobile Services.
 
-   * Data lagras och är tillgängliga i den `AdobeDataCallback` instans som registrerades tidigare med SDK:n.
+   * Data lagras och är tillgängliga i `AdobeDataCallback`-instansen som registrerades tidigare med SDK:n.
 
       Mer information finns i [Konfigurationsmetoder](/help/android/configuration/methods.md).
 
-   * Händelsetypen `MobileDataEvent.MOBILE_EVENT_ACQUISITION_INSTALL` eller `MobileDataEvent.MOBILE_EVENT_ACQUISITION_LAUNCH` händelsetypen används.
+   * Händelsetypen `MobileDataEvent.MOBILE_EVENT_ACQUISITION_INSTALL` eller `MobileDataEvent.MOBILE_EVENT_ACQUISITION_LAUNCH` används.
 
    * Anpassade nycklar som var en del av hämtningsdata från Google Play kommer att namnfördelas med &quot; `a.acquisition.custom.`&quot;
 
@@ -144,9 +144,9 @@ Om du använder förvärvslänkarna som skapades på Adobe Mobile Services lägg
 
 1. Lägg till en förvärvsvariabel som prefix med &quot; `adb`&quot;.
 
-   När SDK tar emot förvärvsdata från Adobe Mobile Services vid första starten lagras data och är tillgängliga i den `AdobeDataCallback` instans som registrerats tidigare med SDK. Mer information finns i [Konfigurationsmetoder](/help/android/configuration/methods.md).
+   När SDK tar emot förvärvsdata från Adobe Mobile Services vid den första starten lagras data och är tillgängliga i `AdobeDataCallback`-instansen som registrerades tidigare med SDK. Mer information finns i [Konfigurationsmetoder](/help/android/configuration/methods.md).
 
-1. Händelsetypen `MobileDataEvent.MOBILE_EVENT_ACQUISITION_INSTALL` eller `MobileDataEvent.MOBILE_EVENT_ACQUISITION_LAUNCH` händelsetypen kommer att användas.
+1. Händelsetypen `MobileDataEvent.MOBILE_EVENT_ACQUISITION_INSTALL` eller `MobileDataEvent.MOBILE_EVENT_ACQUISITION_LAUNCH` kommer att användas.
 
 1. De anpassade datanycklarna har prefixet &quot;`a.acquisition.custom.`&quot;
 
@@ -160,7 +160,7 @@ Uppdateringarna i det här avsnittet gör det möjligt för SDK att skicka förv
 
 1. Lägg till biblioteket i ditt projekt och implementera livscykeln.
 
-   Mer information finns i *Lägga till SDK- och konfigurationsfilen i IntelliJ IDEA- eller Eclipse-projektet* i [Core-implementering och livscykel](/help/android/getting-started/dev-qs.md).
+   Mer information finns i *Lägg till SDK- och konfigurationsfilen i IntelliJ IDEA- eller Eclipse-projektet* i [Core-implementering och livscykel](/help/android/getting-started/dev-qs.md).
 
 1. Importera biblioteket:
 
@@ -185,7 +185,7 @@ Uppdateringarna i det här avsnittet gör det möjligt för SDK att skicka förv
    }
    ```
 
-1. Uppdatera `AndroidManifest.xml` för att aktivera `BroadcastReceiver` det som skapades i föregående steg:
+1. Uppdatera `AndroidManifest.xml` för att aktivera `BroadcastReceiver` som skapades i föregående steg:
 
    ```xml
    <receiver android:name="com.your.package.name.GPBroadcastReceiver" android:exported="true">
@@ -195,7 +195,7 @@ Uppdateringarna i det här avsnittet gör det möjligt för SDK att skicka förv
    </receiver>
    ```
 
-1. Kontrollera att `ADBMobileConfig.json` filen innehåller de hämtningsinställningar som krävs:
+1. Kontrollera att filen `ADBMobileConfig.json` innehåller de hämtningsinställningar som krävs:
 
    ```xml
    "acquisition": {
@@ -211,7 +211,7 @@ Uppdateringarna i det här avsnittet gör det möjligt för SDK att skicka förv
    >
    >Om du skickar data till flera rapportsviter använder du hämtningsinställningarna (hämtningsserver och appid) från appen som är associerad med den första rapportsviten i din lista över rapportsvits-ID:n.
 
-   Inställningarna `acquisition` genereras av Adobe Mobile-tjänsterna och bör inte ändras. Mer information om hur du hämtar en anpassad `ADBMobileConfig.json` fil med förkonfigurerade `acquisition` inställningar finns i [Innan du börjar](/help/android/getting-started/requirements.md).
+   `acquisition`-inställningarna genereras av Adobe Mobile-tjänster och bör inte ändras. Mer information om hur du hämtar en anpassad `ADBMobileConfig.json`-fil med `acquisition`-inställningarna förkonfigurerade finns i [Innan du börjar](/help/android/getting-started/requirements.md).
 
 När dessa inställningar har aktiverats skickas kundvärvningsdata automatiskt med det inledande livscykelanropet efter att appen startades första gången.
 

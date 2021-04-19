@@ -4,32 +4,32 @@ seo-description: Den här informationen hjälper dig med en begäran om att ta b
 seo-title: Ange användarens avanmälningsstatus
 solution: Experience Cloud,Analytics
 title: Ange användarens avanmälningsstatus
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: f8a3e6be-44dd-494e-9cda-dbbac86d6772
+exl-id: ef5160ac-5a73-4433-b217-1bd990f8456b
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 0%
 
 ---
 
-
-# Ange användarens avanmälningsstatus{#setting-the-user-s-opt-status}
+# Ange användarens alternativstatus{#setting-the-user-s-opt-status}
 
 Den här informationen hjälper dig med en begäran om att ta bort GDPR-data.
 
 >[!IMPORTANT]
 >
->Från och med Android SDK 4.15 anger du sekretessstatus till `unknown` Audience Manager och Experience Cloud ID-träffar.
+>Från och med Android SDK 4.15 gäller Audience Manager och Experience Cloud ID-träffar om du anger sekretessstatusen till `unknown`.
 
 Du kan kontrollera om aktiviteten Analytics, Target och Audience Manager tillåts på en enhet med följande inställningar:
 
-* `privacyDefault` i [ADBMomobile JSON Config](/help/android/configuration/json-config/json-config.md).
+* `privacyDefault` i  [ADBMomobile JSON Config](/help/android/configuration/json-config/json-config.md).
 
    Den här inställningen styr den inledande inställningen som kvarstår tills den ändras i koden.
 
-* Metoden `Config.setPrivacyStatus` .
+* Metoden `Config.setPrivacyStatus`.
 
    När sekretessinställningarna har ändrats med den här metoden fortsätter ändringen att gälla tills du ändrar den igen eller när du avinstallerar och installerar appen igen. Mer information om metoderna finns i [Konfigurationsmetoder](/help/android/configuration/methods.md).
 
@@ -53,9 +53,9 @@ I följande tabell beskrivs varje sekretessstatus:
 
 * **Okänd**
 
-   * **Analyser**: Om spårning offline **är aktiverat** sparas träffar tills sekretessstatusen ändras till att anmäla sig (träffar skickas) eller avanmäla dig (träffar ignoreras).
+   * **Analyser**: Om spårning offline  **är aktiverat** sparas träffar tills sekretessstatusen ändras till att anmäla sig (träffar skickas) eller avanmäla dig (träffar ignoreras).
 
-      Om spårning offline inte <b>är</b> aktiverat ignoreras träffar tills sekretessstatusen ändras till att anmäla sig.
+      Om spårning offline <b>inte är </b> aktiverat, ignoreras träffar tills sekretessstatusen ändras till att anmäla sig.
    * **Mål**: Mbox-begäranden skickas.
    * **Audience Manager**: Signaler och ID-synk skickas.
    * Värde i JSON-konfigurationsfilen: `optunknown`
@@ -77,4 +77,3 @@ public void setOptUnknown(View view) {
  currentStatus = Config.getPrivacyStatus(); 
 }
 ```
-

@@ -4,16 +4,16 @@ seo-description: Tack vare iOS- och Applänkar (Android) kan du ansluta till dju
 seo-title: Apple Universal Links och Android App Links
 solution: Experience Cloud,Analytics
 title: Handbok för universallänkar och applänkar
-topic: Mätvärden
+topic-fix: Metrics
 uuid: 8d6441dc-4307-4454-95ea-d77ec796f918
+exl-id: 6613189f-7a14-4066-89e9-996d4fe7f128
 translation-type: tm+mt
-source-git-commit: bb41caaecaefe8168d9b19e151d43ec792e24db8
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '1025'
+source-wordcount: '1024'
 ht-degree: 0%
 
 ---
-
 
 # Universallänkar jämfört med applänkar: Hur fungerar de? {#universal-links-and-app-links}
 
@@ -157,4 +157,3 @@ Du kan nu använda dessa marknadsföringslänkar i meddelanden och andra område
 >[!IMPORTANT]
 >
 >Du ser inte antalet klickspårningar med universallänkar eller applänkar och du kan inte heller använda interstitialer.
-

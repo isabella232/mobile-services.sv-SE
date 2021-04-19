@@ -4,16 +4,16 @@ seo-description: Exempel på definitioner och källkod för funktionen Postback.
 seo-title: Exempel på återanslående
 solution: Experience Cloud,Analytics
 title: Exempel på återanslående
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 809c5646-7a80-40df-984b-0af89d854259
+exl-id: 3ec5abf1-a406-48b6-91b1-fbcb0a9094ee
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '124'
 ht-degree: 0%
 
 ---
-
 
 # Exempel på återanslående {#postback-example}
 
@@ -21,7 +21,7 @@ Exempel på definitioner och källkod för funktionen Postback.
 
 >[!CAUTION]
 >
->Det här exemplet finns endast i informationssyfte. Filen bör konfigureras i användargränssnittet för Adobe Mobile och får inte ändras manuellt. `ADBMobileConfig.json` En manuellt redigerad konfigurationsfil kan vara farlig om konfigurationen av fjärrmeddelanden är aktiverad.
+>Det här exemplet finns endast i informationssyfte. Filen `ADBMobileConfig.json` bör konfigureras i användargränssnittet för Adobe Mobile och får inte ändras manuellt. En manuellt redigerad konfigurationsfil kan vara farlig om konfigurationen av fjärrmeddelanden är aktiverad.
 
 ## ADBMobileConfig.json-definition {#section_0F6EC001AB6D488E815F50C7F5DA022E}
 
@@ -54,13 +54,13 @@ Exempel på definitioner och källkod för funktionen Postback.
 ] 
 ```
 
-## Code sample {#section_8169B88A2C634CB788DA574EE8C4B1DC}
+## Kodexempel {#section_8169B88A2C634CB788DA574EE8C4B1DC}
 
 ```objective-c
 NSDictionary *contextData = @{@"user.name":@"bob", @"user.zip":@"90210"}; 
 [ADBMobile trackState:@"MainMenu" data:contextData];
 ```
 
-Eftersom det här spårningsanropet är `“MainMenu”`i läget utlöses det ovanstående återanslående meddelandet. URL:en ersätter alla mallvariabler med värden från träffen. Om man utgår ifrån att användarens föregående session var 132 sekunder lång och att användaren är i iOS SDK version 4.6.0, visas ett exempel på den resulterande URL:en:
+Eftersom det här spårningsanropet är `“MainMenu”` utlöser det ovanstående återanslående meddelandet. URL:en ersätter alla mallvariabler med värden från träffen. Om man utgår ifrån att användarens föregående session var 132 sekunder lång och att användaren är i iOS SDK version 4.6.0, visas ett exempel på den resulterande URL:en:
 
 `https://my.server.com/?user=bob&zip=90210&c16=4.6.0-iOS&c27=cln,132`

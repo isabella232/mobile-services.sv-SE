@@ -1,20 +1,20 @@
 ---
 description: Skapa, hantera och rapportera om meddelanden i programmet och push-meddelanden.
-keywords: mobile
+keywords: mobil
 seo-description: Skapa, hantera och rapportera om meddelanden i programmet och push-meddelanden.
 seo-title: Meddelanden
 solution: Experience Cloud,Analytics
 title: Meddelanden
-topic: Metrics
+topic-fix: Metrics
 uuid: e32d3e35-2d09-4ddf-8919-75dc895abcb3
+exl-id: e6d076fc-3176-4591-8388-314b936c58cd
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '469'
 ht-degree: 1%
 
 ---
-
 
 # Meddelanden {#messaging}
 
@@ -26,14 +26,14 @@ Letar du efter information och dokumentation om Adobe Experience Platform Mobile
 
 Från om med september 2018 har vi släppt en ny större version av SDK. Dessa nya Adobe Experience Platform Mobile SDK:er kan konfigureras via [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
 
-* Gå till [Launch](https://launch.adobe.com/)för att komma igång.
-* Om du vill se vad som finns i Experience Platform SDK-databaserna går du till [Github: Adobe Experience Platform SDKs](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
+* Gå till [Starta](https://launch.adobe.com/) för att komma igång.
+* Om du vill se vad som finns i Experience Platform SDK-databaserna går du till [Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
 
 >[!IMPORTANT]
 >
-> Om du använder Adobe Experience Platform Mobile SDK:er med Adobe Launch **måste** du också installera Adobe Analytics Mobile Services-tillägget för att kunna använda Adobe Mobile Services-funktioner som förvärvslänkar. Mer information finns i [Adobe Analytics - Mobiltjänster](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services). Mer information om hur du använder push-meddelanden och meddelanden i appen med Experience Platform SDK:er finns i [Konfigurera push-meddelanden](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services#set-up-push-messaging) och [Konfigurera meddelanden](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services#set-up-in-app-messaging)i appen.
+> Om du använder Adobe Experience Platform Mobile SDK:er med Adobe Launch måste du **även** installera Adobe Analytics Mobile Services-tillägget för att kunna använda Adobe Mobile Services-funktioner som förvärvningslänkar. Mer information finns i [Adobe Analytics - Mobiltjänster](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services). Mer information om hur du använder push-meddelanden och meddelanden i appen med Experience Platform SDK:er finns i [Konfigurera push-meddelanden](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services#set-up-push-messaging) och [Konfigurera meddelanden i appen](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services#set-up-in-app-messaging).
 
-## In-app messages {#section_8984F4568BC24D32A87429FFCB5184A6}
+## Meddelanden i appen {#section_8984F4568BC24D32A87429FFCB5184A6}
 
 Meddelanden i appen levereras till användarna i realtid baserat på deras åtgärder och egenskaper. Meddelandena utlöses från analysdata som redan spårats av SDK:n.
 
@@ -62,4 +62,4 @@ Här finns ytterligare information som hjälper dig att förstå hur meddelanden
 
 Push-meddelanden skickas till användare som har valt att ta emot meddelanden. Du kan rikta dessa push-meddelanden till användare i Analytics-segment eller anpassade segment. Du kan använda push-meddelanden för att återengagera passiva användare eller för att förmedla tidsspecifik och platsspecifik information eftersom meddelandena visas utanför appen.
 
-Innan du kan konfigurera push-meddelanden läser du [Krav för att aktivera push-meddelanden](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/prerequisites-push-messaging.md). När du har utfört dessa åtgärder måste du konfigurera push-meddelanden i appinställningarna. Mer information finns i [Konfigurera push-meddelanden](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/configure-push-messaging.md).
+Innan du kan konfigurera push-meddelanden ska du läsa [Krav för att aktivera push-meddelanden](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/prerequisites-push-messaging.md). När du har utfört dessa åtgärder måste du konfigurera push-meddelanden i appinställningarna. Mer information finns i [Konfigurera push-meddelanden](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/configure-push-messaging.md).

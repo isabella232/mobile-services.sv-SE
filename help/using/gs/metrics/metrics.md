@@ -1,20 +1,20 @@
 ---
 description: Du kan mäta olika mätvärden med Adobe Mobile och samla in mätvärden som du vill spåra för din app.
-keywords: mobile
+keywords: mobil
 seo-description: Du kan mäta olika mätvärden med Adobe Mobile och samla in mätvärden som du vill spåra för din app.
 seo-title: Mobila mått
 solution: Experience Cloud,Analytics
 title: Mobila mått
-topic: Metrics
+topic-fix: Metrics
 uuid: c4457f4a-9d1c-4fe9-ad4a-9eb2e37feab7
+exl-id: 13912d5e-9813-4f8f-80d5-1f3cfcdd6aa3
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '552'
 ht-degree: 0%
 
 ---
-
 
 # Mobilstatistik{#mobile-metrics}
 
@@ -34,7 +34,7 @@ Följande typer av mätvärden mäts:
 
 * **Intäkter**
 
-   Du kan visa intäkter som samlats in av appbutiker och intäkter som mäts direkt med inköpshändelser i appen. Andra kundvagnsstatistik finns i [Anpassa rapporter](/help/using/usage/reports-customize/reports-customize.md).
+   Du kan visa intäkter som samlats in av appbutiker och intäkter som mäts direkt med inköpshändelser i appen. Andra kundvagnsmått finns i [Anpassa rapporter](/help/using/usage/reports-customize/reports-customize.md).
 
 * **Apphändelser**
 

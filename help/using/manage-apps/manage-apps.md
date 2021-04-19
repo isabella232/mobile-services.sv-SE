@@ -1,21 +1,21 @@
 ---
 description: På sidan Hantera program kan du skapa, hantera och ta bort program.
-keywords: mobile
+keywords: mobil
 seo-description: På sidan Hantera program kan du skapa, hantera och ta bort program.
 seo-title: Hantera program - översikt
 solution: Experience Cloud,Analytics
 title: Hantera program - översikt
-topic: Metrics
+topic-fix: Metrics
 uuid: 5949f549-172e-417e-b668-71fec628586a
+exl-id: a6b38af2-6b11-47a9-84b4-3d9da09842a9
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '45'
-ht-degree: 0%
+source-wordcount: '46'
+ht-degree: 2%
 
 ---
 
-
-# Hantera program - översikt{#manage-apps}
+# Hantera program, översikt{#manage-apps}
 
 På sidan Hantera program kan du skapa, hantera och ta bort program.

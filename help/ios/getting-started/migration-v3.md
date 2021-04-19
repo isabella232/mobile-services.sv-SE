@@ -4,16 +4,16 @@ seo-description: Den här informationen hjälper dig att migrera från version 3
 seo-title: Migrera till iOS-biblioteket 4.x
 solution: Experience Cloud,Analytics
 title: Migrera till iOS-biblioteket 4.x
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 5668972b-f355-4e03-9df0-8c82ddf6809b
+exl-id: a58067e0-b6f4-4900-ba3f-7256d9259420
 translation-type: tm+mt
-source-git-commit: aab04abeb5edb6be886002e27ef1c5340b0a8f0d
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '895'
+ht-degree: 2%
 
 ---
-
 
 # Migrera till 4.x iOS-biblioteket{#migrating-to-the-x-ios-library}
 

@@ -4,16 +4,16 @@ seo-description: Adobe SDK använder Apples API:er för sökannonsering i appatt
 seo-title: Apple Search Ads
 solution: Experience Cloud,Analytics
 title: Apple Search Ads
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 790080e8-067e-4bfd-a169-0027db4fdff3
+exl-id: efcdd430-f08d-4ee2-85f3-2697c3bd72db
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '280'
 ht-degree: 0%
 
 ---
-
 
 # Apple Search Ads {#apple-search-ads}
 
@@ -40,16 +40,16 @@ Så här aktiverar du din app för sökannonsattribuering:
 
 1. Lägg till iAd-ramverket i Xcode-projektfilen för din app.
 
-## Rapportering om attribut för sökannonser {#section_1AF4E0B4F8E94F36B38CA3D3E384D0A4}
+## Rapportering om attribut för sökannonsering {#section_1AF4E0B4F8E94F36B38CA3D3E384D0A4}
 
 1. Apple Search Ads-attribueringsdata anges i förvärvsnamn, källa och termvärden.
 
-   Om attribution = `true`, inkluderas alla `iad-*` fält i livscykelträffen.
+   Om attribuering = `true` inkluderas alla `iad-*`-fält i livscykelträffen.
 
-   Dessutom kommer följande värden att mappas från `"iad"` ordlistan till datafälten för det typiska kundvärvningssammanhanget:
+   Dessutom kommer följande värden att mappas från `"iad"`-ordlistan till våra typiska datafält för kontext för förvärv:
 
    * `"iad-campaign-id"` --> `"a.referrer.campaign.trackingcode"`
-   * `"iad-campaign-name"` --> `"a.referrer.campaign.name"`
-   * `"iad-adgroup-id"` --> `"a.referrer.campaign.content"`
-   * `"iad-keyword"` --> `"a.referrer.campaign.term"`
+   * `"iad-campaign-name"` —>  `"a.referrer.campaign.name"`
+   * `"iad-adgroup-id"` —>  `"a.referrer.campaign.content"`
+   * `"iad-keyword"` —>  `"a.referrer.campaign.term"`
    Denna mappning säkerställer att värdena är tillgängliga i vår standardrapportering.

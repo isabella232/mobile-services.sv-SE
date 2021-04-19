@@ -4,16 +4,16 @@ seo-description: Med Windows 8.1 Universal App Store SDK 4.x för Experience Clo
 seo-title: Windows 8.1 Universal App Store SDK 4.x för Experience Cloud Solutions
 solution: Experience Cloud,Analytics
 title: Windows 8.1 Universal App Store SDK 4.x för Experience Cloud Solutions
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: a06d8cf2-5d2d-49a8-86ac-102e2934ea59
+exl-id: 5c511dea-99d8-40e9-a98f-8bc3cad937b8
 translation-type: tm+mt
-source-git-commit: bc11c1e7a4a11657ee89c40ddcbd37377ce50bb5
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 1%
 
 ---
-
 
 # Windows 8.1 Universal App Store SDK 4.x för Experience Cloud Solutions{#windows-universal-app-store-sdk-x-for-experience-cloud-solutions}
 
@@ -37,10 +37,10 @@ Visual Studio 2013 eller senare.
 
 Adobe Mobile-tjänster har ett nytt användargränssnitt som samlar funktioner för mobilmarknadsföring för mobilappar från hela Adobe Experience Cloud. Från början erbjuder mobiltjänsten smidig integrering av funktioner för appanalys och målinriktning från Adobe Analytics och Adobe Target.
 
-Läs mer i dokumentationen [för](/help/using/home.md)Adobe Mobile services.
+Läs mer på [Adobe Mobile services documentation](/help/using/home.md).
 
 ## Använda Bloodhound
 
 >[!IMPORTANT]
 >
->Från och med **den 30 april 2017** har Adobe Bloodhound solnedgång. Från och med den 1 maj 2017 kommer inga ytterligare förbättringar att göras och ingen ytterligare support för tekniker eller Adobe Expert Care kommer att ges.
+>Från och med den **30 april 2017** har Adobe Bloodhound solnedgångar. Från och med den 1 maj 2017 kommer inga ytterligare förbättringar att göras och ingen ytterligare support för tekniker eller Adobe Expert Care kommer att ges.

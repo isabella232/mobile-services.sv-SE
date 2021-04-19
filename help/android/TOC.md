@@ -1,10 +1,9 @@
 ---
-product: mobile-services
 audience: end-user
 user-guide-title: Android-guide för mobiltjänster
 breadcrumb-title: Android-guide
 translation-type: tm+mt
-source-git-commit: 18ef20df0a32741685e35cee98a1adf4a1b823a1
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '273'
 ht-degree: 6%
@@ -36,12 +35,12 @@ ht-degree: 6%
    + [Spåra programkrascher](analytics-main/crashes.md)
    + [Tidsbestämda åtgärder](analytics-main/timed-actions.md)
    + [Livslängd för besökare](analytics-main/lifetime-value.md)
-   + Variabeln Produkter{#products-variable}
+   + Produktvariabel{#products-variable}
       + [Variabeln Produkter](analytics-main/products/products.md)
       + [Produktvariabel med eVars för försäljning och produktspecifika händelser](analytics-main/products/products-variable-evars-events.md)
    + [Händelseserialisering](analytics-main/event-serialization.md)
    + [Videoanalys](analytics-main/video-qs.md)
-   + Eftersläpning{#postbacks}
+   + Eftersläpningar{#postbacks}
       + [Översikt över återgång](analytics-main/postbacks/postbacks.md)
       + [Exempel på återgång](analytics-main/postbacks/postback-example.md)
       + [PII-eftersläpningar](analytics-main/postbacks/c-pii-postbacks.md)
@@ -50,7 +49,7 @@ ht-degree: 6%
    + [Översikt över förvärvet](acquisition-main/acquisition-main-android.md)
    + [Förvärva mobilappar](acquisition-main/acquisition.md)
    + [Anskaffningsmetoder](acquisition-main/acquisition-methods.md)
-   + Spåra djuplänkar{#tracking-deep-links}
+   + Spåra djupa länkar{#tracking-deep-links}
       + [Spåra djuplänkar](acquisition-main/tracking-deep-links/tracking-deep-links.md)
       + [Spåra fördröjda länkar från tredje part](acquisition-main/tracking-deep-links/c-tracking-3rd-party-deferred-deep-links.md)
    + [Testa Marketing Link-förvärv](acquisition-main/t-testing-marketing-link-acquisition.md)
@@ -59,7 +58,7 @@ ht-degree: 6%
    + [Felsöka förvärvningstestning](acquisition-main/troubleshoot-acquisition-testing.md)
 + Meddelanden{#messaging-android}
    + [Meddelandeöversikt](messaging-main/messaging-main-android.md)
-   + In-app messaging{#inapp-messaging}
+   + Meddelanden i appen{#inapp-messaging}
       + [Meddelanden i appen](messaging-main/messaging/messaging.md)
       + [Felsöka meddelanden i programmet](messaging-main/messaging/in-apps-ts.md)
    + Push-meddelanden{#push-messaging}
@@ -67,7 +66,7 @@ ht-degree: 6%
       + [Implementera push-meddelanden med djuplänkning](messaging-main/push-messaging/t-mob-impl-push-deeplinking-android-4x.md)
       + [Få omfattande push-meddelanden](messaging-main/push-messaging/c-set-up-rich-push-notif-android.md)
       + [Felsöka push-meddelanden](messaging-main/push-messaging/c-troubleshooting-push-messaging.md)
-+ Location{#location}
++ Plats{#location}
    + [Platsöversikt](location/location.md)
    + [Geografisk placering och intressepunkter](location/geo-poi.md)
    + [Beacon tracking](location/beacon.md)
@@ -99,6 +98,6 @@ ht-degree: 6%
    + [Integritet och GDPR - översikt](c-mob-privacy-gdpr-android/c-mob-privacy-gdpr-android.md)
    + [Hämtar lagrade identifierare](c-mob-privacy-gdpr-android/c-mob-gdpr-ret-stored-ids-android.md)
    + [Ange användarens avanmälningsstatus](c-mob-privacy-gdpr-android/privacy.md)
-+ PhoneGap-plugin{#phonegap-android}
++ PhoneGap Plug-in{#phonegap-android}
    + [PhoneGap plug-in - översikt](phonegap/phonegap.md)
    + [PhoneGap plug-in-metoder](phonegap/phonegap-methods.md)

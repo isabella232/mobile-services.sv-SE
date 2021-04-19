@@ -1,28 +1,28 @@
 ---
 description: Konfigurera upplevelsealternativ för meddelanden i appen, inklusive typ (helskärm, varning eller meddelanden) och alternativ för visning, text och knappar.
-keywords: mobile
+keywords: mobil
 seo-description: Konfigurera upplevelsealternativ för meddelanden i appen, inklusive typ (helskärm, varning eller meddelanden) och alternativ för visning, text och knappar.
 seo-title: Experience In-App Message
 solution: Experience Cloud,Analytics
 title: Experience In-App Message
-topic: Metrics
+topic-fix: Metrics
 uuid: 4c6d6756-47fb-4f1b-8338-0b0c9b0fceb0
+exl-id: eeb1527d-c546-4951-9947-db810fdb8eee
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '624'
+source-wordcount: '625'
 ht-degree: 0%
 
 ---
-
 
 # Upplevelse: meddelande i appen {#experience-in-app-message}
 
 Konfigurera upplevelsealternativ för meddelanden i appen, inklusive typ (helskärm, varning eller meddelanden) och alternativ för visning, text och knappar.
 
-1. Klicka på **[!UICONTROL Messaging]** > **[!UICONTROL Manage Messages]** > **[!UICONTROL Create Message]** > **[!UICONTROL Create In-App]** i appen.
+1. Klicka på **[!UICONTROL Messaging]** > **[!UICONTROL Manage Messages]** > **[!UICONTROL Create Message]** > **[!UICONTROL Create In-App]** i din app.
 1. Skriv ett namn för meddelandet på Experience-sidan.
-1. Fyll i fälten i **[!UICONTROL Type]** avsnittet:
+1. Fyll i fälten i avsnittet **[!UICONTROL Type]**:
 
    * **[!UICONTROL Type]**
 Välj meddelandetyp för din kampanj i appen:
@@ -36,22 +36,22 @@ Välj meddelandetyp för din kampanj i appen:
 
       >[!TIP]
       >
-      >Det här alternativet visas bara när du väljer **[!UICONTROL Full Screen]** meddelandetyp.
+      >Det här alternativet visas bara när du väljer meddelandetypen **[!UICONTROL Full Screen]**.
 
    * **[!UICONTROL Custom]**
 
       Läs in ditt anpassade HTML-innehåll (endast helskärm). Du måste ange en klicklänk och en länk för att avbryta.
 
-      1. Klicka **[!UICONTROL Browse]** och hämta en HTML-fil eller dra ett HTML-dokument till fönstret.
-      1. Klicka **[!UICONTROL Download Example]** för att visa exempel på anpassat HTML-innehåll.
+      1. Klicka på **[!UICONTROL Browse]** och hämta en HTML-fil eller dra ett HTML-dokument till fönstret.
+      1. Klicka på **[!UICONTROL Download Example]** om du vill visa exempel på anpassat HTML-innehåll.
 
       >[!TIP]
       >
-      >Det här alternativet visas bara när du väljer meddelandetypen **[!Fhelskärm]** .
+      >Det här alternativet visas bara när du väljer meddelandetypen **[!Fhelskärm]**.
 
 
 
-1. Fyll i fälten i **[!UICONTROL Display]** avsnittet:
+1. Fyll i fälten i avsnittet **[!UICONTROL Display]**:
 
    * **[!UICONTROL Theme]**
 
@@ -63,14 +63,14 @@ Välj meddelandetyp för din kampanj i appen:
 
    * **[!UICONTROL Image URL]**
 
-      URL:en för en bild. Om du har problem med storleksändring när du använder helskärmsmallen läser du i *Min bild passar inte in exakt i det utrymme som mallen* ger i [Felsökning av meddelanden](/help/using/in-app-messaging/t-in-app-message/in-apps-ts.md)i appen.
+      URL:en för en bild. Om du har problem med storleksändring när du använder helskärmsmallen läser du *Min bild får inte plats exakt i det utrymme som anges i mallen* i [Felsökning av meddelanden i appen](/help/using/in-app-messaging/t-in-app-message/in-apps-ts.md).
 
    * **[!UICONTROL Bundled Image]**
 
-      Sökväg till en bild i programkodpaketet. Det här alternativet används när det inte finns någon bild. eller så är bilden inte tillgänglig. Tänk dig att det kanske inte går att komma åt om till exempel enheten är offline. Om du har problem med storleksändring när du använder helskärmsmallen läser du i *Min bild passar inte in exakt i det utrymme som mallen* ger i [Felsökning av meddelanden](/help/using/in-app-messaging/t-in-app-message/in-apps-ts.md)i appen.
+      Sökväg till en bild i programkodpaketet. Det här alternativet används när det inte finns någon bild. eller så är bilden inte tillgänglig. Tänk dig att det kanske inte går att komma åt om till exempel enheten är offline. Om du har problem med storleksändring när du använder helskärmsmallen läser du *Min bild får inte plats exakt i det utrymme som anges i mallen* i [Felsökning av meddelanden i appen](/help/using/in-app-messaging/t-in-app-message/in-apps-ts.md).
 
 
-1. Fyll i fälten i **[!UICONTROL Text]** avsnittet:
+1. Fyll i fälten i avsnittet **[!UICONTROL Text]**:
 
    * **[!UICONTROL Header]**
 
@@ -80,11 +80,11 @@ Välj meddelandetyp för din kampanj i appen:
 
       Skriv texten för meddelandets innehåll.
 
-1. Fyll i fälten i **[!UICONTROL Buttons]** avsnittet:
+1. Fyll i fälten i avsnittet **[!UICONTROL Buttons]**:
 
    * **[!UICONTROL Click-Through Button]**
 
-      Etikett för **[!UICONTROL Click-Through]** knappen. Om du trycker på den här knappen räknas det som en lyckad klickning. Användaren omdirigeras till målet.
+      Etikett för knappen **[!UICONTROL Click-Through]**. Om du trycker på den här knappen räknas det som en lyckad klickning. Användaren omdirigeras till målet.
 
    * **[!UICONTROL Destination]**
 
@@ -93,24 +93,24 @@ Välj meddelandetyp för din kampanj i appen:
       Denna URL kan innehålla följande information:
 
       * `{userId}`, som ersätts med användaridentifieraren eller är tom när användaridentifieraren inte har angetts.
-      * `{trackingId}`, som ersätts med stödet (korrelerar med *s_vi* cookie).
+      * `{trackingId}`, som ersätts med stödet (korrelerar med  *s_* vicookie).
       * `{messageId}`, som ersätts med det unika ID:t för meddelandet i appen.
       * `{lifetimeValue}`, som ersätts med livstidsvärdet eller 0 om det inte finns något livstidsvärde.
 
       Här följer ett exempel på hur du spårar användar-ID: `https://www.mysite.com?uid={userId}`.
 
-      Om klicknings-URL:en använder `https://` eller `https://`öppnas URL:en i enhetens webbläsare utanför appen. Annars har varje plattform stöd för scheman som gör att du kan öppna eller referera till appen om appen har utvecklats för att stödja det anpassade schemat.
+      Om klicknings-URL:en använder `https://` eller `https://` öppnas URL:en i enhetens webbläsare utanför programmet. Annars har varje plattform stöd för scheman som gör att du kan öppna eller referera till appen om appen har utvecklats för att stödja det anpassade schemat.
 
       >[!TIP]
       >
-      >När du använder **[!UICONTROL Web Link]** - eller **[!UICONTROL Custom Link]** måltyperna spåras inte måltypen. Bara **[!UICONTROL Deep Links]** spåras. Mer information finns i [Destinationer](/help/using/acquisition-main/c-create-destinations.md).
+      >När du använder måltyperna **[!UICONTROL Web Link]** eller **[!UICONTROL Custom Link]** spåras inte måltypen. Endast **[!UICONTROL Deep Links]** spåras. Mer information finns i [Destinationer](/help/using/acquisition-main/c-create-destinations.md).
 
 
 1. (Valfritt) Förhandsgranska layouten för meddelandet genom att klicka på följande ikoner:
 
    * **[!UICONTROL Summary]** döljer förhandsgranskningsfönstret.
 
-      Klicka på ![Förhandsgranska](assets/icon_preview.png) för att visa förhandsgranskningsfönstret igen.
+      Klicka på ![förhandsgranska](assets/icon_preview.png) för att visa förhandsgranskningsfönstret igen.
 
    * **[!UICONTROL Change the orientation]**
 
@@ -118,7 +118,7 @@ Välj meddelandetyp för din kampanj i appen:
 
    * **[!UICONTROL Preview on a user's watch]**
 
-      Om du vill förhandsgranska meddelandet så som det kommer att visas på en användares bevakning klickar du på ![bevakningsikonen](assets/icon_watch.png).
+      Om du vill förhandsgranska meddelandet så som det kommer att visas på en användares bevakning klickar du på ![ikonen](assets/icon_watch.png).
 
    * **[!UICONTROL Preview on a user's mobile phone]**
 
@@ -126,8 +126,8 @@ Välj meddelandetyp för din kampanj i appen:
 
    * **[!UICONTROL Preview on a user's tablet]**
 
-      Om du vill förhandsgranska meddelandet på en surfplatta klickar du på ![surfplatteikonen](assets/icon_tablet.png).
+      Om du vill förhandsgranska meddelandet på en surfplatta klickar du på ikonen ![surfplatta](assets/icon_tablet.png).
 
       Längst ned i förhandsgranskningsfönstret kan du visa en beskrivning av målgruppen som du valde i föregående steg. Du kan även visa en beskrivning av den målgrupp du valde i det föregående steget längst ned i förhandsgranskningsfönstret.
 
-1. Konfigurera [schemaalternativ](/help/using/in-app-messaging/t-in-app-message/c-schedule-in-app-message.md).
+1. Konfigurera [Schemaalternativ](/help/using/in-app-messaging/t-in-app-message/c-schedule-in-app-message.md).

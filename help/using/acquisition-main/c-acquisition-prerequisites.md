@@ -1,22 +1,22 @@
 ---
 description: Slutför följande krav innan du kan använda förvärvslänkar.
-keywords: mobile
+keywords: mobil
 seo-description: Slutför följande krav innan du kan använda förvärvslänkar.
 seo-title: Förutsättningar för värvning
 solution: Experience Cloud,Analytics
 title: Förutsättningar för värvning
-topic: Metrics
+topic-fix: Metrics
 uuid: a224499a-5a51-4ca5-a37b-06792b774671
+exl-id: 31201bec-e823-47b1-8912-2f8d69cea5be
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '198'
 ht-degree: 6%
 
 ---
 
-
-# Förutsättningar för värvning{#acquisition-prerequisites}
+# Förutsättningar för anskaffning{#acquisition-prerequisites}
 
 Slutför följande krav innan du använder hämtningslänkar.
 
@@ -24,7 +24,7 @@ För att spåra marknadslänkar måste du uppfylla följande krav:
 
 1. Se till att du har ett rapporteringsprogram för mobilappar.
 
-   Du måste skapa en ny rapportserie för mobilappar eller ha en befintlig rapportsvit som kan samla in, spåra och rapportera data som samlas in från dina Marketing Links. Mer information om hur du skapar en ny rapportserie för mobilappar finns i [Lägga till en ny app](/help/using/manage-apps/t-new-app.md).
+   Du måste skapa en ny rapportserie för mobilappar eller ha en befintlig rapportsvit som kan samla in, spåra och rapportera data som samlas in från dina Marketing Links. Mer information om hur du skapar en ny rapportserie för mobilappar finns i [Lägg till en ny app](/help/using/manage-apps/t-new-app.md).
 
 1. Verifiera din SDK-version.
 
@@ -40,7 +40,7 @@ För att spåra marknadslänkar måste du uppfylla följande krav:
 
 1. Aktivera alternativ för SDK-förvärv
 
-   Spårning måste vara aktiverat i SDK-konfigurationen innan länkar kan spåras och rapporteras på. Mer information finns i [Konfigurera värvning](/help/using/acquisition-main/t-enable-acquisition.md).
+   Spårning måste vara aktiverat i SDK-konfigurationen innan länkar kan spåras och rapporteras på. Mer information finns i [Konfigurera förvärv](/help/using/acquisition-main/t-enable-acquisition.md).
 
 1. Lägg till App Store-appar
 

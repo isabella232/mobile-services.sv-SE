@@ -1,28 +1,28 @@
 ---
 description: Trattrapporten identifierar var kunderna övergav en marknadsföringskampanj eller avvände från en definierad konverteringsväg när de interagerade med mobilappen. Du kan också använda Funnel-rapporten för att jämföra åtgärder för olika segment.
-keywords: mobile
+keywords: mobil
 seo-description: Trattrapporten identifierar var kunderna övergav en marknadsföringskampanj eller avvände från en definierad konverteringsväg när de interagerade med mobilappen. Du kan också använda Funnel-rapporten för att jämföra åtgärder för olika segment.
 seo-title: Trattrapport
 solution: Experience Cloud,Analytics
 title: Trattrapport
-topic: Reports,Metrics
+topic-fix: Reports,Metrics
 uuid: 268b4ab9-2e29-4423-9f79-ad93f5231ede
+exl-id: 43f9d0aa-0651-42c6-85ea-307ed253cf8d
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '507'
+source-wordcount: '508'
 ht-degree: 0%
 
 ---
 
-
 # Trattrapport{#funnel}
 
-Rapporten identifierar **[!UICONTROL Funnel]** var kunderna övergav en marknadsföringskampanj eller avvände från en definierad konverteringsväg när de interagerade med mobilappen. Du kan också använda rapporten för att jämföra åtgärder för olika segment **[!UICONTROL Funnel]** .
+**[!UICONTROL Funnel]**-rapporten identifierar var kunderna övergav en marknadsföringskampanj eller avvände från en definierad konverteringsväg när de interagerade med mobilappen. Du kan också använda **[!UICONTROL Funnel]**-rapporten för att jämföra åtgärder för olika segment.
 
 Genom att få insyn i kundens beslut i varje steg får ni en förståelse för var de är avskräckta, vilken väg de tenderar att följa och när kunderna lämnar er app.
 
-När du öppnar **[!UICONTROL Funnel]** rapporten måste du skapa en anpassad tratt. Mer information finns i [Anpassa rapporter](/help/using/usage/reports-customize/reports-customize.md).
+När du öppnar **[!UICONTROL Funnel]**-rapporten måste du skapa en anpassad tratt. Mer information finns i [Anpassa rapporter](/help/using/usage/reports-customize/reports-customize.md).
 
 >[!TIP]
 >
@@ -36,7 +36,7 @@ För att demonstrera en enkel tratt finns inställningarna för en konfiguration
 
 I fönstret Anpassa finns det avsnitt som anger att användaren har startat appen, lagt till ett foto från ett galleri i appen, delat ett eller flera foton från appen på sociala medier, sms, e-post och så vidare. Med trattjämförelserna kan du jämföra nivåerna för att lägga till och dela foton mellan användare av iOS-appen och Android-appen.
 
-Klicka på **[!UICONTROL Run]** för att generera rapporten.
+Klicka på **[!UICONTROL Run]** om du vill generera rapporten.
 
 Här är ett exempel på en genererad rapport:
 
@@ -50,13 +50,13 @@ Du kan konfigurera följande alternativ för den här rapporten:
 
 * **[!UICONTROL Time Period]**
 
-   Klicka på **[!UICONTROL Calendar]** ikonen för att välja en egen punkt eller för att välja en förinställd tidsperiod i listrutan.
+   Klicka på ikonen **[!UICONTROL Calendar]** för att välja en anpassad punkt eller för att välja en förinställd tidsperiod i listrutan.
 * **[!UICONTROL Customize]**
 
-   Anpassa era rapporter genom att ändra **[!UICONTROL Show By]** alternativen, lägga till mätvärden och filter, lägga till ytterligare serier (mätvärden) med mera. Mer information finns i [Anpassa rapporter](/help/using/usage/reports-customize/reports-customize.md).
+   Anpassa dina rapporter genom att ändra **[!UICONTROL Show By]**-alternativen, lägga till mätvärden och filter, lägga till ytterligare serier (mätvärden) med mera. Mer information finns i [Anpassa rapporter](/help/using/usage/reports-customize/reports-customize.md).
 * **[!UICONTROL Filter]**
 
-   Klicka **[!UICONTROL Filter]** för att skapa ett filter som spänner över olika rapporter för att se hur ett segment fungerar i alla mobilrapporter. Med ett klisterlappsfilter kan du definiera ett filter som ska användas på alla rapporter som inte är avsedda för målning. Mer information finns i [Lägg till anteckningsfilter](/help/using/usage/reports-customize/t-sticky-filter.md).
+   Klicka på **[!UICONTROL Filter]** för att skapa ett filter som sträcker sig över olika rapporter för att se hur ett segment fungerar i alla mobila rapporter. Med ett klisterlappsfilter kan du definiera ett filter som ska användas på alla rapporter som inte är avsedda för målning. Mer information finns i [Lägg till anteckningsfilter](/help/using/usage/reports-customize/t-sticky-filter.md).
 * **[!UICONTROL Download]**
 
-   Klicka **[!UICONTROL PDF]** eller **[!UICONTROL CSV]** för att ladda ned eller öppna dokument och dela med användare som inte har tillgång till Mobile Services eller för att använda filen i presentationer.
+   Klicka på **[!UICONTROL PDF]** eller **[!UICONTROL CSV]** för att hämta eller öppna dokument och dela med användare som inte har tillgång till Mobile Services eller för att använda filen i presentationer.

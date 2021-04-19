@@ -4,16 +4,16 @@ seo-description: Klasser och metoder som tillhandahålls av Universal Windows Pl
 seo-title: SDK-metoder
 solution: Experience Cloud,Analytics
 title: SDK-metoder
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: e3aa41d6-7bc0-4208-a662-12907c209a77
+exl-id: 0aac477c-074d-457c-b117-bb205119c475
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '588'
 ht-degree: 22%
 
 ---
-
 
 # SDK-metoder {#sdk-methods}
 
@@ -21,7 +21,7 @@ Klasser och metoder som tillhandahålls av Universal Windows Platform-biblioteke
 
 >[!TIP]
 >
->När du använder `winmd` metoder från winJS (JavaScript) får alla metoder automatiskt sin första bokstav nedsänkt.
+>När du använder `winmd`-metoder från winJS (JavaScript) kommer den första bokstaven automatiskt att sänkas för alla metoder.
 
 * **GetVersion (winJS: getVersion)**
 
@@ -47,7 +47,7 @@ Klasser och metoder som tillhandahålls av Universal Windows Platform-biblioteke
    * `ADBMobilePrivacyStatusOptOut` - Träffar tas bort.
    * `ADBMobilePrivacyStatusUnknown` - Om rapportsviten är tidsstämpelaktiverad sparas träffar tills sekretessstatusen ändras till att anmäla sig (träffar skickas) eller avanmäla dig (träffar ignoreras). Om rapportsviten inte är tidsstämpelaktiverad ignoreras träffar tills sekretessstatusen ändras till att anmäla sig.
 
-      Standardvärdet anges i `ADBMobileConfig.json` konfigurationsfilen. Mer information finns i [ADBMobileConfig.json-konfigurationsfilen](/help/universal-windows/c-configuration/c.json.md).
+      Standardvärdet anges i konfigurationsfilen `ADBMobileConfig.json`. Mer information finns i [ADBMobleConfig.json config file](/help/universal-windows/c-configuration/c.json.md).
 
    * Här är syntaxen för den här metoden:
 
@@ -78,7 +78,7 @@ Klasser och metoder som tillhandahålls av Universal Windows Platform-biblioteke
 
 * **SetPrivacyStatus (winJS: setPrivacyStatus)**
 
-   Anger sekretessstatus för den aktuella användaren till `status`. Ange något av följande värden:
+   Anger den aktuella användarens sekretessstatus till `status`. Ange något av följande värden:
    * `ADBMobilePrivacyStatusOptIn` - träffar skickas omedelbart.
    * `ADBMobilePrivacyStatusOptOut` - träffar tas bort.
    * `DBMobilePrivacyStatusUnknown` - Om rapportsviten är tidsstämpelaktiverad sparas träffar tills sekretessstatusen ändras till att anmäla sig (träffar skickas) eller välja bort (träffar tas bort). Om rapportsviten inte är tidsstämpelaktiverad ignoreras träffar tills sekretessstatusen ändras till att anmäla sig.
@@ -133,7 +133,7 @@ Standardvärdet är `null`.
 
    >[!IMPORTANT]
    >
-   >Om ditt program uppgraderar från Experience Cloud 3.x till 4.x SDK hämtas den tidigare ID-tjänsten (anpassad eller automatiskt genererad) och lagras som en anpassad användaridentifierare. Detta bevarar besöksdata mellan uppgraderingar av SDK. För nya installationer på 4.x SDK är användaridentifieraren `null` tills den har angetts.
+   >Om ditt program uppgraderar från Experience Cloud 3.x till 4.x SDK hämtas den tidigare ID-tjänsten (anpassad eller automatiskt genererad) och lagras som en anpassad användaridentifierare. Detta bevarar besöksdata mellan uppgraderingar av SDK. För nya installationer på 4.x SDK är användaridentifieraren `null` tills den anges.
 
    * Här är syntaxen för den här metoden:
 
@@ -184,7 +184,7 @@ Standardvärdet är `null`.
 
 * **SetDebugLogging (winJS: setDebugLogging)**
 
-   Anger loggningsinställningar för felsökning till `debugLogging`. Felsökningsloggning fungerar endast när felsökningsversionen av biblioteket används. Den här inställningen ignoreras av den officiella versionen.
+   Anger inställningen för felsökningsloggning till `debugLogging`. Felsökningsloggning fungerar endast när felsökningsversionen av biblioteket används. Den här inställningen ignoreras av den officiella versionen.
 
    * Här är syntaxen för den här metoden:
 
@@ -201,7 +201,7 @@ Standardvärdet är `null`.
 
 * **CollectLifecycleData (winJS: collectLifecycleData)**
 
-   Anger för SDK att livscykeldata ska samlas in för användning i alla lösningar i SDK. Mer information finns i [Livscykelstatistik](/help/universal-windows/metrics.md).
+   Anger för SDK att livscykeldata ska samlas in för användning i alla lösningar i SDK. Mer information finns i [Livscykelmått](/help/universal-windows/metrics.md).
 
    * Här är syntaxen för den här metoden:
 

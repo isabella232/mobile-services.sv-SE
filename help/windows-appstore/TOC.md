@@ -1,10 +1,9 @@
 ---
-product: mobile-services
 audience: end-user
 user-guide-title: Mobile Services Windows 8.1 Universal App Store SDK
 breadcrumb-title: Windows 8.1 Universal App Store SDK
 translation-type: tm+mt
-source-git-commit: 18ef20df0a32741685e35cee98a1adf4a1b823a1
+source-git-commit: b9ee49ba26d4726b1f97ef36f5c2e9923361b1ee
 workflow-type: tm+mt
 source-wordcount: '83'
 ht-degree: 13%
@@ -25,7 +24,7 @@ ht-degree: 13%
    + [SDK-metoder](c-configuration/methods.md)
 + Analytics{#analytics-win-appstore} 
    + [Analytics](analytics/analytics.md) 
-   + Variabeln Produkter {#products-variable}
+   + Produktvariabel {#products-variable}
       + [Variabeln Produkter](analytics/products/products.md)
       + [Produktvariabel med eVars för försäljning och produktspecifika händelser](analytics/products/products-variable-evars-events.md)
    + [Händelseserialisering](analytics/event-serialization.md)

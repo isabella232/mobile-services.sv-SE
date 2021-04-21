@@ -1,31 +1,29 @@
 ---
-description: 'null'
+description: Bygga iOS-projekt
 keywords: Unity
-seo-description: 'null'
-seo-title: Bygga ditt projekt
 solution: Experience Cloud
 title: Bygga ditt projekt
 uuid: 5550a394-6f3f-4b87-b840-89621d8a0c1e
+exl-id: 9da99392-b34e-4e36-b255-f3787e26015c
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: b9ee49ba26d4726b1f97ef36f5c2e9923361b1ee
 workflow-type: tm+mt
-source-wordcount: '160'
-ht-degree: 4%
+source-wordcount: '159'
+ht-degree: 3%
 
 ---
 
-
-# Bygga ditt projekt{#building-your-project}
+# Bygger ditt projekt{#building-your-project}
 
 ## iOS
 
-När du skapar för iOS skapas ett Xcode-projekt. Som standard finns filerna `ADBMobileWrapper.mm` och `AdobeMobileLibrary.a` filerna i det nya projektets biblioteksgrupp. Utför följande manuella steg för att bygga din app:
+När du skapar för iOS skapas ett Xcode-projekt. Som standard finns filerna `ADBMobileWrapper.mm` och `AdobeMobileLibrary.a` i det nya projektets biblioteksgrupp. Utför följande manuella steg för att bygga din app:
 
-1. Lägg till din `ADBMobileConfig.json` fil i projektet.
+1. Lägg till din `ADBMobileConfig.json`-fil i projektet.
 
    Se till att den är medlem i bygget om några mål behövs.
 
-1. Lägg till en länk till följande bibliotek på fliken **[!UICONTROL Build Phases]** i projektet:
+1. Lägg till en länk till följande bibliotek på fliken **[!UICONTROL Build Phases]** i ditt projekt:
 
    * `SystemConfiguration.framework`
 (Det här biblioteket kan redan vara länkat.)
@@ -38,7 +36,7 @@ När du skapar för iOS skapas ett Xcode-projekt. Som standard finns filerna `AD
 
 ## Android
 
-När du skapar för Android innehåller filen redan den `apk` på rätt plats `ADBMobileConfig.json` i filen. Som standard används även filen `AndroidManifest.xml` i din `/Plugins/Android` mapp.
+När du skapar för Android innehåller `apk`-filen redan `ADBMobileConfig.json`-filen på rätt plats. Som standard används även `AndroidManifest.xml`-filen i din `/Plugins/Android`-mapp.
 
 Om du behöver använda en egen anpassad manifestfil bör följande ändringar läggas till.
 

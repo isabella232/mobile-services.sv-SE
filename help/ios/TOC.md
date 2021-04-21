@@ -1,10 +1,9 @@
 ---
-product: mobile-services
 audience: end-user
 user-guide-title: iOS-handbok för mobiltjänster
 breadcrumb-title: iOS-guide
 translation-type: tm+mt
-source-git-commit: 18ef20df0a32741685e35cee98a1adf4a1b823a1
+source-git-commit: b9ee49ba26d4726b1f97ef36f5c2e9923361b1ee
 workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 3%
@@ -38,7 +37,7 @@ ht-degree: 3%
    + [Spåra programkrascher](analytics-main/crashes.md)
    + [Tidsbestämda åtgärder](analytics-main/timed-actions.md)
    + [Livslängd för besökare](analytics-main/lifetime-value.md)
-   + Variabeln Produkter {#products-variable}
+   + Produktvariabel {#products-variable}
       + [Variabeln Produkter](analytics-main/products/products.md)
       + [Produktvariabel med eVars för försäljning och produktspecifika händelser](analytics-main/products/products-variable-evars-events.md)
    + [Händelseserialisering](analytics-main/event-serialization.md)
@@ -52,7 +51,7 @@ ht-degree: 3%
    + [Översikt över förvärvet](acquisition-main/acquisition-main.md)
    + [Förvärva mobilappar](acquisition-main/acquisition.md)
    + [Anskaffningsmetoder](acquisition-main/c-acquisition-methods.md)
-   + Spåra djuplänkar {#tracking-deep-links}
+   + Spåra djupa länkar {#tracking-deep-links}
       + [Spåra djuplänkar](acquisition-main/tracking-deep-links/tracking-deep-links.md)
       + [Spåra fördröjda länkar från tredje part](acquisition-main/tracking-deep-links/c-tracking-3rd-party-deep-deferred-links.md)
    + [Testa Marketing Link-förvärv](acquisition-main/t-testing-marketing-link-acquisition.md)
@@ -61,7 +60,7 @@ ht-degree: 3%
    + [Apple Search Ads](acquisition-main/c-apple-search-ads.md)
 + Meddelanden {#messaging-ios}
    + [Meddelandeöversikt](messaging-main/messaging-main.md)
-   + In-app messaging {#in-app-messaging}
+   + Meddelanden i appen {#in-app-messaging}
       + [Meddelanden i appen](messaging-main/messaging/messaging.md)
       + [Felsökning av meddelanden i appen](messaging-main/messaging/in-apps-ts.md)
    + Push-meddelanden {#push-messaging}
@@ -69,7 +68,7 @@ ht-degree: 3%
       + [Implementera push-meddelanden med djuplänkning](messaging-main/push-messaging/t-mob-imp-push-deeplinking-ios-4x.md)
       + [Få omfattande push-meddelanden](messaging-main/push-messaging/c-set-up-rich-push-notif-ios.md)
       + [Felsöka push-meddelanden](messaging-main/push-messaging/c-troubleshooting-push-messaging.md)
-+ Location {#location-ios}
++ Plats {#location-ios}
    + [Platsöversikt](location/location.md)
    + [Geografisk placering och intressepunkter](location/geo-poi.md)
    + [Spårning av iBeacon](location/ibeacon.md)
@@ -101,6 +100,6 @@ ht-degree: 3%
    + [Sekretess och allmänna dataskyddsföreskrifter](c-mob-privacy-gdpr-ios/c-mob-privacy-gdpr-ios.md)
    + [Hämtar lagrade identifierare](c-mob-privacy-gdpr-ios/c-mob-gdpr-ret-stored-ids-ios.md)
    + [Ange användarens avanmälningsstatus](c-mob-privacy-gdpr-ios/privacy.md)
-+ PhoneGap-plugin {#phonegap-ios}
++ PhoneGap Plug-in {#phonegap-ios}
    + [PhoneGap plug-in](phonegap/phonegap.md)
    + [PhoneGap plug-in-metoder](phonegap/phonegap-methods.md)

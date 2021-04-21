@@ -1,10 +1,9 @@
 ---
-product: mobile-services
 audience: end-user
 user-guide-title: Mobile Services BlackBerry Guide
 breadcrumb-title: BlackBerry Guide
 translation-type: tm+mt
-source-git-commit: 18ef20df0a32741685e35cee98a1adf4a1b823a1
+source-git-commit: b9ee49ba26d4726b1f97ef36f5c2e9923361b1ee
 workflow-type: tm+mt
 source-wordcount: '31'
 ht-degree: 3%
@@ -12,7 +11,7 @@ ht-degree: 3%
 ---
 
 
-# Mobile Services BlackBerry Guide {#blackberry}
+# Handbok för BlackBerry för mobiltjänster {#blackberry}
 
 + [BlackBerry 10 SDK 4.x for Experience Cloud Solutions](overview.md)
 + [Snabbstart för utvecklare](dev-qs.md)

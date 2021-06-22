@@ -8,10 +8,9 @@ title: PhoneGap plug-in - översikt
 topic-fix: Developer and implementation
 uuid: c5c32357-d8df-458a-b0e8-e0c56040241d
 exl-id: ecd756ca-e333-4d28-bd1e-a75ffc6ebe22
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: bb2459e57274183e55c1facd1a510cf55a83ddb4
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '391'
 ht-degree: 1%
 
 ---
@@ -38,7 +37,7 @@ Kör följande kommando:
 cordova plugin add adobe-mobile-services
 ```
 
-## Installera plugin-programmet {#section_EA1FD59C484D44878AB509954DEE6037} manuellt
+## Installera plugin-programmet manuellt {#section_EA1FD59C484D44878AB509954DEE6037}
 
 ## Inkludera plugin-programmet
 
@@ -71,7 +70,7 @@ cordova plugin add adobe-mobile-services
 
    Om du vill flytta den här filen klickar du på **[!UICONTROL OK]**.
 
-1. Högerklicka på filen &quot;adobeMobileLibrary.jar och välj **[!UICONTROL Add as Library]**.
+1. Högerklicka på filen `adobeMobileLibrary.jar` och välj **[!UICONTROL Add as Library]**.
 1. Ange namn, nivå och plats för biblioteket utifrån kraven för ditt projekt.
 1. Dra filen `ADBMobileConfig.json` till mappen `assets` i programroten.
 1. Bekräfta att du har valt rotprogrammet och **inte** ett program i ett program.

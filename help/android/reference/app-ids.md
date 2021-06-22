@@ -7,8 +7,7 @@ title: Program-ID
 topic-fix: Developer and implementation
 uuid: 3ac99489-6269-439e-a814-24102ef220b1
 exl-id: 28358dd6-50dd-4ba9-9fb0-5271eae69d28
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: bb2459e57274183e55c1facd1a510cf55a83ddb4
 workflow-type: tm+mt
 source-wordcount: '222'
 ht-degree: 0%

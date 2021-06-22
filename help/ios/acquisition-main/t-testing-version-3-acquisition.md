@@ -5,16 +5,15 @@ seo-title: Testar V3-förvärv
 solution: Experience Cloud,Analytics
 title: Testar V3-förvärv
 uuid: 89137ccf-4839-4b37-926e-303cf8e511a5
-translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+exl-id: 3cf66802-1f2c-428f-86ef-a9afc57e3470
+source-git-commit: 8db8f51a42acbbc0bbc4545b7d97cb214b490ab3
 workflow-type: tm+mt
 source-wordcount: '618'
 ht-degree: 0%
 
 ---
 
-
-# Testar förvärvet av V3{#testing-v-acquisition}
+# Testar V3-förvärv{#testing-v-acquisition}
 
 Den här informationen hjälper er att skicka en länk till en kampanj för V3-förvärv baserat på ett enhets fingeravtryck.
 
@@ -24,8 +23,8 @@ Den här informationen hjälper er att skicka en länk till en kampanj för V3-f
 
 Om mobilappen ännu inte finns i App Store väljer du en mobilapp som mål när du skapar kampanjlänken. Detta påverkar bara den app som förvärvsservern dirigerar om dig till efter att du klickat på länken, men det påverkar inte möjligheten att testa länken.
 
-1. Slutför de nödvändiga uppgifterna i [anskaffning](/help/ios/acquisition-main/acquisition.md)av mobilappar.
-1. Navigera till webbsidan **[!UICONTROL Acquisition Builder]** i användargränssnittet för Adobe Mobile Services och generera en webbadress för anskaffningskampanj.
+1. Slutför de nödvändiga uppgifterna i [Anskaffning av mobilapp](/help/ios/acquisition-main/acquisition.md).
+1. Navigera till **[!UICONTROL Acquisition Builder]** i användargränssnittet för mobiltjänster i Adobe och generera en URL för anskaffningskampanj.
 
    Exempel:
 
@@ -43,16 +42,16 @@ Om mobilappen ännu inte finns i App Store väljer du en mobilapp som mål när 
    {"fingerprint":"228d7e6058b1d731dc7a8b8bd0c15e1d78242f31","timestamp":1457989293,"appguid":"","contextData":{"a.referrer.campaign.name":"name","a.referrer.campaign.trackingcode":"trackingcode"}}.
    ```
 
-   Om du inte ser `contextData`, eller om en del av den saknas, kontrollerar du att förvärvs-URL:en har det format som anges i [Skapa förvärvningslänk manuellt](/help/using/acquisition-main/c-marketing-links-builder/acquisition-link-manual.md).
+   Om du inte ser `contextData`, eller om en del av den saknas, kontrollerar du att förvärvs-URL:en följer det format som anges i [Skapa förvärvningslänk manuellt](/help/using/acquisition-main/c-marketing-links-builder/acquisition-link-manual.md).
 1. Kontrollera att följande inställningar i konfigurationsfilen är korrekta:
 
    | Inställning | Värde |
    |--- |--- |
-   | förvärv | Servern bör vara `c00.adobe.com`. *`appid`* ska vara lika med *`appid`* er förvärvslänk. |
+   | förvärv | Servern ska vara `c00.adobe.com`. *`appid`* ska vara lika med  *`appid`* er förvärvslänk. |
    | analys | `referrerTimeout` ska ha ett värde som är större än 0. |
 
 
-1. (Villkorligt) Om `ssl` inställningen i appens konfigurationsfil är true uppdaterar du hämtningslänken så att HTTPS-protokollet används.
+1. (Villkorligt) Om `ssl`-inställningen i appens konfigurationsfil är true uppdaterar du din hämtningslänk så att HTTPS-protokollet används.
 1. Klicka på den genererade länken från den mobila enhet som du tänker installera appen på.
 
    Adobe-servrar ( `c00.adobe.com`) lagrar fingeravtrycket och omdirigerar till App Store. Appen behöver inte laddas ned för testning.
@@ -79,15 +78,15 @@ Ett nätverksfel uppstod.
 
    * `Analytics - Unable to parse acquisition service response (no contextData parameter in response)`
 
-      Det finns ingen `contextData` parameter i svaret.
+      Det finns ingen `contextData`-parameter i svaret.
 
    * `Analytics - Acquisition referrer data was not complete, ignoring`
 
-      `a.referrer.campaign.name` ingår inte i `contextData`.
+      `a.referrer.campaign.name` ingår inte i  `contextData`.
 
    * `Analytics - Acquisition referrer timed out`
 
-      Det gick inte att hämta svaret inom den tid som definieras av `referrerTimeout`. Öka värdet och försök igen. Du bör också kontrollera att du har öppnat förvärvningslänken innan du installerar appen och att du använder samma nätverk när du klickar på URL:en och öppnar appen.
+      Det gick inte att hämta svaret i den tid som är definierad av `referrerTimeout`. Öka värdet och försök igen. Du bör också kontrollera att du har öppnat förvärvningslänken innan du installerar appen och att du använder samma nätverk när du klickar på URL:en och öppnar appen.
 
       Kom ihåg följande information:
 
@@ -97,11 +96,11 @@ Ett nätverksfel uppstod.
 
       * Med HTTP-övervakningsverktyg kan träffar som skickas från appen övervakas för att bekräfta förvärvsattribueringen.
 
-         Du bör se en `/v3/<appid>/start` begäran och en `/v3/<appid>/end` begäran som skickas till förvärvsservern. Variationer i användaragenten som skickas kan göra att attribueringen misslyckas.
+         Du bör se en `/v3/<appid>/start`-begäran och en `/v3/<appid>/end`-begäran som skickas till förvärvsservern. Variationer i användaragenten som skickas kan göra att attribueringen misslyckas.
 
          >[!TIP]
          >
-         >Se till att `https://c00.adobe.com/v3/<appid>/start` och `https://c00.adobe.com/v3/<appid>/end` ha samma användaragentvärden.
+         >Se till att `https://c00.adobe.com/v3/<appid>/start` och `https://c00.adobe.com/v3/<appid>/end` har samma användaragentvärden.
 
       * Förvärvningslänken och träffen från SDK bör använda samma HTTP/HTTPS-protokoll.
 

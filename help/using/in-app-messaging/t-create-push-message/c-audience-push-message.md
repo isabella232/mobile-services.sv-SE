@@ -8,10 +8,9 @@ title: Målgrupper Definiera och konfigurera målgruppssegment för push-meddela
 topic-fix: Metrics
 uuid: efd410e7-3b6c-4cf4-a26f-b11688adc491
 exl-id: d1062a76-2e72-4649-8497-58617a7a47cb
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: af46d2ef6e8efaae32128384112fa5265d56de74
 workflow-type: tm+mt
-source-wordcount: '990'
+source-wordcount: '988'
 ht-degree: 0%
 
 ---
@@ -26,7 +25,7 @@ När ett målgruppssegment för push-meddelanden skapas kan segmentet omfatta an
 
 I Adobe Mobile Services kan marknadsförarna bara pusha till en app per plattform. Om marknadsförarna försöker skicka till segment som innehåller användare från flera appar visas en varning om att om man fortsätter kan det leda till allvarliga push-fel och att användare blocklist. Om du får ett push-fel läser du *Lösa push-fel* i [Felsöka push-meddelanden](/help/using/in-app-messaging/t-create-push-message/c-schedule-push-message.md).
 
-Information om hur du använder Audience Manager i segmentdefinitionen finns i [Audience Analytics](https://docs-author-stg.corp.adobe.com/content/help/en/analytics/integration/audience-analytics/mc-audiences-aam.html).
+Information om hur du använder Audience Manager i segmentdefinitionen finns i [Audience Analytics](https://experienceleague.adobe.com/docs/analytics/integration/audience-analytics/mc-audiences-aam.html).
 
 >[!IMPORTANT]
 >

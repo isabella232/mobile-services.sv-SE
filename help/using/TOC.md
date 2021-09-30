@@ -3,19 +3,18 @@ audience: end-user
 user-guide-title: Handbok för mobiltjänster
 breadcrumb-title: Handbok för mobiltjänster
 user-guide-description: Mobiltjänster är en totallösning som hjälper er att värva och engagera mobilappsanvändare och optimera deras upplevelser.
-translation-type: tm+mt
-source-git-commit: b9ee49ba26d4726b1f97ef36f5c2e9923361b1ee
+source-git-commit: 8c74c479c357e008dbbaaee8eb11097582072470
 workflow-type: tm+mt
 source-wordcount: '343'
-ht-degree: 9%
+ht-degree: 8%
 
 ---
 
 
-# Handbok för mobila tjänster {#using}
+# Handbok för mobiltjänster {#using}
 
 + [Adobe Mobile Services](home.md)
-+ [Versionsinformation](whatsnew.md)
++ [Meddelande om att produkten är slut](eol.md)
 + Komma igång {#get-started-ug}
    + [Komma igång](gs/gs.md)
    + [Roller och behörigheter](gs/c-mob-roles-and-permissions.md)
@@ -75,7 +74,7 @@ ht-degree: 9%
    + [Översikt över förvärvet](acquisition-main/acquisition-main.md)
    + [Förutsättningar för värvning](acquisition-main/c-acquisition-prerequisites.md)
    + [Konfigurera värvning](acquisition-main/t-enable-acquisition.md)
-   + [Mål](acquisition-main/c-create-destinations.md)
+   + [Mål ](acquisition-main/c-create-destinations.md)
    + Skapa och hantera länkmål {#create-manage-link-destination}
       + [Skapa och hantera länkmål](acquisition-main/c-manage-link-destinations/c-manage-link-destinations.md)
       + [Skapa ett nytt länkmål](acquisition-main/c-manage-link-destinations/t-create-new-app-deep-link-destination.md)
@@ -114,4 +113,4 @@ ht-degree: 9%
       + [Schema: meddelande i appen](in-app-messaging/t-in-app-message/c-schedule-in-app-message.md)
       + [Felsökning av meddelanden i appen](in-app-messaging/t-in-app-message/in-apps-ts.md)
       + [Utlös ett meddelande i appen när appen öppnas från ett push-meddelande](in-app-messaging/t-mob-trig-in-app-open-app-from-push.md)
-+ [Vanliga frågor](faq-mobile.md)
++ [Frågor och svar](faq-mobile.md)

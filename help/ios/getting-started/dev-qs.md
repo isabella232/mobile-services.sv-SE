@@ -1,25 +1,22 @@
 ---
 description: Den här informationen hjälper dig att implementera iOS-biblioteket och samla in livscykelvärden som starter, uppgraderingar, sessioner, engagerade användare och så vidare.
-seo-description: Den här informationen hjälper dig att implementera iOS-biblioteket och samla in livscykelvärden som starter, uppgraderingar, sessioner, engagerade användare och så vidare.
-seo-title: Kärnimplementering och livscykel
 solution: Experience Cloud,Analytics
 title: Kärnimplementering och livscykel
 topic-fix: Developer and implementation
 uuid: 96d06325-e424-4770-8659-4b5431318ee3
 exl-id: 5fb2d534-c2e8-480a-aaee-0e71dd55feb6
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '815'
 ht-degree: 1%
 
 ---
 
-# Core-implementering och livscykel {#core-implementation-and-lifecycle}
+# Kärnimplementering och livscykel {#core-implementation-and-lifecycle}
 
 Den här informationen hjälper dig att implementera iOS-biblioteket och samla in livscykelvärden som starter, uppgraderingar, sessioner, engagerade användare och så vidare.
 
-## Hämta SDK {#section_99FE1A17A36D4A2C943939023CF6265C}
+## Ladda ned SDK {#section_99FE1A17A36D4A2C943939023CF6265C}
 
 >[!IMPORTANT]
 >
@@ -85,7 +82,7 @@ Så här hämtar du SDK:
 >
 >Om du hämtar SDK-filen utanför användargränssnittet för Adobe Mobile Services måste filen `ADBMobileConfig.json` konfigureras manuellt. Om du inte har använt Analytics tidigare och Mobile SDK tidigare läser du [Innan du börjar](/help/ios/getting-started/requirements.md) för att konfigurera en utvecklingsrapportsserie och hämta en förifylld version av konfigurationsfilen.
 
-## Lägg till SDK och konfigurationsfilen i projektet {#section_93C25D893B4A4CD3B996CF3C5590C8DC}
+## Lägg till SDK och konfigurationsfilen i ditt projekt {#section_93C25D893B4A4CD3B996CF3C5590C8DC}
 
 1. Starta Xcode IDE och öppna appen.
 1. I projektnavigeraren drar du mappen `AdobeMobileLibrary` och släpper den under projektet.
@@ -180,7 +177,7 @@ Ytterligare kontextdatavärden som skickas med `collectLifecycleDataWithAddition
 
 Andra livscykelvärden samlas in automatiskt. Mer information finns i [Livscykelvärden](/help/ios/metrics.md).
 
-## Gör följande {#section_A24DC703359D4B5C8F493D6421306FD3}
+## Vad ska du göra härnäst? {#section_A24DC703359D4B5C8F493D6421306FD3}
 
 Utför följande uppgifter:
 

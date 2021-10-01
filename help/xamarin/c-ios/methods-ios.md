@@ -1,19 +1,16 @@
 ---
 description: iOS-metoder för Xamarin-komponenter för Experience Cloud-lösningar 4.x SDK.
 keywords: Xamarin
-seo-description: iOS-metoder för Xamarin-komponenter för Experience Cloud-lösningar 4.x SDK.
-seo-title: iOS-metoder
 solution: Experience Cloud
 title: iOS-metoder
 uuid: d6a056db-80c1-44d0-970f-c961ad01b0bc
-translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+exl-id: 92897d08-2b66-4688-9870-c877bea53cfc
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '1749'
-ht-degree: 39%
+source-wordcount: '1737'
+ht-degree: 40%
 
 ---
-
 
 # iOS-metoder{#ios-methods}
 
@@ -155,7 +152,7 @@ iOS-metoder för Xamarin-komponenter för Experience Cloud-lösningar 4.x SDK.
    * Här är kodexemplet för den här metoden:
 
       ```objective-c
-      ADBMobile.SetUserIdentifier ("customUserIdentifier”); 
+      ADBMobile.SetUserIdentifier ("customUserIdentifier"); 
       ```
 
 * **GetVersion**
@@ -214,7 +211,7 @@ iOS-metoder för Xamarin-komponenter för Experience Cloud-lösningar 4.x SDK.
 
 * **TrackState**
 
-   Spårar ett apptillstånd med valfria kontextdata. Lägen är de vyer som är tillgängliga i din app, till exempel&quot;titelskärm&quot;,&quot;nivå 1&quot;,&quot;paus&quot; och så vidare. Dessa lägen liknar sidor på en webbplats och anropar `TrackState` inkrementella sidvyer. Om läget är tomt visas det som&quot;programnamnsversion (build)&quot; i rapporter. Om det här värdet visas i rapporter måste du ange status för varje `TrackState` anrop.
+   Spårar ett apptillstånd med valfria kontextdata. Lägen är de vyer som är tillgängliga i din app, till exempel&quot;titelskärm&quot;,&quot;nivå 1&quot;,&quot;paus&quot; och så vidare. Dessa lägen liknar sidor på en webbplats och `TrackState` anropar sidor med stegvisa ökningar. Om läget är tomt visas det som&quot;app name app version (build)&quot; i rapporter. Om det här värdet visas i rapporter måste du ange tillstånd för varje `TrackState`-anrop.
 
    >[!TIP]
    >
@@ -240,7 +237,7 @@ iOS-metoder för Xamarin-komponenter för Experience Cloud-lösningar 4.x SDK.
 
    >[!TIP]
    >
-   >Om du har kod som kan köras medan programmet är i bakgrunden (till exempel en hämtning av bakgrundsdata) använder du `trackActionFromBackground` istället.
+   >Om du har kod som kan köras när programmet är i bakgrunden (till exempel en bakgrundsåterhämtning) använder du `trackActionFromBackground` i stället.
 
    * Här är syntaxen för den här metoden:
 
@@ -276,7 +273,7 @@ iOS-metoder för Xamarin-komponenter för Experience Cloud-lösningar 4.x SDK.
 
 * **TrackLocation**
 
-   Skickar de aktuella latitud- och longitudkoordinaterna. Intressepunkter som definierats i filen används också för att avgöra om den plats som angetts som en parameter finns i någon av dina POI-filer. `ADBMobileConfig.json` Om de aktuella koordinaterna finns i en definierad POI fylls en kontextdatavariabel i och skickas med `TrackLocation` anropet.
+   Skickar de aktuella latitud- och longitudkoordinaterna. Intressepunkter som definieras i `ADBMobileConfig.json`-filen används också för att avgöra om platsen som anges som en parameter finns i något av dina POI-dokument. Om de aktuella koordinaterna finns i en definierad POI fylls en kontextdatavariabel i och skickas med anropet `TrackLocation`.
 
    * Här är syntaxen för den här metoden:
 
@@ -503,7 +500,7 @@ iOS-metoder för Xamarin-komponenter för Experience Cloud-lösningar 4.x SDK.
 
 * **TargetLoadRequest**
 
-   Skickar begäran till den konfigurerade målservern och returnerar strängvärdet för erbjudandet som genereras i ett `Action<NSDictionary>` återanrop.
+   Skickar begäran till den konfigurerade målservern och returnerar strängvärdet för erbjudandet som genereras i ett `Action<NSDictionary>`-återanrop.
 
    * Här är syntaxen för den här metoden:
 
@@ -523,7 +520,7 @@ iOS-metoder för Xamarin-komponenter för Experience Cloud-lösningar 4.x SDK.
 
 * **TargetCreateRequest**
 
-   Bekvämt med konstruktor för att skapa ett `ADBTargetLocationRequest` objekt med de givna parametrarna.
+   Konstruktorn kan enkelt skapa ett `ADBTargetLocationRequest`-objekt med de angivna parametrarna.
 
    * Här är syntaxen för den här metoden:
 
@@ -540,7 +537,7 @@ iOS-metoder för Xamarin-komponenter för Experience Cloud-lösningar 4.x SDK.
 
 * **TargetCreateOrderConfirmRequest**
 
-   Skapar en `ADBTargetLocationRequest`bild.
+   Skapar en `ADBTargetLocationRequest`.
 
    * Här är syntaxen för den här metoden:
 
@@ -574,7 +571,7 @@ iOS-metoder för Xamarin-komponenter för Experience Cloud-lösningar 4.x SDK.
 
 * **AudienceVisitorProfile**
 
-   Returnerar den besökarprofil som senast hämtades. Returnerar noll om ingen signal har skickats ännu. Besökarprofilen sparas i `NSUserDefaults` så att du enkelt kan komma åt den när du startar appen.
+   Returnerar den besökarprofil som senast hämtades. Returnerar noll om ingen signal har skickats ännu. Besökarprofilen sparas i `NSUserDefaults` så att du enkelt kan komma åt den när du startar programmet flera gånger.
 
    * Här är syntaxen för den här metoden:
 
@@ -638,7 +635,7 @@ iOS-metoder för Xamarin-komponenter för Experience Cloud-lösningar 4.x SDK.
 
 * **AudienceSignalWithData**
 
-   Skickar målgruppshantering en signal med egenskaper och hämtar matchande segment som returneras i ett `Action<NSDictionary>` återanrop.
+   Skickar målgruppshantering en signal med egenskaper och hämtar matchande segment som returneras i ett `Action<NSDictionary>`-återanrop.
 
    * Här är syntaxen för den här metoden:
 
@@ -677,7 +674,7 @@ Mer information finns i [Videoanalys](/help/ios/getting-started/dev-qs.md).
 
 * **MediaCreateSettings**
 
-   Returnerar ett `ADBMediaSettings` objekt med angivna parametrar.
+   Returnerar ett `ADBMediaSettings`-objekt med angivna parametrar.
 
    * Här är syntaxen för den här metoden:
 
@@ -693,7 +690,7 @@ Mer information finns i [Videoanalys](/help/ios/getting-started/dev-qs.md).
 
 * **MediaAdCreateSettings**
 
-   Returnerar ett `ADBMediaSettings` objekt som ska användas för att spåra en annonsvideo.
+   Returnerar ett `ADBMediaSettings`-objekt som ska användas för att spåra en annonsvideo.
 
    * Här är syntaxen för den här metoden:
 
@@ -709,7 +706,7 @@ Mer information finns i [Videoanalys](/help/ios/getting-started/dev-qs.md).
 
 * **MediaOpenWithSettings**
 
-   Öppnar ett `ADBMediaSettings` objekt för spårning.
+   Öppnar ett `ADBMediaSettings`-objekt för spårning.
 
    * Här är syntaxen för den här metoden:
 

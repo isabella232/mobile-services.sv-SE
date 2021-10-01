@@ -1,17 +1,14 @@
 ---
 description: Du kan konfigurera schemaläggningsalternativ för meddelanden i appen, inklusive varaktighet, veckodagar och tid för dagsalternativen.
 keywords: mobil
-seo-description: Du kan konfigurera schemaläggningsalternativ för meddelanden i appen, inklusive varaktighet, veckodagar och tid för dagsalternativen.
-seo-title: Schemalägg meddelande i appen
 solution: Experience Cloud,Analytics
 title: Schemalägg meddelande i appen
 topic-fix: Metrics
 uuid: d10e691b-105a-4165-a49d-d046ce250acd
 exl-id: bd7103ff-f14f-436b-a6c4-c477535cffe2
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '189'
+source-wordcount: '166'
 ht-degree: 1%
 
 ---

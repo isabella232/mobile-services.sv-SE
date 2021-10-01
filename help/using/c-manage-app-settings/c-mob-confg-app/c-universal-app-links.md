@@ -1,16 +1,13 @@
 ---
 description: För att upprätthålla användarupplevelsen är det viktigt att länka till appar och webbplatser. Lär dig hur universella länkar och applänkar fungerar och skillnaderna mellan dem.
-seo-description: Tack vare iOS- och Applänkar (Android) kan du ansluta till djupa länkar i iOS- och Android-appar.
-seo-title: Apple Universal Links och Android App Links
 solution: Experience Cloud,Analytics
 title: Handbok för universallänkar och applänkar
 topic-fix: Metrics
 uuid: 8d6441dc-4307-4454-95ea-d77ec796f918
 exl-id: 6613189f-7a14-4066-89e9-996d4fe7f128
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '1024'
+source-wordcount: '997'
 ht-degree: 0%
 
 ---
@@ -31,7 +28,7 @@ Med universella länkar kan du ansluta till djupa länkar i din iOS-app och stö
 
 Med applänkar kan du ansluta till djupa länkar i Android-appen och stöds i Android 6.0 eller senare. När en App Link nås dirigerar Android om länken direkt till den överordnade länken i din app. Om ditt program inte är installerat öppnas en URL för din webbplats i en webbläsare i stället. Mer information om applänkar finns i [Hantera Android-applänkar](https://developer.android.com/training/app-links/index.html).
 
-## Skapa en marknadsföringslänk med hjälp av en universell länk eller en applänk {#section_609ADEFFB9B441C4A8C45E936D0DC859}
+## Skapa en marknadsföringslänk med en universell länk eller en applänk {#section_609ADEFFB9B441C4A8C45E936D0DC859}
 
 Du kan skapa en marknadsföringslänk som använder en universell länk eller en applänk.
 

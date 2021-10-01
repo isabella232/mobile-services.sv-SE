@@ -1,22 +1,19 @@
 ---
 description: Den här informationen hjälper dig att felsöka meddelanden i appen.
 keywords: mobil
-seo-description: Den här informationen hjälper dig att felsöka meddelanden i appen.
-seo-title: Felsöka meddelanden i appen
 solution: Experience Cloud,Analytics
 title: Felsöka meddelanden i appen
 topic-fix: Metrics
 uuid: 58533aa3-2eb2-4597-8525-77e4e5975e56
 exl-id: ce009289-9d22-4d76-9997-31fc864e9d4d
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '584'
 ht-degree: 0%
 
 ---
 
-# Felsökning av meddelanden i programmet{#troubleshooting-in-app-messaging}
+# Felsökning av meddelanden i appen{#troubleshooting-in-app-messaging}
 
 Den här informationen hjälper dig att felsöka meddelanden i appen.
 

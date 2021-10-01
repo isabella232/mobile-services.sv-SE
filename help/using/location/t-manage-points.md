@@ -1,18 +1,15 @@
 ---
 description: Du kan skapa och hantera intressepunkter, som gör att du kan definiera geografiska platser som du kan använda för korrelationssyften, mål med meddelanden i appen och så vidare. När en träff skickas i en intressepunkt kopplas den till träffen.
 keywords: mobil
-seo-description: Du kan skapa och hantera intressepunkter, som gör att du kan definiera geografiska platser som du kan använda för korrelationssyften, mål med meddelanden i appen och så vidare. När en träff skickas i en intressepunkt kopplas den till träffen.
-seo-title: Hantera intressepunkter
 solution: Experience Cloud,Analytics
 title: Hantera intressepunkter
 topic-fix: Metrics
 uuid: 7b362534-54fb-43a3-b6b2-dfc8f45ff7c6
 exl-id: 9598b06b-fb6a-436c-811c-f74015cc2ab0
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '533'
-ht-degree: 0%
+source-wordcount: '481'
+ht-degree: 1%
 
 ---
 

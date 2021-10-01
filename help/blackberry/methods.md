@@ -1,17 +1,14 @@
 ---
 description: Klasser och metoder från BlackBerry-biblioteket.
-seo-description: Klasser och metoder från BlackBerry-biblioteket.
-seo-title: Klass och metodreferens för Adobe Mobile
 title: Klass och metodreferens för Adobe Mobile
 uuid: 1e42d759-be43-4bb3-ac1a-c7d64133d61c
-translation-type: tm+mt
-source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+exl-id: ad73ec1d-d082-4237-b7cb-b8ec2f7595a3
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '988'
+source-wordcount: '974'
 ht-degree: 15%
 
 ---
-
 
 # Klass och metodreferens för Adobe Mobile {#adobe-mobile-class-and-method-reference}
 
@@ -29,7 +26,7 @@ SDK har för närvarande stöd för Adobe Analytics, och metoderna finns i separ
    * ADBMoblePrivacyStatusOptOut - träffar ignoreras.
    * ADBMoblePrivacyStatusUnknown - Om rapportsviten är tidsstämpelaktiverad sparas träffar tills sekretessstatusen ändras till att anmäla sig (träffar skickas) eller avanmäla sig (träffar ignoreras). Om rapportsviten inte är tidsstämpelaktiverad ignoreras träffar tills sekretessstatusen ändras till att anmäla sig.
 
-      Standardvärdet anges i `ADBMobileConfig.json` filen.
+      Standardvärdet anges i filen `ADBMobileConfig.json`.
 
    * Här är syntaxen för den här metoden:
 
@@ -45,7 +42,7 @@ SDK har för närvarande stöd för Adobe Analytics, och metoderna finns i separ
 
 * **setPrivacyStatus**
 
-   Anger sekretessstatus för den aktuella användaren till `status`. Ange något av följande värden:
+   Anger den aktuella användarens sekretessstatus till `status`. Ange något av följande värden:
 
    * `ADBMobilePrivacyStatusOptIn` - träffar skickas omedelbart.
    * `ADBMobilePrivacyStatusOptOut` - träffar tas bort.
@@ -113,7 +110,7 @@ SDK har för närvarande stöd för Adobe Analytics, och metoderna finns i separ
 
 * **setDebugLogging**
 
-   Anger loggningsinställningar för felsökning till `debugLogging`.
+   Anger inställningen för felsökningsloggning till `debugLogging`.
 
    * Här är syntaxen för den här metoden:
 
@@ -152,7 +149,7 @@ Var och en av dessa metoder används för att skicka data till din Adobe Analyti
 
 * **trackState**
 
-   Spårar ett apptillstånd med valfria kontextdata. Lägen är de vyer som är tillgängliga i din app, till exempel&quot;heminstrumentpanel&quot;,&quot;appinställningar&quot;,&quot;kundvagn&quot; och så vidare. Dessa lägen liknar sidor på en webbplats och anropar `trackState` stegvisa sidvyer.
+   Spårar ett apptillstånd med valfria kontextdata. Lägen är de vyer som är tillgängliga i din app, till exempel&quot;heminstrumentpanel&quot;,&quot;appinställningar&quot;,&quot;kundvagn&quot; och så vidare. Dessa lägen liknar sidor på en webbplats och `trackState` anropar stegvisa sidvyer.
 
    >[!TIP]
    >
@@ -204,7 +201,7 @@ Var och en av dessa metoder används för att skicka data till din Adobe Analyti
 
 ## `ADBMobileConfig.json` config file reference {#section_5AD4EDF87E304980B4AC4A5657FDA8B9}
 
-Filen måste `ADBMobileConfig.json` placeras i *resursmappen* .
+Filen `ADBMobileConfig.json` måste placeras i mappen *assets*.
 
 * **rsids**
 
@@ -222,7 +219,7 @@ Filen måste `ADBMobileConfig.json` placeras i *resursmappen* .
 
 * **server**
 
-   (Obligatoriskt). Analysserver. Den här variabeln ska fyllas i med serverdomänen, utan ett `https://` - eller `https://` protokollprefix. Protokollprefixet hanteras automatiskt av biblioteket baserat på `ssl` variabeln. Om `ssl` så är `true`fallet skapas en säker anslutning till den här servern. Om `ssl` så är `false`fallet skapas en osäker anslutning till den här servern.
+   (Obligatoriskt). Analysserver. Den här variabeln ska fyllas i med serverdomänen, utan ett `https://`- eller `https://`-protokollprefix. Protokollprefixet hanteras automatiskt av biblioteket baserat på variabeln `ssl`. Om `ssl` är `true` skapas en säker anslutning till den här servern. Om `ssl` är `false` skapas en osäker anslutning till den här servern.
 
 * **charset**
 
@@ -230,17 +227,17 @@ Filen måste `ADBMobileConfig.json` placeras i *resursmappen* .
 
 * **ssl**
 
-   Aktiverar (`true`) eller inaktiverar (`false`) sändning av mätdata via SSL (HTTPS). Standardvärdet är `false`.
+   Aktiverar (`true`) eller inaktiverar (`false`) att skicka mätdata via SSL (HTTPS). Standardvärdet är `false`.
 
 * **offlineEnabled**
 
-   När det är aktiverat (`true`) köas träffar när enheten är offline och skickas senare när enheten är online. Din rapportsvit måste vara tidsstämpelaktiverad för att du ska kunna använda offline-spårning.
+   När det här alternativet är aktiverat (`true`) köas träffar när enheten är offline och skickas senare när enheten är online. Din rapportsvit måste vara tidsstämpelaktiverad för att du ska kunna använda offline-spårning.
 
    >[!TIP]
    >
-   >Om tidsstämplar är aktiverade i rapportsviten `offlineEnabled` måste *konfigurationsegenskapen vara* `true`. Om rapportsviten inte är tidsstämpelaktiverad `offlineEnabled` måste ** konfigurationsegenskapen vara false. Om detta inte är korrekt konfigurerat går data förlorade. Om du är osäker på om en rapportsserie är tidsstämplad, kontaktar du [Enterprise Support](https://helpx.adobe.com/se/contact/enterprise-support.ec.html).
+   >Om tidsstämplar är aktiverade i rapportsviten måste `offlineEnabled` konfigurationsegenskapen *vara* `true`. Om rapportsviten inte är tidsstämpelaktiverad måste `offlineEnabled`-konfigurationsegenskapen *vara* vara false. Om detta inte är korrekt konfigurerat går data förlorade. Om du är osäker på om en rapportsserie har tidsstämpeln aktiverad kan du kontakta [Enterprise Support](https://helpx.adobe.com/se/contact/enterprise-support.ec.html).
 
-   Om du för närvarande rapporterar AppMeasurement-data till en rapportserie som även samlar in data från JavaScript, kan du behöva skapa en separat rapportserie för mobildata, eller inkludera en anpassad tidsstämpel för alla JavaScript-träffar med hjälp av `s.timestamp` variabeln.
+   Om du för närvarande rapporterar AppMeasurement-data till en rapportserie som även samlar in data från JavaScript, kan du behöva skapa en separat rapportserie för mobildata, eller inkludera en anpassad tidsstämpel för alla JavaScript-träffar med variabeln `s.timestamp`.
 
    Standardvärdet är `false`.
 
@@ -265,7 +262,7 @@ Filen måste `ADBMobileConfig.json` placeras i *resursmappen* .
 
    Standardvärdet är `optedin`.
 
-Följande är ett exempel på en `ADBMobileConfig.json` fil:
+Följande är ett exempel på en `ADBMobileConfig.json`-fil:
 
 ```js
 { 

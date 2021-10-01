@@ -1,17 +1,14 @@
 ---
 description: Versionsinformation och kända fel för universella Windows Platform SDK 4.x för Experience Cloud Solutions.
-seo-description: Versionsinformation och kända fel för universella Windows Platform SDK 4.x för Experience Cloud Solutions.
-seo-title: Versionsinformation
 solution: Experience Cloud,Analytics
 title: Versionsinformation
 topic-fix: Developer and implementation
 uuid: 9c164e5c-ce2c-4eda-bba6-71324e4954fa
 exl-id: c7478baf-9f16-441f-9899-3a16a9dc291b
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
 workflow-type: tm+mt
-source-wordcount: '105'
-ht-degree: 15%
+source-wordcount: '86'
+ht-degree: 6%
 
 ---
 
@@ -27,5 +24,4 @@ Utöver betydande prestandaökningar har version 4.x även följande nya funktio
 |--- |--- |
 | Universell Windows Platform SDK 4.x för Experience Cloud Solutions | Ursprunglig version. |
 
-
-Mer information om versionsinformation för alla lösningar finns i [Adobe Experience Cloud Release Notes](https://docs.adobe.com/content/help/sv-SE/release-notes/experience-cloud/current.html).
+Mer information om versionsinformation för alla lösningar finns i [Adobe Experience Cloud Release Notes](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html).

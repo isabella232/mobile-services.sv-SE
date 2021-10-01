@@ -1,17 +1,14 @@
 ---
 description: Du kan använda den här informationen för att konfigurera alternativen för push-tjänster på sidan Hantera appinställningar när du skapar en ny app eller redigerar en befintlig app.
 keywords: mobil
-seo-description: Du kan använda den här informationen för att konfigurera alternativen för push-tjänster på sidan Hantera appinställningar när du skapar en ny app eller redigerar en befintlig app.
-seo-title: Konfigurera push-meddelanden
 solution: Experience Cloud,Analytics
 title: Konfigurera push-meddelanden
 topic-fix: Metrics
 uuid: 6763858d-6046-4d36-87c0-cf3600a44fb1
 exl-id: d4989c31-2692-4062-8fae-d41c3e3c179b
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '307'
+source-wordcount: '275'
 ht-degree: 0%
 
 ---

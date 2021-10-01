@@ -1,17 +1,14 @@
 ---
 description: Du kan använda den här informationen för att få en förståelse för återanslående och hur de fungerar.
 keywords: android;bibliotek;mobil;sdk
-seo-description: Du kan använda den här informationen för att få en förståelse för återanslående och hur de fungerar.
-seo-title: Exempel på återgång
 solution: Experience Cloud,Analytics
 title: Exempel på återgång
 topic-fix: Developer and implementation
 uuid: 8010cd00-d42b-4e16-8403-692fab2550f1
 exl-id: 2ff41066-e2ee-425f-8aff-e5e3f3e5f0f5
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '145'
+source-wordcount: '128'
 ht-degree: 0%
 
 ---
@@ -24,7 +21,7 @@ Du kan använda den här informationen för att få en förståelse för vilka �
 >
 >Det här exemplet finns endast i informationssyfte. Filen `ADBMobileConfig.json` bör konfigureras i användargränssnittet för Adobe Mobile och får inte ändras manuellt. En manuellt redigerad konfigurationsfil kan vara farlig om konfigurationen av fjärrmeddelanden är aktiverad.
 
-## `ADBMobileConfig.json` definition  {#section_8751E8176F3546C09420341A39758AFF}
+## `ADBMobileConfig.json` definition {#section_8751E8176F3546C09420341A39758AFF}
 
 ```js
 "messages": [ 
@@ -64,6 +61,6 @@ contextData.put("user.zip", "90210");
 Analytics.trackState("MainMenu", contextData);
 ```
 
-Eftersom det här spårningsanropet är `“MainMenu”` utlöser det ovanstående återanslående meddelandet. URL:en ersätter alla mallvariabler med värden från träffen. Om man utgår ifrån att användarens föregående session var 132 sekunder lång och att användaren använder Android SDK version 4.6.0 ser den resulterande URL-adressen ut så här:
+Eftersom det här spårningsanropet är `"MainMenu"` utlöser det ovanstående återanslående meddelandet. URL:en ersätter alla mallvariabler med värden från träffen. Om man utgår ifrån att användarens föregående session var 132 sekunder lång och att användaren använder Android SDK version 4.6.0 ser den resulterande URL-adressen ut så här:
 
 `https://my.server.com/?user=bob&zip=90210&c16=4.6.0-AN&c27=cln,132`

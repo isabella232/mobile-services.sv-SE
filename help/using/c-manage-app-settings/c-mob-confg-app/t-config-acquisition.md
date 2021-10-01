@@ -1,17 +1,14 @@
 ---
 description: Du kan konfigurera alternativen för SDK-förvärv på sidan Hantera appinställningar när du skapar en ny app eller redigerar en befintlig app.
 keywords: mobil
-seo-description: Du kan konfigurera alternativen för SDK-förvärv på sidan Hantera appinställningar när du skapar en ny app eller redigerar en befintlig app.
-seo-title: Konfigurera alternativ för SDK-förvärv
 solution: Experience Cloud,Analytics
 title: Konfigurera alternativ för SDK-förvärv
 topic-fix: Metrics
 uuid: 50ce51ad-39bf-4ac7-bd94-757443d11ca7
 exl-id: 72ab6777-88b5-4908-9d0f-7f68f298dad1
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '164'
+source-wordcount: '137'
 ht-degree: 0%
 
 ---

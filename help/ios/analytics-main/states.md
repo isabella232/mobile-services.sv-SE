@@ -1,16 +1,13 @@
 ---
 description: Lägen är de olika skärmarna eller vyerna i ditt program. Varje gång ett nytt läge visas i programmet, till exempel när en användare navigerar från startsidan till nyhetsflödet, ska ett spårlägesanrop skickas. I iOS spåras ett läge vanligtvis i metoden viewDidnLoad för varje vy.
-seo-description: Lägen är de olika skärmarna eller vyerna i ditt program. Varje gång ett nytt läge visas i programmet, till exempel när en användare navigerar från startsidan till nyhetsflödet, ska ett spårlägesanrop skickas. I iOS spåras ett läge vanligtvis i metoden viewDidnLoad för varje vy.
-seo-title: Spåra applägen
 solution: Experience Cloud,Analytics
 title: Spåra applägen
 topic-fix: Developer and implementation
 uuid: 12cca4eb-1f15-4cec-a58f-76b69eaff99d
 exl-id: 1b7d2fbb-d2df-4063-b923-e59fa3582830
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '318'
 ht-degree: 2%
 
 ---
@@ -57,7 +54,7 @@ Kontextdatavärden måste mappas till anpassade variabler:
 
 ![](assets/map-variable-context-state.png)
 
-## Appstatusrapportering {#section_0F6A54AB7A3F42C9BB042D86A0FC4630}
+## App-tillståndsrapportering {#section_0F6A54AB7A3F42C9BB042D86A0FC4630}
 
 Lägen visas vanligtvis genom att använda en pausrapport så att du kan se hur användare navigerar i appen och vilka lägen som visas mest.
 

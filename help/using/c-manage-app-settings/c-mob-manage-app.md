@@ -1,18 +1,15 @@
 ---
 description: Ni kan spåra och hantera data som ni får från appen genom att konfigurera olika variabler och mätvärden.
 keywords: mobil
-seo-description: Ni kan spåra och hantera data som ni får från appen genom att konfigurera olika variabler och mätvärden.
-seo-title: Hantera din app
 solution: Experience Cloud,Analytics
 title: Hantera din app
 topic-fix: Metrics
 uuid: 0cc356c3-8457-40a7-8c97-7cbc68a5dc0c
 exl-id: 599fef94-c188-47f5-b9d6-25a7c8cb07bc
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
 workflow-type: tm+mt
-source-wordcount: '990'
-ht-degree: 1%
+source-wordcount: '970'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +17,7 @@ ht-degree: 1%
 
 Ni kan spåra och hantera data som ni får från appen genom att konfigurera olika variabler och mätvärden.
 
-## Hantera variabler och mått {#section_EC2D58AC334F4ED49E764B81C2423A62}
+## Hantera variabler och mätvärden {#section_EC2D58AC334F4ED49E764B81C2423A62}
 
 * **Standardvariabler och -mått**
 
@@ -39,7 +36,7 @@ Ni kan spåra och hantera data som ni får från appen genom att konfigurera oli
 
 Klicka på **[!UICONTROL Manage App Settings]** > **[!UICONTROL Manage Variables & Metrics]** > **[!UICONTROL Custom Variables]**.
 
-Dessa mappningar anropar samma API som används i [Bearbetningsregler](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html).
+Dessa mappningar anropar samma API som [Bearbetningsregler](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html) använder i Adobe Analytics.
 
 ![Kontextdatamappning](assets/custom_data_content.png)
 
@@ -49,8 +46,8 @@ Här är en lista med anpassade variabler som du kan konfigurera:
 
    När ett värde anges för en egenskap i ett spårningsanrop (eller träff) gäller det bara det anropet.
 
-* **[!UICONTROL Custom Variables]** (eller evar) svarar även på frågan&quot;vem?&quot; Ett var-värde kan dock inte bara användas för den träff det skickas in, utan även för variabler och mätvärden som skickas i efterföljande träffar tills värdet förfaller eller ett nytt värde anges.
-* **[!UICONTROL Custom List Variables (or Multi-Value Variables)]** fungerar på samma sätt som variabler förutom att de tillåter att du hämtar flera värden vid en träff. Mer information finns i [Lista variabler](https://docs.adobe.com/content/help/en/analytics/implementation/javascript-implementation/variables-analytics-reporting/page-variables.html).
+* **[!UICONTROL Custom Variables]** (eller eVars) besvarar även frågan&quot;vilken?&quot; Ett värde kan dock användas inte bara för den träff som det skickas in, utan även för variabler och mätvärden som skickas i efterföljande träffar tills eVar förfaller eller ett nytt värde ställs in.
+* **[!UICONTROL Custom List Variables (or Multi-Value Variables)]** fungerar på samma sätt som variabler förutom att de tillåter att du hämtar flera värden vid en träff. Mer information finns i [list](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/list.html?lang=en)-variabler i Adobe Analytics-dokumentationen.
 
 Följande mappningar visas i Analytics som om de skapats i Mobile Services.
 

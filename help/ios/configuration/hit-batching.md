@@ -1,21 +1,18 @@
 ---
 description: Om användaren trycker på en grupp kan program som har aktiverat offlinespårning hindra att träffar skickas tills antalet träffar i kön når en konfigurerbar gräns.
-seo-description: Om användaren trycker på en grupp kan program som har aktiverat offlinespårning hindra att träffar skickas tills antalet träffar i kön når en konfigurerbar gräns.
-seo-title: Träffa
 solution: Experience Cloud,Analytics
 title: Träffa
 topic-fix: Developer and implementation
 uuid: 3dda7372-0695-4cb7-b779-6abca2d6e0d9
 exl-id: af21f435-13cb-4353-9fbb-c99274bce411
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '190'
+source-wordcount: '161'
 ht-degree: 0%
 
 ---
 
-# Tryck på batchvis {#hit-batching}
+# Träffa {#hit-batching}
 
 Om användaren trycker på en grupp kan program som har aktiverat offlinespårning hindra att träffar skickas tills antalet träffar i kön når en konfigurerbar gräns.
 

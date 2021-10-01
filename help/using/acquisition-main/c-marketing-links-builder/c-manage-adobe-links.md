@@ -1,17 +1,14 @@
 ---
 description: Du kan använda sidan Marketing Links för att skapa, använda och arkivera marknadsföringslänkar.
 keywords: mobil
-seo-description: Du kan använda sidan Marketing Links för att skapa, använda och arkivera marknadsföringslänkar.
-seo-title: Hantera marknadsföringslänkar
 solution: Experience Cloud,Analytics
 title: Hantera marknadsföringslänkar
 topic-fix: Metrics
 uuid: 98ac3520-89ed-4513-83f6-120dda9d0157
 exl-id: 678c18fe-b282-4eab-a248-e00dfd53cecd
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '189'
+source-wordcount: '172'
 ht-degree: 0%
 
 ---

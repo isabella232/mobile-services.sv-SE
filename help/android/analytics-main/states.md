@@ -1,16 +1,13 @@
 ---
 description: Lägen är de olika skärmarna eller vyerna i ditt program.
-seo-description: Lägen är de olika skärmarna eller vyerna i ditt program.
-seo-title: Spåra applägen
 solution: Experience Cloud,Analytics
 title: Spåra applägen
 topic-fix: Developer and implementation
 uuid: 69c99d05-5816-4c86-97c5-d218dc26c129
 exl-id: ee1ea716-ee72-4c28-92cb-26df1327f5c6
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '265'
 ht-degree: 3%
 
 ---
@@ -69,7 +66,7 @@ Kontextdatavärden måste mappas till anpassade variabler i Adobe Mobile-tjänst
 
 ![](assets/map-variable-context-state.png)
 
-## Appstatusrapportering {#section_0F6A54AB7A3F42C9BB042D86A0FC4630}
+## App-tillståndsrapportering {#section_0F6A54AB7A3F42C9BB042D86A0FC4630}
 
 Lägen visas vanligtvis med hjälp av en målningsrapport, som gör att du kan se hur användare navigerar i din app och vilka lägen som visas oftast.
 

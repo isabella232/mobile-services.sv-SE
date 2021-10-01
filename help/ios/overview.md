@@ -1,16 +1,13 @@
 ---
 description: Med iOS SDK 4.x för Experience Cloud Solutions kan ni mäta iPhone- och iPad-applikationer från Apple, leverera riktat innehåll inifrån apparna samt utnyttja och samla in målgruppsdata via Audience Manager.
-seo-description: Med iOS SDK 4.x för Experience Cloud Solutions kan ni mäta iPhone- och iPad-applikationer från Apple, leverera riktat innehåll inifrån apparna samt utnyttja och samla in målgruppsdata via Audience Manager.
-seo-title: iOS SDK 4.x för Experience Cloud Solutions
 solution: Experience Cloud,Analytics
 title: iOS SDK 4.x för Experience Cloud Solutions
 topic-fix: Developer and implementation
 uuid: 8b374cee-1432-460b-aac2-70623dd80a04
 exl-id: d4dbddf7-c8be-4936-adfb-2f7aa07a0dd4
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '530'
+source-wordcount: '492'
 ht-degree: 0%
 
 ---
@@ -63,7 +60,7 @@ Lite information att komma ihåg:
 
 ## Användardokumentation för Adobe Mobile {#section_7583FD5FDED143619048E9744A3F2D21}
 
-Adobe Mobile-tjänster har ett nytt användargränssnitt som samlar funktioner för mobilmarknadsföring för mobilappar från hela Adobe Experience Cloud. Från början erbjuder mobiltjänsten smidig integrering av funktioner för appanalys och målinriktning från Adobe Analytics, Adobe Audience Manager och Adobe Target samt Adobe Experience Platform Identity Service.
+Adobe Mobile-tjänster har ett nytt användargränssnitt som samlar funktioner för mobilmarknadsföring för mobilappar från hela Adobe Experience Cloud. Från början erbjuder mobiltjänsten smidig integrering av funktioner för appanalys och målinriktning från Adobe Analytics, Adobe Audience Manager och Adobe Target samt Adobe Experience Platform identitetstjänst.
 
 Mer information om gränssnittet för mobiltjänster och användardokumentationen finns i [Adobe Mobile Services](/help/using/home.md).
 

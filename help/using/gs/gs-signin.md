@@ -1,18 +1,15 @@
 ---
 description: Du kan logga in på Adobe Mobile Services med en webbläsare.
 keywords: mobil;ändra lösenord;logga in;logga ut;logga ut;logga ut;logga in;logga in;logga in
-seo-description: Du kan logga in på Adobe Mobile Services med en webbläsare.
-seo-title: Loggar in
 solution: Experience Cloud,Analytics
 title: Loggar in
 topic-fix: Metrics
 uuid: d6ea0ca1-3511-4133-9d41-21ea2d2f7b3a
 exl-id: 12b447bd-f53b-43b4-b333-6b805f42fb75
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '326'
-ht-degree: 3%
+source-wordcount: '311'
+ht-degree: 4%
 
 ---
 
@@ -50,7 +47,7 @@ Så här loggar du in på användargränssnittet för Adobe Mobile Services med 
 
    >[!IMPORTANT]
    >
-   >Om du klickar på **[!UICONTROL Facebook]** eller **[!UICONTROL Google]** för att logga in måste e-postadressen för ditt Facebook- och Google-konto matcha e-postadressen för Adobe ID- eller Enterprise ID-kontot som har åtkomst till Adobe Analytics. Om dina inloggningsuppgifter för Facebook eller Google inte överensstämmer med din e-postadress för Adobe eller Enterprise ID kontaktar du administratören.
+   >Om du klickar på **[!UICONTROL Facebook]** eller **[!UICONTROL Google]** för att logga in måste e-postadressen för ditt Facebook- och Google-konto matcha e-postadressen för Adobe ID- eller Enterprise ID som har åtkomst till Adobe Analytics. Om dina Facebook- eller Google-uppgifter inte överensstämmer med din e-postadress hos Adobe eller Enterprise ID kontaktar du administratören.
 
 ### Analys-ID
 

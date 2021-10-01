@@ -1,17 +1,14 @@
 ---
 description: Du kan bifoga bildfiler till dina Apple-meddelanden. Genom att lägga till visuella komponenter kan du öka användarnas engagemang avsevärt med push-meddelanden.
-seo-description: Du kan bifoga bildfiler till dina Apple-meddelanden. Genom att lägga till visuella komponenter kan du öka användarnas engagemang avsevärt med push-meddelanden.
-seo-title: Ta emot omfattande push-meddelanden
 title: Ta emot omfattande push-meddelanden
 uuid: 0dbda409-cf49-4eb8-90ee-baf27911dc07
-translation-type: tm+mt
-source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
+exl-id: 1167ae4b-04ad-4c0d-a9db-67d30693f697
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '222'
+source-wordcount: '197'
 ht-degree: 0%
 
 ---
-
 
 # Få omfattande push-meddelanden {#receive-rich-push-notifications}
 
@@ -23,11 +20,11 @@ Så här får du omfattande push-meddelanden i din iOS-app:
 1. Verifiera att du kan skicka ett SMS-push-meddelande till din app.
 1. Lägg till ett meddelandetjänsttillägg genom att utföra följande steg:
 
-   1. Välj **[!UICONTROL File]** > **[!UICONTROL New]** > **[!UICONTROL Target]** i Xcode-projektet.
+   1. I Xcode-projektet väljer du **[!UICONTROL File]** > **[!UICONTROL New]** > **[!UICONTROL Target]**.
    1. Välj **[!UICONTROL Notification Service Extension]**.
-   1. Kontrollera att `NotificationService.m` filen finns.
+   1. Kontrollera att filen `NotificationService.m` finns.
 
-1. Öppna `NotificationService.m` filen och kontrollera att följande delegatmetoder finns:
+1. Öppna filen `NotificationService.m` och verifiera att följande delegatmetoder finns:
 
    * En metod för att ta emot en meddelandebegäran.
    * En metod för att hantera tjänsttilläggets förfallodatum.
@@ -38,7 +35,7 @@ Så här får du omfattande push-meddelanden i din iOS-app:
       (void)didReceiveNotificationRequest:(UNNotificationRequest *)request withContentHandler:(void (^)(UNNotificationContent *contentToDeliver))contentHandler;
       ```
 
-      I den här metoden kan du hämta medie-URL:en från `userInfo` med hjälp av `attachment-url` -tangenten. När du har hämtat filen till en lokal katalog lägger du till den lokala sökvägen i `bestAttemptContent.attachments`.
+      I den här metoden kan du hämta medie-URL:en från `userInfo` genom att använda `attachment-url`-tangenten. När du har hämtat filen till en lokal katalog lägger du till den lokala sökvägen till `bestAttemptContent.attachments`.
 
       Här är ett exempel på koden i den här metoden:
 

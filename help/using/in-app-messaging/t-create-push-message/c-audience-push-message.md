@@ -1,16 +1,14 @@
 ---
 description: Ni kan definiera och konfigurera målgruppsalternativ för push-meddelanden, inklusive datumintervallalternativ, analyssegment och anpassade segment.
 keywords: mobil
-seo-description: Ni kan definiera och konfigurera målgruppsalternativ för push-meddelanden, inklusive datumintervallalternativ, analyssegment och anpassade segment.
-seo-title: Målgrupper Definiera och konfigurera målgruppssegment för push-meddelanden
 solution: Experience Cloud,Analytics
 title: Målgrupper Definiera och konfigurera målgruppssegment för push-meddelanden
 topic-fix: Metrics
 uuid: efd410e7-3b6c-4cf4-a26f-b11688adc491
 exl-id: d1062a76-2e72-4649-8497-58617a7a47cb
-source-git-commit: af46d2ef6e8efaae32128384112fa5265d56de74
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '988'
+source-wordcount: '944'
 ht-degree: 0%
 
 ---
@@ -90,11 +88,10 @@ Här är några exempel som hjälper dig att förstå hur du definierar segment 
 
    * Mer information om felsökning av push-meddelanden finns i:
 
-      * [Push-meddelanden i iOS](https://docs.adobe.com/content/help/en/mobile-services/ios/messaging-ios/push-messaging/push-messaging.html)
+      * [Push-meddelanden i iOS](/help/ios/messaging-main/push-messaging/push-messaging.md)
+      * [Push-meddelanden i Android](/help/android/messaging-main/push-messaging/push-messaging.md)
 
-      * [Push-meddelanden i Android](https://docs.adobe.com/content/help/en/mobile-services/android/messaging-android/push-messaging/push-messaging.html)
-
-1. Skriv information i följande fält:
+2. Skriv information i följande fält:
 
    * **[!UICONTROL During The]**
 
@@ -110,7 +107,7 @@ Här är några exempel som hjälper dig att förstå hur du definierar segment 
 
    * **[!UICONTROL Analytics Segments]**
 
-      Markera ett befintligt Adobe Analytics-segment i listrutan. Mer information finns i [Skapa segment](https://docs.adobe.com/content/help/en/analytics/components/segmentation/segmentation-workflow/seg-build.html).
+      Markera ett befintligt Adobe Analytics-segment i listrutan. Mer information finns i [Segmentbyggaren](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-build.html) i Adobe Analytics-dokumentationen.
 
    * **[!UICONTROL Custom Segments]**
 

@@ -1,21 +1,18 @@
 ---
 description: Den här informationen hjälper dig med en begäran om att ta bort GDPR-data.
-seo-description: Den här informationen hjälper dig med en begäran om att ta bort GDPR-data.
-seo-title: Ange användarens avanmälningsstatus
 solution: Experience Cloud,Analytics
 title: Ange användarens avanmälningsstatus
 topic-fix: Developer and implementation
 uuid: f8a3e6be-44dd-494e-9cda-dbbac86d6772
 exl-id: ef5160ac-5a73-4433-b217-1bd990f8456b
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '251'
 ht-degree: 0%
 
 ---
 
-# Ange användarens alternativstatus{#setting-the-user-s-opt-status}
+# Ange användarens avanmälningsstatus{#setting-the-user-s-opt-status}
 
 Den här informationen hjälper dig med en begäran om att ta bort GDPR-data.
 

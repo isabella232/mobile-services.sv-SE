@@ -1,21 +1,19 @@
 ---
 description: Med denna plugin kan du skicka Android AppMeasurement-anrop från ditt PhoneGap-projekt.
 keywords: android;bibliotek;mobil;sdk
-seo-description: Med denna plugin kan du skicka Android AppMeasurement-anrop från ditt PhoneGap-projekt.
-seo-title: PhoneGap plug-in - översikt
 solution: Experience Cloud,Analytics
 title: PhoneGap plug-in - översikt
 topic-fix: Developer and implementation
 uuid: c5c32357-d8df-458a-b0e8-e0c56040241d
 exl-id: ecd756ca-e333-4d28-bd1e-a75ffc6ebe22
-source-git-commit: bb2459e57274183e55c1facd1a510cf55a83ddb4
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '375'
 ht-degree: 1%
 
 ---
 
-# PhoneGap plug-in overview {#phonegap-plug-in}
+# PhoneGap plug-in - översikt {#phonegap-plug-in}
 
 Med denna plugin kan du skicka Android AppMeasurement-anrop från ditt PhoneGap-projekt. Information om hur du skapar ett PhoneGap-projekt finns i [PhoneGap](https://helpx.adobe.com/experience-manager/6-4/mobile/using/phonegap.html).
 

@@ -1,18 +1,15 @@
 ---
 description: Här är lite information om hur du mäter video på Android med videomätningslösningen.
 keywords: android;bibliotek;mobil;sdk
-seo-description: Här är lite information om hur du mäter video på Android med videomätningslösningen.
-seo-title: Videoanalys
 solution: Experience Cloud,Analytics
 title: Videoanalys
 topic-fix: Developer and implementation
 uuid: a137cc27-dc28-48c0-b08e-2ca17d2c7e1d
 exl-id: 1b7f5523-767a-45e8-b2e7-ecf9984849e4
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '885'
-ht-degree: 13%
+source-wordcount: '866'
+ht-degree: 12%
 
 ---
 
@@ -22,7 +19,7 @@ Här är lite information om hur du mäter video på Android med videomätningsl
 
 >[!TIP]
 >
->Under videouppspelning skickas vanliga&quot;hjärtslag&quot;-anrop till den här tjänsten för att mäta den tid som spelas upp. Dessa hjärtslagsanrop skickas var 10:e sekund, vilket resulterar i detaljerade videointeraktionsvärden och exaktare videoutfallsrapporter. Mer information om Adobe videomätningslösning finns i [Mäta ljud och video i Adobe Analytics](https://docs.adobe.com/content/help/sv-SE/media-analytics/using/media-overview.html).
+>Under videouppspelning skickas vanliga&quot;hjärtslag&quot;-anrop till den här tjänsten för att mäta den tid som spelas upp. Dessa hjärtslagsanrop skickas var 10:e sekund, vilket resulterar i detaljerade videointeraktionsvärden och exaktare videoutfallsrapporter. Mer information om Adobe videomätningslösning finns i [Mäta direktuppspelningsmedia i Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html).
 
 Den allmänna processen att mäta video är densamma på alla plattformar. Innehållet ger en översikt över utvecklaråtgärderna med kodexempel. I följande tabell visas de mediedata som skickas till Analytics. Bearbetningsregler används för att mappa kontextdata till en Analytics-variabel.
 
@@ -94,7 +91,7 @@ Den allmänna processen att mäta video är densamma på alla plattformar. Inneh
       Som standard mäts complete-händelsen en sekund före videons slut. Under implementeringen kan du ange hur många sekunder från slutet av videon som du vill att en vy ska vara fullständig. För livevideo och andra strömmar som inte har någon definierad ände kan du ange en anpassad punkt för att mäta slutförda (till exempel efter en viss tidpunkt).
 
 
-## Konfigurera medieinställningar {#section_929945D4183C428AAF3B983EFD3E2500}
+## Konfigurera mediainställningar {#section_929945D4183C428AAF3B983EFD3E2500}
 
 Konfigurera ett `MediaSettings`-objekt med de inställningar du vill använda för att spåra video:
 
@@ -153,7 +150,7 @@ public boolean ad;
 public boolean eventFirstTime;
 ```
 
-## Klassen Media Measurement och metodreferensen {#section_50DF9359A7B14DF092634C8E913C77FE}
+## Klassen Media Measurement och metodreferens {#section_50DF9359A7B14DF092634C8E913C77FE}
 
 Här är metoderna i klassen Media Measurement:
 

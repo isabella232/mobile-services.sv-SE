@@ -1,17 +1,14 @@
 ---
 description: 'Slutför följande nödvändiga uppgifter innan du konfigurerar en rapportsserie och samlar in Android-appdata: '
-seo-description: 'Slutför följande nödvändiga uppgifter innan du konfigurerar en rapportsserie och samlar in Android-appdata: '
-seo-title: Innan du börjar
 solution: Experience Cloud,Analytics
 title: Innan du börjar
 topic-fix: Developer and implementation
 uuid: 0ca9e937-8d40-4570-9dbf-9aecc6ecedf6
 exl-id: e9c0fd94-b61d-4f56-97b8-f71aac096c93
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '721'
-ht-degree: 3%
+source-wordcount: '692'
+ht-degree: 1%
 
 ---
 
@@ -52,7 +49,7 @@ Du kan logga in på användargränssnittet för Adobe Mobile Services på något
 
 ### Experience Cloud
 
-Logga in på [Experience Cloud](https://experiencecloud.adobe.com) med din Adobe ID. Den här metoden förutsätter att ditt företag har etablerats i Experience Cloud och att du har länkat ditt Analytics-konto. Mer information finns i [Hantera användare och produkter av Experience Cloud](https://docs.adobe.com/content/help/sv-SE/core-services/interface/manage-users-and-products/admin-getting-started.html).
+Logga in på [Experience Cloud](https://experiencecloud.adobe.com) med din Adobe ID. Den här metoden förutsätter att ditt företag har etablerats i Experience Cloud och att du har länkat ditt Analytics-konto. Mer information finns i [Hantera Experience Cloud-användare och -produkter](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html) i guiden Komponenter i Experience Cloud Central Interface.
 
 >[!TIP]
 >
@@ -66,7 +63,7 @@ Klicka på **[!UICONTROL Sign in with Analytics]** och ange företagsnamnet för
 
 Så här skapar du en rapportserie för att samla in appdata och definiera en app:
 
-1. Logga in på gränssnittet för mobila tjänster genom att skriva [https://mobilemarketing.adobe.com/](https://mobilemarketing.adobe.com/) i en webbläsare.
+1. Logga in på [Adobe Mobile Services](https://mobilemarketing.adobe.com).
 1. Klicka på **[!UICONTROL Create an App]**.
 
    Om du inte ser den här knappen klickar du på **[!UICONTROL Manage Apps]** > **[!UICONTROL Add]**.
@@ -83,7 +80,7 @@ Så här skapar du en rapportserie för att samla in appdata och definiera en ap
 
 1. Välj tidszon, valuta och klicka på **[!UICONTROL Save]**.
 
-## Hämta SDK {#section_044C17DF82BC4FD8A3E409C456CE9A46}
+## Ladda ned SDK {#section_044C17DF82BC4FD8A3E409C456CE9A46}
 
 Så här hämtar du mobil-SDK:
 
@@ -93,7 +90,7 @@ Du kan också välja din app i den högra rutan.
 
    >[!IMPORTANT]
    >
-   >Om du vill visa din app i den högra rutan måste du först skapa en app. Mer information om hur du skapar en app finns i [Lägg till en ny app.](https://docs.adobe.com/content/help/en/mobile-services/using/manage-apps-ug/t-new-app.html)
+   >Om du vill visa din app i den högra rutan måste du först skapa en app. Mer information om hur du skapar ett program finns i [Lägg till ett nytt program](/help/using/manage-apps/t-new-app.md).
 
 1. Klicka på **[!UICONTROL Manage App Settings]** i den vänstra rutan i appen.
 

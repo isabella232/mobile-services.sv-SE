@@ -1,17 +1,14 @@
 ---
 description: Visar mått och mått som kan mätas automatiskt av mobilbiblioteket.
 keywords: android;bibliotek;mobil;sdk
-seo-description: Visar mått och mått som kan mätas automatiskt av mobilbiblioteket.
-seo-title: Livscykelstatistik
 solution: Experience Cloud,Analytics
 title: Livscykelstatistik
 topic-fix: Developer and implementation
 uuid: f958c3ef-1d79-4b30-8966-ef74bd48a5d6
 exl-id: 19572f15-c5df-40fe-9979-3a5bdd581f2b
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '921'
+source-wordcount: '905'
 ht-degree: 0%
 
 ---

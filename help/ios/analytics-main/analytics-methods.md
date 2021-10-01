@@ -1,16 +1,13 @@
 ---
 description: Här är en lista över Adobe Analytics-metoder som finns i iOS-biblioteket.
-seo-description: Här är en lista över Adobe Analytics-metoder som finns i iOS-biblioteket.
-seo-title: Analysmetoder
 solution: Experience Cloud,Analytics
 title: Analysmetoder
 topic-fix: Developer and implementation
 uuid: d49fe6de-cb32-4b96-9891-c567310e59a6
 exl-id: 327ec44a-be15-47af-a2c8-a373124999ad
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '784'
+source-wordcount: '767'
 ht-degree: 33%
 
 ---

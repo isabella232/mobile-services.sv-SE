@@ -1,17 +1,14 @@
 ---
 description: Experience Cloud SDK för mobiler tillhandahåller GDPR-klara API:er för styrenheter som gör det möjligt för användare att hämta lokalt lagrade identiteter och ange alternativstatusflaggor för datainsamling och överföring.
-seo-description: Experience Cloud SDK för mobiler tillhandahåller GDPR-klara API:er för styrenheter som gör det möjligt för användare att hämta lokalt lagrade identiteter och ange alternativstatusflaggor för datainsamling och överföring.
-seo-title: Integritet och allmänna dataskyddsförordningen - översikt
 title: Integritet och allmänna dataskyddsförordningen - översikt
 uuid: 56d6f155-efec-4b3f-a972-a63155729167
-translation-type: tm+mt
-source-git-commit: 718e336b9002fe3d5282697d4302d12a89297181
+exl-id: 57696f2e-87f4-4f72-bec2-80c7192576f9
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: '322'
 ht-degree: 1%
 
 ---
-
 
 # Integritet och allmänna dataskyddsförordningen - översikt {#privacy-and-general-data-protection-regulation}
 
@@ -24,7 +21,7 @@ Letar du efter information och dokumentation om Adobe Experience Platform Mobile
 Från om med september 2018 har vi släppt en ny större version av SDK. Dessa nya Adobe Experience Platform Mobile SDK:er kan konfigureras via [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
 
 * Gå till Adobe Experience Platform Launch för att komma igång.
-* Om du vill se vad som finns i Experience Platform SDK-databaserna går du till [Github: Adobe Experience Platform SDKs](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
+* Om du vill se vad som finns i Experience Platform SDK-databaserna går du till [Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
 
 ## Översikt
 
@@ -38,7 +35,7 @@ Som personuppgiftsansvariga kan du använda Adobe Mobile Services SDK:er för at
 
 För Adobe Mobile SDK-delar av dina mobilappar kan du använda följande inställningar och metoder:
 
-* Använd `getAllIdentifiersAsync` metoden om du vill hämta data från SDK:n och skicka dessa data till servrarna.
+* Om du vill hämta data från SDK:erna och skicka dessa data till servrarna använder du metoden `getAllIdentifiersAsync`.
 
    Mer information finns i [Hämta lagrade identifierare](/help/android/c-mob-privacy-gdpr-android/c-mob-gdpr-ret-stored-ids-android.md).
 

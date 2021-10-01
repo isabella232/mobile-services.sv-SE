@@ -1,17 +1,14 @@
 ---
 description: Versionsinformation och kända fel för Windows 8.1 Universal App Store SDK 4.x för Experience Cloud Solutions.
-seo-description: Versionsinformation och kända fel för Windows 8.1 Universal App Store SDK 4.x för Experience Cloud Solutions.
-seo-title: Versionsinformation
 solution: Experience Cloud,Analytics
 title: Versionsinformation
 topic-fix: Developer and implementation
 uuid: 45634319-7949-4e24-b193-4f876af97a69
 exl-id: 21bd2e72-cc9e-4fc0-940f-dfc560d7a536
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '248'
-ht-degree: 6%
+source-wordcount: '228'
+ht-degree: 2%
 
 ---
 
@@ -30,5 +27,4 @@ Utöver betydande prestandaökningar har version 4 även följande nya funktione
 | Tidsbestämd åtgärd | Timed Actions är ett enkelt sätt att se hur lång tid det tar för användarna att slutföra en process från början till slut i appen. Med tidsbestämda åtgärder kan du beräkna hur lång tid som ska vara i sessionen och den totala tiden (korssession) det tar för åtgärden att slutföras. Mer information finns i *Timed Actions* i [Analytics](/help/windows-appstore/analytics/analytics.md). |
 | Opt-in/Opt-out | Aktivera och inaktivera analyser snabbt. |
 
-
-Mer information om versionsinformation för alla lösningar finns i [Versionsinformation för Adobe Experience Cloud](https://docs.adobe.com/content/help/sv-SE/release-notes/experience-cloud/current.html).
+Mer information om versionsinformation för alla lösningar finns i [Versionsinformation för Adobe Experience Cloud](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html).

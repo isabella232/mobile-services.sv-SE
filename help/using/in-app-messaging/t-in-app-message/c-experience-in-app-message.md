@@ -1,17 +1,14 @@
 ---
 description: Konfigurera upplevelsealternativ för meddelanden i appen, inklusive typ (helskärm, varning eller meddelanden) och alternativ för visning, text och knappar.
 keywords: mobil
-seo-description: Konfigurera upplevelsealternativ för meddelanden i appen, inklusive typ (helskärm, varning eller meddelanden) och alternativ för visning, text och knappar.
-seo-title: Experience In-App Message
 solution: Experience Cloud,Analytics
 title: Experience In-App Message
 topic-fix: Metrics
 uuid: 4c6d6756-47fb-4f1b-8338-0b0c9b0fceb0
 exl-id: eeb1527d-c546-4951-9947-db810fdb8eee
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '603'
 ht-degree: 0%
 
 ---

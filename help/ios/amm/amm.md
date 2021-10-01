@@ -1,16 +1,13 @@
 ---
 description: Den här informationen hjälper dig att skicka signaler och hämta besökarsegment från Audience Manager.
-seo-description: Den här informationen hjälper dig att skicka signaler och hämta besökarsegment från Audience Manager.
-seo-title: Audience Manager
 solution: Experience Cloud,Analytics
 title: Audience Manager
 topic-fix: Developer and implementation
 uuid: a1f86814-6b1e-4fe1-9400-f443b92405f1
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '133'
-ht-degree: 6%
+source-wordcount: '118'
+ht-degree: 5%
 
 ---
 

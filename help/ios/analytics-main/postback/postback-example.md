@@ -1,16 +1,13 @@
 ---
 description: Exempel på definitioner och källkod för funktionen Postback.
-seo-description: Exempel på definitioner och källkod för funktionen Postback.
-seo-title: Exempel på återanslående
 solution: Experience Cloud,Analytics
 title: Exempel på återanslående
 topic-fix: Developer and implementation
 uuid: 809c5646-7a80-40df-984b-0af89d854259
 exl-id: 3ec5abf1-a406-48b6-91b1-fbcb0a9094ee
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '124'
+source-wordcount: '113'
 ht-degree: 0%
 
 ---
@@ -61,6 +58,6 @@ NSDictionary *contextData = @{@"user.name":@"bob", @"user.zip":@"90210"};
 [ADBMobile trackState:@"MainMenu" data:contextData];
 ```
 
-Eftersom det här spårningsanropet är `“MainMenu”` utlöser det ovanstående återanslående meddelandet. URL:en ersätter alla mallvariabler med värden från träffen. Om man utgår ifrån att användarens föregående session var 132 sekunder lång och att användaren är i iOS SDK version 4.6.0, visas ett exempel på den resulterande URL:en:
+Eftersom det här spårningsanropet är `"MainMenu"` utlöser det ovanstående återanslående meddelandet. URL:en ersätter alla mallvariabler med värden från träffen. Om man utgår ifrån att användarens föregående session var 132 sekunder lång och att användaren är i iOS SDK version 4.6.0, visas ett exempel på den resulterande URL:en:
 
 `https://my.server.com/?user=bob&zip=90210&c16=4.6.0-iOS&c27=cln,132`

@@ -1,22 +1,19 @@
 ---
 description: Med Android SDK 4.x för Experience Cloud Solutions kan ni mäta Android-applikationer, leverera riktat innehåll i appen och utnyttja och samla in målgruppsdata via målgruppshantering.
 keywords: android;bibliotek;mobil;sdk
-seo-description: Med Android SDK 4.x för Experience Cloud Solutions kan ni mäta Android-applikationer, leverera riktat innehåll i appen och utnyttja och samla in målgruppsdata via målgruppshantering.
-seo-title: Android SDK 4.x för Experience Cloud Solutions
 solution: Experience Cloud,Analytics
 title: Android SDK 4.x för Experience Cloud Solutions
 topic-fix: Developer and implementation
 uuid: 56f1ff41-0365-41dd-bdde-245c823dff07
 exl-id: c2454e94-a9af-42f3-ab45-14f68531faab
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
 workflow-type: tm+mt
-source-wordcount: '451'
-ht-degree: 4%
+source-wordcount: '397'
+ht-degree: 1%
 
 ---
 
-# Android SDK 4.x för Experience Cloud-lösningar{#android-sdk-x-for-experience-cloud-solutions}
+# Android SDK 4.x för Experience Cloud{#android-sdk-x-for-experience-cloud-solutions}
 
 Med Android SDK 4.x för Experience Cloud Solutions kan ni mäta Android-applikationer, leverera riktat innehåll i appen och utnyttja och samla in målgruppsdata via målgruppshantering.
 
@@ -52,14 +49,14 @@ Lite information att komma ihåg:
 
 ## Användardokumentation för Adobe Mobile {#section_7583FD5FDED143619048E9744A3F2D21}
 
-Adobe Mobile-tjänsterna utgör ett gränssnitt som samlar funktioner för mobilmarknadsföring för mobilappar från hela Adobe Experience Cloud. Mer information om gränssnittet och användardokumentationen finns i [Adobe Mobile Services](https://docs.adobe.com/content/help/en/mobile-services/using/home.html).
+Adobe Mobile-tjänsterna utgör ett gränssnitt som samlar funktioner för mobilmarknadsföring för mobilappar från hela Adobe Experience Cloud. Mer information om gränssnittet och användardokumentationen finns i [Adobe Mobile Services](/help/using/home.md).
 
 ## Versionsinformation {#section_F8181DC052D44DD2A99AB40A41F6792C}
 
-Den senaste informationen om Experience Cloud finns i [Versionsinformation för Experience Cloud](https://docs.adobe.com/content/help/sv-SE/release-notes/experience-cloud/current.html).
+Den senaste informationen om Experience Cloud finns i [Versionsinformation för Experience Cloud](/help/using/home.md).
 
 ## Använda Bloodhound
 
 >[!IMPORTANT]
 >
->Från och med den **30 april 2017** har Adobe Bloodhound solnedgångar. Från och med den 1 maj 2017 kommer inga ytterligare förbättringar att göras och ingen ytterligare support för tekniker eller Adobe Expert Care kommer att ges.
+>Från och med den **30 april 2017** är Adobe Bloodhound solnedgången. Från och med 1 maj 2017 finns inga ytterligare förbättringar och ingen ytterligare support för tekniker eller Adobe Expert Care.

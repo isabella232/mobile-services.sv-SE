@@ -1,23 +1,20 @@
 ---
 description: Med Target Preview kan du enkelt utföra QA-åtgärder från början till slut för målaktiviteter och förhandsgranska dessa aktiviteter på enheten.
-seo-description: Med Target Preview kan du enkelt utföra QA-åtgärder från början till slut för målaktiviteter och förhandsgranska dessa aktiviteter på enheten.
-seo-title: Förhandsvisa mål på Android
 title: Förhandsvisa mål på Android
 uuid: f3c82d64-009c-4929-a5e6-3677b2977889
-translation-type: tm+mt
-source-git-commit: 83e6968efb0ed1b4ef504286c6cb2e8e4d2eaf94
+exl-id: 69103f3a-9521-4808-8ecd-7b960efca04d
+source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
 workflow-type: tm+mt
-source-wordcount: '139'
-ht-degree: 10%
+source-wordcount: '120'
+ht-degree: 12%
 
 ---
-
 
 # Förhandsvisa mål på Android {#target-preview-on-android}
 
 Med Target Preview kan du enkelt utföra QA-åtgärder från början till slut för målaktiviteter och förhandsgranska dessa aktiviteter på enheten.
 
-Mer information om hur du konfigurerar och använder Target Preview finns i [Target Mobile Preview](https://docs.adobe.com/content/help/en/target/using/implement-target/mobile-apps/target-mobile-preview.html).
+Mer information om hur du konfigurerar och använder förhandsvisning av mål finns i [Målmobilförhandsvisning](https://experienceleague.adobe.com/docs/target/using/implement-target/mobile-apps/target-mobile-preview.html) i användarhandboken för Adobe Target.
 
 >[!IMPORTANT]
 >
@@ -36,6 +33,5 @@ Mer information om hur du konfigurerar och använder Target Preview finns i [Tar
    * Här är kodexemplet för den här metoden:
 
       ```java
-      Target.setPreviewRestartDeeplink(“myapp://myhost”); 
+      Target.setPreviewRestartDeeplink("myapp://myhost"); 
       ```
-

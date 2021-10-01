@@ -1,16 +1,13 @@
 ---
 description: Det här referensmaterialet hjälper dig att använda Android SDK för Experience Cloud Solutions.
-seo-description: Det här referensmaterialet hjälper dig att använda Android SDK för Experience Cloud Solutions.
-seo-title: Android SDK - referensöversikt
 solution: Experience Cloud,Analytics
 title: Android SDK - referensöversikt
 topic-fix: Developer and implementation
 uuid: ce8f6dcb-0e2b-47eb-99f2-fbdb97079161
 exl-id: 3a4299c7-e0a0-486c-869f-0c915498ca86
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '141'
+source-wordcount: '124'
 ht-degree: 2%
 
 ---

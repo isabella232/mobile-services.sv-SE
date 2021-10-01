@@ -1,17 +1,14 @@
 ---
 description: Lista över klasser och uppräkningar som kan användas i Xamarin-program.
-seo-description: Lista över klasser och uppräkningar som kan användas i Xamarin-program.
-seo-title: Klasser, menyer och gränssnitt
 title: Klasser, menyer och gränssnitt
 uuid: 2527b3ae-a447-4b2e-9e90-b3b8ec8cb47a
-translation-type: tm+mt
-source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
+exl-id: 72bc40f6-005c-4fb4-b41d-761d48fe78da
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '56'
-ht-degree: 0%
+source-wordcount: '42'
+ht-degree: 2%
 
 ---
-
 
 # Klasser, menyer och gränssnitt{#classes-enums-and-interfaces}
 

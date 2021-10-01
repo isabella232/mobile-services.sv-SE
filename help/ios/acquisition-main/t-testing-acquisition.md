@@ -1,18 +1,15 @@
 ---
 description: Följande information hjälper dig att skicka en länk till en äldre kampanj som baseras på ett enhets fingeravtryck.
-seo-description: Följande information hjälper dig att skicka en länk till en äldre kampanj som baseras på ett enhets fingeravtryck.
-seo-title: Testar tidigare förvärv
 solution: Experience Cloud,Analytics
 title: Testar tidigare förvärv
 uuid: e0591f4a-e26b-4fe4-97c1-a6831a926fa5
-translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+exl-id: 431dc400-952a-4515-9d14-ba2efef4b2c4
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '247'
 ht-degree: 0%
 
 ---
-
 
 # Testa tidigare förvärv {#testing-legacy-acquisition}
 
@@ -22,7 +19,7 @@ Om mobilappen ännu inte finns i Google Play kan du välja vilken mobilapp som h
 
 1. Navigera till **[!UICONTROL Use Legacy Acquisition Links]** i Adobe Mobile Services och generera en URL för anskaffningskampanj.
 
-   Mer information finns i [Använda länkar](/help/using/acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/c-use-legacy-acquisition-links/c-use-legacy-acquisition-links.md)för äldre anskaffning.
+   Mer information finns i [Använd länkar för äldre förvärv](/help/using/acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/c-use-legacy-acquisition-links/c-use-legacy-acquisition-links.md).
 
 1. Klicka på den genererade länken på den mobila enhet som du vill installera appen på.
 

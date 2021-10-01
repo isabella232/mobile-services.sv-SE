@@ -1,16 +1,13 @@
 ---
 description: Ett exempel på variabeln products med Merchandising eVars och produktspecifika händelser.
-seo-description: Ett exempel på variabeln products med Merchandising eVars och produktspecifika händelser.
-seo-title: Produkterna kan variera med Merchandising eVars och produktspecifika event
 solution: Experience Cloud,Analytics
 title: Produkterna kan variera med Merchandising eVars och produktspecifika event
 topic-fix: Developer and implementation
 uuid: 94e882e4-b19d-4c48-9dfb-331465490347
 exl-id: 3a90f624-da13-4c26-9e4c-3a4af33bc5ee
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '86'
+source-wordcount: '66'
 ht-degree: 0%
 
 ---

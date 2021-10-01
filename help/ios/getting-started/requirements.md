@@ -1,17 +1,14 @@
 ---
 description: Följ de här stegen för att konfigurera en rapportserie för att samla in appdata för iOS.
-seo-description: Följ de här stegen för att konfigurera en rapportserie för att samla in appdata för iOS.
-seo-title: Innan du börjar
 solution: Experience Cloud,Analytics
 title: Innan du börjar
 topic-fix: Developer and implementation
 uuid: 04133f68-3618-41fd-8a13-aec5b6f04df6
 exl-id: 83da7cf5-3211-484d-bfe8-7b3b4999eea2
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
 workflow-type: tm+mt
-source-wordcount: '563'
-ht-degree: 4%
+source-wordcount: '552'
+ht-degree: 1%
 
 ---
 
@@ -53,9 +50,9 @@ Du kan logga in på Adobe Mobile Services på något av följande sätt:
 
 * **Experience Cloud**
 
-   Logga in på [Experience Cloud](https://marketing.adobe.com) med din Adobe ID.
+   Logga in på [Experience Cloud](https://experience.adobe.com) med din Adobe ID.
 
-   Den här metoden förutsätter att ditt företag har etablerats och att du har länkat ditt Analytics-konto. Mer information om etablering finns i [Hantera användare och produkter av Experience Cloud](https://docs.adobe.com/content/help/sv-SE/core-services/interface/manage-users-and-products/admin-getting-started.html). Mer information om hur du länkar ditt konto finns i [Organisationer och kontolänkning](https://docs.adobe.com/content/help/sv-SE/core-services/interface/manage-users-and-products/organizations.html).
+   Den här metoden förutsätter att ditt företag har etablerats och att du har länkat ditt Analytics-konto. Mer information om etablering finns i [Hantera användare och produkter av Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html) i guiden Komponenter i Experience Cloud Central Interface. Mer information om hur du länkar ditt konto finns i [Organisationer i Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html).
 
    >[!TIP]
    >
@@ -84,7 +81,7 @@ Så här skapar du en rapportserie för att samla in appdata och definiera en ap
 
 1. Välj din **[!UICONTROL Timezone]**, din **[!UICONTROL Currency]** och klicka på **[!UICONTROL Save]**.
 
-## Hämta SDK {#section_044C17DF82BC4FD8A3E409C456CE9A46}
+## Ladda ned SDK {#section_044C17DF82BC4FD8A3E409C456CE9A46}
 
 Så här hämtar du mobil-SDK:
 

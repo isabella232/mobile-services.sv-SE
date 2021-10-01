@@ -1,17 +1,14 @@
 ---
 description: 'På sidan Hantera appinställningar kan du göra följande typer av ändringar '
-seo-description: 'På sidan Hantera appinställningar kan du göra följande typer av ändringar '
-seo-title: Konfigurera din app
 title: Konfigurera din app
 uuid: c088e12d-73b6-40c4-b8cc-ec3bb3d3aa4a
-translation-type: tm+mt
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+exl-id: 52fd58ad-87b8-499b-9c46-c3176bcda37c
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '368'
+source-wordcount: '351'
 ht-degree: 0%
 
 ---
-
 
 # Konfigurera din app {#configuring-your-app}
 
@@ -31,7 +28,7 @@ På sidan Hantera appinställningar kan du göra följande typer av ändringar:
 
       * **Förvärv**
 
-         Spåra refererande URL:er för appnedladdningskampanjer. Mer information finns i [Anskaffning](/help/using/acquisition-main/acquisition-main.md).
+         Spåra refererande URL:er för appnedladdningskampanjer. Mer information finns i [Förvärv](/help/using/acquisition-main/acquisition-main.md).
 
       * **Livscykel**
 
@@ -62,7 +59,7 @@ På sidan Hantera appinställningar kan du göra följande typer av ändringar:
 
    >[!IMPORTANT]
    >
-   >Innan du hämtar SDK:er och verktyg måste du konfigurera SDK Analytics-alternativen. Mer information finns i [Konfigurera SDK Analytics-alternativ](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-analytics/t-config-analytics.md).
+   >Innan du hämtar SDK:er och verktyg måste du konfigurera SDK Analytics-alternativen. Mer information finns i [Konfigurera SDK Analytics Options](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-analytics/t-config-analytics.md).
 
    När du är redo att uppgradera till 4.x SDK:n, eller om du arbetar med en ny app, hämtar du de senaste SDK:erna och utvecklingsverktygen längst ned på sidan Hantera programinställningar.
 

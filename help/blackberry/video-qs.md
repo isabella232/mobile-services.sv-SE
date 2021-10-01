@@ -1,23 +1,20 @@
 ---
 description: Den allmänna processen att mäta video är mycket lik på alla AppMeasurement-plattformar. I det här avsnittet finns en grundläggande översikt över utvecklaråtgärderna tillsammans med kodexempel.
-seo-description: Den allmänna processen att mäta video är mycket lik på alla AppMeasurement-plattformar. I det här avsnittet finns en grundläggande översikt över utvecklaråtgärderna tillsammans med kodexempel.
-seo-title: Videoanalys
 title: Videoanalys
 uuid: 0d2731f3-77a9-4db1-9a8c-1e56c212ecb4
-translation-type: tm+mt
-source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+exl-id: 90da1a9e-2faa-429c-969e-869ebedf08cc
+source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
 workflow-type: tm+mt
-source-wordcount: '866'
+source-wordcount: '835'
 ht-degree: 14%
 
 ---
-
 
 # Videoanalys {#video-analytics}
 
 Den allmänna processen att mäta video är mycket lik på alla AppMeasurement-plattformar. I det här avsnittet finns en grundläggande översikt över utvecklaråtgärderna tillsammans med kodexempel.
 
-Mer information om videomätning finns i guiden [Mäta ljud och video i Adobe Analytics](https://docs.adobe.com/content/help/sv-SE/media-analytics/using/media-overview.html) .  I följande tabell visas de mediedata som skickas till Analytics. Använd bearbetningsregler för att mappa kontextdata i kolumnen Kontextdatavariabel till en Analytics-variabel enligt beskrivningen i kolumnen Variabeltyp.
+Mer information om videomätning finns i guiden [Mäta direktuppspelningsmedia i Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html).  I följande tabell visas de mediedata som skickas till Analytics. Använd bearbetningsregler för att mappa kontextdata i kolumnen Kontextdatavariabel till en Analytics-variabel enligt beskrivningen i kolumnen Variabeltyp.
 
 ## Mappa spelarhändelser till analysvariabler
 
@@ -25,7 +22,7 @@ Mer information om videomätning finns i guiden [Mäta ljud och video i Adobe An
 
    (Obligatoriskt) Samlar in namnet på videon, enligt specifikationen i implementeringen, när en besökare visar videon på något sätt.Du kan lägga till klassificeringar för den här variabeln.
 
-   **(Valfritt)** Custom Insight-variabeln innehåller information om videopappning.
+   **(Valfritt)** Variabeln Custom Insight innehåller information om videoavslut.
 
    * Variabelnamn: eVar
       * Standardförfallodatum: Besök
@@ -33,14 +30,14 @@ Mer information om videomätning finns i guiden [Mäta ljud och video i Adobe An
 
 * **a.media.name**
 
-   (**Valfritt**) Innehåller information om videovägning. ClientCare måste aktivera målning för den här variabeln.
+   (**Valfritt**) Tillhandahåller information om videopassning. Det måste vara kundtjänst som aktiverat för den här variabeln.
 
    * Händelsetyp: Custom Insight (s.prop)
    * Custom Insight (s.prop)
 
 * **a.media.segment**
 
-   (**Obligatoriskt**) Samlar in videosegmentdata, inklusive segmentnamnet och den ordning i vilken segmentet finns i videon. Den här variabeln fylls i genom att den aktiveras när spelarhändelser spåras automatiskt, eller genom att ett anpassat segmentnamn anges när spelarhändelser spåras manuellt. `segmentByMilestones`
+   (**Obligatoriskt**) Samlar in videosegmentdata, inklusive segmentnamnet och den ordning i vilken segmentet finns i videon. Den här variabeln fylls i genom att variabeln `segmentByMilestones` aktiveras när spelarhändelser spåras automatiskt, eller genom att ett anpassat segmentnamn anges när spelarhändelser spåras manuellt.
 
    När en besökare till exempel tittar på det första segmentet i en video kan SiteCatalyst samla `1:M:0-25` i eVar Segment. Standardmetoden för insamling av videodata samlar in data vid start- (uppspelning), start- och slutpunkterna för video (stopp).
 
@@ -86,7 +83,7 @@ Mer information om videomätning finns i guiden [Mäta ljud och video i Adobe An
 
 ## Spåra spelarhändelser {#section_C7F43AECBC0D425390F7FCDF3035B65D}
 
-För att mäta videouppspelning måste metoderna `mediaPlay`, `mediaStop`och `mediaClose` anropas vid rätt tidpunkt. När spelaren exempelvis pausas `mediaStop`. `mediaPlay` anropas när uppspelningen startar eller återupptas.
+För att mäta videouppspelning måste metoderna `mediaPlay`, `mediaStop` och `mediaClose` anropas vid rätt tidpunkt. Om spelaren exempelvis är pausad är `mediaStop`. `mediaPlay` anropas när uppspelningen startar eller återupptas.
 
 ## Mediemätningsklass och metodreferens {#section_50DF9359A7B14DF092634C8E913C77FE}
 
@@ -108,7 +105,7 @@ För att mäta videouppspelning måste metoderna `mediaPlay`, `mediaStop`och `me
 
 * **openAd**
 
-   Öppnar ett `MediaSettings` objekt för spårning.
+   Öppnar ett `MediaSettings`-objekt för spårning.
 
    * Här är syntaxen för den här metoden:
 
@@ -124,7 +121,7 @@ För att mäta videouppspelning måste metoderna `mediaPlay`, `mediaStop`och `me
 
 * **stäng**
 
-   Stänger medieobjektet med namnet *`name`*.
+   Stänger medieobjektet *`name`*.
 
    * Här är syntaxen för den här metoden:
 
@@ -140,7 +137,7 @@ För att mäta videouppspelning måste metoderna `mediaPlay`, `mediaStop`och `me
 
 * **play**
 
-   Spelar upp medieobjektet med namnet *`name`* vid angiven *`offset`* (i sekunder).
+   Spelar upp medieobjektet *`name`* vid angiven *`offset`* (i sekunder).
 
    * Här är syntaxen för den här metoden:
 
@@ -156,7 +153,7 @@ För att mäta videouppspelning måste metoderna `mediaPlay`, `mediaStop`och `me
 
 * **complete**
 
-   Markera mediaobjektet som slutfört manuellt vid *`offset`* angivet (i sekunder).
+   Markera medieobjektet som slutfört manuellt på *`offset`* (i sekunder).
 
    * Här är syntaxen för den här metoden:
 
@@ -172,7 +169,7 @@ För att mäta videouppspelning måste metoderna `mediaPlay`, `mediaStop`och `me
 
 * **stop**
 
-   Meddelar mediemodulen att videon har stoppats eller pausats vid den angivna *förskjutningen*.
+   Meddelar mediemodulen att videon har stoppats eller pausats vid angiven *offset*.
 
    * Här är syntaxen för den här metoden:
 

@@ -1,17 +1,14 @@
 ---
 description: Du kan konfigurera målgruppsalternativ för meddelanden i appen, inklusive alternativ för visning, utlösare och egenskaper.
 keywords: mobil
-seo-description: Du kan konfigurera målgruppsalternativ för meddelanden i appen, inklusive alternativ för visning, utlösare och egenskaper.
-seo-title: Målgruppsmeddelande i appen
 solution: Experience Cloud,Analytics
 title: Målgruppsmeddelande i appen
 topic-fix: Metrics
 uuid: 6c815d4c-7626-4cf4-9158-3f059c79317a
 exl-id: c85f2c0d-9c88-4d5a-8247-d8a101195d3a
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '535'
+source-wordcount: '518'
 ht-degree: 0%
 
 ---
@@ -48,7 +45,6 @@ Du kan konfigurera målgruppsalternativ för meddelanden i appen, inklusive alte
 
    * **[!UICONTROL Traits]**
 Du kan bestämma vem som ska se meddelandet i appen när det utlöses och filtrera (segmentera) målgruppen så att den träffar som har angivna data. Du kan till exempel definiera en regel där intressepunkter innehåller Denver. Med det här filtret kan du visa meddelandet till kunder som befinner sig i någon av dina intressepunkter hos Denver i namnet vid utlösningstidpunkten.
-
 
 
 ## Ytterligare information om egenskaper och utlösare {#section_48C39EFB8CAA4F62B994FCC91DF588E6}

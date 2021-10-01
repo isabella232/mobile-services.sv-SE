@@ -1,21 +1,18 @@
 ---
 description: Det här avsnittet innehåller information om hur du felsöker problem som du kan råka ut för under testning av värvning.
 keywords: android;bibliotek;mobil;sdk
-seo-description: Det här avsnittet innehåller information om hur du felsöker problem som du kan råka ut för under testning av värvning.
-seo-title: Felsöka förvärvningstestning
 solution: Experience Cloud,Analytics
 title: Felsöka förvärvningstestning
 topic-fix: Developer and implementation
 exl-id: 1ed2ad89-4e89-43da-aa21-f688b4d1c0d1
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '216'
 ht-degree: 0%
 
 ---
 
-# Felsöka förvärvartestning {#troubleshoot-acquisition-testing}
+# Felsöka förvärvningstestning {#troubleshoot-acquisition-testing}
 
 Det här avsnittet innehåller information om hur du felsöker problem som du kan råka ut för under testning av värvning.
 
@@ -25,7 +22,7 @@ Det här avsnittet innehåller information om hur du felsöker problem som du ka
 
 * Kontrollera att `Config.setContext(this.getApplicationContext())` anropas från huvudaktiviteten.
 
-   Mer information finns i [Konfigurationsmetoder](https://docs.adobe.com/content/help/en/mobile-services/android/configuration-android/methods.html).
+   Mer information finns i [Konfigurationsmetoder](../configuration/methods.md).
 
 * Kontrollera att den behörighet som krävs för Mobile SDK finns i `AndroidManifest.xml`-filen:
 
@@ -41,7 +38,7 @@ Det här avsnittet innehåller information om hur du felsöker problem som du ka
 
    För manuell testning rekommenderar vi att du ökar `referrerTimeout` till 10-15 sekunder, så att du har tillräckligt med tid för att skicka information om referenten innan installationsträffen bearbetas.
 
-* Kör alla steg i [Testa Marketing Link-förvärv](https://docs.adobe.com/content/help/en/mobile-services/android/acquisition-android/t-testing-marketing-link-acquisition.html) och kontrollera att du kör kommandot `adb shell` först och sedan följande:
+* Kör alla steg i [Testa Marketing Link-förvärv](t-testing-marketing-link-acquisition.md) och kontrollera att du kör kommandot `adb shell` först och sedan följande:
 
    ```java
    am broadcast -a com.android.vending.INSTALL_REFERRER -n nl.postnl.app/.tracking.AdobeAcquisitionLinkBroadcastReceiver --es "referrer" "utm_source=adb_acq_v3&utm_campaign=adb_acq_v3&utm_content=<the newly generated id at step #7>"

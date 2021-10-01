@@ -1,16 +1,13 @@
 ---
 description: Den här informationen hjälper dig att använda ADBMobil.json-konfigurationsfilen.
-seo-description: Den här informationen hjälper dig att använda ADBMobil.json-konfigurationsfilen.
-seo-title: ADBMomobile JSON-konfiguration
 solution: Experience Cloud,Analytics
 title: ADBMomobile JSON-konfiguration
 topic-fix: Developer and implementation
 uuid: d9708d59-e30a-4f6c-ab1b-d9499855d0c2
 exl-id: e3515de3-3aec-4dd0-996d-9c561ad1b1de
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '1715'
+source-wordcount: '1708'
 ht-degree: 8%
 
 ---
@@ -19,7 +16,7 @@ ht-degree: 8%
 
 Den här informationen hjälper dig att använda konfigurationsfilen `ADBMobile.json`.
 
-## ADBMobileConfig.json, konfigurationsfilreferens {#section_5AD4EDF87E304980B4AC4A5657FDA8B9}
+## ADBMobileConfig.json, referens till konfigurationsfil {#section_5AD4EDF87E304980B4AC4A5657FDA8B9}
 
 Samma config-fil kan användas för appen på flera plattformar:
 
@@ -73,7 +70,7 @@ Samma config-fil kan användas för appen på flera plattformar:
 
 * **charset**
 
-   Definierar den teckenuppsättning som du använder för data som skickas till Analytics. Teckenuppsättningen används för att konvertera inkommande data till UTF-8 för lagring och rapportering. Mer information finns i [s.charSet](https://docs.adobe.com/content/help/en/analytics/implementation/vars/config-vars/charset.html).
+   Definierar den teckenuppsättning som du använder för data som skickas till Analytics. Teckenuppsättningen används för att konvertera inkommande data till UTF-8 för lagring och rapportering. Mer information finns i [charSet](https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/charset.html)-variabeln i Adobe Analytics-dokumentationen.
 
    * Minsta SDK-version: 4.0
 
@@ -162,7 +159,7 @@ Samma config-fil kan användas för appen på flera plattformar:
    >Från och med version 4.2 definieras POI i gränssnittet för Adobe Mobile och synkroniseras dynamiskt till programkonfigurationsfilen. Synkroniseringen kräver inställningen `analytics.poi`:
 
    ```js
-   “analytics.poi”: “`https://assets.adobedtm.com/…/yourfile.json`”,
+   "analytics.poi": "`https://assets.adobedtm.com/…/yourfile.json`",
    ```
 
    Om den här inställningen inte är konfigurerad måste `ADBMobile.json`-filen uppdateras för att inkludera den här raden. Information om hur du hämtar en uppdaterad konfigurationsfil finns i [Innan du startar](/help/ios/getting-started/requirements.md).
@@ -275,8 +272,7 @@ Samma config-fil kan användas för appen på flera plattformar:
 
    * Minsta SDK-version: 4.0
 
-
-## Exempel på `ADBMobileConfig.json` fil {#section_52FA7C71A99147AFA9BE08D2177D8DA7}
+## Exempel på `ADBMobileConfig.json`-fil {#section_52FA7C71A99147AFA9BE08D2177D8DA7}
 
 Här följer ett exempel på en `ADBMobileConfig.json`-fil:
 

@@ -1,17 +1,14 @@
 ---
 description: Här är lite information om hur du mäter video på iOS med hjälp av videomätning i milstolpe.
-seo-description: Här är lite information om hur du mäter video på iOS med hjälp av videomätning i milstolpe.
-seo-title: Videoanalys
 solution: Experience Cloud,Analytics
 title: Videoanalys
 topic-fix: Developer and implementation
 uuid: d75fa415-78f6-4f50-a563-76949f040138
 exl-id: d4d11ca0-1280-49db-8983-5b6d83856482
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '952'
-ht-degree: 14%
+source-wordcount: '933'
+ht-degree: 13%
 
 ---
 
@@ -21,7 +18,7 @@ Här är lite information om hur du mäter video på iOS med hjälp av videomät
 
 >[!TIP]
 >
->Under videouppspelning skickas vanliga&quot;hjärtslag&quot;-anrop till den här tjänsten för att mäta den tid som spelas upp. Dessa hjärtslagsanrop skickas var 10:e sekund, vilket resulterar i detaljerade videointeraktionsvärden och exaktare videoutfallsrapporter. Mer information finns i [Mäta ljud och video i Adobe Analytics](https://docs.adobe.com/content/help/sv-SE/media-analytics/using/media-overview.html).
+>Under videouppspelning skickas vanliga&quot;hjärtslag&quot;-anrop till den här tjänsten för att mäta den tid som spelas upp. Dessa hjärtslagsanrop skickas var 10:e sekund, vilket resulterar i detaljerade videointeraktionsvärden och exaktare videoutfallsrapporter. Mer information finns i [Mäta direktuppspelningsmedia i Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html).
 
 Den allmänna processen att mäta video är mycket lik på alla plattformar. Innehållet ger en grundläggande översikt över utvecklaråtgärderna med kodexempel.
 
@@ -48,7 +45,7 @@ I följande tabell visas de mediedata som skickas till Analytics. Använd bearbe
 
 * **a.media.segment**
 
-   (Obligatoriskt) Samlar in videosegmentdata, inklusive segmentnamnet och den ordning i vilken segmentet finns i videon. Den här variabeln fylls i genom att variabeln `segmentByMilestones` aktiveras när spelarhändelser spåras automatiskt, eller genom att ett anpassat segmentnamn anges när spelarhändelser spåras manuellt. När en besökare till exempel tittar på det första segmentet i en video kan SiteCatalyst samla in följande i segmenten `1:M:0-25`.
+   (Obligatoriskt) Samlar in videosegmentdata, inklusive segmentnamnet och den ordning i vilken segmentet finns i videon. Den här variabeln fylls i genom att variabeln `segmentByMilestones` aktiveras när spelarhändelser spåras automatiskt, eller genom att ett anpassat segmentnamn anges när spelarhändelser spåras manuellt. När en besökare till exempel tittar på det första segmentet i en video kan SiteCatalyst samla in följande i eVar `1:M:0-25` Segment.
 
    Standardmetoden för insamling av videodata samlar in data vid följande punkter:
 
@@ -97,7 +94,7 @@ I följande tabell visas de mediedata som skickas till Analytics. Använd bearbe
    * Variabeltyp: Händelse
    * Typ: Räknare
 
-## Konfigurera medieinställningar {#section_929945D4183C428AAF3B983EFD3E2500}
+## Konfigurera mediainställningar {#section_929945D4183C428AAF3B983EFD3E2500}
 
 Konfigurera ett `ADBMediaSettings`-objekt med de inställningar du vill använda för att spåra video:
 

@@ -1,17 +1,14 @@
 ---
 description: Användningsrapporter visar genomsnittlig sessionslängd, dagliga och månatliga användare, uppgraderingar och andra insikter som hjälper dig att förstå hur och hur ofta appen används. Kvarhållningsrapporter visar snabbt användarnas kvarhållningsnivåer 1 dag, 7 dagar och 28 dagar efter den första starten.
 keywords: mobil
-seo-description: Användningsrapporter visar genomsnittlig sessionslängd, dagliga och månatliga användare, uppgraderingar och andra insikter som hjälper dig att förstå hur och hur ofta appen används. Kvarhållningsrapporter visar snabbt användarnas kvarhållningsnivåer 1 dag, 7 dagar och 28 dagar efter den första starten.
-seo-title: Rapporter
 solution: Experience Cloud,Analytics
 title: Rapporter
 topic-fix: Reports,Metrics
 uuid: 2abc2bd1-dbae-4af1-9b8d-1df2f6d3a81f
 exl-id: a95dd9c9-49f3-41df-87bf-6a2ac0d46c5c
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '174'
+source-wordcount: '130'
 ht-degree: 4%
 
 ---

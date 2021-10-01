@@ -1,17 +1,14 @@
 ---
 description: En översikt till avsnittet Plats.
-keywords: mobile
-seo-description: En översikt till avsnittet Plats.
-seo-title: Platsöversikt
+keywords: mobil
 title: Platsöversikt
-translation-type: tm+mt
-source-git-commit: 41aa0a994bd0ad1e6f5421cf368d78b616ff9170
+exl-id: eaec9a06-8f5e-497e-8d03-d07374325909
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '105'
-ht-degree: 4%
+source-wordcount: '98'
+ht-degree: 6%
 
 ---
-
 
 # Platsöversikt {#location-overview}
 
@@ -21,4 +18,4 @@ Letar du efter information och dokumentation om Adobe Experience Platform Mobile
 
 >[!IMPORTANT]
 >
->Från om med september 2018 har vi släppt en ny större version av SDK. Dessa nya Adobe Experience Platform Mobile SDK:er kan konfigureras via [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html). Gå till [https://launch.adobe.com/](https://launch.adobe.com/)för att komma igång. Om du vill se vad som finns i Experience Platform SDK-databaserna går du till [Github: Adobe Experience Platform SDKs](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
+>Från om med september 2018 har vi släppt en ny större version av SDK. Dessa nya Adobe Experience Platform Mobile SDK:er kan konfigureras via [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html). Gå till [https://launch.adobe.com/](https://launch.adobe.com/) för att komma igång. Om du vill se vad som finns i Experience Platform SDK-databaserna går du till [Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks).

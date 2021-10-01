@@ -1,17 +1,14 @@
 ---
 description: Adobe Experience Platform Identity Service tillhandahåller ett universellt besökar-ID för alla Experience Cloud-lösningar. ID-tjänsten krävs av Analytics för Target, hjärtslag för video och framtida integreringar med Experience Cloud.
-seo-description: Adobe Experience Platform Identity Service tillhandahåller ett universellt besökar-ID för alla Experience Cloud-lösningar. ID-tjänsten krävs av Analytics för Target, hjärtslag för video och framtida integreringar med Experience Cloud.
-seo-title: Experience Cloud ID
 solution: Experience Cloud,Analytics
 title: Experience Cloud ID
 topic-fix: Developer and implementation
 uuid: 13628ea8-3cd4-4cfc-8ff6-722c33f7813a
 exl-id: aa7db365-ad21-431f-bff6-2a6da212dd0c
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
 workflow-type: tm+mt
-source-wordcount: '261'
-ht-degree: 3%
+source-wordcount: '230'
+ht-degree: 0%
 
 ---
 
@@ -21,11 +18,11 @@ Adobe Experience Platform Identity Service tillhandahåller ett universellt bes�
 
 >[!TIP]
 >
->Du behöver inte fylla i Experience Cloud-ID om du inte använder Adobe Experience Platform identitetstjänst. Mer information finns i [Adobe Experience Platform identitetstjänst](https://docs.adobe.com/content/help/sv-SE/id-service/using/home.html).
-
-**Kräver SDK version 4.3 eller senare**
+>Du behöver inte fylla i Experience Cloud-ID om du inte använder Adobe Experience Platform identitetstjänst. Mer information finns i dokumentationen till [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html).
 
 ## Aktivera Experience Cloud-ID {#section_79F984271C3B4366B7B04F864F4FF8C2}
+
+Dessa steg kräver en SDK version 4.3 eller senare.
 
 1. Lägg till biblioteket i ditt projekt och implementera livscykeln.
 

@@ -1,22 +1,19 @@
 ---
 description: Du kan konfigurera appen så att den använder Apple Push Notification Service (APNS) eller Firebase Cloud Messaging (FCM).
 keywords: mobil
-seo-description: Du kan konfigurera appen så att den använder Apple Push Notification Service (APNS) eller Firebase Cloud Messaging (FCM).
-seo-title: Konfigurera appen att använda APNS eller FCM
 solution: Experience Cloud,Analytics
 title: Konfigurera appen att använda APNS eller FCM
 topic-fix: Metrics
 uuid: fa411f2a-ba47-4499-bbe5-1aedef6b49ad
 exl-id: 9064e1f3-f176-4699-b1e6-90f29e1af0d3
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '565'
 ht-degree: 12%
 
 ---
 
-# Konfigurera appen att använda APNS eller FCM{#configure-app-to-use-apns-or-fcm}
+# Konfigurera appen så att den använder APNS eller FCM{#configure-app-to-use-apns-or-fcm}
 
 Du kan konfigurera appen så att den använder Apple Push Notification Service (APNS) eller Firebase Cloud Messaging (FCM).
 

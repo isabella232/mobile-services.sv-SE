@@ -1,17 +1,14 @@
 ---
 description: Här är Adobe Experience Platform Identity Service-metoder som tillhandahålls av iOS-biblioteket.
-seo-description: Här är Adobe Experience Platform Identity Service-metoder som tillhandahålls av iOS-biblioteket.
-seo-title: Adobe Experience Platform Identity Service-metoder
 solution: Experience Cloud,Analytics
 title: Adobe Experience Platform Identity Service-metoder
 topic-fix: Developer and implementation
 uuid: cdd307bc-8b7d-47a8-b77e-00902b9e2968
 exl-id: 82a246fc-f679-4fa5-b9c0-dc909a7e7d93
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
 workflow-type: tm+mt
-source-wordcount: '461'
-ht-degree: 21%
+source-wordcount: '439'
+ht-degree: 22%
 
 ---
 
@@ -25,7 +22,7 @@ Metoderna har prefixet enligt lösningen och Experience Cloud ID-metoderna har p
 
 * **`+`(null-able NSURL  `*`)visitorAppendToURL:(null-able NSURL  `*`)url;**
 
-   Lägger till besöksdata från Adobe i en URL-sträng som ska användas med JavaScript-biblioteket Adobe. Om du vill använda den här metoden måste du ha Mobile SDK version 4.12 eller senare. Mer information finns i [Bifoga hjälpfunktion för besökar-ID](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/methods/appendvisitorid.html).
+   Lägger till besöksdata från Adobe i en URL-sträng som ska användas med JavaScript-biblioteket Adobe. Om du vill använda den här metoden måste du ha Mobile SDK version 4.12 eller senare. Mer information finns i [appendVisitorIDsTo](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/methods/appendvisitorid.html) i dokumentationen för Adobe Experience Cloud identitetstjänst.
 
    >[!IMPORTANT]
    >
@@ -100,7 +97,7 @@ En sträng med besökarinformationen tillagd.
       [ADBMobile visitorSyncIdentifiers:@{@"myIdType":@"valueForUser"}  authenticationState:ADBMobileVisitorAuthenticationStateAuthenticated]; 
       ```
 
-* **visitorSyncIdentifierWithType:identifier:authenticationState:**
+* **:identifier:visitorSyncIdentifierWithTypeAuthenticationState:**
 
    Synkroniserar angiven identifierartyp och angivet värde med ID-tjänsten. Ange ett av följande värden i `authState`:
 
@@ -159,7 +156,7 @@ En sträng med besökarinformationen tillagd.
       }];
       ```
 
-## ADBVisitorID-gränssnitt {#section_2FF74454D25C4ADABAC5E43CBFAAEC26}
+## Gränssnittet ADBVisitorID {#section_2FF74454D25C4ADABAC5E43CBFAAEC26}
 
 **Offentliga metoder:**
 
@@ -169,7 +166,7 @@ En sträng med besökarinformationen tillagd.
 - (ADBMobileVisitorAuthenticationState) authenticationState; 
 ```
 
-## ADBMobleVisitorAuthenticationState enum {#section_A55A3F336DDF4F838900632087F51430}
+## ADBMomobileVisitorAuthenticationState enum {#section_A55A3F336DDF4F838900632087F51430}
 
 ```objective-c
 ADBMobileVisitorAuthenticationStateUnknown, 

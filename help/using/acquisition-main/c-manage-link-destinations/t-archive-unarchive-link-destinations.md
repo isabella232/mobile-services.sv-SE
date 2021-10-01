@@ -1,17 +1,14 @@
 ---
 description: Du kan använda sidan Länkmål för att redigera, arkivera, ta bort eller arkivera befintliga mål.
 keywords: mobil
-seo-description: Du kan använda sidan Länkmål för att redigera, arkivera, ta bort eller arkivera befintliga mål.
-seo-title: Hantera länkmål
 solution: Experience Cloud,Analytics
 title: Hantera länkmål
 topic-fix: Metrics
 uuid: 3a38d40d-b4c7-4f9f-aa6e-979613faaba2
 exl-id: 5d2ab0db-6371-434e-bf92-6013e78c8d8f
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '261'
 ht-degree: 1%
 
 ---

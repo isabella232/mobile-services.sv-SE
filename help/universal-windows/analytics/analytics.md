@@ -5,15 +5,14 @@ title: 'Analytics '
 topic-fix: Developer and implementation
 uuid: c2cef3d3-77a7-4a8e-bbe4-3db10a77996a
 exl-id: cc96a7dd-ccc4-4914-8243-f3f160b75c21
-translation-type: tm+mt
-source-git-commit: b9ee49ba26d4726b1f97ef36f5c2e9923361b1ee
+source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
 workflow-type: tm+mt
-source-wordcount: '930'
-ht-degree: 2%
+source-wordcount: '920'
+ht-degree: 1%
 
 ---
 
-# Analytics{#analytics} 
+# Analytics  {#analytics}
 
 När du har lagt till biblioteket i ditt projekt kan du göra alla anrop till Analytics-metoden var som helst i din app.
 
@@ -29,13 +28,13 @@ Innan du lägger till kod bör du be Analytics Administrator att slutföra följ
 
 1. Klicka på **[!UICONTROL Edit Settings]** > **[!UICONTROL Mobile Management]** > **[!UICONTROL Mobile Application Reporting]**.
 
-   ![](assets/mobile-settings.png)
+   ![Mobilinställningar](assets/mobile-settings.png)
 
 1. Klicka på **[!UICONTROL Enable Latest App Reports]**.
 
    Du kan också klicka på **[!UICONTROL Enable Mobile Location Tracking]** eller **[!UICONTROL Enable Legacy Reporting and Attribution for background hits]**.
 
-   ![](assets/enable-lifecycle.png)
+   ![Aktivera livscykel](assets/enable-lifecycle.png)
 
 Livscykelmätvärden är nu klara att hämtas och Mobile Application Reports visas på **[!UICONTROL Reports]**-menyn i gränssnittet för marknadsföringsrapporter.
 
@@ -59,7 +58,7 @@ app.onactivated = function (args) {
 }; 
 app.oncheckpoint = function (args) { 
   ADBMobile.Config.pauseCollectingLifecycleData(); 
-}
+};
 ```
 
 ### C# i App.xaml.cs
@@ -121,7 +120,7 @@ void App::OnLaunched(Windows::ApplicationModel::Activation::LaunchActivatedEvent
 
 Om `CollectLifecycleData()` anropas två gånger under samma session rapporterar programmet en krasch vid varje anrop efter det första. SDK anger en flagga när programmet stängs som anger att det har avslutats. Om flaggan inte är inställd rapporterar `CollectLifecyleData()` en krasch.
 
-## Händelser, utkast och eVars {#section_76EA6F5611184C5CAE6E62956D84D7B6}
+## Event, props och eVars {#section_76EA6F5611184C5CAE6E62956D84D7B6}
 
 Om du har tittat på [SDK-metoder](/help/universal-windows/c-configuration/methods.md) undrar du antagligen var du ska ange händelser, eVars, props, heirs och lists. I version 4 kan du inte längre tilldela dessa typer av variabler direkt i appen. I stället använder SDK kontextdata och bearbetningsregler för att mappa appdata till Analytics-variabler för rapportering.
 
@@ -139,49 +138,47 @@ Bearbetningsregler används för att kopiera data som du skickar i kontextdatava
 
 [Utbildning](https://tv.adobe.com/embed/1181/16506/)  av bearbetningsregler@ Summit 2013
 
-[Hjälp om att bearbeta regler](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html)
+[Hjälp om att bearbeta regler](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html)
 
-[Bli behörig att använda bearbetningsregler](https://helpx.adobe.com/analytics/kb/processing-rules-authorization.html)
-
-Vi rekommenderar att du grupperar dina kontextdatavariabler med&quot;namnutrymmen&quot;, eftersom det hjälper dig att behålla den logiska ordningen. Om du till exempel vill samla in information om en produkt kan du definiera följande variabler:
+Adobe rekommenderar att du grupperar kontextdatavariabler med&quot;namnutrymmen&quot;, eftersom det bidrar till att bibehålla den logiska ordningen. Om du till exempel vill samla in information om en produkt kan du definiera följande variabler:
 
 ```javascript
-"product.type":"hat" 
-"product.team":"mariners" 
-"product.color":"blue"
+"product.type":"hat";
+"product.team":"mariners";
+"product.color":"blue";
 ```
 
 Sammanhangsdatavariabler sorteras i bokstavsordning i bearbetningsregelgränssnittet, så med namnutrymmen kan du snabbt se variabler som finns i samma namnutrymme.
 
-Vi har också hört att några av er namnger kontextdatanycklar med evar- eller prop-numret:
+Vi har också hört att några av er namnger kontextdatanycklar med hjälp av eVar- eller prop-numret:
 
 ```js
-"eVar1":"jimbo"
+"eVar1":"jimbo";
 ```
 
 Detta kan göra det *något* enklare när du utför en engångsmappning i bearbetningsregler, men du förlorar läsbarheten under felsökning och framtida koduppdateringar kan vara svårare. Vi rekommenderar i stället att du använder beskrivande namn för nycklar och värden:
 
 ```js
-"username":"jimbo"
+"username":"jimbo";
 ```
 
 Ange kontextvariabler som definierar räknarhändelser till värdet &quot;1&quot;:
 
 ```js
-"logon":"1"
+"logon":"1";
 ```
 
 Kontextdatavariabler som definierar inkrementer eller händelser kan ha värdet som ska ökas:
 
 ```js
-"levels completed":"6"
+"levels completed":"6";
 ```
 
 >[!TIP]
 >
 >Adobe reserverar namnutrymmet `a.`. Förutom den här begränsningen behöver kontextdatavariabler bara vara unika i ditt inloggningsföretag för att undvika kollisioner.
 
-## Produktvariabel {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
+## Variabeln Produkter {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
 
 Om du vill ange *`products`* i mobil-SDK måste du använda en speciell syntax. Mer information finns i [Produktvariabel](/help/universal-windows/analytics/products.md).
 
@@ -189,7 +186,7 @@ Om du vill ange *`products`* i mobil-SDK måste du använda en speciell syntax. 
 
 Om du vill lagra träffar när enheten är offline kan du aktivera offlinespårning i [SDK-metoden](/help/universal-windows/c-configuration/methods.md)-filen. Var noga med tidsstämpelkraven som beskrivs i konfigurationsfilreferensen innan du aktiverar spårning offline.
 
-## Geografisk plats och intressepunkter {#section_BAD34A8DD013454DB355121316BD7FD4}
+## Geografisk placering och intressepunkter {#section_BAD34A8DD013454DB355121316BD7FD4}
 
 Med geopositionering kan du mäta positionsdata (latitud/longitud) och fördefinierade intressepunkter. Varje `TrackLocation`-anrop skickar:
 
@@ -218,7 +215,7 @@ Om följande POI definieras i konfigurationsfilen `ADBMobileConfig.json`:
 
 När enhetsplatsen identifieras som inom en radie på 7 000 meter för den definierade punkten skickas en `a.loc.poi`-kontextdatavariabel med värdet `San Francisco` med `TrackLocation`-träffen. En `a.loc.dist`-kontextvariabel skickas med avståndet i meter från de definierade koordinaterna.
 
-## Livstidsvärde {#section_D2C6971545BA4D639FBE07F13EF08895}
+## Livstid {#section_D2C6971545BA4D639FBE07F13EF08895}
 
 Livstidsvärdet gör att du kan mäta och inrikta dig på ett livstidsvärde för varje användare. Varje gång du skickar ett värde med `TrackLifetimeValueIncrease` läggs värdet till det befintliga värdet. Livstidsvärdet lagras på enheten och kan hämtas när som helst genom att anropa `GetLifetimeValue`. Detta kan användas för att lagra livstidsinköp, annonsvisningar, videokompletteringar, sociala resurser, fotoöverföringar och så vidare.
 

@@ -1,21 +1,18 @@
 ---
 description: Med geopositionering kan du mäta positionsdata genom att använda latitud och longitud samt fördefinierade intressepunkter i dina Android-appar.
-seo-description: Med geopositionering kan du mäta positionsdata genom att använda latitud och longitud samt fördefinierade intressepunkter i dina Android-appar.
-seo-title: Geografisk placering och intressepunkter
 solution: Experience Cloud,Analytics
 title: Geografisk placering och intressepunkter
 topic-fix: Developer and implementation
 uuid: b8209370-cbc4-40f9-97d8-017e2d74a377
 exl-id: e1fed35b-5ce9-48ee-ade0-b1701cf2a3a9
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '569'
 ht-degree: 1%
 
 ---
 
-# Geografisk plats och intressepunkter {#geo-location-and-points-of-interest}
+# Geografisk placering och intressepunkter {#geo-location-and-points-of-interest}
 
 Med geopositionering kan du mäta positionsdata genom att använda latitud och longitud samt fördefinierade intressepunkter i dina Android-appar.
 
@@ -34,7 +31,7 @@ Varje `trackLocation`-anrop skickar följande information:
 Från och med version 4.2 definieras POI i användargränssnittet för Adobe Mobile och synkroniseras dynamiskt till programkonfigurationsfilen. Synkroniseringen kräver en `analytics.poi`-inställning i [ADBMomobile JSON-konfiguration](/help/android/configuration/json-config/json-config.md):
 
 ```js
-“analytics.poi”: “https://assets.adobedtm.com/…/yourfile.json”,
+"analytics.poi": "https://assets.adobedtm.com/…/yourfile.json",
 ```
 
 Om detta inte är konfigurerat måste du hämta en uppdaterad version av `ADBMobile.json`-filen och lägga till den i din app. Mer information finns i [Hämta SDK- och testverktygen](/help/android/getting-started/requirements.md).

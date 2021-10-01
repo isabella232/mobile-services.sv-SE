@@ -1,21 +1,19 @@
 ---
 description: Den här informationen hjälper dig att skicka en länk till en kampanj för version 3 på en Android-enhet.
 keywords: android;bibliotek;mobil;sdk
-seo-description: Den här informationen hjälper dig att skicka en länk till en kampanj för version 3 på en Android-enhet.
-seo-title: Testa version 3 - förvärv
 solution: Experience Cloud,Analytics
 title: Testa version 3 - förvärv
 topic-fix: Developer and implementation
 uuid: 5e38b43d-389e-4412-99e5-3e6223b6ad28
 exl-id: 2ce78e2e-da51-4af8-a461-ec6c642a7854
-source-git-commit: bb2459e57274183e55c1facd1a510cf55a83ddb4
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '819'
+source-wordcount: '802'
 ht-degree: 1%
 
 ---
 
-# Testar V3-förvärv {#testing-version-acquisition}
+# Testar förvärvet av V3 {#testing-version-acquisition}
 
 Den här informationen hjälper dig att skicka en länk till en kampanj för version 3 på en Android-enhet.
 

@@ -1,17 +1,14 @@
 ---
 description: Den här informationen hjälper dig att migrera från 3.x- eller 2.x-versionen av Android-biblioteket till version 4.x.
 keywords: android;bibliotek;mobil;sdk
-seo-description: Den här informationen hjälper dig att migrera från 3.x- eller 2.x-versionen av Android-biblioteket till version 4.x.
-seo-title: Migrera till Android 4.x-biblioteket
 solution: Experience Cloud,Analytics
 title: Migrera till Android 4.x-biblioteket
 topic-fix: Developer and implementation
 uuid: 906e83bb-2faf-4aa2-ac9b-3fba6b833c7e
 exl-id: 8061c1ab-aaaf-4d4c-9bd5-b2f80b6b06a3
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '884'
+source-wordcount: '860'
 ht-degree: 2%
 
 ---
@@ -26,7 +23,7 @@ Den här informationen hjälper dig att migrera från 3.x- eller 2.x-versionen a
 
 I version 4.x-biblioteket konsolideras de publika metoderna i en rubrik. Dessutom är alla funktioner nu tillgängliga via metoder på klassnivå, så du behöver inte hålla reda på pekare, instanser eller singletoner.
 
-## Händelser, utkast och eVars {#section_76EA6F5611184C5CAE6E62956D84D7B6}
+## Event, props och eVars {#section_76EA6F5611184C5CAE6E62956D84D7B6}
 
 I version 4 kan du inte längre tilldela variabler som händelser, eVars, props, heirs och lists i din app. I stället använder SDK kontextdata och bearbetningsregler för att mappa appdata till Analytics-variabler för rapportering.
 
@@ -72,7 +69,7 @@ Den nya `ADBMobileConfig.json`-filen innehåller programspecifika, globala inst�
 }
 ```
 
-## Flyttar konfigurationsfilen och migrerar till version 4 {#section_0B844235E0B04DD4B36976A73DB28FB5}
+## Flytta konfigurationsfilen och migrera till version 4 {#section_0B844235E0B04DD4B36976A73DB28FB5}
 
 I följande tabeller visas de konfigurationsvariabler som du behöver flytta till konfigurationsfilen.
 
@@ -171,7 +168,7 @@ Ersätt följande metoder med ett anrop till `trackState` eller `trackAction`:
 
 Ersätt variabeln `visitorID` med ett anrop till `setUserIdentifier`.
 
-## Offlinespårning {#section_5D4CD8CD1BE041A79A8657E31C0D24C6}
+## Spårning offline {#section_5D4CD8CD1BE041A79A8657E31C0D24C6}
 
 Spårning offline är aktiverat i `ADBMobileConfig.json`-filen och all annan offlinekonfiguration görs automatiskt.
 
@@ -187,6 +184,6 @@ Ta bort anrop till följande metoder:
 * `forceOffline`
 * `forceOnline`
 
-## Produktvariabel {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
+## Variabeln Produkter {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
 
 Mer information om variabeln products finns i [Produktvariabeln](/help/android/analytics-main/products/products.md).

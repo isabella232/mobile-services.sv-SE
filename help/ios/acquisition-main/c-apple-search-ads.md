@@ -1,16 +1,13 @@
 ---
 description: Adobe SDK använder Apples API:er för sökannonsering i appattribut för att göra det möjligt för utvecklare och marknadsförare att spåra och attributera appnedladdningar som kommer från sökannonskampanjer i Apple App Store.
-seo-description: Adobe SDK använder Apples API:er för sökannonsering i appattribut för att göra det möjligt för utvecklare och marknadsförare att spåra och attributera appnedladdningar som kommer från sökannonskampanjer i Apple App Store.
-seo-title: Apple Search Ads
 solution: Experience Cloud,Analytics
 title: Apple Search Ads
 topic-fix: Developer and implementation
 uuid: 790080e8-067e-4bfd-a169-0027db4fdff3
 exl-id: efcdd430-f08d-4ee2-85f3-2697c3bd72db
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '280'
+source-wordcount: '245'
 ht-degree: 0%
 
 ---
@@ -40,7 +37,7 @@ Så här aktiverar du din app för sökannonsattribuering:
 
 1. Lägg till iAd-ramverket i Xcode-projektfilen för din app.
 
-## Rapportering om attribut för sökannonsering {#section_1AF4E0B4F8E94F36B38CA3D3E384D0A4}
+## Rapportering om attribut för sökannonser {#section_1AF4E0B4F8E94F36B38CA3D3E384D0A4}
 
 1. Apple Search Ads-attribueringsdata anges i förvärvsnamn, källa och termvärden.
 

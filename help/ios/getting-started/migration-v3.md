@@ -1,21 +1,18 @@
 ---
 description: Den här informationen hjälper dig att migrera från version 3.x eller 2.x av iOS-biblioteket till version 4.x.
-seo-description: Den här informationen hjälper dig att migrera från version 3.x eller 2.x av iOS-biblioteket till version 4.x.
-seo-title: Migrera till iOS-biblioteket 4.x
 solution: Experience Cloud,Analytics
 title: Migrera till iOS-biblioteket 4.x
 topic-fix: Developer and implementation
 uuid: 5668972b-f355-4e03-9df0-8c82ddf6809b
 exl-id: a58067e0-b6f4-4900-ba3f-7256d9259420
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '895'
+source-wordcount: '871'
 ht-degree: 2%
 
 ---
 
-# Migrera till 4.x iOS-biblioteket{#migrating-to-the-x-ios-library}
+# Migrera till iOS-biblioteket 4.x{#migrating-to-the-x-ios-library}
 
 Den här informationen hjälper dig att migrera från version 3.x eller 2.x av iOS-biblioteket till version 4.x.
 
@@ -25,7 +22,7 @@ Den här informationen hjälper dig att migrera från version 3.x eller 2.x av i
 
 I version 4.x av iOS SDK-biblioteket konsolideras de publika metoderna i en rubrik. Funktionen är nu även tillgänglig via metoder på klassnivå, så du behöver inte hålla reda på pekare, instanser eller singletoner.
 
-## Händelser, utkast och eVars {#section_76EA6F5611184C5CAE6E62956D84D7B6}
+## Event, props och eVars {#section_76EA6F5611184C5CAE6E62956D84D7B6}
 
 I version 4 kan du inte längre tilldela variabler som händelser, eVars, props, heirs och lists direkt i appen. I stället använder SDK kontextdata och bearbetningsregler för att mappa appdata till Analytics-variabler för rapportering.
 
@@ -176,7 +173,7 @@ Ersätt följande metoder i koden med ett anrop till `trackState` eller `trackAc
 
 Ersätt variabeln `visitorID` med ett anrop till `setUserIdentifier:`.
 
-## Offlinespårning {#section_5D4CD8CD1BE041A79A8657E31C0D24C6}
+## Spårning offline {#section_5D4CD8CD1BE041A79A8657E31C0D24C6}
 
 Spårning offline är aktiverat i `ADBMobileConfig.json`-filen och all annan offlinekonfiguration görs automatiskt.
 
@@ -192,7 +189,7 @@ Ta bort anrop till följande metoder i koden:
 * `forceOffline`
 * `forceOnline`
 
-## Produktvariabel {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
+## Variabeln Produkter {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
 
 Eftersom variabeln products inte är tillgänglig i bearbetningsregler kan du använda följande syntax för att ange `products`:
 

@@ -1,17 +1,14 @@
 ---
 description: I Adobe Analytics kan du hantera roller på startsidan för Admin Tools.
-seo-description: I Adobe Analytics kan du hantera roller på startsidan för Admin Tools.
-seo-title: Roller och behörigheter
 title: Roller och behörigheter
 uuid: ad350f8d-ef51-4519-98aa-3025bc0f5588
-translation-type: tm+mt
-source-git-commit: c7cac006340e01d0fd1f6afe3419e6fd17294a98
+exl-id: 70f0b427-60d5-4a79-a8d3-e03274edd917
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '595'
-ht-degree: 6%
+source-wordcount: '594'
+ht-degree: 2%
 
 ---
-
 
 # Roller och behörigheter{#roles-and-permissions}
 
@@ -23,17 +20,16 @@ Följande roller hanterar behörigheter i gränssnittet för mobila tjänster:
 
 ### Analysadministratör
 
-En Analytics Admin hanterar användargrupper och tilldelar behörigheter, varav en är Mobile App Admin. Experience Cloud Admin länkar din Adobe ID till ditt Adobe Analytics-konto så att du kan logga in på användargränssnittet för mobila tjänster med hjälp av din Adobe ID. Mer information om Experience Cloud Administrator finns i [Administration - Användarhantering och Frågor och svar](https://docs.adobe.com/content/help/sv-SE/core-services/interface/manage-users-and-products/admin-getting-started.html).
+En Analytics Admin hanterar användargrupper och tilldelar behörigheter, varav en är Mobile App Admin. Experience Cloud Admin länkar din Adobe ID till ditt Adobe Analytics-konto så att du kan logga in på användargränssnittet för mobila tjänster med hjälp av din Adobe ID. Mer information om Experience Cloud Administrator finns i [Hantera Experience Cloud-användare och -produkter](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html) i guiden Komponenter i Experience Cloud Central Interface.
 
 >[!TIP]
 >
 >En befintlig Analytics Admin kan tilldela rollen Analytics Admin till alla användare.
 
-Mer information om den här rollen finns i följande innehåll:
+Mer information om den här rollen finns i följande innehåll i Adobe Analytics-dokumentationen:
 
-* [Översikt över användarhantering](https://docs.adobe.com/content/help/en/analytics/admin/user-product-management/user-management/users.html)
-
-* [Behörighetsändringar för användare och grupper](https://docs.adobe.com/content/help/en/analytics/admin/user-product-management/user-management/permissions-changes.html)
+* [Översikt över användarhantering](https://experienceleague.adobe.com/docs/analytics/admin/user-product-management/user-management/users.html)
+* [Behörighetsändringar för användare och grupper](https://experienceleague.adobe.com/docs/analytics/admin/user-product-management/user-management/permissions-changes.html)
 
 ### Administratör för mobilapp
 
@@ -41,7 +37,7 @@ Den här rollen är administratör för användargränssnittet för mobila tjän
 
 >[!IMPORTANT]
 >
->För vissa funktioner, till exempel push-meddelanden, måste Analytics Admin markera kryssrutan i Användarhantering **[!UICONTROL Segment Creation]** .
+>För vissa funktioner, till exempel push-meddelanden, måste Analytics Admin markera kryssrutan **[!UICONTROL Segment Creation]** i Användarhantering.
 
 ## Hantera åtkomst {#section_E6939C2695AA4A0DBF432D50B2670920}
 
@@ -59,7 +55,7 @@ Om ditt företag inte har något Analytics-avtal för att komma åt en funktion 
 
 Här är rollerna i gränssnittet för mobila tjänster, med deras relevanta behörigheter:
 
-### Analysadministratör
+### Administratörsbehörigheter för analyser
 
 * Alla administratörsbehörigheter för användare och mobilappar
 * Skapa app med nytt rapportpaket
@@ -75,7 +71,7 @@ Här är rollerna i gränssnittet för mobila tjänster, med deras relevanta beh
    * Aktivera platsrapportering
    * Skapa/uppdatera/ta bort variabler och mätvärden
 
-### Administratör för mobilapp
+### Administratörsbehörigheter för mobilappar
 
 * Alla användarbehörigheter
 * Skapa app med befintlig rapportsvit
@@ -95,10 +91,10 @@ Här är rollerna i gränssnittet för mobila tjänster, med deras relevanta beh
 * Skapa/Uppdatera/Skicka/Schemalägg/Avbryt/Duplicera/Arkivera/Ta bort push-meddelanden
 * Skapa/uppdatera/aktivera/inaktivera/duplicera/arkivera/ta bort meddelanden i appen
 
-Mer information om grupper och användare finns i:
+Mer information om grupper och användare finns i följande innehåll i Adobe Analytics-dokumentationen:
 
-* [Inställningar för användargrupp](https://docs.adobe.com/content/help/sv-SE/analytics/admin/user-product-management/user-groups/groups.html)
-* [Lägga till en användare i en grupp](https://docs.adobe.com/content/help/en/analytics/admin/user-product-management/user-management/t-add-user-to-group.html)
+* [Inställningar för användargrupp (äldre)](https://experienceleague.adobe.com/docs/analytics/admin/user-product-management/user-groups/groups.html)
+* [Lägga till en användare i en grupp](https://experienceleague.adobe.com/docs/analytics/admin/user-product-management/user-management/t-add-user-to-group.html)
 
 ### Användare av mobiltjänster
 

@@ -1,18 +1,15 @@
 ---
 description: Här är en lista över Adobe Target-metoder som finns i Android-biblioteket.
 keywords: android;bibliotek;mobil;sdk
-seo-description: Här är en lista över Adobe Target-metoder som finns i Android-biblioteket.
-seo-title: Målmetoder för Android
 solution: Experience Cloud,Analytics
 title: Målmetoder för Android
 topic-fix: Developer and implementation
 uuid: 8e9808b2-ba80-4646-ba05-8e62d4fde065
 exl-id: 0c7a6718-d078-4a2b-a2c9-d5cd50263939
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '607'
-ht-degree: 23%
+source-wordcount: '590'
+ht-degree: 24%
 
 ---
 
@@ -57,9 +54,8 @@ public static final String TARGET_PARAMETER_MBOX_HOST           = "mboxHost";
 >[!IMPORTANT]
 >
 >* Om du använder SDK:er **före** version 4.14.0, se [https://developers.adobetarget.com/api/#input-parameters](https://developers.adobetarget.com/api/#input-parameters) för parameterbegränsningar.
-   >
-   >
-* Om du använder SDK:er version 4.14.0 **eller senare** läser du [https://developers.adobetarget.com/api/#batch-input-parameters](https://developers.adobetarget.com/api/#batch-input-parameters) för parameterbegränsningar.
+>
+>* Om du använder SDK:er version 4.14.0 **eller senare** läser du [https://developers.adobetarget.com/api/#batch-input-parameters](https://developers.adobetarget.com/api/#batch-input-parameters) för parameterbegränsningar.
 
 
 * **loadRequest**
@@ -92,15 +88,15 @@ public static final String TARGET_PARAMETER_MBOX_HOST           = "mboxHost";
    * Här är kodexemplet för den här metoden:
 
       ```java
-      Map `<String, Object>` profileParameters = new HashMap `<String, Object>`(); profileParameters.put(“profile-parameter-key”, “profile-parameter-value”); 
-      Map `<String, Object>` orderParameters = new HashMap `<String, Object>`(); orderParameters.put(“order-parameter-key”, “order-parameter-value”);
+      Map `<String, Object>` profileParameters = new HashMap `<String, Object>`(); profileParameters.put("profile-parameter-key", "profile-parameter-value"); 
+      Map `<String, Object>` orderParameters = new HashMap `<String, Object>`(); orderParameters.put("order-parameter-key", "order-parameter-value");
       Map `<String, Object>` mboxParameters = new HashMap `<String, Object>`(); 
-      mboxParameters.put(“mbox-parameter-key”, “mbox-parameter-value”); 
-      Target.loadRequest(“mboxName”, “defaultContent”, profileParameters, orderParameters, mboxParameters
+      mboxParameters.put("mbox-parameter-key", "mbox-parameter-value"); 
+      Target.loadRequest("mboxName", "defaultContent", profileParameters, orderParameters, mboxParameters
       new TargetCallback<String>() {
           @Override
           public void call (String item) {
-             Log.d(“Target Content”, item); 
+             Log.d("Target Content", item); 
           }
       });
       ```
@@ -159,20 +155,20 @@ public static final String TARGET_PARAMETER_MBOX_HOST           = "mboxHost";
    * Här är exempelkoden för den här metoden:
 
       ```java
-      Map `<String, Object>` profileParameters = new HashMap `<String, Object>`(); profileParameters.put(“profile-parameter-key”, “profile-parameter-value”); 
-      Map `<String, Object>` orderParameters = new HashMap `<String, Object>`(); orderParameters.put(“order-parameter-key”, “order-parameter-value”); 
-      Map `<String, Object>` mboxParameters = new HashMap `<String, Object>`(); mboxParameters.put(“mbox-parameter-key”, “mbox-parameter-value”); 
-      Map `<String, Object>` requestLocationParameters = new HashMap `<String, Object>`(); requestLocationParameters.put(“request-location-parameter-key”, “request-location-parameter-value”); 
+      Map `<String, Object>` profileParameters = new HashMap `<String, Object>`(); profileParameters.put("profile-parameter-key", "profile-parameter-value"); 
+      Map `<String, Object>` orderParameters = new HashMap `<String, Object>`(); orderParameters.put("order-parameter-key", "order-parameter-value"); 
+      Map `<String, Object>` mboxParameters = new HashMap `<String, Object>`(); mboxParameters.put("mbox-parameter-key", "mbox-parameter-value"); 
+      Map `<String, Object>` requestLocationParameters = new HashMap `<String, Object>`(); requestLocationParameters.put("request-location-parameter-key", "request-location-parameter-value"); 
       
-      Target.loadRequest(“mboxName”, “defaultContent”, profileParameters, orderParameters, mboxParameters, requestLocationParameters,new TargetCallback<String>() {
+      Target.loadRequest("mboxName", "defaultContent", profileParameters, orderParameters, mboxParameters, requestLocationParameters,new TargetCallback<String>() {
          @Override
          public void call (String item) { 
-            Log.d(“Target Content”, item);
+            Log.d("Target Content", item);
          } 
       });
       ```
 
-      Mer information om det underliggande mål-API:t finns i [Delivery](https://docs.adobe.com/dev/products/target/reference/delivery.html) i hjälpen för målutvecklare.
+      Mer information om det underliggande mål-API:t finns i [Läs in mål-begäranden](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-target/target-api-reference-deprecated#load-target-requests) i Target API-referensen.
 
 
 
@@ -274,7 +270,7 @@ public static final String TARGET_PARAMETER_MBOX_HOST           = "mboxHost";
    * Här är kodexemplet för den här metoden:
 
       ```java
-      Target.setThirdPartyID(“third-party-id”);
+      Target.setThirdPartyID("third-party-id");
       ```
 
 * **getThirdPartyID**

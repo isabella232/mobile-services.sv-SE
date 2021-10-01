@@ -1,18 +1,15 @@
 ---
 description: Du kan använda den här informationen för att spåra djupa och fördröjda länkar i dina mobilappar med hjälp av Adobe Mobile Android SDK.
 keywords: android;bibliotek;mobil;sdk
-seo-description: Du kan använda den här informationen för att spåra djupa och fördröjda länkar i dina mobilappar med hjälp av Adobe Mobile Android SDK.
-seo-title: Spåra djupa länkar i Adobe mobiltjänster
 solution: Experience Cloud,Analytics
 title: Spåra djupa länkar
 topic-fix: Developer and implementation
 uuid: ebb1c08c-a246-40b3-9ac6-4606a14b4c5a
 exl-id: 4f59b77d-3cac-4853-bb6b-50a403036771
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '334'
-ht-degree: 2%
+source-wordcount: '302'
+ht-degree: 0%
 
 ---
 
@@ -55,13 +52,13 @@ Dessutom kan du lägga till en eller flera av följande reserverade nycklar (med
 * `a.launch.campaign.term`
 * `a.launch.campaign.content`
 
-Dessa nycklar är förmappade variabler för rapportering i Adobe Analytics. Mer information om mappnings- och bearbetningsregler finns i [Bearbetningsregler och kontextdata](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html).
+Dessa nycklar är förmappade variabler för rapportering i Adobe Analytics. Mer information om mappnings- och bearbetningsregler finns i [Bearbetningsregler och kontextdata](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html).
 
 ## Spåra fördröjda djuplänkar (för användning med marknadsföringslänkar)
 
 Med en fördröjd djup länk kommer Adobe SDK att öppna en ny metod med den djupa länken som återgivningsdata. Den här processen hanteras som en extern djuplänk med koden ovan.
 
-## Allmän information om djuplänk {#section_1815396353614DA8A63D8D92112217E7}
+## Allmän information om länkar {#section_1815396353614DA8A63D8D92112217E7}
 
 ### Konstanter
 

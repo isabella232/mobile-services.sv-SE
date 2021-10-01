@@ -1,17 +1,14 @@
 ---
 description: Med rapporten Technology kan du se de olika enhetstyper, operativsystem, operativsystemversioner och mobiloperatörer som appen används på.
 keywords: mobil
-seo-description: Med rapporten Technology kan du se de olika enhetstyper, operativsystem, operativsystemversioner och mobiloperatörer som appen används på.
-seo-title: Teknikrapport
 solution: Experience Cloud,Analytics
 title: Teknikrapport
 topic-fix: Reports,Metrics
 uuid: 4b7322c4-8920-43cd-bb72-5a5bd515ae84
 exl-id: 767c1538-68b1-4193-bd3d-3eb80e5b36f7
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '525'
 ht-degree: 0%
 
 ---

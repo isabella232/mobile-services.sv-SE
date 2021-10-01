@@ -1,18 +1,15 @@
 ---
 description: Du kan skapa eller redigera marknadsföringslänkar för att skapa en djup länk till din mobilapp eller webbplats.
 keywords: mobil
-seo-description: Du kan skapa eller redigera marknadsföringslänkar för att skapa en djup länk till din mobilapp eller webbplats.
-seo-title: Skapa eller redigera marknadsföringslänkar
 solution: Experience Cloud,Analytics
 title: Skapa eller redigera marknadsföringslänkar
 topic-fix: Metrics
 uuid: 305a8265-38de-4d19-8c79-b3912f5aae7c
 exl-id: a9b5c98d-77c1-4a40-96e5-f9e234d55ec5
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '565'
-ht-degree: 2%
+source-wordcount: '545'
+ht-degree: 0%
 
 ---
 
@@ -43,7 +40,7 @@ Du kan skapa eller redigera marknadsföringslänkar för att skapa en djup länk
       Följande förinställda taggar är tillgängliga:
 
       * **Anpassade**
-kontextdataAnge nyckel och värde. Om du lägger till anpassade kontextdata måste du skapa en bearbetningsregel. Mer information finns i [Översikt över bearbetningsregler](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html).
+kontextdataAnge nyckel och värde. Om du lägger till anpassade kontextdata måste du skapa en bearbetningsregel. Mer information finns i [Översikt över bearbetningsregler](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html) i Adobe Analytics-dokumentationen.
 
       * ****
 Källa Ange den ursprungliga referenten, till exempel&quot;nyhetsbrev&quot; eller&quot;hemsida&quot;.

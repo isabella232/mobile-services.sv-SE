@@ -1,17 +1,14 @@
 ---
 description: Den här informationen hjälper dig att felsöka push-meddelanden.
 keywords: mobil
-seo-description: Den här informationen hjälper dig att felsöka push-meddelanden.
-seo-title: Felsökning av push-meddelanden
 solution: Experience Cloud,Analytics
 title: Felsökning av push-meddelanden
 topic-fix: Metrics
 uuid: 87d7dcb6-82a8-46e3-a6ed-7f895a22f2af
 exl-id: dda84d30-2a7b-496c-b8f3-3bd6b97076aa
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '347'
 ht-degree: 0%
 
 ---
@@ -39,9 +36,8 @@ Följande typer av fördröjningar kan associeras med push-meddelanden för mobi
    >Push-tjänsterna garanterar inte att ett meddelande skickas. Mer information om tjänsternas tillförlitlighet finns i lämplig dokumentation:
    >
    >* **APNS**:  [Tjänstekvalitet](https://developer.apple.com/documentation/usernotifications)
-      >
-      >
-   * **GCM**:  [Meddelandets livstid](https://developers.google.com/cloud-messaging/concept-options)
+   >
+   >* **GCM**:  [Meddelandets livstid](https://developers.google.com/cloud-messaging/concept-options)
 
 
 ## Hur förnyar jag mitt Apple Push Service-certifikat?

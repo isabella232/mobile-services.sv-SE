@@ -1,16 +1,13 @@
 ---
 description: Om appen öppnar mobilt webbinnehåll måste besökarna inte identifieras separat när de förflyttar sig mellan den inbyggda och mobila webben.
-seo-description: Om appen öppnar mobilt webbinnehåll måste besökarna inte identifieras separat när de förflyttar sig mellan den inbyggda och mobila webben.
-seo-title: Spårning av besökare mellan en app och en mobil webbsajt
 solution: Experience Cloud,Analytics
 title: Spårning av besökare mellan en app och en mobil webbsajt
 topic-fix: Developer and implementation
 uuid: 073572e4-4c55-4b27-b4a7-e4349ccde7bf
 exl-id: 7ca98572-138d-48f8-aa2a-d376eebb0b2c
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '508'
+source-wordcount: '477'
 ht-degree: 0%
 
 ---
@@ -31,7 +28,7 @@ Android SDK genererar ett unikt besökar-ID när ett program installeras. Detta 
 
 Vanliga mobilwebbimplementeringar använder samma standardanalys `s_code.js` eller `AppMeasurement.js` som används på skrivbordsplatser. JavaScript-biblioteken har egna metoder för att generera unika besökar-ID:n, vilket gör att ett annat besökar-ID genereras när du öppnar mobilt webbinnehåll från din app.
 
-## Implementera besöksspårning mellan en app och den mobila webben {#section_1755BCCFD42D456EB2319141030FDDFF}
+## Implementera besöksspårning mellan en app och mobilwebben {#section_1755BCCFD42D456EB2319141030FDDFF}
 
 Så här använder du samma besökar-ID i appen och på mobilwebben:
 

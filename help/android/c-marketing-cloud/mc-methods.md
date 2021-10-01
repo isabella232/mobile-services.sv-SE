@@ -1,18 +1,15 @@
 ---
 description: Här är Experience Cloud ID-metoderna som tillhandahålls av Android-biblioteket.
 keywords: android;bibliotek;mobil;sdk
-seo-description: Här är Experience Cloud ID-metoderna som tillhandahålls av Android-biblioteket.
-seo-title: Adobe Experience Platform Identity Service-metoder
 solution: Experience Cloud,Analytics
 title: Adobe Experience Platform Identity Service-metoder
 topic-fix: Developer and implementation
 uuid: c5107a7e-273b-4f71-8738-4c603479b24c
 exl-id: 8eb98c3f-c6ef-4593-ad3a-f566f4d4b6a2
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
 workflow-type: tm+mt
-source-wordcount: '453'
-ht-degree: 23%
+source-wordcount: '435'
+ht-degree: 24%
 
 ---
 
@@ -26,7 +23,7 @@ Metoderna är prefasta enligt lösningen. Experience Cloud ID-metoder har till e
 
 * **public static String appendToURL(final String URL)**
 
-   Lägger till besöksdata från Adobe i en URL-sträng som ska användas med JavaScript-biblioteket Adobe. Du måste ha Mobile SDK 4.12+ för att kunna använda den här metoden. Mer information finns i [Bifoga hjälpfunktion för besökar-ID](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/methods/appendvisitorid.html).
+   Lägger till besöksdata från Adobe i en URL-sträng som ska användas med JavaScript-biblioteket Adobe. Du måste ha Mobile SDK 4.12+ för att kunna använda den här metoden. Mer information finns i [appendVisitorIDsTo](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/methods/appendvisitorid.html) i dokumentationen för Adobe Experience Cloud identitetstjänst.
 
    >[!IMPORTANT]
    >

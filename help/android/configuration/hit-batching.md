@@ -1,22 +1,19 @@
 ---
 description: Om du trycker på gruppering kan program stoppa träffar från att skickas tills antalet träffar i kön har överskridit den konfigurerade gränsen.
 keywords: android;bibliotek;mobil;sdk
-seo-description: Om du trycker på gruppering kan program stoppa träffar från att skickas tills antalet träffar i kön har överskridit den konfigurerade gränsen.
-seo-title: Träffa
 solution: Experience Cloud,Analytics
 title: Träffa
 topic-fix: Developer and implementation
 uuid: ada35be3-242b-4b2b-a828-9bf998dd58b5
 exl-id: 74147f09-52fc-46dc-b4dd-2bf60b039f6e
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '187'
+source-wordcount: '162'
 ht-degree: 0%
 
 ---
 
-# Tryck på batchvis {#hit-batching}
+# Träffa {#hit-batching}
 
 Om du trycker på gruppering kan program stoppa träffar från att skickas tills antalet träffar i kön har överskridit den konfigurerade gränsen.
 

@@ -1,16 +1,13 @@
 ---
 description: Den här informationen hjälper dig att använda meddelanden i appen i dina iOS-appar.
-seo-description: Den här informationen hjälper dig att använda meddelanden i appen i dina iOS-appar.
-seo-title: Meddelanden i appen
 solution: Experience Cloud,Analytics
 title: Meddelanden i appen
 topic-fix: Developer and implementation
 uuid: 21fa6a94-bb7f-4c78-843b-a50f1974db22
 exl-id: 70b0ade4-dcd1-4e00-9800-352f11c4001d
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '410'
+source-wordcount: '397'
 ht-degree: 0%
 
 ---
@@ -30,7 +27,7 @@ Lite information att komma ihåg:
    >
    >Du kan slutföra de här stegen även om inga meddelanden har definierats. När du har definierat meddelanden levereras de dynamiskt till din app och visas utan någon uppdatering för appbutiken.
 
-## Aktivera meddelanden i appen {#section_79F984271C3B4366B7B04F864F4FF8C2}
+## Aktivera meddelanden i programmet {#section_79F984271C3B4366B7B04F864F4FF8C2}
 
 1. Lägg till biblioteket i ditt projekt och implementera livscykeln.
 
@@ -46,25 +43,25 @@ Lite information att komma ihåg:
 1. För att meddelanden i programmet ska uppdateras dynamiskt vid start måste `remotes`-objektet finnas och vara korrekt konfigurerat:
 
    ```js
-   “messages”: [ 
+   "messages": [ 
        { 
-           “messageId”: “de45c43c-37bf-441f-8cbd-cc3ba3469ebe”, 
-           “template”: “fullscreen”, 
-           “showOffline”: false, 
-           “showRule”: “always”, 
-           “endDate”: 2524730400, 
-           “startDate”: 0, 
-           “audiences”: [], 
-           “triggers”: [], 
-           “payload”: { // contents change depending on template 
-               “html”: “<html>html code goes here</html>” 
+           "messageId": "de45c43c-37bf-441f-8cbd-cc3ba3469ebe", 
+           "template": "fullscreen", 
+           "showOffline": false, 
+           "showRule": "always", 
+           "endDate": 2524730400, 
+           "startDate": 0, 
+           "audiences": [], 
+           "triggers": [], 
+           "payload": { // contents change depending on template 
+               "html": "<html>html code goes here</html>" 
            }, 
        }, 
        … 
    ] 
-   “remotes” : { 
-       “analytics.poi”: “https://assets.adobedtm.com/…/yourfile.json”, 
-       “messages”: “https://assets.adobedtm.com/…/yourfile.json” 
+   "remotes" : { 
+       "analytics.poi": "https://assets.adobedtm.com/…/yourfile.json", 
+       "messages": "https://assets.adobedtm.com/…/yourfile.json" 
    }
    ```
 
@@ -74,7 +71,7 @@ Lite information att komma ihåg:
 
    Om dessa objekt inte har konfigurerats hämtar du en uppdaterad `ADBMobileConfig.json`-fil från Adobe Mobile-tjänster. Mer information finns i [Core Implementation and Lifecycle](/help/ios/getting-started/requirements.md).
 
-## Spåra meddelanden i programmet {#section_B85CDF6929564AAEA79338B55E5CB1E8}
+## Spåra meddelanden i appen {#section_B85CDF6929564AAEA79338B55E5CB1E8}
 
 SDK:erna för iOS-mobiltjänster spårar följande mått för dina meddelanden i appen:
 

@@ -1,22 +1,19 @@
 ---
 description: Här är referensinformationen för standardvärden och -dimensioner för mobila enheter.
 keywords: mobil
-seo-description: Här är referensinformationen för standardvärden och -dimensioner för mobila enheter.
-seo-title: Mobile Metrics and Dimensions Reference
 solution: Experience Cloud,Analytics
 title: Mobile Metrics and Dimensions Reference
 topic-fix: Metrics
 uuid: 96170ae7-8553-4f3e-ae01-65e5b664adf4
 exl-id: ddfbf11e-a4c3-4d59-92b3-1d192dc3e7cd
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '613'
 ht-degree: 1%
 
 ---
 
-# Mobilmått och dimensionsreferens {#mobile-metrics-and-dimensions-reference}
+# Mobilstatistik och dimensionsreferens {#mobile-metrics-and-dimensions-reference}
 
 Den här informationen hjälper dig att förstå mer om standardvärden och -dimensioner för mobila enheter.
 
@@ -69,7 +66,7 @@ Här är en lista över standardvärden för mobiler:
 
    Sammanställd total sessionslängd.
 
-## Dimensioner {#section_1784C7E859F64CCEB95C5DD1DCF5C98D}
+## Mått {#section_1784C7E859F64CCEB95C5DD1DCF5C98D}
 
 Här är en lista över mobila standarddimensioner:
 

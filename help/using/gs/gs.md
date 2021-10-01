@@ -1,18 +1,15 @@
 ---
 description: Den här informationen hjälper dig att förstå och använda Adobe mobiltjänster.
 keywords: mobil
-seo-description: Den här informationen hjälper dig att förstå och använda Adobe mobiltjänster.
-seo-title: Komma igång
 solution: Experience Cloud,Analytics
 title: Komma igång
 topic-fix: Metrics
 uuid: a7ae7c5a-dab8-4603-b4cd-af73a2f09f71
 exl-id: 0c08e154-8747-45dc-9731-ab2a3e78bc5a
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '1374'
-ht-degree: 1%
+source-wordcount: '1344'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +26,7 @@ För företagsföretag som är ute efter det mest effektiva sättet att öka anv
 
 Idag skiljer sig mobilappslandskapet avsevärt från när smarttelefonen startades för första gången. Det räcker inte längre att ha en mobilapp för att koppla samman kunderna med ert varumärke. idag måste ni nu skapa en sammanhängande, övertygande kundupplevelse över alla kanaler och använda mobilappen som en strategisk kontaktyta för att engagera era mest lojala, värdefulla kunder. Men att få dessa användare att interagera med appen kräver övertygande innehåll, sammanhangsbaserade meddelanden, intelligent personalisering och integrerad appanalys osv.
 
-## Användargränssnittet för Adobe Mobile Services {#mobile-services-ui}
+## Adobe Mobile Services UI {#mobile-services-ui}
 
 Användargränssnittet för mobiltjänster stöds i följande webbläsare:
 
@@ -114,7 +111,7 @@ Mer information om hur du skapar meddelanden i appen finns i [Skapa ett meddelan
 
 I *Optimera* kan du optimera konverteringar (prenumerationer, handel, annonsintäkter osv.) och förbättra kundlojaliteten. Genom att optimera användarupplevelsen i appen kan ni personalisera ert innehåll för att få maximal avkastning och konvertering.
 
-Mer information om testning och Adobe Target finns på [Adobe Target](https://docs.adobe.com/content/help/en/target/using/target-home.html).
+Mer information om testning och Adobe Target finns i [Adobe Target](https://experienceleague.adobe.com/docs/target/using/target-home.html)-dokumentationen.
 
 ### Geografisk inriktning
 
@@ -161,4 +158,4 @@ Adobe Mobile SDK har följande funktioner:
    * Minimerar belastningen på enhetsbearbetning för att skicka data till Adobe-servrar och tredjepartssystem.
    * Med liten yta minimeras storleken på det programpaket som skickas till appbutiker.
 
-Mer information om Adobe Mobile SDK finns i [Android SDK 4.x for Experience Solutions](https://docs.adobe.com/content/help/sv-SE/mobile-services/android/overview.html) och [iOS SDK 4.x för Experience Cloud Solutions](https://docs.adobe.com/content/help/en/mobile-services/ios/rel-notes.html).
+Mer information om Adobe Mobile SDK finns i [Android SDK 4.x for Experience Solutions](/help/android/overview.md) och [iOS SDK 4.x för Experience Cloud Solutions](/help/ios/overview.md).

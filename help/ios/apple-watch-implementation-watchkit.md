@@ -1,17 +1,14 @@
 ---
 description: Från och med WatchOS 2 körs WatchKit-tilläggen på en Apple Watch-enhet. Program som körs i den här miljön kräver WatchConnectivity-ramverket för att dela data med den iOS-app som de innehåller.
-seo-description: Från och med WatchOS 2 körs WatchKit-tilläggen på en Apple Watch-enhet. Program som körs i den här miljön kräver WatchConnectivity-ramverket för att dela data med den iOS-app som de innehåller.
-seo-title: Apple Watch-implementering med WatchOS 2
 solution: Experience Cloud,Analytics
 title: Apple Watch-implementering med WatchOS 2
 topic-fix: Developer and implementation
 uuid: 9498467e-db5e-411e-a00e-d19841f485de
 exl-id: 9fc9b799-1081-42e4-acf3-569fdeb07aff
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '530'
-ht-degree: 0%
+source-wordcount: '494'
+ht-degree: 1%
 
 ---
 
@@ -45,10 +42,9 @@ Från om med september 2018 har vi släppt en ny större version av SDK. Dessa n
 >
 
 
-
 Mer information om hur du utvecklar WatchKit-appar finns i [The Watch App Architecture](https://developer.apple.com/library/ios/documentation/General/Conceptual/WatchKitProgrammingGuide/DesigningaWatchKitApp.html#//apple_ref/doc/uid/TP40014969-CH3-SW1).
 
-## Konfigurera den innehållande appen {#section_0A2A3995575B4E2ABD12E426BA06AEFF}
+## Konfigurera behållarappen {#section_0A2A3995575B4E2ABD12E426BA06AEFF}
 
 Utför följande steg i Xcode-projektet:
 
@@ -70,7 +66,7 @@ Utför följande steg i Xcode-projektet:
 1. Importera `AdobeMobileLibrary`-filen i implementeringsfilen för din programdelegatklass.
 
    ```objective-c
-   #import “ADBMobile.h”
+   #import "ADBMobile.h"
    ```
 
 1. Konfigurera din `WCSession` innan du gör ett anrop till `ADBMobile`-biblioteket i `application:didFinishLaunchingWithOptions:` för din appdelegat.
@@ -121,7 +117,7 @@ Utför följande steg i Xcode-projektet:
 1. Importera `AdobeMobileLibrary`-filen i implementeringsfilen för din tilläggsklass.
 
    ```objective-c
-   #import “ADBMobile.h”
+   #import "ADBMobile.h"
    ```
 
 1. Konfigurera din `WCSession` innan du anropar `ADBMobile`-biblioteket i `applicationDidFinishLaunching` för din tilläggsdelegat.

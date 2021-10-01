@@ -1,19 +1,16 @@
 ---
 description: Android-metoder för Xamarin-komponenter för Experience Cloud-lösningar 4.x SDK.
 keywords: Xamarin
-seo-description: Android-metoder för Xamarin-komponenter för Experience Cloud-lösningar 4.x SDK.
-seo-title: Android-metoder
 solution: Experience Cloud
 title: Android-metoder
 uuid: 860af1c4-f57e-4bcb-8308-4e316da9a27b
-translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+exl-id: 0de1fa11-37e9-49be-8d42-a13cb4a3f0e3
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '1767'
-ht-degree: 39%
+source-wordcount: '1755'
+ht-degree: 40%
 
 ---
-
 
 # Android-metoder{#android-methods}
 
@@ -61,7 +58,7 @@ Android-metoder för Xamarin-komponenter för Experience Cloud-lösningar 4.x SD
    * `ADBMobilePrivacyStatus.OptOut` - träffar tas bort.
    * `ADBMobilePrivacyStatus.Unknown` - Om spårning offline är aktiverat sparas träffar tills sekretessstatusen ändras till att anmäla sig (träffar skickas) eller avanmäla sig (träffar ignoreras). Om spårning offline inte är aktiverat ignoreras träffar tills sekretessstatusen ändras för att anmäla sig.
 
-   Standardvärdet anges i [filen ADBMobilConfig.json](/help/android/configuration/json-config/json-config.md) .
+   Standardvärdet anges i filen [ADBMobleConfig.json](/help/android/configuration/json-config/json-config.md).
 
    * Här är syntaxen för den här metoden:
 
@@ -163,7 +160,7 @@ Android-metoder för Xamarin-komponenter för Experience Cloud-lösningar 4.x SD
 
 * **OverrideConfigStream**
 
-   (4.2 eller senare) Gör att du kan läsa in en annan `ADBMobile JSON` konfigurationsfil när programmet startas. Den olika konfigurationen används tills programmet stängs.
+   (4.2 eller senare) Gör att du kan läsa in en annan `ADBMobile JSON`-konfigurationsfil när programmet startas. Den olika konfigurationen används tills programmet stängs.
 
    * Här är syntaxen för den här metoden:
 
@@ -230,7 +227,7 @@ Android-metoder för Xamarin-komponenter för Experience Cloud-lösningar 4.x SD
 
 * **TrackState**
 
-   Spårar ett apptillstånd med valfria kontextdata. `States` är de vyer som är tillgängliga i din app, till exempel&quot;titelskärm&quot;,&quot;nivå 1&quot;,&quot;paus&quot; och så vidare. Dessa lägen liknar sidor på en webbplats och anropar `TrackState` stegvisa sidvyer. Om läget är tomt visas det som&quot;app name app version (build)&quot; i rapporter. Om det här värdet visas i rapporter måste du ange status för varje `TrackState` anrop.
+   Spårar ett apptillstånd med valfria kontextdata. `States` är de vyer som är tillgängliga i din app, till exempel&quot;titelskärm&quot;,&quot;nivå 1&quot;,&quot;paus&quot; och så vidare. Dessa lägen liknar sidor på en webbplats och `TrackState` anropar stegvisa sidvyer. Om läget är tomt visas det som&quot;app name app version (build)&quot; i rapporter. Om det här värdet visas i rapporter måste du ange tillstånd för varje `TrackState`-anrop.
 
    >[!TIP]
    >
@@ -258,7 +255,7 @@ Android-metoder för Xamarin-komponenter för Experience Cloud-lösningar 4.x SD
    >[!TIP]
    >
    >
-   >Om du har kod som kan köras medan programmet är i bakgrunden (till exempel en hämtning av bakgrundsdata) använder du `trackActionFromBackground` istället.
+   >Om du har kod som kan köras när programmet är i bakgrunden (till exempel en bakgrundsåterhämtning) använder du `trackActionFromBackground` i stället.
 
    * Här är syntaxen för den här metoden:
 
@@ -277,7 +274,7 @@ Android-metoder för Xamarin-komponenter för Experience Cloud-lösningar 4.x SD
 
 * **TrackLocation**
 
-   Skickar de aktuella latitud- och longitudkoordinaterna. Intressepunkter som definierats i filen används också för att avgöra om platsen som angavs som parameter finns i någon av dina POI:er. `ADBMobileConfig.json` Om de aktuella koordinaterna finns i en definierad POI fylls en kontextdatavariabel i och skickas med `TrackLocation` anropet.
+   Skickar de aktuella latitud- och longitudkoordinaterna. Intressepunkter som definierats i `ADBMobileConfig.json`-filen används också för att avgöra om platsen som angavs som parameter finns i någon av dina POI. Om de aktuella koordinaterna finns i en definierad POI fylls en kontextdatavariabel i och skickas med anropet `TrackLocation`.
 
    * Här är syntaxen för den här metoden:
 
@@ -494,7 +491,7 @@ Android-metoder för Xamarin-komponenter för Experience Cloud-lösningar 4.x SD
 
 * **SyncIdentifiers**
 
-   Med Experience Cloud-ID:t kan du ange ytterligare kund-ID:n som ska kopplas till varje besökare. Besökar-API:t godkänner flera kund-ID:n för samma besökare, med en kundtypsidentifierare som avgränsar omfånget för olika kund-ID:n. Den här metoden motsvarar den `setCustomerIDs` i JavaScript-biblioteket.
+   Med Experience Cloud-ID:t kan du ange ytterligare kund-ID:n som ska kopplas till varje besökare. Besökar-API:t godkänner flera kund-ID:n för samma besökare, med en kundtypsidentifierare som avgränsar omfånget för olika kund-ID:n. Den här metoden motsvarar `setCustomerIDs` i JavaScript-biblioteket.
 
    * Här är syntaxen för den här metoden:
 
@@ -514,7 +511,7 @@ Android-metoder för Xamarin-komponenter för Experience Cloud-lösningar 4.x SD
 
 * **LoadRequest**
 
-   Skickar en begäran till din konfigurerade målserver och returnerar strängvärdet för erbjudandet som genererats i ett `Action<NSDictionary>` återanrop.
+   Skickar en begäran till den konfigurerade målservern och returnerar strängvärdet för erbjudandet som genereras i ett `Action<NSDictionary>`-återanrop.
 
    * Här är syntaxen för den här metoden:
 
@@ -537,7 +534,7 @@ Android-metoder för Xamarin-komponenter för Experience Cloud-lösningar 4.x SD
 
 * **CreateRequest**
 
-   Bekvämt med konstruktor för att skapa ett `ADBTargetLocationRequest` objekt med de givna parametrarna.
+   Konstruktorn kan enkelt skapa ett `ADBTargetLocationRequest`-objekt med de angivna parametrarna.
 
    * Här är syntaxen för den här metoden:
 
@@ -555,7 +552,7 @@ Android-metoder för Xamarin-komponenter för Experience Cloud-lösningar 4.x SD
 
 * **CreateOrderConfirmRequest**
 
-   Skapar en `ADBTargetLocationRequest`bild.
+   Skapar en `ADBTargetLocationRequest`.
 
    * Här är syntaxen för den här metoden:
 
@@ -589,7 +586,7 @@ Android-metoder för Xamarin-komponenter för Experience Cloud-lösningar 4.x SD
 
 * **VisitorProfile**
 
-   Returnerar den besökarprofil som senast hämtades. Returnerar noll om ingen signal har skickats ännu. Besökarprofilen sparas i `NSUserDefaults` så att du enkelt kan komma åt den när du startar appen.
+   Returnerar den besökarprofil som senast hämtades. Returnerar noll om ingen signal har skickats ännu. Besökarprofilen sparas i `NSUserDefaults` så att du enkelt kommer åt den när du startar appen flera gånger.
 
    * Här är syntaxen för den här metoden:
 
@@ -653,7 +650,7 @@ Android-metoder för Xamarin-komponenter för Experience Cloud-lösningar 4.x SD
 
 * **SignalWithData**
 
-   Skickar målgruppshantering en signal med egenskaper och hämtar matchande segment som returneras i ett `Action<NSDictionary>` återanrop.
+   Skickar målgruppshantering en signal med egenskaper och hämtar matchande segment som returneras i ett `Action<NSDictionary>`-återanrop.
 
    * Här är syntaxen för den här metoden:
 
@@ -699,7 +696,7 @@ Mer information om videoanalys finns i [Videoanalys](/help/android/analytics-mai
 
 * **MediaSettings**
 
-   Returnerar ett `MediaSettings` objekt med angivna parametrar.
+   Returnerar ett `MediaSettings`-objekt med angivna parametrar.
 
    * Här är syntaxen för den här metoden:
 
@@ -715,7 +712,7 @@ Mer information om videoanalys finns i [Videoanalys](/help/android/analytics-mai
 
 * **AdSettingsWith**
 
-   Returnerar ett `MediaSettings` objekt som ska användas för att spåra en annonsvideo.
+   Returnerar ett `MediaSettings`-objekt som ska användas för att spåra en annonsvideo.
 
    * Här är syntaxen för den här metoden:
 
@@ -733,7 +730,7 @@ Mer information om videoanalys finns i [Videoanalys](/help/android/analytics-mai
 
 * **Öppna**
 
-   Öppnar ett `ADBMediaSettings` objekt för spårning.
+   Öppnar ett `ADBMediaSettings`-objekt för spårning.
 
    * Här är syntaxen för den här metoden:
 

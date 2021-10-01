@@ -1,17 +1,14 @@
 ---
 description: Lista över Target-metoder som tillhandahålls av Universal Windows Platform-biblioteket.
-seo-description: Lista över Target-metoder som tillhandahålls av Universal Windows Platform-biblioteket.
-seo-title: Målmetoder
 solution: Experience Cloud,Analytics
 title: Målmetoder
 topic-fix: Developer and implementation
 uuid: 2ad5953b-7850-446a-8053-b3715b86329b
 exl-id: d7aeee41-1c34-4f98-8455-e9f429287cfc
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '265'
-ht-degree: 34%
+source-wordcount: '252'
+ht-degree: 36%
 
 ---
 

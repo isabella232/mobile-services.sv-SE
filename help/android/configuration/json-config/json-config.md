@@ -1,16 +1,13 @@
 ---
 description: Den här informationen hjälper dig att använda ADBMobil.json-konfigurationsfilen.
-seo-description: Den här informationen hjälper dig att använda ADBMobil.json-konfigurationsfilen.
-seo-title: ADBMomobile JSON-konfiguration
 solution: Experience Cloud,Analytics
 title: ADBMomobile JSON-konfiguration
 topic-fix: Developer and implementation
 uuid: 1decf605-7bc3-4e73-ad52-1ecd5821599e
 exl-id: 652aeb05-b052-448d-98c8-d513d050a6f5
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '1678'
+source-wordcount: '1666'
 ht-degree: 4%
 
 ---
@@ -19,7 +16,7 @@ ht-degree: 4%
 
 Den här informationen hjälper dig att förstå variablerna i ADBMobil.json-konfigurationsfilen.
 
-## `ADBMobileConfig.json` config file reference  {#section_5AD4EDF87E304980B4AC4A5657FDA8B9}
+## `ADBMobileConfig.json` config file reference {#section_5AD4EDF87E304980B4AC4A5657FDA8B9}
 
 Samma config-fil kan användas för appen på flera plattformar:
 
@@ -155,8 +152,8 @@ Här är en lista över variablerna i JSON-filen och den SDK-version du behöver
       Från och med version 4.2 definieras POI i gränssnittet för Adobe Mobile och synkroniseras dynamiskt till programkonfigurationsfilen. Synkroniseringen kräver inställningen `analytics.poi`:
 
       ```javascript
-        “analytics.poi“: `https://assets.adobedtm.com/`
-      …/yourfile.json”`,
+        "analytics.poi": `https://assets.adobedtm.com/`
+      …/yourfile.json"`,
       ```
 
       Om den här inställningen inte är konfigurerad måste `ADBMobile.json`-filen uppdateras för att inkludera den här raden. Information om hur du hämtar en uppdaterad konfigurationsfil finns i [Innan du startar](/help/android/getting-started/requirements.md).
@@ -242,7 +239,7 @@ Här är en lista över variablerna i JSON-filen och den SDK-version du behöver
    * Anger hur länge Target väntar på ett svar.
 
 
-## Exempel på `ADBMobileConfig.json` fil {#section_4655EF79744649E5A5AE19E3224C472C}
+## Exempel på `ADBMobileConfig.json`-fil {#section_4655EF79744649E5A5AE19E3224C472C}
 
 Här följer ett exempel på en `ADBMobileConfig.json`-fil:
 

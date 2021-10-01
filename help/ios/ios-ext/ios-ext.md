@@ -1,16 +1,13 @@
 ---
 description: Du kan använda iOS-tillägget för att samla in användningsdata från Apple Watch Apps (WatchOS 1), Today Widgets, Photo Editing widgets och andra iOS-tilläggsappar.
-seo-description: Du kan använda iOS-tillägget för att samla in användningsdata från Apple Watch Apps (WatchOS 1), Today Widgets, Photo Editing widgets och andra iOS-tilläggsappar.
-seo-title: Implementering av iOS-tillägg
 solution: Experience Cloud,Analytics
 title: Implementering av iOS-tillägg
 topic-fix: Developer and implementation
 uuid: 8afc03fe-403e-4643-ada1-30e403ede238
 exl-id: 741b0cd5-6245-480a-b5bf-a33a1f82a425
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '673'
 ht-degree: 0%
 
 ---
@@ -28,7 +25,7 @@ Från om med september 2018 har vi släppt en ny större version av SDK. Dessa n
 * Gå till Adobe Experience Platform Launch för att komma igång.
 * Om du vill se vad som finns i Experience Platform SDK-databaserna går du till [Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
 
-## Recommendations för iOS SDK i stället för din wrapper {#section_97577331FD9E4FFBBE05D402C67AEE69}
+## Recommendations för iOS SDK i stället för wrapper {#section_97577331FD9E4FFBBE05D402C67AEE69}
 
 >[!IMPORTANT]
 >
@@ -52,10 +49,9 @@ I de flesta fall när en användare använder bevakningsappen körs det överord
 >
 
 
-
 Om du arbetar med en WatchKit-app bör du ha ett tredje mål. Mer information om hur du utvecklar för Apple Watch finns i [Utveckla för Apple Watch](https://developer.apple.com/library/ios/documentation/General/Conceptual/WatchKitProgrammingGuide/index.html#//apple_ref/doc/uid/TP40014969-CH8-SW1).
 
-## Konfigurera den innehållande appen {#section_0BAB0842E4C04A62B5E03DFC4BA77851}
+## Konfigurera behållarappen {#section_0BAB0842E4C04A62B5E03DFC4BA77851}
 
 Utför följande steg i Xcode-projektet:
 

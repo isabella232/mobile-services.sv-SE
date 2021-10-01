@@ -1,17 +1,14 @@
 ---
 description: Den här informationen kan hjälpa dig att felsöka push-meddelanden.
 keywords: mobil
-seo-description: Den här informationen kan hjälpa dig att felsöka push-meddelanden.
-seo-title: Felsökning av push-meddelanden
 solution: Experience Cloud,Analytics
 title: Felsökning av push-meddelanden
 topic-fix: Metrics
 uuid: c7be4ab7-0cfe-4296-84a8-01412f4fd93f
 exl-id: 56feb8e1-e196-4b70-8240-6e41581ca602
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '730'
+source-wordcount: '719'
 ht-degree: 0%
 
 ---
@@ -94,13 +91,13 @@ Följande kund har två iOS-appar:
 * Programnamn: Photoshop_app_iOS
    * Överordnad RSID: AllaAdobe Photoshop_apps
    * VRSID: Photoshop_iOS_app_SF
-   * VRSID-definitionssegment: `a.appid contains “PhotoShop_iOS_app_SF”`
+   * VRSID-definitionssegment: `a.appid contains "PhotoShop_iOS_app_SF"`
 * Programnamn: Photoshop_app_iOS
    * Överordnad RSID: AllaAdobe Photoshop_apps
    * RSID: Photoshop_iOS_app_LA
-   * VRSID-definitionssegment: `a.os contains “iOS”`
+   * VRSID-definitionssegment: `a.os contains "iOS"`
 
-I det här exemplet får alla användare av *Photoshop_iOS_app_SF*_iOS_app_SF *push-meddelandet som förväntat om en Photoshop-anställd skickar en push-åtgärd till* appen Photoshop_iOS_app_SF. Men om medarbetaren skickar ett meddelande till *Photoshop_iOS_app_LA*-appen eftersom dess VRSID-definitionssegment är felaktigt (`iOS` i stället för `a.os contains "PhotoShop_iOS_app_LA"`) skickas meddelandet till **alla** iOS-användare i *AllaAdobe Photoshop_appar*. Meddelandet skickas fortfarande till *Photoshop_iOS_app_LA*-användare, men meddelandet blocklist även push-ID:n för *Photoshop_iOS_app_SF*-användare eftersom *Photoshop_iOS_app_SF*-appen har ett annat certifikat. Om segmentet hade definierats som `a.os contains “PhotoShop_iOS_app_LA”` skulle push-meddelandet bara ha skickats till *Photoshop_iOS_app_LA*-användare.
+I det här exemplet får alla användare av *Photoshop_iOS_app_SF*_iOS_app_SF *push-meddelandet som förväntat om en Photoshop-anställd skickar en push-åtgärd till* appen Photoshop_iOS_app_SF. Men om medarbetaren skickar ett meddelande till *Photoshop_iOS_app_LA*-appen eftersom dess VRSID-definitionssegment är felaktigt (`iOS` i stället för `a.os contains "PhotoShop_iOS_app_LA"`) skickas meddelandet till **alla** iOS-användare i *AllaAdobe Photoshop_appar*. Meddelandet skickas fortfarande till *Photoshop_iOS_app_LA*-användare, men meddelandet blocklist även push-ID:n för *Photoshop_iOS_app_SF*-användare eftersom *Photoshop_iOS_app_SF*-appen har ett annat certifikat. Om segmentet hade definierats som `a.os contains "PhotoShop_iOS_app_LA"` skulle push-meddelandet bara ha skickats till *Photoshop_iOS_app_LA*-användare.
 
 Om det skickas med *Photoshop_IOS_app_LA*-push-certifikatet återgår push-identifierarna för *Photoshop_iOS_app_SF* som `invalid`.
 

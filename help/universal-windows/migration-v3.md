@@ -1,16 +1,13 @@
 ---
 description: I det här avsnittet beskrivs hur du migrerar från 3.x-versionen av en tidigare Windows Mobile SDK till Universal Windows Platform 4.x SDK för Experience Cloud-lösningar.
-seo-description: I det här avsnittet beskrivs hur du migrerar från 3.x-versionen av en tidigare Windows Mobile SDK till Universal Windows Platform 4.x SDK för Experience Cloud-lösningar.
-seo-title: Migrera till 4.x
 solution: Experience Cloud,Analytics
 title: Migrera till 4.x
 topic-fix: Developer and implementation
 uuid: bdd6c5cd-3892-4e99-b69e-77105ad66e25
 exl-id: 68de505b-dcff-4a78-9f01-b1d103846281
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '705'
+source-wordcount: '675'
 ht-degree: 0%
 
 ---
@@ -112,11 +109,11 @@ Ersätt följande metoder i hela koden med ett anrop till `trackState` eller `tr
 * Track (TrackAction)
 * TrackLinkURL (TrackAction)
 
-## Anpassad ID-tjänst {#section_2CF930C13BA64F04959846E578B608F3}
+## Tjänst för anpassat ID {#section_2CF930C13BA64F04959846E578B608F3}
 
 Ersätt variabeln `visitorID` med ett anrop till `setUserIdentifier`.
 
-## Offlinespårning {#section_5D4CD8CD1BE041A79A8657E31C0D24C6}
+## Spårning offline {#section_5D4CD8CD1BE041A79A8657E31C0D24C6}
 
 Spårning offline är aktiverat i `ADBMobileConfig.json`-filen. All annan offlinekonfiguration görs automatiskt.
 
@@ -127,7 +124,7 @@ Ta bort anrop till följande metoder i hela koden:
 * SetOnline
 * SetOffline
 
-## Produktvariabel {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
+## Variabeln Produkter {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
 
 Eftersom variabeln products inte är tillgänglig i bearbetningsregler kan du använda följande syntax för att ange `products`:
 

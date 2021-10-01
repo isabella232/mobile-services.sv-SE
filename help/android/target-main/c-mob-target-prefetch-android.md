@@ -1,17 +1,14 @@
 ---
 description: Adobe Target förhämtningsfunktion använder Android Mobile SDK:er för att hämta innehåll så få gånger som möjligt genom att cachelagra serversvaren.
-seo-description: Adobe Target förhämtningsfunktion använder Android Mobile SDK:er för att hämta innehåll så få gånger som möjligt genom att cachelagra serversvaren.
-seo-title: Förhämta erbjudandeinnehåll i Android
 title: Förhämta erbjudandeinnehåll i Android
 uuid: 063451b8-e191-4d58-8ed8-1723e310ad1a
-translation-type: tm+mt
-source-git-commit: fa7375ac8a1345d81748bcf635791c46d3943fed
+exl-id: 60fd9703-972b-4c2c-bf9c-86e1f59bfba5
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '791'
-ht-degree: 4%
+source-wordcount: '762'
+ht-degree: 5%
 
 ---
-
 
 # Förhämta erbjudandeinnehåll i Android {#prefetch-offer-content-in-android}
 
@@ -23,13 +20,13 @@ Adobe Target förhämtningsfunktion använder Android Mobile SDK:er för att hä
 
 Den här processen minskar inläsningstiden, förhindrar flera nätverksanrop och gör att Adobe Target kan meddelas vilken mbox som mobilappsanvändaren har besökt. Allt innehåll hämtas och cachelagras under förhämtningsanropet, och det här innehållet hämtas från cachen för alla framtida anrop som innehåller cachelagrat innehåll för det angivna mbox-namnet.
 
-Förhämtningsinnehåll bevaras inte vid start. Innehållet i förhämtningen cachas så länge som programmet finns eller tills metoden anropas `clearPrefetchCache()` .
+Förhämtningsinnehåll bevaras inte vid start. Förhämtningsinnehållet cachelagras så länge som programmet finns eller tills metoden `clearPrefetchCache()` anropas.
 
 >[!IMPORTANT]
 >
 >Förhämtnings-API:er för mål har varit tillgängliga sedan SDK-version 4.14.0. Mer information om parameterbegränsningar finns i [Batch-input-parameters](https://developers.adobetarget.com/api/#batch-input-parameters).
 
-I SDK version 4.14 eller senare, om den anges, `environmentId` hämtas filen från `ADBMobileConfig.json` när ett TnT-anrop för en v2-batchruta initieras. Om ingen `environmentId` anges i den här filen skickas ingen miljöparameter i TNT-batchanrop och erbjudandet levereras för standardmiljön.
+Om det anges i SDK version 4.14 eller senare hämtas `environmentId` från `ADBMobileConfig.json`-filen när ett TnT-anrop för v2-batchmbox initieras. Om ingen `environmentId` har angetts i den här filen skickas ingen miljöparameter i TNT-batchanropet och erbjudandet levereras för standardmiljön.
 
 Exempel:
 
@@ -63,7 +60,7 @@ Här är metoder som du kan använda för förhämtning i Android:
 
       * **targetPrefetchArray**
 
-         Array med `TargetPrefetchObjects` namnet och mboxParameters för varje målplats som ska förhämtas.
+         Arrayen `TargetPrefetchObjects` som innehåller namnet och mboxParameters för varje målplats som ska förhämtas.
 
       * **profileParameters**
 
@@ -91,7 +88,7 @@ Här är metoder som du kan använda för förhämtning i Android:
 
       * **requestArray**
 
-         En array med `TargetRequestObjects` som innehåller namn, standardinnehåll, parametrar och återanropsfunktion per plats att hämta.
+         Matris `TargetRequestObjects` som innehåller namn, standardinnehåll, parametrar och återanropsfunktion per plats att hämta.
 
       * **profileParameters**
 
@@ -99,7 +96,7 @@ Här är metoder som du kan använda för förhämtning i Android:
 
 * **clearPrefetchCache**
 
-   Raderar data som cachelagrats av Target Prefetch.
+   Rensar data som cachelagrats av Target Prefetch.
 
    * Här är syntaxen för den här metoden:
 
@@ -154,19 +151,19 @@ Kapslar in mbox-namnet och parametrarna som används för mbox-förhämtning.
 
 * `mboxParameters`
 
-   Samling nyckelvärdepar som ska bifogas som `mboxParameters` för `TargetPrefetchObject`begäran.
+   Samling nyckelvärdepar som ska bifogas som `mboxParameters` för denna `TargetPrefetchObject`-begäran.
    * **Typ**: Karta`<String, Object>`
 
 * **`orderParameters`**
 
    Samling av nyckelvärdepar som ska kopplas till aktuell mbox under ordernoden.
-   * **Typ**: Karta `<String, Object>`
+   * **Typ**: Karta  `<String, Object>`
 
 * **`productParameters`**
 
    Samling nyckelvärdepar som ska bifogas till aktuell mbox under produktnoden.
 
-   * **Typ**: Karta `<String, Object>`
+   * **Typ**: Karta  `<String, Object>`
 
 
 ### Klassreferens: TargetRequestObject
@@ -181,7 +178,7 @@ Den här klassen kapslar in mbox-namnet, standardinnehållet, mbox-parametrar oc
 
 * **`mboxParameters`**
 
-   Samling nyckelvärdepar som ska bifogas som `mboxParameters` för detta `TargetRequestObject`.
+   Samling nyckelvärdepar som ska bifogas som `mboxParameters` för denna `TargetRequestObject`.
 
    * **Typ: Karta`<String, Object>`**
 
@@ -189,13 +186,13 @@ Den här klassen kapslar in mbox-namnet, standardinnehållet, mbox-parametrar oc
 
    Samling av nyckelvärdepar som ska kopplas till aktuell mbox under ordernoden.
 
-   * **Typ**: Karta `<String, Object>`
+   * **Typ**: Karta  `<String, Object>`
 
 * **`productParameters`**
 
    Samling nyckelvärdepar som ska bifogas till aktuell mbox under produktnoden.
 
-   * **Typ**: Karta `<String, Object>`
+   * **Typ**: Karta  `<String, Object>`
 
 * **`defaultContent`**
 
@@ -205,12 +202,12 @@ Den här klassen kapslar in mbox-namnet, standardinnehållet, mbox-parametrar oc
 
 * **`callback`**
 
-   Funktionspekare som anropas när innehållet för den angivna `TargetRequestObject` är tillgängligt.
+   Funktionspekare som anropas när innehåll för angiven `TargetRequestObject` är tillgängligt.
 
    * **Typ**: Target.TargetCallback`<String>`
 
 
-## Code sample {#section_BF7F49763D254371B4656E17953D520C}
+## Kodexempel {#section_BF7F49763D254371B4656E17953D520C}
 
 Här är ett exempel på hur du förhämtar innehåll med Android SDK:n:
 

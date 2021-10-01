@@ -1,17 +1,14 @@
 ---
 description: Rapporten Visa sökvägar, som baseras på sökvägsanalys, visar ett bandiagram som representerar de sökvägar som har tagits mellan lägena i appen.
 keywords: mobil
-seo-description: Rapporten Visa sökvägar, som baseras på sökvägsanalys, visar ett bandiagram som representerar de sökvägar som har tagits mellan lägena i appen.
-seo-title: Visa rapport om sökvägar
 solution: Experience Cloud,Analytics
 title: Visa rapport om sökvägar
 topic-fix: Reports,Metrics
 uuid: bc73edce-0cc0-4349-9a48-e0a40cbe1b67
 exl-id: 475dbe01-fa4d-433c-ac77-68f2a6972c0c
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '468'
 ht-degree: 0%
 
 ---

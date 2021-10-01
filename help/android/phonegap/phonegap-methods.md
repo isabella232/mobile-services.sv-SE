@@ -1,22 +1,19 @@
 ---
 description: Du kan använda iOS PhoneGap Plug-in-metoder för att slutföra en mängd olika åtgärder.
 keywords: android;bibliotek;mobil;sdk
-seo-description: Du kan använda iOS PhoneGap Plug-in-metoder för att slutföra en mängd olika åtgärder.
-seo-title: PhoneGap plug-in-metoder
 solution: Experience Cloud,Analytics
 title: PhoneGap plug-in-metoder
 topic-fix: Developer and implementation
 uuid: bc3db9ce-81b7-45ec-88aa-6020c1db5d9c
 exl-id: 4e6cf200-c826-4b23-87cf-4b8e1e691981
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '1573'
+source-wordcount: '1557'
 ht-degree: 34%
 
 ---
 
-# PhoneGap-plug-in-metoder{#phonegap-plug-in-methods}
+# PhoneGap plug-in-metoder{#phonegap-plug-in-methods}
 
 Du kan använda Android PhoneGap Plug-in-metoder för att slutföra en mängd olika åtgärder.
 
@@ -579,11 +576,11 @@ I `html`-filer där du vill använda spårning lägger du till följande i tagge
    * Här är kodexemplen för den här metoden:
 
       ```java
-      ADB.acquisitionCampaignStartForApp(“appId”, {‘key’:‘value’}, function() {…}, function() {…}));
+      ADB.acquisitionCampaignStartForApp("appId", {‘key’:‘value’}, function() {…}, function() {…}));
       ```
 
       ```java
-      ADB.acquisitionCampaignStartForApp(“appId”, {‘key’:‘value’});  
+      ADB.acquisitionCampaignStartForApp("appId", {‘key’:‘value’});  
       ```
 
 ## Annonsidentifierare {#section_194607D101B047A19C51B19E176E1500}

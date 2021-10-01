@@ -1,18 +1,15 @@
 ---
 description: Här är en lista över de Audience Manager-metoder som finns i Android-biblioteket.
 keywords: android;bibliotek;mobil;sdk
-seo-description: Här är en lista över de Audience Manager-metoder som finns i Android-biblioteket.
-seo-title: Audience Manager-metoder
 solution: Experience Cloud,Analytics
 title: Audience Manager-metoder
 topic-fix: Developer and implementation
 uuid: 2f6e4664-1306-41d4-9fa7-e3a99f1df4ab
 exl-id: 707b40b8-e56e-4c26-8b59-87c5d71cad0c
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '296'
-ht-degree: 25%
+source-wordcount: '277'
+ht-degree: 27%
 
 ---
 

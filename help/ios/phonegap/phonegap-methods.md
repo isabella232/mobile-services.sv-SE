@@ -1,22 +1,19 @@
 ---
 description: Du kan använda iOS PhoneGap Plug-in-metoder för att utföra en mängd olika åtgärder.
 keywords: phonegap
-seo-description: Du kan använda iOS PhoneGap Plug-in-metoder för att utföra en mängd olika åtgärder.
-seo-title: PhoneGap Plug-in-metoder
 solution: Experience Cloud,Analytics
 title: PhoneGap Plug-in-metoder
 topic-fix: Developer and implementation
 uuid: bd830fe5-804a-4d0a-bbb6-99a6d8da6a03
 exl-id: 7ffdf008-1605-471f-93fb-f9c6b38a3bcb
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '1731'
+source-wordcount: '1715'
 ht-degree: 33%
 
 ---
 
-# PhoneGap-plug-in-metoder {#phonegap-plug-in-methods}
+# PhoneGap plug-in-metoder {#phonegap-plug-in-methods}
 
 Du kan använda iOS PhoneGap Plug-in-metoder för att slutföra en mängd olika åtgärder.
 

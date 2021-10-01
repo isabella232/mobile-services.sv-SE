@@ -1,16 +1,13 @@
 ---
 description: Information som kan hjälpa dig med videoanalys.
-seo-description: Information som kan hjälpa dig med videoanalys.
-seo-title: Videoanalys
 solution: Experience Cloud,Analytics
 title: Videoanalys
 topic-fix: Developer and implementation
 uuid: f45dac3b-cd2e-4fba-a3b2-c243640ecfa4
 exl-id: bf7a2936-4a90-4630-8a0c-df41baa1d6a8
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '899'
+source-wordcount: '888'
 ht-degree: 15%
 
 ---
@@ -19,7 +16,7 @@ ht-degree: 15%
 
 Information som kan hjälpa dig med videoanalys.
 
-Videomätning beskrivs i detalj i [Mäta video och ljud i Adobe Analytics](https://docs.adobe.com/content/help/sv-SE/media-analytics/using/media-overview.html)-guiden. Den allmänna processen att mäta video är mycket lik på alla AppMeasurement-plattformar. Det här snabbstartsavsnittet innehåller en grundläggande översikt över utvecklaråtgärderna tillsammans med kodexempel.
+Videomätning beskrivs i detalj i [Mäta direktuppspelningsmedia i Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html)-guiden. Den allmänna processen att mäta video är mycket lik på alla AppMeasurement-plattformar. Det här snabbstartsavsnittet innehåller en grundläggande översikt över utvecklaråtgärderna tillsammans med kodexempel.
 
 I följande tabell visas de mediedata som skickas till Analytics. Använd bearbetningsregler för att mappa kontextdata till en Analytics-variabel.
 
@@ -35,7 +32,7 @@ I följande tabell visas de mediedata som skickas till Analytics. Använd bearbe
 
 * **a.media.name**
 
-   (**Valfritt**) Tillhandahåller information om videopassning. ClientCare måste aktivera målning för den här variabeln.
+   (**Valfritt**) Tillhandahåller information om videopassning. Det måste vara kundtjänst som aktiverat för den här variabeln.
 
    * Händelsetyp: Custom Insight (s.prop).
    * Variabeltyp: Custom Insight (s.prop)
@@ -88,7 +85,7 @@ I följande tabell visas de mediedata som skickas till Analytics. Använd bearbe
    * Variabeltyp: Händelse
    * Typ: Räknare
 
-## Konfigurera medieinställningar {#section_929945D4183C428AAF3B983EFD3E2500}
+## Konfigurera mediainställningar {#section_929945D4183C428AAF3B983EFD3E2500}
 
 Konfigurera ett `MediaSettings`-objekt med de inställningar du vill använda för att spåra video:
 

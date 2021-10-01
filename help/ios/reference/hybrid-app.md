@@ -1,21 +1,18 @@
 ---
 description: Om appen öppnar mobilt webbinnehåll måste du se till att besökarna inte identifieras separat när de förflyttar sig mellan den inbyggda och mobila webben.
-seo-description: Om appen öppnar mobilt webbinnehåll måste du se till att besökarna inte identifieras separat när de förflyttar sig mellan den inbyggda och mobila webben.
-seo-title: Spårning av besökare mellan en app och en mobil webbplats
 solution: Experience Cloud,Analytics
 title: Spårning av besökare mellan en app och en mobil webbplats
 topic-fix: Developer and implementation
 uuid: 2d951de6-3954-4379-a4ff-99b9695b9869
 exl-id: d8459d59-0edd-42c4-81b5-529b250accb4
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '528'
+source-wordcount: '494'
 ht-degree: 0%
 
 ---
 
-# Spårning av besökare mellan en app och en mobil webbplats {#visitor-tracking-between-an-app-and-mobile-web}
+# Spårning av besökare mellan en app och en mobil webbsajt  {#visitor-tracking-between-an-app-and-mobile-web}
 
 Om appen öppnar mobilt webbinnehåll måste du se till att besökarna inte identifieras separat när de förflyttar sig mellan den inbyggda och mobila webben.
 
@@ -33,7 +30,7 @@ Vanliga mobilwebbimplementeringar använder samma standardanalys `s_code.js` ell
 
 Om du vill använda samma besökar-ID i appen och på mobilwebben och skicka appbesökar-ID:t till mobilwebben i URL:en:
 
-## Implementera besökarspårning mellan en app och en mobil webbsida {#section_EDC91D6C67AD43999227707C2769C65D}
+## Implementera besökarspårning mellan en app och en mobil webbsajt {#section_EDC91D6C67AD43999227707C2769C65D}
 
 1. Lägg till biblioteket i ditt projekt och implementera livscykeln.
 
@@ -41,7 +38,7 @@ Om du vill använda samma besökar-ID i appen och på mobilwebben och skicka app
 1. Om du vill lägga till besökarinformation till den URL som används för att öppna webbvyn ringer du `visitorAppendToURL`:
 
    ```objective-c
-   NSURL *url = [NSURL URLWithString:@”https://www.mydomain.com/index.php"]; 
+   NSURL *url = [NSURL URLWithString:@"https://www.mydomain.com/index.php"]; 
    NSURL *urlWithVisitorData = [ADBMobile visitorAppendToURL:url]; 
    [[UIApplication sharedApplication] openURL:urlWithVisitorData];
    ```
@@ -63,7 +60,7 @@ ID-tjänstkoden på måldomänen extraherar MID från URL:en i stället för att
 
 På träffar från mobilwebbinnehållet kontrollerar du att parametern `mid` finns i varje träff och att det här värdet matchar `mid` som skickas av appkoden.
 
-## Felsök besöksspårning {#section_C070AE85E3CE4E9893FD4F40E73F2C92}
+## Felsöka besöksspårning {#section_C070AE85E3CE4E9893FD4F40E73F2C92}
 
 ### Jag ser inte `[ADBMobile visitorAppendToURL:]`.
 

@@ -1,17 +1,14 @@
 ---
 description: 'Följande information hjälper dig att komma igång med Android SDK för Experience Cloud Solutions '
-seo-description: 'Följande information hjälper dig att komma igång med Android SDK för Experience Cloud Solutions '
-seo-title: Komma igång
 solution: Experience Cloud,Analytics
 title: Komma igång
 topic-fix: Developer and implementation
 uuid: 39c642e2-60f0-4bbe-b0d1-2635ee2c6d01
 exl-id: 895f3986-5e6a-4bb1-b11f-a4dad0ba6bc7
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '141'
-ht-degree: 6%
+source-wordcount: '124'
+ht-degree: 5%
 
 ---
 

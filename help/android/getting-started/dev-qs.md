@@ -1,26 +1,23 @@
 ---
 description: Den här informationen hjälper dig att implementera Android-biblioteket och samla in livscykelvärden, som starter, uppgraderingar, sessioner, engagerade användare och så vidare.
 keywords: android;bibliotek;mobil;sdk
-seo-description: Den här informationen hjälper dig att implementera Android-biblioteket och samla in livscykelvärden, som starter, uppgraderingar, sessioner, engagerade användare och så vidare.
-seo-title: Kärnimplementering och livscykel
 solution: Experience Cloud,Analytics
 title: Kärnimplementering och livscykel
 topic-fix: Developer and implementation
 uuid: af4d11ac-8245-46a0-9b3a-4a0a29cfbbb2
 exl-id: 67aba85a-42a0-473a-bb05-e5fcb35263d9
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '539'
+source-wordcount: '513'
 ht-degree: 2%
 
 ---
 
-# Core-implementering och livscykel {#core-implementation-and-lifecycle}
+# Kärnimplementering och livscykel {#core-implementation-and-lifecycle}
 
 Den här informationen hjälper dig att implementera Android-biblioteket och samla in livscykelvärden, som starter, uppgraderingar, sessioner, engagerade användare och så vidare.
 
-## Hämta SDK {#section_99FE1A17A36D4A2C943939023CF6265C}
+## Ladda ned SDK {#section_99FE1A17A36D4A2C943939023CF6265C}
 
 >[!IMPORTANT]
 >
@@ -149,7 +146,7 @@ Ytterligare kontextdatavärden som skickas med `collectLifecycleData` måste map
 
 Andra livscykelvärden samlas in automatiskt. Mer information finns i [Livscykelvärden](/help/android/metrics.md).
 
-## Gör följande {#section_BF709684E1DD40EA9169BC1D0D4B37C2}
+## Vad ska du göra härnäst? {#section_BF709684E1DD40EA9169BC1D0D4B37C2}
 
 Utför följande uppgifter:
 

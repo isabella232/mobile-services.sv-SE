@@ -1,17 +1,14 @@
 ---
 description: Du kan ta bort en eller flera förvärvslänkar när de inte längre behövs.
 keywords: mobil
-seo-description: Du kan ta bort en eller flera förvärvslänkar när de inte längre behövs.
-seo-title: Ta bort värvningslänkar
 solution: Experience Cloud,Analytics
 title: Ta bort värvningslänkar
 topic-fix: Metrics
 uuid: e7362348-ca24-4f1c-b37f-eca6d2b0da6d
 exl-id: 4c007ec6-40ba-468f-8bfc-0930a04c59c1
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '99'
+source-wordcount: '82'
 ht-degree: 2%
 
 ---

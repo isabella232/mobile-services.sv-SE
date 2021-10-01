@@ -1,17 +1,14 @@
 ---
 description: Rapporten Banner Metrics visar en solbränsvisualisering för dina befintliga data. Den här rapporten är endast tillgänglig för Digital Publishing Suite-kunder (DPS).
 keywords: mobil
-seo-description: Rapporten Banner Metrics visar en solbränsvisualisering för dina befintliga data. Den här rapporten är endast tillgänglig för Digital Publishing Suite-kunder (DPS).
-seo-title: Banderollmått
 solution: Experience Cloud,Analytics
 title: Banderollmått
 topic-fix: Metrics
 uuid: 50638c55-f10d-43d7-8d12-e48908572766
 exl-id: 0383e23f-579e-4177-922d-71f193a3c606
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '181'
+source-wordcount: '156'
 ht-degree: 0%
 
 ---

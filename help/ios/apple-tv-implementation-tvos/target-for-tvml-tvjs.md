@@ -1,17 +1,14 @@
 ---
 description: Du kan utnyttja Adobe Target i dina TVML-/TVJS-appar genom att göra direkta ersättningar av dina XML-filer. Ange områden på sidan som ska ersättas av Target-innehåll med hjälp av det anpassade XML-elementet ADBTarget.
-seo-description: Du kan utnyttja Adobe Target i dina TVML-/TVJS-appar genom att göra direkta ersättningar av dina XML-filer. Ange områden på sidan som ska ersättas av Target-innehåll med hjälp av det anpassade XML-elementet ADBTarget.
-seo-title: Adobe Target for TVML/TVJS
 title: Adobe Target for TVML/TVJS
 uuid: afd5a583-5266-43f2-8cb0-0ace89c53a57
-translation-type: tm+mt
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+exl-id: 9348d49c-2a5a-4ea0-b90d-99d446bd336a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '502'
+source-wordcount: '461'
 ht-degree: 0%
 
 ---
-
 
 # Adobe Target for TVML/TVJS{#adobe-target-for-tvml-tvjs}
 
@@ -19,17 +16,17 @@ Du kan utnyttja Adobe Target i dina TVML-/TVJS-appar genom att göra direkta ers
 
 >[!IMPORTANT]
 >
->Innan du använder elementet `ADBTarget` i dina TVML-sidor måste du konfigurera din TVML/TVJS-app så att den använder tvOS SDK. Mer information finns i [Apple TV-implementering med tvOS](/help/ios/apple-tv-implementation-tvos/apple-tv-implementation-tvos.md).
+>Innan du använder elementet `ADBTarget` på dina TVML-sidor måste du konfigurera din TVML/TVJS-app så att den använder tvOS SDK. Mer information finns i [Apple TV-implementering med tvOS](/help/ios/apple-tv-implementation-tvos/apple-tv-implementation-tvos.md).
 
 ## Komma igång {#section_88445645FD67416EAF6FDC3E3D3F5C33}
 
-1. Identifiera den `.xml` fil där du vill använda målplatsen.
-1. Lägg till ett `ADBTarget` element i filen som ett underordnat element till `<document>` elementet.
-1. Om Target inte kan hitta din Mbox-plats, eller om det gör en timeout, används värdet mellan dina `<ADBTarget>` - och `</ADBTarget>` -taggar som standardinnehåll.
+1. Identifiera den `.xml`-fil som du vill använda målplatsen i.
+1. Lägg till ett `ADBTarget`-element i filen som ett underordnat element till `<document>`-elementet.
+1. Om Target inte hittar din Mbox-plats, eller om det gör en timeout, används värdet mellan `<ADBTarget>`- och `</ADBTarget>`-taggarna som standardinnehåll.
 
 ## Konfigurera din mbox i Target {#section_F2DA140C34B0421D976046F825B23123}
 
-Det returnerade innehållet från Target ersätter allt innehåll mellan `<ADBTarget>` och `</ADBTarget>`inklusive båda `ADBTarget` -taggarna.
+Det returnerade innehållet från Target ersätter allt innehåll mellan `<ADBTarget>` och `</ADBTarget>`, inklusive båda `ADBTarget`-taggarna.
 
 >[!TIP]
 >
@@ -39,7 +36,7 @@ Användningssättet kan vara så enkelt som att ersätta ett strängvärde i en 
 
 ## Konfigurera ADBTarget-elementet {#section_44A7AEC6FC0648ADAD0BACB57D493AFA}
 
-I elementet `ADBTarget` måste du ange namnet på Mbox i `mbox` egenskapen. Du kan också lägga till anpassade egenskaper i din begäran i `customParameterName="customParameterValue"` formatet.
+I `ADBTarget`-elementet måste du ange namnet på Mbox i `mbox`-egenskapen. Du kan också lägga till anpassade egenskaper i din begäran i formatet `customParameterName="customParameterValue"`.
 
 * **`mbox`**
 
@@ -53,14 +50,14 @@ I elementet `ADBTarget` måste du ange namnet på Mbox i `mbox` egenskapen. Du k
    Beställnings-ID.
 
    * Egenskapstyp: Sträng
-   * Den här egenskapen är **inte** obligatorisk.
+   * Den här egenskapen är **krävs inte**.
 
 * **`total`**
 
    Ordersumman.
 
    * Egenskapstyp: Sträng
-   * Den här egenskapen är **inte** obligatorisk.
+   * Den här egenskapen är **krävs inte**.
 
 * **`purchasedProductIds`**
 
@@ -74,7 +71,7 @@ I elementet `ADBTarget` måste du ange namnet på Mbox i `mbox` egenskapen. Du k
       ```
 
    * Egenskapstyp: Sträng
-   * Den här egenskapen är **inte** obligatorisk.
+   * Den här egenskapen är **krävs inte**.
 
 * **`mboxParameters`**
 
@@ -87,21 +84,21 @@ I elementet `ADBTarget` måste du ange namnet på Mbox i `mbox` egenskapen. Du k
       ```
 
    * Egenskapstyp: Sträng
-   * Den här egenskapen är **inte** obligatorisk.
+   * Den här egenskapen är **krävs inte**.
 
 * **`customParameterName`**
 
    Värdet för den här egenskapen är `customParameterValue`.
 
    * Egenskapstyp: Sträng
-   * Den här egenskapen är **inte** obligatorisk.
+   * Den här egenskapen är **krävs inte**.
 
 
 ## Exempel {#section_6D6D6E8C7FE147168FC30D83CBC06985}
 
 ### Exempel 1
 
-I följande exempel används ett `ADBTarget` element på `LandingPage.xml.js` sidan för att ersätta innehållet i en varning:
+I följande exempel används ett `ADBTarget`-element på sidan `LandingPage.xml.js` för att ersätta innehållet i en varning:
 
 #### Konfigurera mål
 
@@ -145,7 +142,7 @@ Anta att du har en Mbox-plats med namnet `landingPage` och att erbjudandeinnehå
 
 ### Exempel 2
 
-I följande exempel visas hur du lägger till anpassade data i ditt `ADBTarget` element. Med den här metoden kan du skapa villkorsstyrda upplevelser och erbjuda innehåll för den här Mbox-platsen i Target:
+Följande exempel visar hur du lägger till anpassade data i `ADBTarget`-elementet. Med den här metoden kan du skapa villkorsstyrda upplevelser och erbjuda innehåll för den här Mbox-platsen i Target:
 
 ```objective-c
 <alertTemplate> 

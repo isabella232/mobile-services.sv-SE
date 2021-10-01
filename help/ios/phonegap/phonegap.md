@@ -1,17 +1,14 @@
 ---
 description: Med denna plugin kan du skicka iOS AppMeasurement-anrop från ditt PhoneGap-projekt.
 keywords: phonegap
-seo-description: Med denna plugin kan du skicka iOS AppMeasurement-anrop från ditt PhoneGap-projekt.
-seo-title: PhoneGap-plugin
 solution: Experience Cloud,Analytics
 title: PhoneGap-plugin
 topic-fix: Developer and implementation
 uuid: f88bcf10-1f9e-4c97-b348-40db797c9923
 exl-id: c20b2f85-b8d4-47c7-8177-106c7ddfe083
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '297'
+source-wordcount: '283'
 ht-degree: 2%
 
 ---
@@ -42,7 +39,7 @@ Information om hur du skapar ett PhoneGap-projekt finns i [PhoneGap](https://hel
    cordova plugin add adobe-mobile-services
    ```
 
-## Installera plugin-programmet {#section_D53BA60D488C4DB8AD2BDF90439C180A} manuellt
+## Installera plugin-programmet manuellt {#section_D53BA60D488C4DB8AD2BDF90439C180A}
 
 ### Inkludera AppMeasurement-biblioteket
 

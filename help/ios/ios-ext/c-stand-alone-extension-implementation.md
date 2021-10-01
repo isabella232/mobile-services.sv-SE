@@ -1,16 +1,13 @@
 ---
 description: Från och med iOS 10 kan du med Apple skapa ett tillägg som kallas för ett fristående tillägg som kan distribueras utan ett innehållande program. Med det här tillägget behöver du ingen programgrupp eftersom det inte finns något program som du kan dela data med.
-seo-description: Från och med iOS 10 kan du med Apple skapa ett tillägg som kallas för ett fristående tillägg som kan distribueras utan ett innehållande program. Med det här tillägget behöver du ingen programgrupp eftersom det inte finns något program som du kan dela data med.
-seo-title: Implementering av fristående tillägg
 solution: Experience Cloud,Analytics
 title: Implementering av fristående tillägg
 topic-fix: Developer and implementation
 uuid: 9b47f082-b78f-4611-968d-014c32ede6bc
 exl-id: b51247b6-c4ba-4a00-9ba0-1824450ac067
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '222'
 ht-degree: 0%
 
 ---

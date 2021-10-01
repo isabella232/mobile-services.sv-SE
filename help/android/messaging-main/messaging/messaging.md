@@ -1,16 +1,13 @@
 ---
 description: Ni kan leverera meddelanden i appen som triggas av alla analysdata eller händelser. Efter implementeringen levereras meddelanden dynamiskt till programmet och kräver ingen koduppdatering.
-seo-description: Ni kan leverera meddelanden i appen som triggas av alla analysdata eller händelser. Efter implementeringen levereras meddelanden dynamiskt till programmet och kräver ingen koduppdatering.
-seo-title: Meddelanden i appen
 solution: Experience Cloud,Analytics
 title: Meddelanden i appen
 topic-fix: Developer and implementation
 uuid: 351ee3d2-80b9-4f2d-9696-21f274d89f5a
 exl-id: ca9414d1-86e6-4bb2-a2d6-57df37df2403
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '800'
+source-wordcount: '767'
 ht-degree: 3%
 
 ---
@@ -40,7 +37,7 @@ Letar du efter information och dokumentation om Adobe Experience Platform Mobile
 
 Du kan skapa meddelanden och regler i Adobe Mobile-tjänster som definierar när meddelanden ska visas. Mer information finns i [Skapa ett meddelande i appen](/help/using/in-app-messaging/t-in-app-message/t-in-app-message.md). Om du vill visa meddelanden i programmet måste SDK uppdateras. Du kan slutföra de här stegen även om du ännu inte har definierat några meddelanden. När du har definierat meddelanden levereras de dynamiskt till din app och visas utan någon uppdatering för appbutiken.
 
-## Aktiverar meddelanden i programmet {#section_380DF56C4EE4432A823940E4AE4C9E91}
+## Aktivera meddelanden i programmet {#section_380DF56C4EE4432A823940E4AE4C9E91}
 
 1. Lägg till biblioteket i ditt projekt och implementera livscykeln.
 
@@ -95,31 +92,31 @@ Du kan skapa meddelanden och regler i Adobe Mobile-tjänster som definierar när
    För att meddelanden i programmet ska uppdateras dynamiskt vid start måste `remotes`-objektet finnas och vara korrekt konfigurerat:
 
    ```js
-   “messages”: [ 
+   "messages": [ 
        { 
-           “messageId”: “de45c43c-37bf-441f-8cbd-cc3ba3469ebe”, 
-           “template”: “fullscreen”, 
-           “showOffline”: false, 
-           “showRule”: “always”, 
-           “endDate”: 2524730400, 
-           “startDate”: 0, 
-           “audiences”: [], 
-           “triggers”: [], 
-           “payload”: { // contents change depending on template 
-               “html”: “<html>html code goes here</html>” 
+           "messageId": "de45c43c-37bf-441f-8cbd-cc3ba3469ebe", 
+           "template": "fullscreen", 
+           "showOffline": false, 
+           "showRule": "always", 
+           "endDate": 2524730400, 
+           "startDate": 0, 
+           "audiences": [], 
+           "triggers": [], 
+           "payload": { // contents change depending on template 
+               "html": "<html>html code goes here</html>" 
            }, 
        }, 
        … 
    ] 
-   “remotes” : { 
-       “analytics.poi”: “https://assets.adobedtm.com/…/yourfile.json”, 
-       “messages”: “https://assets.adobedtm.com/…/yourfile.json” 
+   "remotes" : { 
+       "analytics.poi": "https://assets.adobedtm.com/…/yourfile.json", 
+       "messages": "https://assets.adobedtm.com/…/yourfile.json" 
    }
    ```
 
    Om det här objektet inte har konfigurerats hämtar du en uppdaterad `ADBMobileConfig.json`-fil från Adobe Mobile-tjänster. Mer information finns i [Innan du startar](/help/android/getting-started/requirements.md).
 
-## Spåra meddelanden i programmet {#section_B85CDF6929564AAEA79338B55E5CB1E8}
+## Spåra meddelanden i appen {#section_B85CDF6929564AAEA79338B55E5CB1E8}
 
 Android-mobilens SDK:er spårar följande mått för dina meddelanden i appen:
 
@@ -146,7 +143,7 @@ När du skapar ett helskärmsmeddelande kan du välja att ange en reservbild. Om
 >
 >Resursnamnet för reservbilden anges när du konfigurerar meddelandet i Adobe Mobile Services och du måste se till att den angivna resursen är tillgänglig.
 
-## Konfigurerar meddelandeikoner {#section_DDA28BDBCBB748BCBECF3AB50A177D48}
+## Konfigurera meddelandeikoner {#section_DDA28BDBCBB748BCBECF3AB50A177D48}
 
 Följande metoder använder du för att konfigurera de små och stora ikoner som visas i meddelandeområdet och den stora ikonen som visas när meddelanden visas i meddelandelådan.
 

@@ -1,18 +1,15 @@
 ---
 description: Vanliga frågor och svar om Adobe Mobile Services och en allmän beskrivning av funktioner.
 keywords: mobil
-seo-description: Vanliga frågor och svar om Adobe Mobile Services och en allmän beskrivning av funktioner.
-seo-title: Vanliga frågor
 solution: Experience Cloud,Analytics
 title: Vanliga frågor
 topic-fix: Metrics
 uuid: 62a9241c-2ada-483a-a594-b023916cb0b6
 exl-id: d7dfc36e-56f0-498a-ad50-93fee90cb6ff
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '1116'
-ht-degree: 2%
+source-wordcount: '1028'
+ht-degree: 1%
 
 ---
 
@@ -22,13 +19,9 @@ Följande tabell innehåller en lista med vanliga frågor och svar om Adobe Mobi
 
 ## Adobe Mobile SDK {#section_9C2181F7B39A4BEB8EE6BCEFCF14C72F}
 
-### Gör du ofta uppdateringar med SDK:n?
-
-Ja, vi gör ständigt uppdateringar för att du ska få tillgång till avancerade, standardiserade och säkra SDK:er. Vi släpper vanligtvis en ny version varje månad. Dessa SDK-uppdateringar är ersättningar vid programbortfall (för version 4x) som underlättar implementeringen. Mer information om våra uppdateringar finns i [versionsinformationen](https://docs.adobe.com/content/help/sv-SE/release-notes/experience-cloud/current.html).
-
 ### Vilken SDK-version ska jag använda?
 
-Våra nuvarande SDK:er finns i version 4.11. Mer information finns i [Versionsinformationen](https://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html).
+Våra nuvarande SDK:er finns i version 4.11. Mer information finns i [versionsinformationen](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html).
 
 ### Var kan jag ladda ned SDK:erna?
 
@@ -44,7 +37,6 @@ SDK:erna för Adobe Mobile använder iOS- och Android-standardnätverksstackarna
 
 *Om du skriver en klientapp med nätverks-API:er på hög nivå, som NSURLSession och CFNetwork, och du ansluter efter namn, behöver du inte ändra något för att appen ska fungera med IPv6-adresser.* Mer information finns i  [Stöd för IPv6 DNS64/NAT64-nätverk](https://developer.apple.com/library/content/documentation/NetworkingInternetWeb/Conceptual/NetworkingOverview/UnderstandingandPreparingfortheIPv6Transition/UnderstandingandPreparingfortheIPv6Transition.html#__/apple_ref/doc/uid/TP40010220-CH213-SW1).
 
-
 ## Adobe Analytics {#section_78EC9D83791F477AAED678720CEBA9F6}
 
 ### Vad är Lifecycle Metrics?
@@ -53,7 +45,7 @@ Livscykelstatistik är körklara mått som samlas in automatiskt när SDK implem
 
 ### Hur felsöker jag bearbetningsregler?
 
-Mer information finns i [Tips och tricks för bearbetningsregler](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules-tips.html).
+Se [Tips och tricks för bearbetningsregler](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-tips.html) i Adobe Analytics-dokumentationen.
 
 ### Kan jag skicka analysdata till flera rapportsviter?
 

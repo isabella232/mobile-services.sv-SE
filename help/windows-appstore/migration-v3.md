@@ -1,16 +1,13 @@
 ---
 description: I det här avsnittet beskrivs hur du migrerar från 3.x-versionen av en tidigare Windows Mobile SDK till Windows 8.1 Universal App Store 4.x SDK för Experience Cloud-lösningar.
-seo-description: I det här avsnittet beskrivs hur du migrerar från 3.x-versionen av en tidigare Windows Mobile SDK till Windows 8.1 Universal App Store 4.x SDK för Experience Cloud-lösningar.
-seo-title: Migrera till 4.x SDK:er
 solution: Experience Cloud,Analytics
 title: Migrera till 4.x SDK:er
 topic-fix: Developer and implementation
 uuid: e0fe3b7b-cda5-4a91-834c-2c7e17a501a3
 exl-id: d6dc34f2-61b7-4026-a66a-19284e21e69c
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '683'
+source-wordcount: '650'
 ht-degree: 0%
 
 ---
@@ -114,7 +111,7 @@ Ersätt följande metoder i hela koden med ett anrop till `trackState` eller `tr
 
 Ersätt variabeln `visitorID` med ett anrop till `setUserIdentifier`.
 
-## Offlinespårning {#section_5D4CD8CD1BE041A79A8657E31C0D24C6}
+## Spårning offline {#section_5D4CD8CD1BE041A79A8657E31C0D24C6}
 
 Spårning offline är aktiverat i `ADBMobileConfig.json`-filen. All annan offlinekonfiguration görs automatiskt.
 
@@ -125,7 +122,7 @@ Ta bort anrop till följande metoder i hela koden:
 * `SetOnline`
 * `SetOffline`
 
-## Produktvariabel {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
+## Variabeln Produkter {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
 
 Eftersom variabeln products inte är tillgänglig i bearbetningsregler kan du använda följande syntax för att ange `products`:
 

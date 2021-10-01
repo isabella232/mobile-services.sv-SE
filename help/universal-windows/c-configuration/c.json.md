@@ -1,21 +1,18 @@
 ---
 description: Information som hjälper dig att använda ADBMomobile JSON Config-filen.
-seo-description: Information som hjälper dig att använda ADBMomobile JSON Config-filen.
-seo-title: ADBMobileConfig.json-konfiguration
 solution: Experience Cloud,Analytics
 title: ADBMobileConfig.json-konfiguration
 topic-fix: Developer and implementation
 uuid: cbcb54a3-4b8f-4651-8ce9-2731ac988545
 exl-id: 57d50d30-651c-4943-835e-1cbce7467baf
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '620'
+source-wordcount: '613'
 ht-degree: 1%
 
 ---
 
-# ADBMobileConfig.json-konfigurationsfil {#adbmobileconfig-json-config}
+# Konfigurationsfil för ADBMobileConfig.json {#adbmobileconfig-json-config}
 
 Information som hjälper dig att använda ADBMomobile JSON Config-filen.
 
@@ -43,7 +40,7 @@ SDK har för närvarande stöd för flera Adobe Experience Cloud-lösningar, ink
 
 * **charset**
 
-   Definierar den teckenuppsättning som du använder för data som skickas till Analytics. Teckenuppsättningen används för att konvertera inkommande data till UTF-8 för lagring och rapportering. Mer information finns i [s.charSet](https://docs.adobe.com/content/help/en/analytics/implementation/vars/config-vars/charset.html).
+   Definierar den teckenuppsättning som du använder för data som skickas till Analytics. Teckenuppsättningen används för att konvertera inkommande data till UTF-8 för lagring och rapportering. Mer information finns i [charSet](https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/charset.html)-variabeln i Adobe Analytics-dokumentationen.
 
 * **ssl**
 

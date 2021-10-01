@@ -1,17 +1,14 @@
 ---
 description: Den här informationen hjälper dig att hämta lokalt lagrade SDK-identiteter från din Android-app och med förfrågningar om GDPR-dataåtkomst.
-seo-description: Den här informationen hjälper dig att hämta lokalt lagrade SDK-identiteter från din Android-app och med förfrågningar om GDPR-dataåtkomst.
-seo-title: Hämtar lagrade identifierare
 title: Hämtar lagrade identifierare
 uuid: 6fd3d202-b0a1-4c80-96f4-369fc24ac0a3
-translation-type: tm+mt
-source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
+exl-id: 86c990d8-334b-4003-b0ac-d5404cb598e4
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '153'
+source-wordcount: '131'
 ht-degree: 0%
 
 ---
-
 
 # Hämtar lagrade identifierare{#retrieving-stored-identifiers}
 
@@ -19,7 +16,7 @@ Den här informationen hjälper dig att hämta lokalt lagrade SDK-identiteter fr
 
 >[!IMPORTANT]
 >
->Metoden hämtar `getAllIdentifiersAsync` identiteter som lagras i SDK:n. Du måste anropa den här metoden **innan** användaren avanmäler sig.
+>Metoden `getAllIdentifiersAsync` hämtar identiteter som lagras i SDK:n. Du måste anropa den här metoden **innan** användaren väljer bort.
 
 SDK-identiteter (om tillämpligt) lagras lokalt och returneras i en JSON-sträng som kan innehålla:
 

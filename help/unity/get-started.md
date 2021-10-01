@@ -1,19 +1,16 @@
 ---
 description: Med denna plugin kan du skicka Adobe Analytics-samtal från Unity-program.
 keywords: Unity
-seo-description: Med denna plugin kan du skicka Adobe Analytics-samtal från Unity-program.
-seo-title: Unity Plug-in för iOS och Android 4.x SDK
 solution: Experience Cloud
 title: Unity Plug-in för iOS och Android 4.x SDK
 uuid: 83289a73-982d-4472-a8c8-00b562dc80f5
-translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+exl-id: fdb012d0-64f5-4c63-96d7-508fef01041f
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '140'
-ht-degree: 3%
+source-wordcount: '120'
+ht-degree: 4%
 
 ---
-
 
 # Unity Plug-in för iOS och Android 4.x SDK {#unity-plug-in-for-the-ios-and-android-x-sdks}
 
@@ -26,7 +23,7 @@ Senaste uppdatering: **10 mars 2020**
 
 Hämta ADBMomobile.unitypackage-filen från GitHub.
 
-Nedan finns innehållet i `ADBMobile.unitypackage` filen:
+Nedan finns innehållet i `ADBMobile.unitypackage`-filen:
 
 * Resurser (rot)
 
@@ -51,10 +48,10 @@ Nedan finns innehållet i `ADBMobile.unitypackage` filen:
          * AdobeMobileLibrary.a
 
 
-**Valfria mappar**: Mappen *Demo* innehåller Unity-scener och exempelkod.
+**Valfria mappar**: Demofolder  ** innehåller Unity-scener och exempelkod.
 
 ## Importera ADBMomobile-plugin-programmet till Unity-projektet {#section_35FB6DAE49FB4FA1ACB749A1F9480FE0}
 
 1. Öppna Unity-projektet.
-1. Dubbelklicka **[!UICONTROL ADBMobile.unitypackage]**.
+1. Dubbelklicka på **[!UICONTROL ADBMobile.unitypackage]**.
 1. Markera de mappar som du vill importera.

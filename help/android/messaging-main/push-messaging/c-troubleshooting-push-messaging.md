@@ -1,17 +1,14 @@
 ---
 description: Den här informationen hjälper dig att felsöka push-meddelanden.
 keywords: mobil
-seo-description: Den här informationen hjälper dig att felsöka push-meddelanden.
-seo-title: Felsök push-meddelanden
 solution: Experience Cloud,Analytics
 title: Felsök push-meddelanden
 topic-fix: Metrics
 uuid: 9c4a9371-6691-4a2c-a6c1-b9f901a41599
 exl-id: 82b89f56-f43e-4b0d-80c5-5bff4013e5f7
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '294'
 ht-degree: 0%
 
 ---

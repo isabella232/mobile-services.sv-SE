@@ -1,22 +1,19 @@
 ---
 description: Här är mätvärden och mått som kan mätas automatiskt av mobilbiblioteket, efter att livscykeln har implementerats, och en länk för att felsöka livscykeldata.
 keywords: android;bibliotek;mobil;sdk
-seo-description: Här är mätvärden och mått som kan mätas automatiskt av mobilbiblioteket, efter att livscykeln har implementerats, och en länk för att felsöka livscykeldata.
-seo-title: Livscykelstatistik
 solution: Experience Cloud,Analytics
 title: Livscykelstatistik
 topic-fix: Developer and implementation
 uuid: a8f3ebac-be3b-4948-82bb-105d46cfff6d
 exl-id: 1e50318d-894c-4039-ba45-71cb9edbc5b5
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '1244'
+source-wordcount: '1216'
 ht-degree: 2%
 
 ---
 
-# Livscykelvärden{#lifecycle-metrics}
+# Livscykelstatistik{#lifecycle-metrics}
 
 I det här avsnittet finns information om mått och mått som kan mätas automatiskt av mobilbiblioteket, efter att livscykeln har implementerats, och en länk för att felsöka livscykeldata. Mer information om felsökning finns i [Felsöka livscykeldata](https://helpx.adobe.com/analytics/kb/troubleshoot-lifecycle-data.html).
 

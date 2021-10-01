@@ -1,17 +1,14 @@
 ---
 description: Följande tabell innehåller den iOS-versionssträng som skickas av många iOS-enheter.
-seo-description: Följande tabell innehåller den iOS-versionssträng som skickas av många iOS-enheter.
-seo-title: iOS-enhetsversioner
 solution: Experience Cloud,Analytics
 title: iOS-enhetsversioner
 topic-fix: Developer and implementation
 uuid: 8b8a9bc3-0737-4de2-9792-0b112aa4cf65
 exl-id: 9aaf2f35-4de9-47a0-8e9d-8d098dfaadef
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '361'
-ht-degree: 18%
+source-wordcount: '343'
+ht-degree: 19%
 
 ---
 
@@ -31,7 +28,7 @@ Mer information om iOS-enheter finns på webbplatser som [Wiki](https://theiphon
 | 3G | iPhone1,2 |
 | 3GS | iPhone2,1 |
 | 4 (GSM) (levereras med firmware 4.0) | iPhone3,1 |
-| 4 (GSM) (levereras med firmware 6.0) | iPhone3,3 |
+| 4 (GSM) (levereras med firmware 6.0) | iPhone3,2 |
 | 4 (CDMA) | iPhone3,3 |
 | 4S | iPhone4,1 |
 | 5 (GSM) | iPhone5,1 |
@@ -60,7 +57,7 @@ Mer information om iOS-enheter finns på webbplatser som [Wiki](https://theiphon
 
 | **iPad** | **Version** |
 |---|---|
-| Original | iPad3,1 |
+| Original | iPad1,1 |
 | iPad 2 | iPad2,1 |
 | iPad 2 (GSM) | iPad2,2 |
 | iPad 2 (CDMA) | iPad2,3 |

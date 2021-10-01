@@ -1,17 +1,14 @@
 ---
 description: Här är en lista över Adobe Target-metoder som finns i iOS-biblioteket.
-seo-description: Här är en lista över Adobe Target-metoder som finns i iOS-biblioteket.
-seo-title: iOS-målmetoder för Adobe Mobile Services
 solution: Experience Cloud,Analytics
 title: Målmetoder för iOS
 topic-fix: Developer and implementation
 uuid: 692bcda1-02ba-4902-bd65-15888adf1952
 exl-id: ba03f865-970c-4b48-af35-749f05b273d8
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '656'
-ht-degree: 22%
+source-wordcount: '629'
+ht-degree: 23%
 
 ---
 
@@ -56,9 +53,8 @@ NSString *const ADBTargetParameterMboxHost;
 >[!IMPORTANT]
 >
 >* Om du använder SDK:er **före** version 4.14.0, se [Indataparametrar](https://developers.adobetarget.com/api/#input-parameters) för parameterbegränsningar.
-   >
-   >
-* Om du använder SDK:er version 4.14.0 **eller efter** finns det parameterbegränsningar i [batchindataparametrar](https://developers.adobetarget.com/api/#batch-input-parameters).
+>
+>* Om du använder SDK:er version 4.14.0 **eller efter** finns det parameterbegränsningar i [batchindataparametrar](https://developers.adobetarget.com/api/#batch-input-parameters).
 
 
 ### Metoder
@@ -83,7 +79,7 @@ NSString *const ADBTargetParameterMboxHost;
                           }];
       ```
 
-* **targetLoadRequestWithName:defaultContent:profileParameters:orderParameters:mboxParameters:requestLocationParameters:callback:**
+* **:defaultContent::orderParameters::requestLocationParameters:targetLoadRequestWithNameProfileParametersmboxParameterbackback:**
 
    Skickar en begäran till den konfigurerade målservern och returnerar strängvärdet för erbjudandet som genereras i ett blockåteranrop.
 
@@ -155,7 +151,7 @@ NSString *const ADBTargetParameterMboxHost;
                                  }];
       ```
 
-      Mer information om det underliggande mål-API:t finns i [Adobe Target-utvecklare](https://docs.adobe.com/dev/products/target/reference/delivery.html).
+      Mer information om det underliggande mål-API:t finns i [mål-API-referensen](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-target/target-api-reference-deprecated).
 
 
 
@@ -163,7 +159,7 @@ NSString *const ADBTargetParameterMboxHost;
 
 
 
-* **targetLoadRequestWithName:defaultContent:profileParameters:orderParameters:mboxParameters:callback**
+* **:defaultContent::orderParameters:targetLoadRequestWithNameParametersmboxParameters:callback**
 
    Skickar begäran till den konfigurerade målservern och returnerar strängvärdet för erbjudandet som genereras i ett blockåteranrop.
 

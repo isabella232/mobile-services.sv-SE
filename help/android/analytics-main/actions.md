@@ -1,16 +1,13 @@
 ---
 description: Åtgärder är de händelser som inträffar i Android-appen och som du vill mäta.
-seo-description: Åtgärder är de händelser som inträffar i Android-appen och som du vill mäta.
-seo-title: Spåra appåtgärder
 solution: Experience Cloud,Analytics
 title: Spåra appåtgärder
 topic-fix: Developer and implementation
 uuid: fe01c1df-f6bb-4b32-b3ef-959d2c724af6
 exl-id: 495a6aa8-781d-4499-ad46-e19d57cccf40
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: '343'
 ht-degree: 1%
 
 ---
@@ -21,7 +18,7 @@ ht-degree: 1%
 
 Varje åtgärd har en eller flera motsvarande mätvärden som ökas stegvis varje gång händelsen inträffar. Du kan till exempel skicka ett `trackAction`-samtal för varje ny prenumeration varje gång en artikel visas eller varje gång en nivå har slutförts. Åtgärder spåras inte automatiskt, så du måste anropa `trackAction` när en händelse som du vill spåra inträffar och mappa åtgärden till en anpassad händelse.
 
-## Spårningsåtgärder {#section_380DF56C4EE4432A823940E4AE4C9E91}
+## Spåra åtgärder {#section_380DF56C4EE4432A823940E4AE4C9E91}
 
 1. Lägg till biblioteket i ditt projekt och implementera livscykeln.
 

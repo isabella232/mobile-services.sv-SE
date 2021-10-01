@@ -1,17 +1,14 @@
 ---
 description: Med platsöversiktsrapporten kan du se de olika länder, regioner och intressepunkter där appen används.
 keywords: mobil
-seo-description: Med platsöversiktsrapporten kan du se de olika länder, regioner och intressepunkter där appen används.
-seo-title: Översikt (plats)
 solution: Experience Cloud,Analytics
 title: Översikt (plats)
 topic-fix: Reports,Metrics
 uuid: a701abc3-001b-4015-843f-5fb2c6c80d17
 exl-id: 9a9f4f64-251f-48d4-a838-af14a357c575
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '556'
+source-wordcount: '533'
 ht-degree: 0%
 
 ---
@@ -56,7 +53,7 @@ Du kan klicka på ett sekundärt mått till höger för att lägga till det i vi
 
 ![](assets/location_secondary.png)
 
-## Lägg till delningar och mätvärden {#section_15833511E82648869E7B1EFC24EF7B82}
+## Lägg till uppdelningar och mätvärden {#section_15833511E82648869E7B1EFC24EF7B82}
 
 Du kan lägga till uppdelningar och sekundära mätvärden, vilket ändrar höjden på varje publik i förhållande till de andra målgrupperna i diagrammet.
 

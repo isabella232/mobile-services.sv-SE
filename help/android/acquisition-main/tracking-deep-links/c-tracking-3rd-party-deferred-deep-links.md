@@ -1,17 +1,14 @@
 ---
 description: Använd Android SDK för att implementera spårning av fördröjda djuplänkar från tredje part.
-seo-description: Använd Android SDK för att implementera spårning av fördröjda djuplänkar från tredje part.
-seo-title: Spåra fördröjda djuplänkar från tredje part
 title: Spåra fördröjda djuplänkar från tredje part
 uuid: 4c798e47-7988-4a06-a191-6c4d05f6ee61
-translation-type: tm+mt
-source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
+exl-id: d8cbc679-a512-44db-8c30-6a029ff738ae
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '513'
+source-wordcount: '495'
 ht-degree: 0%
 
 ---
-
 
 # Spåra fördröjda länkar från tredje part{#tracking-third-party-deferred-deep-links}
 
@@ -19,31 +16,31 @@ Använd Android SDK för att implementera spårning av fördröjda djuplänkar f
 
 ## Klassisk Adobe Mobile SDK-djuplänkning {#section_D114FA1EB9664EAA82E036A990694B26}
 
-Adobe Mobile SDK har för närvarande stöd för djuplänkning där apputvecklaren förväntas använda `collectLifecycleData` SDK-API:t från den djupt länkade aktiviteten. SDK lägger till data för djuplänken från parametrar för djuplänkens URL-adress. Mer information om hur djuplänkning fungerar i Adobe Mobile SDK finns i [Spåra djuplänkar](/help/android/acquisition-main/tracking-deep-links/tracking-deep-links.md).
+Adobe Mobile SDK har för närvarande stöd för djuplänkning där apputvecklaren förväntas använda SDK-API:t `collectLifecycleData` från den djupt länkade aktiviteten. SDK lägger till data för djuplänken från parametrar för djuplänkens URL-adress. Mer information om hur djuplänkning fungerar i Adobe Mobile SDK finns i [Spåra djuplänkar](/help/android/acquisition-main/tracking-deep-links/tracking-deep-links.md).
 
-## Djuplänkning på Facebook {#section_6A9DACB54A2F4CDEBE9C744DEFADFDED}
+## Facebook djuplänkning {#section_6A9DACB54A2F4CDEBE9C744DEFADFDED}
 
-En annonsskapare kan skapa en annons på Facebook som en länk. När användarna klickar på annonsen går den direkt till den information som de är intresserade av appen i. Den djupa länken är **inte** en fingerskrivars-URL. Under annonskonfigurationen finns det dock ett alternativ för att ange en webblänk-URL från tredje part. En apputvecklare som använder Adobe Mobile SDK:er och tjänster förväntas ange Adobe Mobile Service-konfigurerade URL:er för fingeravtrycksläsare i det här fältet. Om allt är korrekt konfigurerat skickar Facebook SDK den här URL:en till programmet när appen installeras eller startas.
+En annonsskapare kan skapa en annons på Facebook som en länk. När användarna klickar på annonsen går den direkt till den information som de är intresserade av appen i. Den djupa länken är **inte** en fingeravtrycks-URL. Under annonskonfigurationen finns det dock ett alternativ för att ange en webblänk-URL från tredje part. En apputvecklare som använder Adobe Mobile SDK:er och tjänster förväntas ange Adobe Mobile Service-konfigurerade URL:er för fingeravtrycksläsare i det här fältet. Om allt är korrekt konfigurerat skickar Facebook SDK den här URL:en till programmet när programmet installeras eller startas.
 
 ## Konfigurera SDK:er {#section_834CD3109175432B8173ECB6EA7DE315}
 
-Apputvecklaren utför följande uppgifter för att förbereda sig för att lägga till stöd för Facebook-djuplänkning med Adobe Mobile SDK:
+Apputvecklaren utför följande uppgifter för att förbereda sig för att lägga till stöd för Facebook djuplänkning med Adobe Mobile SDK:
 
 * Kom igång med Android SDK
 
-   Mer information finns i [Komma igång med Android SDK](https://developers.facebook.com/docs/android/getting-started) .
+   Mer information finns i [Komma igång med Android SDK](https://developers.facebook.com/docs/android/getting-started).
 
 * Konfigurera djuplänkning
 
-   Mer information finns i Konfigurera [djuplänkning](https://developers.facebook.com/docs/app-ads/deep-linking#os).
+   Mer information finns i [Inställning för djuplänkning](https://developers.facebook.com/docs/app-ads/deep-linking#os).
 
-Om programmet är korrekt konfigurerat bör API:t göra det möjligt att samla in djuplänksinformation från Facebook-kampanjen och skicka den till Adobe Mobile Service. `trackAdobeDeepLink()` Om installationsträffen inte har skickats till Adobe Mobile Service vid första starten läggs den här informationen till i livscykelträffen. Annars skickas det som en Adobe-träff.
+Om programmet är korrekt konfigurerat bör API:t `trackAdobeDeepLink()` göra det möjligt att samla in djuplänksinformation från Facebook förvärvningskampanj och skicka den till Adobe Mobile Service. Om installationsträffen inte har skickats till Adobe Mobile Service vid första starten läggs den här informationen till i livscykelträffen. Annars skickas det som en Adobe-träff.
 
 >[!TIP]
 >
 >Kontrollera att djuplänkens URL har en nyckel som heter `a.deeplink.id`. Om URL-adressen saknar parametern för djuplänk-ID läggs URL-parametrarna inte till i kontextdata.
 
-Om länken kan tillskrivas ett förvärv lagrar Adobe Mobile SDK förvärvsdata från den djupa Facebook-länk som användes för att ringa `trackAdobeDeepLink()`. Dessa data kommer att vara tillgängliga för Adobe Mobile SDK i framtida starter. Om ett återanrop har registrerats kommer återanropet i Adobe också att användas för att skicka tillbaka data till klienten.
+Om länken kan tillskrivas ett förvärv lagrar Adobe Mobile SDK förvärvsuppgifterna från Facebook djuplänk som användes för att ringa `trackAdobeDeepLink()`. Dessa data kommer att vara tillgängliga för Adobe Mobile SDK i framtida starter. Om ett återanrop har registrerats används återanropet Adobe också för att skicka data tillbaka till klienten.
 
 ## Aktivera djuplänkning i ett Android-program {#section_64C15E269E89424B8E3D029F88094620}
 
@@ -51,11 +48,11 @@ Om länken kan tillskrivas ett förvärv lagrar Adobe Mobile SDK förvärvsdata 
 
    Mer information finns i [Tillåt andra program att starta aktiviteten](https://developer.android.com/training/basics/intents/filters.html).
 
-1. Länka Facebooks SDK:er.
+1. Länka Facebook SDK:er.
 
    Om du vill lägga till Facebook-övertoningsberoendet i appen följer du stegen i [Komma igång-Android SDK](https://developers.facebook.com/docs/android/getting-started).
 
-1. Om du vill initiera Facebook SDK fyller du i instruktionerna i *installationsavsnittet* för Android Studio.
+1. Om du vill initiera Facebook SDK fyller du i instruktionerna i *Installationsprogrammet för Android Studio*.
 1. Ring `trackAdobeDeepLink()` från huvudaktiviteten.
 
    ```java
@@ -84,4 +81,3 @@ Om länken kan tillskrivas ett förvärv lagrar Adobe Mobile SDK förvärvsdata 
       ); 
    }
    ```
-

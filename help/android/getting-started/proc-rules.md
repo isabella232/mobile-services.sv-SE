@@ -1,23 +1,20 @@
 ---
 description: Bearbetningsregler används för att kopiera data som du skickar i kontextdatavariabler till eVars, props och andra variabler för rapportering.
-seo-description: Bearbetningsregler används för att kopiera data som du skickar i kontextdatavariabler till eVars, props och andra variabler för rapportering.
-seo-title: Bearbetar regler och kontextdata
 solution: Experience Cloud,Analytics
 title: Bearbetar regler och kontextdata
 topic-fix: Developer and implementation
 uuid: ea892228-86f5-4980-acb8-45ae43c6996d
 exl-id: 543201fd-8118-485f-8235-26ec8f9bbb11
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
 workflow-type: tm+mt
-source-wordcount: '272'
-ht-degree: 3%
+source-wordcount: '242'
+ht-degree: 0%
 
 ---
 
 # Bearbetar regler och kontextdata {#processing-rules-and-context-data}
 
-Bearbetningsregler används för att kopiera data som du skickar i kontextdatavariabler till eVars, props och andra variabler för rapportering. Mer information finns i [Bearbetningsregler](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html).
+Bearbetningsregler används för att kopiera data som du skickar i kontextdatavariabler till eVars, props och andra variabler för rapportering. Mer information finns i [Bearbetningsregler](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html).
 
 Tänk på följande information när du arbetar med bearbetningsregler:
 
@@ -31,7 +28,7 @@ Tänk på följande information när du arbetar med bearbetningsregler:
 
 * Sammanhangsdatavariabler sorteras i bokstavsordning i bearbetningsregelgränssnittet, som gör att du snabbt kan se vilka variabler som finns i samma namnutrymme.
 
-   Undvik att namnge kontextdatanycklar genom att använda evar- eller prop-numret:
+   Undvik att namnge kontextdatanycklar genom att använda eVar- eller prop-nummer:
 
    ```js
    "eVar1":"jimbo"

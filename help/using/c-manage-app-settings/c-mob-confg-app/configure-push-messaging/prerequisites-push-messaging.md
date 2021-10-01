@@ -1,18 +1,15 @@
 ---
 description: Du måste slutföra de här åtgärderna innan du konfigurerar Push Messaging i program.
 keywords: mobil
-seo-description: Du måste slutföra de här åtgärderna innan du konfigurerar Push Messaging i program.
-seo-title: Krav för att aktivera push-meddelanden
 solution: Experience Cloud,Analytics
 title: Krav för att aktivera push-meddelanden
 topic-fix: Metrics
 uuid: 194e6e07-b794-4152-a838-a4125c3292d4
 exl-id: 543155a4-f687-48a6-8690-5c8da8490c62
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '633'
-ht-degree: 1%
+source-wordcount: '619'
+ht-degree: 0%
 
 ---
 
@@ -58,7 +55,7 @@ Om användarna inte har Adobe-ID:n utför du följande steg:
 
 Varje användare måste länka Analytics-lösningskontot från Experience Cloud-organisationen.
 
-1. Om du vill logga in på Experience Cloud med en Adobe ID skriver du [https://marketing.adobe.com](https://marketing.adobe.com) i en webbläsare.
+1. Logga in på [Adobe Experience Cloud](https://experience.adobe.com) med en Adobe ID.
 
 1. Välj företagsnamnet för Analytics i det övre högra hörnet.
 
@@ -68,7 +65,7 @@ Varje användare måste länka Analytics-lösningskontot från Experience Cloud-
 
    Adobe ID är nu länkat till ditt Analytics-konto, ditt företag och dina inloggningsuppgifter.
 
-Mer information finns i [Felsökning av kontolänkning](https://docs.adobe.com/content/help/sv-SE/core-services/interface/manage-users-and-products/organizations.html).
+Mer information finns i [Organisationer i Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html) i guiden Komponenter i Experience Cloud Central Interface.
 
 ## Konfigurera push-tjänster och SDK ID-tjänsten i mobilanvändargränssnittet
 

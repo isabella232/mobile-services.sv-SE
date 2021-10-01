@@ -1,17 +1,14 @@
 ---
 description: Hantera dina program genom att konfigurera ett program och hantera en mängd olika variabler och mätvärden.
 keywords: mobil
-seo-description: Hantera dina program genom att konfigurera ett program och hantera en mängd olika variabler och mätvärden.
-seo-title: Hantera appinställningar
 solution: Experience Cloud,Analytics
 title: Hantera appinställningar
 topic-fix: Metrics
 uuid: 2ca93f92-f812-434c-add0-5bdf1442eb20
 exl-id: ed7b955e-f1db-42e5-95b4-a4fb8f169097
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '81'
+source-wordcount: '63'
 ht-degree: 1%
 
 ---

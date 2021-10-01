@@ -1,23 +1,20 @@
 ---
 description: Med Target Preview kan du enkelt utföra QA-åtgärder från början till slut för målaktiviteter och förhandsgranska dessa aktiviteter på enheten.
-seo-description: Med Target Preview kan du enkelt utföra QA-åtgärder från början till slut för målaktiviteter och förhandsgranska dessa aktiviteter på enheten.
-seo-title: Förhandsvisa mål på iOS
 title: Förhandsvisa mål på iOS
 uuid: d92867a4-0569-4732-a928-28f9e2f8b21e
-translation-type: tm+mt
-source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+exl-id: d5695156-59cd-42c5-b9a3-d8e0ebbb89d0
+source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
 workflow-type: tm+mt
-source-wordcount: '141'
-ht-degree: 10%
+source-wordcount: '121'
+ht-degree: 12%
 
 ---
-
 
 # Förhandsvisa mål på iOS{#target-preview-on-ios}
 
 Med Target Preview kan du enkelt utföra QA-åtgärder från början till slut för målaktiviteter och förhandsgranska dessa aktiviteter på enheten.
 
-Mer information om hur du konfigurerar och använder förhandsvisning av mål finns i [Målmobilförhandsvisning](https://docs.adobe.com/content/help/en/target/using/implement-target/mobile-apps/target-mobile-preview.html).
+Mer information om hur du konfigurerar och använder Target Preview finns i [Target mobile preview](https://experienceleague.adobe.com/docs/target/using/implement-target/mobile-apps/target-mobile-preview.html) i Adobe Target-dokumentationen.
 
 >[!IMPORTANT]
 >
@@ -38,5 +35,5 @@ Mer information om hur du konfigurerar och använder förhandsvisning av mål fi
    * Här är kodexemplet för den här metoden:
 
       ```objective-c
-      [ADBMobile targetPreviewRestartDeepLink:@" myapp://myhost"]; 
+      [ADBMobile targetPreviewRestartDeepLink:@"myapp://myhost"]; 
       ```

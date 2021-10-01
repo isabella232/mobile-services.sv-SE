@@ -1,22 +1,19 @@
 ---
 description: Följande information hjälper dig att skicka en länk till en äldre kundvärvningskampanj på en Android-enhet.
 keywords: android;bibliotek;mobil;sdk
-seo-description: Följande information hjälper dig att skicka en länk till en äldre kundvärvningskampanj på en Android-enhet.
-seo-title: Testar tidigare förvärv
 solution: Experience Cloud,Analytics
 title: Testar tidigare förvärv
 topic-fix: Developer and implementation
 uuid: bb7ace96-68eb-4f43-b3cf-af80730b9cee
 exl-id: 43e3b24e-e8bc-407c-b788-5ab85e459a90
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '305'
 ht-degree: 0%
 
 ---
 
-# Testar tidigare förvärv {#testing-legacy-acquisition}
+# Testa tidigare förvärv {#testing-legacy-acquisition}
 
 Följande information hjälper dig att skicka en länk till en äldre kundvärvningskampanj på en Android-enhet.
 

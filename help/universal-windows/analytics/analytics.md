@@ -5,9 +5,9 @@ title: 'Analytics '
 topic-fix: Developer and implementation
 uuid: c2cef3d3-77a7-4a8e-bbe4-3db10a77996a
 exl-id: cc96a7dd-ccc4-4914-8243-f3f160b75c21
-source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
+source-git-commit: 1fa6111d6bf1c2d36f15d2f037718646a035435a
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '913'
 ht-degree: 1%
 
 ---
@@ -134,9 +134,7 @@ Alla värden som du tilldelade direkt till variabler bör läggas till i kontext
 
 ## Behandlingsregler {#section_66EE762EEA5E4728864166201617DEBF}
 
-Bearbetningsregler används för att kopiera data som du skickar i kontextdatavariabler till variabler, props och andra variabler för rapportering.
-
-[Utbildning](https://tv.adobe.com/embed/1181/16506/)  av bearbetningsregler@ Summit 2013
+Bearbetningsregler används för att kopiera data som du skickar i kontextdatavariabler till eVars, props och andra variabler för rapportering.
 
 [Hjälp om att bearbeta regler](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html)
 

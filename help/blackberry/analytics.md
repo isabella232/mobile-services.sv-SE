@@ -3,9 +3,9 @@ description: När du har lagt till biblioteket i ditt projekt kan du göra alla 
 title: 'Analytics '
 uuid: de018eda-b37d-4afe-83a0-8011381d7aff
 exl-id: 4cd27e1a-e806-4dbb-84f5-63902ca2003f
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 1fa6111d6bf1c2d36f15d2f037718646a035435a
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '611'
 ht-degree: 1%
 
 ---
@@ -62,18 +62,14 @@ Alla värden som du tilldelade direkt till variabler ska i stället läggas till
 
 Bearbetningsregler används för att kopiera data som du skickar i kontextdatavariabler till eVars, props och andra variabler för rapportering.
 
-[Utbildning](https://tv.adobe.com/embed/1181/16506/)  av bearbetningsregler@ Summit 2013
-
 [Bearbetningsregler](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html)
 
-[Bli behörig att använda bearbetningsregler](https://helpx.adobe.com/analytics/kb/processing-rules-authorization.html)
-
-Vi rekommenderar att du grupperar dina kontextdatavariabler med&quot;namnutrymmen&quot;, eftersom det hjälper dig att behålla den logiska ordningen. Om du till exempel vill samla in information om en produkt kan du definiera följande variabler:
+Adobe rekommenderar att du grupperar kontextdatavariabler med&quot;namnutrymmen&quot;, eftersom det hjälper dig att behålla den logiska ordningen. Om du till exempel vill samla in information om en produkt kan du definiera följande variabler:
 
 ```js
-"product.type":"hat" 
-"product.team":"mariners" 
-"product.color":"blue"
+"product.type":"hat";
+"product.team":"mariners";
+"product.color":"blue";
 ```
 
 Sammanhangsdatavariabler sorteras i bokstavsordning i bearbetningsregelgränssnittet, så med namnutrymmen kan du snabbt se variabler som finns i samma namnutrymme.
@@ -81,25 +77,25 @@ Sammanhangsdatavariabler sorteras i bokstavsordning i bearbetningsregelgränssni
 Vi har också hört att några av er namnger kontextdatanycklar med hjälp av eVar- eller prop-numret:
 
 ```js
-"eVar1":"jimbo"
+"eVar1":"jimbo";
 ```
 
 Detta kan göra det *något* enklare när du utför en engångsmappning i bearbetningsregler, men du förlorar läsbarheten under felsökning och framtida koduppdateringar kan vara svårare. Vi rekommenderar i stället att du använder beskrivande namn för nycklar och värden:
 
 ```js
-"username":"jimbo"
+"username":"jimbo";
 ```
 
 Kontextvariabler som definierar räknarhändelser kan ha samma nyckel och värde:
 
 ```js
-"logon":"logon"
+"logon":"logon";
 ```
 
 Sammanhangsdatavariabler som definierar stegvisa händelser kan ha händelsen som nyckel och mängden som ska ökas som värde:
 
 ```js
-"levels completed":"6"
+"levels completed":"6";
 ```
 
 >[!TIP]

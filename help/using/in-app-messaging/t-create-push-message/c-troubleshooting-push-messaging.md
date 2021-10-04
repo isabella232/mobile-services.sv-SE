@@ -6,9 +6,9 @@ title: Felsökning av push-meddelanden
 topic-fix: Metrics
 uuid: c7be4ab7-0cfe-4296-84a8-01412f4fd93f
 exl-id: 56feb8e1-e196-4b70-8240-6e41581ca602
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 1fa6111d6bf1c2d36f15d2f037718646a035435a
 workflow-type: tm+mt
-source-wordcount: '719'
+source-wordcount: '708'
 ht-degree: 0%
 
 ---
@@ -33,12 +33,11 @@ Följande typer av fördröjningar kan associeras med push-meddelanden för mobi
 
    >[!TIP]
    >
-   >Detta är antalet lyckade utskick till push-tjänsten. Push-tjänsterna garanterar inte att ett meddelande kommer att skickas.
+   >Push-tjänsterna garanterar inte att ett meddelande kommer att skickas. Mer information om tjänsternas tillförlitlighet finns i lämplig dokumentation:
+   >
+   >* **APNS**:  [Tjänstekvalitet](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW5)
+   >* **FCM**:  [Meddelandets livstid](https://firebase.google.com/docs/cloud-messaging/concept-options#lifetime)
 
-   Mer information om tillförlitligheten i tjänsten finns i:
-
-   * [Tjänstekvalitet](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW5l)
-   * [Ett meddelandes](https://developers.google.com/cloud-messaging/concept-options#lifetime) livstid.
 
 ## Varför är min Android GCM API-nyckel ogiltig?
 
@@ -52,8 +51,6 @@ Följande typer av fördröjningar kan associeras med push-meddelanden för mobi
 * **Bestämma API-nyckelns giltighet**
 
    Kör följande kommando för att avgöra om API-nyckeln är giltig:
-
-   **Android**
 
    ```java
    # api_key=YOUR_API_KEY
@@ -81,8 +78,6 @@ Ditt APNS-certifikat kan vara ogiltigt av följande orsaker:
 * Du använder `.p8`-filen i stället för en `.p12`-fil.
 
 ## Åtgärdar fel i push-meddelanden
-
-**Ett exempel**
 
 Följande exempel visar hur du kan lösa ett push-fel när du använder ett VRS.
 

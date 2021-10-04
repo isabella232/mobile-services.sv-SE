@@ -6,7 +6,7 @@ title: Felsök push-meddelanden
 topic-fix: Metrics
 uuid: 9c4a9371-6691-4a2c-a6c1-b9f901a41599
 exl-id: 82b89f56-f43e-4b0d-80c5-5bff4013e5f7
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 1fa6111d6bf1c2d36f15d2f037718646a035435a
 workflow-type: tm+mt
 source-wordcount: '294'
 ht-degree: 0%
@@ -31,12 +31,11 @@ Följande typer av fördröjningar kan associeras med push-meddelanden för mobi
 
    >[!TIP]
    >
-   >Push-tjänsterna garanterar inte att ett meddelande kommer att skickas.
+   >Push-tjänsterna garanterar inte att ett meddelande kommer att skickas. Mer information om tjänsternas tillförlitlighet finns i lämplig dokumentation:
+   >
+   >* **APNS**:  [Tjänstekvalitet](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW5)
+   >* **FCM**:  [Meddelandets livstid](https://firebase.google.com/docs/cloud-messaging/concept-options#lifetime)
 
-   Mer information om tjänsternas tillförlitlighet finns i lämplig dokumentation:
-
-   * **APNS**:  [Tjänstekvalitet](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW5)
-   * **FCM**:  [Meddelandets livstid](https://firebase.google.com/docs/cloud-messaging/concept-options#lifetime)
 
 ## Varför stängs mina push-meddelanden av eller utökas inte?
 

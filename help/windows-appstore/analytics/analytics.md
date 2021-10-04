@@ -5,9 +5,9 @@ title: 'Analytics '
 topic-fix: Developer and implementation
 uuid: fa0ef6c4-c04d-4695-9eb4-ada4e9920e6c
 exl-id: 1a7b32b8-731d-4ae3-9feb-dafbb7495590
-source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
+source-git-commit: 1fa6111d6bf1c2d36f15d2f037718646a035435a
 workflow-type: tm+mt
-source-wordcount: '924'
+source-wordcount: '917'
 ht-degree: 0%
 
 ---
@@ -62,7 +62,7 @@ app.oncheckpoint = function (args) {
 
 ### C# i App.xaml.cs
 
-```js
+```csharp
 public App() 
 { 
     this.InitializeComponent(); 
@@ -91,7 +91,7 @@ private void OnSuspending(object sender, SuspendingEventArgs e)
 
 ### C/CX i App.xaml.cpp
 
-```js
+```c
 App::App() 
 { 
  InitializeComponent(); 
@@ -136,16 +136,14 @@ Alla värden som du tilldelade direkt till variabler bör läggas till i kontext
 
 Bearbetningsregler används för att kopiera data som du skickar i kontextdatavariabler till eVars, props och andra variabler för rapportering.
 
-[Utbildning](https://tv.adobe.com/embed/1181/16506/)  av bearbetningsregler@ Summit 2013
-
 [Översikt över behandlingsregler](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html)
 
-Vi rekommenderar att du grupperar dina kontextdatavariabler med&quot;namnutrymmen&quot;, eftersom det hjälper dig att behålla den logiska ordningen. Om du till exempel vill samla in information om en produkt kan du definiera följande variabler:
+Adobe rekommenderar att du grupperar kontextdatavariabler med&quot;namnutrymmen&quot;, eftersom det hjälper dig att behålla den logiska ordningen. Om du till exempel vill samla in information om en produkt kan du definiera följande variabler:
 
 ```js
-"product.type":"hat" 
-"product.team":"mariners" 
-"product.color":"blue"
+"product.type":"hat";
+"product.team":"mariners";
+"product.color":"blue";
 ```
 
 Sammanhangsdatavariabler sorteras i bokstavsordning i bearbetningsregelgränssnittet, så med namnutrymmen kan du snabbt se variabler som finns i samma namnutrymme.
@@ -153,25 +151,25 @@ Sammanhangsdatavariabler sorteras i bokstavsordning i bearbetningsregelgränssni
 Vi har också hört att några av er namnger kontextdatanycklar med hjälp av eVar- eller prop-numret:
 
 ```js
-"eVar1":"jimbo"
+"eVar1":"jimbo";
 ```
 
 Detta kan göra det *något* enklare när du utför en engångsmappning i bearbetningsregler, men du förlorar läsbarheten under felsökning och framtida koduppdateringar kan vara svårare. Vi rekommenderar i stället att du använder beskrivande namn för nycklar och värden:
 
 ```js
-"username":"jimbo"
+"username":"jimbo";
 ```
 
 Ange kontextvariabler som definierar räknarhändelser till värdet &quot;1&quot;:
 
 ```js
-"logon":"1"
+"logon":"1";
 ```
 
 Kontextdatavariabler som definierar inkrementer eller händelser kan ha värdet som ska ökas:
 
 ```js
-"levels completed":"6"
+"levels completed":"6";
 ```
 
 >[!NOTE]

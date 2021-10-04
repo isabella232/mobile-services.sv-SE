@@ -6,9 +6,9 @@ title: Felsökning av push-meddelanden
 topic-fix: Metrics
 uuid: 87d7dcb6-82a8-46e3-a6ed-7f895a22f2af
 exl-id: dda84d30-2a7b-496c-b8f3-3bd6b97076aa
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 1fa6111d6bf1c2d36f15d2f037718646a035435a
 workflow-type: tm+mt
-source-wordcount: '347'
+source-wordcount: '362'
 ht-degree: 0%
 
 ---
@@ -33,11 +33,10 @@ Följande typer av fördröjningar kan associeras med push-meddelanden för mobi
 
    >[!TIP]
    >
-   >Push-tjänsterna garanterar inte att ett meddelande skickas. Mer information om tjänsternas tillförlitlighet finns i lämplig dokumentation:
+   >Push-tjänsterna garanterar inte att ett meddelande kommer att skickas. Mer information om tjänsternas tillförlitlighet finns i lämplig dokumentation:
    >
-   >* **APNS**:  [Tjänstekvalitet](https://developer.apple.com/documentation/usernotifications)
-   >
-   >* **GCM**:  [Meddelandets livstid](https://developers.google.com/cloud-messaging/concept-options)
+   >* **APNS**:  [Tjänstekvalitet](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW5)
+   >* **FCM**:  [Meddelandets livstid](https://firebase.google.com/docs/cloud-messaging/concept-options#lifetime)
 
 
 ## Hur förnyar jag mitt Apple Push Service-certifikat?

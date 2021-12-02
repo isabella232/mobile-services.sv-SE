@@ -3,9 +3,9 @@ description: I Adobe Analytics kan du hantera roller på startsidan för Admin T
 title: Roller och behörigheter
 uuid: ad350f8d-ef51-4519-98aa-3025bc0f5588
 exl-id: 70f0b427-60d5-4a79-a8d3-e03274edd917
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: f6a62a46a90c30edaf999085873bf21f2a03a68e
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '590'
 ht-degree: 2%
 
 ---
@@ -20,7 +20,7 @@ Följande roller hanterar behörigheter i gränssnittet för mobila tjänster:
 
 ### Analysadministratör
 
-En Analytics Admin hanterar användargrupper och tilldelar behörigheter, varav en är Mobile App Admin. Experience Cloud Admin länkar din Adobe ID till ditt Adobe Analytics-konto så att du kan logga in på användargränssnittet för mobila tjänster med hjälp av din Adobe ID. Mer information om Experience Cloud Administrator finns i [Hantera Experience Cloud-användare och -produkter](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html) i guiden Komponenter i Experience Cloud Central Interface.
+En Analytics Admin hanterar användargrupper och tilldelar behörigheter, varav en är Mobile App Admin. Experience Cloud Admin länkar din Adobe ID till ditt Adobe Analytics-konto så att du kan logga in på användargränssnittet för mobila tjänster med hjälp av din Adobe ID. Mer information om Experience Cloud Administrator finns i [Hantera användare och produkter i Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html) i guiden Komponenter i Experience Cloud Central Interface.
 
 >[!TIP]
 >
@@ -28,8 +28,8 @@ En Analytics Admin hanterar användargrupper och tilldelar behörigheter, varav 
 
 Mer information om den här rollen finns i följande innehåll i Adobe Analytics-dokumentationen:
 
-* [Översikt över användarhantering](https://experienceleague.adobe.com/docs/analytics/admin/user-product-management/user-management/users.html)
-* [Behörighetsändringar för användare och grupper](https://experienceleague.adobe.com/docs/analytics/admin/user-product-management/user-management/permissions-changes.html)
+* [Översikt över användarhantering](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html)
+* [Behörighetsändringar för användare och grupper](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html)
 
 ### Administratör för mobilapp
 
@@ -37,7 +37,7 @@ Den här rollen är administratör för användargränssnittet för mobila tjän
 
 >[!IMPORTANT]
 >
->För vissa funktioner, till exempel push-meddelanden, måste Analytics Admin markera kryssrutan **[!UICONTROL Segment Creation]** i Användarhantering.
+>För vissa funktioner, till exempel push-meddelanden, måste Analytics Admin välja **[!UICONTROL Segment Creation]** kryssrutan i Användarhantering.
 
 ## Hantera åtkomst {#section_E6939C2695AA4A0DBF432D50B2670920}
 
@@ -79,7 +79,7 @@ Här är rollerna i gränssnittet för mobila tjänster, med deras relevanta beh
 
    * Konfigurera appens SDK-alternativ för mobiler
    * Konfigurera appens gränssnittsinställningar
-   * Konfigurera länkade App Store-appar
+   * Konfigurera länkade App Store-program
    * Konfigurera alternativ för Universal Link för appen
    * Konfigurera push-tjänstcertifikat och API-nycklar
    * Skapa/uppdatera/aktivera/inaktivera/duplicera/arkivera/ta bort återanslag
@@ -93,8 +93,8 @@ Här är rollerna i gränssnittet för mobila tjänster, med deras relevanta beh
 
 Mer information om grupper och användare finns i följande innehåll i Adobe Analytics-dokumentationen:
 
-* [Inställningar för användargrupp (äldre)](https://experienceleague.adobe.com/docs/analytics/admin/user-product-management/user-groups/groups.html)
-* [Lägga till en användare i en grupp](https://experienceleague.adobe.com/docs/analytics/admin/user-product-management/user-management/t-add-user-to-group.html)
+* [Inställningar för användargrupp (äldre)](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html)
+* [Lägga till en användare i en grupp](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html)
 
 ### Användare av mobiltjänster
 

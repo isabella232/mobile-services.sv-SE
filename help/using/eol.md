@@ -1,39 +1,45 @@
 ---
-title: Adobe Mobile Services - frågor och svar
-description: Få svar på vanliga frågor om lanseringen av Adobe Mobile Services.
-source-git-commit: 08102faa8470645b4088bd8178ccb630d2368752
+title: Adobe Mobile Services end-of-life FAQ
+description: Get answers to commonly asked questions around the end-of-life announcement for Adobe Mobile Services.
+source-git-commit: 7c3886cbc33c155e527a1d77eccbd3d99609c3d1
 workflow-type: tm+mt
-source-wordcount: '332'
+source-wordcount: '438'
 ht-degree: 0%
 
 ---
 
-# Adobe Mobile Services - frågor och svar
+# Adobe Mobile Services end-of-life FAQ
 
-Adobe Mobile Service upphör den 31 december 2022 **.**
+****
 
-## Vad händer?
+## What is happening?
 
-Mobiltjänster upphör den 31 december 2022. Mobiltjänster, som har stöd för ett mobilorienterat gränssnitt, förvärv, djuplänkning, meddelanden i appen, push-meddelanden och geopositionering, stöds inte längre efter detta datum.
+Mobile Services reaches end-of-life on December 31, 2022. Mobile Services, which supports a mobile-centric UI, acquisition, deep linking, in-app messaging, push notification, and geo-location is no longer supported after this date.
 
-## Vad ingår och vad ingår inte?
+## What is included, and what is not included?
 
-Detta slutdatum inkluderar endast Adobe Mobile Services, den fristående plattformen på [mobilemarketing.adobe.com](https://mobilemarketing.adobe.com). SDK:n för mobilversion 4 som använder det här gränssnittet upphörde den 31 augusti 2021.
+[](https://mobilemarketing.adobe.com) The Mobile version 4 SDKs that rely on this interface were sunset on August 31, 2021.
 
-Den här sista livscykeln innehåller INTE Adobe Analytics för mobilappar, som ingår i Adobe Experience Platform Mobile SDK:er. Dessa funktioner, som bland annat beteenden i appen, livscykelanalys, uppföljning av meddelandeinteraktion och målgruppsprofiler, får fortsatt stöd från Adobe.
+This end-of-life does NOT include Adobe Analytics for mobile apps, part of the Adobe Experience Platform Mobile SDKs. These features, which include in-app behavior, lifecycle analysis, messaging interaction tracking, and audience profiles, continue to receive support from Adobe.
 
-## Varför upphör funktionen?
+## Why is the capability being retired?
 
-I takt med att Adobe fortsätter att utöka sina funktioner för mobilmarknadsföring kommer funktioner som tidigare fanns i Mobiltjänster att lanseras i Adobe Experience Cloud-lösningar eller erbjudas via Adobe Exchange Premier Partners. Den här övergången ger er kraftfullare och flexiblare funktioner för mobilmarknadsföring.
+As Adobe continues to expand its mobile marketing capabilities, features previously available in Mobile Services will be released in Adobe Experience Cloud solutions or offered through Adobe Exchange Premier Partners. This transition provides you with more powerful and flexible mobile marketing capabilities.
 
-## Vilka övergångsalternativ finns?
+## What happens to existing processing rules created in Mobile Services?
 
-Adobe erbjuder tre övergångsvägar beroende på hur din organisation använder dem.
+[](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html) Migrated processing rules behave similarly to other processing rules in Adobe Analytics, where you can freely view or edit them. No user action is required for this migration.
 
-1. **Meddelanden och push-meddelanden** i appen: Adobe kan överföra dina arbetsflöden för meddelanden till Adobe Journey Optimizer. Produkten hjälper organisationer att optimera och personalisera upplevelser under hela kundresan, inklusive mobilmeddelanden.
-1. **Förvärv och djuplänkning**: Förvärv och djuplänkning erbjuds via programmet Adobe Exchange Premier Partners. Bland dessa partners finns Adjust, AppsFlyer och Branch, som erbjuder omfattande förvärvsfunktioner. Adobe partnerskap kan ta fram lämpliga introduktioner för att säkerställa att ni hittar den lösning som passar era behov bäst.
-1. **Platstjänst**: Platstjänsten erbjuder kostnadsfria geografiska platser. Se [Platstjänstens dokumentation](https://experienceleague.adobe.com/docs/places/using/home.html).
+[](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/contextdata.html?lang=en)
 
-## Var kan jag gå om jag har frågor?
+## What transition options are available?
 
-Mer information finns på sidan [Adobe Mobile Services end-of-life Spark](https://spark.adobe.com/page/C6D30y09zaRpD/). Kontakta din Adobe-representant om du har ytterligare frågor.
+Adobe offers three transition paths depending on your organization&#39;s use case.
+
+1. **** This product helps organizations optimize and personalize experiences across the entire customer journey, including mobile messaging.
+1. **** These partners include Adjust, AppsFlyer, and Branch, who offer extensive acquisition capabilities. Adobe&#39;s partnership team can make appropriate introductions to ensure that you find the solution that best fits your needs.
+1. **** [](https://experienceleague.adobe.com/docs/places/using/home.html)
+
+## Where can I go if I have questions?
+
+[](https://spark.adobe.com/page/C6D30y09zaRpD/) Contact your Adobe representative with any additional questions.

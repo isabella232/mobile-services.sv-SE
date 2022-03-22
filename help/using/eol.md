@@ -1,9 +1,9 @@
 ---
 title: Adobe Mobile Services end-of-life FAQ
 description: Get answers to commonly asked questions around the end-of-life announcement for Adobe Mobile Services.
-source-git-commit: 7c3886cbc33c155e527a1d77eccbd3d99609c3d1
+source-git-commit: a0f834247c328b40d0f47fdf515c239cf66b7566
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '436'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ As Adobe continues to expand its mobile marketing capabilities, features previou
 
 [](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html) Migrated processing rules behave similarly to other processing rules in Adobe Analytics, where you can freely view or edit them. No user action is required for this migration.
 
-[](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/contextdata.html?lang=en)
+[](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/contextdata.html)
 
 ## What transition options are available?
 

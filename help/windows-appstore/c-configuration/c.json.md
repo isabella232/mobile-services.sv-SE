@@ -1,11 +1,11 @@
 ---
 description: Information som hjälper dig att använda ADBMomobile JSON Config-filen.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Konfigurationsfil för ADBMobileConfig.json
 topic-fix: Developer and implementation
 uuid: a45b91cc-982e-4d6c-a4e4-d2e4b4fa7556
 exl-id: 520dffb8-ca47-444f-bbc9-f18413ddeb05
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '609'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # `ADBMobileConfig.json` config-fil {#adbmobileconfig-json-config}
 
-Information som kan hjälpa dig att använda konfigurationsfilen `ADBMobile.json`.
+Information som hjälper dig att använda `ADBMobile.json` config-fil.
 
 SDK har för närvarande stöd för flera Adobe Experience Cloud-lösningar, inklusive Analytics, Target och Audience Manager. Metoderna är prefasta enligt lösningen. Konfigurationsmetoderna har prefixet &quot;Config&quot;.
 
@@ -34,17 +34,17 @@ SDK har för närvarande stöd för flera Adobe Experience Cloud-lösningar, ink
 
 * **server**
 
-   (Krävs av analys och målgruppshantering). Analys- eller Audience Management-servern, baserad på den överordnade noden. Den här variabeln ska fyllas i med serverdomänen, utan ett `https://`- eller `https://`-protokollprefix. Protokollprefixet hanteras automatiskt av biblioteket baserat på variabeln `ssl`.
+   (Krävs av analys och målgruppshantering). Analys- eller Audience Management-servern, baserad på den överordnade noden. Den här variabeln ska fyllas i med serverdomänen, utan en `https://` eller `https://` protokollprefix. Protokollprefixet hanteras automatiskt av biblioteket baserat på `ssl` variabel.
 
-   Om `ssl` är `true` skapas en säker anslutning till den här servern. Om `ssl` är `false` skapas en osäker anslutning till den här servern.
+   If `ssl` är `true`skapas en säker anslutning till den här servern. If `ssl` är `false`, en osäker anslutning görs till den här servern.
 
 * **charset**
 
-   Definierar den teckenuppsättning som du använder för data som skickas till Analytics. Teckenuppsättningen används för att konvertera inkommande data till UTF-8 för lagring och rapportering. Mer information finns i [charSet](https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/charset.html)-variabeln i Adobe Analytics-dokumentationen.
+   Definierar den teckenuppsättning som du använder för data som skickas till Analytics. Teckenuppsättningen används för att konvertera inkommande data till UTF-8 för lagring och rapportering. Mer information finns i [charSet](https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/charset.html) i Adobe Analytics-dokumentationen.
 
 * **ssl**
 
-   Aktiverar (`true`) eller inaktiverar (`false`) att skicka mätdata via SSL (HTTPS). Standardvärdet är `false`.
+   Aktiverar (`true`) eller inaktiverar (`false`) som skickar mätdata via SSL (HTTPS). Standardvärdet är `false`.
 
 * **offlineEnabled**
 
@@ -52,7 +52,7 @@ SDK har för närvarande stöd för flera Adobe Experience Cloud-lösningar, ink
 
    >[!IMPORTANT]
    >
-   >Om tidsstämplar är aktiverade i rapportsviten måste `offlineEnabled` konfigurationsegenskapen *vara* true. Om rapportsviten inte är tidsstämpelaktiverad måste `offlineEnabled`-konfigurationsegenskapen *vara* vara false. Om detta inte är korrekt konfigurerat går data förlorade. Om du är osäker på om en rapportsserie är tidsstämplad, kontaktar du Kundtjänst. Om du för närvarande rapporterar AppMeasurement-data till en rapportserie som även samlar in data från JavaScript, kan du behöva skapa en separat rapportserie för mobildata, eller inkludera en anpassad tidsstämpel för alla JavaScript-träffar med variabeln `s.timestamp`.
+   >Om tidsstämplar är aktiverade i rapportsviten kan du `offlineEnabled` konfigurationsegenskap *måste* vara sant. om rapportsviten inte är tidsstämpel aktiverad kan du `offlineEnabled` konfigurationsegenskap *måste* vara falskt. Om detta inte är korrekt konfigurerat går data förlorade. Om du är osäker på om en rapportsserie är tidsstämplad, kontaktar du Kundtjänst. Om du för närvarande rapporterar AppMeasurement-data till en rapportserie som även samlar in data från JavaScript, kan du behöva skapa en separat rapportserie för mobildata, eller inkludera en anpassad tidsstämpel för alla JavaScript-träffar med `s.timestamp` variabel.
 
 * **lifecycleTimeout**
 
@@ -60,7 +60,7 @@ SDK har för närvarande stöd för flera Adobe Experience Cloud-lösningar, ink
 
 * **batchLimit**
 
-   Skicka träffar gruppvis. Om värdet till exempel är 50 står träffar i kö tills 50 lagras, skickas alla träffar i kö. Kräver `offlineEnabled=true`. Standardvärdet är `0` (ingen gruppering).
+   Skicka träffar gruppvis. Om värdet till exempel är 50 står träffar i kö tills 50 lagras, skickas alla träffar i kö. Kräver `offlineEnabled=true`. Standardvärdet är `0` (Ingen gruppering).
 
 * **privacyDefault**
 
@@ -76,7 +76,7 @@ SDK har för närvarande stöd för flera Adobe Experience Cloud-lösningar, ink
 
 * **poi**
 
-   Varje POI-array innehåller POI-namnet, latituden, longituden och radien (i meter) för punktens område. POI-namnet kan vara vilken sträng som helst. När ett `trackLocation`-anrop skickas och de aktuella koordinaterna finns inom en definierad POI fylls en kontextdatavariabel i och skickas med `trackLocation`-anropet.
+   Varje POI-array innehåller POI-namnet, latituden, longituden och radien (i meter) för punktens område. POI-namnet kan vara vilken sträng som helst. När en `trackLocation` anropet skickas, om de aktuella koordinaterna finns inom en definierad POI fylls en kontextdatavariabel i och skickas med `trackLocation` ring.
 
    * Här är kodexemplet för variabeln:
 
@@ -95,7 +95,7 @@ SDK har för närvarande stöd för flera Adobe Experience Cloud-lösningar, ink
 
    Anger hur länge Target väntar på ett svar.
 
-Följande är ett exempel på en `ADBMobileConfig.json`-fil:
+Följande är ett exempel på en `ADBMobileConfig.json` fil:
 
 ```js
 { 

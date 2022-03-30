@@ -1,18 +1,18 @@
 ---
 description: Följande tabell innehåller den iOS-versionssträng som skickas av många iOS-enheter.
-solution: Experience Cloud,Analytics
-title: iOS-enhetsversioner
+solution: Experience Cloud Services,Analytics
+title: iOS Device Versions
 topic-fix: Developer and implementation
 uuid: 8b8a9bc3-0737-4de2-9792-0b112aa4cf65
 exl-id: 9aaf2f35-4de9-47a0-8e9d-8d098dfaadef
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 19%
 
 ---
 
-# iOS-enhetsversioner {#ios-device-versions}
+# iOS enhetsversioner {#ios-device-versions}
 
 Följande tabell innehåller den iOS-versionssträng som skickas av många iOS-enheter.
 
@@ -20,14 +20,14 @@ Följande tabell innehåller den iOS-versionssträng som skickas av många iOS-e
 >
 >Listan baseras på interna tester och onlineinformation och kan innehålla felaktiga eller ofullständiga uppgifter.
 
-Mer information om iOS-enheter finns på webbplatser som [Wiki](https://theiphonewiki.com/wiki/Models) för iPhone.
+Mer information om iOS-enheter finns på webbplatser som [iPhone Wiki](https://theiphonewiki.com/wiki/Models).
 
 | **iPhone** | **Version** |
 |---|---|
 | Original | iPhone1,1 |
 | 3G | iPhone1,2 |
 | 3GS | iPhone2,1 |
-| 4 (GSM) (levereras med firmware 4.0) | iPhone3,1 |
+| 4 (GSM) (shipped with firmware 4.0) | iPhone3,1 |
 | 4 (GSM) (levereras med firmware 6.0) | iPhone3,2 |
 | 4 (CDMA) | iPhone3,3 |
 | 4S | iPhone4,1 |

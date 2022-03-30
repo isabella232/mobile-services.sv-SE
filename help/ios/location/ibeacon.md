@@ -1,11 +1,11 @@
 ---
 description: Med iBeacon-spårning kan du mäta och inrikta dig på mikroplatser med iBeacon och Bluetooth med låg energinivå.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Spårning av iBeacon
 topic-fix: Developer and implementation
 uuid: 390883db-027e-4d12-8a16-86d514579db1
 exl-id: 7232e51d-5695-43ad-8d67-fb3cad70e8f2
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '182'
 ht-degree: 0%
@@ -32,14 +32,14 @@ Följande beacon-data skickas till Analytics och Target när `trackBeacon` anrop
 
 1. Lägg till biblioteket i ditt projekt och implementera livscykeln.
 
-   Mer information finns i *Lägg till SDK- och konfigurationsfilen i ditt projekt* i [Core Implementation och Lifecycle](/help/ios/getting-started/dev-qs.md).
+   Mer information finns i *Lägg till SDK- och konfigurationsfilen i projektet* in [Kärnimplementering och livscykel](/help/ios/getting-started/dev-qs.md).
 1. Importera biblioteket:
 
    ```objective-c
    #import "ADBMobile.h"
    ```
 
-1. Ring `trackBeacon` när en enhet är inom närheten av en signal:
+1. Ring när en enhet är inom närheten av en signal `trackBeacon`:
 
    ```objective-c
    [ADBMobile trackBeacon:beacon data:nil];

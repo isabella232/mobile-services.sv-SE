@@ -1,12 +1,12 @@
 ---
 description: Du kan skapa ett nytt länkmål som dirigerar användarna till en webbsida eller en djup länk i appen.
 keywords: mobil
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Skapa nytt länkmål
 topic-fix: Metrics
 uuid: 390e3dea-0221-4f97-980d-a90ca9f162fa
 exl-id: 2d2f5938-1461-43e2-a375-45c18afc9d5a
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 0%
@@ -17,14 +17,14 @@ ht-degree: 0%
 
 Du kan skapa ett nytt länkmål som dirigerar användarna till en webbsida eller en djup länk i appen.
 
-1. Klicka på **[!UICONTROL Manage Apps]** i gränssnittet för mobila tjänster.
+1. I användargränssnittet för Mobile Services klickar du på **[!UICONTROL Manage Apps]**.
 1. Klicka på appens namn för att visa dess app informationssida.
 1. Klicka på **[!UICONTROL Manage Link Destinations]**.
 1. Klicka på **[!UICONTROL Create New]**.
 1. Skriv information i följande fält:
    * **[!UICONTROL Title]**
 
-      Ange ett beskrivande namn för applänkens mål. Titeln visas bara på sidan Hantera länkmål i användargränssnittet för Adobe Mobile Services. Ett beskrivande namn hjälper dig eller andra i organisationen att snabbt hitta ett specifikt länkmål och kan ge dig insikt i dess syfte.
+      Ange ett beskrivande namn för applänkens mål. Titeln visas bara på sidan Hantera länkmål i användargränssnittet för Mobile-tjänster i Adobe. Ett beskrivande namn hjälper dig eller andra i organisationen att snabbt hitta ett specifikt länkmål och kan ge dig insikt i dess syfte.
 
    * **[!UICONTROL Link Type]**
 
@@ -36,17 +36,17 @@ Du kan skapa ett nytt länkmål som dirigerar användarna till en webbsida eller
 
       * **[!UICONTROL Web Link]**
 
-         Skriv en webb-HTTP- eller HTTPS-URL, till exempel`https://adobe.com`. Webblänksmål dirigerar användare till en URL. Du kan t.ex. dirigera användare till en produktlinje på en webbutik.
+         Ange en webb-HTTP- eller HTTPS-URL-adress, till exempel`https://adobe.com`. Webblänksmål dirigerar användare till en URL. Du kan t.ex. dirigera användare till en produktlinje på en webbutik.
 
       * **[!UICONTROL Hybrid Link]**
 
-         Skriv en iOS Universal Link eller en Android App Link (till exempel `https://yourwebsite.com`). Hybridlänkar har stöd för universella iOS-länkar eller Android-applänkar.
+         Skriv en iOS Universal Link eller en Android App Link (till exempel `https://yourwebsite.com`). Hybridlänkar stöder iOS Universal Links eller Android App Links.
    * **[!UICONTROL App]**
 Välj det program som är associerat med länken som du ska ange.
 
       >[!TIP]
       >
-      >Den här informationen krävs bara om du har valt en App Deep Link eller en Hybrid Link i **[!UICONTROL Link Type]**. Om appen inte visas i urvalslistan klickar du på **[!UICONTROL Add New App]** för att referera till en ny app från en appbutik.
+      >Den här informationen krävs bara om du har valt en App Deep Link (App Deep Link) eller en Hybrid Link (Hybrid Link) i **[!UICONTROL Link Type]**. Om appen inte visas i urvalslistan klickar du på **[!UICONTROL Add New App]** för att hänvisa till en ny app från en appbutik.
 
    * **[!UICONTROL Link type]**
 
@@ -54,7 +54,7 @@ Välj det program som är associerat med länken som du ska ange.
 
    * **[!UICONTROL Notes]**
 
-      Ange valfria anteckningar för destinationen. Ytterligare anteckningar visas endast på sidan Hantera länkmål i användargränssnittet för Adobe Mobile Services. Ytterligare anteckningar kan hjälpa dig eller andra i organisationen att snabbt hitta ett specifikt länkmål och kan ge insikt i dess syfte, vilken kampanj det är knutet till eller något annat som du anser vara viktigt.
+      Ange valfria anteckningar för destinationen. Ytterligare anteckningar visas endast på sidan Hantera länkmål i användargränssnittet för Mobile-tjänster i Adobe. Ytterligare anteckningar kan hjälpa dig eller andra i organisationen att snabbt hitta ett specifikt länkmål och kan ge insikt i dess syfte, vilken kampanj det är knutet till eller något annat som du anser vara viktigt.
 
 
-1. Klicka på **Spara**.
+1. Klicka **Spara**.

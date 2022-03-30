@@ -1,12 +1,12 @@
 ---
 description: Du kan visa nyckeltal för prestandamått för de appar som du senast visade. Som standard kan du visa upp till 12 appar. Du kan ändra datumintervallet och skapa filter för att segmentera data och redigera alla program på sidan Översikt.
 keywords: mobil
-solution: Experience Cloud,Analytics
-title: Visa mobilmått
+solution: Experience Cloud Services,Analytics
+title: Visa Mobile-mått
 topic-fix: Metrics
 uuid: 57db0b77-6b0a-4a0c-9aad-0731275233fd
 exl-id: aab6448d-4362-4c75-949a-7a519da76606
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '421'
 ht-degree: 1%
@@ -35,25 +35,25 @@ Du kan utföra följande åtgärder på sidan Översikt:
 
    Så här skapar du ett filter:
 
-   1. Klicka på ikonen **[!UICONTROL Filter]** för att visa dialogrutan **[!UICONTROL Sticky Filter]**.
-   1. Klicka på **[!UICONTROL Add Rule]**, välj ett alternativ i listrutan och ange nödvändig information.
+   1. Klicka på **[!UICONTROL Filter]** -ikonen för att visa **[!UICONTROL Sticky Filter]** -dialogrutan.
+   1. Klicka **[!UICONTROL Add Rule]** väljer du ett alternativ i listrutan och skriver den nödvändiga informationen.
 
-      Du kan till exempel välja **[!UICONTROL App Version]** och skriva `4.5` som version. Du kan välja **[!UICONTROL Device Type]** och skriva `Android`.
+      Du kan till exempel välja **[!UICONTROL App Version]** och text `4.5` för versionen. Du kan välja **[!UICONTROL Device Type]** och text `Android`.
 
       >[!TIP]
       >
-      >Du kan skapa komplexa filter med hjälp av *AND*- och *OR*-satser.
+      >Du kan skapa komplexa filter med *OCH* och *ELLER* -programsatser.
 
    1. Klicka på **[!UICONTROL Update]**.
    >[!TIP]
    >
-   >En blå bubbla visas bredvid ikonen **[!UICONTROL Filter]** för att ange antalet aktiva filter.
+   >En blå bubbla visas bredvid **[!UICONTROL Filter]** om du vill ange antalet aktiva filter.
 
-   Om du vill avbryta filter klickar du på ikonen **[!UICONTROL Filter]** och sedan på **[!UICONTROL Cancel]**.
+   Om du vill avbryta filter klickar du på **[!UICONTROL Filter]** och klicka **[!UICONTROL Cancel]**.
 
 * **Visa nyckeltal för prestandaindikatorer**
 
-   Klicka på appens namn för att visa information om nyckelutförandeindikatorerna. Raderna i diagrammet är färgkodade, och du kan föra musen över datapunkten för att visa statistik för specifika datum. Klicka på ikonen intill **[!UICONTROL Key Performance Indicators]** om du vill gå nedåt. Linjerna i diagrammet är färgkodade, och du kan föra musen över en datapunkt för att se statistik för specifika datum. Klicka på en kolumnrubrik i tabellen om du vill sortera data i stigande eller fallande ordning.
+   Klicka på appens namn för att visa information om nyckelutförandeindikatorerna. Raderna i diagrammet är färgkodade, och du kan föra musen över datapunkten för att visa statistik för specifika datum. Klicka på ikonen intill **[!UICONTROL Key Performance Indicators]**. Linjerna i diagrammet är färgkodade, och du kan föra musen över en datapunkt för att se statistik för specifika datum. Klicka på en kolumnrubrik i tabellen om du vill sortera data i stigande eller fallande ordning.
 
 ## Redigera inställningar för ett program {#section_C1CF227A2E534A798F0073E43AD6A2D1}
 

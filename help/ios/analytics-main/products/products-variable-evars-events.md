@@ -1,11 +1,11 @@
 ---
 description: Här är ett exempel på variabeln products med Merchandising eVars och produktspecifika händelser.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Produkterna kan variera med Merchandising eVars och produktspecifika event
 topic-fix: Developer and implementation
 uuid: f913211e-97ad-4237-bfe4-7ded01295caf
 exl-id: f438190d-0d2d-4bcd-a1c7-156e46e61162
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '76'
 ht-degree: 0%
@@ -36,4 +36,4 @@ NSMutableDictionary *contextData = [NSMutableDictionary dictionary];
 
 >[!TIP]
 >
->Om du utlöser en produktspecifik händelse med hjälp av variabeln *`&&products`* måste du även ange den händelsen i variabeln *`&&events`*. Om du inte anger den händelsen filtreras den bort under bearbetningen.
+>Om du utlöser en produktspecifik händelse med *`&&products`* -variabeln måste du också ange den händelsen i *`&&events`* variabel. Om du inte anger den händelsen filtreras den bort under bearbetningen.

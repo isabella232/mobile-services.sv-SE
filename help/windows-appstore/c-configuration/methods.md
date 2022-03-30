@@ -1,11 +1,11 @@
 ---
-description: Klasser och metoder som tillhandahålls av Windows 8.1 Universal App Store-biblioteket.
-solution: Experience Cloud,Analytics
+description: Klasser och metoder som tillhandahålls av App Store-biblioteket Windows 8.1 Universal.
+solution: Experience Cloud Services,Analytics
 title: SDK-metoder
 topic-fix: Developer and implementation
 uuid: 0f558ff4-73d3-4439-9d51-62fbd74d2cea
 exl-id: c328fd79-6e10-43b7-9d08-8da395098b60
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '642'
 ht-degree: 22%
@@ -14,11 +14,11 @@ ht-degree: 22%
 
 # SDK-metoder {#sdk-methods}
 
-Klasser och metoder som tillhandahålls av Windows 8.1 Universal App Store-biblioteket.
+Klasser och metoder som tillhandahålls av App Store-biblioteket Windows 8.1 Universal.
 
 >[!TIP]
 >
->När du använder `winmd`-metoder från winJS (JavaScript) kommer den första bokstaven automatiskt att sänkas för alla metoder.
+>När du konsumerar `winmd` metoder från winJS (JavaScript) får alla metoder automatiskt sin första bokstav nedsänkt.
 
 * **GetVersion (winJS: getVersion)**
 
@@ -44,7 +44,7 @@ Klasser och metoder som tillhandahålls av Windows 8.1 Universal App Store-bibli
    * `ADBMobilePrivacyStatusOptOut` - träffar tas bort.
    * `ADBMobilePrivacyStatusUnknown` - Om rapportsviten är tidsstämpelaktiverad sparas träffar tills sekretessstatusen ändras till att anmäla sig (träffar skickas) eller avanmäla sig (träffar ignoreras). Om rapportsviten inte är tidsstämpelaktiverad ignoreras träffar tills sekretessstatusen ändras till att anmäla sig.
 
-      Standardvärdet anges i filen [ADBMobleConfig.json config](/help/windows-appstore/c-configuration/c.json.md).
+      Standardvärdet anges i [ADBMobileConfig.json-konfiguration](/help/windows-appstore/c-configuration/c.json.md) -fil.
 
    * Här är syntaxen för den här metoden:
 
@@ -72,7 +72,7 @@ Klasser och metoder som tillhandahålls av Windows 8.1 Universal App Store-bibli
 
 * **SetPrivacyStatus (winJS: setPrivacyStatus)**
 
-   Anger den aktuella användarens sekretessstatus till `status`. Ange något av följande värden:
+   Anger sekretessstatus för den aktuella användaren till `status`. Ange något av följande värden:
 
    * `ADBMobilePrivacyStatusOptIn` - träffar skickas omedelbart.
    * `ADBMobilePrivacyStatusOptOut` - träffar tas bort.
@@ -122,7 +122,7 @@ Klasser och metoder som tillhandahålls av Windows 8.1 Universal App Store-bibli
 
    >[!TIP]
    >
-   >Om ditt program uppgraderar från Experience Cloud 3.x till 4.x SDK hämtas det tidigare ID:t (antingen anpassat eller automatiskt genererat) och lagras som en anpassad användaridentifierare. Detta bevarar besöksdata mellan uppgraderingar av SDK. För nya installationer på 4.x SDK är användaridentifieraren `null` tills den anges.
+   >Om ditt program uppgraderar från Experience Cloud 3.x till 4.x SDK hämtas det tidigare ID:t (antingen anpassat eller automatiskt genererat) och lagras som en anpassad användaridentifierare. Detta bevarar besöksdata mellan uppgraderingar av SDK. För nya installationer på 4.x SDK är användaridentifieraren `null` till.
 
    * Här är syntaxen för den här metoden:
 
@@ -173,7 +173,7 @@ Klasser och metoder som tillhandahålls av Windows 8.1 Universal App Store-bibli
 
 * **SetDebugLogging (winJS: setDebugLogging)**
 
-   Anger inställningen för felsökningsloggning till `debugLogging`. Felsökningsloggning fungerar endast när felsökningsversionen av biblioteket används. Den här inställningen ignoreras av den officiella versionen.
+   Anger loggningsinställningar för felsökning till `debugLogging`. Felsökningsloggning fungerar endast när felsökningsversionen av biblioteket används. Den här inställningen ignoreras av den officiella versionen.
 
    * Här är syntaxen för den här metoden:
 
@@ -194,7 +194,7 @@ Klasser och metoder som tillhandahålls av Windows 8.1 Universal App Store-bibli
 
    >[!TIP]
    >
-   >Anropa den här metoden i `onResume()`-metoden i varje aktivitet i programmet, vilket visas i följande exempel. Vi rekommenderar också att du skickar aktiviteten eller tjänsten som kontextobjekt i stället för som global programkontext.
+   >Anropa den här metoden i `onResume()` i varje aktivitet i programmet, vilket visas i följande exempel. Vi rekommenderar också att du skickar aktiviteten eller tjänsten som kontextobjekt i stället för som global programkontext.
 
    * Här är syntaxen för den här metoden:
 
@@ -215,7 +215,7 @@ Klasser och metoder som tillhandahålls av Windows 8.1 Universal App Store-bibli
 
    >[!TIP]
    >
-   >Anropa den här metoden i `onPause()`-metoderna i varje aktivitet i ditt program, vilket visas i exemplet. Vi rekommenderar också att du skickar aktiviteten eller tjänsten som kontextobjekt i stället för som global programkontext.
+   >Anropa den här metoden i `onPause()` metoder i varje aktivitet i ditt program, vilket visas i exemplet. Vi rekommenderar också att du skickar aktiviteten eller tjänsten som kontextobjekt i stället för som global programkontext.
 
    * Här är syntaxen för den här metoden:
 

@@ -1,11 +1,11 @@
 ---
 description: Med tidsbestämda åtgärder kan du mäta tiden i appen och den totala tiden mellan åtgärdens början och slut. SDK beräknar tiden för varje session och den totala tiden mellan sessionerna som behövs för att åtgärden ska kunna slutföras. Du kan använda tidsbestämda åtgärder för att definiera segment och jämföra tiden för inköp, skicka-nivå, utcheckningsflöde och så vidare.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Tidsbestämda åtgärder
 topic-fix: Developer and implementation
 uuid: 5a48a580-b942-4e49-9f1b-078fea7fccdb
 exl-id: d9851440-6e65-4d89-a6b3-81c8abd2bf06
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '346'
 ht-degree: 0%
@@ -31,14 +31,14 @@ Med ett valfritt återanrop kan du utföra ytterligare åtgärder när tidsåtg�
 
 1. Lägg till biblioteket i ditt projekt och implementera livscykeln.
 
-   Mer information finns i *Lägga till SDK- och konfigurationsfilen i IntelliJ IDEA- eller Eclipse-projektet* i [Core-implementering och livscykel](/help/android/getting-started/dev-qs.md).
+   Mer information finns i *Lägg till SDK- och Config-filen i IntelliJ IDEA- eller Eclipse-projektet* in [Kärnimplementering och livstid](/help/android/getting-started/dev-qs.md).
 1. Importera biblioteket:
 
    ```java
    import com.adobe.mobile.*;
    ```
 
-1. Anropa `trackTimedActionStart` och ange ett namn på en tidsbestämd åtgärd och valfria kontextdata.
+1. Utlysning `trackTimedActionStart` och ange ett namn på en tidsbestämd åtgärd och valfria kontextdata.
 
    ```java
    HashMap cdata = new HashMap<String, Object>(); 
@@ -46,7 +46,7 @@ Med ett valfritt återanrop kan du utföra ytterligare åtgärder när tidsåtg�
    Analytics.trackTimedActionStart("TimeUntilPurchase", cdata);
    ```
 
-1. (Valfritt) Du kan när som helst anropa `trackTimedActionUpdate` med det tidsbestämda åtgärdsnamnet för att lägga till ytterligare kontextdata.
+1. (Valfritt) Du kan ringa `trackTimedActionUpdate` med det tidsbestämda åtgärdsnamnet för att lägga till ytterligare kontextdata.
 
    ```java
    HashMap cdata = new HashMap<String, Object>(); 
@@ -54,7 +54,7 @@ Med ett valfritt återanrop kan du utföra ytterligare åtgärder när tidsåtg�
    Analytics.trackTimed​ActionUpdate("TimeUntilPurchase", cdata);
    ```
 
-1. När händelsen har slutförts anropar du `trackTimedActionEnd` och skickar det tidsbestämda åtgärdsnamnet och `TimedActionBlock` (callback), som söker upp alla data och beräknar varaktigheter.
+1. När händelsen är klar, ring `trackTimedActionEnd` och skicka timed funktionsmakrots namn och `TimedActionBlock` (återanrop), som söker upp alla data och beräknar varaktighet.
 
    ```java
    Analytics.trackTimedActionEnd("TimeUntilPurchase", cdata);

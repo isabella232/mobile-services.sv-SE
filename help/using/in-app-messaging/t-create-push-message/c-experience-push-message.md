@@ -1,12 +1,12 @@
 ---
 description: Du kan konfigurera upplevelsealternativ för push-meddelanden och omfattande push-meddelanden, inklusive namn, meddelandetext och målalternativ. Du kan också konfigurera avancerade alternativ, inklusive nyttolastalternativ och anpassade alternativ för iOS-enheter.
 keywords: mobil
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Experience Push-meddelande
 topic-fix: Metrics
 uuid: 1a8baf3e-9fea-452c-b0fc-4ba8ac270861
 exl-id: 9158487e-6ac5-4f17-a8ff-15de0360ab60
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '714'
 ht-degree: 0%
@@ -17,12 +17,12 @@ ht-degree: 0%
 
 Du kan konfigurera upplevelsealternativ för push-meddelanden och omfattande push-meddelanden, inklusive namn, meddelandetext och målalternativ. Du kan också konfigurera avancerade alternativ, inklusive nyttolastalternativ och anpassade alternativ för iOS-enheter.
 
-1. Klicka på **[!UICONTROL Experience]** på målsidan för ett nytt push-meddelande.
+1. På sidan Audience för ett nytt push-meddelande klickar du på **[!UICONTROL Experience]**.
 
    ![push-meddelandeskärm](assets/experience-push-message.png)
 
 1. Skriv ett namn för det här meddelandet.
-1. Skriv information i följande fält i avsnittet **[!UICONTROL Message]**:
+1. Ange information i följande fält i dialogrutan **[!UICONTROL Message]** avsnitt:
 
    * **[!UICONTROL Content]**
 
@@ -30,12 +30,12 @@ Du kan konfigurera upplevelsealternativ för push-meddelanden och omfattande pus
 
    * **[!UICONTROL Media URL]**
 
-      Skriv URL-adressen till den mediefil som du vill använda i push-meddelandet. Information om krav för att använda push-meddelanden finns i *Krav för push-meddelanden* nedan.
+      Skriv URL-adressen till den mediefil som du vill använda i push-meddelandet. Information om krav för att använda avancerade push-meddelanden finns i *Krav för push-meddelanden* nedan.
 
       >[!IMPORTANT]
       >
       >Kom ihåg följande om du vill visa en bild eller en video i ett push-meddelande:
-      > * `attachment-url`-data hanteras i push-nyttolasten.
+      > * The `attachment-url` data hanteras i push-nyttolasten.
       > * Medie-URL:en måste kunna hantera begäranden om spikes.
 
 
@@ -45,7 +45,7 @@ Du kan konfigurera upplevelsealternativ för push-meddelanden och omfattande pus
 
       >[!TIP]
       >
-      >När du använder måltyperna * **[!UICONTROL Web Link]** eller **[!UICONTROL Custom Link]** spåras inte måltypen. Endast **[!UICONTROL Deep Links]** spåras.
+      >När du använder * **[!UICONTROL Web Link]** eller **[!UICONTROL Custom Link]** måltyper, måltypen spåras inte. Endast **[!UICONTROL Deep Links]** spåras.
 
 ## Krav för avancerade push-meddelanden
 
@@ -84,29 +84,29 @@ Mer information om hur du konfigurerar avancerade push-meddelanden finns i följ
 
 Så här konfigurerar du ett push-meddelande på Experience-sidan:
 
-1. (**Valfritt**) Klicka på länken **[!UICONTROL Show Advanced Options]** för att konfigurera ytterligare alternativ:
+1. (**Valfritt**) Klicka på **[!UICONTROL Show Advanced Options]** länk för att konfigurera ytterligare alternativ:
 
    * **[!UICONTROL Payload: Data]**
 
-      Ange en anpassad push-nyttolast i JSON som skickas till appen via en push-sändning eller ett lokalt meddelande. Gränsen för Android och iOS är 4 kB.
+      Ange en anpassad push-nyttolast i JSON som skickas till appen via en push-sändning eller ett lokalt meddelande. Gränsvärdet för Android och iOS är 4 kB.
 
    * **[!UICONTROL Apple Options: Category]**
 
-      Ange en kategori för push-meddelanden och lokala meddelanden. Mer information finns i [Hantera ditt programs meddelandestöd](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/SupportingNotificationsinYourApp.html#//apple_ref/doc/uid/TP40008194-CH4-SW9) i *iOS Developer Library*.
+      Ange en kategori för push-meddelanden och lokala meddelanden. Mer information finns i [Hantera ditt programs meddelandesupport](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/SupportingNotificationsinYourApp.html#//apple_ref/doc/uid/TP40008194-CH4-SW9) i *iOS Developer Library*.
 
    * **[!UICONTROL Apple Options: Sound]**
 
-      Ange namnet på ljudfilen i apppaketet som ska spelas upp. Ett standardlarmljud spelas upp om det inte anges. Mer information finns i [Hantera ditt programs meddelandestöd](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/SupportingNotificationsinYourApp.html#//apple_ref/doc/uid/TP40008194-CH4-SW10) i *iOS Developer Library*.
+      Ange namnet på ljudfilen i apppaketet som ska spelas upp. Ett standardlarmljud spelas upp om det inte anges. Mer information finns i [Hantera din apps meddelandesupport](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/SupportingNotificationsinYourApp.html#//apple_ref/doc/uid/TP40008194-CH4-SW10) i *iOS Developer Library*.
 
    * **[!UICONTROL Apple Options: Content Available]**
 
-      Välj det här alternativet så att iOS när meddelandet kommer, aktiverar din app i bakgrunden och gör att din app kan köra kod baserat på meddelandets nyttolast. Mer information finns i [Apple Push Notification Service](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW1) i *iOS Developer Library*.
+      Välj det här alternativet så att iOS, när meddelandet kommer, aktiverar din app i bakgrunden och låter din app köra kod baserat på meddelandets nyttolast. Mer information finns i [Apple Push Notification Service](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW1) i *iOS Developer Library*.
 
 1. (Valfritt) Förhandsgranska layouten för meddelandet genom att klicka på följande ikoner:
 
    * **[!UICONTROL x Summary]**
 
-      Döljer förhandsgranskningsfönstret. Klicka på ![förhandsgranska](assets/icon_preview.png) för att visa förhandsgranskningsfönstret igen.
+      Döljer förhandsgranskningsfönstret. Klicka ![förhandsgranska](assets/icon_preview.png) för att visa förhandsgranskningsfönstret igen.
 
    * **[!UICONTROL Change the orientation]**
 
@@ -114,18 +114,18 @@ Så här konfigurerar du ett push-meddelande på Experience-sidan:
 
    * **[!UICONTROL Preview on a user's watch]**
 
-      Om du vill förhandsgranska meddelandet så som det kommer att visas på en användares färgrutor klickar du på ![bevakningsikonen](assets/icon_watch.png).
+      Om du vill förhandsgranska meddelandet så som det kommer att visas på en användares färgrutor klickar du på ![bevakningsikon](assets/icon_watch.png).
 
    * **[!UICONTROL Preview on a user's mobile phone]**
 
-      Om du vill förhandsgranska meddelandet så som det kommer att visas på en användares mobiltelefoner klickar du på ![telefonikonen](assets/icon_phone.png).
+      Om du vill förhandsgranska meddelandet så som det kommer att visas på en användares mobiltelefoner klickar du på ![telefon, ikon](assets/icon_phone.png).
 
    * **[!UICONTROL Preview on a user's tablet]**
 
-      Om du vill förhandsgranska meddelandet på en surfplatta klickar du på ikonen ![surfplatta](assets/icon_tablet.png).
+      Om du vill förhandsgranska meddelandet på en surfplatta klickar du på ![ikon för surfplatta](assets/icon_tablet.png).
    Längst ned i förhandsgranskningsfönstret kan du visa en beskrivning av målgruppen som du valde i föregående steg.
 
-1. (**Valfritt**) Klicka på **[!UICONTROL Test]** om du vill skicka meddelandet till angivna enheter för testning.
+1. (**Valfritt**) Klicka **[!UICONTROL Test]** för att skicka meddelandet till angivna enheter för testning.
 1. Markera tjänsten och skriv push-tokens för minst en enhet som du vill skicka meddelandet till.
 
    Ange token i en kommaavgränsad lista för att skicka meddelandet till mer än en enhet.

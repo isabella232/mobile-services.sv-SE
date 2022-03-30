@@ -1,12 +1,12 @@
 ---
 description: Du kan visa meddelanderapporter för meddelanden i programmet och push-meddelanden.
 keywords: mobil
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Visa meddelanderapporter
 topic-fix: Metrics
 uuid: 0ac73a81-388f-4dfd-84d5-21b8db4b8c83
 exl-id: b8a2dd7a-02e1-47ce-9e8e-c1419b707b44
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '458'
 ht-degree: 0%
@@ -17,8 +17,8 @@ ht-degree: 0%
 
 Du kan visa meddelanderapporter för meddelanden i programmet och push-meddelanden.
 
-1. Klicka på ![rapportikonen](assets/icon_report.png) i **[!UICONTROL Report]**-kolumnen för ett meddelande.
-1. (**Valfritt**) Skapa ett klisterfilter för rapporten eller ändra tidsperioden genom att klicka på ikonen **[!UICONTROL Calendar]**.
+1. Klicka ![rapportikon](assets/icon_report.png) i **[!UICONTROL Report]** -kolumn för ett meddelande.
+1. (**Valfritt**) Skapa ett klisterfilter för rapporten eller ändra tidsperioden genom att klicka på **[!UICONTROL Calendar]** ikon.
 
    Mer information om hur du skapar ett klisterfilter finns i [Lägga till ett klisterfilter](/help/using/usage/reports-customize/t-sticky-filter.md).
 
@@ -38,9 +38,9 @@ Här är en lista över de mätvärden som är tillgängliga för meddelanden i 
 
 * **[!UICONTROL Impression]**, när ett meddelande utlöses.
 
-* **[!UICONTROL Click through]**, när en användare trycker på  **[!UICONTROL Click Through]** knappen på ett varningsmeddelande eller helskärmsmeddelande och när en användare öppnar programmet från ett lokalt meddelande.
+* **[!UICONTROL Click through]** när en användare trycker på **[!UICONTROL Click Through]** på en varning eller ett helskärmsmeddelande och när en användare öppnar programmet från ett lokalt meddelande.
 
-* **[!UICONTROL Cancel]** när en användare trycker på  **[!UICONTROL Cancel]** knappen på en varning eller ett helskärmsmeddelande.
+* **[!UICONTROL Cancel]** när en användare trycker på **[!UICONTROL Cancel]** på en varning eller ett helskärmsmeddelande.
 
 * **[!UICONTROL Engagement Rate]**, ett beräknat mått från Adobe Analytics och är resultatet av antalet klickningar dividerat med antalet visningar.
 
@@ -79,7 +79,7 @@ Här är en lista över de mätvärden som är tillgängliga för push-meddeland
 
    * Ett ogiltigt pushID
 
-   * Den push-plattform (APNS, FCM o.s.v.) som gavs för att skicka till finns inte för jobbprogrammet. Plattformen kan till exempel samla in push-tokens för iOS, men har ingen APNS-tjänst konfigurerad.
+   * Den push-plattform (APNS, FCM o.s.v.) som gavs för att skicka till finns inte för jobbprogrammet. Plattformen kan till exempel samla in iOS push-tokens men har inte APNS-tjänsten konfigurerad.
 
    * Meddelandet kan ha misslyckats på grund av att push-tjänsten inte konfigurerats korrekt eller att Mobile Services-systemet är avstängt.
    >[!IMPORTANT]
@@ -88,4 +88,4 @@ Här är en lista över de mätvärden som är tillgängliga för push-meddeland
 
 * **[!UICONTROL Blocklisted]**
 
-   Antalet enhetstoken som inte längre är giltiga för att skickas till APNS eller FCM. Det innebär vanligtvis att programmet har avinstallerats från enheten eller att användaren har ändrat sina inställningar för att ta emot meddelanden. Android och iOS skiljer sig åt när variabler räknas som blocklist. Android-tokens visas omedelbart i antalet blockeringslista. iOS-tokens visas först som publicerade, men baserat på feedback från APNS visas som blocklist i efterföljande meddelanden.
+   Antalet enhetstoken som inte längre är giltiga för att skickas till APNS eller FCM. Det innebär vanligtvis att programmet har avinstallerats från enheten eller att användaren har ändrat sina inställningar för att ta emot meddelanden. Android och iOS skiljer sig åt när tokens räknas som blocklist. Android-tokens visas omedelbart i antalet blockeringslista. iOS-tokens visas först som publicerade, men baserat på feedback från APNS visas som blocklist i efterföljande meddelanden.

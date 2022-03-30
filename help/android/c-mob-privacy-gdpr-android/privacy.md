@@ -1,11 +1,11 @@
 ---
 description: Den här informationen hjälper dig med en begäran om att ta bort GDPR-data.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Ange användarens avanmälningsstatus
 topic-fix: Developer and implementation
 uuid: f8a3e6be-44dd-494e-9cda-dbbac86d6772
 exl-id: ef5160ac-5a73-4433-b217-1bd990f8456b
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '251'
 ht-degree: 0%
@@ -18,15 +18,15 @@ Den här informationen hjälper dig med en begäran om att ta bort GDPR-data.
 
 >[!IMPORTANT]
 >
->Från och med Android SDK 4.15 gäller Audience Manager och Experience Cloud ID-träffar om du anger sekretessstatusen till `unknown`.
+>Från och med Android SDK 4.15 anger du sekretessstatus till `unknown` innehåller träffar för Audience Manager och Experience Cloud.
 
 Du kan kontrollera om aktiviteten Analytics, Target och Audience Manager tillåts på en enhet med följande inställningar:
 
-* `privacyDefault` i  [ADBMomobile JSON Config](/help/android/configuration/json-config/json-config.md).
+* `privacyDefault` in [ADBMomobile JSON-konfiguration](/help/android/configuration/json-config/json-config.md).
 
    Den här inställningen styr den inledande inställningen som kvarstår tills den ändras i koden.
 
-* Metoden `Config.setPrivacyStatus`.
+* The `Config.setPrivacyStatus` -metod.
 
    När sekretessinställningarna har ändrats med den här metoden fortsätter ändringen att gälla tills du ändrar den igen eller när du avinstallerar och installerar appen igen. Mer information om metoderna finns i [Konfigurationsmetoder](/help/android/configuration/methods.md).
 
@@ -50,9 +50,9 @@ I följande tabell beskrivs varje sekretessstatus:
 
 * **Okänd**
 
-   * **Analyser**: Om spårning offline  **är aktiverat** sparas träffar tills sekretessstatusen ändras till att anmäla sig (träffar skickas) eller avanmäla dig (träffar ignoreras).
+   * **Analyser**: Om spårning offline **aktiverad**, träffar sparas tills sekretessstatusen ändras till att anmäla sig (träffar skickas) eller avanmäla dig (träffar ignoreras).
 
-      Om spårning offline <b>inte är </b> aktiverat, ignoreras träffar tills sekretessstatusen ändras till att anmäla sig.
+      Om spårning offline <b>är inte</b> aktiverat ignoreras träffar tills sekretessstatusen ändras till att anmäla sig.
    * **Mål**: Mbox-begäranden skickas.
    * **Audience Manager**: Signaler och ID-synk skickas.
    * Värde i JSON-konfigurationsfilen: `optunknown`

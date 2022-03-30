@@ -1,12 +1,11 @@
 ---
 description: Konfigurationsmetoder för ADBMoble.cs
 keywords: Unity
-solution: Experience Cloud
+solution: Experience Cloud Services
 title: ADBMoble.cs-metoder
 uuid: af504934-febd-45d9-81e2-2a310f4c65dc
 exl-id: d12c16f1-c25c-4698-8943-a660d9c08faf
-translation-type: tm+mt
-source-git-commit: b9ee49ba26d4726b1f97ef36f5c2e9923361b1ee
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '1324'
 ht-degree: 34%
@@ -88,7 +87,7 @@ ht-degree: 34%
    * `MOBILE_PRIVACY_STATUS_OPT_OUT`: Träffar ignoreras.
    * `MOBILE_PRIVACY_STATUS_UNKNOWN`: Om spårning offline är aktiverat sparas träffar tills sekretessstatusen ändras till att anmäla sig (träffar skickas) eller avanmäla sig (träffar ignoreras).
 
-      Om spårning offline inte är aktiverat ignoreras träffar tills sekretessstatusen ändras för att anmäla sig. Standardvärdet anges i filen [ADBMobleConfig.json](/help/ios/configuration/json-config/json-config.md).
+      Om spårning offline inte är aktiverat ignoreras träffar tills sekretessstatusen ändras för att anmäla sig. Standardvärdet anges i [ADBMobileConfig.json](/help/ios/configuration/json-config/json-config.md) -fil.
 
    * Här är syntaxen för den här metoden:
 
@@ -258,9 +257,9 @@ ht-degree: 34%
 
 * **TrackState**
 
-   Spårar ett apptillstånd med valfria kontextdata. Lägen är de vyer som är tillgängliga i din app, till exempel&quot;titelskärm&quot;,&quot;nivå 1&quot;,&quot;paus&quot; och så vidare. Dessa lägen liknar sidor på en webbplats och `TrackState` anropar stegvisa sidvyer.
+   Spårar ett apptillstånd med valfria kontextdata. Lägen är de vyer som är tillgängliga i din app, till exempel&quot;titelskärm&quot;,&quot;nivå 1&quot;,&quot;paus&quot; och så vidare. Dessa lägen liknar sidor på en webbplats, och `TrackState` anropar stegvisa sidvyer.
 
-   Om läget är tomt visas det som *`app name app version (build)`* i rapporter. Om det här värdet visas i rapporter måste du ange tillstånd för varje `TrackState`-anrop.
+   Om läget är tomt visas det som *`app name app version (build)`* i rapporter. Om du ser det här värdet i rapporter måste du ange status för varje `TrackState` ring.
 
    >[!TIP]
    >
@@ -286,7 +285,7 @@ ht-degree: 34%
 
    >[!TIP]
    >
-   >Om du har kod som kan köras när programmet är i bakgrunden (till exempel en bakgrundsåterhämtning) använder du `trackActionFromBackground` i stället.
+   >Om du har kod som kan köras när programmet är i bakgrunden (till exempel en hämtning av bakgrundsdata) använder du `trackActionFromBackground` i stället.
 
    * Här är syntaxen för den här metoden:
 
@@ -322,7 +321,7 @@ ht-degree: 34%
 
 * **TrackLocation**
 
-   Skickar de aktuella latitud- och longitudkoordinaterna. Intressepunkter som definieras i `ADBMobileConfig.json`-filen används också för att avgöra om platsen som anges som en parameter finns i något av dina POI-dokument. Om de aktuella koordinaterna finns i en definierad POI fylls en kontextdatavariabel i och skickas med TrackLocation-anropet.
+   Skickar de aktuella latitud- och longitudkoordinaterna. I används även intressepunkter som definieras i `ADBMobileConfig.json` för att avgöra om den plats som anges som parameter finns i POI. Om de aktuella koordinaterna finns i en definierad POI fylls en kontextdatavariabel i och skickas med TrackLocation-anropet.
 
    * Här är syntaxen för den här metoden:
 
@@ -538,9 +537,9 @@ ht-degree: 34%
 
 ## Anskaffningsmetoder
 
-* **ProcessGooglePlayInstallReferrerUrl** *(endast Android)*
+* **ProcessGooglePlayInstallReferenceUrl** *(Endast Android)*
 
-   Skicka referenswebbadressen som returneras från ett anrop till Google Play Install Reference-API till den här metoden.
+   Skicka referenswebbadressen som returneras från ett anrop till Google Play Install Referrer-API:t till den här metoden.
 
    * Här är syntaxen för den här metoden:
 

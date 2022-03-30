@@ -1,12 +1,12 @@
 ---
 description: Du kan använda den här informationen för att skapa en ny app och konfigurera dess nyckelmått, konfigurera SDK-alternativen för Adobe Analytics och Adobe Audience Manager, konfigurera alternativ för förvärv och ID-tjänster och hämta konfigurationsfilen, SDK:er samt utvecklings- och provverktygen.
 keywords: mobil
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Lägg till en ny app
 topic-fix: Metrics
 uuid: 706b5e4d-1318-4a9e-8c69-ffabf51fa02c
 exl-id: 30dca517-61ac-495b-aa91-3febd1cb8639
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '632'
 ht-degree: 0%
@@ -19,12 +19,12 @@ Du kan använda den här informationen för att skapa en ny app och konfigurera 
 
 De här instruktionerna hjälper dig att lägga till en ny app och konfigurera integreringar med Adobe Analytics och Adobe Audience Manager.
 
-Innan du kan konfigurera din app måste du lägga till den i användargränssnittet för Adobe Mobile Services. När du har skapat appen skapas rätt konfiguration, och du kan tillhandahålla den här konfigurationen till utvecklare som implementerar Mobile SDK för appen.
+Innan du kan konfigurera din app måste du lägga till den i användargränssnittet för Mobile Services i Adobe. När du har skapat appen skapas rätt konfiguration, och du kan tillhandahålla den här konfigurationen till utvecklare som implementerar Mobile SDK för appen.
 
 1. Logga in på Adobe Mobile Services och utför någon av följande uppgifter:
 
-   * Klicka på **[!UICONTROL Create New]** för att skapa en app.
-   * Om du vill lägga till fler program klickar du på Hantera program på den vänstra navigeringsmenyn och sedan på **[!UICONTROL Add]**.
+   * Klicka **[!UICONTROL Create New]** för att skapa en app.
+   * Om du vill lägga till fler program klickar du på Hantera appar på den vänstra navigeringsmenyn och klickar på **[!UICONTROL Add]**.
 
       Mer information om inloggning finns i [Logga in](/help/using/gs/gs-signin.md).
 
@@ -38,7 +38,7 @@ Innan du kan konfigurera din app måste du lägga till den i användargränssnit
 
    Ange i vilken rapportsvit som rapportdata ska samlas in och lagras i Adobe Analytics. Alla program är anslutna till en enda analysrapport. Om du skickar appdata till flera rapportsviter lägger du till en ny app för varje rapportserie. Alla program är anslutna till en enda analysrapport. Om du skickar appdata till flera rapportsviter lägger du till en ny app för varje rapportserie.
 
-   Om du har fått administratörsbehörighet för Analytics i Adobe Mobile kan du skapa en ny rapportserie i Adobe Mobile. Om du vill skapa en ny rapportserie väljer du **[!UICONTROL New Report Suite]** och skriver information i följande fält:
+   Om du har fått administratörsbehörighet för Analytics i Adobe Mobile kan du skapa en ny rapportserie i Adobe Mobile. Om du vill skapa en ny rapportserie väljer du **[!UICONTROL New Report Suite]** och ange information i följande fält:
 
    * **[!UICONTROL Report Suite ID]**
 
@@ -46,7 +46,7 @@ Innan du kan konfigurera din app måste du lägga till den i användargränssnit
 
    * **[!UICONTROL Copy Settings From]**
 
-      Variabler, händelser, bearbetningsregler och andra inställningar ställs in i den nya rapportsviten precis som i den här rapportsviten. En rapportsvit som skapats i Mobiltjänster är offline-aktiverad (eller tidsstämplad) endast om rapporteringssviten **[!UICONTROL Copy Settings From]** var Mobile App Template, eller om du skapar en rapportsserie som är offline-aktiverad.
+      Variabler, händelser, bearbetningsregler och andra inställningar ställs in i den nya rapportsviten precis som i den här rapportsviten. En rapportsvit som skapats i Mobile Services är endast offline-aktiverad (eller tidsstämplad) om **[!UICONTROL Copy Settings From]** rapportsviten som användes var Mobile App Template eller om du skapar en rapportsvit som är offline-aktiverad.
 
    * **[!UICONTROL Timezone]**
 
@@ -57,11 +57,11 @@ Innan du kan konfigurera din app måste du lägga till den i användargränssnit
       Intäkter spåras och rapporteras som denna typ av valuta.
    >[!TIP]
    >
-   >Information om hur du använder en VRS (Virtual Reporting Suite) finns i [Virtual Report Suites](/help/using/manage-apps/c-mob-vrs.md).
+   >Information om hur du använder ett virtuellt rapporteringsprogram (VRS) finns i [Virtuella rapportsviter](/help/using/manage-apps/c-mob-vrs.md).
 
    * **[!UICONTROL Icon]**
 
-      (**Valfritt**) Klicka på **[!UICONTROL Icon]** om du vill bläddra till och välja en ikon för din app.
+      (**Valfritt**) Om du vill bläddra till och välja en ikon för din app klickar du på **[!UICONTROL Icon]**.
 
    * **[!UICONTROL Name]**
 
@@ -75,7 +75,7 @@ Innan du kan konfigurera din app måste du lägga till den i användargränssnit
 
       * **[!UICONTROL Standard]**
 
-         Du kan låta alternativet **[!UICONTROL Standard]** vara markerat för de flesta appar.
+         Du kan lämna **[!UICONTROL Standard]** för de flesta program.
 
       * **[!UICONTROL Publication]**
 
@@ -83,13 +83,13 @@ Innan du kan konfigurera din app måste du lägga till den i användargränssnit
 
       * **[!UICONTROL Game]**
 
-         Det här alternativet liknar alternativet **[!UICONTROL Standard]**, förutom att **[!UICONTROL Game]** uppdaterar terminologin som används i rapporterna till villkor för spel. Användare ändras till exempel till spelare. Spelspecifika rapporter visas automatiskt för spelprogram.
+         Det här alternativet liknar **[!UICONTROL Standard]** alternativ, förutom att **[!UICONTROL Game]** uppdaterar den terminologi som används i rapporterna till speltermer. Användare ändras till exempel till spelare. Spelspecifika rapporter visas automatiskt för spelprogram.
    * **[!UICONTROL Description]**
 
-      (**Valfritt**) Ange en beskrivning för programmet.
+      (**Valfritt**) Skriv en beskrivning för programmet.
 
 
 
-1. Klicka på **[!UICONTROL Save]** för att lägga till den nya appen.
+1. Klicka **[!UICONTROL Save]** för att lägga till det nya programmet.
 
    När appen har lagts till kan du kontrollera sidan Programinformation om hur du konfigurerar ytterligare alternativ. Mer information finns i [Hantera appinställningar](/help/using/c-manage-app-settings/c-manage-app-settings.md).

@@ -1,12 +1,12 @@
 ---
 description: Du kan visa rapporter som är tillgängliga för Digital Publishing Suite-kunder (DPS).
 keywords: mobil
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Översikt över Digital Publishing Suite
 topic-fix: Metrics
 uuid: ca335891-5d73-47dc-811f-374a0844109f
 exl-id: 5f5e09a3-c634-480c-863d-f9a34cd01464
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '114'
 ht-degree: 0%
@@ -17,6 +17,6 @@ ht-degree: 0%
 
 Du kan visa rapporter som är tillgängliga för Digital Publishing Suite-kunder (DPS).
 
-Med DPS-rapporter kan du spåra användardata för din anpassade visningsprogramapp från Mobiltjänster. När du prenumererar på Adobe Digital Publishing Suite med ett Professional- eller Enterprise-konto får du tillgång till basnivåanalyser för alla dina appar.
+Med DPS-rapporter kan du spåra användardata för din anpassade visningsprogramapp från Mobile Services. När du prenumererar på Adobe Digital Publishing Suite med ett Professional- eller Enterprise-konto får du tillgång till basnivåanalyser för alla dina appar.
 
-Appar som skapas från DPS har tillgång till Adobe Mobile Core Service-gränssnittet via Analytics Essentials - DPS. Mer information finns i [DPS Analytics i hjälpen för Digital Publishing Suite](https://helpx.adobe.com/digital-publishing-suite/help/omniture-analytics.html).
+Appar som skapas från DPS har tillgång till Adobe Mobile huvudgränssnitt för tjänster via Analytics Essentials - DPS. Mer information finns i [DPS Analytics i hjälpen för Digital Publishing Suite](https://helpx.adobe.com/digital-publishing-suite/help/omniture-analytics.html).

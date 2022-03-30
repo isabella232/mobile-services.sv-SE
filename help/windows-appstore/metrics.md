@@ -1,12 +1,12 @@
 ---
-description: Visar mått och mått som kan mätas automatiskt av mobilbiblioteket.
+description: Lists the metrics and dimensions that can be measured automatically by the mobile library.
 keywords: android;bibliotek;mobil;sdk
-solution: Experience Cloud,Analytics
-title: Livscykelstatistik
+solution: Experience Cloud Services,Analytics
+title: Lifecycle metrics
 topic-fix: Developer and implementation
 uuid: c483271f-f620-46f4-aad8-d5f02d763f7d
 exl-id: a1e4eeca-8b8f-47ca-a489-acc338238c42
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '876'
 ht-degree: 3%
@@ -17,7 +17,7 @@ ht-degree: 3%
 
 Visar mått och mått som kan mätas automatiskt av mobilbiblioteket.
 
-Mer information finns i [Felsöka livscykeldata](https://helpx.adobe.com/analytics/kb/troubleshoot-lifecycle-data.html).
+For more information, see [Troubleshoot Lifecycle data](https://helpx.adobe.com/analytics/kb/troubleshoot-lifecycle-data.html).
 
 ## Livscykelvärden och dimensioner {#section_78F036C4296F4BA3A47C2044F79C86C1}
 
@@ -27,9 +27,9 @@ För Analytics hämtas och rapporteras kontextdata som skickas med varje livscyk
 
 ### Mätvärden
 
-* **Första starten**
+* **First Launches**
 
-   Utlöses vid första körningen efter installation eller ominstallation.
+   Triggered at the first run after installation or re-installation.
 
    * Kontextdata för analys/Target-parameter: `a.InstallEvent`
    * Audience Manager signal: `c_a_InstallEvent`
@@ -41,9 +41,9 @@ För Analytics hämtas och rapporteras kontextdata som skickas med varje livscyk
    * Kontextdata för analys/Target-parameter: `a.UpgradeEvent`
    * Audience Manager signal: `c_a_UpgradeEvent`
 
-* **Dagliga engagerade användare**
+* **Daily Engaged Users**
 
-   Utlöses när programmet används en viss dag.
+   Triggered when the application is used on a particular day.
 
    >[!TIP]
    >
@@ -86,16 +86,16 @@ För Analytics hämtas och rapporteras kontextdata som skickas med varje livscyk
 
 ### Mått
 
-* **Installationsdatum**
+* **Install Date**
 
-   Datum för första start efter installation. Datumformatet är `MM/DD/YYYY`.
+   Datum för första start efter installation. The date format is `MM/DD/YYYY`.
 
    * Kontextdata för analyser/Mål: `a.InstallDate`
    * Audience Manager: `c_a_InstallDate`
 
 * **Program-ID**
 
-   Sparar programnamnet och versionen i formatet `[AppName] [BundleVersion]`. Ett exempel på det här formatet är `myapp 1.1`.
+   Lagrar programnamnet och versionen i `[AppName] [BundleVersion]` format. Ett exempel på det här formatet är `myapp 1.1`.
 
    * Kontextdata för analyser/Mål: `a.AppID`
    * Audience Manager: `c_a_AppID`
@@ -116,21 +116,21 @@ För Analytics hämtas och rapporteras kontextdata som skickas med varje livscyk
 
 * **Dagar sedan senaste användning**
 
-   Antal dagar sedan senaste användning.
+   Number of days since the last use.
 
    * Kontextdata för analyser/Mål: `a.DaysSinceLastUse`
    * Audience Manager: `c_a_DaysSinceLastUse`
 
 * **Timme på dagen**
 
-   Mäter timmen då appen startades. Det här måttet använder det numeriska 24-timmarsformatet och används för tidsdelning för att bestämma den maximala användningstiden.
+   Mäter timmen då appen startades. This metric uses the 24-hour numerical format and is used for time parting to determine peak usage times.
 
-   * Kontextdata för analyser/Mål: `a.HourOfDay`
+   * Analytics context data/Target: `a.HourOfDay`
    * Audience Manager: `c_a_HourOfDay`
 
-* **Veckodag**
+* **Day of Week**
 
-   Antal dagar i veckan då appen startades.
+   Number of the day in a week when the app was launched.
 
    * Kontextdata för analyser/Mål: `a.DayOfWeek`
    * Audience Manager: `c_a_DayOfWeek`
@@ -148,7 +148,7 @@ För Analytics hämtas och rapporteras kontextdata som skickas med varje livscyk
 
    >[!IMPORTANT]
    >
-   >Det här måttet lagras inte automatiskt i en Analytics-variabel. Du måste skapa en bearbetningsregel om du vill kopiera det här värdet till en Analytics-variabel för rapportering.
+   >Det här måttet lagras inte automatiskt i en Analytics-variabel. You must create a processing rule to copy this value to an Analytics variable for reporting.
 
    * Kontextdata för analyser/Mål: `a.DaysSinceLastUpgrade`
    * Audience Manager: `c_a_DaysSinceLastUpgrade`
@@ -198,21 +198,21 @@ Följande mått och mått hämtas in i mobillösningens variabler med de metoder
 
 * **Total åtgärdstid**
 
-   Fylls i av `trackTimedAction`-metoder.
+   Fylls i av `trackTimedAction` metoder.
 
    * Kontextdata för analys/Target-parameter: `a.action.time.total`
    * Audience Manager: `c_a_action_time_total`
 
 * **Åtgärdstid i app**
 
-   Fylls i av `trackTimedAction`-metoder.
+   Fylls i av `trackTimedAction` metoder.
 
    * Kontextdata för analys/Target-parameter: `a.action.time.inapp`
    * Audience Manager: `c_a_action_time_inapp`
 
 * **Livstidsvärde (händelse)**
 
-   Fylls i av `trackLifetimeValue`-metoder.
+   Fylls i av `trackLifetimeValue` metoder.
 
    * Kontextdata för analys/Target-parameter: `a.ltv.amount`
    * Audience Manager: `c_a_ltv_amount`
@@ -221,13 +221,13 @@ Följande mått och mått hämtas in i mobillösningens variabler med de metoder
 
 * **Placering (ned till 10 km)**
 
-   Fylls i av `trackLocation`-metoder.
+   Fylls i av `trackLocation` metoder.
 
-   * Kontextdata för analys/Target-parameter:
+   * Analytics context data/Target parameter:
 
       * `a.loc.lat.a`
       * `a.loc.lon.a`
-   * Audience Manager:
+   * Audience Manager trait:
 
       * `c_a_loc_lat_a`
       * `c_a_loc_lon_a`
@@ -235,9 +235,9 @@ Följande mått och mått hämtas in i mobillösningens variabler med de metoder
 
 * **Plats (ned till 100 m)**
 
-   Fylls i av `trackLocation`-metoder.
+   Fylls i av `trackLocation` metoder.
 
-   * Kontextdata för analys/Target-parameter:
+   * Analytics context data/Target parameter:
 
       * `a.loc.lat.b`
       * `a.loc.lon.b`
@@ -247,11 +247,11 @@ Följande mått och mått hämtas in i mobillösningens variabler med de metoder
       * `c_a_loc_lon_b`
 
 
-* **Plats (ned till 1 m)**
+* **Location (down to 1 m)**
 
-   Fylls i av `trackLocation`-metoder.
+   Fylls i av `trackLocation` metoder.
 
-   * Kontextdata för analys/Target-parameter:
+   * Analytics context data/Target parameter:
 
       * `a.loc.lat.c`
       * `a.loc.lon.c`
@@ -263,21 +263,21 @@ Följande mått och mått hämtas in i mobillösningens variabler med de metoder
 
 * **Intressepunktens namn**
 
-   Fylls i av `trackLocation`-metoder när enheten finns inom en definierad POI.
+   Fylls i av `trackLocation` metoder när enheten finns inom en definierad POI.
 
    * Kontextdata för analys/Target-parameter: `a.loc.poi`
    * Audience Manager: `c_a_loc_poi`
 
-* **Avstånd till intressecentrum**
+* **Distance to Point of Interest Center**
 
-   Fylls i av `trackLocation`-metoder när enheten finns inom en definierad POI.
+   Fylls i av `trackLocation` metoder när enheten finns inom en definierad POI.
 
    * Kontextdata för analys/Target-parameter: `a.loc.dist`
    * Audience Manager: `c_a_loc_dist`
 
-* **Livstidsvärde (konverteringsvariabel)**
+* **Lifetime Value (conversion variable)**
 
-   Fylls i av `trackLifetimeValue`-metoder.
+   Fylls i av `trackLifetimeValue` metoder.
 
    * Kontextdata för analys/Target-parameter: `a.ltv.amount`
    * Audience Manager: `c_a_ltv_amount`

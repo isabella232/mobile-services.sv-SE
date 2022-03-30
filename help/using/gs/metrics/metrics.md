@@ -1,21 +1,21 @@
 ---
-description: Du kan mäta olika mätvärden med Adobe Mobile och samla in mätvärden som du vill spåra för din app.
+description: Du kan mäta olika mätvärden genom att använda Adobe Mobile och samla in mätvärden som du vill spåra för din app.
 keywords: mobil
-solution: Experience Cloud,Analytics
-title: Mobila mått
+solution: Experience Cloud Services,Analytics
+title: Mobile Metrics
 topic-fix: Metrics
 uuid: c4457f4a-9d1c-4fe9-ad4a-9eb2e37feab7
 exl-id: 13912d5e-9813-4f8f-80d5-1f3cfcdd6aa3
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '529'
 ht-degree: 0%
 
 ---
 
-# Mobilstatistik{#mobile-metrics}
+# Mobile metrics{#mobile-metrics}
 
-Du kan mäta olika mätvärden med Adobe Mobile och samla in mätvärden som du vill spåra för din app.
+Du kan mäta olika mätvärden genom att använda Adobe Mobile och samla in mätvärden som du vill spåra för din app.
 
 Följande typer av mätvärden mäts:
 
@@ -27,11 +27,11 @@ Följande typer av mätvärden mäts:
 
    Användningsstatistik hjälper er att förstå den genomsnittliga sessionslängden, dagliga och månatliga engagerade användare, uppgraderingar och andra insikter som talar om hur och hur ofta appen används. Kvarhållningsrapporter visar snabbt användarnas kvarhållningsnivåer dagen efter den första starten, efter 7 dagar och efter 28 dagar.
 
-   På Android-enheter kan du använda Google Play-referensspårning för att mäta hur användarna kommer till appbutiken innan de hämtar din app.
+   På Android-enheter kan du använda spårning av Google Play-referenser för att mäta hur användare kommer till appbutiken innan de hämtar din app.
 
 * **Intäkter**
 
-   Du kan visa intäkter som samlats in av appbutiker och intäkter som mäts direkt med inköpshändelser i appen. Andra kundvagnsmått finns i [Anpassa rapporter](/help/using/usage/reports-customize/reports-customize.md).
+   Du kan visa intäkter som samlats in av appbutiker och intäkter som mäts direkt med inköpshändelser i appen. Andra kundvagnsvärden är tillgängliga av [Anpassa rapporter](/help/using/usage/reports-customize/reports-customize.md).
 
 * **Apphändelser**
 

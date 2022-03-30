@@ -1,30 +1,30 @@
 ---
-description: Du kan använda den här informationen för att spåra djupa och fördröjda länkar i dina mobilappar med hjälp av Adobe Mobile iOS SDK.
-solution: Experience Cloud,Analytics
+description: You can use this information to track deep and deferred deep links in your mobile apps by using the Adobe Mobile iOS SDK.
+solution: Experience Cloud Services,Analytics
 title: Spåra djuplänkar
 uuid: 08dc2820-7fd3-419f-ac2d-dcf12532578a
 exl-id: a8b20233-d800-4318-ad4f-39229d8b3a5e
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '295'
 ht-degree: 0%
 
 ---
 
-# Spåra djuplänkar{#tracking-deep-links}
+# Tracking deep links{#tracking-deep-links}
 
-Du kan använda den här informationen för att spåra djupa och fördröjda länkar i dina mobilappar med hjälp av Adobe Mobile iOS SDK.
+Du kan använda den här informationen för att spåra djupa och fördröjda länkar i dina mobilappar med Adobe Mobile iOS SDK.
 
-Mer information om hur marknadsförare använder djuplänkning i sina program finns i [Förvärva](/help/ios/acquisition-main/acquisition.md) i dokumentationen för mobiltjänster.
+Mer information om hur marknadsförare använder djuplänkning i sina program finns i [Förvärv](/help/ios/acquisition-main/acquisition.md) i Mobile Services-dokumentationen.
 
-## Spåra djuplänkar
+## Tracking deep links
 
 1. Lägg till SDK i ditt projekt och implementera livscykelvärden.
 
-   Mer information finns i *Lägg till SDK- och konfigurationsfilen i ditt projekt* i [Core Implementation och Lifecycle](/help/ios/getting-started/dev-qs.md).
-1. Registrera programmet för att hantera kommunikation mellan appar eller stödja universallänkar.
+   Mer information finns i *Lägg till SDK- och konfigurationsfilen i projektet* in [Kärnimplementering och livscykel](/help/ios/getting-started/dev-qs.md).
+1. Register the application to handle Inter-App Communications or support Universal Links.
 
-   Mer information finns i [Interapp Communications](https://developer.apple.com/library/ios/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/Inter-AppCommunication/Inter-AppCommunication.html#//apple_ref/doc/uid/TP40007072-CH6-SW10) eller [Support Universal Links](https://developer.apple.com/library/ios/documentation/General/Conceptual/AppSearch/UniversalLinks.html)
+   Mer information finns i [Kommunikation mellan appar](https://developer.apple.com/library/ios/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/Inter-AppCommunication/Inter-AppCommunication.html#//apple_ref/doc/uid/TP40007072-CH6-SW10) eller [Stöd för universallänkar](https://developer.apple.com/library/ios/documentation/General/Conceptual/AppSearch/UniversalLinks.html)
 
 1. Spåra djuplänk i openURL.
 
@@ -48,7 +48,7 @@ Mer information om hur marknadsförare använder djuplänkning i sina program fi
    }
    ```
 
-Adobe Mobile SDK kan analysera nyckel- och värdepar för data som läggs till i en djup eller universell länk, förutsatt att länken innehåller en nyckel med en `a.deeplink.id`-etikett och ett motsvarande värde som inte är null och som genererats av användaren. Alla nyckel- och värdepar med data som läggs till länken tolkas, kopplas till en livscykelträff och skickas till Adobe Analytics, förutsatt att länken innehåller nyckeln och värdet `a.deeplink.id`.
+The Adobe Mobile SDK can parse key and value pairs of data appended to any deep or Universal Link, provided that the link contains a key with a `a.deeplink.id` label and a corresponding non-null and user generated value. All key and value pairs of data that are appended to the link will be parsed, attached to a lifecycle hit, and sent to Adobe Analytics, provided the link contains the `a.deeplink.id` key and value.
 
 Du kan också välja att lägga till en eller flera av följande reserverade nycklar (med användargenererade värden) till djupet eller Universallänken:
 
@@ -58,9 +58,9 @@ Du kan också välja att lägga till en eller flera av följande reserverade nyc
 * `a.launch.campaign.term`
 * `a.launch.campaign.content`
 
-Dessa nycklar är förmappade variabler för rapportering i Adobe Analytics. Mer information om mappnings- och bearbetningsregler finns i [Bearbetningsregler och kontextdata](/help/ios/getting-started/proc-rules.md).
+Dessa nycklar är förmappade variabler för rapportering i Adobe Analytics. For more information on mapping and processing rules, see [Processing Rules and Context Data](/help/ios/getting-started/proc-rules.md).
 
-### Spåra fördröjda djuplänkar
+### Tracking deferred deep links
 
 1. Registrera Adobe-dataåteranrop.
 
@@ -69,7 +69,7 @@ Dessa nycklar är förmappade variabler för rapportering i Adobe Analytics. Mer
    }];
    ```
 
-1. Hantera `ADBMobileDataEventDeepLink` inom `AdobeDataCallback`.
+1. Handtag `ADBMobileDataEventDeepLink` inom `AdobeDataCallback`.
 
    ```objective-c
    [ADBMobile registerAdobeDataCallback:^(ADBMobileDataEvent event, NSDictionary * _Nullable adobeData) { 
@@ -79,7 +79,7 @@ Dessa nycklar är förmappade variabler för rapportering i Adobe Analytics. Mer
    }];
    ```
 
-## Allmän information om länkar {#section_44600E9AA68D4A53AA0C14BD86CC5284}
+## Deep link public information {#section_44600E9AA68D4A53AA0C14BD86CC5284}
 
 ### Metoder
 

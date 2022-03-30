@@ -1,11 +1,11 @@
 ---
 description: Den här informationen hjälper dig att förstå hur krascher spåras och de bästa sätten att hantera falska krascher.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Spåra programkrascher
 topic-fix: Developer and implementation
 uuid: 3ab98c14-ccdf-4060-ad88-ec07c1c6bf07
 exl-id: d8d59b4e-0231-446d-9ba1-8a9809be9c61
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 0%
@@ -18,19 +18,19 @@ Den här informationen hjälper dig att förstå hur krascher spåras och de bä
 
 >[!TIP]
 >
->Programkrascher spåras som en del av livscykelmätvärden. Lägg till biblioteket i projektet och implementera livscykeln innan du kan spåra krascher. Mer information finns i *Lägg till SDK- och konfigurationsfilen i IntelliJ IDEA- eller Eclipse-projektet* i [Core-implementering och livscykel](/help/android/getting-started/dev-qs.md).
+>Programkrascher spåras som en del av livscykelmätvärden. Lägg till biblioteket i projektet och implementera livscykeln innan du kan spåra krascher. Mer information finns i *Lägg till SDK- och Config-filen i IntelliJ IDEA- eller Eclipse-projektet* in [Kärnimplementering och livscykel](/help/android/getting-started/dev-qs.md).
 
-När livscykelvärden implementeras anropas `Config.collectLifecycleData` i `OnResume`-metoden för varje aktivitet. I metoden `onPause` anropas `Config.pauseCollectingLifeCycleData`.
+När livscykelvärden implementeras anropas `Config.collectLifecycleData` i `OnResume` metod för varje aktivitet. I `onPause` metod, ett anrop görs till `Config.pauseCollectingLifeCycleData`.
 
-I `pauseCollectingLifeCycleData` är en flagga inställd på att ange en enkel avslutning. När appen startas igen eller återupptas kontrollerar `collectLifecycleData` den här flaggan. Om appen inte avslutas korrekt enligt flaggstatusen skickas en `a.CrashEvent`-kontextdata med nästa anrop och en kraschhändelse rapporteras.
+I `pauseCollectingLifeCycleData`, är en flagga inställd för att indikera en enkel avslutning. När appen startas igen eller återupptas `collectLifecycleData` kontrollerar den här flaggan. Om appen inte avslutas korrekt enligt flaggstatusen kan du `a.CrashEvent` kontextdata skickas med nästa anrop och en krasch rapporteras.
 
-För att få korrekt kraschrapportering måste du anropa `pauseCollectingLifeCycleData` i `onPause`-metoden för varje aktivitet. Här följer en illustration av livscykeln för Android-aktiviteten:
+För att få korrekt kraschrapportering måste du ringa `pauseCollectingLifeCycleData` i `onPause` metod för varje aktivitet. Här följer en illustration av livscykeln för Android-aktiviteten:
 
 ![](assets/android-lifecycle.png)
 
-Mer information om Android-aktivitetens livscykel finns i [Aktiviteter](https://developer.android.com/guide/components/activities.html).
+Mer information om Android-aktivitetens livscykel finns i [Verksamhet](https://developer.android.com/guide/components/activities.html).
 
-*Den här Android-livscykelbilden skapades och  [delades av Android Open Source ](https://source.android.com/) Project och används enligt villkoren i  [Creative Commons 2.5 Attribution License](https://creativecommons.org/licenses/by/2.5/).*
+*Den här Android-livscykelbilden skapades och [delas av Android Open Source Project](https://source.android.com/) och används enligt villkoren i [Creative Commons 2.5 Attribution License](https://creativecommons.org/licenses/by/2.5/).*
 
 ## Vad kan orsaka en falsk krasch?
 
@@ -40,7 +40,7 @@ Mer information om Android-aktivitetens livscykel finns i [Aktiviteter](https://
    >
    >Du kan undvika den här kraschen genom att göra en bakomliggande bakgrund av appen innan du startar den från utvecklingsmiljön igen.
 
-1. Om den senaste förgrundsaktiviteten i din app är bakgrunden och inte anropar `Config.pauseCollectingLifecycleData();` i `onPause`, och din app stängs manuellt eller dödas av operativsystemet, kommer nästa start att resultera i en krasch.
+1. Om den sista förgrundsaktiviteten i din app är bakgrundsbelagd och inte anropas `Config.pauseCollectingLifecycleData();` in `onPause`, och din app stängs manuellt eller stoppas av operativsystemet, kommer nästa start att resultera i en krasch.
 
 ## Hur ska fragment hanteras?
 
@@ -54,7 +54,7 @@ Fragment har programlivscykelhändelser som liknar aktiviteter. Ett fragment kan
 
 Från och med API-nivå 14 tillåter Android globala återanrop under livscykeln för aktiviteter. Mer information finns i [Program](https://developer.android.com/reference/android/app/Application).
 
-Du kan använda dessa återanrop för att säkerställa att alla aktiviteter anropar `collectLifecycleData()` och `pauseCollectingLifecycleData()`. Du behöver bara lägga till den här koden i din huvudaktivitet och andra aktiviteter där din app kan startas:
+Du kan använda dessa återanrop för att säkerställa att alla aktiviteter anropas korrekt `collectLifecycleData()` och `pauseCollectingLifecycleData()`. Du behöver bara lägga till den här koden i din huvudaktivitet och andra aktiviteter där din app kan startas:
 
 ```js
 import com.adobe.mobile.Config; 
@@ -96,7 +96,7 @@ public class MainActivity extends Activity {
 }
 ```
 
-Om du vill skicka ytterligare kontextdata med ditt livscykelanrop genom att använda `Config.collectLifecycleData(Activity activity`, `Map<String`, `Object> contextData)`, måste du åsidosätta `onResume`-metoden för den aktiviteten och se till att du anropar `super.onResume()` manuellt efter att du har anropat `collectLifecycleData`.
+Skicka ytterligare kontextdata med ditt livscykelanrop genom att använda `Config.collectLifecycleData(Activity activity`, `Map<String`, `Object> contextData)`måste du åsidosätta `onResume` metod för aktiviteten och se till att du anropar `super.onResume()` efter manuell anrop `collectLifecycleData`.
 
 ```js
 @Override 

@@ -1,11 +1,11 @@
 ---
 description: För att upprätthålla användarupplevelsen är det viktigt att länka till appar och webbplatser. Lär dig hur universella länkar och applänkar fungerar och skillnaderna mellan dem.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Handbok för universallänkar och applänkar
 topic-fix: Metrics
 uuid: 8d6441dc-4307-4454-95ea-d77ec796f918
 exl-id: 6613189f-7a14-4066-89e9-996d4fe7f128
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '997'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Universallänkar jämfört med applänkar: Hur fungerar de? {#universal-links-and-app-links}
 
-Tack vare iOS- och Applänkar (Android) kan du ansluta till djupa länkar i iOS- och Android-appar.
+Med universella länkar (iOS) och applänkar (Android) kan du ansluta till djupa länkar i dina iOS- eller Android-appar.
 
 >[!IMPORTANT]
 >
@@ -22,7 +22,7 @@ Tack vare iOS- och Applänkar (Android) kan du ansluta till djupa länkar i iOS-
 
 ## Universallänkar {#section_F8147944679A42E59CF4FD8814E5EF12}
 
-Med universella länkar kan du ansluta till djupa länkar i din iOS-app och stöds i iOS 9.2 eller senare. När en universell länk används dirigeras länken direkt till länken i appen. Om ditt program inte är installerat öppnas en URL för din webbplats i en webbläsare i stället. Mer information om universallänkar finns i [Stöd för universallänkar](https://developer.apple.com/library/content/documentation/General/Conceptual/AppSearch/UniversalLinks.html).
+Med universallänkar kan du ansluta till djupa länkar i din iOS-app och stöds i iOS 9.2 eller senare. När en Universal Link används dirigerar iOS om länken direkt till den överordnade länken i appen. Om ditt program inte är installerat öppnas en URL för din webbplats i en webbläsare i stället. Mer information om universallänkar finns i [Stöd för universallänkar](https://developer.apple.com/library/content/documentation/General/Conceptual/AppSearch/UniversalLinks.html).
 
 ## Applänkar
 
@@ -34,53 +34,53 @@ Du kan skapa en marknadsföringslänk som använder en universell länk eller en
 
 ### Konfigurera en universell länk
 
-1. Gå till [Hantera universallänkar i Apple](https://developer.apple.com/documentation/uikit/inter-process_communication/allowing_apps_and_websites_to_link_to_your_content/handling_universal_links) om du vill konfigurera universallänkar i din iOS-app.
+1. Om du vill konfigurera universallänkar i din iOS-app går du till [Hantera universallänkar i Apple](https://developer.apple.com/documentation/uikit/inter-process_communication/allowing_apps_and_websites_to_link_to_your_content/handling_universal_links).
 
-2. Konfigurera webbplatsassociationsdokumenten i Adobe Mobile Services:
+2. I Adobe Mobile Services ställer du in webbplatsassociationsdokumenten:
 
-   a. På startsidan för Mobiltjänster väljer du den app som du vill konfigurera universallänkar för.
+   a. På startsidan för Mobile Services väljer du den app som du vill konfigurera universallänkar för.
 
-   b. Klicka på **[!UICONTROL Manage App Settings]**.
+   b. Klicka **[!UICONTROL Manage App Settings]**.
 
-   c. Kontrollera att iOS-appen som hanterar universallänkarna har lagts till i **[!UICONTROL Add App Store Apps]**-avsnittet.
+   c. Kontrollera att den iOS-app som hanterar universallänkarna har lagts till i **[!UICONTROL Add App Store Apps]** -avsnitt.
 
    >[!TIP]
    >
-   >Om **[!UICONTROL Add App Store Apps]**-avsnittet inte visas klickar du på länken **[!UICONTROL Add App Store App]**.
+   >Om **[!UICONTROL Add App Store Apps]** -avsnittet visas inte, klicka på **[!UICONTROL Add App Store App]** länk.
 
-   d. I avsnittet **[!UICONTROL Universal Links and App Links Options]** väljer du en iOS-app och skriver ett program-ID.
+   d. I **[!UICONTROL Universal Links and App Links Options]** väljer du ett iOS-program och skriver ditt program-ID.
 
-   f. Klicka på **[!UICONTROL Save]**.
+   f. Klicka **[!UICONTROL Save]**.
 
    Du måste ange minst ett iOS-programval och ett program-ID, annars får du ett felmeddelande.
 
    >[!IMPORTANT]
    >
-   >Du kan uppdatera dokumenten genom att klicka på Uppdatera under Alternativ för universallänkar och applänkar. När du klickar på **[!UICONTROL Update]** visas ett varningsmeddelande om att alla universallänkar eller applänkar som du har skapat tidigare kommer att påverkas.
+   >Du kan uppdatera dokumenten genom att klicka på Uppdatera under Alternativ för universallänkar och applänkar. När du klickar **[!UICONTROL Update]** visas ett varningsmeddelande om att alla universallänkar eller applänkar som du har skapat tidigare kommer att påverkas.
 
 ### Använd en universell länk
 
 1. Skapa en Marketing Link som använder universallänkar i Adobe Mobile Services:
 
-   a. Välj appen från startsidan för Mobiltjänster och klicka på **[!UICONTROL Acquisition]** > **[!UICONTROL Marketing Link Builder]**.
+   a. Välj appen från startsidan för Mobile Services och klicka på **[!UICONTROL Acquisition]** > **[!UICONTROL Marketing Link Builder]**.
 
-   b. Klicka på **[!UICONTROL Create New]**.
+   b. Klicka **[!UICONTROL Create New]**.
 
-   c. Välj **[!UICONTROL Use Universal Links or App Links]** under **[!UICONTROL Marketing Link Options]**.
+   c. Under **[!UICONTROL Marketing Link Options]**, markera **[!UICONTROL Use Universal Links or App Links]**.
 
-   d. Om du konfigurerade platsassociationsdokumenten i *Konfigurera platsassociationsdokument i avsnittet Adobe Mobile Services* ovan, är det här alternativet markerat som standard.
+   d. Om du konfigurerade platsassociationsdokumenten i *Konfigurera platsassociationsdokument i Adobe Mobile Services* ovan är det här alternativet markerat som standard.
 
-   Om du inte konfigurerade dokumenten är alternativet **[!UICONTROL Use Universal Links or App Links]** inaktiverat och **[!UICONTROL Use Interstitials]** markerat som standard.
+   Om du inte konfigurerade dokumenten visas **[!UICONTROL Use Universal Links or App Links]** alternativet är inaktiverat och **[!UICONTROL Use Interstitials]** är markerat som standard.
 
-   e. Om alternativet **[!UICONTROL Use Universal Links or App Links]** är markerat visas fältet **[!UICONTROL Custom Path]**.
+   e. Om **[!UICONTROL Use Universal Links or App Links]** är markerat, **[!UICONTROL Custom Path]** -fältet visas.
 
-   Detta gör att användare kan definiera URL-sökvägen efter domänen med valfri frågeparameter. Om du till exempel skriver `my/universal/link?os=9.2` blir den fullständiga URL:en för Marketing Link `https://[marketing link domain]/my/universal/link?[AMS default query parameters]&os=9.2`.
+   Detta gör att användare kan definiera URL-sökvägen efter domänen med valfri frågeparameter. Om du till exempel skriver `my/universal/link?os=9.2`blir er fullständiga Marketing Link URL `https://[marketing link domain]/my/universal/link?[AMS default query parameters]&os=9.2`.
 
-   f. Klicka på fliken **[!UICONTROL Decisions]** och konfigurera beslutsträdet.
+   f. Klicka på **[!UICONTROL Decisions]** och konfigurera beslutsträdet.
 
    h. Om iOS-appen är installerad hanterar appen länken med dess logik. Slutmålet fungerar bara som reserv när programmet inte är installerat. Eftersom appen inte är installerad kan slutmålet bara vara en webblänk eller en appbutik.
 
-   i. Klicka på **[!UICONTROL Save]**.
+   i. Klicka **[!UICONTROL Save]**.
 
 >[!TIP]
 >
@@ -89,63 +89,63 @@ Du kan skapa en marknadsföringslänk som använder en universell länk eller en
 
 ### Konfigurera en applänk
 
-1. Om du vill konfigurera applänkar i Android-appen går du till [Lägg till Android-applänkar](https://developer.android.com/studio/write/app-link-indexing).
+1. Om du vill konfigurera applänkar i din Android-app går du till [Lägg till Android-applänkar](https://developer.android.com/studio/write/app-link-indexing).
 
-1. Konfigurera webbplatsassociationsdokumenten i Adobe Mobile Services:
+1. I Adobe Mobile Services ställer du in webbplatsassociationsdokumenten:
 
-   a. På startsidan för Mobiltjänster väljer du det program som du vill konfigurera applänkar för.
+   a. På startsidan för Mobile Services väljer du den app som du vill konfigurera applänkar för.
 
-   b. Klicka på **[!UICONTROL Manage App Settings]**.
+   b. Klicka **[!UICONTROL Manage App Settings]**.
 
-   c. Kontrollera att Android-appen som hanterar universallänkar eller applänkar har lagts till i **[!UICONTROL Add App Store Apps]**-avsnittet.
+   c. Kontrollera att Android-appen som hanterar universallänkar eller applänkar har lagts till i **[!UICONTROL Add App Store Apps]** -avsnitt.
 
    >[!TIP]
    >
-   >Om det här avsnittet inte visas klickar du på länken **[!UICONTROL Add App Store App]**.
+   >Om det här avsnittet inte visas klickar du på **[!UICONTROL Add App Store App]** länk.
 
-   d. Bläddra till avsnittet **[!UICONTROL Universal Links and App Links Options]**.
+   d. Bläddra till **[!UICONTROL Universal Links and App Links Options]** -avsnitt.
 
-   e. Klicka på fliken **[!UICONTROL App Links (Android)]**.
+   e. Klicka på **[!UICONTROL App Links (Android)]** -fliken.
 
    f. Välj en Android-app och skriv ett SHA-256-certifikatfingeravtryck.
 
-   g. Klicka på **[!UICONTROL Save]**.
+   g. Klicka **[!UICONTROL Save]**.
 
    Du måste ange minst ett val av Android-program och ett SHA-256-certifikat, annars får du ett felmeddelande.
 
    >[!IMPORTANT]
    >
-   >Du kan uppdatera dokumenten genom att klicka på **[!UICONTROL Update]** i avsnittet **[!UICONTROL Universal Links and App Links Options]**. När du klickar på **[!UICONTROL Update]** visas ett varningsmeddelande om att alla universallänkar eller applänkar som du har skapat tidigare kommer att påverkas.
+   >Du kan uppdatera dokumenten genom att klicka på **[!UICONTROL Update]** från **[!UICONTROL Universal Links and App Links Options]** -avsnitt. När du klickar **[!UICONTROL Update]** visas ett varningsmeddelande om att alla universallänkar eller applänkar som du har skapat tidigare kommer att påverkas.
 
 ### Använd en applänk
 
-1. Skapa en Marketing Link som använder applänkar i Adobe Mobile Services:
+1. I Adobe Mobile Services skapar du en Marketing Link som använder App Links:
 
-   a. Välj appen från startsidan för Mobiltjänster och klicka på **[!UICONTROL Acquisition]** > **[!UICONTROL Marketing Link Builder]**.
+   a. Välj appen från startsidan för Mobile Services och klicka på **[!UICONTROL Acquisition]** > **[!UICONTROL Marketing Link Builder]**.
 
-   b. Klicka på **[!UICONTROL Create New]**.
+   b. Klicka **[!UICONTROL Create New]**.
 
-   c. I avsnittet **[!UICONTROL Marketing Link Options]** väljer du **[!UICONTROL Use Universal Links or App Links]**.
+   c. I **[!UICONTROL Marketing Link Options]** avsnitt, markera **[!UICONTROL Use Universal Links or App Links]**.
 
    d. Om du konfigurerade platsassociationsdokumenten från steg 2 väljs det här alternativet som standard.
 
-   Annars är alternativet **[!UICONTROL Use Universal Links or App Links]** inaktiverat och **[!UICONTROL Use Interstitials]** markerat som standard.
+   Om inte, **[!UICONTROL Use Universal Links or App Links]** alternativet är inaktiverat, och **[!UICONTROL Use Interstitials]** är markerat som standard.
 
-   e. Om **[!UICONTROL Use Universal Links or App Links]** är markerat visas fältet **[!UICONTROL Custom Path]**.
+   e. If **[!UICONTROL Use Universal Links or App Links]** är markerat, **[!UICONTROL Custom Path]** -fältet visas.
 
-   Detta gör att användare kan definiera URL-sökvägen efter domänen med valfri frågeparameter. Om du till exempel skriver `my/app/link?os=6.0` blir den fullständiga URL:en för Marketing Link `https://[marketing link domain]/my/app/link?[AMS default query parameters]&os=6.0`.
+   Detta gör att användare kan definiera URL-sökvägen efter domänen med valfri frågeparameter. Om du till exempel skriver `my/app/link?os=6.0`blir er fullständiga Marketing Link URL `https://[marketing link domain]/my/app/link?[AMS default query parameters]&os=6.0`.
 
-   f. Klicka på fliken **[!UICONTROL Decisions]** och konfigurera beslutsträdet.
+   f. Klicka på **[!UICONTROL Decisions]** och konfigurera beslutsträdet.
 
    g. Om Android-appen är installerad hanterar appen länken med dess logik.
 
    Slutmålet fungerar bara som reserv när programmet inte är installerat. Eftersom appen inte är installerad kan slutmålet bara vara en webblänk eller en appbutik.
 
-   h.  Klicka på **[!UICONTROL Save]**.
+   h. Klicka **[!UICONTROL Save]**.
 
 >[!TIP]
 >
->När en marknadsföringslänk har sparats går det inte att ändra **[!UICONTROL Marketing Links Options]**. Detta beror på att du inte vill ändra beteendet för de marknadsföringslänkar som redan har distribuerats.
+>När en Marketing Link har sparats **[!UICONTROL Marketing Links Options]** kan inte ändras. Detta beror på att du inte vill ändra beteendet för de marknadsföringslänkar som redan har distribuerats.
 
 ## Använda marknadsföringslänkar
 

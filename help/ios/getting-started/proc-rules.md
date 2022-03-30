@@ -1,11 +1,11 @@
 ---
 description: Bearbetningsregler används för att kopiera data som du skickar i kontextdatavariabler till eVars, props och andra variabler för rapportering.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Bearbetar regler och kontextdata
 topic-fix: Developer and implementation
 uuid: 51338ccd-fa52-4d9c-97c4-947a4100465d
 exl-id: a3968160-42c4-4671-b541-c14639b8a451
-source-git-commit: 1fa6111d6bf1c2d36f15d2f037718646a035435a
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '252'
 ht-degree: 0%
@@ -38,7 +38,7 @@ Tänk på följande information när du arbetar med bearbetningsregler:
    "eVar1":"jimbo";
    ```
 
-   Detta kan göra det *något* enklare när du utför engångsmappning i bearbetningsregler, men du förlorar läsbarheten under felsökning och framtida koduppdateringar, vilket kan vara svårare. Använd i stället beskrivande namn för nycklar och värden:
+   Det här kan göra det *lätt* enklare när du utför engångsmappning i bearbetningsregler, men du förlorar läsbarheten under felsökning och framtida koduppdateringar, vilket kan vara svårare. Använd i stället beskrivande namn för nycklar och värden:
 
    ```js
    "username":"jimbo";
@@ -58,4 +58,4 @@ Tänk på följande information när du arbetar med bearbetningsregler:
 
 >[!TIP]
 >
->Adobe reserverar namnutrymmet `a.`. Förutom den begränsningen, för att undvika kollisioner, är det enda kravet att kontextdatavariabler är unika i ditt inloggningsföretag.
+>Adobe reserverar namnutrymmet &quot; `a.`&quot;. Förutom den begränsningen, för att undvika kollisioner, är det enda kravet att kontextdatavariabler är unika i ditt inloggningsföretag.

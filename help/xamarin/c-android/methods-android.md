@@ -1,11 +1,11 @@
 ---
 description: Android-metoder för Xamarin-komponenter för Experience Cloud-lösningar 4.x SDK.
 keywords: Xamarin
-solution: Experience Cloud
+solution: Experience Cloud Services
 title: Android-metoder
 uuid: 860af1c4-f57e-4bcb-8308-4e316da9a27b
 exl-id: 0de1fa11-37e9-49be-8d42-a13cb4a3f0e3
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '1755'
 ht-degree: 40%
@@ -58,7 +58,7 @@ Android-metoder för Xamarin-komponenter för Experience Cloud-lösningar 4.x SD
    * `ADBMobilePrivacyStatus.OptOut` - träffar tas bort.
    * `ADBMobilePrivacyStatus.Unknown` - Om spårning offline är aktiverat sparas träffar tills sekretessstatusen ändras till att anmäla sig (träffar skickas) eller avanmäla sig (träffar ignoreras). Om spårning offline inte är aktiverat ignoreras träffar tills sekretessstatusen ändras för att anmäla sig.
 
-   Standardvärdet anges i filen [ADBMobleConfig.json](/help/android/configuration/json-config/json-config.md).
+   Standardvärdet anges i [ADBMobileConfig.json](/help/android/configuration/json-config/json-config.md) -fil.
 
    * Här är syntaxen för den här metoden:
 
@@ -160,7 +160,7 @@ Android-metoder för Xamarin-komponenter för Experience Cloud-lösningar 4.x SD
 
 * **OverrideConfigStream**
 
-   (4.2 eller senare) Gör att du kan läsa in en annan `ADBMobile JSON`-konfigurationsfil när programmet startas. Den olika konfigurationen används tills programmet stängs.
+   (4.2 eller senare) Gör att du kan läsa in en annan `ADBMobile JSON` config-fil när programmet startas. Den olika konfigurationen används tills programmet stängs.
 
    * Här är syntaxen för den här metoden:
 
@@ -227,7 +227,7 @@ Android-metoder för Xamarin-komponenter för Experience Cloud-lösningar 4.x SD
 
 * **TrackState**
 
-   Spårar ett apptillstånd med valfria kontextdata. `States` är de vyer som är tillgängliga i din app, till exempel&quot;titelskärm&quot;,&quot;nivå 1&quot;,&quot;paus&quot; och så vidare. Dessa lägen liknar sidor på en webbplats och `TrackState` anropar stegvisa sidvyer. Om läget är tomt visas det som&quot;app name app version (build)&quot; i rapporter. Om det här värdet visas i rapporter måste du ange tillstånd för varje `TrackState`-anrop.
+   Spårar ett apptillstånd med valfria kontextdata. `States` är de vyer som är tillgängliga i din app, till exempel&quot;titelskärm&quot;,&quot;nivå 1&quot;,&quot;paus&quot; och så vidare. Dessa lägen liknar sidor på en webbplats, och `TrackState` anropar stegvisa sidvyer. Om läget är tomt visas det som&quot;app name app version (build)&quot; i rapporter. Om du ser det här värdet i rapporter måste du ange status för varje `TrackState` ring.
 
    >[!TIP]
    >
@@ -255,7 +255,7 @@ Android-metoder för Xamarin-komponenter för Experience Cloud-lösningar 4.x SD
    >[!TIP]
    >
    >
-   >Om du har kod som kan köras när programmet är i bakgrunden (till exempel en bakgrundsåterhämtning) använder du `trackActionFromBackground` i stället.
+   >Om du har kod som kan köras när programmet är i bakgrunden (till exempel en hämtning av bakgrundsdata) använder du `trackActionFromBackground` i stället.
 
    * Här är syntaxen för den här metoden:
 
@@ -274,7 +274,7 @@ Android-metoder för Xamarin-komponenter för Experience Cloud-lösningar 4.x SD
 
 * **TrackLocation**
 
-   Skickar de aktuella latitud- och longitudkoordinaterna. Intressepunkter som definierats i `ADBMobileConfig.json`-filen används också för att avgöra om platsen som angavs som parameter finns i någon av dina POI. Om de aktuella koordinaterna finns i en definierad POI fylls en kontextdatavariabel i och skickas med anropet `TrackLocation`.
+   Skickar de aktuella latitud- och longitudkoordinaterna. I används även intressepunkter som definieras i `ADBMobileConfig.json` för att avgöra om platsen som angavs som parameter finns i någon av dina POI. Om de aktuella koordinaterna finns i en definierad POI fylls en kontextdatavariabel i och skickas med `TrackLocation` ring.
 
    * Här är syntaxen för den här metoden:
 
@@ -511,7 +511,7 @@ Android-metoder för Xamarin-komponenter för Experience Cloud-lösningar 4.x SD
 
 * **LoadRequest**
 
-   Skickar en begäran till den konfigurerade målservern och returnerar strängvärdet för erbjudandet som genereras i ett `Action<NSDictionary>`-återanrop.
+   Skickar en begäran till den konfigurerade målservern och returnerar strängvärdet för erbjudandet som genererats i en `Action<NSDictionary>` återanrop.
 
    * Här är syntaxen för den här metoden:
 
@@ -534,7 +534,7 @@ Android-metoder för Xamarin-komponenter för Experience Cloud-lösningar 4.x SD
 
 * **CreateRequest**
 
-   Konstruktorn kan enkelt skapa ett `ADBTargetLocationRequest`-objekt med de angivna parametrarna.
+   Skapa en `ADBTargetLocationRequest` -objekt med givna parametrar.
 
    * Här är syntaxen för den här metoden:
 
@@ -586,7 +586,7 @@ Android-metoder för Xamarin-komponenter för Experience Cloud-lösningar 4.x SD
 
 * **VisitorProfile**
 
-   Returnerar den besökarprofil som senast hämtades. Returnerar noll om ingen signal har skickats ännu. Besökarprofilen sparas i `NSUserDefaults` så att du enkelt kommer åt den när du startar appen flera gånger.
+   Returnerar den besökarprofil som senast hämtades. Returnerar noll om ingen signal har skickats ännu. Besökarprofilen sparas i `NSUserDefaults` för enkel åtkomst när du startar programmet flera gånger.
 
    * Här är syntaxen för den här metoden:
 
@@ -602,7 +602,7 @@ Android-metoder för Xamarin-komponenter för Experience Cloud-lösningar 4.x SD
 
 * **Dpid**
 
-   Returnerar aktuell `DPID`.
+   Returnerar den aktuella `DPID`.
 
    * Här är syntaxen för den här metoden:
 
@@ -618,7 +618,7 @@ Android-metoder för Xamarin-komponenter för Experience Cloud-lösningar 4.x SD
 
 * **Dpuuid**
 
-   Returnerar aktuell `DPUUID`.
+   Returnerar den aktuella `DPUUID`.
 
    * Här är syntaxen för den här metoden:
 
@@ -634,7 +634,7 @@ Android-metoder för Xamarin-komponenter för Experience Cloud-lösningar 4.x SD
 
 * **AudienceSetDpidAndDpuuid**
 
-   Anger `dpid` och `dpuuid`. Om `dpid` och `dpuuid` är inställda skickas de med varje signal.
+   Anger `dpid` och `dpuuid`. If `dpid` och `dpuuid` är inställda skickas de med varje signal.
 
    * Här är syntaxen för den här metoden:
 
@@ -650,7 +650,7 @@ Android-metoder för Xamarin-komponenter för Experience Cloud-lösningar 4.x SD
 
 * **SignalWithData**
 
-   Skickar målgruppshantering en signal med egenskaper och hämtar matchande segment som returneras i ett `Action<NSDictionary>`-återanrop.
+   Skickar målgruppshantering en signal med egenskaper och hämtar matchande segment som returneras i en `Action<NSDictionary>` återanrop.
 
    * Här är syntaxen för den här metoden:
 
@@ -696,7 +696,7 @@ Mer information om videoanalys finns i [Videoanalys](/help/android/analytics-mai
 
 * **MediaSettings**
 
-   Returnerar ett `MediaSettings`-objekt med angivna parametrar.
+   Returnerar ett `MediaSettings` objekt med angivna parametrar.
 
    * Här är syntaxen för den här metoden:
 
@@ -712,7 +712,7 @@ Mer information om videoanalys finns i [Videoanalys](/help/android/analytics-mai
 
 * **AdSettingsWith**
 
-   Returnerar ett `MediaSettings`-objekt som ska användas för att spåra en annonsvideo.
+   Returnerar ett `MediaSettings` -objekt som används för att spåra en annonsvideo.
 
    * Här är syntaxen för den här metoden:
 
@@ -730,7 +730,7 @@ Mer information om videoanalys finns i [Videoanalys](/help/android/analytics-mai
 
 * **Öppna**
 
-   Öppnar ett `ADBMediaSettings`-objekt för spårning.
+   Öppnar en `ADBMediaSettings` objekt för spårning.
 
    * Här är syntaxen för den här metoden:
 

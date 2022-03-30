@@ -1,26 +1,26 @@
 ---
 description: Den här informationen hjälper dig att migrera från version 3.x eller 2.x av iOS-biblioteket till version 4.x.
-solution: Experience Cloud,Analytics
-title: Migrera till iOS-biblioteket 4.x
+solution: Experience Cloud Services,Analytics
+title: Migrera till iOS 4.x-biblioteket
 topic-fix: Developer and implementation
 uuid: 5668972b-f355-4e03-9df0-8c82ddf6809b
 exl-id: a58067e0-b6f4-4900-ba3f-7256d9259420
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '871'
 ht-degree: 2%
 
 ---
 
-# Migrera till iOS-biblioteket 4.x{#migrating-to-the-x-ios-library}
+# Migrera till iOS 4.x-biblioteket{#migrating-to-the-x-ios-library}
 
 Den här informationen hjälper dig att migrera från version 3.x eller 2.x av iOS-biblioteket till version 4.x.
 
 >[!IMPORTANT]
 >
->SDK använder `NSUserDefaults` för att lagra data som behövs för att beräkna unika användare, livscykelvärden och andra data relaterade till SDK-funktionaliteten.  Om du ändrar eller tar bort de värden i `NSUserDefaults` som förväntas av SDK kan oväntade beteenden resultera i inkonsekvenser i data.
+>SDK använder `NSUserDefaults` lagra data som behövs för att beräkna unika användare, livscykelvärden och andra data som rör SDK-funktionaliteten.  Om du ändrar eller tar bort värdena i `NSUserDefaults` som förväntas av SDK kan oväntade beteenden resultera i inkonsekvenser i data.
 
-I version 4.x av iOS SDK-biblioteket konsolideras de publika metoderna i en rubrik. Funktionen är nu även tillgänglig via metoder på klassnivå, så du behöver inte hålla reda på pekare, instanser eller singletoner.
+I version 4.x av iOS SDK-biblioteket konsolideras de publika metoderna till en rubrik. Funktionen är nu även tillgänglig via metoder på klassnivå, så du behöver inte hålla reda på pekare, instanser eller singletoner.
 
 ## Event, props och eVars {#section_76EA6F5611184C5CAE6E62956D84D7B6}
 
@@ -40,7 +40,7 @@ Bearbetningsreglerna har följande fördelar:
 
 ## Ta bort oanvända egenskaper {#section_145222EAA20F4CC2977DD883FDDBBFC5}
 
-Den nya `ADBMobileConfig.json`-filen innehåller programspecifika, globala inställningar och ersätter de flesta konfigurationsvariabler som användes i tidigare versioner. Här är ett exempel på en `ADBMobileConfig.json`-fil:
+Den nya `ADBMobileConfig.json` filen innehåller programspecifika, globala inställningar och ersätter de flesta konfigurationsvariabler som användes i tidigare versioner. Här är ett exempel på en `ADBMobileConfig.json` fil:
 
 ```js
 { 
@@ -84,7 +84,7 @@ I följande tabeller visas de konfigurationsvariabler som du behöver flytta til
 
 Flytta värdet från den första kolumnen till variabeln i den andra kolumnen.
 
-| Konfigurationsvariabel | Variabel i `ADBMobileConfig.json`-filen |
+| Konfigurationsvariabel | Variabel i `ADBMobileConfig.json` fil |
 |--- |--- |
 | offlineTrackingEnabled | &quot;offlineEnabled&quot; |
 | offlineHitLimit | &quot;batchLimit&quot; |
@@ -101,12 +101,12 @@ Flytta värdet från den första kolumnen till variabeln i den andra kolumnen.
 
 Flytta värdet från den första kolumnen till variabeln i den andra kolumnen.
 
-| Konfigurationsvariabel | Variabel i `ADBMobileConfig.json`-filen |
+| Konfigurationsvariabel | Variabel i `ADBMobileConfig.json` fil |
 |--- |--- |
 | trackOffline | &quot;offlineEnabled&quot; |
 | offlineLimit | &quot;batchLimit&quot; |
 | konto | &quot;rsids&quot; |
-| trackingServer | &quot;server&quot; tar du bort prefixet `"https://"`. Protokollprefixet läggs till automatiskt baserat på inställningen &quot;ssl&quot;. |
+| trackingServer | &quot;server&quot;, ta bort `"https://"` prefix. Protokollprefixet läggs till automatiskt baserat på inställningen &quot;ssl&quot;. |
 | trackingServerSecure | Ta bort. För säkra anslutningar definierar du&quot;server&quot; och aktiverar sedan&quot;ssl&quot;. |
 | charSet | &quot;charset&quot; |
 | currencyCode | &quot;currency&quot; |
@@ -124,15 +124,15 @@ Flytta värdet från den första kolumnen till variabeln i den andra kolumnen.
 
 ## Uppdatera spårningsanrop och spårningsvariabler {#section_96E7D9B3CDAC444789503B7E7F139AB9}
 
-I stället för att använda de webbfokuserade `track`- och `trackLink`-anropen använder version 4 SDK följande metoder:
+Istället för att använda det webbfokuserade `track` och `trackLink` anrop använder version 4 SDK följande metoder:
 
-* `trackState:data:` lägen är de vyer som är tillgängliga i din app, till exempel  `home dashboard`,  `app settings`och  `cart`så vidare.
+* `trackState:data:` är de vyer som är tillgängliga i din app, till exempel `home dashboard`, `app settings`, `cart`och så vidare.
 
-   Dessa lägen liknar sidor på en webbplats och `trackState` anropar stegvisa sidvyer.
+   Dessa lägen liknar sidor på en webbplats, och `trackState` anropar stegvisa sidvyer.
 
-* `trackAction:data:` åtgärder, till exempel  `logons`,  `banner taps`,  `feed subscriptions`och andra mätvärden som finns i appen och som du vill mäta.
+* `trackAction:data:` åtgärder, till exempel `logons`, `banner taps`, `feed subscriptions`och andra mätvärden som finns i appen och som du vill mäta.
 
-Parametern `data` för båda dessa metoder är en `NSDictionary` som innehåller namnvärdespar som skickas som kontextdata.
+The `data` parametern för båda dessa metoder är en `NSDictionary` som innehåller namnvärdespar som skickas som kontextdata.
 
 ### Event, props, eVars
 
@@ -144,13 +144,13 @@ Bearbetningsreglerna har följande fördelar:
 * Du kan använda beskrivande namn för data i stället för att ange variabler som är specifika för en rapportserie.
 * Det har liten inverkan på att skicka in extra data.
 
-   Dessa värden visas inte i rapporter förrän de har mappats med bearbetningsregler. Mer information finns i [Bearbetningsregler och kontextdata](/help/ios/getting-started/proc-rules.md).
+   Dessa värden visas inte i rapporter förrän de har mappats med bearbetningsregler. Mer information finns i [Bearbetar regler och kontextdata](/help/ios/getting-started/proc-rules.md).
 
-Värden som du tilldelade direkt till variabler ska i stället läggas till i `data` `NSDictionary`. Det innebär att anrop till `setProp`, `setEvar` och tilldelningar till beständiga kontextdata ska tas bort och värdena läggas till i parametern `data`.
+Värden som du tilldelade direkt till variabler ska läggas till i `data` `NSDictionary` i stället. Detta innebär att anropar `setProp`, `setEvar`och tilldelningar till beständiga kontextdata ska tas bort och värdena läggas till i `data` parameter.
 
 ### AppSection/Server, GeoZip, transaktions-ID, Campaign och andra standardvariabler
 
-Data som du angav för måttobjektet, inklusive variablerna ovan, ska läggas till i `data` `NSDictionary` i stället. De enda data som skickas med ett `trackState`- eller `trackAction`-anrop är nyttolasten i parametern `data`.
+Data som du angav för måttobjektet, inklusive variablerna ovan, ska läggas till i `data` `NSDictionary` i stället. De enda data som skickas med en `trackState` eller `trackAction` anropet är nyttolasten i `data` parameter.
 
 ### Ersätt spårningsanrop
 
@@ -171,11 +171,11 @@ Ersätt följande metoder i koden med ett anrop till `trackState` eller `trackAc
 
 ## Anpassat besökar-ID {#section_2CF930C13BA64F04959846E578B608F3}
 
-Ersätt variabeln `visitorID` med ett anrop till `setUserIdentifier:`.
+Ersätt `visitorID` variabel med ett anrop till `setUserIdentifier:`.
 
 ## Spårning offline {#section_5D4CD8CD1BE041A79A8657E31C0D24C6}
 
-Spårning offline är aktiverat i `ADBMobileConfig.json`-filen och all annan offlinekonfiguration görs automatiskt.
+Spårning offline är aktiverat i `ADBMobileConfig.json` och all annan offlinekonfiguration görs automatiskt.
 
 Ta bort anrop till följande metoder i koden:
 

@@ -1,11 +1,11 @@
 ---
-description: Från och med iOS 10 kan du med Apple skapa ett tillägg som kallas för ett fristående tillägg som kan distribueras utan ett innehållande program. Med det här tillägget behöver du ingen programgrupp eftersom det inte finns något program som du kan dela data med.
-solution: Experience Cloud,Analytics
+description: Från och med iOS 10 kan du med Apple skapa ett tillägg som kallas fristående tillägg som kan distribueras utan ett program som ingår. Med det här tillägget behöver du ingen programgrupp eftersom det inte finns något program som du kan dela data med.
+solution: Experience Cloud Services,Analytics
 title: Implementering av fristående tillägg
 topic-fix: Developer and implementation
 uuid: 9b47f082-b78f-4611-968d-014c32ede6bc
 exl-id: b51247b6-c4ba-4a00-9ba0-1824450ac067
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '222'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Fristående implementering av tillägg {#stand-alone-extension-implementation}
 
-Från och med iOS 10 kan du med Apple skapa ett tillägg som kallas för ett fristående tillägg som kan distribueras utan ett innehållande program. Med det här tillägget behöver du ingen programgrupp eftersom det inte finns något program som du kan dela data med.
+Från och med iOS 10 kan du med Apple skapa ett tillägg som kallas fristående tillägg som kan distribueras utan ett program som ingår. Med det här tillägget behöver du ingen programgrupp eftersom det inte finns något program som du kan dela data med.
 
 >[!IMPORTANT]
 >
@@ -24,14 +24,14 @@ Från och med iOS 10 kan du med Apple skapa ett tillägg som kallas för ett fri
 
 Så här konfigurerar du ditt fristående tillägg:
 
-1. Kontrollera att `ADBMobileConfig.json`-filen är medlem i måltillägget.
+1. Se till att `ADBMobileConfig.json` filen är medlem i tilläggets mål.
 1. Länka följande bibliotek och ramverk:
 
    * `AdobeMobileLibrary_Extension.a`
    * `libsqlite3.tbd`
    * `SystemConfiguration.framework`
 
-1. I huvudvykontrollanten för tillägget anger du tilläggstypen till `ADBMobileAppExtensionTypeStandAlone` i SDK innan du slutför några SDK-relaterade aktiviteter.
+1. I huvudvykontrollanten för tillägget anger du tilläggstypen till `ADBMobileAppExtensionTypeStandAlone` i SDK innan några SDK-relaterade aktiviteter slutförs.
 
    ```objective-c
    [ADBMobile setAppExtensionType:ADBMobileAppExtensionTypeStandAlone];
@@ -43,7 +43,7 @@ Så här konfigurerar du ditt fristående tillägg:
 
 Här är ytterligare information:
 
-* Ett ytterligare kontextdatavärde, `a.RunMode`, har lagts till för att ange om data kommer från din app eller ditt tillägg:
+* Ett ytterligare kontextdatavärde, `a.RunMode` har lagts till för att ange om data kommer från din app eller ditt tillägg:
 
    * `a.RunMode = Application`
 
@@ -52,4 +52,4 @@ Här är ytterligare information:
 
       Detta värde innebär att träffen kom från tillägget.
 
-* Inget livscykelanrop aktiveras för iOS-tilläggsprogram.
+* Inget livscykelanrop aktiveras för iOS tilläggsprogram.

@@ -1,11 +1,11 @@
 ---
 description: Här är en lista över Adobe Analytics-metoder som finns i iOS-biblioteket.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Analysmetoder
 topic-fix: Developer and implementation
 uuid: d49fe6de-cb32-4b96-9891-c567310e59a6
 exl-id: 327ec44a-be15-47af-a2c8-a373124999ad
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '767'
 ht-degree: 33%
@@ -16,13 +16,13 @@ ht-degree: 33%
 
 Här är en lista över Adobe Analytics-metoder som finns i iOS-biblioteket.
 
-SDK har för närvarande stöd för flera Adobe Experience Cloud-lösningar, inklusive Analytics, Target, Audience Manager och Adobe Experience Platform Identity Service. Metoderna är prefasta enligt lösningen. Experience Cloud ID-metoder har `track` som prefix.
+SDK har för närvarande stöd för flera Adobe Experience Cloud-lösningar, inklusive Analytics, Target, Audience Manager och Adobe Experience Platform Identity Service. Metoderna är prefasta enligt lösningen. Experience Cloud ID-metoder har prefix med `track`.
 
 Var och en av dessa metoder används för att skicka data till din Adobe Analytics rapportsvit.
 
 * **trackState: &#x200B; data:**
 
-   Lägen är de vyer som är tillgängliga i din app, till exempel `home dashboard`, `app settings`, `cart` och så vidare. Dessa lägen liknar sidor på en webbplats och `trackState` anropar stegvisa sidvyer. Om `state` är tom visas den som *programnamnsprogramversion (build)* i rapporter. Om det här värdet visas i rapporter kontrollerar du att du anger `state` i varje `trackState`-anrop.
+   Lägen är de vyer som är tillgängliga i din app, till exempel `home dashboard`, `app settings`, `cart`och så vidare. Dessa lägen liknar sidor på en webbplats, och `trackState` anropar stegvisa sidvyer. If `state` är tom, visas som *app name app version (build)* i rapporter. Om det här värdet visas i rapporter kontrollerar du att du anger `state` i varje `trackState` ring.
 
    >[!TIP]
    >
@@ -44,11 +44,11 @@ Var och en av dessa metoder används för att skicka data till din Adobe Analyti
 
 * **trackAction: &#x200B; data:**
 
-   Spårar en åtgärd i din app. Åtgärder som du vill mäta, t.ex. `logons`, `banner taps`, `feed subscriptions` och andra mått, inträffar i din app.
+   Spårar en åtgärd i din app. Åtgärder som du vill mäta, till exempel `logons`, `banner taps`, `feed subscriptions`, och andra mätvärden, finns i appen.
 
    >[!TIP]
    >
-   >Om du har kod som kan köras när programmet är i bakgrunden (till exempel en bakgrundsåterhämtning) använder du `trackActionFromBackground` i stället.
+   >Om du har kod som kan köras när programmet är i bakgrunden (till exempel en hämtning av bakgrundsdata) använder du `trackActionFromBackground` i stället.
 
    * Här är syntaxen för den här metoden:
 
@@ -104,7 +104,7 @@ Var och en av dessa metoder används för att skicka data till din Adobe Analyti
 
 * **trackLocation: &#x200B; data:**
 
-   Skickar de aktuella x y-koordinaterna. Intressepunkter som definierats i filen `ADBMobileConfig.json` används också för att avgöra om platsen som anges som parameter finns i någon av dina POI. Om de aktuella koordinaterna finns i en definierad POI fylls en kontextdatavariabel i och skickas med anropet `trackLocation`.
+   Skickar de aktuella x y-koordinaterna. I används även intressepunkter som definieras i `ADBMobileConfig.json` för att avgöra om platsen som anges som parameter finns i någon av dina POI. Om de aktuella koordinaterna finns i en definierad POI fylls en kontextdatavariabel i och skickas med `trackLocation` ring.
 
    * Här är syntaxen för den här metoden:
 
@@ -174,7 +174,7 @@ Var och en av dessa metoder används för att skicka data till din Adobe Analyti
 
 * **trackTimedActionStart: &#x200B; data:**
 
-   Starta en tidsbestämd åtgärd med namnet `action`. Om du anropar den här metoden för en åtgärd som redan har startats, skrivs den tidigare tidsåtgärden över.
+   Starta en tidsbestämd åtgärd med ett namn `action`. Om du anropar den här metoden för en åtgärd som redan har startats, skrivs den tidigare tidsåtgärden över.
 
    >[!TIP]
    >
@@ -196,7 +196,7 @@ Var och en av dessa metoder används för att skicka data till din Adobe Analyti
 
 * **trackTimedActionUpdate: &#x200B; data:**
 
-   Ange `data` för att uppdatera kontextdata som är associerade med angiven `action`. Det `data` som skickas läggs till i befintliga data för åtgärden, och om samma nyckel redan har definierats för `action` skrivs data över.
+   Skicka in `data` för att uppdatera kontextdata som är associerade med den angivna `action`. The `data` som skickas läggs till befintliga data för åtgärden och om samma nyckel redan har definierats för `action`, skriver över data.
 
    >[!TIP]
    >
@@ -218,11 +218,11 @@ Var och en av dessa metoder används för att skicka data till din Adobe Analyti
 
 * **trackTimedActionEnd: &#x200B; logik:**
 
-   Avsluta en tidsbestämd åtgärd. Om du anger `block` får du tillgång till de slutliga tidsvärdena och kan manipulera `data` innan du skickar den sista träffen.
+   Avsluta en tidsbestämd åtgärd. Om du anger `block`får du tillgång till de slutliga tidsvärdena och kan manipulera `data` innan den sista träffen skickas.
 
    >[!TIP]
    >
-   >Om du anger `block` måste du returnera `YES` för att skicka en träff. Om du anger `nil` för `block` skickas den sista träffen.
+   >Om du anger `block`måste du returnera `YES` för att skicka en träff. Skickar in `nil` for `block` skickar slutträffen.
 
    * Här är syntaxen för den här metoden:
 

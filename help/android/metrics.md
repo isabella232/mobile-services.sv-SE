@@ -1,12 +1,12 @@
 ---
 description: Här är mätvärden och mått som kan mätas automatiskt av mobilbiblioteket, efter att livscykeln har implementerats, och en länk för att felsöka livscykeldata.
 keywords: android;bibliotek;mobil;sdk
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Livscykelstatistik
 topic-fix: Developer and implementation
 uuid: a8f3ebac-be3b-4948-82bb-105d46cfff6d
 exl-id: 1e50318d-894c-4039-ba45-71cb9edbc5b5
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '1216'
 ht-degree: 2%
@@ -15,16 +15,16 @@ ht-degree: 2%
 
 # Livscykelstatistik{#lifecycle-metrics}
 
-I det här avsnittet finns information om mått och mått som kan mätas automatiskt av mobilbiblioteket, efter att livscykeln har implementerats, och en länk för att felsöka livscykeldata. Mer information om felsökning finns i [Felsöka livscykeldata](https://helpx.adobe.com/analytics/kb/troubleshoot-lifecycle-data.html).
+I det här avsnittet finns information om mått och mått som kan mätas automatiskt av mobilbiblioteket, efter att livscykeln har implementerats, och en länk för att felsöka livscykeldata. Mer information om felsökning finns på [Felsöka livscykeldata](https://helpx.adobe.com/analytics/kb/troubleshoot-lifecycle-data.html).
 
 ## Ny version av Adobe Experience Platform Mobile SDK
 
-Letar du efter information och dokumentation om Adobe Experience Platform Mobile SDK? Klicka [här](https://aep-sdks.gitbook.io/docs/) för att få den senaste dokumentationen.
+Letar du efter information och dokumentation om Adobe Experience Platform Mobile SDK? Klicka [här](https://aep-sdks.gitbook.io/docs/) för vår senaste dokumentation.
 
-Från om med september 2018 har vi släppt en ny större version av SDK. Dessa nya Adobe Experience Platform Mobile SDK:er kan konfigureras via [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
+Från om med september 2018 har vi släppt en ny större version av SDK. Dessa nya Adobe Experience Platform Mobile SDK kan konfigureras via [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
 
 * Gå till Adobe Experience Platform Launch för att komma igång.
-* Om du vill se vad som finns i Experience Platform SDK-databaserna går du till [Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
+* Om du vill se vad som finns i Experience Platform SDK-databaserna går du till [Github: Adobe Experience Platform SDKs](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
 
 ## Livscykelvärden och dimensioner {#section_78F036C4296F4BA3A47C2044F79C86C1}
 
@@ -107,7 +107,7 @@ För Analytics hämtas och rapporteras kontextdata som skickas med varje livscyk
 
 * **Program-ID**
 
-   Sparar programnamnet och versionen i formatet `[AppName] [BundleVersion]`. Ett exempel på det här formatet är `myapp 1.1`.
+   Lagrar programnamnet och versionen i `[AppName] [BundleVersion]` format. Ett exempel på det här formatet är `myapp 1.1`.
 
    * Kontextdata/målparameter för analyser: `a.AppID`
    * Audience Manager: `c_a_AppID`
@@ -185,7 +185,7 @@ För Analytics hämtas och rapporteras kontextdata som skickas med varje livscyk
 
 * **Transportföretagets namn**
 
-   Lagrar namnet på leverantören av mobiltjänster enligt vad som angetts av enheten.  Viktigt:  Det här måttet lagras inte automatiskt i en Analytics-variabel. Du måste skapa en bearbetningsregel om du vill kopiera det här värdet till en Analytics-variabel för rapportering.
+   Lagrar namnet på leverantören av mobiltjänster enligt vad som angetts av enheten.  Viktigt: Det här måttet lagras inte automatiskt i en Analytics-variabel. Du måste skapa en bearbetningsregel om du vill kopiera det här värdet till en Analytics-variabel för rapportering.
 
    >[!IMPORTANT]
    >
@@ -203,27 +203,27 @@ För Analytics hämtas och rapporteras kontextdata som skickas med varje livscyk
 
 ## Ytterligare mobilstatistik och dimensioner {#section_0B32BBF9CA734103BEDB5E755FFE5B31}
 
-Följande mått och mått hämtas i mobillösningens variabler med den metod som listas i kolumnen **Beskrivning**.
+Följande mått och mått hämtas in i mobillösningens variabler med den metod som listas i **Beskrivning** kolumn.
 
 ### Mätvärden
 
 * **Total åtgärdstid**
 
-   Fylls i av `trackTimedAction`-metoder.
+   Fylls i av `trackTimedAction` metoder.
 
    * Kontextdata/målparameter för analyser: `a.action.time.total`
    * Audience Manager: `c_a_action_time_total`
 
 * **Åtgärdstid i app**
 
-   Fylls i av `trackTimedAction`-metoder.
+   Fylls i av `trackTimedAction` metoder.
 
    * Kontextdata/målparameter för analyser: `a.action.time.inapp`
    * Audience Manager: `c_a_action_time_inapp`
 
 * **Livstidsvärde (händelse)**
 
-   Fylls i av `trackLifetimeValue`-metoder.
+   Fylls i av `trackLifetimeValue` metoder.
 
    * Kontextdata/målparameter för analyser: `a.ltv.amount`
    * Audience Manager: `c_a_ltv_amount`
@@ -232,7 +232,7 @@ Följande mått och mått hämtas i mobillösningens variabler med den metod som
 
 * **Placering (ned till 10 km)**
 
-   Fylls i av `trackLocation`-metoder.
+   Fylls i av `trackLocation` metoder.
 
    * Kontextdata/målparametrar för analyser:
 
@@ -295,7 +295,7 @@ Följande mått och mått hämtas i mobillösningens variabler med den metod som
 
 * **Spårningskod**
 
-   Fylls i av Mobilappsköp och genereras automatiskt av Adobe mobiltjänster.
+   Fylls i av Mobile App Acquisition och genereras automatiskt av Adobe mobiltjänster.
 
    * Kontextdata/målparametrar för analyser: `a.referrer.campaign.trackingcode`
    * Audience Manager: `c_a_referrer_campaign_trackingcode`

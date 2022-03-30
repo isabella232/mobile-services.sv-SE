@@ -1,11 +1,11 @@
 ---
 description: I följande tabell visas de mått och mått som mobilbiblioteket kan mäta automatiskt efter att livscykeln har implementerats.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Livscykelvärden
 topic-fix: Developer and implementation
 uuid: b795e383-d59b-4a3c-9e14-ffe8fb58412c
 exl-id: b51b6c41-843f-499d-9cf2-7ce96ed82fc0
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '1085'
 ht-degree: 1%
@@ -18,12 +18,12 @@ Här är mätvärden och mått som kan mätas automatiskt av mobilbiblioteket ef
 
 ## Ny version av Adobe Experience Platform Mobile SDK
 
-Letar du efter information och dokumentation om Adobe Experience Platform Mobile SDK? Klicka [här](https://aep-sdks.gitbook.io/docs/) för att få den senaste dokumentationen.
+Letar du efter information och dokumentation om Adobe Experience Platform Mobile SDK? Klicka [här](https://aep-sdks.gitbook.io/docs/) för vår senaste dokumentation.
 
-Från om med september 2018 har vi släppt en ny större version av SDK. Dessa nya Adobe Experience Platform Mobile SDK:er kan konfigureras via [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
+Från om med september 2018 har vi släppt en ny större version av SDK. Dessa nya Adobe Experience Platform Mobile SDK kan konfigureras via [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
 
-* Gå till [Experience Platform Launch](https://launch.adobe.com/) för att komma igång.
-* Om du vill se vad som finns i Experience Platform SDK-databaserna går du till [Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
+* För att komma igång, gå till [Experience Platform Launch](https://launch.adobe.com/).
+* Om du vill se vad som finns i Experience Platform SDK-databaserna går du till [Github: Adobe Experience Platform SDKs](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
 
 
 ## Livscykelvärden och dimensioner {#section_78F036C4296F4BA3A47C2044F79C86C1}
@@ -89,7 +89,7 @@ För Analytics hämtas och rapporteras kontextdata som skickas med varje livscyk
 
 >[!IMPORTANT]
 >
-> Måtten *Dagliga engagerade användare* och *Månadsengagerade användare* lagras inte automatiskt i ett analysmått. Du måste skapa en bearbetningsregel som ställer in en anpassad händelse för att hämta dessa mått.
+> The *Dagliga engagerade användare* och *Engagerade användare varje månad* Mätvärden lagras inte automatiskt i ett Analytics-mått. Du måste skapa en bearbetningsregel som ställer in en anpassad händelse för att hämta dessa mått.
 
 #### Mått
 
@@ -102,7 +102,7 @@ För Analytics hämtas och rapporteras kontextdata som skickas med varje livscyk
 
 * **Program-ID**
 
-   Sparar programnamnet och versionen i formatet `[AppName] [BundleVersion]`. Exempel, `myapp 1.1`.
+   Lagrar programnamnet och versionen i `[AppName] [BundleVersion]` format. Exempel, `myapp 1.1`.
 
    * Data/mål för analyskontext: `a.AppID`
    * Målgruppshantering: `c_a_AppID`
@@ -165,7 +165,7 @@ För Analytics hämtas och rapporteras kontextdata som skickas med varje livscyk
 
 * **Enhetsnamn**
 
-   Lagrar enhetsnamnet.  Kommaavgränsad tvåsiffrig sträng som identifierar iOS-enheten. Det första talet representerar vanligtvis enhetsgenereringen och det andra numret är vanligtvis olika versioner av olika medlemmar i enhetsfamiljen. En lista med vanliga enhetsnamn finns i iOS-enhetsversioner.
+   Lagrar enhetsnamnet.  Kommaavgränsad tvåsiffrig sträng som identifierar iOS-enheten. Det första talet representerar vanligtvis enhetsgenereringen och det andra numret är vanligtvis olika versioner av olika medlemmar i enhetsfamiljen. En lista med vanliga enhetsnamn finns i iOS Device Versions.
 
    * Data/mål för analyskontext: `a.DeviceName`
    * Målgruppshantering: `c_a_DeviceName`
@@ -185,7 +185,7 @@ För Analytics hämtas och rapporteras kontextdata som skickas med varje livscyk
    * Målgruppshantering: `c_a_Resolution`
    >[!IMPORTANT]
    >
-   >*Dagarna sedan den senaste uppgraderingen*, *Startar sedan den senaste uppgraderingen* och dimensionerna *för transportföretaget* lagras inte automatiskt i en Analytics-variabel. Du måste skapa en bearbetningsregel för att kopiera värdena till en Analytics-variabel för rapportering.
+   >The *Dagar sedan senaste uppgraderingen*, *Startar sedan senaste uppgraderingen* och *Transportföretagets namn* dimensioner lagras inte automatiskt i en Analytics-variabel. Du måste skapa en bearbetningsregel för att kopiera värdena till en Analytics-variabel för rapportering.
 
 
 ## Ytterligare mobilstatistik och dimensioner {#section_0B32BBF9CA734103BEDB5E755FFE5B31}
@@ -220,7 +220,7 @@ Följande mått och mått hämtas in i mobillösningsvariabler med den listade m
 
 * **Placering (ned till 10 km)**
 
-   Fylls i av `trackLocation`-metoder.
+   Fylls i av `trackLocation` metoder.
 
    * Parametern Analytics Context Data/Target:
 
@@ -248,7 +248,7 @@ Följande mått och mått hämtas in i mobillösningsvariabler med den listade m
 
 * **Plats (ned till 1 m)**
 
-   Fylls i av `trackLocation`-metoder.
+   Fylls i av `trackLocation` metoder.
 
    * Parametern Analytics Context Data/Target:
 

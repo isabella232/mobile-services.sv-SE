@@ -1,12 +1,12 @@
 ---
 description: Du kan använda den här informationen för att få en förståelse för återanslående och hur de fungerar.
 keywords: android;bibliotek;mobil;sdk
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Exempel på återgång
 topic-fix: Developer and implementation
 uuid: 8010cd00-d42b-4e16-8403-692fab2550f1
 exl-id: 2ff41066-e2ee-425f-8aff-e5e3f3e5f0f5
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '128'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Du kan använda den här informationen för att få en förståelse för vilka �
 
 >[!CAUTION]
 >
->Det här exemplet finns endast i informationssyfte. Filen `ADBMobileConfig.json` bör konfigureras i användargränssnittet för Adobe Mobile och får inte ändras manuellt. En manuellt redigerad konfigurationsfil kan vara farlig om konfigurationen av fjärrmeddelanden är aktiverad.
+>Det här exemplet finns endast i informationssyfte. The `ADBMobileConfig.json` filen ska konfigureras i användargränssnittet för Adobe Mobile och ska inte ändras manuellt. En manuellt redigerad konfigurationsfil kan vara farlig om konfigurationen av fjärrmeddelanden är aktiverad.
 
 ## `ADBMobileConfig.json` definition {#section_8751E8176F3546C09420341A39758AFF}
 
@@ -61,6 +61,6 @@ contextData.put("user.zip", "90210");
 Analytics.trackState("MainMenu", contextData);
 ```
 
-Eftersom det här spårningsanropet är `"MainMenu"` utlöser det ovanstående återanslående meddelandet. URL:en ersätter alla mallvariabler med värden från träffen. Om man utgår ifrån att användarens föregående session var 132 sekunder lång och att användaren använder Android SDK version 4.6.0 ser den resulterande URL-adressen ut så här:
+Eftersom dess tillstånd är `"MainMenu"`, utlöser det här spårningsanropet ovanstående återanslående meddelande. URL:en ersätter alla mallvariabler med värden från träffen. Om man utgår ifrån att användarens föregående session var 132 sekunder lång och att användaren använder Android SDK version 4.6.0 ser den resulterande URL-adressen ut så här:
 
 `https://my.server.com/?user=bob&zip=90210&c16=4.6.0-AN&c27=cln,132`

@@ -1,12 +1,12 @@
 ---
-description: Det går inte att ange variabeln products genom att använda bearbetningsregler. I Mobile SDK måste du använda en speciell syntax i parametern kontextdata för att ange produkter på serveranropet.
+description: Det går inte att ange variabeln products genom att använda bearbetningsregler. I Mobile SDK måste du använda en speciell syntax i parametern context data för att ange produkter i serveranropet.
 keywords: android;bibliotek;mobil;sdk
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Produktvariabel
 topic-fix: Developer and implementation
 uuid: f4484022-cb8b-4dea-9209-5a110ba607df
 exl-id: 1d850ce1-6fd4-463e-8949-8b8cf40d8467
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '155'
 ht-degree: 1%
@@ -15,9 +15,9 @@ ht-degree: 1%
 
 # Variabeln Produkter {#products-variable}
 
-Det går inte att ange variabeln products genom att använda bearbetningsregler. I Mobile SDK måste du använda en speciell syntax i parametern kontextdata för att ange produkter på serveranropet.
+Det går inte att ange variabeln products genom att använda bearbetningsregler. I Mobile SDK måste du använda en speciell syntax i parametern context data för att ange produkter i serveranropet.
 
-Om du vill ställa in variabeln *products* anger du en kontextdatanyckel till `"&&products"` och anger värdet med den syntax som är definierad för variabeln *products*:
+Så här anger du *produkter* variabel, ange kontextdatanyckeln till `"&&products"`och ange värdet med den syntax som är definierad för *produkter* variabel:
 
 ```java
 cdata.put("&&products", "Category;Product;Quantity;Price[,Category;Product;Quantity;Price]");
@@ -42,8 +42,8 @@ Analytics.trackAction("purchase", cdata);
 Analytics.trackState("Order Confirmation", cdata);
 ```
 
-Variabeln *products* ställs in på bildbegäran och de andra variablerna ställs in som kontextdata. Alla kontextdatavariabler måste mappas med bearbetningsregler:
+The *produkter* -variabeln ställs in på bildbegäran och de andra variablerna ställs in som kontextdata. Alla kontextdatavariabler måste mappas med bearbetningsregler:
 
 ![](assets/map-products.png)
 
-Du behöver inte mappa variabeln *products* med bearbetningsregler eftersom variabeln anges direkt på SDK:ns bildbegäran.
+Du behöver inte mappa *produkter* genom att använda bearbetningsregler eftersom variabeln anges direkt på bildbegäran av SDK.

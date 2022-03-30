@@ -1,11 +1,11 @@
 ---
 description: Om appen öppnar mobilt webbinnehåll måste du se till att besökarna inte identifieras separat när de förflyttar sig mellan den inbyggda och mobila webben.
-solution: Experience Cloud,Analytics
-title: Spårning av besökare mellan en app och en mobil webbplats
+solution: Experience Cloud Services,Analytics
+title: Spårning av besökare mellan en app och Mobile Web
 topic-fix: Developer and implementation
 uuid: 2d951de6-3954-4379-a4ff-99b9695b9869
 exl-id: d8459d59-0edd-42c4-81b5-529b250accb4
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '494'
 ht-degree: 0%
@@ -26,7 +26,7 @@ iOS SDK genererar ett unikt besökar-ID när en app installeras. Detta ID lagras
 
 ## Besökar-ID:n på den mobila webben
 
-Vanliga mobilwebbimplementeringar använder samma standardanalys `s_code.js` eller `AppMeasurement.js` som används på skrivbordsplatser. JavaScript-biblioteken har egna metoder för att generera unika besökar-ID:n, vilket gör att ett annat besökar-ID genereras när du öppnar mobilt webbinnehåll från din app.
+Vanliga mobilwebbimplementeringar använder samma standardanalys `s_code.js` eller `AppMeasurement.js` som används på persondatorer. JavaScript-biblioteken har egna metoder för att generera unika besökar-ID:n, vilket gör att ett annat besökar-ID genereras när du öppnar mobilt webbinnehåll från din app.
 
 Om du vill använda samma besökar-ID i appen och på mobilwebben och skicka appbesökar-ID:t till mobilwebben i URL:en:
 
@@ -34,7 +34,7 @@ Om du vill använda samma besökar-ID i appen och på mobilwebben och skicka app
 
 1. Lägg till biblioteket i ditt projekt och implementera livscykeln.
 
-   Mer information finns i *Lägg till SDK- och konfigurationsfilen i ditt projekt* i [Core Implementation och Lifecycle](/help/ios/getting-started/dev-qs.md).
+   Mer information finns i *Lägg till SDK- och konfigurationsfilen i projektet* in [Kärnimplementering och livscykel](/help/ios/getting-started/dev-qs.md).
 1. Om du vill lägga till besökarinformation till den URL som används för att öppna webbvyn ringer du `visitorAppendToURL`:
 
    ```objective-c
@@ -43,7 +43,7 @@ Om du vill använda samma besökar-ID i appen och på mobilwebben och skicka app
    [[UIApplication sharedApplication] openURL:urlWithVisitorData];
    ```
 
-   Alternativt kan du från och med SDK version 4.16.0 anropa `visitorGetUrlVariablesAsync:` och generera en egen URL:
+   Från och med SDK version 4.16.0 kan du även ringa `visitorGetUrlVariablesAsync:` och generera en egen URL:
 
    ```objective-c
    NSString *urlString = @"https://www.mydomain.com/index.php"; 
@@ -58,7 +58,7 @@ Om du vill använda samma besökar-ID i appen och på mobilwebben och skicka app
 
 ID-tjänstkoden på måldomänen extraherar MID från URL:en i stället för att skicka en begäran till Adobe om ett nytt ID. ID-tjänstkoden på målsidan använder det MID som skickades för att spåra besökaren.
 
-På träffar från mobilwebbinnehållet kontrollerar du att parametern `mid` finns i varje träff och att det här värdet matchar `mid` som skickas av appkoden.
+På träffar från det mobila webbinnehållet kontrollerar du att `mid` parametern finns för varje träff och att det här värdet matchar `mid` som skickas av programkoden.
 
 ## Felsöka besöksspårning {#section_C070AE85E3CE4E9893FD4F40E73F2C92}
 
@@ -70,11 +70,11 @@ Kontrollera att Adobe SDK som paketeras i det överordnade programmet är versio
 
 Kontrollera följande:
 
-* URL-strängen som används för att öppna webbvyn genererades av `[ADBMobile visitorAppendToURL:]`
+* URL-strängen som används för att öppna webbvyn genererades av  `[ADBMobile visitorAppendToURL:]`
 
 * Adobe-ID:n är kodade.
 
-   Kontrollera att ID:n har lagts till i den URL som öppnas genom att leta efter frågeparametern `adobe_mc`.
+   Kontrollera att ID:n har lagts till i den URL som öppnas genom att leta efter `adobe_mc` frågeparameter.
 
 ### Mitt &quot;mitt&quot; är inte identiskt i min app med min webbvy.*
 
@@ -86,6 +86,6 @@ Kontrollera följande:
 
    Strängen ska innehålla `adobe_mc="SAMPLE_ID_DATA"` där `"SAMPLE_ID_DATA"` innehåller ID:n som genereras i Adobe Mobile SDK.
 
-* `VisitorAPI.js` är version 1.7.0 eller senare.
+* The `VisitorAPI.js` är version 1.7.0 eller senare.
 
 Om dessa felsökningssteg inte löser dina problem kan du kontakta Adobe Client Care; vara redo att dela ett exempelprogram och den tillhörande webbplatsen så att Adobe kan validera implementeringen.

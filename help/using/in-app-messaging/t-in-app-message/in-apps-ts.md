@@ -1,12 +1,12 @@
 ---
 description: Den här informationen kan hjälpa dig att felsöka meddelanden i appen.
 keywords: mobil
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Felsöka meddelanden i appen
 topic-fix: Metrics
 uuid: 8813e8d8-bb1e-46ad-83cd-98ae68f73ce6
 exl-id: 6be5beef-3bde-49f8-9ec0-c5d32bd43045
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '623'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Om du har uppfyllt alla krav för meddelanden i appen, men meddelanden inte visa
 
 * Kontrollera att SDK är version 4.2 eller senare och är korrekt konfigurerat.
 
-* Kontrollera att du har ett [Meddelandeavsnitt](/help/using/in-app-messaging/in-app-messaging.md) i konfigurationen (den hämtade JSON-filen) eller en fjärrslutpunkt för Meddelanden, så att den kan hämtas från dynamisk tagghantering.
+* Se till att du har en [Meddelanden](/help/using/in-app-messaging/in-app-messaging.md) -avsnittet i din konfiguration (den hämtade JSON-filen) eller har en Messages-fjärrslutpunkt, så att den kan hämtas från dynamisk tagghantering.
 
 ## Mitt helskärmsmeddelande i Android visas inte. Jag använder rätt SDK, konfiguration och mina utlösare uppfylls.
 
@@ -35,15 +35,15 @@ Kontrollera att den lokala meddelandemottagaren har deklarerats i ditt manifest.
 
 ## Är meddelandet live?
 
-Kontrollera listvyn i kolumnen **[!UICONTROL Status]** på sidan Hantera meddelanden i appen och kontrollera om meddelandet är live.
+Kontrollera listvyn i dialogrutan **[!UICONTROL Status]** på sidan Hantera meddelanden i appen och verifiera om meddelandet är live.
 
-## Titta på *visa en gång*, *visa alltid*, *visa offline*-inställningar på målsidan.
+## Titta på *visa en gång*, *visa alltid*, *visa offline* på målgruppssidan.
 
-Kontrollera att de här inställningarna är korrekta. Granska alternativen på fliken **[!UICONTROL Trigger]** på sidan Målgrupp, där du kan ange hur ofta meddelandet ska visas.
+Kontrollera att de här inställningarna är korrekta. Granska alternativen på sidan Målgrupp **[!UICONTROL Trigger]** där du kan ange hur ofta meddelandet ska visas.
 
 ## Om starthändelse används som utlösare..
 
-Starta bara en ny session. Information om när en session börjar finns i `lifecycleTimeout` i filen [ADBMomobile JSON config](/help/ios/configuration/json-config/json-config.md).
+Starta bara en ny session. Information om när en session börjar finns i `lifecycleTimeout` i [ADBMomobile JSON-konfiguration](/help/ios/configuration/json-config/json-config.md) -fil.
 
 ## Jag har uppdaterat mitt meddelande på distans, men min app visar fortfarande det gamla meddelandet.
 
@@ -69,7 +69,7 @@ Här följer de exakta placerings- och storleksreglerna för varje orientering:
 
 * **Liggande**, där bilden skalas till 100 % av enhetens höjd, är bredden 75 % av enheten och med en toning till höger.
 
-   Om du har problem med helskärmsmallen kan du hämta och använda den anpassade HTML-mallen. Mallen Anpassad HTML ger större flexibilitet för bilder och ger fullständig kontroll över mallen.
+   Om du har problem med helskärmsmallen kan du hämta och använda mallen Egna HTML. Mallen Egna HTML ger större flexibilitet för bilder och ger fullständig kontroll över mallen.
 
 ## Mina meddelanden återspeglar inte ändringar/uppdateringar som jag har gjort i användargränssnittet.
 

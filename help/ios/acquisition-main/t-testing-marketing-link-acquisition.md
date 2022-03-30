@@ -1,12 +1,12 @@
 ---
 description: Följande instruktioner hjälper er att skicka en kundvärvningskampanj via en Marketing Link som baseras på ett enhets fingeravtryck.
 keywords: android;bibliotek;mobil;sdk
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Testa Marketing Link-förvärv
 topic-fix: Developer and implementation
 uuid: 69503e01-182d-44c6-b0fb-e1c012ffa3bd
 exl-id: 2fb02b36-172e-4c16-9ef9-13f8288ab8a4
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '539'
 ht-degree: 0%
@@ -17,8 +17,8 @@ ht-degree: 0%
 
 Följande instruktioner hjälper er att skicka en kundvärvningskampanj via en Marketing Link som baseras på ett enhets fingeravtryck.
 
-1. Slutför de nödvändiga uppgifterna i [Anskaffning av mobilapp](/help/ios/acquisition-main/acquisition.md).
-1. I användargränssnittet för Adobe Mobile Services klickar du på **[!UICONTROL Marketing Links Builder]** och skapar en länk för kundvärvning som anger App Store som mål för iOS-enheter.
+1. Slutför nödvändiga uppgifter i [Mobile App Acquisition](/help/ios/acquisition-main/acquisition.md).
+1. I användargränssnittet för Mobile-tjänster i Adobe klickar du på **[!UICONTROL Marketing Links Builder]** och generera en förvärvslänks-URL som anger App Store som mål för iOS-enheter.
 
    Exempel:
 
@@ -43,13 +43,13 @@ Följande instruktioner hjälper er att skicka en kundvärvningskampanj via en M
 
    | Inställning | Värde |
    |--- |--- |
-   | förvärv | Servern ska vara `c00.adobe.com`. `appid` ska vara lika med   *`appid`* er förvärvslänk. |
+   | förvärv | Servern bör vara  `c00.adobe.com`. `appid` ska vara lika med  *`appid`* på er förvärvslänk. |
    | analys | `referrerTimeout` ska ha ett värde som är större än 0. |
 
-1. (Villkorligt) Om SSL-inställningen i appens konfigurationsfil är `false`, ska du uppdatera din förvärvslänk så att den använder HTTP-protokollet i stället för HTTPS.
+1. (Villkorligt) Om SSL-inställningen i appens konfigurationsfil är `false`uppdaterar du din förvärvslänk så att HTTP-protokollet används i stället för HTTPS.
 1. Klicka på den genererade länken från den mobila enhet som du vill installera appen på.
 
-   Adobe-servrar (`c00.adobe.com`) lagrar fingeravtrycket och omdirigerar till App Store. Appen behöver inte laddas ned för testning.
+   Adobe (`c00.adobe.com`) lagra fingeravtrycket och omdirigera till App Store. Appen behöver inte laddas ned för testning.
 1. Starta programmet första gången från samma mobila enhet som du använde i steg 6.
 
    Du kan ta bort och installera programmet igen om det behövs.
@@ -74,15 +74,15 @@ Följande instruktioner hjälper er att skicka en kundvärvningskampanj via en M
 
    * `Analytics - Unable to parse acquisition service response (no contextData parameter in response)`
 
-      Det finns ingen `contextData`-parameter i svaret.
+      Det finns inga `contextData` parametern i svaret.
 
    * `Analytics - Acquisition referrer data was not complete, ignoring`
 
-      `a.referrer.campaign.name` ingår inte i  `contextData`.
+      `a.referrer.campaign.name` ingår inte i `contextData`.
 
    * `Analytics - Acquisition referrer timed out`
 
-      Det gick inte att hämta svaret i den tid som är definierad av `referrerTimeout`. Öka värdet och försök igen. Du bör också kontrollera att du har öppnat förvärvningslänken innan du installerar appen och att du använder samma nätverk när du klickar på URL:en och öppnar appen.
+      Det gick inte att hämta svaret inom den tid som definieras av `referrerTimeout`. Öka värdet och försök igen. Du bör också kontrollera att du har öppnat förvärvningslänken innan du installerar appen och att du använder samma nätverk när du klickar på URL:en och öppnar appen.
 
 Kom ihåg följande information:
 
@@ -92,7 +92,7 @@ Kom ihåg följande information:
 
 * Med HTTP-övervakningsverktyg kan träffar som skickas från appen övervakas för att bekräfta förvärvsattribueringen.
 
-   Du bör se en `/v3/<appid>/start`-begäran och en `/v3/<appid>/end`-begäran som skickas till förvärvsservern.
+   Du borde se en `/v3/<appid>/start` begäran och en `/v3/<appid>/end` begäran som skickas till förvärvsservern.
 
 * Variationer i användaragenten som skickas kan göra att attribueringen misslyckas.
 

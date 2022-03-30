@@ -1,12 +1,12 @@
 ---
 description: Rapporten Banner Metrics visar en solbränsvisualisering för dina befintliga data. Den här rapporten är endast tillgänglig för Digital Publishing Suite-kunder (DPS).
 keywords: mobil
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Banderollmått
 topic-fix: Metrics
 uuid: 50638c55-f10d-43d7-8d12-e48908572766
 exl-id: 0383e23f-579e-4177-922d-71f193a3c606
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Banderollmått {#banner-metrics}
 
-Rapporten **[!UICONTROL Banner Metrics]** visar en solbränsvisualisering för dina befintliga data. Den här rapporten är endast tillgänglig för Digital Publishing Suite-kunder (DPS).
+The **[!UICONTROL Banner Metrics]** rapporten visar en solbränsvisualisering för dina befintliga data. Den här rapporten är endast tillgänglig för Digital Publishing Suite-kunder (DPS).
 
 ![](assets/dps_banner_name.png)
 
@@ -27,4 +27,4 @@ Som standard visas följande mått i den här rapporten:
 * **[!UICONTROL Banner Click]**, vilket är antalet gånger som användare klickade på banderollen.
 * **[!UICONTROL Banner Impressions]**, vilket är antalet gånger en banderoll visades (eller var synlig) på en webbläsarsida.
 
-Den här rapporten liknar **[!UICONTROL Technology]**-rapporten. För information om navigering och användning av solbränsrapporter. lägga till indelningar och mätvärden, skapa målaktiviteter, skapa klisterfilter och dela rapporter, se [Teknik](/help/using/usage/reports-technology.md). Informationen i det här avsnittet kan användas för att anpassa **[!UICONTROL Banner Metrics]**-rapporten.
+Den här rapporten liknar **[!UICONTROL Technology]** rapport. För information om navigering och användning av solbränsrapporter. lägga till indelningar och mätvärden, skapa målaktiviteter, skapa klisterfilter och dela rapporter, se [Teknik](/help/using/usage/reports-technology.md). Informationen i det här avsnittet kan användas för att anpassa **[!UICONTROL Banner Metrics]** rapport.

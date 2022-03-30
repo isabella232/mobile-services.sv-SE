@@ -1,11 +1,11 @@
 ---
 description: Adobe Experience Platform Identity Service tillhandahåller ett universellt besökar-ID för alla Experience Cloud-lösningar. ID-tjänsten krävs av Analytics för Target, hjärtslag för video och framtida integreringar med Experience Cloud.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Experience Cloud ID-konfiguration
 topic-fix: Developer and implementation
 uuid: 8ebdf2bf-c581-448f-9542-f99a19784fe7
 exl-id: 97dc6768-bf31-4a0d-a460-9caf9ecda5fb
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '233'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Adobe Experience Platform Identity Service tillhandahåller ett universellt bes�
 
 >[!TIP]
 >
->Du behöver inte fylla i detta ID om du inte använder Adobe Experience Platform identitetstjänst. Mer information finns i [Adobe Experience Platform identitetstjänst](https://experienceleague.adobe.com/docs/id-service/using/home.html).
+>Du behöver inte fylla i detta ID om du inte använder Adobe Experience Platform identitetstjänst. Mer information finns i [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html).
 
 >[!IMPORTANT]
 >
@@ -28,7 +28,7 @@ Så här aktiverar du Experience Cloud-ID:
 
 1. Lägg till biblioteket i ditt projekt och implementera livscykeln.
 
-   Mer information finns i *Lägg till SDK- och konfigurationsfilen i IntelliJ IDEA- eller Eclipse-projektet* i [Core-implementering och livscykel](/help/android/getting-started/dev-qs.md).
+   Mer information finns i *Lägg till SDK- och Config-filen i IntelliJ IDEA- eller Eclipse-projektet* in [Kärnimplementering och livscykel](/help/android/getting-started/dev-qs.md).
 
 1. Importera biblioteket:
 
@@ -36,7 +36,7 @@ Så här aktiverar du Experience Cloud-ID:
    import com.adobe.mobile.*;
    ```
 
-1. Kontrollera att `ADBMobileConfig.json`-filen innehåller `marketingCloudorg`:
+1. Verifiera att `ADBMobileConfig.json` filen innehåller `marketingCloudorg`:
 
    ```js
    "marketingCloud" : { 
@@ -54,6 +54,6 @@ Så här aktiverar du Experience Cloud-ID:
    >
    >Du måste inkludera `@AdobeOrg`.
 
-   Om dessa ID:n inte har konfigurerats hämtar du en uppdaterad `ADBMobileConfig.json`-fil från Adobe Mobile-tjänster. Mer information finns i [Innan du startar](/help/android/getting-started/requirements.md).
+   Om dessa ID:n inte har konfigurerats hämtar du en uppdaterad `ADBMobileConfig.json` fil från Adobe Mobile-tjänster. Mer information finns i [Innan du börjar](/help/android/getting-started/requirements.md).
 
 När konfigurationen är klar genereras ett Experience Cloud-ID som ingår i alla träffar. Andra ID:n, till exempel anpassade och automatiskt genererade ID:n, fortsätter att skickas med varje träff.

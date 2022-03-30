@@ -1,12 +1,12 @@
 ---
 description: Den här informationen hjälper er att anpassa de inbyggda rapporterna genom att lägga till ytterligare serier (mätvärden) eller appar i olika rapportsviter för att jämföra data.
 keywords: mobil
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Lägg till serier (mått) i rapporter
 topic-fix: Reports,Metrics
 uuid: 84fdfb1f-70e6-4c02-9b3b-526e9c924f74
 exl-id: 1b1356c6-7f62-4b88-996a-09ed33b19c9d
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '269'
 ht-degree: 2%
@@ -19,9 +19,9 @@ Den här informationen hjälper er att anpassa de inbyggda rapporterna genom att
 
 >[!IMPORTANT]
 >
->Mätvärden för mobilappar finns också i marketing reports and analytics, ad hoc-analyser, data warehouse och andra analysrapporteringsgränssnitt. Om det inte finns någon nedbrytning- eller rapporttyp i Adobe Mobile kan den genereras med ett annat rapporteringsgränssnitt.
+>Mobile appstatistik finns också i marketing reports and analytics, ad hoc-analyser, data warehouse och andra analysrapporteringsgränssnitt. Om det inte finns någon nedbrytning- eller rapporttyp i Adobe Mobile kan den genereras med ett annat rapporteringsgränssnitt.
 
-I det här exemplet anpassar vi **[!UICONTROL Users & Sessions]**-rapporten, men instruktionerna kan gälla för alla rapporter.
+I det här exemplet anpassar vi **[!UICONTROL Users & Sessions]** -rapport, men instruktionerna kan gälla för alla rapporter.
 
 1. Öppna appen och klicka på **[!UICONTROL Usage]** > **[!UICONTROL Users & Sessions]**.
 
@@ -33,9 +33,9 @@ I det här exemplet anpassar vi **[!UICONTROL Users & Sessions]**-rapporten, men
 
    ![Stegresultat](assets/customize2.png)
 
-1. Bläddra nedåt och klicka på **[!UICONTROL Add Series]**.
+1. Bläddra nedåt och klicka **[!UICONTROL Add Series]**.
 
-   Seriens namn fylls i med samma namn som den sista serien i listan. I föregående bild är den senaste serien **[!UICONTROL App Store Downloads]**, så en ny serie läggs till och har även namnet **[!UICONTROL App Store Downloads]**.
+   Seriens namn fylls i med samma namn som den sista serien i listan. I föregående bild är den senaste serien **[!UICONTROL App Store Downloads]**, så en ny serie läggs till och får även namnet **[!UICONTROL App Store Downloads]**.
 
 1. Gör något av följande:
 
@@ -49,5 +49,5 @@ I det här exemplet anpassar vi **[!UICONTROL Users & Sessions]**-rapporten, men
 
 1. (Villkorligt) Lägg till filter i den nya serien.
 
-   Mer information finns i [Lägga till filter i rapporter](/help/using/usage/reports-customize/t-reports-customize.md).
-1. Klicka på **[!UICONTROL Update]** och **[!UICONTROL Run]**.
+   Mer information finns i [Lägg till filter i rapporter](/help/using/usage/reports-customize/t-reports-customize.md).
+1. Klicka **[!UICONTROL Update]** och **[!UICONTROL Run]**.

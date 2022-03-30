@@ -1,12 +1,12 @@
 ---
 description: Du kan skapa marknadsföringslänkar för att få nya mobilappsanvändare direkt genom att konfigurera URL-parametrarna manuellt.
 keywords: mobil
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Skapa förvärvslänkar manuellt
 topic-fix: Metrics
 uuid: d7709203-f793-4982-adaa-9c3c914aca2b
 exl-id: aef9fe3e-32dc-4ec0-9eda-f64cc5e486a3
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '471'
 ht-degree: 0%
@@ -19,13 +19,13 @@ Du kan skapa marknadsföringslänkar för att få nya mobilappsanvändare direkt
 
 >[!IMPORTANT]
 >
->Den här funktionen kräver SDK version 4.6 eller senare. Mer information finns i [Förutsättningar för anskaffning](/help/using/acquisition-main/c-acquisition-prerequisites.md).
+>Den här funktionen kräver SDK version 4.6 eller senare. Mer information finns i [Förutsättningar för värvning](/help/using/acquisition-main/c-acquisition-prerequisites.md).
 
 I följande diagram visas komponenterna i en manuellt byggd spårningslänk och de olika URL-parametrar som du måste konfigurera när du skapar hämtningslänkar manuellt.
 
 ![](assets/acquisition_url.png)
 
-Den här länken är konfigurerad för att utföra en plattformsspecifik omdirigering till Google Play Store eller Apple App Store för en mobilapp. Om målet inte kan fastställas har standardarkivet angetts till Apple App Store. När appen har installerats kopplas den anpassade kontextnyckeln `my.custom.key:test` till installationsträdet för Analytics.
+Den här länken är konfigurerad för att utföra en plattformsspecifik omdirigering till Google Play Store eller Apple App Store för en mobilapp. Om målet inte kan fastställas har standardbutiken angetts till Apple App Store. När appen har installerats `my.custom.key:test` den anpassade kontextnyckeln är kopplad till Analytics Install Hit.
 
 Om du vill skapa länkar manuellt använder du följande URL-format:
 
@@ -37,14 +37,14 @@ Om du vill skapa länkar manuellt använder du följande URL-format:
 
 För iOS måste du använda rätt protokoll:
 
-* Använd **HTTP** om du använder iOS SDK före version 4.7.0 eller om du använder iOS SDK 4.7.0 eller senare och om **[!UICONTROL Use HTTPS]** är **inte** inte är markerat på sidan Hantera programinställningar.
-* Använd **HTTPS** om du använder iOS SDK 4.7.0 eller senare och **[!UICONTROL Use HTTPS]** **är** markerat på sidan Hantera programinställningar.
+* Använd **HTTP** om du använder iOS SDK före version 4.7.0, eller om du använder iOS SDK 4.7.0 eller senare, och om **[!UICONTROL Use HTTPS]** är **not** på sidan Hantera appinställningar.
+* Använd **HTTPS** om du använder iOS SDK 4.7.0 eller senare och **[!UICONTROL Use HTTPS]** **är** på sidan Hantera appinställningar.
 
 Om följande villkor är uppfyllda:
 
-* `{mobile-services-app-hash}` matchar programmets identifierare i  `acquisition:appid ` konfigurationsfilen.
+* `{mobile-services-app-hash}` matchar program-ID:t i konfigurationen `acquisition:appid ` -fil.
 
-   Du hittar `{mobile-services-app-hash}` på sidan Hantera appinställningar under Alternativ för SDK-värvning i fältet Spårnings-ID.
+   Du kan hitta `{mobile-services-app-hash}` på sidan Hantera appinställningar under Alternativ för SDK för förvärv i fältet Spårnings-ID.
 
    ![](assets/tracking-id.png)
 
@@ -54,13 +54,13 @@ Här är parameterlistan:
 
 * **`a_g_id`**
 
-   Appidentifierare för Google Play Store.
+   Google Play Store App Identifier.
 
    * Exempelvärde: `com.adobe.beardcons`
 
 * **`a_g_lo`**
 
-   Google Play Store - Åsidosättning av språkområde.
+   Åsidosättning av språkområde i Google Play Store.
 
    * Exempelvärde: `ko`
 
@@ -90,7 +90,7 @@ Här är parameterlistan:
 
 * **`ctx*`**
 
-   Tangenter som har prefixet `ctx` finns i kontextdata för den resulterande startträffen.
+   Tangenter med prefix `ctx` kommer att visas i kontextdata för den resulterande startträffen.
 
    * Exempelvärde: `ctxmy.custom.key=myValue`
 

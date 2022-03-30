@@ -1,11 +1,11 @@
 ---
-description: Här är en lista över de Audience Manager-metoder som finns i iOS-biblioteket.
-solution: Experience Cloud,Analytics
+description: Här är en lista över de Audience Manager-metoder som finns i iOS bibliotek.
+solution: Experience Cloud Services,Analytics
 title: Audience Manager-metoder
 topic-fix: Developer and implementation
 uuid: 97658bd6-4c4f-4875-abe9-36dad4ec8bae
 exl-id: b843a52f-2b83-4e19-9f43-895bd582d4ef
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 24%
@@ -14,15 +14,15 @@ ht-degree: 24%
 
 # Audience Manager-metoder {#audience-manager-methods}
 
-Här är en lista över de Audience Manager-metoder som finns i iOS-biblioteket.
+Här är en lista över de Audience Manager-metoder som finns i iOS bibliotek.
 
-SDK har för närvarande stöd för flera Adobe Experience Cloud-lösningar, inklusive Analytics, Target, Audience Manager och Adobe Experience Platform Identity Service. Metoderna har prefixet enligt lösningen och Audience Manager-metoderna har prefixet `audience`.
+SDK har för närvarande stöd för flera Adobe Experience Cloud-lösningar, inklusive Analytics, Target, Audience Manager och Adobe Experience Platform Identity Service. Metoderna prefixeras enligt lösningen och Audience Manager-metoderna prefixas med &quot; `audience`.&quot;
 
 Om Audience Manager är konfigurerat i JSON-filen skickas en signal som innehåller livscykelvärden med `application:didFinishLaunchingWithOptions:`.
 
 * **publikVisitorProfil**
 
-   Returnerar den besökarprofil som senast hämtades och, om ingen signal har skickats, returnerar `null`. Besökarprofilen sparas i `NSUserDefaults` så att du enkelt kommer åt den när du startar appen flera gånger.
+   Returnerar den besökarprofil som senast hämtades och, om ingen signal har skickats, returneras `null`. Besökarprofilen sparas i `NSUserDefaults` för enkel åtkomst när du startar programmet flera gånger.
 
    * Här är syntaxen för den här metoden:
 
@@ -72,8 +72,8 @@ Om Audience Manager är konfigurerat i JSON-filen skickas en signal som innehål
 
    Anger DPID och DPUID. När det är inställt läggs båda till för varje signal.
 
-   * **Data Provider ID (DPID)** är det data partner-ID som tilldelas av Audience Manager.
-   * **Dataleverantörens unika användar-ID (DPUID)** är dataleverantörens unika ID för användaren.
+   * The **Data Provider ID (DPID)** är det datapartners ID som tilldelas av Audience Manager.
+   * The **Dataproviderns unika användar-ID (DPUID)** är dataleverantörens unika ID för användaren.
 
       >[!IMPORTANT]
       >

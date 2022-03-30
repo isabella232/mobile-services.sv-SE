@@ -1,11 +1,11 @@
 ---
 description: Den här informationen hjälper dig att använda ADBMobil.json-konfigurationsfilen.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: ADBMomobile JSON-konfiguration
 topic-fix: Developer and implementation
 uuid: d9708d59-e30a-4f6c-ab1b-d9499855d0c2
 exl-id: e3515de3-3aec-4dd0-996d-9c561ad1b1de
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '1708'
 ht-degree: 8%
@@ -14,7 +14,7 @@ ht-degree: 8%
 
 # ADBMomobile JSON-konfiguration {#adbmobile-json-config}
 
-Den här informationen hjälper dig att använda konfigurationsfilen `ADBMobile.json`.
+Den här informationen hjälper dig att använda `ADBMobile.json` config-fil.
 
 ## ADBMobileConfig.json, referens till konfigurationsfil {#section_5AD4EDF87E304980B4AC4A5657FDA8B9}
 
@@ -22,13 +22,13 @@ Samma config-fil kan användas för appen på flera plattformar:
 
 >[!TIP]
 >
->På **iOS** kan `ADBMobileConfig.json`-filen placeras var som helst där den är tillgänglig i paketet.
+>På **iOS**, `ADBMobileConfig.json` filen kan placeras var som helst där den är tillgänglig i ditt paket.
 
 * **förvärv**
 
    Möjliggör förvärv av mobilappar.
 
-   Om det här avsnittet saknas aktiverar du förvärvet av mobilappar och hämtar SDK-konfigurationsfilen igen. Mer information finns i *referenceTimeout* nedan.
+   Om det här avsnittet saknas aktiverar du förvärvet av Mobile App och hämtar SDK-konfigurationsfilen igen. Mer information finns i *referrerTimeout* nedan.
 
    * `server` - Förvärvsserver som kontrolleras vid den första starten för en förvärvshänvisningsprogram.
    * `appid` - Genererat ID som unikt identifierar den här appen på förvärvsservern.
@@ -36,7 +36,7 @@ Samma config-fil kan användas för appen på flera plattformar:
 
 * **analyticsForwardingEnabled**
 
-   Egenskapen i `audienceManager`-objektet. Om `Audience Manager` är konfigurerad och `analyticsForwardingEnabled` är `true` vidarebefordras all Analytics-trafik till Audience Manager. Standardvärdet är `false`.
+   Egenskapen i `audienceManager` -objekt. If `Audience Manager` är konfigurerad och `analyticsForwardingEnabled` är inställd på `true`, vidarebefordras all Analytics-trafik till Audience Manager. Standardvärdet är `false`.
 
    * Minsta SDK-version: 4.8.0
 
@@ -46,11 +46,11 @@ Samma config-fil kan användas för appen på flera plattformar:
 
    Sessionsinformationsträffar består för närvarande av krascher och sessionslängd och kan aktiveras eller inaktiveras.
 
-   * Om du anger värdet `false` är träffarna **inaktiverade**.
+   * Om du anger värdet till `false`, träffar är **inaktiverad**.
 
       SDK:n återgår till det beteende som gällde före 4.1, där sessionsinformationen för föregående session sammanfogades med den första träffen i efterföljande session. Adobe SDK bifogar även sessionsinformationen till den aktuella livscykeln, vilket gör att det inte går att skapa ett uppblåst besök. Eftersom antalet uppblåsta besök inte längre skapas sker en omedelbar minskning av antalet besök.
 
-   * Om du inte anger något värde är standardvärdet `true` och träffarna är **aktiverade**.
+   * Om du inte anger något värde används standardvärdet `true`och träffar är **aktiverad**.
 
       När träffarna är aktiverade uppdaterar Adobe SDK sessionsinformationen till en sekund efter den sista träffen i föregående session. Detta innebär att krasch- och sessionsdata korrelerar med rätt datum då de inträffade. En bieffekt av detta är att SDK kan skapa ett besök för den efterdaterade träffen. En träff är inaktuell vid varje ny programstart.
 
@@ -62,7 +62,7 @@ Samma config-fil kan användas för appen på flera plattformar:
 
 * **batchLimit**
 
-   Tröskelvärde för hur många träffar som ska skickas i efterföljande anrop. Om till exempel `batchLimit` är 10 sparas varje träff före den 10:e träffen i kön. När den 10:e träffen kommer skickas alla 10 träffar i följd.
+   Tröskelvärde för hur många träffar som ska skickas i efterföljande anrop. Om `batchLimit` är inställd på 10, så att varje träff före den 10:e träffen lagras i kön. När den 10:e träffen kommer skickas alla 10 träffar i följd.
 
    * Standardvärdet är `0`, vilket betyder att gruppering inte är aktiverat.
    * Kräver `offlineEnabled = true`.
@@ -70,7 +70,7 @@ Samma config-fil kan användas för appen på flera plattformar:
 
 * **charset**
 
-   Definierar den teckenuppsättning som du använder för data som skickas till Analytics. Teckenuppsättningen används för att konvertera inkommande data till UTF-8 för lagring och rapportering. Mer information finns i [charSet](https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/charset.html)-variabeln i Adobe Analytics-dokumentationen.
+   Definierar den teckenuppsättning som du använder för data som skickas till Analytics. Teckenuppsättningen används för att konvertera inkommande data till UTF-8 för lagring och rapportering. Mer information finns i [charSet](https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/charset.html) i Adobe Analytics-dokumentationen.
 
    * Minsta SDK-version: 4.0
 
@@ -86,17 +86,17 @@ Samma config-fil kan användas för appen på flera plattformar:
 
 * **coopUnsafe**
 
-   För medlemmar i Device Co-op som kräver det här värdet inställt på `true` måste du arbeta med Co-op-teamet för att begära en blockeringslista-flagga på ditt Device Co-op-konto. Det finns ingen självbetjäningsväg för att aktivera dessa flaggor.
+   För Device Co-op-medlemmar som kräver det här värdet anges till `true`måste du arbeta med Co-op-teamet för att begära en blockeringslista-flagga på ditt Device Co-op-konto. Det finns ingen självbetjäningsväg för att aktivera dessa flaggor.
 
    Kom ihåg följande information:
 
-   * När `coopUnsafe` är inställt på `true` läggs `coop_unsafe=1` alltid till i Audience Manager och besökar-ID-träffar.
-   * Om du aktiverar vidarebefordran på serversidan för Analytics till Audience Manager visas även `coop_unsafe=1` om Analytics-träffar.
+   * När `coopUnsafe` är inställd på `true`, `coop_unsafe=1` läggs alltid till i Audience Manager och besökar-ID:n.
+   * Om du aktiverar vidarebefordran på serversidan för Analytics till Audience Manager visas även `coop_unsafe=1` i Analytics-träffar.
 
    Här är ytterligare information:
 
    * Minsta SDK-version: 4.16.1
-   * Den booleska egenskapen för `marketingCloud`-objektet som, när det är inställt på `true`, gör att enheten avanmäls från Experience Cloud Device Co-Op.
+   * Den booleska egenskapen i `marketingCloud` objekt som, när de anges till `true`, gör att enheten väljs ut från Experience Cloud Device Co-Op.
    * Standardvärdet är `false`.
    * Den här inställningen används **endast** för Device Co-op-etablerade kunder.
 
@@ -104,7 +104,7 @@ Samma config-fil kan användas för appen på flera plattformar:
 
 * **environmentId**
 
-   ID:t för miljön som du vill använda. Du kan ange ett giltigt ID (`environmentId=8`), och om `environmentId` inte inkluderas används standardproduktionsmiljön.
+   ID:t för miljön som du vill använda. Du kan ange ett giltigt ID (`environmentId=8`), och om `environmentId` ingår inte, standardproduktionsmiljön används.
 
    * Minsta SDK-version: 4.14
 
@@ -118,7 +118,7 @@ Samma config-fil kan användas för appen på flera plattformar:
 
 * **meddelanden**
 
-   Inställningarna för meddelanden i appen definieras automatiskt av Adobe Mobile-tjänster. Mer information finns i avsnittet *Meddelandebeskrivning* nedan.
+   Inställningarna för meddelanden i appen definieras automatiskt av Adobe Mobile-tjänster. Mer information finns i *Meddelandebeskrivning* nedan.
 
    * Minsta SDK-version: 4.2
 
@@ -128,10 +128,10 @@ Samma config-fil kan användas för appen på flera plattformar:
 
    Här är viktig information:
 
-   * Om tidsstämplar är aktiverade i rapportsviten måste `offlineEnabled` konfigurationsegenskapen *vara* vara true.
-   * Om rapportsviten inte är tidsstämpelaktiverad måste `offlineEnabled`-konfigurationsegenskapen *vara* vara false.
+   * Om tidsstämplar är aktiverade i rapportsviten kan du `offlineEnabled` konfigurationsegenskap *måste* vara sant.
+   * Om rapportsviten inte är tidsstämpel aktiverad kan du `offlineEnabled` konfigurationsegenskap *måste* vara falskt.
 
-      Om detta inte är korrekt konfigurerat går data förlorade. Om du är osäker på om en rapportsserie är tidsstämplad eller aktiverad kan du kontakta kundtjänst eller hämta konfigurationsfilen från Adobe Mobile-tjänster. Om du för närvarande rapporterar AppMeasurement-data till en rapportserie som även samlar in data från JavaScript, kan du behöva skapa en separat rapportserie för mobildata eller inkludera en anpassad tidsstämpel för alla JavaScript-träffar som använder variabeln `s.timestamp`.
+      Om detta inte är korrekt konfigurerat går data förlorade. Om du är osäker på om en rapportsserie är tidsstämplad eller aktiverad kan du kontakta kundtjänst eller hämta konfigurationsfilen från Adobe Mobile-tjänster. Om du för närvarande rapporterar AppMeasurement-data till en rapportserie som även samlar in data från JavaScript, kan du behöva skapa en separat rapportserie för mobildata eller inkludera en anpassad tidsstämpel för alla JavaScript-träffar som använder `s.timestamp` variabel.
 
    * Minsta SDK-version: 4.0
 
@@ -143,7 +143,7 @@ Samma config-fil kan användas för appen på flera plattformar:
 
 * **poi**
 
-   Varje POI-array innehåller POI-namnet, latituden, longituden och radien (i meter) för punktens område. POI-namnet kan vara vilken sträng som helst. När ett `trackLocation`-anrop skickas och de aktuella koordinaterna finns i en definierad POI fylls en kontextdatavariabel i och skickas med `trackLocation`-anropet.
+   Varje POI-array innehåller POI-namnet, latituden, longituden och radien (i meter) för punktens område. POI-namnet kan vara vilken sträng som helst. När en `trackLocation` anropet skickas, om de aktuella koordinaterna finns i en definierad POI fylls en kontextdatavariabel i och skickas med `trackLocation` ring.
 
    * Minsta SDK-version: 4.0
 
@@ -156,13 +156,13 @@ Samma config-fil kan användas för appen på flera plattformar:
 
    >[!TIP]
    >
-   >Från och med version 4.2 definieras POI i gränssnittet för Adobe Mobile och synkroniseras dynamiskt till programkonfigurationsfilen. Synkroniseringen kräver inställningen `analytics.poi`:
+   >Från och med version 4.2 definieras POI i Adobe Mobile-gränssnittet och synkroniseras dynamiskt till programkonfigurationsfilen. Synkroniseringen kräver `analytics.poi` inställning:
 
    ```js
    "analytics.poi": "`https://assets.adobedtm.com/…/yourfile.json`",
    ```
 
-   Om den här inställningen inte är konfigurerad måste `ADBMobile.json`-filen uppdateras för att inkludera den här raden. Information om hur du hämtar en uppdaterad konfigurationsfil finns i [Innan du startar](/help/ios/getting-started/requirements.md).
+   Om den här inställningen inte är konfigurerad `ADBMobile.json` filen måste uppdateras för att den här raden ska ingå. Information om hur du hämtar en uppdaterad konfigurationsfil finns i [Innan du börjar](/help/ios/getting-started/requirements.md).
 
 * **återanslående**
 
@@ -176,14 +176,14 @@ Samma config-fil kan användas för appen på flera plattformar:
        "timeout": 0 //optional-number of seconds to wait before timingout.Defaultis2.}
    ```
 
-   Objektet `payload` i koden är en exempelnyttolast för en meddelandedefinition som skulle finnas i filen `ADBMobileConfig.json`. Mer information finns i [Eftersläpningar](/help/ios/analytics-main/postback/postback.md).
+   The `payload` -objektet i koden är en exempelnyttolast för en meddelandedefinition som skulle finnas i `ADBMobileConfig.json` -fil. Mer information finns i [Eftersläpning](/help/ios/analytics-main/postback/postback.md).
 
    * Minsta SDK-version: 4.6
 
 * **privacyDefault**
 
-   * För `optedin` skickas träffarna omedelbart.
-   * För `optedout` ignoreras träffarna.
+   * För `optedin`, skickas träffar omedelbart.
+   * För `optedout`, kommer träffar att försvinna.
    * För `optunknown`, om rapportsviten är tidsstämpelaktiverad, sparas träffar tills sekretessstatusen ändras till anmälan (träffar skickas) eller avanmälan (träffar ignoreras).
 
       Om rapportsviten inte är tidsstämpelaktiverad ignoreras träffar tills sekretessstatusen ändras till att anmäla sig.
@@ -234,9 +234,9 @@ Samma config-fil kan användas för appen på flera plattformar:
 
    Analytics- eller Audience Management-servern, baserad på den överordnade noden.
 
-   Den här variabeln ska fyllas i med serverdomänen, utan ett `https://`- eller `https://`-protokollprefix. Det här prefixet hanteras automatiskt av biblioteket och baseras på variabeln `ssl`.
+   Den här variabeln ska fyllas i med serverdomänen, utan en `https://` eller `https://` protokollprefix. Prefixet hanteras automatiskt av biblioteket och baseras på `ssl` variabel.
 
-   Om `ssl` är `true` skapas en säker anslutning till den här servern. Om `ssl` är `false` skapas en osäker anslutning till den här servern.
+   If `ssl` är `true`skapas en säker anslutning till den här servern. If `ssl` är `false`, en osäker anslutning görs till den här servern.
 
    >[!IMPORTANT]
    >
@@ -262,7 +262,7 @@ Samma config-fil kan användas för appen på flera plattformar:
        "timeout":0//optional-numberofsecondstowaitbeforetimingout.Defaultis2.} 
    ```
 
-   Objektet `payload` i koden är en provnyttolast för en meddelandedefinition som finns i filen `ADBMobileConfig.json`. Mer information finns i [Eftersläpningar](/help/ios/analytics-main/postback/postback.md).
+   The `payload` -objektet i koden är en exempelnyttolast för en meddelandedefinition som finns i `ADBMobileConfig.json` -fil. Mer information finns i [Eftersläpning](/help/ios/analytics-main/postback/postback.md).
 
    * Minsta SDK-version: 4.0
 
@@ -272,9 +272,9 @@ Samma config-fil kan användas för appen på flera plattformar:
 
    * Minsta SDK-version: 4.0
 
-## Exempel på `ADBMobileConfig.json`-fil {#section_52FA7C71A99147AFA9BE08D2177D8DA7}
+## Exempel `ADBMobileConfig.json` fil {#section_52FA7C71A99147AFA9BE08D2177D8DA7}
 
-Här följer ett exempel på en `ADBMobileConfig.json`-fil:
+Här är ett exempel `ADBMobileConfig.json` fil:
 
 ```js
 { 

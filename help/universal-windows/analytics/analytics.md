@@ -1,11 +1,11 @@
 ---
 description: När du har lagt till biblioteket i ditt projekt kan du göra alla anrop till Analytics-metoden var som helst i din app.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: 'Analytics '
 topic-fix: Developer and implementation
 uuid: c2cef3d3-77a7-4a8e-bbe4-3db10a77996a
 exl-id: cc96a7dd-ccc4-4914-8243-f3f160b75c21
-source-git-commit: 1fa6111d6bf1c2d36f15d2f037718646a035435a
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 1%
@@ -22,21 +22,21 @@ När du har lagt till biblioteket i ditt projekt kan du göra alla anrop till An
 
 ## Aktivera mobilappsrapporter i Analytics {#section_F2F9234009184F20BA36B5CDE872B424}
 
-Innan du lägger till kod bör du be Analytics Administrator att slutföra följande för att aktivera livscykelspårning för mobilappar. Detta garanterar att rapportsviten är redo att samla in mätvärden när ni börjar utveckla.
+Innan du lägger till kod bör du be Analytics Administrator att slutföra följande för att aktivera Mobile App Lifecycle tracking. Detta garanterar att rapportsviten är redo att samla in mätvärden när ni börjar utveckla.
 
 1. Öppna **[!UICONTROL Admin Tools]** > **[!UICONTROL Report Suites]** och välj en eller flera mobila rapportsviter.
 
 1. Klicka på **[!UICONTROL Edit Settings]** > **[!UICONTROL Mobile Management]** > **[!UICONTROL Mobile Application Reporting]**.
 
-   ![Mobilinställningar](assets/mobile-settings.png)
+   ![Mobile-inställningar](assets/mobile-settings.png)
 
 1. Klicka på **[!UICONTROL Enable Latest App Reports]**.
 
-   Du kan också klicka på **[!UICONTROL Enable Mobile Location Tracking]** eller **[!UICONTROL Enable Legacy Reporting and Attribution for background hits]**.
+   Du kan även klicka **[!UICONTROL Enable Mobile Location Tracking]** eller **[!UICONTROL Enable Legacy Reporting and Attribution for background hits]**.
 
    ![Aktivera livscykel](assets/enable-lifecycle.png)
 
-Livscykelmätvärden är nu klara att hämtas och Mobile Application Reports visas på **[!UICONTROL Reports]**-menyn i gränssnittet för marknadsföringsrapporter.
+Livscykelmätvärden är nu klara att hämtas, och Mobile Application Reports visas i **[!UICONTROL Reports]** i gränssnittet för marknadsföringsrapporter.
 
 ### Nya versioner
 
@@ -118,11 +118,11 @@ void App::OnLaunched(Windows::ApplicationModel::Activation::LaunchActivatedEvent
 }
 ```
 
-Om `CollectLifecycleData()` anropas två gånger under samma session rapporterar programmet en krasch vid varje anrop efter det första. SDK anger en flagga när programmet stängs som anger att det har avslutats. Om flaggan inte är inställd rapporterar `CollectLifecyleData()` en krasch.
+If `CollectLifecycleData()` anropas två gånger under samma session, rapporterar programmet en krasch vid varje anrop efter det första. SDK anger en flagga när programmet stängs som anger att det har avslutats. Om flaggan inte är inställd `CollectLifecyleData()` rapporterar en krasch.
 
 ## Event, props och eVars {#section_76EA6F5611184C5CAE6E62956D84D7B6}
 
-Om du har tittat på [SDK-metoder](/help/universal-windows/c-configuration/methods.md) undrar du antagligen var du ska ange händelser, eVars, props, heirs och lists. I version 4 kan du inte längre tilldela dessa typer av variabler direkt i appen. I stället använder SDK kontextdata och bearbetningsregler för att mappa appdata till Analytics-variabler för rapportering.
+Om du har tittat på [SDK-metoder](/help/universal-windows/c-configuration/methods.md), undrar du antagligen var du ska sätta händelser, eVars, props, heirs och lists. I version 4 kan du inte längre tilldela dessa typer av variabler direkt i appen. I stället använder SDK kontextdata och bearbetningsregler för att mappa appdata till Analytics-variabler för rapportering.
 
 Bearbetningsreglerna ger dig flera fördelar:
 
@@ -154,7 +154,7 @@ Vi har också hört att några av er namnger kontextdatanycklar med hjälp av eV
 "eVar1":"jimbo";
 ```
 
-Detta kan göra det *något* enklare när du utför en engångsmappning i bearbetningsregler, men du förlorar läsbarheten under felsökning och framtida koduppdateringar kan vara svårare. Vi rekommenderar i stället att du använder beskrivande namn för nycklar och värden:
+Det här kan göra det *lätt* enklare när du utför engångsmappning i bearbetningsregler, men du förlorar läsbarheten under felsökning och framtida koduppdateringar kan vara svårare. Vi rekommenderar i stället att du använder beskrivande namn för nycklar och värden:
 
 ```js
 "username":"jimbo";
@@ -178,17 +178,17 @@ Kontextdatavariabler som definierar inkrementer eller händelser kan ha värdet 
 
 ## Variabeln Produkter {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
 
-Om du vill ange *`products`* i mobil-SDK måste du använda en speciell syntax. Mer information finns i [Produktvariabel](/help/universal-windows/analytics/products.md).
+Till *`products`* i mobil-SDK måste du använda en särskild syntax. Mer information finns i [Variabeln Produkter](/help/universal-windows/analytics/products.md).
 
 ## (Valfritt) Aktivera spårning offline {#section_955B2A03EB854742BDFC4A0A3C287009}
 
-Om du vill lagra träffar när enheten är offline kan du aktivera offlinespårning i [SDK-metoden](/help/universal-windows/c-configuration/methods.md)-filen. Var noga med tidsstämpelkraven som beskrivs i konfigurationsfilreferensen innan du aktiverar spårning offline.
+Om du vill lagra träffar när enheten är offline kan du aktivera spårning offline i [SDK-metoder](/help/universal-windows/c-configuration/methods.md) -fil. Var noga med tidsstämpelkraven som beskrivs i konfigurationsfilreferensen innan du aktiverar spårning offline.
 
 ## Geografisk placering och intressepunkter {#section_BAD34A8DD013454DB355121316BD7FD4}
 
-Med geopositionering kan du mäta positionsdata (latitud/longitud) och fördefinierade intressepunkter. Varje `TrackLocation`-anrop skickar:
+Med geopositionering kan du mäta positionsdata (latitud/longitud) och fördefinierade intressepunkter. Varje `TrackLocation` samtal skickar:
 
-* Latitud/longitud och POI (om det finns i en POI definierad i konfigurationsfilen `ADBMobileConfig.json`).
+* Latitud/longitud och POI (om de ligger inom en POI som definieras i `ADBMobileConfig.json` konfigurationsfil).
 
    Dessa skickas till mobillösningsvariabler för automatisk rapportering.
 
@@ -203,7 +203,7 @@ var ADB = ADBMobile;
 ADB.Analytics.trackLocation(37.75345, -122.33207, null);
 ```
 
-Om följande POI definieras i konfigurationsfilen `ADBMobileConfig.json`:
+Om följande POI definieras i `ADBMobileConfig.json` config-fil:
 
 ```js
 "poi" : [ 
@@ -211,11 +211,11 @@ Om följande POI definieras i konfigurationsfilen `ADBMobileConfig.json`:
         ]
 ```
 
-När enhetsplatsen identifieras som inom en radie på 7 000 meter för den definierade punkten skickas en `a.loc.poi`-kontextdatavariabel med värdet `San Francisco` med `TrackLocation`-träffen. En `a.loc.dist`-kontextvariabel skickas med avståndet i meter från de definierade koordinaterna.
+När enhetens placering bedöms ligga inom en radie på 7000 meter från den definierade punkten, kan `a.loc.poi` kontextdatavariabel med värdet `San Francisco` skickas in med `TrackLocation` träff. An `a.loc.dist` sammanhangsvariabel skickas med avståndet i meter från de definierade koordinaterna.
 
 ## Livstid {#section_D2C6971545BA4D639FBE07F13EF08895}
 
-Livstidsvärdet gör att du kan mäta och inrikta dig på ett livstidsvärde för varje användare. Varje gång du skickar ett värde med `TrackLifetimeValueIncrease` läggs värdet till det befintliga värdet. Livstidsvärdet lagras på enheten och kan hämtas när som helst genom att anropa `GetLifetimeValue`. Detta kan användas för att lagra livstidsinköp, annonsvisningar, videokompletteringar, sociala resurser, fotoöverföringar och så vidare.
+Livstidsvärdet gör att du kan mäta och inrikta dig på ett livstidsvärde för varje användare. Varje gång du skickar in ett värde med `TrackLifetimeValueIncrease`läggs värdet till det befintliga värdet. Livstidsvärdet lagras på enheten och kan hämtas när som helst genom att anropa `GetLifetimeValue`. Detta kan användas för att lagra livstidsinköp, annonsvisningar, videokompletteringar, sociala resurser, fotoöverföringar och så vidare.
 
 ```js
 // Lifetime Value Example 

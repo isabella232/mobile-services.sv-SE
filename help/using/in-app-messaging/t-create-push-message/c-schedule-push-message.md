@@ -1,12 +1,12 @@
 ---
-description: I användargränssnittet för Adobe Mobile Services kan du schemalägga att ett push-meddelande ska levereras omedelbart, skickas senare och som en återkommande händelse. Dessa händelser kan schemaläggas varje dag, vecka eller månad.
+description: I Adobe Mobile Services-gränssnittet kan du schemalägga att ett push-meddelande ska levereras omedelbart, skickas senare och som en återkommande händelse. Dessa händelser kan schemaläggas varje dag, vecka eller månad.
 keywords: mobil
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Schemalägg push-meddelande
 topic-fix: Metrics
 uuid: 6810e27a-016f-4286-8fe2-9972d85fa326
 exl-id: 36f263a0-4aad-423e-bb78-9c532c98df19
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '642'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Schema: push-meddelanden{#schedule-push-message}
 
-I användargränssnittet för Adobe Mobile Services kan du schemalägga att ett push-meddelande ska levereras omedelbart, skickas senare och som en återkommande händelse. Dessa händelser kan schemaläggas varje dag, vecka eller månad.
+I Adobe Mobile Services-gränssnittet kan du schemalägga att ett push-meddelande ska levereras omedelbart, skickas senare och som en återkommande händelse. Dessa händelser kan schemaläggas varje dag, vecka eller månad.
 
 >[!TIP]
 >
@@ -34,11 +34,11 @@ Kom ihåg följande information:
 
 ## Före schemaläggning av återkommande push-meddelanden
 
-Du **måste** förstå följande information innan du schemalägger återkommande push-meddelanden:
+Du **måste** Läs mer om följande information innan du schemalägger återkommande push-meddelanden:
 
-* Vilka alternativ som visas i listrutan **[!UICONTROL Repeat]** beror på vilket datum du skrev eller valde.
+* Alternativen som visas i **[!UICONTROL Repeat]** beror på vilket datum du skrev eller valde.
 
-   Om du t.ex. skrev `Saturday, October 7` visas följande alternativ:
+   Om du t.ex. skrev `Saturday, October 7`visas följande alternativ:
 
    * **[!UICONTROL Never]**
    * **[!UICONTROL Every day]**
@@ -48,28 +48,28 @@ Du **måste** förstå följande information innan du schemalägger återkommand
 
 * Push-meddelanden schemaläggs och skickas baserat på GMT (Greenwich Mean Time).
 
-   Om du till exempel har schemalagt ett återkommande meddelande som ska skickas varje lördag kl. 12:00 (kl. 12.00) **PST**, med början den 7 oktober, skickas meddelandet på lördag kl. 19.00 **GMT**.
+   Om du till exempel har schemalagt ett återkommande meddelande som ska skickas varje lördag kl. 12:00 (kl. 12:00) **PST**, som börjar den 7 oktober, kommer meddelandet att skickas lördag kl. 19.00 **GMT**.
 * Meddelanden skickas olika beroende på om du befinner dig i USA, Europa eller Asien.
 
-   Om du till exempel befinner dig i San Jose i Kalifornien, och du schemalägger att ett meddelande ska skickas den ***31 oktober*** kl. 17:30 **PST**, skickas meddelandet den ***1 november 1*** kl. 12:30 **GMT**. Om du befinner dig i Tokyo, och du schemalägger att ett meddelande ska skickas den ***1 januari kl. 5:30, skickas det den*** 31 december ***kl. 8:30 **GMT**.***
+   Om du till exempel befinner dig i San Jose i Kalifornien och du schemalägger att ett meddelande ska skickas den ***31 oktober*** klockan 17:30 **PST**, skickas meddelandet ***1 november*** kl. 12.30 **GMT**. Om du befinner dig i Tokyo och du schemalägger att ett meddelande ska skickas den ***1 januari*** kl. 5.30 skickas den ***31 december*** kl. 8.30 **GMT**.
 * Push-meddelanden skickas en timme tidigare eller senare beroende på när ljusbesparingen sker.
 * När du tittar på din push-meddelanderapport visas meddelandet i den lokala tidszonen i ditt system.
 
-   Om starttiden till exempel är 12:00 **PST**, även om meddelandet skickas kl. 17:00 **GMT**, visar meddelanderapporten den tid som skickas som 12:00 **PST**.
+   Om till exempel starttiden är 12:00 pm **PST**&#x200B;även om meddelandet kommer att skickas kl. 19.00 **GMT** visas den skickade tiden som 12:00 **PST**.
 
 ## Schemalägg ett återkommande push-meddelande {#section_675BD754E5A04423A1751193698A978F}
 
-1. Välj **[!UICONTROL Scheduled]** eller **[!UICONTROL Now]** på sidan Schemalägg för ett nytt push-meddelande.
+1. På sidan Schemalägg för ett nytt push-meddelande väljer du **[!UICONTROL Scheduled]** eller **[!UICONTROL Now]**.
 
    Mer information finns i [Skapa ett push-meddelande](/help/using/in-app-messaging/t-create-push-message/t-create-push-message.md).
 
-   Om du valde **[!UICONTROL Now]** skickas meddelandet omedelbart. Om du vill förhindra att meddelandet schemaläggs direkt klickar du på **[!UICONTROL Save as Draft]**.
+   Om du valde **[!UICONTROL Now]**, skickas meddelandet omedelbart. Om du vill förhindra att meddelandet schemaläggs direkt klickar du på **[!UICONTROL Save as Draft]**.
 
    ![](assets/schedule-push-message.png)
 
 1. Om du valde **[!UICONTROL Scheduled]** klickar du på kalenderikonen och väljer eller skriver ett startdatum.
 1. Skriv in en tid. 
-1. Välj något av följande alternativ under **[!UICONTROL Repeat]**:
+1. Under **[!UICONTROL Repeat]** väljer du något av följande alternativ:
 
    * **[!UICONTROL Never]**
    * **[!UICONTROL Every day]**
@@ -81,14 +81,14 @@ Du **måste** förstå följande information innan du schemalägger återkommand
 
       Det visade värdet ändras beroende på vilket datum du valde eller skrev som startdatum.
 
-1. I **[!UICONTROL End Repeat]** anger du ett slutdatum och en sluttid.
+1. I **[!UICONTROL End Repeat]** skriver du ett slutdatum och en sluttid.
 1. Klicka på något av följande alternativ:
 
    * **[!UICONTROL Save as Draft]**
 
       Med det här alternativet sparas meddelandet i utkastformat. Du kan välja det här alternativet om du vill spara ett meddelande som inte är färdigt eller om du vill spara det så att någon annan kan redigera och godkänna det innan du aktiverar det.
 
-      Om du valde **[!UICONTROL Now]** i det föregående steget skickas utkastet till meddelande omedelbart vid aktiveringen. Om du valde ett datum och en tid för att skicka meddelandet, skickas meddelandet enligt det här schemat.
+      Om du valde **[!UICONTROL Now]** i föregående steg skickas meddelandet omedelbart när aktiveringen är klar. Om du valde ett datum och en tid för att skicka meddelandet, skickas meddelandet enligt det här schemat.
 
    * **[!UICONTROL Save & Schedule]**
 
@@ -96,5 +96,5 @@ Du **måste** förstå följande information innan du schemalägger återkommand
 
 Gör något av följande om du vill skicka utkastet senare:
 
-* Klicka på **[!UICONTROL Manage Messages]**, markera kryssrutan bredvid meddelandet och klicka på **[!UICONTROL Activate Selected]**.
-* Klicka på **[!UICONTROL Save & Send]** för att spara meddelandet och skicka det.
+* Klicka **[!UICONTROL Manage Messages]** markerar du kryssrutan bredvid meddelandet och klickar på **[!UICONTROL Activate Selected]**.
+* Klicka **[!UICONTROL Save & Send]** för att spara meddelandet och skicka det.

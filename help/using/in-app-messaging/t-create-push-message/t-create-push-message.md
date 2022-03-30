@@ -1,12 +1,12 @@
 ---
-description: Ni kan skicka push-meddelanden till analyssegment från gränssnittet för mobiltjänster för att utnyttja era stabila analysdata samtidigt som ni engagerar användarna.
+description: Ni kan skicka push-meddelanden till analyssegment från Mobile Services-gränssnittet för att utnyttja era robusta analysdata samtidigt som ni engagerar användarna.
 keywords: mobil
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Skapa ett push-meddelande
 topic-fix: Metrics
 uuid: fb2a6026-f7e6-40e6-999e-b43db35d6c69
 exl-id: e7ad3797-17c7-41ad-8b65-d9f8e5b01960
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '154'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Skapa ett push-meddelande {#create-a-push-message}
 
-Ni kan skicka push-meddelanden till analyssegment från gränssnittet för mobiltjänster för att utnyttja era stabila analysdata samtidigt som ni engagerar användarna.
+Ni kan skicka push-meddelanden till analyssegment från Mobile Services-gränssnittet för att utnyttja era robusta analysdata samtidigt som ni engagerar användarna.
 
 >[!IMPORTANT]
 >
@@ -29,7 +29,7 @@ Push-meddelanden skickas på serversidan av appbutikerna i stället för från A
 
 Så här skapar du ett push-meddelande:
 
-1. Klicka på ***ditt_programnamn*** > **[!UICONTROL Messaging]** > **[!UICONTROL Manage Messages]** > **[!UICONTROL Create Message]** > **[!UICONTROL Create Push]**.
+1. Klicka ***your_app_name*** > **[!UICONTROL Messaging]** > **[!UICONTROL Manage Messages]** > **[!UICONTROL Create Message]** > **[!UICONTROL Create Push]**.
 1. Konfigurera målgruppsalternativen.
 
    Mer information finns i [Målgrupp: definiera och konfigurera målgruppssegment för push-meddelanden](/help/using/in-app-messaging/t-create-push-message/c-audience-push-message.md).

@@ -1,11 +1,11 @@
 ---
-description: I det här avsnittet beskrivs hur du migrerar från 3.x-versionen av en tidigare Windows Mobile SDK till Windows 8.1 Universal App Store 4.x SDK för Experience Cloud-lösningar.
-solution: Experience Cloud,Analytics
+description: I det här avsnittet beskrivs hur du migrerar från 3.x-versionen av en tidigare Windows Mobile SDK till Windows 8.1 Universal App Store 4.x SDK for Experience Cloud Solutions.
+solution: Experience Cloud Services,Analytics
 title: Migrera till 4.x SDK:er
 topic-fix: Developer and implementation
 uuid: e0fe3b7b-cda5-4a91-834c-2c7e17a501a3
 exl-id: d6dc34f2-61b7-4026-a66a-19284e21e69c
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '650'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Migrera till 4.x SDK:er {#migrate-to-the-x-sdks}
 
-I det här avsnittet beskrivs hur du migrerar från 3.x-versionen av en tidigare Windows Mobile SDK till Windows 8.1 Universal App Store 4.x SDK för Experience Cloud-lösningar.
+I det här avsnittet beskrivs hur du migrerar från 3.x-versionen av en tidigare Windows Mobile SDK till Windows 8.1 Universal App Store 4.x SDK for Experience Cloud Solutions.
 
 I och med övergången till version 4.x är alla funktioner nu tillgängliga via statiska metoder, så att du slipper hålla reda på dina egna objekt.
 
@@ -22,7 +22,7 @@ I följande avsnitt får du hjälp med att migrera från version 3.x till versio
 
 ## Ta bort oanvända egenskaper {#section_145222EAA20F4CC2977DD883FDDBBFC5}
 
-Du märkte antagligen att en ny `ADBMobileConfig.json`-fil ingår i hämtningen. Den här filen innehåller programspecifika, globala inställningar och ersätter de flesta konfigurationsvariabler som användes i tidigare versioner. Här är ett exempel på en `ADBMobileConfig.json`-fil:
+Du märkte antagligen en ny `ADBMobileConfig.json` som ingår i nedladdningen. Den här filen innehåller programspecifika, globala inställningar och ersätter de flesta konfigurationsvariabler som användes i tidigare versioner. Här är ett exempel på en `ADBMobileConfig.json` fil:
 
 ```js
 { 
@@ -54,7 +54,7 @@ I följande tabeller visas de konfigurationsvariabler som du behöver flytta til
 
 ## Migrerar från 3.x
 
-| Konfigurationsvariabel/metod | Variabel i `ADBMobileConfig.json`-filen. |
+| Konfigurationsvariabel/metod | Variabel i `ADBMobileConfig.json` -fil. |
 |--- |--- |
 | offlineTrackingEnabled | &quot;offlineEnabled&quot; |
 | reportSuiteIDs | &quot;rsids&quot; |
@@ -68,17 +68,17 @@ I följande tabeller visas de konfigurationsvariabler som du behöver flytta til
 
 ## Uppdatera spårningsanrop och spårningsvariabler {#section_96E7D9B3CDAC444789503B7E7F139AB9}
 
-I stället för att använda de webbfokuserade `Track`- och `TrackLink`-anropen använder version 4 SDK två metoder som gör lite mer relevanta i den mobila världen:
+Istället för att använda det webbfokuserade `Track` och `TrackLink` anropar, version 4 SDK använder två metoder som är lite mer logiska i mobilvärlden:
 
-* `TrackState` Lägen är de vyer som är tillgängliga i din app, till exempel&quot;heminstrumentpanel&quot;,&quot;appinställningar&quot;,&quot;kundvagn&quot; och så vidare. Dessa lägen liknar sidor på en webbplats och `trackState` anropar stegvisa sidvyer.
+* `TrackState` Lägen är de vyer som är tillgängliga i din app, till exempel&quot;heminstrumentpanel&quot;,&quot;appinställningar&quot;,&quot;kundvagn&quot; och så vidare. Dessa lägen liknar sidor på en webbplats, och `trackState` anropar stegvisa sidvyer.
 
 * `TrackAction` Åtgärder är det som händer i appen som du vill mäta, till exempel&quot;inloggningar&quot;,&quot;banderollknappar&quot;,&quot;flödesprenumerationer&quot; och andra mätvärden. Dessa anrop ökar inte sidvyerna.
 
-Parametern `contextData` för båda dessa metoder innehåller namn/värde-par som skickas som kontextdata.
+The `contextData` parametern för båda dessa metoder innehåller namnvärdespar som skickas som kontextdata.
 
 ## Evenemang, utkast, eVars
 
-Om du har tittat på [SDK-metoderna](/help/windows-appstore/c-configuration/methods.md) undrar du antagligen var du ska ange händelser, eVars, props, heirs och lists. I version 4 kan du inte längre tilldela dessa typer av variabler direkt i appen. I stället använder SDK kontextdata och bearbetningsregler för att mappa appdata till Analytics-variabler för rapportering.
+Om du har tittat på [SDK-metoder](/help/windows-appstore/c-configuration/methods.md), undrar du antagligen var du ska sätta händelser, eVars, props, heirs och lists. I version 4 kan du inte längre tilldela dessa typer av variabler direkt i appen. I stället använder SDK kontextdata och bearbetningsregler för att mappa appdata till Analytics-variabler för rapportering.
 
 Bearbetningsreglerna ger dig flera fördelar:
 
@@ -86,15 +86,15 @@ Bearbetningsreglerna ger dig flera fördelar:
 * Du kan använda beskrivande namn för data i stället för att ange variabler som är specifika för en rapportserie.
 * Det har liten inverkan på att skicka in extra data. Dessa värden visas inte i rapporter förrän de mappas med bearbetningsregler.
 
-Mer information finns i *Bearbetningsregler* i [Analytics](/help/windows-appstore/analytics/analytics.md).
+Mer information finns i *Bearbetar regler* in [Analyser](/help/windows-appstore/analytics/analytics.md).
 
-Alla värden som du tilldelade direkt till variabler bör läggas till i kontextdata i stället. Det innebär att anrop till `SetProp`, `SetEvar` och tilldelningar till beständiga kontextdata ska tas bort och värdena läggas till i kontextdata.
+Alla värden som du tilldelade direkt till variabler bör läggas till i kontextdata i stället. Detta innebär att anropar `SetProp`, `SetEvar`och tilldelningar till beständiga kontextdata ska tas bort och värdena läggas till i kontextdata.
 
 **AppSection/Server, GeoZip, Transaction ID, Campaign och andra standardvariabler**
 
 Alla andra data som du angav för mätningsobjektet, inklusive variablerna ovan, ska läggas till i kontextdata i stället.
 
-Enkelt uttryckt är den enda data som skickas med ett `TrackState`- eller `TrackAction`-anrop nyttolasten i parametern `data`.
+Enkelt uttryckt är det bara de data som skickas in med `TrackState` eller `TrackAction` anropet är nyttolasten i `data` parameter.
 
 ### Ersätt spårningsanrop
 
@@ -109,11 +109,11 @@ Ersätt följande metoder i hela koden med ett anrop till `trackState` eller `tr
 
 ## Anpassat besökar-ID {#section_2CF930C13BA64F04959846E578B608F3}
 
-Ersätt variabeln `visitorID` med ett anrop till `setUserIdentifier`.
+Ersätt `visitorID` variabel med ett anrop till `setUserIdentifier`.
 
 ## Spårning offline {#section_5D4CD8CD1BE041A79A8657E31C0D24C6}
 
-Spårning offline är aktiverat i `ADBMobileConfig.json`-filen. All annan offlinekonfiguration görs automatiskt.
+Spårning offline är aktiverat i `ADBMobileConfig.json` -fil. All annan offlinekonfiguration görs automatiskt.
 
 Ta bort anrop till följande metoder i hela koden:
 
@@ -136,4 +136,4 @@ ADB.Analytics.trackAction("product view", cdata);
 
 ![](assets/prod-view.png)
 
-I det här exemplet är värdet `"&&products"` `";Cool Shoe` och ska följa produktsträngssyntaxen för den typ av händelse som du spårar.
+I det här exemplet är värdet för `"&&products"` är `";Cool Shoe`&quot; och ska följa produktsträngssyntaxen för den typ av händelse som du spårar.

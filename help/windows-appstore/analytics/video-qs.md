@@ -1,11 +1,11 @@
 ---
 description: Information som kan hjälpa dig med videoanalys.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Videoanalys
 topic-fix: Developer and implementation
 uuid: 7d4e6668-a1d9-41da-96c8-8baac860c5b0
 exl-id: 86d70a6f-db12-4f94-a37f-4b1d4b99e0f1
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '887'
 ht-degree: 15%
@@ -16,7 +16,7 @@ ht-degree: 15%
 
 Information som kan hjälpa dig med videoanalys.
 
-Videomätning beskrivs i detalj i [Mäta direktuppspelningsmedia i Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html)-guiden. Den allmänna processen att mäta video är mycket lik på alla AppMeasurement-plattformar. Det här snabbstartsavsnittet innehåller en grundläggande översikt över utvecklaråtgärderna tillsammans med kodexempel.
+Videomätningen beskrivs i detalj i [Mäta direktuppspelningsmedia i Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html) guide. Den allmänna processen att mäta video är mycket lik på alla AppMeasurement-plattformar. Det här snabbstartsavsnittet innehåller en grundläggande översikt över utvecklaråtgärderna tillsammans med kodexempel.
 
 I följande tabell visas de mediedata som skickas till Analytics. Använd bearbetningsregler för att mappa kontextdata till en Analytics-variabel.
 
@@ -24,7 +24,7 @@ I följande tabell visas de mediedata som skickas till Analytics. Använd bearbe
 
    (Obligatoriskt) Samlar in namnet på videon, enligt specifikationen i implementeringen, när en besökare visar videon på något sätt.Du kan lägga till klassificeringar för den här variabeln.
 
-   (**Valfritt**) Custom Insight-variabeln innehåller information om videopassning.
+   (**Valfritt**) Custom Insight-variabeln innehåller information om videopappning.
 
    * Variabeltyp: eVar
    * Standardförfallodatum: Besök
@@ -40,7 +40,7 @@ I följande tabell visas de mediedata som skickas till Analytics. Använd bearbe
 
 * **a.media.segment**
 
-   (Obligatoriskt) Samlar in videosegmentdata, inklusive segmentnamnet och den ordning i vilken segmentet finns i videon. Den här variabeln fylls i genom att variabeln `segmentByMilestones` aktiveras när spelarhändelser spåras automatiskt, eller genom att ett anpassat segmentnamn anges när spelarhändelser spåras manuellt. När en besökare till exempel tittar på det första segmentet i en video kan SiteCatalyst samla in följande i eVar `1:M:0-25` segment.
+   (Obligatoriskt) Samlar in videosegmentdata, inklusive segmentnamnet och den ordning i vilken segmentet finns i videon. Den här variabeln fylls i genom att aktivera `segmentByMilestones` när du spårar spelarhändelser automatiskt, eller genom att ange ett eget segmentnamn när du spårar spelarhändelser manuellt. När en besökare till exempel tittar på det första segmentet i en video kan SiteCatalyst samla in följande i `1:M:0-25` segmentets eVar.
 
    Standardmetoden för insamling av videodata samlar in data vid följande punkter:
 
@@ -91,7 +91,7 @@ I följande tabell visas de mediedata som skickas till Analytics. Använd bearbe
 
 ## Konfigurera mediainställningar {#section_929945D4183C428AAF3B983EFD3E2500}
 
-Konfigurera ett `MediaSettings`-objekt med de inställningar du vill använda för att spåra video:
+Konfigurera en `MediaSettings` objekt med de inställningar som du vill använda för att spåra video:
 
 ```js
 var mySettings = ADB.Media.settingsWith("name", 10, "playerName", "playerId");
@@ -99,7 +99,7 @@ var mySettings = ADB.Media.settingsWith("name", 10, "playerName", "playerId");
 
 ## Spåra spelarhändelser {#section_C7F43AECBC0D425390F7FCDF3035B65D}
 
-För att mäta videouppspelning måste metoderna `Play`, `Stop` och `Close` anropas vid rätt tidpunkt. Om spelaren exempelvis är pausad är `Stop`. `Play` anropas när uppspelningen startar eller återupptas.
+Om du vill mäta videouppspelning `Play`, `Stop`och `Close` metoderna måste anropas vid rätt tidpunkt. När spelaren exempelvis pausas `Stop`. `Play` anropas när uppspelningen startar eller återupptas.
 
 ## Klasser {#section_16838332727348F990305C0C6B0D795C}
 
@@ -130,7 +130,7 @@ property bool isMediaAd;
 
 * **SettingsWith (winJS: settingsWith)**
 
-   Returnerar ett `MediaSetting`-objekt med angivna parametrar.
+   Returnerar ett `MediaSetting` objekt med angivna parametrar.
 
    * Här är syntaxen för den här metoden:
 
@@ -146,7 +146,7 @@ property bool isMediaAd;
 
 * **AdSettingsWith (winJS: adSettingsWith**
 
-   Returnerar ett `MediaSettings`-objekt som ska användas för att spåra en annonsvideo.
+   Returnerar ett `MediaSettings` -objekt som används för att spåra en annonsvideo.
 
    * Här är syntaxen för den här metoden:
 
@@ -162,7 +162,7 @@ property bool isMediaAd;
 
 * **Open (winJS: öppna)**
 
-   Spårar media som är öppna med inställningarna som anges i `settings`.
+   Spåra media som är öppna med inställningarna som anges i `settings`.
 
    * Här är syntaxen för den här metoden:
 
@@ -178,7 +178,7 @@ property bool isMediaAd;
 
 * **Close (winJS: stäng)**
 
-   Spårar en mediestängning för medieobjektet *namn*.
+   Spårar en mediestängning för mediaobjektet med namnet *name*.
 
    * Här är syntaxen för den här metoden:
 
@@ -194,7 +194,7 @@ property bool isMediaAd;
 
 * **Play (winJS: play)**
 
-   Spårar en mediespelning för medieobjektet *`name`* vid angiven *offset* (i sekunder).
+   Spårar en mediespelning för mediaobjektet med namnet *`name`* vid angiven *offset* (i sekunder).
 
    * Här är syntaxen för den här metoden:
 
@@ -210,7 +210,7 @@ property bool isMediaAd;
 
 * **Complete (winJS: complete)**
 
-   Markera medieobjektet som slutfört manuellt vid *förskjutningen* som anges (i sekunder).
+   Markera medieobjektet som slutfört manuellt på *offset* anges (i sekunder).
 
    * Här är syntaxen för den här metoden:
 
@@ -226,7 +226,7 @@ property bool isMediaAd;
 
 * **Stop (winJS: stop)**
 
-   Meddelar mediemodulen att videon har stoppats eller pausats vid angiven *offset*.
+   Meddelar mediamodulen att videon har stoppats eller pausats vid den angivna *offset*.
 
    * Här är syntaxen för den här metoden:
 

@@ -1,11 +1,11 @@
 ---
 description: Om användaren trycker på en grupp kan program som har aktiverat offlinespårning hindra att träffar skickas tills antalet träffar i kön når en konfigurerbar gräns.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Träffa
 topic-fix: Developer and implementation
 uuid: 3dda7372-0695-4cb7-b779-6abca2d6e0d9
 exl-id: af21f435-13cb-4353-9fbb-c99274bce411
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '161'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Om användaren trycker på en grupp kan program som har aktiverat offlinespårni
 >
 >Gruppering kräver SDK version 4.1 eller senare.
 
-Uppdatera din `ADBMobileConfig.json`-fil och ange ett värde för `batchLimit` om du vill aktivera träffbatchbearbetning:
+Uppdatera din `ADBMobileConfig.json` och ange ett värde för `batchLimit`:
 
 ```js
 "analytics": {
@@ -29,11 +29,11 @@ Uppdatera din `ADBMobileConfig.json`-fil och ange ett värde för `batchLimit` o
 }
 ```
 
-Om värdet är ett tal som är högre än 0 köar SDK antalet träffar som är lika med *`batchLimit`*. När det här tröskelvärdet har passerats skickas alla träffar i kön.
+Om värdet är högre än 0 köas antalet träffar som är lika med *`batchLimit`*. När det här tröskelvärdet har passerats skickas alla träffar i kön.
 
 Följande metoder används för gruppbearbetning av träffar:
 
-* `trackingGetQueueSize()` returnerar ett värde  `NSUInteger` med antalet träffar i gruppbearbetningskön.
+* `trackingGetQueueSize()` returnerar `NSUInteger` med antalet träffar i batchkön.
 * `trackingSendQueuedHits()` tvingar biblioteket att skicka alla träffar i kön oavsett hur många som står i kö.
 * `trackingClearQueue()` tar bort alla träffar från kön utan att skicka dem.
 

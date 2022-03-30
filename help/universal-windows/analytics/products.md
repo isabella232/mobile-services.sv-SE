@@ -1,11 +1,11 @@
 ---
 description: Det går inte att ange variabeln products med bearbetningsregler. I mobil-SDK måste du använda en särskild syntax i parametern context data för att ange produkter direkt på serveranropet.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Variabeln Produkter
 topic-fix: Developer and implementation
 uuid: 607983d6-48ac-4274-bfc8-b1ca4e5dad1b
 exl-id: 0575236c-9858-4bf9-a2ce-6e2667d58ddd
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '186'
 ht-degree: 1%
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 Det går inte att ange variabeln products med bearbetningsregler. I mobil-SDK måste du använda en särskild syntax i parametern context data för att ange produkter direkt på serveranropet.
 
-Om du vill ställa in variabeln *`products`* anger du en kontextdatanyckel till `"&&products"` och anger värdet med den syntax som är definierad för variabeln *`products`:
+Så här anger du *`products`* variabel, ange kontextdatanyckeln till `"&&products"`och ange värdet med den syntax som är definierad för *`products` variabel:
 
 ```js
 cdata["&&products"] = "Category;Product;Quantity;Price[,Category;Product;Quantity;Price]";
@@ -42,15 +42,15 @@ ADB.Analytics.trackAction("purchase", cdata);
 ADB.Analytics.trackState("Order Confirmation", cdata);
 ```
 
-*`products`* ställs in direkt på bildbegäran och de andra variablerna ställs in som kontextdata. Alla kontextdatavariabler måste mappas med bearbetningsregler:
+The *`products`* ställs in direkt på bildbegäran och de andra variablerna ställs in som kontextdata. Alla kontextdatavariabler måste mappas med bearbetningsregler:
 
 ![](assets/products-procrules.png)
 
-Du behöver inte mappa variabeln *`products`* med bearbetningsregler eftersom den anges direkt på SDK:ns bildbegäran.
+Du behöver inte mappa *`products`* variabeln med bearbetningsregler eftersom den anges direkt på SDK:s bildbegäran.
 
 ## Produktvariabel med eVars för försäljning och produktspecifika händelser {#section_685D53AD3D064F9A8E225F995A9BA545}
 
-Ett exempel på variabeln *`products`* med Merchandising eVars och produktspecifika händelser.
+Ett exempel på *`products`* med Merchandising eVars och produktspecifika händelser.
 
 ```
 //create a context data dictionary 
@@ -73,4 +73,4 @@ ADB.Analytics.trackState("Order Confirmation", cdata);
 
 >[!TIP]
 >
->Om du utlöser en produktspecifik händelse med variabeln *`&&products`* måste du även ange den händelsen i variabeln *`&&events`*, annars filtreras händelsen bort under bearbetningen.
+>Om du utlöser en produktspecifik händelse med *`&&products`* -variabeln måste du också ange den händelsen i *`&&events`* -variabel, annars filtreras händelsen bort under bearbetningen.

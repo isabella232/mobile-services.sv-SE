@@ -1,11 +1,11 @@
 ---
 description: Livstidsvärdet gör att du kan mäta och inrikta dig på ett livstidsvärde för varje användare.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Livslängd för besökare
 topic-fix: Developer and implementation
 uuid: d830d18b-4313-43bb-8d75-3789869d0f1d
 exl-id: f1b684b1-9919-400d-a88a-6d4a0809d9e1
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 0%
@@ -16,20 +16,20 @@ ht-degree: 0%
 
 Livstidsvärdet gör att du kan mäta och inrikta dig på ett livstidsvärde för varje användare.
 
-Varje gång du skickar ett värde med `trackLifetimeValueIncrease` läggs värdet till det befintliga värdet. Livstidsvärdet lagras på enheten och kan hämtas när som helst genom att anropa `lifetimeValue`. Detta kan användas för att lagra livstidsinköp, annonsvisningar, videokompletteringar, sociala resurser, fotoöverföringar och så vidare.
+Varje gång du skickar in ett värde med `trackLifetimeValueIncrease`läggs värdet till det befintliga värdet. Livstidsvärdet lagras på enheten och kan hämtas när som helst genom att anropa `lifetimeValue`. Detta kan användas för att lagra livstidsinköp, annonsvisningar, videokompletteringar, sociala resurser, fotoöverföringar och så vidare.
 
 ## Spåra besökarens livstidsvärde {#section_390943A49AF841F2941E65D6DF2B3F5A}
 
 1. Lägg till biblioteket i ditt projekt och implementera livscykeln.
 
-   Mer information finns i *Lägg till SDK- och konfigurationsfilen i ditt projekt* i [Core Implementation och Lifecycle](/help/ios/getting-started/dev-qs.md).
+   Mer information finns i *Lägg till SDK- och konfigurationsfilen i projektet* in [Kärnimplementering och livscykel](/help/ios/getting-started/dev-qs.md).
 1. Importera biblioteket:
 
    ```objective-c
    import com.adobe.mobile.*;
    ```
 
-1. Anropa `trackLifetimeValueIncrease` med beloppet för att öka värdet:
+1. Utlysning `trackLifetimeValueIncrease` med beloppet som ska öka värdet:
 
    ```objective-c
    [ADBMobile trackLifetimeValueIncrease:increaseAmount data:nil];

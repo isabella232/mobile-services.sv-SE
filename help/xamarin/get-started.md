@@ -1,11 +1,11 @@
 ---
-description: I det här avsnittet beskrivs hur du kommer igång med att använda Xamarin-komponenter för mobila lösningar 4.x SDK.
+description: I det här avsnittet beskrivs hur du kommer igång med att använda Xamarin-komponenter för Mobile-lösningar 4.x SDK.
 keywords: Xamarin
-solution: Experience Cloud
+solution: Experience Cloud Services
 title: Xamarin-komponenter för Experience Cloud Solutions 4.x SDK
 uuid: e7a48107-bd0e-47d6-b49c-dfdae189ac37
 exl-id: 39628548-5787-4022-8792-86b78214a1c0
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '166'
 ht-degree: 4%
@@ -14,7 +14,7 @@ ht-degree: 4%
 
 # Xamarin-komponenter för Experience Cloud Solutions 4.x SDK {#xamarin-components-for-experience-cloud-solutions-x-sdk}
 
-I det här avsnittet beskrivs hur du kommer igång med att använda Xamarin-komponenter för mobila lösningar 4.x SDK.
+I det här avsnittet beskrivs hur du kommer igång med att använda Xamarin-komponenter för Mobile-lösningar 4.x SDK.
 
 Senast uppdaterad: **10 januari 2019**
 
@@ -29,9 +29,9 @@ Senast uppdaterad: **10 januari 2019**
 Importera ADBMomobile-komponenten till ditt Xamarin.Android-projekt:
 
 1. Öppna Xamarin-projektet
-1. Öppna dialogrutan **[!UICONTROL References]** och klicka på fliken **[!UICONTROL .Net Assembly]**.
-1. Välj `ADBMobile.XamarinAndroidBinding.dll` i mappen **[!UICONTROL lib/Android]**.
-1. Lägg till din `ADBMobileConfig.json`-fil i mappen **[!UICONTROL Assets]** i ditt projekt.
+1. Öppna **[!UICONTROL References]** och klickar på **[!UICONTROL .Net Assembly]** -fliken.
+1. Välj `ADBMobile.XamarinAndroidBinding.dll` från **[!UICONTROL lib/Android]** mapp.
+1. Lägg till `ADBMobileConfig.json` till **[!UICONTROL Assets]** projektmapp.
 1. Lägg till behörigheter för:
 
    * `INTERNET`
@@ -63,9 +63,9 @@ Importera ADBMomobile-komponenten till ditt Xamarin.Android-projekt:
 
 ## iOS {#section_1531928DDE904D769B3987BF927D0E02}
 
-Importera ADBMomobile-komponenten till Xamarin.iOS-projektet:
+Importera ADBMomobile-komponenten till ditt Xamarin.iOS-projekt:
 
 1. Öppna Xamarin-projektet.
-1. Öppna dialogrutan **[!UICONTROL References]** och klicka på fliken **[!UICONTROL .Net Assembly]**.
-1. Välj `ADBMobile.XamarinIOSBinding.dll` i mappen **[!UICONTROL lib/ios-unified]**.
-1. Lägg till din `ADBMobileConfig.json`-fil i projektet.
+1. Öppna **[!UICONTROL References]** och klickar på **[!UICONTROL .Net Assembly]** -fliken.
+1. Välj `ADBMobile.XamarinIOSBinding.dll` från **[!UICONTROL lib/ios-unified]** mapp.
+1. Lägg till `ADBMobileConfig.json` till projektet.

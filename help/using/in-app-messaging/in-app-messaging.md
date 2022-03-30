@@ -1,12 +1,12 @@
 ---
 description: Skapa, hantera och rapportera om meddelanden i programmet och push-meddelanden.
 keywords: mobil
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Meddelanden
 topic-fix: Metrics
 uuid: e32d3e35-2d09-4ddf-8919-75dc895abcb3
 exl-id: e6d076fc-3176-4591-8388-314b936c58cd
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '459'
 ht-degree: 1%
@@ -19,16 +19,16 @@ Du kan skapa, hantera och rapportera om meddelanden i programmet och push-meddel
 
 ## Ny Adobe Experience Cloud SDK-version
 
-Letar du efter information och dokumentation om Adobe Experience Platform Mobile SDK? Klicka [här](https://aep-sdks.gitbook.io/docs/) för att få den senaste dokumentationen.
+Letar du efter information och dokumentation om Adobe Experience Platform Mobile SDK? Klicka [här](https://aep-sdks.gitbook.io/docs/) för vår senaste dokumentation.
 
-Från om med september 2018 har vi släppt en ny större version av SDK. Dessa nya Adobe Experience Platform Mobile SDK:er kan konfigureras via [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
+Från om med september 2018 har vi släppt en ny större version av SDK. Dessa nya Adobe Experience Platform Mobile SDK kan konfigureras via [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
 
-* Gå till [Starta](https://launch.adobe.com/) för att komma igång.
-* Om du vill se vad som finns i Experience Platform SDK-databaserna går du till [Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
+* För att komma igång, gå till [Starta](https://launch.adobe.com/).
+* Om du vill se vad som finns i Experience Platform SDK-databaserna går du till [Github: Adobe Experience Platform SDKs](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
 
 >[!IMPORTANT]
 >
-> Om du använder Adobe Experience Platform Mobile SDK:er med Adobe Launch måste du **även** installera Adobe Analytics Mobile Services-tillägget för att kunna använda Adobe Mobile Services-funktioner som förvärvningslänkar. Mer information finns i [Adobe Analytics - Mobiltjänster](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services). Mer information om hur du använder push-meddelanden och meddelanden i appen med Experience Platform SDK:er finns i [Konfigurera push-meddelanden](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services#set-up-push-messaging) och [Konfigurera meddelanden i appen](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services#set-up-in-app-messaging).
+> Om du använder Adobe Experience Platform Mobile SDK:er med Adobe Launch ska du **måste** installera också Adobe Analytics Mobile Services-tillägget om du vill använda Adobe Mobile Services-funktioner som förvärvarlänkar. Mer information finns i [Adobe Analytics - Mobile Services](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services). Mer information om hur du använder push-meddelanden och meddelanden i appen med SDK:n för Experience Platform finns i [Konfigurera push-meddelanden](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services#set-up-push-messaging) och [Konfigurera meddelanden i appen](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services#set-up-in-app-messaging).
 
 ## Meddelanden i appen {#section_8984F4568BC24D32A87429FFCB5184A6}
 
@@ -44,12 +44,12 @@ Följande meddelandetyper stöds:
 Här finns ytterligare information som hjälper dig att förstå hur meddelanden i appen fungerar:
 
 * Meddelanden i appen kräver SDK version 4.2 eller senare.
-* Du måste ange vem som har administratörsbehörighet för mobilappar.
+* Du måste ange vem som har Mobile App Admin-rättigheter.
 
    Dessa rättigheter ger åtkomst till länkar för förvärv och meddelanden i appen. Mer information finns i [Roller och behörigheter](/help/using/gs/c-mob-roles-and-permissions.md).
 * När ett meddelande har godkänts publiceras det automatiskt till programmet.
 * SDK visar meddelandet för användarna när meddelandeparametrarna, som traits, trigger och schedule, uppfylls.
-* Meddelanden kan innehålla egen HTML-kod eller en bild med en online-URL.
+* Meddelanden kan innehålla HTML eller en bild med hjälp av en online-URL.
 
    En säkerhetskopia eller alternativ avbildning från apppaketet kan också anges för meddelanden som utlöses offline.
 * Aktiva och slutförda meddelanden ger rapporter om totalt antal visningar, klickfrekvens och så vidare.
@@ -59,4 +59,4 @@ Här finns ytterligare information som hjälper dig att förstå hur meddelanden
 
 Push-meddelanden skickas till användare som har valt att ta emot meddelanden. Du kan rikta dessa push-meddelanden till användare i Analytics-segment eller anpassade segment. Du kan använda push-meddelanden för att återengagera passiva användare eller för att förmedla tidsspecifik och platsspecifik information eftersom meddelandena visas utanför appen.
 
-Innan du kan konfigurera push-meddelanden ska du läsa [Krav för att aktivera push-meddelanden](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/prerequisites-push-messaging.md). När du har utfört dessa åtgärder måste du konfigurera push-meddelanden i appinställningarna. Mer information finns i [Konfigurera push-meddelanden](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/configure-push-messaging.md).
+Innan du kan konfigurera push-meddelanden, se [Krav för att aktivera push-meddelanden](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/prerequisites-push-messaging.md). När du har utfört dessa åtgärder måste du konfigurera push-meddelanden i appinställningarna. Mer information finns i [Konfigurera push-meddelanden](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/configure-push-messaging.md).

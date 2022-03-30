@@ -1,11 +1,11 @@
 ---
 description: Det går inte att ange variabeln products med bearbetningsregler. I mobil-SDK måste du använda en särskild syntax i parametern context data för att ange produkter direkt på serveranropet.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Variabeln Produkter
 topic-fix: Developer and implementation
 uuid: 2057a564-06ae-4171-bbe7-0baffa71608b
 exl-id: b731e794-7134-4c6d-a41b-09ac9b84763d
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '139'
 ht-degree: 1%
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 Det går inte att ange variabeln products med bearbetningsregler. I mobil-SDK måste du använda en särskild syntax i parametern context data för att ange produkter direkt på serveranropet.
 
-Om du vill ställa in variabeln *`products`* anger du en kontextdatanyckel till `"&&products"` och anger värdet med den syntax som är definierad för *`products`*:
+Så här anger du *`products`* variabel, ange kontextdatanyckeln till `"&&products"`och ange värdet med den syntax som är definierad för *`products`*:
 
 ```js
 cdata["&&products"] = "Category;Product;Quantity;Price[,Category;Product;Quantity;Price]";
@@ -46,4 +46,4 @@ ADB.Analytics.trackState("Order Confirmation", cdata);
 
 ![](assets/products-procrules.png)
 
-Du behöver inte mappa variabeln *`products`* med bearbetningsregler eftersom den anges direkt på SDK:ns bildbegäran.
+Du behöver inte mappa *`products`* variabeln med bearbetningsregler eftersom den anges direkt på SDK:s bildbegäran.

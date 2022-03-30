@@ -1,12 +1,12 @@
 ---
 description: Här är lite information om hur du mäter video på Android med videomätningslösningen.
 keywords: android;bibliotek;mobil;sdk
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Videoanalys
 topic-fix: Developer and implementation
 uuid: a137cc27-dc28-48c0-b08e-2ca17d2c7e1d
 exl-id: 1b7f5523-767a-45e8-b2e7-ecf9984849e4
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '866'
 ht-degree: 12%
@@ -29,12 +29,12 @@ Den allmänna processen att mäta video är densamma på alla plattformar. Inneh
    * Variabeltyp: eVar
       * Standardförfallodatum: Besök
       * Custom Insight (s.prop, används för videopappning)
-   * (**Obligatoriskt**) När en besökare visar videon på något sätt, samlar den här kontextdatavariabeln in namnet på videon, enligt implementeringen. Du kan lägga till klassificeringar för den här variabeln.
-   * (**Valfritt**) Custom Insight-variabeln innehåller information om videopassning.
+   * (**Obligatoriskt**) När en besökare tittar på videon på något sätt samlar den här kontextdatavariabeln in namnet på videon, enligt specifikationen i implementeringen. Du kan lägga till klassificeringar för den här variabeln.
+   * (**Valfritt**) Custom Insight-variabeln innehåller information om videopappning.
 
 * **a.media.name**
    * Variabeltyp: Custom Insight (s.prop)
-   * (**Valfritt**) Tillhandahåller information om videopassning.
+   * (**Valfritt**) Innehåller information om videopappning.
 
       >[!IMPORTANT]
       >
@@ -46,7 +46,7 @@ Den allmänna processen att mäta video är densamma på alla plattformar. Inneh
    * Standardförfallodatum: Sidvy
    * (**Obligatoriskt**) Samlar in videosegmentdata, inklusive segmentnamnet och den ordning i vilken segmentet finns i videon.
 
-      Den här variabeln fylls i genom att variabeln `segmentByMilestones` aktiveras när spelarhändelser spåras automatiskt eller genom att ett anpassat segmentnamn anges när spelarhändelser spåras manuellt. När en besökare till exempel tittar på det första segmentet i en video kan SiteCatalyst samla in följande i eVar Segment: `1:M:0-25`.
+      Den här variabeln fylls i genom att aktivera `segmentByMilestones` variabel när spelarhändelser spåras automatiskt eller när du anger ett eget segmentnamn när du spårar spelarhändelser manuellt. När en besökare till exempel tittar på det första segmentet i en video kan SiteCatalyst samla in följande i eVar Segment: `1:M:0-25`.
 
       Standardmetoden för insamling av videodata samlar in data vid följande punkter:
 
@@ -62,7 +62,7 @@ Den allmänna processen att mäta video är densamma på alla plattformar. Inneh
    * Standardförfallodatum: Sidvy
    * Samlar in data om den typ av innehåll som visas av en besökare.
 
-      Träffar som skickas via videomätning tilldelas innehållstypen `video`. Från ett videomätningsperspektiv kan du med **Content Type** identifiera videobesökare och beräkna videokonverteringsgrader.
+      Träffar som skickas via videomätning tilldelas innehållstypen `video`. Från videomätningsperspektiv **Innehållstyp** gör att du kan identifiera videobesökare och beräkna videokonverteringsgrader.
 
 * **a.media.timePlay**
    * Variabeltyp: Händelse
@@ -93,7 +93,7 @@ Den allmänna processen att mäta video är densamma på alla plattformar. Inneh
 
 ## Konfigurera mediainställningar {#section_929945D4183C428AAF3B983EFD3E2500}
 
-Konfigurera ett `MediaSettings`-objekt med de inställningar du vill använda för att spåra video:
+Konfigurera en `MediaSettings` objekt med de inställningar som du vill använda för att spåra video:
 
 ```java
 MediaSettings mySettings = Media.settingsWith("name", 10, "playerName", "playerId");
@@ -101,7 +101,7 @@ MediaSettings mySettings = Media.settingsWith("name", 10, "playerName", "playerI
 
 ## Spåra spelarhändelser {#section_C7F43AECBC0D425390F7FCDF3035B65D}
 
-För att mäta videouppspelning måste metoderna `mediaPlay`, `mediaStop` och `mediaClose` anropas vid rätt tidpunkt. Anropa till exempel `mediaStop` när spelaren är pausad. `mediaPlay` anropas när uppspelningen startar eller återupptas.
+Om du vill mäta videouppspelning väljer du `mediaPlay`, `mediaStop`och `mediaClose` metoderna måste anropas vid rätt tidpunkt. När spelaren pausas, till exempel, anropa `mediaStop`. `mediaPlay` anropas när uppspelningen startar eller återupptas.
 
 ## Klasser {#section_16838332727348F990305C0C6B0D795C}
 
@@ -156,7 +156,7 @@ Här är metoderna i klassen Media Measurement:
 
 * **settingsWith**
 
-   Returnerar ett `MediaSettings`-objekt med angivna parametrar.
+   Returnerar ett `MediaSettings` objekt med angivna parametrar.
 
    * Här är syntaxen för den här metoden:
 
@@ -172,7 +172,7 @@ Här är metoderna i klassen Media Measurement:
 
 * **adSettingsWith**
 
-   Returnerar ett `MediaSettings`-objekt som ska användas för att spåra en annonsvideo.
+   Returnerar ett `MediaSettings` -objekt som används för att spåra en annonsvideo.
    * Här är syntaxen för den här metoden:
 
       ```java
@@ -181,7 +181,7 @@ Här är metoderna i klassen Media Measurement:
 
 * **open**
 
-   Öppnar ett `MediaSettings`-objekt för spårning.
+   Öppnar en `MediaSettings` objekt för spårning.
 
    * Här är syntaxen för den här metoden:
 
@@ -201,7 +201,7 @@ Här är metoderna i klassen Media Measurement:
 
    * **stäng**
 
-      Stänger medieobjektet *namn*.
+      Stänger mediaobjektet med namnet *name*.
 
       * Här är syntaxen för den här metoden:
 
@@ -217,7 +217,7 @@ Här är metoderna i klassen Media Measurement:
 
 
 * **play**
-   * Spelar upp medieobjektet *name* vid angiven *offset* i sekunder.
+   * Spelar upp medieobjektet med namnet *name* vid angiven *offset* på några sekunder.
    * Här är syntaxen för den här metoden:
 
       ```java
@@ -226,7 +226,7 @@ Här är metoderna i klassen Media Measurement:
 
 * **complete**
 
-   Markera medieobjektet som slutfört manuellt vid *förskjutningen* som anges i sekunder.
+   Markera medieobjektet som slutfört manuellt på *offset* anges i sekunder.
 
    * Här är syntaxen för den här metoden:
 
@@ -242,7 +242,7 @@ Här är metoderna i klassen Media Measurement:
 
 * **stop**
 
-   Meddelar mediemodulen att videon har stoppats eller pausats vid angiven *offset*.
+   Meddelar mediamodulen att videon har stoppats eller pausats vid den angivna *offset*.
 
    * Här är syntaxen för den här metoden:
 

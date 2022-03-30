@@ -1,12 +1,12 @@
 ---
 description: Den här informationen hjälper dig att implementera Android-biblioteket och samla in livscykelvärden, som starter, uppgraderingar, sessioner, engagerade användare och så vidare.
 keywords: android;bibliotek;mobil;sdk
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Kärnimplementering och livscykel
 topic-fix: Developer and implementation
 uuid: af4d11ac-8245-46a0-9b3a-4a0a29cfbbb2
 exl-id: 67aba85a-42a0-473a-bb05-e5fcb35263d9
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '513'
 ht-degree: 2%
@@ -28,14 +28,14 @@ Den här informationen hjälper dig att implementera Android-biblioteket och sam
    * [Skapa en rapportsvit](/help/android/getting-started/requirements.md)
    * [Ladda ned SDK](/help/android/getting-started/requirements.md)
 
-1. Hämta och zippa upp filen `[Your_App_Name_]AdobeMobileLibrary-4.*-Android.zip` och verifiera att följande programvarukomponenter finns:
+1. Ladda ned och zippa upp `[Your_App_Name_]AdobeMobileLibrary-4.*-Android.zip` och verifiera att följande programvarukomponenter finns:
 
    * `adobeMobileLibrary.jar`, som är det bibliotek som ska användas med Android-enheter och -simulatorer.
 
    * `ADBMobileConfig.json`, som är SDK-konfigurationsfilen som är anpassad för ditt program.
    >[!IMPORTANT]
    >
-   >Om du hämtar SDK-filen utanför användargränssnittet för Adobe Mobile Services måste filen `ADBMobileConfig.json` konfigureras manuellt. Om det är första gången du använder Analytics och Mobile SDK och du vill konfigurera en utvecklingsrapportsvit och hämta en förifylld version av konfigurationsfilen, se [Innan du börjar](/help/android/getting-started/requirements.md).
+   >Om du laddar ned SDK utanför användargränssnittet för Mobile-tjänster i Adobe, `ADBMobileConfig.json` filen måste konfigureras manuellt. Om du inte har använt Analytics eller Mobile SDK tidigare och vill konfigurera en utvecklingsrapportsserie och hämta en förifylld version av konfigurationsfilen läser du [Innan du börjar](/help/android/getting-started/requirements.md).
 
 ## Lägg till SDK- och config-filen i IntelliJ IDEA- eller Eclipse-projektet {#section_B89510FBB4C646AEA73A185B966E54D3}
 
@@ -43,27 +43,27 @@ Den här informationen hjälper dig att implementera Android-biblioteket och sam
 
 Så här lägger du till SDK- och konfigurationsfilen i projektet:
 
-1. Lägg till filen `ADBMobileConfig.json` i mappen `assets` i ditt projekt.
+1. Lägg till `ADBMobileConfig.json` till `assets` i ditt projekt.
 
 1. Högerklicka på projektet på projektnavigeringspanelen.
 1. Välj **[!UICONTROL Open Module Settings]**.
 1. Under **[!UICONTROL Project Settings]** väljer du **[!UICONTROL Libraries]**.
-1. Klicka på ikonen **[!UICONTROL +]** för att lägga till ett nytt bibliotek.
-1. Välj **[!UICONTROL Java]** och navigera till filen `adobeMobileLibrary.jar`.
+1. Klicka på **[!UICONTROL +]** om du vill lägga till ett nytt bibliotek.
+1. Välj **[!UICONTROL Java]** och navigera till `adobeMobileLibrary.jar` -fil.
 1. Välj de moduler där du tänker använda mobilbiblioteket.
-1. Klicka på **[!UICONTROL Apply]** och **[!UICONTROL OK]** för att stänga fönstret Modulinställningar.
+1. Klicka **[!UICONTROL Apply]** och **[!UICONTROL OK]** för att stänga fönstret Modulinställningar.
 
 **Eclipse-projekt**
 
 Så här lägger du till SDK- och konfigurationsfilen i projektet:
 
-1. Lägg till filen `ADBMobileConfig.json` i mappen `assets` i ditt projekt.
-1. Högerklicka på projektnamnet i **[!UICONTROL Eclipse IDE]**.
+1. Lägg till `ADBMobileConfig.json` till `assets` i ditt projekt.
+1. I **[!UICONTROL Eclipse IDE]** högerklickar du på projektnamnet.
 1. Klicka på  **[!UICONTROL Build Path]** > **[!UICONTROL Add External Archives]**.
 1. Välj `adobeMobileLibrary.jar`.
 1. Klicka på **[!UICONTROL Open]**.
 1. Högerklicka på projektet igen och välj **[!UICONTROL Build Path]** > **[!UICONTROL Configure Build Path]**.
-1. Kontrollera att **`adobeMobileLibrary.jar`** är markerat på fliken **[!UICONTROL Order and Export]**.
+1. På **[!UICONTROL Order and Export]** se till att **`adobeMobileLibrary.jar`** är markerat.
 
 ## Lägg till programbehörigheter {#section_2EAF73ABF6424647B219A63B33B02CD5}
 
@@ -72,7 +72,7 @@ AppMeasurement Library kräver följande behörigheter för att skicka data och 
 * `INTERNET`
 * `ACCESS_NETWORK_STATE`
 
-Om du vill lägga till de här behörigheterna lägger du till följande rader i din `AndroidManifest.xml`-fil som finns i programmets projektkatalog:
+Lägg till följande rader i `AndroidManifest.xml` -filen som finns i programmets projektkatalog:
 
 ```java
 <uses-permission android:name="android.permission.INTERNET" /> 
@@ -81,7 +81,7 @@ Om du vill lägga till de här behörigheterna lägger du till följande rader i
 
 ## Ange programkontext {#set-application-context}
 
-Följande kod ska läggas till i `onCreate`-metoden för din huvudaktivitet:
+Följande kod ska läggas till i `onCreate` huvudaktivitetens metod:
 
 ```java
    @Override
@@ -104,7 +104,7 @@ När du har aktiverat livscykeln skickas en träff varje gång appen startas fö
    import com.adobe.mobile.*;
    ```
 
-1. Starta livscykeldatainsamlingen i funktionen `onResume`:
+1. I `onResume` startar du datainsamlingen under livscykeln:
 
    ```java
    @Override 
@@ -114,7 +114,7 @@ När du har aktiverat livscykeln skickas en träff varje gång appen startas fö
    }
    ```
 
-1. Pausa livscykeldatainsamlingen i funktionen `onPause`:
+1. I `onPause` pausa livscykeldatainsamlingen:
 
    ```java
    @Override 
@@ -129,7 +129,7 @@ När du har aktiverat livscykeln skickas en träff varje gång appen startas fö
 
 ## Inkludera ytterligare data vid livscykelanrop
 
-Om du vill inkludera ytterligare data med livscykelmätningsanrop skickar du en extra parameter till `collectLifecycleData` som innehåller kontextdata:
+Om du vill inkludera ytterligare data med livscykelmätanrop skickar du en extra parameter till `collectLifecycleData` som innehåller kontextdata:
 
 ```java
 @Override 

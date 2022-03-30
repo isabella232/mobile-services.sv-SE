@@ -1,12 +1,12 @@
 ---
 description: Marknadsförarna kan skapa spårningslänkar för att marknadsföra och locka trafik till sina appar. Dessa spårningslänkar kan leda användare till appbutiker, djupa applänkar och interstitialer, som kan korreleras med beteenden i appen. En marknadsförare kan skapa en länk för att dirigera användare till iOS, Android eller andra plattformar.
 keywords: mobil
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Förvärv
 topic-fix: Metrics
 uuid: 987146e4-2cca-46e7-88aa-74b62d9f1dc5
 exl-id: ed0842a8-e3cb-4c5a-b001-c0ea3ca69583
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '447'
 ht-degree: 2%
@@ -19,26 +19,26 @@ Marknadsförarna kan skapa spårningslänkar för att marknadsföra och locka tr
 
 ## Ny Adobe Experience Cloud SDK-version
 
-Letar du efter information och dokumentation om Adobe Experience Platform Mobile SDK? Klicka [här](https://aep-sdks.gitbook.io/docs/) för att få den senaste dokumentationen.
+Letar du efter information och dokumentation om Adobe Experience Platform Mobile SDK? Klicka [här](https://aep-sdks.gitbook.io/docs/) för vår senaste dokumentation.
 
-Från om med september 2018 har vi släppt en ny större version av SDK. Dessa nya Adobe Experience Platform Mobile SDK:er kan konfigureras via [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
+Från om med september 2018 har vi släppt en ny större version av SDK. Dessa nya Adobe Experience Platform Mobile SDK kan konfigureras via [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
 
-* Gå till [Starta](https://launch.adobe.com/) för att komma igång.
-* Om du vill se vad som finns i Experience Platform SDK-databaserna går du till [Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
-
->[!IMPORTANT]
->
-> Om du använder Adobe Experience Platform Mobile SDK:er med Adobe Launch måste du **även** installera Adobe Analytics Mobile Services-tillägget för att kunna använda Adobe Mobile Services-funktioner som förvärvningslänkar. Mer information finns i [Adobe Analytics - Mobiltjänster](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services). Mer information om hur du använder förvärvs- och marknadsföringslänkar med SDK:n för Experience Cloud finns i [Förvärvs- och marknadsföringslänkar](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services#acquisition-and-marketing-links).
+* För att komma igång, gå till [Starta](https://launch.adobe.com/).
+* Om du vill se vad som finns i Experience Platform SDK-databaserna går du till [Github: Adobe Experience Platform SDKs](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
 
 >[!IMPORTANT]
 >
->Även om du kan konfigurera funktioner i användargränssnittet fungerar dessa funktioner inte förrän du hämtar den genererade konfigurationsfilen och lägger till den i SDK:n. Information om hur du hämtar och konfigurerar SDK:er finns i *SDK-dokumentationen* på den här sidan.)
+> Om du använder Adobe Experience Platform Mobile SDK:er med Adobe Launch ska du **måste** installera också Adobe Analytics Mobile Services-tillägget om du vill använda Adobe Mobile Services-funktioner som förvärvarlänkar. Mer information finns i [Adobe Analytics - Mobile Services](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services). Mer information om hur du använder förvärvs- och marknadsföringslänkar med SDK:n för Experience Cloud finns i [Förvärv och marknadsföringslänkar](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services#acquisition-and-marketing-links).
+
+>[!IMPORTANT]
+>
+>Även om du kan konfigurera funktioner i användargränssnittet fungerar dessa funktioner inte förrän du hämtar den genererade konfigurationsfilen och lägger till den i SDK:n. Information om hur du hämtar och konfigurerar SDK:er finns i *SDK-dokumentation* på den här sidan.)
 
 Ni kan skapa, redigera, hantera och visa rapporter om marknadsföringslänkar för spårbara mobilappar.
 
 >[!TIP]
 >
->Den här funktionen kräver Adobe Analytics - mobilappar eller Adobe Analytics Premium SKU.
+>Den här funktionen kräver Adobe Analytics - Mobile Apps eller Adobe Analytics Premium SKU.
 
 Följande värvningsrapporter ger insikt i hur era marknadsföringslänkar fungerar:
 
@@ -55,5 +55,5 @@ Följande värvningsrapporter ger insikt i hur era marknadsföringslänkar funge
    Kom ihåg följande information:
 
    * Du kan klicka på pilikonerna i kolumnrubrikerna för att sortera data i stigande eller fallande ordning.
-   * Om du vill exportera data till ett PDF-dokument kan du klicka på **[!UICONTROL Download]**.
+   * Om du vill exportera data till ett PDF-dokument kan du klicka **[!UICONTROL Download]**.
    ![](assets/acquisition_name.png)

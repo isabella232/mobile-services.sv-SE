@@ -1,11 +1,11 @@
 ---
 description: Med livstidsvärdet kan du mäta och rikta in dig på ett livstidsvärde för varje Android-användare. Värdet kan användas för att lagra livstidsinköp, annonsvisningar, videokompletteringar, sociala resurser, fotoöverföringar och så vidare.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Livstidsvärde för besökare
 topic-fix: Developer and implementation
 uuid: ba0308de-282e-46f9-a14c-19fb6d5c363e
 exl-id: 93c6d711-c7c0-4fca-93b2-6a6fc19377bd
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '192'
 ht-degree: 0%
@@ -16,20 +16,20 @@ ht-degree: 0%
 
 Med livstidsvärdet kan du mäta och rikta in dig på ett livstidsvärde för varje Android-användare. Värdet kan användas för att lagra livstidsinköp, annonsvisningar, videokompletteringar, sociala resurser, fotoöverföringar och så vidare.
 
-Varje gång du skickar ett värde med `trackLifetimeValueIncrease` läggs värdet till det befintliga värdet. Livstidsvärdet lagras på enheten och kan hämtas när som helst genom att anropa `lifetimeValue`.
+Varje gång du skickar in ett värde med `trackLifetimeValueIncrease`läggs värdet till det befintliga värdet. Livstidsvärdet lagras på enheten och kan hämtas när som helst genom att anropa `lifetimeValue`.
 
 ## Spåra besökarens livstidsvärde {#section_390943A49AF841F2941E65D6DF2B3F5A}
 
 1. Lägg till biblioteket i ditt projekt och implementera livscykeln.
 
-   Mer information finns i *Lägg till SDK- och konfigurationsfilen i IntelliJ IDEA- eller Eclipse-projektet* i [Core-implementering och livscykel](/help/android/getting-started/dev-qs.md).
+   Mer information finns i *Lägg till SDK- och Config-filen i IntelliJ IDEA- eller Eclipse-projektet* in [Kärnimplementering och livscykel](/help/android/getting-started/dev-qs.md).
 1. Importera biblioteket:
 
    ```java
    import com.adobe.mobile.*;
    ```
 
-1. Anropa `trackLifetimeValueIncrease` med beloppet för att öka värdet:
+1. Utlysning `trackLifetimeValueIncrease` med beloppet som ska öka värdet:
 
    ```java
    Analytics.trackLifetimeValueIncrease(BigDecimal.valueOf(5.0), null);

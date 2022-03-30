@@ -1,12 +1,12 @@
 ---
 description: Här är en lista över Adobe Analytics-metoder som finns i Android-biblioteket.
 keywords: android;bibliotek;mobil;sdk
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Analysmetoder
 topic-fix: Developer and implementation
 uuid: ac7c640e-9dcc-4724-b561-019cc025d5a7
 exl-id: 7914d13e-40a2-4ae2-b759-2660817c2058
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '727'
 ht-degree: 29%
@@ -17,15 +17,15 @@ ht-degree: 29%
 
 Här är en lista över Adobe Analytics-metoder som finns i Android-biblioteket.
 
-SDK har för närvarande stöd för flera Adobe Experience Cloud-lösningar, inklusive Analytics, Target, Audience Manager och Adobe Experience Platform Identity Service. Metoderna prefixas enligt lösningen, till exempel har Experience Cloud ID-metoder prefixet `analytics`.
+SDK har för närvarande stöd för flera Adobe Experience Cloud-lösningar, inklusive Analytics, Target, Audience Manager och Adobe Experience Platform Identity Service. Metoderna är prefix enligt lösningen, till exempel prefix för Experience Cloud ID-metoder med `analytics`.
 
 Var och en av följande metoder används för att skicka data till din Adobe Analytics rapportsvit:
 
 * **trackState**
 
-   Spårar ett apptillstånd med valfria kontextdata. Lägen är de vyer som är tillgängliga i din app, till exempel `home dashboard`, `app settings`, `cart` och så vidare. Dessa lägen liknar sidor på en webbplats och `trackState` anropar stegvisa sidvyer.
+   Spårar ett apptillstånd med valfria kontextdata. Lägen är de vyer som är tillgängliga i din app, till exempel `home dashboard`, `app settings`, `cart`och så vidare. Dessa lägen liknar sidor på en webbplats, och `trackState` anropar stegvisa sidvyer.
 
-   Om `state` är tomt visas `app name app version (build)` i rapporter. Om det här värdet visas i rapporter måste du ange `state` för varje `trackState`-anrop.
+   If `state` är tom, `app name app version (build)` visas i rapporter. Om du ser det här värdet i rapporter måste du ange `state` i varje `trackState` ring.
 
    >[!TIP]
    >
@@ -43,10 +43,10 @@ Var och en av följande metoder används för att skicka data till din Adobe Ana
       Analytics.trackState("loginScreen", null);
       ```
 
-* ****
-trackActionTracks an action in your app.
+* **trackAction**
+Spårar en åtgärd i din app.
 
-   Åtgärder som du vill mäta, t.ex. `logons`, `banner taps`, `feed subscriptions` och andra mått, som finns i din app.
+   Åtgärder som du vill mäta, till exempel `logons`, `banner taps`, `feed subscriptions`och andra mätvärden som finns i appen.
 
    * Här är syntaxen för den här metoden:
 
@@ -60,8 +60,8 @@ trackActionTracks an action in your app.
       Analytics.trackAction("heroBannerTouched", null);
       ```
 
-* ****
-getTrackingIdentifierReturnerar den automatiskt genererade besökaridentifieraren för Analytics.
+* **getTrackingIdentifier**
+Returnerar den automatiskt genererade besökaridentifieraren för Analytics.
 
    Detta är ett programspecifikt, unikt besökar-ID som genereras vid den första starten och som lagras och används från den tidpunkten och framåt. ID:t bevaras mellan programuppgraderingar och tas bort när programmet avinstalleras.
 
@@ -111,7 +111,7 @@ getTrackingIdentifierReturnerar den automatiskt genererade besökaridentifierare
 
 * **trackTimed &#x200B; ActionStart**
 
-   Starta en tidsbestämd åtgärd med namnet `action`.
+   Starta en tidsbestämd åtgärd med ett namn `action`.
 
    Om du anropar den här metoden för en åtgärd som redan har startats, skrivs den tidigare tidsåtgärden över.
 
@@ -134,7 +134,7 @@ getTrackingIdentifierReturnerar den automatiskt genererade besökaridentifierare
 
 * **trackTimed &#x200B; ActionUpdate**
 
-   Ange `contextData` för att uppdatera kontextdata som är associerade med `action`. Det `data` som skickas läggs till i befintliga data för åtgärden, och om samma nyckel redan har definierats för `action` skrivs data över.
+   Skicka in `contextData` för att uppdatera kontextdata som är associerade med `action`. The `data` som skickas läggs till befintliga data för åtgärden och om samma nyckel redan har definierats för `action`, skriver över data.
 
    >[!TIP]
    >
@@ -156,11 +156,11 @@ getTrackingIdentifierReturnerar den automatiskt genererade besökaridentifierare
 
 * **trackTimed &#x200B; ActionEnd**
 
-   Avsluta en tidsbestämd åtgärd. Om du anger `block` kan du komma åt de slutliga tidsvärdena och ändra `data` innan du skickar den sista träffen.
+   Avsluta en tidsbestämd åtgärd. Om du anger `block`kan du komma åt de slutliga tidsvärdena och ändra `data` innan slutträffen skickas.
 
    >[!TIP]
    >
-   >Om du anger `block` måste du returnera `true` för att skicka en träff. Om du skickar `null` för `block` skickas den sista träffen.
+   >Om du anger `block`måste du returnera `true` för att skicka en träff. Lösning `null` for `block` skickar slutträffen.
 
    * Här är syntaxen för den här metoden:
 
@@ -257,7 +257,7 @@ getTrackingIdentifierReturnerar den automatiskt genererade besökaridentifierare
    >
    > Detta API är tillgängligt från och med SDK version 4.18.0
 
-   Hämtar förvärvsdata från angiven Google Play Install Reference URL.
+   Hämtar förvärvsdata från den angivna Google Play Install Referrer-URL:en.
 
    De data som samlas in från detta API skickas vid installationsträffar som skickas till Analytics och är tillgängliga i Adobe Data Callback.
 

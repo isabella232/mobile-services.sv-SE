@@ -1,12 +1,12 @@
 ---
-description: Du kan lägga till en app från Apple App Store eller Google Play.
+description: Du kan lägga till en app från Apple App Store eller från Google Play.
 keywords: mobil
-solution: Experience Cloud,Analytics
-title: Lägg till en app från en App Store
+solution: Experience Cloud Services,Analytics
+title: Lägga till en app från en App Store
 topic-fix: Metrics
 uuid: 94c8a924-5156-4742-8b5b-88d9ea13bfed
 exl-id: 874a132b-42d3-4074-8f14-22310fa60ec0
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '123'
 ht-degree: 2%
@@ -15,15 +15,15 @@ ht-degree: 2%
 
 # Lägg till en app från en appbutik {#add-an-app-from-an-app-store}
 
-Du kan lägga till en app från Apple App Store eller Google Play.
+Du kan lägga till en app från Apple App Store eller från Google Play.
 
 1. Gör något av följande:
 
    * Logga in på Adobe Mobile Services och klicka på **[!UICONTROL Create New]**.
 
-      Mer information om hur du loggar in på gränssnittet för mobila tjänster finns i [Logga in](/help/using/gs/gs-signin.md).
+      Mer information om hur du loggar in på användargränssnittet för Mobile Services finns i [Logga in](/help/using/gs/gs-signin.md).
 
-   * Om du vill lägga till program klickar du på **[!UICONTROL Manage Apps]** i den vänstra navigeringsmenyn och sedan på **[!UICONTROL Add]**.
+   * Om du vill lägga till appar klickar du på **[!UICONTROL Manage Apps]** och klicka **[!UICONTROL Add]**.
 
 1. Klicka på **[!UICONTROL Add App Store App]**.
 1. Utför följande uppgifter:

@@ -1,12 +1,12 @@
 ---
 description: Följande instruktioner hjälper dig att skicka en kundvärvningskampanj via en Marketing Link på en Android-enhet.
 keywords: android;bibliotek;mobil;sdk
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Testar anskaffning av marknadsföringslänk
 topic-fix: Developer and implementation
 uuid: d0933dcc-8fc3-4f60-987f-7a54559aacf5
 exl-id: 86fdaef7-5b6c-4e9d-a470-df66c96f2e9d
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '741'
 ht-degree: 1%
@@ -17,12 +17,12 @@ ht-degree: 1%
 
 Följande instruktioner hjälper dig att skicka en kundvärvningskampanj via en Marketing Link på en Android-enhet.
 
-Om din mobilapp ännu inte finns i Google Play kan du välja vilken mobilapp som helst som mål när du skapar Marketing Link. Detta påverkar bara den app som förvärvsservern dirigerar om dig till, efter att du klickat på länken för förvärv, och inte möjligheten att testa länken för förvärv. Frågesträngsparametrar skickas till Google Play-butiken, som skickas till appen vid installationen som en del av en kampanjsändning. Testning av mobilappsförvärv kräver simulering av den här typen av sändning.
+Om din mobilapp ännu inte finns i Google Play kan du välja vilken mobilapp som helst som mål när du skapar Marketing Link. Detta påverkar bara den app som förvärvsservern dirigerar om dig till, efter att du klickat på länken för förvärv, och inte möjligheten att testa länken för förvärv. Frågesträngsparametrar skickas till Google Play Store, som skickas till appen vid installationen som en del av en kampanjsändning. Testning av mobilappsförvärv kräver simulering av den här typen av sändning.
 
-Appen måste vara nyligen installerad, eller ha data rensade i **[!UICONTROL Settings]**, varje gång ett test körs. Detta garanterar att de inledande livscykelvärdena som är kopplade till parametrarna för kampanjfrågesträngen skickas när appen startas första gången.
+Appen måste vara nyligen installerad eller ha data rensade i **[!UICONTROL Settings]**, varje gång ett test körs. Detta garanterar att de inledande livscykelvärdena som är kopplade till parametrarna för kampanjfrågesträngen skickas när appen startas första gången.
 
-1. Slutför de nödvändiga uppgifterna i [Förvärva mobilappar](/help/android/acquisition-main/acquisition.md) och kontrollera att du har implementerat sändningsmottagaren korrekt för `INSTALL_REFERRER`.
-1. I användargränssnittet för Adobe Mobile Services klickar du på **[!UICONTROL Acquisition]** > **[!UICONTROL Marketing Links Builder]** och skapar en URL för Acquisition Marketing Link som anger Google Play som mål för Android-enheter.
+1. Slutför nödvändiga uppgifter i [Mobile appförvärv](/help/android/acquisition-main/acquisition.md) och se till att du har implementerat sändningsmottagaren korrekt för `INSTALL_REFERRER`.
+1. I användargränssnittet för Mobile-tjänster i Adobe klickar du på  **[!UICONTROL Acquisition]** > **[!UICONTROL Marketing Links Builder]** och generera en URL för Acquisition Marketing Link som anger Google Play som mål för Android-enheter.
 
    Mer information finns i [Marketing Links Builder](/help/using/acquisition-main/c-marketing-links-builder/c-marketing-links-builder.md).
 
@@ -38,9 +38,9 @@ Appen måste vara nyligen installerad, eller ha data rensade i **[!UICONTROL Set
 
 1. Kopiera det unika ID:t efter `utm_content%3D`.
 
-   I föregående exempel är ID `91b52ce097b1464b9b47cb2995c493cc6ab2c3a3`.
+   I föregående exempel är ID:t `91b52ce097b1464b9b47cb2995c493cc6ab2c3a3`.
 
-   Om du inte kan hämta det unika ID:t på enheten kör du följande `CURL`-kommando på skrivbordet för att hämta det unika ID:t från svarssträngen.
+   Om du inte kan hämta det unika ID:t på enheten kör du följande `CURL` på skrivbordet för att hämta det unika ID:t från svarssträngen.
 
    `curl -A "Mozilla/5.0 (Linux; Android 5.0.2; SAMSUNG SM-T815Y Build/LRX22G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.133 Safari/537.36" <Your Marketing Link>`
 
@@ -56,7 +56,7 @@ Appen måste vara nyligen installerad, eller ha data rensade i **[!UICONTROL Set
 
 1. Öppna länken i en webbläsare.
 
-   Du bör se `contextData` i JSON-svaret:
+   Du borde se `contextData` i JSON-svaret:
 
    ```
    {"fingerprint":"44b2f88a062df7e727c047f006deb9971304617b","endCallbacks":["***"],"timestamp":1464301282,"appguid":"da120731d6c09658b82d8fac78da1d5fc2d09c48e21b3a55f9e2d7344e08425d","contextData": 
@@ -69,7 +69,7 @@ Appen måste vara nyligen installerad, eller ha data rensade i **[!UICONTROL Set
 
    | Inställning | Värde |
    |--- |--- |
-   | förvärv | servern ska vara `c00.adobe.com`, och      *`appid`* ska vara lika med `appid` i din förvärvslänk. |
+   | förvärv | Servern bör vara `c00.adobe.com`och      *`appid`*  ska vara lika med `appid` på er förvärvslänk. |
    | analys | För testningsändamål ställer du in att referenspunktens tidsgräns ska tillåta tillräckligt med tid (60 sekunder eller mer) för att skicka sändningen manuellt. Du kan återställa den ursprungliga timeout-inställningen efter testningen. |
 
 1. Anslut enheten till en dator, avinstallera och installera programmet igen.
@@ -79,7 +79,7 @@ Appen måste vara nyligen installerad, eller ha data rensade i **[!UICONTROL Set
    adb shell
    ```
 
-1. Skicka en sändning med följande `adb`-kommando:
+1. Skicka en sändning med följande `adb` kommando:
 
    ```
    am broadcast -a com.android.vending.INSTALL_REFERRER -n com.adobe.android/com.adobe.android.YourBroadcastReceiver --es "referrer" "utm_source=adb_acq_v3&utm_campaign=adb_acq_v3&utm_content=<unique id get on step 5>"
@@ -111,23 +111,23 @@ Appen måste vara nyligen installerad, eller ha data rensade i **[!UICONTROL Set
 
    | Fel | Beskrivning |
    |--- |--- |
-   | Analys - Det går inte att avkoda svar (`<string>`). | Svaret har fel format. |
-   | Analys - Det går inte att analysera svaret (`a JSON Response`). | JSON-strängen har fel format. |
-   | Analys - Det går inte att tolka ett svar från en förvärvstjänst (ingen `contextData`-parameter i svaret). | Det finns ingen `contextData`-parameter i svaret. |
-   | Analys - Referensdata för värvning var inte fullständiga (inga `a.referrer.campaign.name` i kontextdata), ignoreras. | `a.referrer.campaign.name` ingår inte i contextData. |
-   | Analys - Anskaffningsreferenten nådde tidsgränsen. | Det gick inte att hämta svaret inom den tid som är definierad av `referrerTimeout`. Öka värdet och försök igen.  Du bör även kontrollera att du har öppnat förvärvningslänken innan du installerar appen. |
+   | Analys - Det går inte att avkoda svar(`<string>`). | Svaret har fel format. |
+   | Analys - Det gick inte att analysera svaret (`a JSON Response`). | JSON-strängen har fel format. |
+   | Analys - Det går inte att analysera ett svar på en kundvärvningstjänst (nej `contextData` som svar). | Nej  `contextData`  parametern i svaret. |
+   | Analys - data för inköpsorderreferensen var inte fullständiga (ingen `a.referrer.campaign.name` i kontextdata), ignorerar. | `a.referrer.campaign.name` ingår inte i contextData. |
+   | Analys - Anskaffningsreferenten nådde tidsgränsen. | Det gick inte att hämta svaret inom den tid som definierats av `referrerTimeout`. Öka värdet och försök igen.  Du bör även kontrollera att du har öppnat förvärvningslänken innan du installerar appen. |
 
 Kom ihåg följande information:
 
 * Hits som skickas från appen kan övervakas med HTTP-övervakningsverktyg för att verifiera värvningsattribueringen.
-* Mer information om hur du sänder `INSTALL_REFERRER` finns i [Testa Google Play Campaign Measurement](https://developers.google.com/analytics/solutions/testing-play-campaigns) i handboken för Google Developers.
-* Du kan använda det medföljande Java-verktyget `acquisitionTest.jar` för att få det unika ID:t och den sändande installationsreferenten, som i sin tur hjälper dig att få fram informationen i steg 3 till 10.
+* Mer information om hur du sänder `INSTALL_REFERRER`, se [Testa Google Play Campaign Measurement](https://developers.google.com/analytics/solutions/testing-play-campaigns) i Google Developers Guide .
+* Du kan använda följande `acquisitionTest.jar` Java-verktyget hjälper dig att få det unika ID:t och broadcast-installationsprogrammet, som i sin tur hjälper dig att få information i steg 3 till 10.
 
 **Installera Java-verktyget**
 
 Så här installerar du Java-verktyget:
 
-1. Hämta filen [`acquistionTester.zip`](../assets/acquisitionTester.zip).
+1. Ladda ned [`acquistionTester.zip`](../assets/acquisitionTester.zip) -fil.
 1. Extrahera .jar-filen.
 
    Du kan köra .jar-filen på kommandoraden.

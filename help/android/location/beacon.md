@@ -1,12 +1,12 @@
 ---
 description: Med Beacon tracking kan du mäta och inrikta dig på mikroplatser med iBeacon och Bluetooth Low Energy.
 keywords: android;bibliotek;mobil;sdk
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Beacon tracking
 topic-fix: Developer and implementation
 uuid: 16c1d267-85f4-4a6a-a6d3-d6ffb0f80b29
 exl-id: b8493e9d-ed1c-4404-a218-47a18a9c8faa
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '225'
 ht-degree: 0%
@@ -37,7 +37,7 @@ Dessa beacon-data samlas in i mobillösningsvariabler.
 
 1. Lägg till biblioteket i ditt projekt och implementera livscykeln.
 
-   Mer information finns i *Lägg till SDK- och konfigurationsfilen i IntelliJ IDEA- eller Eclipse-projektet* i [Core-implementering och livscykel](/help/android/getting-started/dev-qs.md).
+   Mer information finns i *Lägg till SDK- och Config-filen i IntelliJ IDEA- eller Eclipse-projektet* in [Kärnimplementering och livscykel](/help/android/getting-started/dev-qs.md).
 
 1. Importera biblioteket:
 
@@ -69,7 +69,7 @@ Dessa beacon-data samlas in i mobillösningsvariabler.
 
 ## Skicka ytterligare data {#section_3EBE813E54A24F6FB669B2478B5661F9}
 
-Utöver beacon-data kan du skicka ytterligare kontextdata med varje `trackBeacon`-anrop:
+Utöver beacon-data kan du skicka ytterligare kontextdata med varje `trackBeacon` ring:
 
 ```java
 HashMap cdata = new HashMap<String, Object>(); 

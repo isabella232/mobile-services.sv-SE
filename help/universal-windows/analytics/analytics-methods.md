@@ -1,11 +1,11 @@
 ---
 description: Information som hjälper dig att använda universella Windows Platform SDK med Adobe Analytics.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Analysmetoder
 topic-fix: Developer and implementation
 uuid: cc299bb5-ec61-49bf-869a-f3c3bc83359f
 exl-id: 3ceaedfa-274f-4dc7-9e4c-15233d09f935
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '617'
 ht-degree: 29%
@@ -22,12 +22,12 @@ Var och en av dessa metoder används för att skicka data till din Adobe Analyti
 
 >[!TIP]
 >
->När du använder `winmd`-metoder från winJS (JavaScript) kommer den första bokstaven automatiskt att sänkas för alla metoder.
+>När du konsumerar `winmd` metoder från winJS (JavaScript) får alla metoder automatiskt sin första bokstav nedsänkt.
 
 * **TrackState (winJS: trackState)**
 
-   Spårar ett apptillstånd med valfria kontextdata. Lägen är de vyer som är tillgängliga i din app, till exempel&quot;heminstrumentpanel&quot;,&quot;appinställningar&quot;,&quot;kundvagn&quot; och så vidare. Dessa lägen liknar sidor på en webbplats och `TrackState` anropar stegvisa sidvyer.
-Om `state` är tom visas den som &quot;programnamnsprogramversion (build)&quot; i rapporter. Om det här värdet visas i rapporter måste du ange `state` för varje `TrackState`-anrop.
+   Spårar ett apptillstånd med valfria kontextdata. Lägen är de vyer som är tillgängliga i din app, till exempel&quot;heminstrumentpanel&quot;,&quot;appinställningar&quot;,&quot;kundvagn&quot; och så vidare. Dessa lägen liknar sidor på en webbplats, och `TrackState` anropar stegvisa sidvyer.
+If `state` är tom visas den som&quot;app name app version (build)&quot; i rapporter. Om du ser det här värdet i rapporter måste du ange `state` i varje `TrackState` ring.
 
    >[!TIP]
    >
@@ -84,7 +84,7 @@ Om `state` är tom visas den som &quot;programnamnsprogramversion (build)&quot; 
 
 * **TrackLocation (winJS: trackLocation)**
 
-   Skickar de aktuella x y-koordinaterna. Intressepunkter som definieras i `ADBMobileConfig.json`-filen används också för att avgöra om platsen som anges som en parameter finns i något av dina POI-dokument. Om de aktuella koordinaterna finns i en definierad POI fylls en kontextdatavariabel i och skickas med anropet `trackLocation`.
+   Skickar de aktuella x y-koordinaterna. I används även intressepunkter som definieras i `ADBMobileConfig.json` för att avgöra om den plats som anges som parameter finns i POI. Om de aktuella koordinaterna finns i en definierad POI fylls en kontextdatavariabel i och skickas med `trackLocation` ring.
 
    * Här är syntaxen för den här metoden:
 
@@ -118,7 +118,7 @@ Om `state` är tom visas den som &quot;programnamnsprogramversion (build)&quot; 
 
 * **TrackTimed &#x200B; ActionStart (winJS: trackTimed &#x200B; ActionStart)**
 
-   Starta en tidsbestämd åtgärd med namnet `action`. Om du anropar den här metoden för en åtgärd som redan har startats, skrivs den tidigare tidsåtgärden över.
+   Starta en tidsbestämd åtgärd med ett namn `action`. Om du anropar den här metoden för en åtgärd som redan har startats, skrivs den tidigare tidsåtgärden över.
 
    >[!TIP]
    >
@@ -139,7 +139,7 @@ Om `state` är tom visas den som &quot;programnamnsprogramversion (build)&quot; 
 
 * **TrackTimed &#x200B; ActionUpdate (winJS: trackTimed &#x200B; ActionUpdate)**
 
-   Ange `contextData` för att uppdatera kontextdata som är associerade med angiven `action`. `data` som skickas läggs till i befintliga data för den angivna åtgärden och skriver över data om samma nyckel redan har definierats för `action`.
+   Skicka in `contextData` för att uppdatera kontextdata som är associerade med den angivna `action`. The `data` som skickas läggs till i befintliga data för den angivna åtgärden och skriver över data om samma nyckel redan har definierats för `action`.
 
    >[!TIP]
    >

@@ -1,12 +1,12 @@
 ---
 description: Med platsöversiktsrapporten kan du se de olika länder, regioner och intressepunkter där appen används.
 keywords: mobil
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Översikt (plats)
 topic-fix: Reports,Metrics
 uuid: a701abc3-001b-4015-843f-5fb2c6c80d17
 exl-id: 9a9f4f64-251f-48d4-a838-af14a357c575
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Översikt (plats){#overview-location}
 
-Med **[!UICONTROL Location Overview]**-rapporten kan du se de olika länder, regioner och intressepunkter (POI) där appen används.
+The **[!UICONTROL Location Overview]** kan du se de olika länder, regioner och intressepunkter (POI) där appen används.
 
 Den här rapporten innehåller en solbränsvisualisering för era befintliga data, och du kan använda rapporten för att identifiera målgruppssegment (samlingar av besökare) för målinriktning. Att skapa och hantera målgrupper liknar att skapa och använda segment, förutom att du kan göra målgrupperna tillgängliga i Experience Cloud.
 
@@ -27,15 +27,15 @@ Den här visualiseringen ger till exempel basrapporten med uppdelningar. I visua
 
 >[!TIP]
 >
->Förutom den här informationen kan du se en självstudiekurs i produkten som beskriver hur du interagerar med soldiagram. Starta självstudiekursen genom att klicka på **[!UICONTROL Location Breakdown]** i rapportens namnlist och klicka på ikonen **[!UICONTROL i]**.
+>Förutom den här informationen kan du se en självstudiekurs i produkten som beskriver hur du interagerar med soldiagram. Starta självstudiekursen genom att klicka på **[!UICONTROL Location Breakdown]** i rapportens namnlist och klicka på **[!UICONTROL i]** ikon.
 
 ![](assets/location.png)
 
-Soldiagram är interaktivt. Du kan ändra tidsperioden genom att klicka på ikonen **[!UICONTROL Calendar]** i det övre högra hörnet. För musen över någon del av diagrammet för att visa mer information. På följande bild kan du till exempel se det totala antalet och procentandelen användare som använder din app i USA.
+Soldiagram är interaktivt. Du kan ändra tidsperioden genom att klicka på **[!UICONTROL Calendar]** ikonen längst upp till höger. För musen över någon del av diagrammet för att visa mer information. På följande bild kan du till exempel se det totala antalet och procentandelen användare som använder din app i USA.
 
 ![](assets/location_mouse.png)
 
-På den här bilden kan du med **[!UICONTROL Categories]**-knapparna i det övre högra hörnet växla mellan att visa information om de tio viktigaste länderna, regionerna och de tre översta **[!UICONTROL Points of Interest]**.
+I den här bilden **[!UICONTROL Categories]** med knapparna i det övre högra hörnet kan du växla mellan att visa information om de tio viktigaste länderna, regionerna och de tre översta **[!UICONTROL Points of Interest]**.
 
 Här är visualiseringen när du väljer **[!UICONTROL Country]**:
 
@@ -61,11 +61,11 @@ Du kan lägga till uppdelningar och sekundära mätvärden, vilket ändrar höjd
 >
 >Ju fler ringar du lägger till i solbrännet, desto längre tid tar det att bearbeta.
 
-Klicka på **[!UICONTROL Location Breakdown]** i rapportens namnlist och klicka på **[!UICONTROL Customize]** för att öppna den högra listen om du vill lägga till delvärden och sekundära värden.
+Om du vill lägga till uppdelningar och sekundära mått klickar du på **[!UICONTROL Location Breakdown]** i rapportens namnlist och klicka på **[!UICONTROL Customize]** för att öppna rätt spår.
 
 ![](assets/location_rail.png)
 
-När du klickar på **[!UICONTROL Add Breakdown]** eller **[!UICONTROL Add Metric]** visas ett nytt objekt med samma namn som föregående objekt i respektive lista. Klicka på den nyligen skapade detaljnivån eller mätvärdet för att öppna en listruta där du kan välja ett nytt objekt.
+När du klickar **[!UICONTROL Add Breakdown]** eller **[!UICONTROL Add Metric]** visas ett nytt objekt med samma namn som föregående objekt i respektive lista. Klicka på den nyligen skapade detaljnivån eller mätvärdet för att öppna en listruta där du kan välja ett nytt objekt.
 
 ## Skapa ett klisterfilter {#section_365999D49FC744ECBF9273132497E06C}
 

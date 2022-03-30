@@ -1,11 +1,11 @@
 ---
 description: Den här informationen hjälper dig med en begäran om att ta bort GDPR-data.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Ange användarens alternativstatus
 topic-fix: Developer and implementation
 uuid: 44a09a25-93c6-4e1a-b69e-710018e8b6c3
 exl-id: 8fd30bea-6316-46ac-9787-8ca594545d1b
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '255'
 ht-degree: 0%
@@ -18,11 +18,11 @@ Den här informationen hjälper dig med en begäran om att ta bort GDPR-data.
 
 >[!IMPORTANT]
 >
->Från och med Experience Cloud iOS SDK 4.15 gäller att om du anger sekretessstatusen till `unknown` även Audience Manager och Experience Cloud ID-träffar.
+>Börja med Experience Cloud iOS SDK 4.15 och ange sekretessstatus till `unknown` innehåller träffar för Audience Manager och Experience Cloud.
 
 Du kan kontrollera om Analytics-, Target- och Audience Manager-aktivitet tillåts på en enhet med följande inställningar:
 
-* `privacyDefault` i  [ADBMomobile JSON Config](/help/ios/configuration/json-config/json-config.md).
+* `privacyDefault` in [ADBMomobile JSON-konfiguration](/help/ios/configuration/json-config/json-config.md).
 
    Den här inställningen styr den inledande inställningen som kvarstår tills den ändras i koden.
 
@@ -52,9 +52,9 @@ Här är information om respektive sekretessstatus:
 
 * **Okänd**
 
-   * Analyser: Om spårning offline **är** aktiverat, sparas träffar tills sekretessstatusen ändras till anmälan (träffar skickas) eller avanmälan (träffar ignoreras).
+   * Analyser: Om spårning offline **är** aktiverat sparas träffar tills sekretessstatusen ändras till anmälan (träffar skickas) eller avanmälan (träffar ignoreras).
 
-      Om spårning offline **inte är** aktiverat, ignoreras träffar tills sekretessstatusen ändras till att anmäla sig.
+      Om spårning offline **är inte** aktiverat ignoreras träffar tills sekretessstatusen ändras till att anmäla sig.
 
    * Mål: Mbox-begäranden skickas.
    * Audience Manager: Signaler och ID-synk skickas.

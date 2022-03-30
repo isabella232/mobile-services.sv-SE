@@ -1,12 +1,12 @@
 ---
 description: Här är mätvärden och mått som kan mätas automatiskt av mobilbiblioteket, efter att livscykeln har implementerats, och en länk för att felsöka livscykeldata.
 keywords: android;bibliotek;mobil;sdk
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Livscykelstatistik
 topic-fix: Developer and implementation
 uuid: 5a371f11-6521-410f-a01f-fc3b285b050f
 exl-id: d7436411-65bd-4cf7-ae3e-cec829a7690a
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '864'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Här är mätvärden och mått som kan mätas automatiskt av mobilbiblioteket, efter att livscykeln har implementerats, och en länk för att felsöka livscykeldata.
 
-Mer information finns i kunskapsbasen på [Troubleshoot Lifecycle data](https://helpx.adobe.com/analytics/kb/troubleshoot-lifecycle-data.html).
+Mer information finns i kunskapsbasen på [Felsöka livscykeldata](https://helpx.adobe.com/analytics/kb/troubleshoot-lifecycle-data.html).
 
 ## Livscykelvärden och dimensioner {#section_78F036C4296F4BA3A47C2044F79C86C1}
 
@@ -198,7 +198,7 @@ Följande mått och mått hämtas in i mobillösningsvariabler med den listade m
 
 * **Placering (ned till 10 km)**
 
-   Fylls i av `trackLocation`-metoder.
+   Fylls i av `trackLocation` metoder.
 
    * Kontextdata för analys/Target-parameter:
 
@@ -212,7 +212,7 @@ Följande mått och mått hämtas in i mobillösningsvariabler med den listade m
 
 * **Plats (ned till 100 m)**
 
-   Fylls i av `trackLocation`-metoder.
+   Fylls i av `trackLocation` metoder.
 
    * Kontextdata för analys/Target-parameter:
 
@@ -226,7 +226,7 @@ Följande mått och mått hämtas in i mobillösningsvariabler med den listade m
 
 * **Plats (ned till 1 m)**
 
-   Fylls i av `trackLocation`-metoder.
+   Fylls i av `trackLocation` metoder.
 
    * Kontextdata för analys/Target-parameter:
 
@@ -240,7 +240,7 @@ Följande mått och mått hämtas in i mobillösningsvariabler med den listade m
 
 * **Intressepunktens namn**
 
-   Fylls i av `trackLocation`-metoder när enheten finns inom en definierad POI.
+   Fylls i av `trackLocation` metoder när enheten finns inom en definierad POI.
 
    * Kontextdata för analys/Target-parameter:
 
@@ -252,7 +252,7 @@ Följande mått och mått hämtas in i mobillösningsvariabler med den listade m
 
 * **Avstånd till intressecentrum**
 
-   Fylls i av `trackLocation`-metoder när enheten finns inom en definierad POI.
+   Fylls i av `trackLocation` metoder när enheten finns inom en definierad POI.
 
    * Kontextdata för analys/Target-parameter:
 

@@ -1,11 +1,11 @@
 ---
 description: Bearbetningsregler används för att kopiera data som du skickar i kontextdatavariabler till eVars, props och andra variabler för rapportering.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Bearbetar regler och kontextdata
 topic-fix: Developer and implementation
 uuid: ea892228-86f5-4980-acb8-45ae43c6996d
 exl-id: 543201fd-8118-485f-8235-26ec8f9bbb11
-source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '242'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Bearbetar regler och kontextdata {#processing-rules-and-context-data}
 
-Bearbetningsregler används för att kopiera data som du skickar i kontextdatavariabler till eVars, props och andra variabler för rapportering. Mer information finns i [Bearbetningsregler](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html).
+Bearbetningsregler används för att kopiera data som du skickar i kontextdatavariabler till eVars, props och andra variabler för rapportering. Mer information finns i [Bearbetar regler](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html).
 
 Tänk på följande information när du arbetar med bearbetningsregler:
 
@@ -34,7 +34,7 @@ Tänk på följande information när du arbetar med bearbetningsregler:
    "eVar1":"jimbo"
    ```
 
-   Detta kan göra det *något* enklare när du slutför engångsmappningen i bearbetningsregler, men du förlorar läsbarheten under felsökning och framtida koduppdateringar, vilket kan vara svårare. Vi rekommenderar i stället att du använder beskrivande namn för nycklar och värden:
+   Det här kan göra det *lätt* enklare när du slutför engångsmappningen i bearbetningsreglerna, men förlorar läsbarheten under felsökning och framtida koduppdateringar, vilket kan vara svårare. Vi rekommenderar i stället att du använder beskrivande namn för nycklar och värden:
 
    ```js
    "username":"jimbo"

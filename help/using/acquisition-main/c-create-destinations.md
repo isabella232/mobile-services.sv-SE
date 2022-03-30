@@ -1,12 +1,12 @@
 ---
 description: Marknadsförarna kan skapa, spara och redigera länkmål som webb, djup eller andra länkar som kan användas när spårbara marknadsföringslänkar byggs.
 keywords: mobil
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: 'Mål '
 topic-fix: Metrics
 uuid: 0e0e7d22-067c-4a59-abcb-a4826800944d
 exl-id: e30128de-5b2d-4617-a871-44fe489ea6e7
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '164'
 ht-degree: 1%
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 Marknadsförarna kan skapa, spara och redigera länkmål, som webb, djup eller andra länkar, som kan användas när spårbara marknadsföringslänkar byggs.
 
-Mer information om hur du skapar olika typer av länkmål finns i [Skapa och hantera länkmål](/help/using/acquisition-main/c-manage-link-destinations/c-manage-link-destinations.md).
+Information om hur du skapar olika typer av länkmål finns i [Skapa och hantera länkmål](/help/using/acquisition-main/c-manage-link-destinations/c-manage-link-destinations.md).
 
 Du kan skapa följande typer av länkmål:
 
@@ -31,10 +31,10 @@ Du kan skapa följande typer av länkmål:
 
    >[!IMPORTANT]
    >
-   >Webblänksmål är **inte** spårade.
+   >Målplatser för webblänkar är **not** spårade.
 
 * **[!UICONTROL Hybrid Link]**
 
-   Hybridlänkar har stöd för universella iOS-länkar eller Android-applänkar.
+   Hybridlänkar stöder iOS Universal Links eller Android App Links.
 
 Mer information om hur du skapar olika typer av länkar finns i [Skapa nytt länkmål](/help/using/acquisition-main/c-manage-link-destinations/t-create-new-app-deep-link-destination.md).

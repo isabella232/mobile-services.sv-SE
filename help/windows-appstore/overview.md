@@ -1,11 +1,11 @@
 ---
 description: Med Windows 8.1 Universal App Store SDK 4.x för Experience Cloud Solutions kan du mäta inbyggda Windows 8.1- och Windows Phone 8.1-program, leverera riktat innehåll i appen samt utnyttja och samla in målgruppsdata via Audience Manager.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Windows 8.1 Universal App Store SDK 4.x för Experience Cloud Solutions
 topic-fix: Developer and implementation
 uuid: a06d8cf2-5d2d-49a8-86ac-102e2934ea59
 exl-id: 5c511dea-99d8-40e9-a98f-8bc3cad937b8
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '190'
 ht-degree: 1%
@@ -32,12 +32,12 @@ Visual Studio 2013 eller senare.
 
 ## Adobe Mobile Services {#section_7583FD5FDED143619048E9744A3F2D21}
 
-Adobe Mobile-tjänster har ett nytt användargränssnitt som samlar funktioner för mobilmarknadsföring för mobilappar från hela Adobe Experience Cloud. Från början erbjuder mobiltjänsten smidig integrering av funktioner för appanalys och målinriktning från Adobe Analytics och Adobe Target.
+Adobe Mobile-tjänster har ett nytt användargränssnitt som samlar funktioner för mobilmarknadsföring för mobilappar från hela Adobe Experience Cloud. Till att börja med erbjuder Mobile-tjänsten smidig integrering av funktioner för appanalys och målinriktning från Adobe Analytics och Adobe Target.
 
-Läs mer på [Adobe Mobile services documentation](/help/using/home.md).
+Läs mer på [Adobe Mobile-tjänstdokumentation](/help/using/home.md).
 
 ## Använda Bloodhound
 
 >[!IMPORTANT]
 >
->Från och med den **30 april 2017** har Adobe Bloodhound solnedgångar. Från och med den 1 maj 2017 kommer inga ytterligare förbättringar att göras och ingen ytterligare support för tekniker eller Adobe Expert Care kommer att ges.
+>Från och med **30 april 2017** Adobe Bloodhound har solnedgång. Från och med den 1 maj 2017 kommer inga ytterligare förbättringar att göras och ingen ytterligare support för tekniker eller Adobe Expert Care kommer att ges.

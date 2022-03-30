@@ -1,11 +1,11 @@
 ---
 description: Händelseserialisering stöds inte av bearbetningsregler. I mobil-SDK måste du använda en särskild syntax i parametern context data för att ange serialiserade händelser direkt i serveranropet.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Händelseserialisering
 topic-fix: Developer and implementation
 uuid: 7220a001-1174-4013-91ff-e8603d8ab265
 exl-id: 9cb8d739-8b77-4fe7-8592-22e8cff172d4
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '70'
 ht-degree: 8%

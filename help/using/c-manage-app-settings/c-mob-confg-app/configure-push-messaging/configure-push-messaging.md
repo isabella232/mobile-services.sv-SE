@@ -1,12 +1,12 @@
 ---
 description: Du kan använda den här informationen för att konfigurera alternativen för push-tjänster på sidan Hantera appinställningar när du skapar en ny app eller redigerar en befintlig app.
 keywords: mobil
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Konfigurera push-meddelanden
 topic-fix: Metrics
 uuid: 6763858d-6046-4d36-87c0-cf3600a44fb1
 exl-id: d4989c31-2692-4062-8fae-d41c3e3c179b
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '275'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Innan du konfigurerar push-meddelanden slutför du de nödvändiga uppgifterna i
 
 * **Rapportera Suite-överväganden**
 
-   Du kan konfigurera en app store-app för Apple och en för Google i varje rapportserie. Om du behöver ytterligare program, till exempel ett för en produktionsmiljö och ett för en utvecklingsmiljö, skapar du en ny app för appbutiken och en ny rapportsserie för varje miljö.
+   Du kan konfigurera en app för appbutiken för Apple och en för Google i varje rapportserie. Om du behöver ytterligare program, till exempel ett för en produktionsmiljö och ett för en utvecklingsmiljö, skapar du en ny app för appbutiken och en ny rapportsserie för varje miljö.
 
 >[!IMPORTANT]
 >
@@ -33,14 +33,14 @@ Innan du konfigurerar push-meddelanden slutför du de nödvändiga uppgifterna i
 
       **[!UICONTROL Private Key]**
 
-      Bläddra till och välj din giltiga privata nyckel `.p12`, `.key` eller `.pen`.
+      Bläddra till och välj en giltig privat nyckel `.p12`, `.key`, eller `.pen`.
 
       >[!IMPORTANT]
-      >Om filen som du väljer för **[!UICONTROL Private Key]**-indata även innehåller ett certifikat behöver du inte ange certifikatet.
+      >Om filen som du väljer för **[!UICONTROL Private Key]** indata innehåller också ett certifikat. Du behöver inte ange certifikatet.
 
    * **[!UICONTROL Certificate]**
 
-      Ange ett giltigt certifikat. Det här alternativet är endast obligatoriskt när **[!UICONTROL Private Key]**-indata inte **innehåller ett certifikat.** Mer information om hur du hämtar SSL-certifikatet och den privata nyckeln finns i [Konfigurera appen att använda APNS eller FCM](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/configure-app-apns-gcm.md).
+      Ange ett giltigt certifikat. Det här alternativet är endast obligatoriskt när **[!UICONTROL Private Key]** input does **not** innehåller ett certifikat. Mer information om hur du hämtar SSL-certifikatet och den privata nyckeln finns i [Konfigurera appen att använda APNS eller FCM](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/configure-app-apns-gcm.md).
 
    * Google
 

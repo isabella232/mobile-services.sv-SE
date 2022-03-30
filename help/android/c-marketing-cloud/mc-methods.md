@@ -1,12 +1,12 @@
 ---
 description: Här är Experience Cloud ID-metoderna som tillhandahålls av Android-biblioteket.
 keywords: android;bibliotek;mobil;sdk
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Adobe Experience Platform Identity Service-metoder
 topic-fix: Developer and implementation
 uuid: c5107a7e-273b-4f71-8738-4c603479b24c
 exl-id: 8eb98c3f-c6ef-4593-ad3a-f566f4d4b6a2
-source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '435'
 ht-degree: 24%
@@ -19,11 +19,11 @@ Här är Experience Cloud ID-metoderna som tillhandahålls av Android-biblioteke
 
 SDK har för närvarande stöd för flera Adobe Experience Cloud-lösningar, inklusive Analytics, Target, Audience Manager och Adobe Experience Platform Identity Service.
 
-Metoderna är prefasta enligt lösningen. Experience Cloud ID-metoder har till exempel prefixet `visitor`. Mer information finns i [Experience Cloud ID-konfiguration](/help/android/c-marketing-cloud/mcvid.md).
+Metoderna är prefasta enligt lösningen. Experience Cloud ID-metoder har till exempel prefix `visitor`. Mer information finns i [Experience Cloud ID-konfiguration](/help/android/c-marketing-cloud/mcvid.md).
 
 * **public static String appendToURL(final String URL)**
 
-   Lägger till besöksdata från Adobe i en URL-sträng som ska användas med JavaScript-biblioteket Adobe. Du måste ha Mobile SDK 4.12+ för att kunna använda den här metoden. Mer information finns i [appendVisitorIDsTo](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/methods/appendvisitorid.html) i dokumentationen för Adobe Experience Cloud identitetstjänst.
+   Lägger till besöksdata från Adobe i en URL-sträng som ska användas med JavaScript-biblioteket Adobe. Du måste ha Mobile SDK 4.12+ för att kunna använda den här metoden. Mer information finns i [appendVisitorIDsTo](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/methods/appendvisitorid.html) i dokumentationen för Adobe Experience Cloud Identity Service.
 
    >[!IMPORTANT]
    >
@@ -66,7 +66,7 @@ Metoderna är prefasta enligt lösningen. Experience Cloud ID-metoder har till e
 
       >[!IMPORTANT]
       >
-      >Den här metoden kan orsaka ett blockerande nätverksanrop och ska **inte** anropas från en gränssnittstråd.
+      >Den här metoden kan orsaka ett blockerande nätverksanrop och bör **not** anropas från en gränssnittstråd.
 
 * **syncIdentifiers**
 
@@ -90,7 +90,7 @@ Metoderna är prefasta enligt lösningen. Experience Cloud ID-metoder har till e
 
    Synkroniserar angiven identifierartyp och angivet värde med tjänsten för besökar-ID.
 
-   Ange `authenticationState` som ett av följande värden:
+   Skicka in `authenticationState` som ett av följande värden:
 
    * `VisitorID.VisitorIDAuthenticationState.VISITOR_ID_AUTHENTICATION_STATE_UNKNOWN`
    * `VisitorID.VisitorIDAuthenticationState.VISITOR_ID_AUTHENTICATION_STATE_AUTHENTICATED`
@@ -112,7 +112,7 @@ Metoderna är prefasta enligt lösningen. Experience Cloud ID-metoder har till e
 
    Synkroniserar angivna identifierare till ID-tjänsten.
 
-   Ange `authenticationState` som ett av följande värden:
+   Skicka in `authenticationState` som ett av följande värden:
    * `VisitorID.VisitorIDAuthenticationState.VISITOR_ID_AUTHENTICATION_STATE_UNKNOWN`
    * `VisitorID.VisitorIDAuthenticationState.VISITOR_ID_AUTHENTICATION_STATE_AUTHENTICATED`
    * `VisitorID.VisitorIDAuthenticationState.VISITOR_ID_AUTHENTICATION_STATE_LOGGED_OUT`
@@ -133,7 +133,7 @@ Metoderna är prefasta enligt lösningen. Experience Cloud ID-metoder har till e
 
 * **getIdentifiers**
 
-   Hämtar en lista med skrivskyddade `ADBVisitorID`-objekt.
+   Hämtar en lista med skrivskyddade `ADBVisitorID` objekt.
 
    * Här är syntaxen för den här metoden:
 

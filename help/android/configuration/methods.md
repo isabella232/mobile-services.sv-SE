@@ -1,17 +1,17 @@
 ---
 description: Här är en lista över metoder som finns i Android-biblioteket.
 keywords: android;bibliotek;mobil;sdk
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Konfigurationsmetoder
 topic-fix: Developer and implementation
 uuid: 663aeb6c-1b97-4a3a-8c0e-dd4c2ec28c01
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+exl-id: f35b9d32-f967-42e9-bd00-ad85f3bd6bc4
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '974'
 ht-degree: 23%
 
 ---
-
 
 # Konfigurationsmetoder{#configuration-methods}
 
@@ -19,7 +19,7 @@ Här är en lista över metoder som finns i Android-biblioteket.
 
 ## Inledande konfiguration {#section_9169243ECC4744A899A8271F92090ECD}
 
-Följande metod måste anropas en gång i `onCreate`-metoden för huvudaktiviteten:
+Följande metod måste anropas en gång i `onCreate` huvudaktivitetens metod:
 
 * `setContext`
 Här är kodexemplet för den här metoden:
@@ -37,7 +37,7 @@ Här är kodexemplet för den här metoden:
 
 * **registerAdobeDataCallback**
 
-   * Registrerar ett objekt som implementerar gränssnittet `AdobeDataCallback`. Den överskrivna anropsmetoden anropas med ett `Config.MobileDataEvent`-värde och associerade data i en `Map<String, Object>` för den utlösande händelsen. Mer information om vilka händelser som utlöser det här återanropet finns i *MobileDataEventEnum* längst ned i det här avsnittet.
+   * Registrerar ett objekt som implementerar `AdobeDataCallback` gränssnitt. Den överskrivna anropsmetoden anropas med en `Config.MobileDataEvent` värdet och tillhörande data i en `Map<String, Object>` för den utlösande händelsen. Mer information om vilka händelser som kommer att utlösa det här återanropet finns i *MobileDataEventEnum* längst ned i det här avsnittet.
 
       >[!TIP]
       >
@@ -89,7 +89,7 @@ Här är kodexemplet för den här metoden:
       * `MOBILE_PRIVACY_STATUS_OPT_OUT`, där de tas bort.
       * `MOBILE_PRIVACY_STATUS_UNKNOWN`, där din rapportsvit är tidsstämpel aktiverad, kommer träffar att sparas tills sekretessstatusen ändras till att anmäla sig (träffar skickas) eller avanmäla dig (träffar tas bort).
 
-         Om rapportsviten inte är tidsstämpelaktiverad, kommer träffar att tas bort tills sekretessstatusen ändras för att anmäla sig. Standardvärdet anges i filen `ADBMobileConfig.json`.
+         Om rapportsviten inte är tidsstämpelaktiverad, kommer träffar att tas bort tills sekretessstatusen ändras för att anmäla sig. Standardvärdet anges i `ADBMobileConfig.json` -fil.
    * Här är syntaxen för den här metoden:
 
       ```java
@@ -105,7 +105,7 @@ Här är kodexemplet för den här metoden:
 
 * **setPrivacyStatus**
 
-   * Anger den aktuella användarens sekretessstatus till `status`.
+   * Anger sekretessstatus för den aktuella användaren till `status`.
 
       Du kan ange sekretessstatus till något av följande värden:
       * `MOBILE_PRIVACY_STATUS_OPT_IN`, där träffar skickas omedelbart. De här träffarna skickas omedelbart.
@@ -143,11 +143,11 @@ Om rapportsviten inte är tidsstämpelaktiverad, kommer träffar att tas bort ti
 
 * **getUserIdentifier**
 
-   * Om en anpassad identifierare har angetts returneras den anpassade användaridentifieraren. Om ingen anpassad identifierare har angetts returneras `null`. Standardvärdet är `null`.
+   * Om en anpassad identifierare har angetts returneras den anpassade användaridentifieraren. Om ingen anpassad identifierare har angetts returneras den `null`. Standardvärdet är `null`.
 
       >[!TIP]
       >
-      >Om ditt program uppgraderar från Experience Cloud 3.x till 4.x SDK hämtas det tidigare anpassade eller automatiskt genererade besökar-ID:t och lagras som en anpassad användaridentifierare. Detta bevarar besöksdata mellan SDK-uppgraderingar. För nya installationer på 4.x SDK är användaridentifieraren `null` tills den är inställd.
+      >Om ditt program uppgraderar från Experience Cloud 3.x till 4.x SDK hämtas det tidigare anpassade eller automatiskt genererade besökar-ID:t och lagras som en anpassad användaridentifierare. Detta bevarar besöksdata mellan SDK-uppgraderingar. För nya installationer på 4.x SDK är användaridentifieraren `null`.
 
    * Här är syntaxen för den här metoden:
 
@@ -192,7 +192,7 @@ Om rapportsviten inte är tidsstämpelaktiverad, kommer träffar att tas bort ti
       ```
 
 * **setDebugLogging**
-   * Anger inställningen för felsökningsloggning till `debugLogging`.
+   * Anger loggningsinställningar för felsökning till `debugLogging`.
    * Här är syntaxen för den här metoden:
 
       ```java
@@ -253,7 +253,7 @@ Om rapportsviten inte är tidsstämpelaktiverad, kommer träffar att tas bort ti
 
 * **pauseCollecting &#x200B; LifecycleData**
 
-   * Anger för SDK att din app är pausad, så att livscykelvärdena beräknas korrekt. `onPause` samlar t.ex. in en tidsstämpel för att fastställa den tidigare sessionslängden. Detta anger också en flagga så att livscykeln vet att appen inte kraschade. Mer information finns i [Livscykelvärden](/help/android/metrics.md).
+   * Anger för SDK att din app är pausad, så att livscykelvärdena beräknas korrekt. Till exempel: `onPause` samlar in en tidsstämpel för att fastställa den tidigare sessionslängden. Detta anger också en flagga så att livscykeln vet att appen inte kraschade. Mer information finns i [Livscykelvärden](/help/android/metrics.md).
 
    * Här är syntaxen för den här metoden:
 
@@ -273,7 +273,7 @@ Om rapportsviten inte är tidsstämpelaktiverad, kommer träffar att tas bort ti
 
 * **setSmallIconResourceId(int resourceId)**
 
-   * (**Version 4.2 eller senare**) Anger den lilla ikon som ska användas för meddelanden som har skapats av SDK:n. Den här ikonen visas i statusfältet och är den sekundära bilden som visas när användaren ser det fullständiga meddelandet i meddelandecentret.
+   * (**Version 4.2 eller senare**) Anger den lilla ikon som ska användas för meddelanden som har skapats av SDK. Den här ikonen visas i statusfältet och är den sekundära bilden som visas när användaren ser det fullständiga meddelandet i meddelandecentret.
    * Här är syntaxen för den här metoden:
 
       ```java
@@ -288,7 +288,7 @@ Om rapportsviten inte är tidsstämpelaktiverad, kommer träffar att tas bort ti
 
 * **setLargeIconResourceId(int resourceId)**
 
-   * (**Version 4.2 eller senare**) Anger den stora ikon som ska användas för meddelanden som har skapats av SDK:n. Den här ikonen är den primära bilden som visas när användaren ser det fullständiga meddelandet i meddelandecentret.
+   * (**Version 4.2 eller senare**) Anger den stora ikon som ska användas för meddelanden som har skapats av SDK. Den här ikonen är den primära bilden som visas när användaren ser det fullständiga meddelandet i meddelandecentret.
    * Här är syntaxen för den här metoden:
 
       ```java
@@ -340,11 +340,11 @@ Om rapportsviten inte är tidsstämpelaktiverad, kommer träffar att tas bort ti
 
 * **submitAdvertisingIdentifierTask**
 
-   * Ger SDK:n ett anrop som returnerar den sträng med annonsidentifieraren som returneras från Google Play Services. SDK kör den här aktiviteten på en bakgrundstråd och ställer in en intern variabel för Advertising Identifier som baseras på värdet som returneras från anropsfunktionen.
+   * Tillhandahåller en anropningsbar till SDK som returnerar strängen för den Advertising Identifier som returneras från Google Play Services. SDK kör den här aktiviteten på en bakgrundstråd och ställer in en intern variabel för Advertising Identifier som baseras på värdet som returneras från anropsfunktionen.
 
       >[!IMPORTANT]
       > 
-      >Om du vill använda Advertising Identifier i Acquisition eller Lifecycle anropar du den innan du ringer `Config.collectLifecycleData`.
+      >Om du vill använda Advertising Identifier i Acquisition eller Lifecycle, anropar du den innan du ringer `Config.collectLifecycleData`.
 
       * Här är syntaxen för den här metoden:
 

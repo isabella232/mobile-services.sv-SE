@@ -1,11 +1,11 @@
 ---
-description: Versionsinformation och kända fel för iOS SDKs 4.x för Experience Cloud Solutions.
-solution: Experience Cloud,Analytics
+description: Versionsinformation och kända fel för iOS SDK 4.x for Experience Cloud Solutions.
+solution: Experience Cloud Services,Analytics
 title: Versionsinformation
 topic-fix: Developer and implementation
 uuid: e1613dc5-02a4-43a7-997a-29b4de98b4d1
 exl-id: dd1e6bab-65e7-4a68-b3ec-21fb1a08aca2
-source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '535'
 ht-degree: 0%
@@ -60,7 +60,7 @@ Här är versionsinformation, kända fel och snabbkorrigeringsinformation för i
 
 * I App Messaging:
 
-   * På enheter som kör iOS 10 eller senare används `UserNotifications`-ramverket nu för att schemalägga lokala meddelanden för program som är länkade till `UserNotifications.framework`.
+   * På enheter med iOS 10 eller senare `UserNotifications` ramverket används nu för att schemalägga lokala meddelanden för program som är länkade till `UserNotifications.framework`.
    * Helskärmsmeddelanden använder nu WKWebViews från `WebKit.framework`, som måste länkas i Xcode-projektet.
    * Korrigerade ett fel där Push click-through-nyttolasten inte kunde användas som egenskaper för meddelanden i appen.
    * Korrigerade ett kraschproblem.
@@ -71,13 +71,13 @@ Här är versionsinformation, kända fel och snabbkorrigeringsinformation för i
 
 * Återställde en ändring som introducerades i version 4.18.6 som i vissa miljöer orsakade en krasch på enheter som kör en iOS-version som är äldre än 11.0.
 
-* Adobe Target: Egenskapen `requestLocationParameters` har lagts till i `ADBTargetRequestObject`, vilket gör att intrycks-ID kan skickas med Target-begäranden.
+* Adobe Target: Lagt till `requestLocationParameters` egenskap i `ADBTargetRequestObject`, som gör att scriptId kan skickas med Target-begäranden.
 
 ## 18 juli 2019: Version 4.18.6
 
-* Adobe Target: Alla begäranden inkluderar nu klienten och `sessionId` i URL-frågeparametrarna.
+* Adobe Target: Alla förfrågningar inkluderar nu klienten och `sessionId` i URL-frågeparametrarna.
 * Adobe Target: Korrigerade en minnesläcka.
-* Tjänst för besökar-ID: API:erna `visitorAppendToURL` och `visitorGetUrlVariablesAsync` dubbelkodar inte längre sina returvärden.
+* Tjänst för besökar-ID: The `visitorAppendToURL` och `visitorGetUrlVariablesAsync` API:er dubbelkodar inte längre sina returvärden.
 
    Den dubbla kodningen gjorde att returvärdena från dessa API:er flaggerades av vissa säkerhetsgranskningar.
 
@@ -90,6 +90,6 @@ Här är versionsinformation, kända fel och snabbkorrigeringsinformation för i
 * Tjänst för besökar-ID - Ökade returtidsgränsen för
    `visitorGetUrlVariablesAsync` API till 30 sekunder.
 
-* Visitor ID-tjänst - API-anropet `setPushIdentifier` skickar nu ett synkroniseringsanrop till besökar-ID-tjänsten varje gång det anropas.
+* Tjänsten för besökar-ID - `setPushIdentifier` API-anrop skickar nu ett synkroniseringsanrop till besökar-ID-tjänsten varje gång det anropas.
 
-Mer information om aktuell och tidigare versionsinformation för alla lösningar finns i [Adobe Experience Cloud Release Notes](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html).
+Mer information om aktuell och tidigare versionsinformation om alla lösningar finns i [Versionsinformation för Adobe Experience Cloud](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html).

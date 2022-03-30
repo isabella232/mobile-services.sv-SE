@@ -1,12 +1,12 @@
 ---
 description: Här är en lista över de Audience Manager-metoder som finns i Android-biblioteket.
 keywords: android;bibliotek;mobil;sdk
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Audience Manager-metoder
 topic-fix: Developer and implementation
 uuid: 2f6e4664-1306-41d4-9fa7-e3a99f1df4ab
 exl-id: 707b40b8-e56e-4c26-8b59-87c5d71cad0c
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '277'
 ht-degree: 27%
@@ -17,13 +17,13 @@ ht-degree: 27%
 
 Här är en lista över de Audience Manager-metoder som finns i Android-biblioteket.
 
-SDK har för närvarande stöd för flera Adobe Experience Cloud-lösningar, inklusive Analytics, Target, Audience Manager och Adobe Experience Platform Identity Service. Metoderna är prefasta enligt lösningen. Experience Cloud ID-metoder har till exempel prefixet `audience manager`.
+SDK har för närvarande stöd för flera Adobe Experience Cloud-lösningar, inklusive Analytics, Target, Audience Manager och Adobe Experience Platform Identity Service. Metoderna är prefasta enligt lösningen. Experience Cloud ID-metoder har till exempel prefix `audience manager`.
 
 Om Audience Manager är konfigurerat i JSON-filen skickas en signal som innehåller livscykelvärden med en träff i livscykeln.
 
 * **getVisitorProfile**
 
-   Returnerar den besökarprofil som senast hämtades och, om ingen signal har skickats, returnerar `null`. Besökarprofilen sparas i `SharedPreferences` så att du enkelt kommer åt den när du startar appen flera gånger.
+   Returnerar den besökarprofil som senast hämtades och, om ingen signal har skickats, returneras `null`. Besökarprofilen sparas i `SharedPreferences` för enkel åtkomst när du startar programmet flera gånger.
 
    * Här är syntaxen för den här metoden:
 
@@ -73,7 +73,7 @@ Om Audience Manager är konfigurerat i JSON-filen skickas en signal som innehål
 
    Anger DPID och DPUID, och dessa värden skickas med varje signal.
 
-   Om det DPUID-värde som skickas till den här metoden innehåller tecken som inte är URL-säkra, måste kunderna koda parametern innan de skickar den till SDK.
+   Om det DPUID-värde som skickas till den här metoden innehåller tecken som inte är URL-säkra måste kunderna koda parametern innan de skickar den till SDK.
 
    * Här är syntaxen för den här metoden:
 

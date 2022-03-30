@@ -1,11 +1,11 @@
 ---
 description: Här är en lista över TVJS-metoder som tillhandahålls av tvOS-biblioteket.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: TVJS-metoder
 topic-fix: Developer and implementation
 uuid: a7bfa85a-0d6e-4f51-9a9e-70429c2a9806
 exl-id: 4e0c6a29-953d-49fc-b44f-533dd393ffb1
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '1997'
 ht-degree: 27%
@@ -46,7 +46,7 @@ Här är en lista över TVJS-metoder som tillhandahålls av tvOS-biblioteket.
    * `ADBMobilePrivacyStatusOptOut`: Träffar ignoreras.
    * `ADBMobilePrivacyStatusUnknown`: Om spårning offline är aktiverat sparas träffar tills sekretessstatusen ändras till anmälan (träffar skickas) eller avanmälan (träffar ignoreras).
 
-      Om spårning offline inte är aktiverat ignoreras träffar tills sekretessstatusen ändras till att anmäla sig. Standardvärdet anges i filen `ADBMobileConfig.json`.
+      Om spårning offline inte är aktiverat ignoreras träffar tills sekretessstatusen ändras till att anmäla sig. Standardvärdet anges i `ADBMobileConfig.json` -fil.
 
    * Här är syntaxen för den här metoden:
 
@@ -258,7 +258,7 @@ Här är en lista över TVJS-metoder som tillhandahålls av tvOS-biblioteket.
 
    Skickar de aktuella latitud- och longitudkoordinaterna.
 
-   Intressepunkter (POI) som definieras i filen `ADBMobileConfig.json` används också för att avgöra om platsen som du angav som parameter finns i någon av dina POI. Om de aktuella koordinaterna finns i en definierad POI fylls en kontextdatavariabel i och skickas med anropet `trackLocation`.
+   I används även intressepunkter (POI) som definieras i `ADBMobileConfig.json` för att avgöra om platsen som du angav som parameter finns i någon av dina POI. Om de aktuella koordinaterna finns i en definierad POI fylls en kontextdatavariabel i och skickas med `trackLocation` ring.
 
    * Här är syntaxen för den här metoden:
 
@@ -383,9 +383,9 @@ Här är en lista över TVJS-metoder som tillhandahålls av tvOS-biblioteket.
          * Namnet på den tidsbestämda åtgärd som avslutas
       * Parameter: `callback`
          * Typ: `function(inAppDuration, totalDuration, data)`
-         * Återanropsmetod som kommer att ha `inAppDuration` (tal), `totalDuration` (tal) och `data` (kontextdataobjekt) i sina parametrar.
+         * Återanropsmetod som kommer att ha `inAppDuration` (tal), `totalDuration` (tal), och `data` (kontextdataobjekt) i dess parametrar.
 
-            Du kan förhindra att den sista träffen skickas av SDK genom att returnera `false` i återanropsfunktionen.
+            Du kan förhindra att den sista träffen skickas av SDK genom att returnera `false` i callback-funktionen.
       * Här är kodexemplet för den här metoden:
 
          ```objective-c
@@ -424,11 +424,11 @@ Här är en lista över TVJS-metoder som tillhandahålls av tvOS-biblioteket.
 
    Returnerar den automatiskt genererade besökaridentifieraren.
 
-   Detta är ett programspecifikt unikt besökar-ID som genereras av Adobe servrar. Om det inte går att nå Adobe vid genereringen genereras ID:t med Apples CFUID. Värdet genereras vid den första starten och lagras och används från den tidpunkten. Detta ID bevaras mellan programuppgraderingar, sparas och återställs under standardprocessen för säkerhetskopiering av program och tas bort när programmet avinstalleras.
+   Detta är ett programspecifikt unikt besökar-ID som genereras av Adobe servrar. Om det inte går att nå Adobe vid genereringen genereras ID:t med Apple CFUID. Värdet genereras vid den första starten och lagras och används från den tidpunkten. Detta ID bevaras mellan programuppgraderingar, sparas och återställs under standardprocessen för säkerhetskopiering av program och tas bort när programmet avinstalleras.
 
    >[!TIP]
    >
-   >Om ditt program uppgraderar från Experience Cloud 3.x till 4.x SDK hämtas det tidigare anpassade eller automatiskt genererade besökar-ID:t och lagras som en anpassad användaridentifierare. Detta bevarar besöksdata mellan SDK-uppgraderingar. För nya installationer på 4.x SDK är användaridentifieraren `nil` och spårningsidentifieraren används. Mer information finns på raden userIdentifier nedan.
+   >Om ditt program uppgraderar från Experience Cloud 3.x till 4.x SDK hämtas det tidigare anpassade eller automatiskt genererade besökar-ID:t och lagras som en anpassad användaridentifierare. Detta bevarar besöksdata mellan SDK-uppgraderingar. För nya installationer på 4.x SDK är användaridentifieraren `nil`och spårnings-ID används. Mer information finns på raden userIdentifier nedan.
 
    * Här är syntaxen för den här metoden:
 
@@ -509,7 +509,7 @@ Här är en lista över TVJS-metoder som tillhandahålls av tvOS-biblioteket.
 
    Returnerar den besökarprofil som senast hämtades.
 
-   Returnerar null om ingen signal har skickats ännu. Besökarprofilen sparas i `NSUserDefaults` så att du enkelt kommer åt den när du startar appen flera gånger.
+   Returnerar null om ingen signal har skickats ännu. Besökarprofilen sparas i `NSUserDefaults` för enkel åtkomst när du startar programmet flera gånger.
 
    * Här är syntaxen för den här metoden:
 
@@ -723,8 +723,7 @@ Här är en lista över TVJS-metoder som tillhandahålls av tvOS-biblioteket.
          * Typ: `String`
          * Värdet på den identifierare som du synkroniserar.
       * Parameter: `authState`
-         * Typ: ADBMobilVisitorAuthenticationState
-Användarens autentiseringstillstånd. Möjliga värden är:
+         * Typ: Autentiseringstillståndet ADBMobilVisitorAuthenticationState för användaren. Möjliga värden är:
             * `ADBMobileVisitorAuthenticationStateUnknown`
             * `ADBMobileVisitorAuthenticationStateAuthenticated`
             * `ADBMobileVisitorAuthenticationStateLoggedOut`

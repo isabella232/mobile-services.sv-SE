@@ -1,12 +1,12 @@
 ---
-description: Du kan använda iOS PhoneGap Plug-in-metoder för att slutföra en mängd olika åtgärder.
+description: Du kan använda iOS PhoneGap Plug-in-metoder för att utföra en mängd olika åtgärder.
 keywords: android;bibliotek;mobil;sdk
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: PhoneGap plug-in-metoder
 topic-fix: Developer and implementation
 uuid: bc3db9ce-81b7-45ec-88aa-6020c1db5d9c
 exl-id: 4e6cf200-c826-4b23-87cf-4b8e1e691981
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '1557'
 ht-degree: 34%
@@ -17,7 +17,7 @@ ht-degree: 34%
 
 Du kan använda Android PhoneGap Plug-in-metoder för att slutföra en mängd olika åtgärder.
 
-I `html`-filer där du vill använda spårning lägger du till följande i taggen `<head>`:
+I `html` filer där du vill använda spårning lägger du till följande i `<head>` tagg:
 
 ```js
 <script type="text/javascript" charset="utf-8" src="ADB_Helper.js"></script>
@@ -33,9 +33,9 @@ I `html`-filer där du vill använda spårning lägger du till följande i tagge
 
    * `ADB.optedIn`: Träffarna skickas omedelbart.
    * `ADB.optedOut`: Träffarna är bortkastade.
-   * `ADB.optUnknown`: Om rapportsviten  **** är tidsstämpelaktiverad sparas träffar tills sekretessstatusen ändras till att anmäla sig (träffar skickas) eller avanmäla dig (träffar ignoreras). Om rapportsviten **inte är** tidsstämpelaktiverad ignoreras träffar tills sekretessstatusen ändras till att anmäla sig.
+   * `ADB.optUnknown`: Om din rapportsvit **är** tidsstämpelaktiverat, träffar sparas tills sekretessstatusen ändras till att anmäla sig (träffar skickas) eller avanmäla dig (träffar ignoreras). Om din rapportsvit **är inte** tidsstämpelaktiverad, träffar ignoreras tills sekretessstatusen ändras för att anmäla sig.
 
-      Standardvärdet anges i filen `ADBMobileConfig.json`.
+      Standardvärdet anges i `ADBMobileConfig.json` -fil.
 
    * Här är kodexemplet för den här metoden:
 
@@ -45,13 +45,13 @@ I `html`-filer där du vill använda spårning lägger du till följande i tagge
 
 * **setPrivacyStatus**
 
-   Anger den aktuella användarens sekretessstatus till `status`.
+   Anger sekretessstatus för den aktuella användaren till `status`.
 
    Du kan ange en av följande statusar:
 
    * `ADB.optedIn`: Träffarna skickas omedelbart.
    * `ADB.optedOut`: Träffarna är bortkastade.
-   * `ADB.optUnknown`: Om rapportsviten  **** är tidsstämpelaktiverad sparas träffar tills sekretessstatusen ändras till att anmäla sig (träffar skickas) eller avanmäla dig (träffar ignoreras). Om rapportsviten **inte är** tidsstämpelaktiverad ignoreras träffar tills sekretessstatusen ändras till att anmäla sig.
+   * `ADB.optUnknown`: Om din rapportsvit **är** tidsstämpelaktiverat, träffar sparas tills sekretessstatusen ändras till att anmäla sig (träffar skickas) eller avanmäla dig (träffar ignoreras). Om din rapportsvit **är inte** tidsstämpelaktiverad, träffar ignoreras tills sekretessstatusen ändras för att anmäla sig.
 
    * Här är kodexemplet för den här metoden:
 
@@ -71,7 +71,7 @@ I `html`-filer där du vill använda spårning lägger du till följande i tagge
 
 * **setDebugLogging**
 
-   Aktiverar (`true`) eller inaktiverar (`false`) visning av felsökningsinformation. Som standard är variabeln `false`.
+   Aktiverar (`true`) eller inaktiverar (`false`) visa felsökningsinformation. Som standard är variabeln `false`.
 
    * Här är kodexemplet för den här metoden:
 
@@ -153,7 +153,7 @@ I `html`-filer där du vill använda spårning lägger du till följande i tagge
 
    >[!IMPORTANT]
    >
-   >Om du anropar `keepLifecycleSessionAlive` hindras programmet från att starta en ny session nästa gång det återupptas från bakgrunden. Du bör bara använda den här metoden om programmet registrerar sig för meddelanden i bakgrunden.
+   >Anropar `keepLifecycleSessionAlive` förhindrar att appen startar en ny session nästa gång den återupptas från bakgrunden. Du bör bara använda den här metoden om programmet registrerar sig för meddelanden i bakgrunden.
 
    * Här är kodexemplet för den här metoden:
 
@@ -238,7 +238,7 @@ I `html`-filer där du vill använda spårning lägger du till följande i tagge
 
 * **trackState**
 
-   Spårar ett apptillstånd med valfria kontextdata. Lägen är de vyer som är tillgängliga i din app, till exempel `home dashboard`, `app settings`, `cart` och så vidare. Dessa lägen liknar sidor på en webbplats och `trackState` anropar stegvisa sidvyer.
+   Spårar ett apptillstånd med valfria kontextdata. Lägen är de vyer som är tillgängliga i din app, till exempel `home dashboard`, `app settings`, `cart`och så vidare. Dessa lägen liknar sidor på en webbplats, och `trackState` anropar stegvisa sidvyer.
 
    `cData`: JSON-objekt med nyckelvärdepar som ska skickas i kontextdata.
 
@@ -260,7 +260,7 @@ I `html`-filer där du vill använda spårning lägger du till följande i tagge
 
 * **trackAction**
 
-   Spårar en åtgärd i din app. Åtgärderna är `logins`, `banner taps`, `feed subscriptions` och andra mått som inträffar i din app och som du vill mäta.
+   Spårar en åtgärd i din app. Åtgärderna omfattar `logins`, `banner taps`, `feed subscriptions`och andra mätvärden som finns i appen och som du vill mäta.
 
    * Här är syntaxen för den här metoden:
 
@@ -280,7 +280,7 @@ I `html`-filer där du vill använda spårning lägger du till följande i tagge
 
 * **trackLocation**
 
-   Skickar de aktuella x y-koordinaterna. Intressepunkter som definieras i `ADBMobileConfig.json`-filen används också för att avgöra om platsen som anges som en parameter finns i något av dina POI-dokument. Om de aktuella koordinaterna finns i en definierad POI fylls en kontextdatavariabel i och skickas med anropet `trackLocation`.
+   Skickar de aktuella x y-koordinaterna. I används även intressepunkter som definieras i `ADBMobileConfig.json` för att avgöra om den plats som anges som parameter finns i POI. Om de aktuella koordinaterna finns i en definierad POI fylls en kontextdatavariabel i och skickas med `trackLocation` ring.
 
    * Här är syntaxen för den här metoden:
 
@@ -334,9 +334,9 @@ I `html`-filer där du vill använda spårning lägger du till följande i tagge
 
 * **trackTimed &#x200B; ActionUpdate**
 
-   Ange `cData` för att uppdatera kontextdata som är associerade med `action`.
+   Skicka in `cData` för att uppdatera kontextdata som är associerade med `action`>.
 
-   Det `cData` som skickas läggs till i befintliga data för åtgärden och, om samma nyckel redan har definierats för `action`, skriver över data.
+   The `cData` som skickas läggs till befintliga data för åtgärden och, om samma nyckel redan har definierats för `action`, skriver över data.
 
    * Här är syntaxen för den här metoden:
 
@@ -409,7 +409,7 @@ I `html`-filer där du vill använda spårning lägger du till följande i tagge
 
 * **targetLoadRequest**
 
-   Skickar en begäran till din konfigurerade `Target`-server och returnerar erbjudandets strängvärde.
+   Skickar en begäran till din konfigurerade `Target` och returnerar erbjudandets strängvärde.
 
    * Här är syntaxen för den här metoden:
 
@@ -426,7 +426,7 @@ I `html`-filer där du vill använda spårning lägger du till följande i tagge
 
 * **targetLoadOrderConfirmRequest**
 
-   Skickar en begäran till den konfigurerade `Target`-servern.
+   Skickar en begäran till din konfigurerade `Target` server.
 
    * Här är syntaxen för den här metoden:
 
@@ -457,7 +457,7 @@ I `html`-filer där du vill använda spårning lägger du till följande i tagge
 
 * **targetLoadRequestWithNameWithLocationParameters**
 
-   Bearbetar en `Target`-tjänstförfrågan.
+   Bearbetar en `Target` tjänstförfrågan.
 
    * Här är syntaxen för den här metoden:
 
@@ -475,7 +475,7 @@ I `html`-filer där du vill använda spårning lägger du till följande i tagge
 
 * **targetLoadRequestWithName**
 
-   Bearbetar en `Target`-tjänstförfrågan.
+   Bearbetar en `Target` tjänstförfrågan.
 
    * Här är syntaxen för den här metoden:
 
@@ -499,7 +499,7 @@ I `html`-filer där du vill använda spårning lägger du till följande i tagge
 
 * **targetSessionID**
 
-   Hämtar värdet för den `SessionID`-cookie som returnerats för den här besökaren av målservern.
+   Hämtar värdet för `SessionID` En cookie returnerades för den här besökaren av målservern.
 
    * Här är syntaxen för den här metoden:
 
@@ -515,7 +515,7 @@ I `html`-filer där du vill använda spårning lägger du till följande i tagge
 
 * **targetPcID**
 
-   Hämtar värdet för den `PcID`-cookie som returneras för den här besökaren av `Target`-servern.
+   Hämtar värdet för `PcID` cookie som returneras för besökaren av `Target` server.
 
    * Här är syntaxen för den här metoden:
 
@@ -585,7 +585,7 @@ I `html`-filer där du vill använda spårning lägger du till följande i tagge
 
 ## Annonsidentifierare {#section_194607D101B047A19C51B19E176E1500}
 
-I huvudaktiviteten som genereras av Cordova anropar du `Config.submitAdvertisingIdentifierTask()` i metoden `onResume()`. Mer information finns i [Konfigurationsmetoder](/help/android/configuration/methods.md).
+I huvudaktiviteten som genereras av Cordova ringer du `Config.submitAdvertisingIdentifierTask()` i `onResume()` -metod. Mer information finns i [Konfigurationsmetoder](/help/android/configuration/methods.md).
 
 ## Audience Manager-metoder {#section_1FD12B29A0AF41D3BEACBB3D624EA0E4}
 
@@ -776,7 +776,7 @@ I huvudaktiviteten som genereras av Cordova anropar du `Config.submitAdvertising
 
 * **visitorGetIDs**
 
-   Returnerar alla `visitorID`s som har synkroniserats.
+   Returnerar alla `visitorID`som har synkroniserats.
 
    * Här är syntaxen för den här metoden:
 

@@ -1,11 +1,11 @@
 ---
 description: Här är en lista över Adobe Target-metoder som finns i iOS-biblioteket.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Målmetoder för iOS
 topic-fix: Developer and implementation
 uuid: 692bcda1-02ba-4902-bd65-15888adf1952
 exl-id: ba03f865-970c-4b48-af35-749f05b273d8
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '629'
 ht-degree: 23%
@@ -16,11 +16,11 @@ ht-degree: 23%
 
 Här är en lista över Adobe Target-metoder som finns i iOS-biblioteket.
 
-SDK har för närvarande stöd för flera Adobe Experience Cloud-lösningar, inklusive Analytics, Target, Audience Manager och Adobe Experience Platform Identity Service. Metoderna är prefasta enligt lösningen. Målmetoderna har till exempel prefixet `target`.
+SDK har för närvarande stöd för flera Adobe Experience Cloud-lösningar, inklusive Analytics, Target, Audience Manager och Adobe Experience Platform Identity Service. Metoderna är prefasta enligt lösningen. Target-metoderna har till exempel prefix `target`.
 
 >[!TIP]
 >
->Livscykelmätvärden skickas som parametrar till varje mbox-belastning. Mer information finns i [Livscykelvärden](/help/ios/metrics.md). Om du skickar Target-begäranden inuti delegatmetoden `didFinishLaunching` lägger du till ett `[ADBMobile trackAction:data:]`- eller `[ADBMobile trackState:data:]`-anrop före Target-implementeringskoden. På så sätt innehåller Target-begäranden alla livscykeldata.
+>Livscykelmätvärden skickas som parametrar till varje mbox-belastning. Mer information finns i [Livscykelvärden](/help/ios/metrics.md). Om du skickar Target-begäranden i `didFinishLaunching` delegatmetod, lägga till `[ADBMobile trackAction:data:]` eller `[ADBMobile trackState:data:]` anropa före koden för målinsimplementering. På så sätt innehåller Target-begäranden alla livscykeldata.
 
 ## Klassreferens: ADBTargetLocationRequest
 
@@ -54,14 +54,14 @@ NSString *const ADBTargetParameterMboxHost;
 >
 >* Om du använder SDK:er **före** version 4.14.0, se [Indataparametrar](https://developers.adobetarget.com/api/#input-parameters) för parameterbegränsningar.
 >
->* Om du använder SDK:er version 4.14.0 **eller efter** finns det parameterbegränsningar i [batchindataparametrar](https://developers.adobetarget.com/api/#batch-input-parameters).
+>* Om du använder SDK:er version 4.14.0 **eller efter**, se [Parametrar för gruppindata](https://developers.adobetarget.com/api/#batch-input-parameters) för parameterbegränsningar.
 
 
 ### Metoder
 
 * **targetLoadRequest: &#x200B; återanrop**
 
-   Skickar begäran till den konfigurerade målservern och returnerar strängvärdet för erbjudandet som genereras i ett `callback`-block.
+   Skickar begäran till den konfigurerade målservern och returnerar strängvärdet för erbjudandet som genereras i ett block `callback`.
 
    * Här är syntaxen för den här metoden:
 
@@ -79,7 +79,7 @@ NSString *const ADBTargetParameterMboxHost;
                           }];
       ```
 
-* **:defaultContent::orderParameters::requestLocationParameters:targetLoadRequestWithNameProfileParametersmboxParameterbackback:**
+* **targetLoadRequestWithName:defaultContent:profileParameters:orderParameters:mboxParameters:requestLocationParameters:callback:**
 
    Skickar en begäran till den konfigurerade målservern och returnerar strängvärdet för erbjudandet som genereras i ett blockåteranrop.
 
@@ -151,7 +151,7 @@ NSString *const ADBTargetParameterMboxHost;
                                  }];
       ```
 
-      Mer information om det underliggande mål-API:t finns i [mål-API-referensen](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-target/target-api-reference-deprecated).
+      Mer information om det underliggande mål-API:t finns i [Mål-API-referens](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-target/target-api-reference-deprecated).
 
 
 
@@ -159,7 +159,7 @@ NSString *const ADBTargetParameterMboxHost;
 
 
 
-* **:defaultContent::orderParameters:targetLoadRequestWithNameParametersmboxParameters:callback**
+* **targetLoadRequestWithName:defaultContent:profileParameters:orderParameters:mboxParameters:callback**
 
    Skickar begäran till den konfigurerade målservern och returnerar strängvärdet för erbjudandet som genereras i ett blockåteranrop.
 

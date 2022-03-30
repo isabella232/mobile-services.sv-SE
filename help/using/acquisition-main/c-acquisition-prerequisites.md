@@ -1,12 +1,12 @@
 ---
 description: Slutför följande krav innan du kan använda förvärvslänkar.
 keywords: mobil
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Förutsättningar för värvning
 topic-fix: Metrics
 uuid: a224499a-5a51-4ca5-a37b-06792b774671
 exl-id: 31201bec-e823-47b1-8912-2f8d69cea5be
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '186'
 ht-degree: 6%
@@ -37,8 +37,8 @@ För att spåra marknadslänkar måste du uppfylla följande krav:
 
 1. Aktivera alternativ för SDK-förvärv
 
-   Spårning måste vara aktiverat i SDK-konfigurationen innan länkar kan spåras och rapporteras på. Mer information finns i [Konfigurera förvärv](/help/using/acquisition-main/t-enable-acquisition.md).
+   Spårning måste vara aktiverat i SDK-konfigurationen innan länkar kan spåras och rapporteras på. Mer information finns i [Konfigurera värvning](/help/using/acquisition-main/t-enable-acquisition.md).
 
 1. Lägg till App Store-appar
 
-   Du måste lägga till appen från Apple App Store eller Google Play. Mer information finns i [Lägga till en app från en appbutik](/help/using/manage-apps/c-app-store/t-app-store-app.md).
+   Du måste lägga till appen från Apple App Store eller från Google Play. Mer information finns i [Lägg till en app från en appbutik](/help/using/manage-apps/c-app-store/t-app-store-app.md).

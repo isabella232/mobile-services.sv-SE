@@ -1,10 +1,10 @@
 ---
-description: 'Följande förvärvsmetoder tillhandahålls av iOS-biblioteket '
-solution: Experience Cloud,Analytics
+description: 'Följande förvärvsmetoder finns i iOS-biblioteket '
+solution: Experience Cloud Services,Analytics
 title: Förvärvsmetoder
 uuid: 6f88de57-793d-4d33-9a54-f6714289fd2c
 exl-id: dd2721ae-b9a6-48b9-bc92-8e12ee551929
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '80'
 ht-degree: 18%
@@ -19,7 +19,7 @@ Följande metod stöds:
 
 * **purchaseCampaignStartForApp:data:**
 
-   Tillåter utvecklare att starta en app-anskaffningskampanj som om användaren hade klickat på en länk. Detta är användbart när du vill skapa länkar för manuell hämtning och hantera omdirigering av appbutiken själv, till exempel med en `SKStoreView`.
+   Tillåter utvecklare att starta en app-anskaffningskampanj som om användaren hade klickat på en länk. Detta är praktiskt när du skapar länkar för manuell hämtning och hanterar omdirigering av appbutiken själv, till exempel med en `SKStoreView`.
 
    * Här är syntaxen för den här metoden:
 

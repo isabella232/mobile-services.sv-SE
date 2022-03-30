@@ -1,11 +1,11 @@
 ---
 description: Med tidsbestämda åtgärder kan du mäta tiden i appen och den totala tiden mellan åtgärdens början och slut. SDK beräknar tiden för varje session och den totala tiden mellan sessioner som behövs för att åtgärden ska kunna slutföras. Du kan använda tidsbestämda åtgärder för att definiera segment och jämföra tiden för inköp, skicka-nivå, utcheckningsflöde och så vidare.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Tidsbestämda åtgärder
 topic-fix: Developer and implementation
 uuid: dbcbac5a-6345-49f6-b050-0db05292f005
 exl-id: 3499766b-55f6-4861-8291-2269d56ba983
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '335'
 ht-degree: 0%
@@ -31,28 +31,28 @@ Med ett valfritt återanrop kan du utföra ytterligare åtgärder när tidsåtg�
 
 1. Lägg till biblioteket i ditt projekt och implementera livscykeln.
 
-   Mer information finns i *Lägg till SDK- och konfigurationsfilen i ditt projekt* i [Core Implementation och Lifecycle](/help/ios/getting-started/dev-qs.md).
+   Mer information finns i *Lägg till SDK- och konfigurationsfilen i projektet* in [Kärnimplementering och livscykel](/help/ios/getting-started/dev-qs.md).
 1. Importera biblioteket:
 
    ```objective-c
    #import "ADBMobile.h"
    ```
 
-1. Anropa `trackTimedActionStart` och ange ett namn på en tidsbestämd åtgärd och valfria kontextdata.
+1. Utlysning `trackTimedActionStart` och ange ett namn på en tidsbestämd åtgärd och valfria kontextdata.
 
    ```objective-c
    [ADBMobile trackTimedActionStart:@"TimeUntilPurchase"  
                                data:@{@"ExperienceName" : experience}];
    ```
 
-1. (Valfritt) Om du vill lägga till ytterligare kontextdata kan du anropa `trackTimedActionUpdate` med det tidsbestämda åtgärdsnamnet.
+1. (Valfritt) Om du vill lägga till ytterligare kontextdata kan du ringa `trackTimedActionUpdate` med det tidsbestämda åtgärdsnamnet.
 
    ```objective-c
    [ADBMobile trackTimedActionUpdate:@"TimeUntilPurchase"  
                                 data:@{@"myapp.ImageLiked" : imageName}];
    ```
 
-1. När händelsen har slutförts anropar du `trackTimedActionEnd` och skickar det tidsbestämda åtgärdsnamnet och `TimedActionBlock` (callback), som söker upp alla data och beräknar varaktigheter.
+1. När händelsen är klar, ring `trackTimedActionEnd` och skicka timed funktionsmakrots namn och `TimedActionBlock` (återanrop), som söker upp alla data och beräknar varaktighet.
 
    Tidsbestämda händelsemått sparas i mobillösningens variabler för automatisk rapportering.
 

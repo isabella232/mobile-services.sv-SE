@@ -1,12 +1,12 @@
 ---
 description: Du kan använda iOS PhoneGap Plug-in-metoder för att utföra en mängd olika åtgärder.
 keywords: phonegap
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: PhoneGap Plug-in-metoder
 topic-fix: Developer and implementation
 uuid: bd830fe5-804a-4d0a-bbb6-99a6d8da6a03
 exl-id: 7ffdf008-1605-471f-93fb-f9c6b38a3bcb
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '1715'
 ht-degree: 33%
@@ -15,9 +15,9 @@ ht-degree: 33%
 
 # PhoneGap plug-in-metoder {#phonegap-plug-in-methods}
 
-Du kan använda iOS PhoneGap Plug-in-metoder för att slutföra en mängd olika åtgärder.
+Du kan använda iOS PhoneGap Plug-in-metoder för att utföra en mängd olika åtgärder.
 
-I `html`-filer där du vill använda spårning lägger du till följande i taggen `<head>`:
+I `html` filer där du vill använda spårning lägger du till följande i `<head>` tagg:
 
 ```html
 <script type="text/javascript" charset="utf-8" src="ADB_Helper.js"></script>
@@ -31,8 +31,8 @@ I `html`-filer där du vill använda spårning lägger du till följande i tagge
 
    * `ADB.optedIn`, där träffar skickas omedelbart.
    * `ADB.optedOut`, där träffar tas bort.
-   * `ADB.optUnknown`Om rapportsviten  **** är tidsstämpelaktiverad sparas träffar tills sekretessstatusen ändras till att anmäla sig (träffar skickas) eller avanmäla dig (träffar ignoreras). Om rapportsviten **inte är** tidsstämpelaktiverad ignoreras träffar tills sekretessstatusen ändras till att anmäla sig.\
-      Standardvärdet anges i filen `ADBMobileConfig.json`.
+   * `ADB.optUnknown`Om din rapportsvit **är** tidsstämpelaktiverat, träffar sparas tills sekretessstatusen ändras till att anmäla sig (träffar skickas) eller avanmäla dig (träffar ignoreras). Om din rapportsvit **är inte** tidsstämpelaktiverad, träffar ignoreras tills sekretessstatusen ändras för att anmäla sig.\
+      Standardvärdet anges i `ADBMobileConfig.json` -fil.
 
       * Här är kodexemplet för den här metoden:
 
@@ -42,12 +42,12 @@ I `html`-filer där du vill använda spårning lägger du till följande i tagge
 
 * **setPrivacyStatus**
 
-   Anger den aktuella användarens sekretessstatus till `status`. Du kan ange en av följande statusar:
+   Anger sekretessstatus för den aktuella användaren till `status`. Du kan ange en av följande statusar:
    * `ADB.optedIn`, där träffar skickas omedelbart.
    * `ADB.optedOut`, där träffar tas bort.
-   * `ADB.optUnknown` - Om rapportsviten är  **** tidsstämpelaktiverad sparas träffar tills sekretessstatusen ändras till att anmäla sig (träffar skickas) eller avanmäla dig (träffar ignoreras).
+   * `ADB.optUnknown` - Om din rapportsvit **är** tidsstämpelaktiverat, träffar sparas tills sekretessstatusen ändras till att anmäla sig (träffar skickas) eller avanmäla dig (träffar ignoreras).
 
-      Om rapportsviten **inte är** tidsstämpelaktiverad ignoreras träffar tills sekretessstatusen ändras till att anmäla sig.
+      Om din rapportsvit **är inte** tidsstämpelaktiverad, träffar ignoreras tills sekretessstatusen ändras för att anmäla sig.
 
    * Här är kodexemplet för den här metoden:
 
@@ -67,7 +67,7 @@ I `html`-filer där du vill använda spårning lägger du till följande i tagge
 
 * **setDebugLogging**
 
-   Aktiverar (`true`) eller inaktiverar (`false`) visning av felsökningsinformation. Som standard är variabeln `false`.
+   Aktiverar (`true`) eller inaktiverar (`false`) visa felsökningsinformation. Som standard är variabeln `false`.
 
    * Här är kodexemplet för den här metoden:
 
@@ -91,7 +91,7 @@ I `html`-filer där du vill använda spårning lägger du till följande i tagge
 
    >[!TIP]
    >
-   >Om ditt program uppgraderar från Experience Cloud 3.x till 4.x SDK hämtas det tidigare besökar-ID:t (anpassat eller automatiskt genererat) och lagras som en anpassad användaridentifierare (se `getUserIdentifier` nedan). Detta bevarar besöksdata mellan uppgraderingar av SDK. För nya installationer på 4.x SDK är användaridentifieraren `null` och spårnings-ID används.
+   >Om din app uppgraderar från SDK-versionen för Experience Cloud 3.x till 4.x hämtas och lagras det tidigare besökar-ID:t (anpassat eller automatiskt genererat) som en anpassad användaridentifierare (se `getUserIdentifier` nedan). Detta bevarar besöksdata mellan uppgraderingar av SDK. För nya installationer på 4.x SDK är användaridentifieraren `null`och spårnings-ID används.
 
    * Här är kodexemplet för den här metoden:
 
@@ -101,7 +101,7 @@ I `html`-filer där du vill använda spårning lägger du till följande i tagge
 
 * **getUserIdentifier**
 
-   Returnerar den anpassade användaridentifieraren om en anpassad identifierare har angetts och returnerar `null` om ingen anpassad identifierare har angetts. Standardvärdet är `null`.
+   Returnerar den anpassade användaridentifieraren om en anpassad identifierare har angetts, och returnerar `null` om ingen anpassad identifierare har angetts. Standardvärdet är `null`.
 
    * Här är kodexemplet för den här metoden:
 
@@ -141,7 +141,7 @@ I `html`-filer där du vill använda spårning lägger du till följande i tagge
 
    >[!IMPORTANT]
    >
-   >Om du anropar `keepLifecycleSessionAlive` hindras programmet från att starta en ny session nästa gång det återupptas från bakgrunden. Du bör bara använda den här metoden om programmet registrerar sig för meddelanden i bakgrunden.
+   >Anropar `keepLifecycleSessionAlive` förhindrar att appen startar en ny session nästa gång den återupptas från bakgrunden. Du bör bara använda den här metoden om programmet registrerar sig för meddelanden i bakgrunden.
 
    * Här är kodexemplet för den här metoden:
 
@@ -189,7 +189,7 @@ I `html`-filer där du vill använda spårning lägger du till följande i tagge
 
    >[!IMPORTANT]
    >
-   >Viktigt:  den här metoden är avsedd att användas för program som registrerar sig för meddelanden i bakgrunden och ska endast anropas från koden som körs medan programmet körs i bakgrunden.
+   >Viktigt: den här metoden är avsedd att användas för program som registrerar sig för meddelanden i bakgrunden och ska endast anropas från koden som körs medan programmet körs i bakgrunden.
 
    * Här är kodexemplet för den här metoden:
 
@@ -199,7 +199,7 @@ I `html`-filer där du vill använda spårning lägger du till följande i tagge
 
 * **collectLifecycleData**
 
-   Anger för SDK att livscykeldata ska samlas in för användning i alla lösningar i SDK. Mer information finns i [Livscykelmått](/help/ios/metrics.md).
+   Anger för SDK att livscykeldata ska samlas in för användning i alla lösningar i SDK. Mer information finns i [Livscykelstatistik](/help/ios/metrics.md).
 
    * Här är kodexemplet för den här metoden:
 
@@ -282,7 +282,7 @@ I `html`-filer där du vill använda spårning lägger du till följande i tagge
 
 * **trackState**
 
-   Spårar ett apptillstånd med valfria kontextdata. Lägen är de vyer som är tillgängliga i din app, till exempel `home dashboard`, `app settings`, `cart` och så vidare. Dessa lägen liknar sidor på en webbplats och `trackState` anropar stegvisa sidvyer. cData är ett JSON-objekt med nyckelvärdepar som skickas i kontextdata.
+   Spårar ett apptillstånd med valfria kontextdata. Lägen är de vyer som är tillgängliga i din app, till exempel `home dashboard`, `app settings`, `cart`och så vidare. Dessa lägen liknar sidor på en webbplats, och `trackState` anropar stegvisa sidvyer. cData är ett JSON-objekt med nyckelvärdepar som skickas i kontextdata.
 
    * Här är syntaxen för den här metoden:
 
@@ -302,7 +302,7 @@ I `html`-filer där du vill använda spårning lägger du till följande i tagge
 
 * **trackAction**
 
-   Spårar en åtgärd i din app. Åtgärder är sådant som inträffar i appen som du vill mäta, inklusive `logins`, `banner taps`, `feed subscriptions` och andra mått.
+   Spårar en åtgärd i din app. Funktionsmakron är de saker som händer i appen och som du vill mäta, inklusive `logins`, `banner taps`, `feed subscriptions` och andra mätvärden.
 
    * Här är syntaxen för den här metoden:
 
@@ -342,7 +342,7 @@ I `html`-filer där du vill använda spårning lägger du till följande i tagge
 
 * **trackLocation**
 
-   Skickar de aktuella x- och y-koordinaterna. Intressepunkterna som definierats i filen `ADBMobileConfig.json` används också för att avgöra om platsen som angetts som en parameter finns i någon av dina POI. Om de aktuella koordinaterna finns i en definierad POI fylls en kontextdatavariabel i och skickas med anropet `trackLocation`.
+   Skickar de aktuella x- och y-koordinaterna. I används även de intressepunkter som definierats i `ADBMobileConfig.json` för att avgöra om den plats som anges som parameter finns i någon av dina POI. Om de aktuella koordinaterna finns i en definierad POI fylls en kontextdatavariabel i och skickas med `trackLocation` ring.
 
    * Här är syntaxen för den här metoden:
 
@@ -374,7 +374,7 @@ I `html`-filer där du vill använda spårning lägger du till följande i tagge
 
 * **trackTimed &#x200B; ActionStart**
 
-   Starta en tidsbestämd åtgärd med namnet `action`. Om du anropar den här metoden för en åtgärd som redan har startats, skrivs den tidigare tidsåtgärden över.
+   Starta en tidsbestämd åtgärd med ett namn `action`. Om du anropar den här metoden för en åtgärd som redan har startats, skrivs den tidigare tidsåtgärden över.
 
    >[!TIP]
    >
@@ -394,7 +394,7 @@ I `html`-filer där du vill använda spårning lägger du till följande i tagge
 
 * **trackTimed &#x200B; ActionUpdate**
 
-   Ange `cData` för att uppdatera kontextdata som är associerade med angiven `action`. `cData` som skickas läggs till i befintliga data för den angivna åtgärden och skriver över data om samma nyckel redan har definierats för `action`.
+   Skicka in `cData` för att uppdatera kontextdata som är associerade med den angivna `action`. The `cData` som skickas läggs till i befintliga data för den angivna åtgärden och skriver över data om samma nyckel redan har definierats för `action`.
 
    >[!TIP]
    >
@@ -437,7 +437,7 @@ I `html`-filer där du vill använda spårning lägger du till följande i tagge
 
 * **targetLoadRequest**
 
-   Skickar begäran till din konfigurerade `Target`-server och returnerar erbjudandets strängvärde.
+   Skickar begäran till din konfigurerade `Target` och returnerar erbjudandets strängvärde.
 
    * Här är syntaxen för den här metoden:
 
@@ -526,7 +526,7 @@ I `html`-filer där du vill använda spårning lägger du till följande i tagge
 
 * **targetSessionID**
 
-   Hämtar värdet för den `SessionID`-cookie som returnerats för den här besökaren av målservern.
+   Hämtar värdet för `SessionID` En cookie returnerades för den här besökaren av målservern.
 
    * Här är syntaxen för den här metoden:
 
@@ -542,7 +542,7 @@ I `html`-filer där du vill använda spårning lägger du till följande i tagge
 
 * **targetPcID**
 
-   Hämtar värdet för den `PcID`-cookie som returnerats för den här besökaren av målservern.
+   Hämtar värdet för `PcID` En cookie returnerades för den här besökaren av målservern.
 
    * Här är syntaxen för den här metoden:
 
@@ -592,7 +592,7 @@ I `html`-filer där du vill använda spårning lägger du till följande i tagge
 
 * **purchaseCampaignStartForApp**
 
-   Tillåter utvecklare att starta en app-anskaffningskampanj som om användaren hade klickat på en länk. Detta är användbart när du vill skapa länkar för manuell hämtning och hantera omdirigering av appbutiken själv (till exempel med en `SKStoreView`).
+   Tillåter utvecklare att starta en app-anskaffningskampanj som om användaren hade klickat på en länk. Detta är praktiskt när du skapar länkar för manuell hämtning och hanterar omdirigering av appbutiken själv (till exempel med en `SKStoreView`).
 
    * Här är syntaxen för den här metoden:
 
@@ -609,7 +609,7 @@ I `html`-filer där du vill använda spårning lägger du till följande i tagge
 
 ## Annonsidentifierare {#section_194607D101B047A19C51B19E176E1500}
 
-I `AppDelegate` som genererats av Cordova anropar du `[ADBMobile setAdvertisingIdentifier:]` i delegeringsmetoden `application:didFinishLaunchingWithOptions:`. Mer information finns i [Konfigurationsmetoder](/help/ios/configuration/sdk-methods.md).
+I `AppDelegate` genereras av Cordova, samtal `[ADBMobile setAdvertisingIdentifier:]` i `application:didFinishLaunchingWithOptions:` delegeringsmetod. Mer information finns i [Konfigurationsmetoder](/help/ios/configuration/sdk-methods.md).
 
 ## Audience Manager-metoder {#section_1FD12B29A0AF41D3BEACBB3D624EA0E4}
 

@@ -1,11 +1,11 @@
 ---
 description: Den här informationen hjälper dig att använda ADBMobil.json-konfigurationsfilen.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: ADBMomobile JSON-konfiguration
 topic-fix: Developer and implementation
 uuid: 1decf605-7bc3-4e73-ad52-1ecd5821599e
 exl-id: 652aeb05-b052-448d-98c8-d513d050a6f5
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '1666'
 ht-degree: 4%
@@ -22,7 +22,7 @@ Samma config-fil kan användas för appen på flera plattformar:
 
 >[!TIP]
 >
->I **Android** måste filen `ADBMobileConfig.json` placeras i mappen `assets`.
+>I **Android**, `ADBMobileConfig.json` filen måste placeras i `assets` mapp.
 
 Här är en lista över variablerna i JSON-filen och den SDK-version du behöver för varje variabel:
 
@@ -32,13 +32,13 @@ Här är en lista över variablerna i JSON-filen och den SDK-version du behöver
       * `server`, som är förvärvsservern som kontrolleras vid den första starten för en förvärvshänvisare.
       * `appid`, som är det genererade ID som unikt identifierar den här appen på förvärvsservern.
 
-   Om det här avsnittet saknas aktiverar du förvärvet av mobilappar och hämtar SDK-konfigurationsfilen igen. Mer information finns i *referenceTimeout* i den här variabellistan.
+   Om det här avsnittet saknas aktiverar du förvärvet av Mobile App och hämtar SDK-konfigurationsfilen igen. Mer information finns i *referrerTimeout* i den här variabellistan.
 
 * **analyticsForwardingEnabled**
    * SDK-version är minst 4.8.0.
    * Standardvärdet är `false`.
 
-      Egenskapen i `audienceManager`-objektet. Om Audience Manager är konfigurerat och `analyticsForwardingEnabled` är inställt på `true` vidarebefordras även all Analytics-trafik till Audience Manager.
+      Egenskapen i `audienceManager` -objekt. Om Audience Manager är konfigurerat och `analyticsForwardingEnabled` är inställd på `true`, vidarebefordras all Analytics-trafik till Audience Manager.
 
 * **backdateSessionInfo**
    * Minsta SDK-version: 4.6.
@@ -48,9 +48,9 @@ Här är en lista över variablerna i JSON-filen och den SDK-version du behöver
 
       **Aktivera eller inaktivera träffar**
 
-      * Om du anger värdet `false` är träffarna **inaktiverade**. SDK:n återgår till det beteende som gällde före 4.1, där sessionsinformationen för föregående session sammanfogades med den första träffen i efterföljande session. Adobe SDK bifogar även sessionsinformationen till den aktuella livscykeln, vilket gör att det inte går att skapa ett uppblåst besök. Eftersom antalet uppblåsta besök inte längre skapas sker en omedelbar minskning av antalet besök.
+      * Om du anger värdet till `false`, träffar är **inaktiverad**. SDK:n återgår till det beteende som gällde före 4.1, där sessionsinformationen för föregående session sammanfogades med den första träffen i efterföljande session. Adobe SDK bifogar även sessionsinformationen till den aktuella livscykeln, vilket gör att det inte går att skapa ett uppblåst besök. Eftersom antalet uppblåsta besök inte längre skapas sker en omedelbar minskning av antalet besök.
 
-      * Om du inte anger något värde är standardvärdet `true` och träffarna är **aktiverade**. När träffarna är aktiverade uppdaterar Adobe SDK sessionsinformationen till en sekund efter den sista träffen i föregående session. Detta innebär att krasch- och sessionsdata korrelerar med rätt datum då de inträffade. En bieffekt av detta är att SDK kan skapa ett besök för den efterdaterade träffen. En träff är inaktuell vid varje ny programstart.
+      * Om du inte anger något värde används standardvärdet `true`och träffar är **aktiverad**. När träffarna är aktiverade uppdaterar Adobe SDK sessionsinformationen till en sekund efter den sista träffen i föregående session. Detta innebär att krasch- och sessionsdata korrelerar med rätt datum då de inträffade. En bieffekt av detta är att SDK kan skapa ett besök för den efterdaterade träffen. En träff är inaktuell vid varje ny programstart.
 
          >[!IMPORTANT]
          >
@@ -60,7 +60,7 @@ Här är en lista över variablerna i JSON-filen och den SDK-version du behöver
    * Minsta SDK-version: 4.1
    * Tröskelvärde för hur många träffar som ska skickas i efterföljande anrop.
 
-      Om till exempel `batchLimit` är 10 sparas varje träff före den 10:e träffen i kön. När den 10:e träffen kommer, skickas alla 10 träffar i följd.
+      Om `batchLimit` är inställd på 10, så att varje träff före den 10:e träffen lagras i kön. När den 10:e träffen kommer, skickas alla 10 träffar i följd.
 
       Kom ihåg följande information:
 
@@ -83,23 +83,23 @@ Här är en lista över variablerna i JSON-filen och den SDK-version du behöver
 
 * **coopUnsafe**
    * Minsta SDK-version: 4.16.1
-   * Den booleska egenskapen för `marketingCloud`-objektet som, när det är inställt på `true`, gör att enheten avanmäls från Experience Cloud Device Co-Op.
+   * Den booleska egenskapen i `marketingCloud` objekt som, när de anges till `true`, gör att enheten väljs ut från Experience Cloud Device Co-Op.
    * Standardvärdet är `false`.
    * Den här inställningen används **endast** för Device Co-op-etablerade kunder.
 
-   För medlemmar i Device Co-op som kräver det här värdet `true` måste du arbeta med Co-op-teamet för att begära en blockeringslista-flagga på ditt Device Co-op-konto. Det finns ingen självbetjäningsväg för att aktivera dessa flaggor.
+   För Device Co-op-medlemmar som kräver det här värdet inställt på `true`måste du arbeta med Co-op-teamet för att begära en blockeringslista-flagga på ditt Device Co-op-konto. Det finns ingen självbetjäningsväg för att aktivera dessa flaggor.
 
    Kom ihåg följande information:
 
-   * När `coopUnsafe` är inställt på `true` läggs `coop_unsafe=1` alltid till i Audience Manager och besökar-ID-träffar.
-   * Om du aktiverar vidarebefordran på serversidan för Analytics till Audience Manager visas även `coop_unsafe=1` Analytics-träffar.
+   * När `coopUnsafe` är inställd på `true`, `coop_unsafe=1` läggs alltid till i Audience Manager och besökar-ID:n.
+   * Om du aktiverar vidarebefordran på serversidan för Analytics till Audience Manager visas även `coop_unsafe=1` Analysträffar.
 
 
 * **environmentId**
    * Minsta SDK-version: 4.14
    * ID:t för miljön som du vill använda.
 
-      Du kan ange ett giltigt ID (`environmentId=8`), och om `environmentId` inte inkluderas används standardproduktionsmiljön.
+      Du kan ange ett giltigt ID (`environmentId=8`), och om `environmentId` ingår inte, standardproduktionsmiljön används.
 
 * **lifecycleTimeout**
    * Minsta SDK-version: 4.0
@@ -112,7 +112,7 @@ Här är en lista över variablerna i JSON-filen och den SDK-version du behöver
 * **meddelanden**
 
    * Minsta SDK-version: 4.2
-   * Inställningarna för meddelanden i appen definieras automatiskt av Adobe Mobile-tjänster. Mer information finns i avsnittet *Meddelandebeskrivning* nedan.
+   * Inställningarna för meddelanden i appen definieras automatiskt av Adobe Mobile-tjänster. Mer information finns i *Meddelandebeskrivning* nedan.
 
 * **offlineEnabled**
 
@@ -125,11 +125,11 @@ Här är en lista över variablerna i JSON-filen och den SDK-version du behöver
 
       >[!IMPORTANT]
       >
-      >Om tidsstämplar är aktiverade i rapportsviten måste `offlineEnabled` konfigurationsegenskapen **vara** vara true. Om rapportsviten inte är tidsstämpelaktiverad måste `offlineEnabled`-konfigurationsegenskapen **vara** vara false.
+      >Om tidsstämplar är aktiverade i rapportsviten kan du `offlineEnabled` konfigurationsegenskap **måste** vara sant. om rapportsviten inte är tidsstämpel aktiverad kan du `offlineEnabled` konfigurationsegenskap **måste** vara falskt.
       >
       >Om detta inte är korrekt konfigurerat går data förlorade. Om du är osäker på om en rapportsserie är tidsstämplad eller inte kan du kontakta kundtjänst eller hämta konfigurationsfilen från Adobe Mobile-tjänster.
 
-      Om du för närvarande rapporterar AppMeasurement-data till en rapportserie som även samlar in data från JavaScript, kan du behöva skapa en separat rapportserie för mobildata eller inkludera en anpassad tidsstämpel för alla JavaScript-träffar som använder variabeln `s.timestamp`.
+      Om du för närvarande rapporterar AppMeasurement-data till en rapportserie som även samlar in data från JavaScript, kan du behöva skapa en separat rapportserie för mobildata eller inkludera en anpassad tidsstämpel för alla JavaScript-träffar som använder `s.timestamp` variabel.
 
 * **org**
 
@@ -140,7 +140,7 @@ Här är en lista över variablerna i JSON-filen och den SDK-version du behöver
    * Minsta SDK-version: 4.0
    * Varje POI-array (point of interest) innehåller POI-namnet, latituden, longituden och radien i meter för punktens område.
 
-      POI-namnet kan vara vilken sträng som helst. När ett `trackLocation`-anrop skickas och de aktuella koordinaterna finns inom en definierad POI fylls en kontextdatavariabel i och skickas med `trackLocation`-anropet.
+      POI-namnet kan vara vilken sträng som helst. När en `trackLocation` anropet skickas, om de aktuella koordinaterna finns inom en definierad POI fylls en kontextdatavariabel i och skickas med `trackLocation` ring.
 
       ```javascript
       "poi": [
@@ -149,14 +149,14 @@ Här är en lista över variablerna i JSON-filen och den SDK-version du behöver
              ]
       ```
 
-      Från och med version 4.2 definieras POI i gränssnittet för Adobe Mobile och synkroniseras dynamiskt till programkonfigurationsfilen. Synkroniseringen kräver inställningen `analytics.poi`:
+      Från och med version 4.2 definieras POI i Adobe Mobile-gränssnittet och synkroniseras dynamiskt till programkonfigurationsfilen. Synkroniseringen kräver `analytics.poi` inställning:
 
       ```javascript
         "analytics.poi": `https://assets.adobedtm.com/`
       …/yourfile.json"`,
       ```
 
-      Om den här inställningen inte är konfigurerad måste `ADBMobile.json`-filen uppdateras för att inkludera den här raden. Information om hur du hämtar en uppdaterad konfigurationsfil finns i [Innan du startar](/help/android/getting-started/requirements.md).
+      Om den här inställningen inte är konfigurerad `ADBMobile.json` filen måste uppdateras för att den här raden ska ingå. Information om hur du hämtar en uppdaterad konfigurationsfil finns i [Innan du börjar](/help/android/getting-started/requirements.md).
 
 * **återanslående**
    * Minsta SDK-version: 4.6
@@ -170,13 +170,13 @@ Här är en lista över variablerna i JSON-filen och den SDK-version du behöver
         "timeout": 0 // optional - number of seconds to wait before timing out.  Default is 2.}
       ```
 
-      Objektet `payload` i koden är en provnyttolast för en meddelandedefinition som finns i filen `ADBMobileConfig.json`. Mer information finns i [Eftersläpningar](/help/android/analytics-main/postbacks/postbacks.md).
+      The `payload` -objektet i koden är en exempelnyttolast för en meddelandedefinition som finns i `ADBMobileConfig.json` -fil. Mer information finns i [Eftersläpning](/help/android/analytics-main/postbacks/postbacks.md).
 
 * **privacyDefault**
    * Minsta SDK-version: 4.0
    * Standardvärdet är `optedin`.
-      * För `optedin` skickas träffarna omedelbart.
-      * För `optedout` ignoreras träffarna.
+      * För `optedin`, skickas träffar omedelbart.
+      * För `optedout`, kommer träffar att försvinna.
       * För `optunknown`, om rapportsviten är tidsstämpelaktiverad, sparas träffar tills sekretessstatusen ändras till anmälan (träffar skickas) eller avanmälan (träffar ignoreras).
 
       Om rapportsviten inte är tidsstämpelaktiverad ignoreras träffar tills sekretessstatusen ändras till `optedin`.  Detta anger bara det inledande värdet. Om det här värdet anges eller ändras i koden används det nya värdet tills det ändras igen eller när programmet avinstalleras och installeras om.
@@ -188,7 +188,7 @@ Här är en lista över variablerna i JSON-filen och den SDK-version du behöver
 
       >[!IMPORTANT]
       >
-      >Den här variabeln krävs av förvärvet. Om variabeln är inställd på `0` eller inte inkluderas väntar SDK inte på förvärvsdata och förvärvsstatistik spåras inte.
+      >Den här variabeln krävs av förvärvet. Om variabeln är inställd på `0` SDK väntar inte på förvärvsuppgifter och anskaffningsvärden spåras inte.
 
 * **fjärrplatser**
    * Minsta SDK-version: 4.2
@@ -216,7 +216,7 @@ Här är en lista över variablerna i JSON-filen och den SDK-version du behöver
 
 * **server**
    * Minsta SDK-version: 4.0
-   * Analytics- eller Audience Management-servern, baserad på den överordnade noden. Den här variabeln ska fyllas i med serverdomänen, utan ett `https://`- eller `https://`-protokollprefix. Det här prefixet hanteras automatiskt av biblioteket och baseras på variabeln `ssl`. Om `ssl` är `true` skapas en säker anslutning till den här servern. Om `ssl` är `false` skapas en osäker anslutning till den här servern.
+   * Analytics- eller Audience Management-servern, baserad på den överordnade noden. Den här variabeln ska fyllas i med serverdomänen, utan en `https://` eller `https://` protokollprefix. Prefixet hanteras automatiskt av biblioteket och baseras på `ssl` variabel. If `ssl` är `true`skapas en säker anslutning till den här servern. If `ssl` är `false`, en osäker anslutning görs till den här servern.
 
 * **ssl**
    * Minsta SDK-version: 4.0
@@ -239,9 +239,9 @@ Här är en lista över variablerna i JSON-filen och den SDK-version du behöver
    * Anger hur länge Target väntar på ett svar.
 
 
-## Exempel på `ADBMobileConfig.json`-fil {#section_4655EF79744649E5A5AE19E3224C472C}
+## Exempel `ADBMobileConfig.json` fil {#section_4655EF79744649E5A5AE19E3224C472C}
 
-Här följer ett exempel på en `ADBMobileConfig.json`-fil:
+Här är ett exempel `ADBMobileConfig.json` fil:
 
 ```js
  { 

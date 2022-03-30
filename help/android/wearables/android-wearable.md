@@ -1,11 +1,11 @@
 ---
 description: Från och med Android SDK version 4.5 har ett nytt Android-tillägg lagts till som gör att du kan samla in data från Android-appen.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Android Wearables - komma igång
 topic-fix: Developer and implementation
 uuid: bfe5d41e-b17c-4634-80ac-7a38671ecb81
 exl-id: 79cfaa48-d9b2-4518-8b31-d7041898a71b
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '265'
 ht-degree: 0%
@@ -18,16 +18,16 @@ Från och med Android SDK version 4.5 har ett nytt Android-tillägg lagts till s
 
 ## Konfigurera SDK för en handdator (Android Studio) {#section_262237484EC44C58953891B105F0D000}
 
-Mer information om hur du importerar SDK till ditt projekt finns i [Core Implementation and Lifecycle](/help/android/getting-started/dev-qs.md).
+Mer information om hur du importerar SDK till ditt projekt finns i [Kärnimplementering och livscykel](/help/android/getting-started/dev-qs.md).
 
-1. Lägg till `ADBMobileConfig.json`-filen i projektmappen.
-1. Lägg till filen `adobeMobileLibrary-*.jar` i mappen libs eller kontrollera att projektet refererar till den här filen.
+1. Lägg till `ADBMobileConfig.json` till projektmappen.
+1. Lägg till `adobeMobileLibrary-*.jar` till mappen libs eller se till att projektet refererar till den här filen.
 
    >[!TIP]
    >
-   >Du kan behöva synkronisera övertoningsprojektet när du har lagt till filen `.jar`.
+   >Du kan behöva synkronisera övertoningsprojektet när du har lagt till `.jar` -fil.
 
-1. I metoden `onCreate` tillåter du SDK-åtkomst till programkontexten med `Config.setContext`:
+1. I `onCreate` -metod, ge SDK åtkomst till programkontexten genom att använda `Config.setContext`:
 
    ```java
    @Override 
@@ -40,7 +40,7 @@ Mer information om hur du importerar SDK till ditt projekt finns i [Core Impleme
    }
    ```
 
-1. Lägg till följande kod i `AndroidManifest.xml`-filen:
+1. Lägg till följande kod i `AndroidManifest.xml` fil:
 
    ```java
        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> 
@@ -54,8 +54,8 @@ Mer information om hur du importerar SDK till ditt projekt finns i [Core Impleme
    </application>
    ```
 
-1. Se till att ditt projekt innehåller Googles bibliotek för speltjänster.
-1. Implementera `WearableListenerService` eller lägg till motsvarande kod i din `WearableListenerService`:
+1. Se till att ditt projekt innehåller Google play-services Library.
+1. Implementera `WearableListenerService` eller lägg till motsvarande kod i `WearableListenerService`:
 
    ```java
    public class WearListenerService extends WearableListenerService { 
@@ -88,7 +88,7 @@ Mer information om hur du importerar SDK till ditt projekt finns i [Core Impleme
    }
    ```
 
-1. Lägg till `WearListenerService` i `AndroidManifest.xml`-filen:
+1. Lägg till `WearListenerService` till `AndroidManifest.xml` fil:
 
    ```java
    If you are using Google Play Services  < 8.2 
@@ -121,8 +121,8 @@ Mer information om hur du importerar SDK till ditt projekt finns i [Core Impleme
 
 1. Gör något av följande:
 
-   * Lägg till samma `ADBMobileConfig.json`-fil i resursmappen för ditt bärbara projekt.
-   * Ändra övertoningskonfigurationen så att den använder `ADBMobileConfig.json` i resursmappen för handdatorprogrammet:
+   * Lägg till samma `ADBMobileConfig.json` till resursmappen i ditt bärbara projekt.
+   * Ändra övertoningskonfigurationen så att den använder  `ADBMobileConfig.json` i mappen assets i handdatorappen:
 
       ```java
       android { 
@@ -135,11 +135,11 @@ Mer information om hur du importerar SDK till ditt projekt finns i [Core Impleme
       }
       ```
 
-1. Lägg till filen `adobeMobileLibrary-*.jar` i mappen libs eller se till att projektet refererar till den.
+1. Lägg till `adobeMobileLibrary-*.jar` till mappen libs eller se till att projektet refererar till den.
 
    Du kan behöva synkronisera övertoningsprojektet när du har lagt till filen jar.
 
-1. I metoden `onCreate` tillåt SDK-åtkomst till programkontexten med `Config.setContext`:
+1. I `onCreate` -metod, ge SDK åtkomst till programkontexten med `Config.setContext`:
 
    ```java
    @Override 
@@ -161,8 +161,8 @@ Mer information om hur du importerar SDK till ditt projekt finns i [Core Impleme
    </application>
    ```
 
-1. Se till att ditt projekt innehåller Googles bibliotek för speltjänster.
-1. Implementera `WearableListenerService` eller lägg till motsvarande kod i din `WearableListenerService`:
+1. Se till att ditt projekt innehåller Google play-services Library.
+1. Implementera `WearableListenerService` eller lägg till motsvarande kod i `WearableListenerService`:
 
    ```java
    public class WearListenerService extends WearableListenerService { 
@@ -175,7 +175,7 @@ Mer information om hur du importerar SDK till ditt projekt finns i [Core Impleme
    }
    ```
 
-1. Lägg till `WearListenerService` i `AndroidManifest.xml`-filen:
+1. Lägg till `WearListenerService` till `AndroidManifest.xml` fil:
 
    ```java
    If you are using Google Play Services  < 8.2 

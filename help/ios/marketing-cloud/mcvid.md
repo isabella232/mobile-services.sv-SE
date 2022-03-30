@@ -1,11 +1,11 @@
 ---
 description: Adobe Experience Platform Identity Service tillhandahåller ett universellt besökar-ID för alla Experience Cloud-lösningar. ID-tjänsten krävs av Analytics för Target, hjärtslag för video och framtida integreringar med Experience Cloud.
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Experience Cloud ID
 topic-fix: Developer and implementation
 uuid: 13628ea8-3cd4-4cfc-8ff6-722c33f7813a
 exl-id: aa7db365-ad21-431f-bff6-2a6da212dd0c
-source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '230'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Adobe Experience Platform Identity Service tillhandahåller ett universellt bes�
 
 >[!TIP]
 >
->Du behöver inte fylla i Experience Cloud-ID om du inte använder Adobe Experience Platform identitetstjänst. Mer information finns i dokumentationen till [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html).
+>Du behöver inte fylla i Experience Cloud-ID om du inte använder Adobe Experience Platform identitetstjänst. Mer information finns i [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html) dokumentation.
 
 ## Aktivera Experience Cloud-ID {#section_79F984271C3B4366B7B04F864F4FF8C2}
 
@@ -26,14 +26,14 @@ Dessa steg kräver en SDK version 4.3 eller senare.
 
 1. Lägg till biblioteket i ditt projekt och implementera livscykeln.
 
-   Mer information finns i *Lägg till SDK- och konfigurationsfilen i ditt projekt* i [Core Implementation och Lifecycle](/help/ios/getting-started/dev-qs.md).
+   Mer information finns i *Lägg till SDK- och konfigurationsfilen i projektet* in [Kärnimplementering och livscykel](/help/ios/getting-started/dev-qs.md).
 1. Importera biblioteket:
 
    ```objective-c
    #import "ADBMobile.h"
    ```
 
-1. Kontrollera att `ADBMobileConfig.json`-filerna innehåller `marketingCloud` `org`:
+1. Verifiera att `ADBMobileConfig.json` filerna innehåller `marketingCloud` `org`:
 
    ```js
    "marketingCloud" : { 
@@ -47,6 +47,6 @@ Dessa steg kräver en SDK version 4.3 eller senare.
    >
    >Du måste inkludera `@AdobeOrg`.
 
-   Om dessa värden inte finns kan du hämta en uppdaterad `ADBMobileConfig.json`-fil från Adobe Mobile-tjänster. Mer information finns i [ADBMomobile JSON config](/help/ios/getting-started/requirements.md).
+   Om dessa värden inte finns kan du hämta en uppdaterad `ADBMobileConfig.json` fil från Adobe Mobile-tjänster. Mer information finns i [ADBMomobile JSON-konfiguration](/help/ios/getting-started/requirements.md).
 
 Efter konfigurationen genereras ett Experience Cloud-ID och inkluderas i alla träffar. Andra besökar-ID:n, som anpassade och automatiskt genererade, kommer att fortsätta skickas med varje träff.

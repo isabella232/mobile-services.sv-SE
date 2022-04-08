@@ -1,32 +1,28 @@
 ---
-description: Adobe Target förhämtningsfunktion använder iOS Mobile SDK:er för att hämta innehåll så få gånger som möjligt genom att cachelagra serversvaren.
-title: Förhämta innehåll i iOS
+description: Adobe Target förhämtningsfunktion använder iOS Mobile SDK:er för att hämta innehåll som kan erbjudas så få gånger som möjligt genom att cachelagra serversvaren.
+title: Förhämta erbjudandeinnehåll i iOS
 uuid: fef58042-65e2-4579-b8f1-d21554d2af57
 exl-id: 64d43be7-6bd1-4657-8154-5b2c1cbbf42b
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5d44c09a18a557e934628533c4eefaa9e26aba42
 workflow-type: tm+mt
-source-wordcount: '731'
+source-wordcount: '707'
 ht-degree: 5%
 
 ---
 
-# Förhämta innehåll i iOS {#prefetch-offer-content-in-ios}
+# Förhämta erbjudandeinnehåll i iOS {#prefetch-offer-content-in-ios}
 
-Adobe Target förhämtningsfunktion använder iOS Mobile SDK:er för att hämta innehåll så få gånger som möjligt genom att cachelagra serversvaren.
-
->[!IMPORTANT]
->
->Förhämtningsfunktionen i Mobile SDK för iOS stöds inte för aktivitetstyperna Automatiskt mål, Automatisk allokering och Automated Personalization i Adobe Target.
+Adobe Target förhämtningsfunktion använder iOS Mobile SDK:er för att hämta innehåll som kan erbjudas så få gånger som möjligt genom att cachelagra serversvaren.
 
 Den här processen minskar inläsningstiden, förhindrar flera nätverksanrop och gör att Adobe Target kan meddelas vilken mbox som mobilappsanvändaren har besökt. Allt innehåll hämtas och cachelagras under förhämtningsanropet, och det här innehållet hämtas från cachen för alla framtida anrop som innehåller cachelagrat innehåll för det angivna mbox-namnet.
 
-Förhämtningsinnehåll bevaras inte vid start. Förhämtningsinnehållet cachelagras så länge som programmet finns eller tills metoden `clearPrefetchCache()` anropas.
+Förhämtningsinnehåll bevaras inte vid start. Det förhämtade innehållet cachelagras så länge som programmet finns eller tills `clearPrefetchCache()` -metoden anropas.
 
 >[!IMPORTANT]
 >
->Förhämtnings-API:er för mål har varit tillgängliga sedan SDK-version 4.14.0. Mer information om parameterbegränsningar finns i [Batch Input Parameters](https://developers.adobetarget.com/api/#batch-input-parameters).
+>Förhämtnings-API:er för mål har varit tillgängliga sedan SDK-version 4.14.0. Mer information om parameterbegränsningar finns i [Parametrar för gruppindata](https://developers.adobetarget.com/api/#batch-input-parameters).
 
-Om det anges i SDK version 4.14 eller senare hämtas `environmentId` från `ADBMobileConfig.json`-filen när ett TnT-anrop för v2-batchmbox initieras. Om ingen `environmentId` har angetts i den här filen skickas ingen miljöparameter i TNT-batchanropet och erbjudandet levereras för standardmiljön.
+I SDK version 4.14 eller senare, om det anges, `environmentId` hämtas från `ADBMobileConfig.json` när en v2-batchmbox TnT-anrop initieras. Om nej `environmentId` anges i den här filen skickas ingen miljöparameter i TNT-batchmbox-anrop och erbjudandet levereras för standardmiljön.
 
 Exempel:
 
@@ -41,7 +37,7 @@ if (MobileConfig.getInstance().mobileUsingTarget()){
 
 ## Förhämtningsmetoder {#section_05967F1F3A554B0FBC2C08A954554BDE}
 
-Här är metoder som du kan använda för förhämtning i iOS:
+Här är de metoder du kan använda för förhämtning i iOS:
 
 * **targetPrefetchContent**
 
@@ -59,7 +55,7 @@ Här är metoder som du kan använda för förhämtning i iOS:
 
       * **`targetPrefetchArray`**
 
-         Arrayen `TargetPrefetchObjects` som innehåller namnet och mboxParameters för varje målplats som ska förhämtas.
+         Array med `TargetPrefetchObjects` som innehåller namnet och mboxParameters för varje målplats som ska förhämtas.
 
       * **`profileParameters`**
 
@@ -67,7 +63,7 @@ Här är metoder som du kan använda för förhämtning i iOS:
 
       * **`callback`**
 
-         Anropas när förhämtningen är klar. Returnerar `true` om förhämtningen lyckades och `false` om förhämtningen misslyckades.
+         Anropas när förhämtningen är klar. Returnerar `true` om förhämtningen lyckades och `false` om förhämtningen var misslyckad.
 
 * **targetLoadRequests**
 
@@ -88,7 +84,7 @@ Här är metoder som du kan använda för förhämtning i iOS:
 
       * **`requests`**
 
-         Matris `TargetRequestObjects` som innehåller namn, standardinnehåll, parametrar och återanropsfunktion per plats att hämta.
+         Array med `TargetRequestObjects` som innehåller namn, standardinnehåll, parametrar och återanropsfunktion per plats att hämta.
 
       * **`profileParameters`**
 
@@ -108,7 +104,7 @@ Här är metoder som du kan använda för förhämtning i iOS:
 
 * **targetRequestObjectWithName**
 
-   Skapar och returnerar en instans av `TargetRequestObject` med angivna data.
+   Skapar och returnerar en instans av `TargetRequestObject` med de angivna uppgifterna.
 
    * Här är syntaxen för den här metoden:
 
@@ -123,7 +119,7 @@ Här är metoder som du kan använda för förhämtning i iOS:
 
 * **createTargetPrefetchObject**
 
-   Skapar och returnerar en instans av `TargetPrefetchObject` med angivna data.
+   Skapar och returnerar en instans av `TargetPrefetchObject` med de angivna uppgifterna.
 
    * Här är syntaxen för den här metoden:
 
@@ -134,7 +130,7 @@ Här är metoder som du kan använda för förhämtning i iOS:
 
 ## Offentliga klasser {#section_A273E53F069E4327BBC8CE4910B37888}
 
-Här är de publika klasserna som har stöd för förhämtning i iOS:
+Här är de publika klasserna som stöder förhämtning i iOS:
 
 ### Klassreferens: TargetPreFetchObject
 
@@ -194,7 +190,7 @@ Den här klassen kapslar in mbox-namnet, standardinnehållet, mbox-parametrar oc
 
 ## Kodexempel {#section_BF7F49763D254371B4656E17953D520C}
 
-Här följer ett exempel på hur du förhämtar innehåll med iOS SDK:er:
+Här är ett exempel på hur du förhämtar innehåll med iOS SDK:
 
 ```objective-c
 /** 
@@ -238,7 +234,7 @@ Här följer ett exempel på hur du förhämtar innehåll med iOS SDK:er:
     }];
 ```
 
-Här är ett exempel på gruppen `loadRequest` med iOS SDK:er:
+Här är ett exempel på batchen `loadRequest` med iOS SDK:
 
 ```objective-c
 /** 

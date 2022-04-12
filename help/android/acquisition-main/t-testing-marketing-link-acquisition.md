@@ -6,7 +6,7 @@ title: Testar anskaffning av marknadsföringslänk
 topic-fix: Developer and implementation
 uuid: d0933dcc-8fc3-4f60-987f-7a54559aacf5
 exl-id: 86fdaef7-5b6c-4e9d-a470-df66c96f2e9d
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 5562c974eb921538209516c0e295612de1865af6
 workflow-type: tm+mt
 source-wordcount: '741'
 ht-degree: 1%
@@ -22,7 +22,7 @@ Om din mobilapp ännu inte finns i Google Play kan du välja vilken mobilapp som
 Appen måste vara nyligen installerad eller ha data rensade i **[!UICONTROL Settings]**, varje gång ett test körs. Detta garanterar att de inledande livscykelvärdena som är kopplade till parametrarna för kampanjfrågesträngen skickas när appen startas första gången.
 
 1. Slutför nödvändiga uppgifter i [Mobile appförvärv](/help/android/acquisition-main/acquisition.md) och se till att du har implementerat sändningsmottagaren korrekt för `INSTALL_REFERRER`.
-1. I användargränssnittet för Mobile-tjänster i Adobe klickar du på  **[!UICONTROL Acquisition]** > **[!UICONTROL Marketing Links Builder]** och generera en URL för Acquisition Marketing Link som anger Google Play som mål för Android-enheter.
+1. I användargränssnittet för Adobe Mobile Services klickar du på  **[!UICONTROL Acquisition]** > **[!UICONTROL Marketing Links Builder]** och generera en URL för Acquisition Marketing Link som anger Google Play som mål för Android-enheter.
 
    Mer information finns i [Marketing Links Builder](/help/using/acquisition-main/c-marketing-links-builder/c-marketing-links-builder.md).
 
@@ -127,14 +127,14 @@ Kom ihåg följande information:
 
 Så här installerar du Java-verktyget:
 
-1. Ladda ned [`acquistionTester.zip`](../assets/acquisitionTester.zip) -fil.
+1. Ladda ned [`acquisitionTester.zip`](../assets/acquisitionTester.zip) -fil.
 1. Extrahera .jar-filen.
 
    Du kan köra .jar-filen på kommandoraden.
 
 Exempel:
 
-```
+```sh
 java -jar acquisitionTester.jar -a com.adobe.test -r com.adobe.test.ReferrerReceiver -l "https://c00.adobe.com/v3/appid/start?a_i_id=123456&a_g_id=com.adobe.test&a_dd=i&ctxa.referrer.campaign.name=name&ctxa.referrer.campaign.trackingcode=1234
 ```
 

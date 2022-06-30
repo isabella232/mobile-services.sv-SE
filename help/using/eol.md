@@ -2,9 +2,9 @@
 title: Adobe Mobile Services - frågor och svar
 description: Få svar på vanliga frågor om lanseringen av Adobe Mobile Services.
 exl-id: c5f44341-7b87-4530-b86e-17e2911a7959
-source-git-commit: a6dd74b8df771249e3c50de93f44639cfbfe7e13
+source-git-commit: c349c0f83df9d42b61a419ae71d6d2b67c5f7819
 workflow-type: tm+mt
-source-wordcount: '433'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ När Mobile Services är solnedgång hanteras all bearbetningsregellogik exklusi
 Adobe erbjuder tre övergångsvägar beroende på hur din organisation använder dem.
 
 1. **Meddelanden och push-meddelanden i appen**: Adobe kan överföra dina arbetsflöden för meddelanden till Adobe Journey Optimizer. Produkten hjälper organisationer att optimera och personalisera upplevelser under hela kundresan, inklusive mobilmeddelanden.
-1. **Förvärv och djuplänkning**: Förvärv och djuplänkning erbjuds via programmet Adobe Exchange Premier Partners. Bland dessa partners finns Adjust, AppsFlyer och Branch, som erbjuder omfattande förvärvsfunktioner. Adobe partnerskap kan ta fram lämpliga introduktioner för att säkerställa att ni hittar den lösning som passar era behov bäst.
+1. **Förvärv och djuplänkning**: Förvärv och djuplänkning erbjuds via programmet Adobe Exchange Premier Partners. Adobe partnerskap kan ta fram lämpliga introduktioner för att säkerställa att ni hittar den lösning som passar era behov bäst.
 1. **Platstjänst**: Platstjänsten erbjuder kostnadsfria geografiska platser. Se [Platstjänstdokumentation](https://experienceleague.adobe.com/docs/places/using/home.html).
 
 ## Var kan jag gå om jag har frågor?

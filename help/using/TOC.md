@@ -34,13 +34,13 @@ ht-degree: 8%
       + [Ta bort ett program](manage-apps/t-delete-apps.md)
 + Hantera appinställningar {#manage-app-settings-ug}
    + [Hantera appinställningar](c-manage-app-settings/c-manage-app-settings.md)
-   + Konfigurerar din app {#configuring-app}
+   + Konfigurera din app {#configuring-app}
       + [Konfigurera din app](c-manage-app-settings/c-mob-confg-app/c-mob-confg-app.md)
       + [Konfigurera alternativ för SDK-analys](c-manage-app-settings/c-mob-confg-app/t-config-analytics/t-config-analytics.md)
       + [Ladda ned SDK och verktyg för mobiler](c-manage-app-settings/c-mob-confg-app/t-config-analytics/download-sdk.md)
       + [Konfigurera alternativ för Audience Manager](c-manage-app-settings/c-mob-confg-app/t-config-aam.md)
       + [Konfigurera alternativ för SDK-förvärv](c-manage-app-settings/c-mob-confg-app/t-config-acquisition.md)
-      + [Apple Universal Links och Android App Links](c-manage-app-settings/c-mob-confg-app/c-universal-app-links.md)
+      + [Apple Universal Links and Android App Links](c-manage-app-settings/c-mob-confg-app/c-universal-app-links.md)
       + [Konfigurera alternativ för tjänsten SDK ID](c-manage-app-settings/c-mob-confg-app/t-config-visitor.md)
       + [Konfigurera återanslag](c-manage-app-settings/c-mob-confg-app/signals.md)
       + [Konfigurera push-meddelanden](c-manage-app-settings/c-mob-confg-app/configure-push-messaging/configure-push-messaging.md)
@@ -58,7 +58,7 @@ ht-degree: 8%
    + [Versionsrapport](usage/c-reports-versions.md)
    + [Teknikrapport](usage/reports-technology.md)
    + [Kraschrapport](usage/c-crashes.md)
-   + [App Store - översikt](usage/c-app-store-store-performance.md)
+   + [Översiktsrapport för App Store](usage/c-app-store-store-performance.md)
 + Arbeta med rapporter {#work-with-reports-ug}
    + [Anpassa rapporter](usage/reports-customize/reports-customize.md)
    + [Lägg till filter i rapporter](usage/reports-customize/t-reports-customize.md)
@@ -83,7 +83,7 @@ ht-degree: 8%
          + [Marketing Links Builder](acquisition-main/c-marketing-links-builder/c-marketing-links-builder.md)
          + [Skapa eller redigera marknadsföringslänkar](acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/t-create-edit-adobe-links.md)
          + [Insticksannonser](acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/t-interstitials.md)
-      + Äldre värvningslänkar {#legacy-acquisition-links}
+      + Länkar för äldre värvning {#legacy-acquisition-links}
          + [Använd äldre förvärvslänkar](acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/c-use-legacy-acquisition-links/c-use-legacy-acquisition-links.md)
          + [Skapa en förvärvslänk](acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/c-use-legacy-acquisition-links/t-acquisition-link.md)
          + [Hantera förvärvslänkar](acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/c-use-legacy-acquisition-links/c-manage-acquisition-links/c-manage-acquisition-links.md)

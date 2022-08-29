@@ -5,9 +5,9 @@ title: ADBMomobile JSON-konfiguration
 topic-fix: Developer and implementation
 uuid: 1decf605-7bc3-4e73-ad52-1ecd5821599e
 exl-id: 652aeb05-b052-448d-98c8-d513d050a6f5
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 78b7a623a7811cf0ede789c74b3ca7a80372c9f4
 workflow-type: tm+mt
-source-wordcount: '1666'
+source-wordcount: '1556'
 ht-degree: 4%
 
 ---
@@ -32,7 +32,7 @@ Här är en lista över variablerna i JSON-filen och den SDK-version du behöver
       * `server`, som är förvärvsservern som kontrolleras vid den första starten för en förvärvshänvisare.
       * `appid`, som är det genererade ID som unikt identifierar den här appen på förvärvsservern.
 
-   Om det här avsnittet saknas aktiverar du förvärvet av Mobile App och hämtar SDK-konfigurationsfilen igen. Mer information finns i *referrerTimeout* i den här variabellistan.
+   Om det här avsnittet saknas aktiverar du förvärvet av mobilappar och hämtar SDK-konfigurationsfilen igen. Mer information finns i *referrerTimeout* i den här variabellistan.
 
 * **analyticsForwardingEnabled**
    * SDK-version är minst 4.8.0.
@@ -80,20 +80,6 @@ Här är en lista över variablerna i JSON-filen och den SDK-version du behöver
       >[!IMPORTANT]
       >
       >Den här variabeln krävs av Target.
-
-* **coopUnsafe**
-   * Minsta SDK-version: 4.16.1
-   * Den booleska egenskapen i `marketingCloud` objekt som, när de anges till `true`, gör att enheten väljs ut från Experience Cloud Device Co-Op.
-   * Standardvärdet är `false`.
-   * Den här inställningen används **endast** för Device Co-op-etablerade kunder.
-
-   För Device Co-op-medlemmar som kräver det här värdet inställt på `true`måste du arbeta med Co-op-teamet för att begära en blockeringslista-flagga på ditt Device Co-op-konto. Det finns ingen självbetjäningsväg för att aktivera dessa flaggor.
-
-   Kom ihåg följande information:
-
-   * När `coopUnsafe` är inställd på `true`, `coop_unsafe=1` läggs alltid till i Audience Manager och besökar-ID:n.
-   * Om du aktiverar vidarebefordran på serversidan för Analytics till Audience Manager visas även `coop_unsafe=1` Analysträffar.
-
 
 * **environmentId**
    * Minsta SDK-version: 4.14
@@ -149,7 +135,7 @@ Här är en lista över variablerna i JSON-filen och den SDK-version du behöver
              ]
       ```
 
-      Från och med version 4.2 definieras POI i Adobe Mobile-gränssnittet och synkroniseras dynamiskt till programkonfigurationsfilen. Synkroniseringen kräver `analytics.poi` inställning:
+      Från och med version 4.2 definieras POI i gränssnittet för Adobe Mobile och synkroniseras dynamiskt till programkonfigurationsfilen. Synkroniseringen kräver `analytics.poi` inställning:
 
       ```javascript
         "analytics.poi": `https://assets.adobedtm.com/`

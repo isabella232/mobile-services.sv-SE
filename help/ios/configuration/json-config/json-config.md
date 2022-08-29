@@ -5,9 +5,9 @@ title: ADBMomobile JSON-konfiguration
 topic-fix: Developer and implementation
 uuid: d9708d59-e30a-4f6c-ab1b-d9499855d0c2
 exl-id: e3515de3-3aec-4dd0-996d-9c561ad1b1de
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 78b7a623a7811cf0ede789c74b3ca7a80372c9f4
 workflow-type: tm+mt
-source-wordcount: '1708'
+source-wordcount: '1591'
 ht-degree: 8%
 
 ---
@@ -28,7 +28,7 @@ Samma config-fil kan användas för appen på flera plattformar:
 
    Möjliggör förvärv av mobilappar.
 
-   Om det här avsnittet saknas aktiverar du förvärvet av Mobile App och hämtar SDK-konfigurationsfilen igen. Mer information finns i *referrerTimeout* nedan.
+   Om det här avsnittet saknas aktiverar du förvärvet av mobilappar och hämtar SDK-konfigurationsfilen igen. Mer information finns i *referrerTimeout* nedan.
 
    * `server` - Förvärvsserver som kontrolleras vid den första starten för en förvärvshänvisningsprogram.
    * `appid` - Genererat ID som unikt identifierar den här appen på förvärvsservern.
@@ -84,24 +84,6 @@ Samma config-fil kan användas för appen på flera plattformar:
 
    * Minsta SDK-version: 4.0
 
-* **coopUnsafe**
-
-   För Device Co-op-medlemmar som kräver det här värdet anges till `true`måste du arbeta med Co-op-teamet för att begära en blockeringslista-flagga på ditt Device Co-op-konto. Det finns ingen självbetjäningsväg för att aktivera dessa flaggor.
-
-   Kom ihåg följande information:
-
-   * När `coopUnsafe` är inställd på `true`, `coop_unsafe=1` läggs alltid till i Audience Manager och besökar-ID:n.
-   * Om du aktiverar vidarebefordran på serversidan för Analytics till Audience Manager visas även `coop_unsafe=1` i Analytics-träffar.
-
-   Här är ytterligare information:
-
-   * Minsta SDK-version: 4.16.1
-   * Den booleska egenskapen i `marketingCloud` objekt som, när de anges till `true`, gör att enheten väljs ut från Experience Cloud Device Co-Op.
-   * Standardvärdet är `false`.
-   * Den här inställningen används **endast** för Device Co-op-etablerade kunder.
-
-
-
 * **environmentId**
 
    ID:t för miljön som du vill använda. Du kan ange ett giltigt ID (`environmentId=8`), och om `environmentId` ingår inte, standardproduktionsmiljön används.
@@ -156,7 +138,7 @@ Samma config-fil kan användas för appen på flera plattformar:
 
    >[!TIP]
    >
-   >Från och med version 4.2 definieras POI i Adobe Mobile-gränssnittet och synkroniseras dynamiskt till programkonfigurationsfilen. Synkroniseringen kräver `analytics.poi` inställning:
+   >Från och med version 4.2 definieras POI i gränssnittet för Adobe Mobile och synkroniseras dynamiskt till programkonfigurationsfilen. Synkroniseringen kräver `analytics.poi` inställning:
 
    ```js
    "analytics.poi": "`https://assets.adobedtm.com/…/yourfile.json`",

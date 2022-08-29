@@ -1,19 +1,18 @@
 ---
 audience: end-user
-user-guide-title: iOS-handbok för mobiltjänster
-breadcrumb-title: iOS-guide
-translation-type: tm+mt
-source-git-commit: b9ee49ba26d4726b1f97ef36f5c2e9923361b1ee
+user-guide-title: Mobile Services iOS Guide
+breadcrumb-title: iOS Guide
+source-git-commit: 78b7a623a7811cf0ede789c74b3ca7a80372c9f4
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '284'
 ht-degree: 3%
 
 ---
 
 
-# iOS-handbok för mobiltjänster {#ios}
+# Mobile Services iOS Guide {#ios}
 
-+ [iOS SDK 4.x för Experience Cloud Solutions](overview.md)
++ [iOS SDK 4.x for Experience Cloud Solutions](overview.md)
 + [Versionsinformation](rel-notes.md)
 + Komma igång {#getting-started-ios}
    + [Komma igång - översikt](getting-started/getting-started.md)
@@ -21,7 +20,7 @@ ht-degree: 3%
    + [Kärnimplementering och livscykel](getting-started/dev-qs.md)
    + [Bearbetar regler och kontextdata](getting-started/proc-rules.md)
    + [Snabb integrering](getting-started/swift-integration.md)
-   + [Migrera till iOS-biblioteket 4.x](getting-started/migration-v3.md)
+   + [Migrera till iOS 4.x-biblioteket](getting-started/migration-v3.md)
 + Konfiguration {#config-ios}
    + [Konfigurationsöversikt](configuration/configuration.md)
    + [ADBMomobile JSON-konfiguration](configuration/json-config/json-config.md)
@@ -37,7 +36,7 @@ ht-degree: 3%
    + [Spåra programkrascher](analytics-main/crashes.md)
    + [Tidsbestämda åtgärder](analytics-main/timed-actions.md)
    + [Livslängd för besökare](analytics-main/lifetime-value.md)
-   + Produktvariabel {#products-variable}
+   + Variabeln Produkter {#products-variable}
       + [Variabeln Produkter](analytics-main/products/products.md)
       + [Produktvariabel med eVars för försäljning och produktspecifika händelser](analytics-main/products/products-variable-evars-events.md)
    + [Händelseserialisering](analytics-main/event-serialization.md)
@@ -51,7 +50,7 @@ ht-degree: 3%
    + [Översikt över förvärvet](acquisition-main/acquisition-main.md)
    + [Förvärva mobilappar](acquisition-main/acquisition.md)
    + [Anskaffningsmetoder](acquisition-main/c-acquisition-methods.md)
-   + Spåra djupa länkar {#tracking-deep-links}
+   + Spåra djuplänkar {#tracking-deep-links}
       + [Spåra djuplänkar](acquisition-main/tracking-deep-links/tracking-deep-links.md)
       + [Spåra fördröjda länkar från tredje part](acquisition-main/tracking-deep-links/c-tracking-3rd-party-deep-deferred-links.md)
    + [Testa Marketing Link-förvärv](acquisition-main/t-testing-marketing-link-acquisition.md)
@@ -75,13 +74,12 @@ ht-degree: 3%
 + Målgrupp {#target-ios}
    + [Målöversikt](target-main/target-main.md)
    + [Målmetoder](target-main/c-target-methods.md)
-   + [Förhämta innehåll i iOS](target-main/c-mob-target-prefetch-ios.md)
+   + [Förhämta erbjudandeinnehåll i iOS](target-main/c-mob-target-prefetch-ios.md)
    + [Förhandsvisa mål på iOS](target-main/c-mob-target-preview-ios.md)
 + Experience Cloud {#exp-cloud-ios}
    + [Experience Cloud - översikt](marketing-cloud/marketing-cloud.md)
    + [Experience Cloud ID](marketing-cloud/mcvid.md)
    + [Adobe Experience Platform Identity Service-metoder](marketing-cloud/mc-methods.md)
-   + [Experience Cloud Device Co-op](marketing-cloud/t-mob-mc-device-coop-ios-.md)
 + [Audience Manager-metoder](amm/aam-methods.md)
 + Apple TV-implementering med tvOS {#apple-tv-implementation-tvos-ios}
    + [Apple TV-implementering med tvOS](apple-tv-implementation-tvos/apple-tv-implementation-tvos.md)
@@ -95,11 +93,11 @@ ht-degree: 3%
    + [iOS SDK-referens](reference/reference.md)
    + [Program-ID](reference/app-ids.md)
    + [Spårning av besökare mellan en app och en mobil webbsajt](reference/hybrid-app.md)
-   + [iOS-enhetsversioner](reference/device-versions.md)
+   + [iOS enhetsversioner](reference/device-versions.md)
 + Sekretess och allmänna dataskyddsföreskrifter{#privacy-gdpr-ios}
    + [Sekretess och allmänna dataskyddsföreskrifter](c-mob-privacy-gdpr-ios/c-mob-privacy-gdpr-ios.md)
    + [Hämtar lagrade identifierare](c-mob-privacy-gdpr-ios/c-mob-gdpr-ret-stored-ids-ios.md)
    + [Ange användarens avanmälningsstatus](c-mob-privacy-gdpr-ios/privacy.md)
-+ PhoneGap Plug-in {#phonegap-ios}
++ PhoneGap-plugin {#phonegap-ios}
    + [PhoneGap plug-in](phonegap/phonegap.md)
    + [PhoneGap plug-in-metoder](phonegap/phonegap-methods.md)

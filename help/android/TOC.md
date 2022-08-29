@@ -2,10 +2,9 @@
 audience: end-user
 user-guide-title: Android-guide för mobiltjänster
 breadcrumb-title: Android-guide
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: 78b7a623a7811cf0ede789c74b3ca7a80372c9f4
 workflow-type: tm+mt
-source-wordcount: '273'
+source-wordcount: '269'
 ht-degree: 6%
 
 ---
@@ -35,12 +34,12 @@ ht-degree: 6%
    + [Spåra programkrascher](analytics-main/crashes.md)
    + [Tidsbestämda åtgärder](analytics-main/timed-actions.md)
    + [Livslängd för besökare](analytics-main/lifetime-value.md)
-   + Produktvariabel{#products-variable}
+   + Variabeln Produkter{#products-variable}
       + [Variabeln Produkter](analytics-main/products/products.md)
       + [Produktvariabel med eVars för försäljning och produktspecifika händelser](analytics-main/products/products-variable-evars-events.md)
    + [Händelseserialisering](analytics-main/event-serialization.md)
    + [Videoanalys](analytics-main/video-qs.md)
-   + Eftersläpningar{#postbacks}
+   + Eftersläpning{#postbacks}
       + [Översikt över återgång](analytics-main/postbacks/postbacks.md)
       + [Exempel på återgång](analytics-main/postbacks/postback-example.md)
       + [PII-eftersläpningar](analytics-main/postbacks/c-pii-postbacks.md)
@@ -49,7 +48,7 @@ ht-degree: 6%
    + [Översikt över förvärvet](acquisition-main/acquisition-main-android.md)
    + [Förvärva mobilappar](acquisition-main/acquisition.md)
    + [Anskaffningsmetoder](acquisition-main/acquisition-methods.md)
-   + Spåra djupa länkar{#tracking-deep-links}
+   + Spåra djuplänkar{#tracking-deep-links}
       + [Spåra djuplänkar](acquisition-main/tracking-deep-links/tracking-deep-links.md)
       + [Spåra fördröjda länkar från tredje part](acquisition-main/tracking-deep-links/c-tracking-3rd-party-deferred-deep-links.md)
    + [Testa Marketing Link-förvärv](acquisition-main/t-testing-marketing-link-acquisition.md)
@@ -80,7 +79,6 @@ ht-degree: 6%
    + [Experience Cloud - översikt](c-marketing-cloud/c-marketing-cloud.md)
    + [Experience Cloud ID-konfiguration](c-marketing-cloud/mcvid.md)
    + [Adobe Experience Platform Identity Service-metoder](c-marketing-cloud/mc-methods.md)
-   + [Experience Cloud Device Co-op](c-marketing-cloud/t-mob-mc-device-coop-android-.md)
 + Audience Manager{#audience-manager-android}
    + [Översikt över Audience Manager](audience-manager/audience-manager.md)
    + [Audience Manager-konfiguration](audience-manager/audiencemgmt.md)
@@ -98,6 +96,6 @@ ht-degree: 6%
    + [Integritet och GDPR - översikt](c-mob-privacy-gdpr-android/c-mob-privacy-gdpr-android.md)
    + [Hämtar lagrade identifierare](c-mob-privacy-gdpr-android/c-mob-gdpr-ret-stored-ids-android.md)
    + [Ange användarens avanmälningsstatus](c-mob-privacy-gdpr-android/privacy.md)
-+ PhoneGap Plug-in{#phonegap-android}
++ PhoneGap-plugin{#phonegap-android}
    + [PhoneGap plug-in - översikt](phonegap/phonegap.md)
    + [PhoneGap plug-in-metoder](phonegap/phonegap-methods.md)

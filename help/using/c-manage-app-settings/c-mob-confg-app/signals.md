@@ -3,9 +3,9 @@ description: Tack vare återkopplingar kan du skicka data som samlats in av Adob
 title: Konfigurera återanslag
 uuid: a026575c-057b-4868-b6c8-9514cbc32b4d
 exl-id: 99b27f16-303a-4853-bfdb-2066a53867bf
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '377'
 ht-degree: 1%
 
 ---
@@ -16,11 +16,11 @@ Tack vare återkopplingar kan du skicka data som samlats in av Adobe Mobile till
 
 >[!IMPORTANT]
 >
->Om du vill använda återanslående måste du installera 4.6 SDK eller senare. Mer information finns i [Android - Postbacks](/help/android/analytics-main/postbacks/postbacks.md) eller [iOS - Postbacks](/help/ios/analytics-main/postback/postback.md).
+>Om du vill använda återanslående måste du installera 4.6 SDK eller senare.
 
-1. Klicka på namnet på det program du vill använda för att gå till sidan Hantera appinställningar och klicka på länken **[!UICONTROL Manage Postbacks]** överst till höger.
-1. Klicka på **[!UICONTROL Create Postback]**.
-1. Skriv följande information i fälten:
+1. Klicka på namnet på det program du vill använda för att gå till sidan Hantera appinställningar och klicka på **[!UICONTROL Manage Postbacks]** på den övre högra sidan.
+2. Klicka på **[!UICONTROL Create Postback]**.
+3. Skriv följande information i fälten:
 
    * **[!UICONTROL Postback Type]**
 
@@ -32,7 +32,7 @@ Tack vare återkopplingar kan du skicka data som samlats in av Adobe Mobile till
 
    * **[!UICONTROL URL]**
 
-      Ange en giltig slutpunkts-URL (med lämpliga frågeparametrar efter behov för GET-begäranden). Du får denna URL från den part som du skickar data till (annonsserver eller din egen slutpunkt). Exempel `https://my.server.com/?user=bob&amp;zip=90210&amp;c16=4.6.0-iOS&amp;c27=cln,132`.
+      Ange en giltig slutpunkts-URL (med lämpliga frågeparametrar efter behov för GET-begäranden). Du får denna URL från den part som du skickar data till (annonsserver eller din egen slutpunkt). Exempel `https://example.com/?user=bob&amp;zip=90210&amp;c16=4.6.0-iOS&amp;c27=cln,132`.
 
    * **[!UICONTROL Context Variable]**
 
@@ -48,14 +48,14 @@ Tack vare återkopplingar kan du skicka data som samlats in av Adobe Mobile till
 
    * **[!UICONTROL Trigger(s)]**
 
-      Ange en eller flera datataggar och villkor som utlöser återanslående. Du kan till exempel välja **[!UICONTROL Crashed]** som utlösare och **[!UICONTROL Exists]** som villkor för att aktivera återanslående när programmet kraschar. Du kan också ange vilka mätvärden som aktiverar återanslående. Du kan till exempel välja **[!UICONTROL Device Name]** som utlösare, **[!UICONTROL Equals]** och **[!UICONTROL iPhone 6 Plus]** som villkor för att aktivera återanslående när appen kraschar på iPhone 6 Plus-enheter.
+      Ange en eller flera datataggar och villkor som utlöser återanslående. Du kan till exempel välja **[!UICONTROL Crashed]** som utlösare och **[!UICONTROL Exists]** som det villkor som utlöser återanslående när programmet kraschar. Du kan också ange vilka mätvärden som aktiverar återanslående. Du kan till exempel välja **[!UICONTROL Device Name]** som utlösare, **[!UICONTROL Equals]** och **[!UICONTROL iPhone 6 Plus]** som villkor för att aktivera återanslående när programmet kraschar på iPhone 6 Plus-enheter.
 
    * **[!UICONTROL Trait(s)]**
-   Ange vem som kan se meddelandet när det utlöses. Alternativen är **[!UICONTROL Session Length]**, **[!UICONTROL First Launch Date]** och **[!UICONTROL App ID]**.
+   Ange vem som kan se meddelandet när det utlöses. Alternativen inkluderar **[!UICONTROL Session Length]**, **[!UICONTROL First Launch Date]** och **[!UICONTROL App ID]**.
 
-1. Klicka på **[!UICONTROL Save]** för att skapa återanslående och lägga till det i **[!UICONTROL Manage Postbacks]**-listan.
+4. Klicka **[!UICONTROL Save]** för att skapa återanslående och lägga till det i dialogrutan **[!UICONTROL Manage Postbacks]** lista.
 
    Gör något av följande om du vill aktivera återanslående i framtiden:
 
-   * Markera kryssrutan bredvid återanslående i listan **[!UICONTROL Manage Postbacks]** och klicka på **[!UICONTROL Activate Selected]**.
-   * Klicka på **[!UICONTROL Save & Activate]** för att spara ändringarna och omedelbart aktivera återanslående.
+   * Markera kryssrutan bredvid återanslående i dialogrutan **[!UICONTROL Manage Postbacks]** lista och klicka på **[!UICONTROL Activate Selected]**.
+   * Klicka **[!UICONTROL Save & Activate]** för att spara ändringarna och omedelbart aktivera återanslående.

@@ -6,9 +6,9 @@ title: Hantera din app
 topic-fix: Metrics
 uuid: 0cc356c3-8457-40a7-8c97-7cbc68a5dc0c
 exl-id: 599fef94-c188-47f5-b9d6-25a7c8cb07bc
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
 workflow-type: tm+mt
-source-wordcount: '970'
+source-wordcount: '951'
 ht-degree: 0%
 
 ---
@@ -22,11 +22,6 @@ Ni kan spåra och hantera data som ni får från appen genom att konfigurera oli
 * **Standardvariabler och -mått**
 
    Varje program innehåller variabler och mätvärden för att spåra kundvagn och inköpsaktiviteter. Viss inköpsinformation kan inte hanteras med bearbetningsregler, så SDK visar den speciella `"&&products"` kontextdata. Du kan till exempel ha variabler som varukorgstillägg, varukorgsborttagningar, utcheckningar, order och så vidare. Kontextdata måste mappas till data i Adobe Analytics. Om variabeln är ifylld med en enkel mappning från kontextdata är det här nyckeln som mappas till den. Lämna det tomt om variabeln fylls i med mer komplexa regler i Administrationsverktyg för analyser.
-
-   Mer information om dessa variabler och mätvärden finns i:
-
-   * [Produktvariabler i Android](/help/android/analytics-main/products/products.md)
-   * [Produktvariabler i iOS](/help/ios/analytics-main/products/products.md)
 
 * **Anpassade variabler**
 
@@ -80,7 +75,7 @@ Följande mappningar visas i Analytics som om de skapats i Mobile Services.
       eVar kvarstår för alla efterföljande spårningsanrop.
    * **[!UICONTROL Advanced]**
 
-      Adobe Analytics har ett mer avancerat användargränssnitt för att ange beständighet för eVars. Om ett beständighetsvärde har angetts för eVar som inte stöds i Mobile Services visas det här värdet i användargränssnittet för Mobile Services.
+      Adobe Analytics har ett mer avancerat användargränssnitt för att ange beständighet för eVars. Om ett beständigt värde anges för eVar som inte stöds i Mobile Services visas det här värdet i gränssnittet för mobila tjänster.
 
       Om du vill hantera eVars klickar du på **[!UICONTROL Adobe Analytics Report Suite Manager]** > **[!UICONTROL Conversion Variables UI]**.
 
@@ -120,4 +115,4 @@ Du kan skapa, redigera, arkivera/ta bort länkmål. Dessa destinationer kan seda
 
 ## Hantera återanslående {#section_78B0A8D7AE6940E78D85AE3AB829E860}
 
-Tack vare återkopplingar kan du skicka data som samlats in av Adobe Mobile till en separat tredjepartsserver. Genom att utnyttja samma utlösare och egenskaper som du använder för att visa ett meddelande i appen kan du konfigurera Mobile att skicka anpassade data till en tredjepartsdestination. Mer information om återanslående finns i [Konfigurera återanslag](/help/using/c-manage-app-settings/c-mob-confg-app/signals.md).
+Tack vare återkopplingar kan du skicka data som samlats in av Adobe Mobile till en separat tredjepartsserver. Genom att utnyttja samma utlösare och egenskaper som du använder för att visa ett meddelande i appen kan du konfigurera Mobile för att skicka anpassade data till en tredjepartsdestination. Mer information om återanslående finns i [Konfigurera återanslag](/help/using/c-manage-app-settings/c-mob-confg-app/signals.md).

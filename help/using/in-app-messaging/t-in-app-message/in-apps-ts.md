@@ -6,9 +6,9 @@ title: Felsöka meddelanden i appen
 topic-fix: Metrics
 uuid: 8813e8d8-bb1e-46ad-83cd-98ae68f73ce6
 exl-id: 6be5beef-3bde-49f8-9ec0-c5d32bd43045
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '601'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Uppdaterade du manifestfilen för att definiera helskärmsaktiviteten?
 
 ## Mitt lokala meddelande i Android fungerar inte.
 
-Kontrollera att den lokala meddelandemottagaren har deklarerats i ditt manifest. Mer information finns i steg 1 i [Meddelanden i appen](/help/android/messaging-main/messaging/messaging.md).
+Kontrollera att den lokala meddelandemottagaren har deklarerats i ditt manifest.
 
 ## Är meddelandet live?
 
@@ -43,7 +43,7 @@ Kontrollera att de här inställningarna är korrekta. Granska alternativen på 
 
 ## Om starthändelse används som utlösare..
 
-Starta bara en ny session. Information om när en session börjar finns i `lifecycleTimeout` i [ADBMomobile JSON-konfiguration](/help/ios/configuration/json-config/json-config.md) -fil.
+Starta bara en ny session.
 
 ## Jag har uppdaterat mitt meddelande på distans, men min app visar fortfarande det gamla meddelandet.
 

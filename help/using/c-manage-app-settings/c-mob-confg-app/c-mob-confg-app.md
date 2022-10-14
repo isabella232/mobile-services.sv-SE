@@ -1,11 +1,11 @@
 ---
-description: 'På sidan Hantera appinställningar kan du göra följande typer av ändringar '
+description: På sidan Hantera appinställningar kan du göra följande typer av ändringar
 title: Konfigurera din app
 uuid: c088e12d-73b6-40c4-b8cc-ec3bb3d3aa4a
 exl-id: 52fd58ad-87b8-499b-9c46-c3176bcda37c
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '331'
 ht-degree: 0%
 
 ---
@@ -32,12 +32,8 @@ På sidan Hantera appinställningar kan du göra följande typer av ändringar:
 
       * **Livscykel**
 
-         Spåra mätvärden och mått som kan mätas automatiskt av mobilbiblioteket när livscykeln är implementerad. Mer information finns i följande avsnitt:
+         Spåra mätvärden och mått som kan mätas automatiskt av mobilbiblioteket när livscykeln är implementerad.
 
-         * [iOS SDK Lifecycle Metrics](/help/ios/metrics.md)
-         * [Android Lifecycle Metrics](/help/android/metrics.md)
-         * [Windows Lifecycle Metrics](/help/universal-windows/metrics.md)
-         * [BlackBerry Lifecycle Metrics](/help/blackberry/metrics.md)
       * **Programåtgärder**
 
          Aktivera rapporter och kundvägar baserat på åtgärder i appen.
@@ -50,7 +46,6 @@ På sidan Hantera appinställningar kan du göra följande typer av ändringar:
 
          Mät hur lång tid som förflyter (i appen och total tid) mellan viktiga programåtgärder, till exempel tid före första köpet.
 
-
 * **Platsrapporter**
 
    Med det här alternativet kan du aktivera rapporter för att spåra latitud och longitud och identifiera specifika intressepunkter (POI). Du kan också spåra bluetooth-fyrar (UUID, major, minor och närhet).
@@ -59,7 +54,7 @@ På sidan Hantera appinställningar kan du göra följande typer av ändringar:
 
    >[!IMPORTANT]
    >
-   >Innan du hämtar SDK:er och verktyg måste du konfigurera SDK Analytics-alternativen. Mer information finns i [Konfigurera SDK Analytics Options](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-analytics/t-config-analytics.md).
+   >Innan du hämtar SDK:er och verktyg måste du konfigurera SDK Analytics-alternativen. Mer information finns i [Konfigurera alternativ för SDK-analys](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-analytics/t-config-analytics.md).
 
    När du är redo att uppgradera till 4.x SDK:n, eller om du arbetar med en ny app, hämtar du de senaste SDK:erna och utvecklingsverktygen längst ned på sidan Hantera programinställningar.
 

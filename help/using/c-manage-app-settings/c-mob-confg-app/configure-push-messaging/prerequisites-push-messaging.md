@@ -6,9 +6,9 @@ title: Krav för att aktivera push-meddelanden
 topic-fix: Metrics
 uuid: 194e6e07-b794-4152-a838-a4125c3292d4
 exl-id: 543155a4-f687-48a6-8690-5c8da8490c62
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
 workflow-type: tm+mt
-source-wordcount: '619'
+source-wordcount: '604'
 ht-degree: 1%
 
 ---
@@ -30,16 +30,12 @@ Ditt Adobe Analytics-företag måste vara Experience Cloud aktiverat. Du kan ver
 * **Konfigurera push-tjänster**
 
    Du måste konfigurera push-tjänster i Mobile SDK.
-Mer information finns i följande innehåll:
 
-   * [Push-meddelanden i Android](/help/android/messaging-main/push-messaging/push-messaging.md)
-   * [Push Messaging i iOS](/help/ios/messaging-main/push-messaging/push-messaging.md)
-
-## Logga in på Mobile Core Service med din Adobe ID
+## Logga in på tjänsten Mobile Core med din Adobe ID
 
 >[!IMPORTANT]
 >
->För att kunna använda Push Services-funktionen måste användarna logga in på Mobile Core Service med hjälp av sina Adobe ID och deras Analytics-konto måste vara länkat till deras Adobe ID:n. Push Services-funktionen är inte tillgänglig om användare loggar in med sina befintliga Adobe Analytics-konton.
+>För att kunna använda Push Services-funktionen måste användarna logga in på Mobile Core-tjänsten med hjälp av sina Adobe ID och deras Analytics-konto måste vara länkat till deras Adobe ID:n. Push Services-funktionen är inte tillgänglig om användare loggar in med sina befintliga Adobe Analytics-konton.
 
 Om användarna inte har Adobe-ID:n utför du följande steg:
 
@@ -49,7 +45,7 @@ Om användarna inte har Adobe-ID:n utför du följande steg:
 
    Ett e-postmeddelande skickas automatiskt till varje användare när administratören har slutfört det föregående steget.
 
-1. (**Användare**) Logga in på Mobile med deras Adobe ID.
+1. (**Användare**) Logga in på Mobile med Adobe ID.
 
 ## Länka användarkonton i Experience Cloud
 
@@ -67,7 +63,7 @@ Varje användare måste länka Analytics-lösningskontot från Experience Cloud-
 
 Mer information finns i [Organisationer i Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=sv) i guiden Komponenter i Experience Cloud Central Interface.
 
-## Konfigurera push-tjänster och SDK ID-tjänsten i Mobile användargränssnitt
+## Konfigurera push-tjänster och SDK ID-tjänsten i mobilanvändargränssnittet
 
 Innan du aktiverar ID-tjänsten för din app kan du **[!UICONTROL Push Services]** -avsnittet är inaktiverat. Men när du har aktiverat ID-tjänsten aktiveras push-tjänsten. Mer information om hur du aktiverar push-tjänster finns i [Konfigurera alternativ för tjänsten SDK ID](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-visitor.md).
 
@@ -89,7 +85,7 @@ Innan du aktiverar ID-tjänsten för din app kan du **[!UICONTROL Push Services]
 
 * För **Google** anger du programmets API-nyckel.
 
-   Klicka **[!UICONTROL Test]** för att verifiera att appen och Mobile Services är korrekt konfigurerade. Det här alternativet är användbart för felsökning och felsökning.
+   Klicka **[!UICONTROL Test]** för att verifiera att appen och mobiltjänsterna är korrekt konfigurerade. Det här alternativet är användbart för felsökning och felsökning.
 
    Skriv enhetens push-token som du vill skicka meddelandet. Du kan skicka meddelandet till flera enheter genom att ange variabler i en kommaseparerad lista.
 

@@ -1,21 +1,21 @@
 ---
-description: Denna information hjälper er att förstå och använda Adobe Mobile Services.
+description: Den här informationen hjälper dig att förstå och använda Adobe mobiltjänster.
 keywords: mobil
 solution: Experience Cloud Services,Analytics
 title: Komma igång
 topic-fix: Metrics
 uuid: a7ae7c5a-dab8-4603-b4cd-af73a2f09f71
 exl-id: 0c08e154-8747-45dc-9731-ab2a3e78bc5a
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
 workflow-type: tm+mt
-source-wordcount: '1344'
+source-wordcount: '1300'
 ht-degree: 0%
 
 ---
 
 # Komma igång{#getting-started}
 
-Denna information hjälper er att förstå och använda Adobe Mobile Services.
+Den här informationen hjälper dig att förstå och använda Adobe mobiltjänster.
 
 Adobe Mobile Services består av följande delar:
 
@@ -28,14 +28,14 @@ Idag skiljer sig mobilappslandskapet avsevärt från när smarttelefonen startad
 
 ## Adobe Mobile Services UI {#mobile-services-ui}
 
-Användargränssnittet för Mobile Services stöds i följande webbläsare:
+Användargränssnittet för mobiltjänster stöds i följande webbläsare:
 
 * Google Chrome (de senaste två versionerna)
 * Mozilla Firefox (de senaste två versionerna)
 * Apple Safari (de senaste två versionerna)
 * Microsoft Edge (de senaste två versionerna)
 
-Adobe Mobile Services hjälper er att öka mobilappsengagemanget på följande sätt:
+Adobe mobiltjänster bidrar till att öka mobilappsengagemanget på följande sätt:
 
 ### Hämta
 
@@ -117,13 +117,9 @@ Mer information om testning och Adobe Target finns i [Adobe Target](https://expe
 
 En mobil enhet gör att du kan känna till var en konsument befinner sig när de interagerar med appen eller låta den köras i bakgrunden via GPS-positionen. Med geoanpassning kan Adobe Target leverera skräddarsytt, relevant innehåll, erbjudanden eller meddelanden vid en tidpunkt där närheten är viktig. Du kan rikta in dig på användare som befinner sig inom en viss radie av en viss punkt av intresse eller när de är i närheten av iBeacons och med relevanta push-meddelanden.
 
-Adobe Target för Mobile-appar drar nu nytta av den förbättrade segmenteringen och rapporteringen via Adobe Analytics. Detta innebär att Adobe Target kan utnyttja alla viktiga appmätvärden i Analytics genom att använda dem för att målinrikta och personalisera. det ger också en djupare rapportering om testresultat, vilket gör det möjligt för marknadsförarna att bättre förstå vad de ska göra - svaren som kan undgå appmarknadsföraren som har press på sig att få avkastning på appinvesteringar. Integreringen Analytics/Target för appar ger ett kombinerat erbjudande, som är den mest robusta appengagemangslösningen som finns på marknaden.
+Adobe Target för mobilappar drar nu nytta av den förbättrade segmenteringen och rapporteringen via Adobe Analytics. Detta innebär att Adobe Target kan utnyttja alla viktiga appmätvärden i Analytics genom att använda dem för att målinrikta och personalisera. det ger också en djupare rapportering om testresultat, vilket gör det möjligt för marknadsförarna att bättre förstå vad de ska göra - svaren som kan undgå appmarknadsföraren som har press på sig att få avkastning på appinvesteringar. Integreringen Analytics/Target för appar ger ett kombinerat erbjudande, som är den mest robusta appengagemangslösningen som finns på marknaden.
 
-Mer information om plats finns i följande innehåll:
-
-* [Sökväg i användarhandboken för Mobile Services](/help/using/location/c-location-overview.md)
-* [Plats i Android SDK-guiden](/help/android/location/location.md)
-* [Sökväg i guiden för iOS SDK](/help/ios/location/location.md)
+Mer information om plats finns i [Plats](/help/using/location/c-location-overview.md).
 
 ## Adobe Mobile SDK {#mobile-services-sdk}
 
@@ -157,5 +153,3 @@ Adobe Mobile SDK har följande funktioner:
 
    * Minimerar belastningen på enhetsbearbetning för att skicka data till Adobe-servrar och tredjepartssystem.
    * Med liten yta minimeras storleken på det programpaket som skickas till appbutiker.
-
-Mer information om Adobe Mobile SDK finns i [Android SDK 4.x för Experience Solutions](/help/android/overview.md) och [iOS SDK 4.x for Experience Cloud Solutions](/help/ios/overview.md).

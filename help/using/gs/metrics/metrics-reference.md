@@ -6,20 +6,20 @@ title: Mobile Metrics and Dimensions Reference
 topic-fix: Metrics
 uuid: 96170ae7-8553-4f3e-ae01-65e5b664adf4
 exl-id: ddfbf11e-a4c3-4d59-92b3-1d192dc3e7cd
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '601'
 ht-degree: 1%
 
 ---
 
-# Mobile metrisk referens och dimensioner {#mobile-metrics-and-dimensions-reference}
+# Mobilstatistik och dimensionsreferens {#mobile-metrics-and-dimensions-reference}
 
 Den här informationen hjälper dig att förstå mer om standardvärden och -dimensioner för mobila enheter.
 
 >[!TIP]
 >
->Dimensions- och måttbehörigheterna som anges i Adobe Analytics gäller för Mobile Services. När du försöker köra en rapport utan rätt behörigheter inträffar ett fel.
+>Dimensions- och måttbehörigheterna som anges i Adobe Analytics gäller för mobiltjänster. När du försöker köra en rapport utan rätt behörigheter inträffar ett fel.
 
 ## Mätvärden {#section_6704C815147D44AF96151D626BEB813C}
 
@@ -53,7 +53,7 @@ Här är en lista över standardvärden för mobiler:
    Utlöses på en körning som inte är en installation eller uppgradering. Detta utlöses också när programmet tas bort från bakgrunden. Som standard utlöses en ny start när programmet är i bakgrunden i fem eller fler minuter. Mängden bakgrundstid innan en ny start aktiveras kan konfigureras i **[!UICONTROL SDK Analytics Options]** på sidan Hantera appinställningar. Mer information finns i *Tidsgräns för session (sekunder)* rad in [Konfigurera alternativ för SDK-analys](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-analytics/t-config-analytics.md).
 
    >[!IMPORTANT]
-   >På grund av hur besök på [!UICONTROL Adobe Analytics] och mobilappar lanseras i [!UICONTROL Adobe Mobile Services] är beräknade, kan du se olika resultat i rapporteringen. Mer information finns i [Jämför besök och Mobile App Launches](https://helpx.adobe.com/analytics/kb/compare-visits-and-mobile-app-launches.html).
+   >På grund av hur besök på [!UICONTROL Adobe Analytics] och mobilappar lanseras i [!UICONTROL Adobe Mobile Services] är beräknade, kan du se olika resultat i rapporteringen. Mer information finns i [Jämför besök och startprogram för mobilappar](https://helpx.adobe.com/analytics/kb/compare-visits-and-mobile-app-launches.html).
 
 * **Krascher**
 
@@ -124,7 +124,7 @@ Här är en lista över mobila standarddimensioner:
 
 * **Enhetsnamn**
 
-   Lagrar enhetsnamnet. I iOS identifierar en kommaavgränsad tvåsiffrig sträng iOS-enheten. Det första talet representerar enhetsgenereringen och det andra numret som representerar olika medlemmar i enhetsfamiljen. En fullständig lista över vanliga enhetsnamn finns på [iOS Device Versions](/help/ios/reference/device-versions.md).
+   Lagrar enhetsnamnet. I iOS identifierar en kommaavgränsad tvåsiffrig sträng iOS-enheten. Det första talet representerar enhetsgenereringen och det andra numret som representerar olika medlemmar i enhetsfamiljen.
 
 * **Transportföretagets namn**
 

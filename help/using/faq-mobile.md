@@ -1,14 +1,14 @@
 ---
-description: Vanliga frågor och svar om Adobe Mobile-tjänster och en allmän beskrivning av funktioner.
+description: Vanliga frågor och svar om Adobe Mobile Services och en allmän beskrivning av funktioner.
 keywords: mobil
 solution: Experience Cloud Services,Analytics
 title: Vanliga frågor
 topic-fix: Metrics
 uuid: 62a9241c-2ada-483a-a594-b023916cb0b6
 exl-id: d7dfc36e-56f0-498a-ad50-93fee90cb6ff
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
 workflow-type: tm+mt
-source-wordcount: '1028'
+source-wordcount: '1010'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ Följande tabell innehåller en lista med vanliga frågor och svar om Adobe Mobi
 
 ### Vilken SDK-version ska jag använda?
 
-Våra nuvarande SDK:er finns i version 4.11. Mer information finns i [Versionsinformation](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html).
+Våra nuvarande SDK:er finns i version 4.11. Mer information finns i [Versionsinformation](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=sv).
 
 ### Var kan jag ladda ned SDK:erna?
 
@@ -33,7 +33,7 @@ När du har skapat en ny programrapportsserie går du till Hantera appinställni
 
 ### Har Adobe Mobile SDK stöd för IPv6 för iOS?
 
-Adobe Mobile SDK använder iOS och Android-standardnätverksstackarna. För iOS använder SDK NSURLSession (iOS version 7+) och NSURLConnection (iOS version 7 och senare) som är helt kompatibla med IPv6. Utvecklare som har skapat eller använt sin egen nätverksstack kanske vill granska om det finns andra orsaker till att minska risken. Här är ytterligare information från Apple:
+SDK:erna för Adobe Mobile använder iOS- och Android-standardnätverksstackarna. För iOS använder SDK NSURLSession (iOS version 7+) och NSURLConnection (iOS version 7 och senare) som är helt kompatibla med IPv6. Utvecklare som har skapat eller använt sin egen nätverksstack kanske vill granska om det finns andra orsaker till att minska risken. Här är ytterligare information från Apple:
 
 *Om du skriver en klientapp med nätverks-API:er på hög nivå, som NSURLSession och CFNetwork, och du ansluter efter namn, behöver du inte ändra något för att appen ska fungera med IPv6-adresser.* Mer information finns i [Stöd för IPv6 DNS64/NAT64-nätverk](https://developer.apple.com/library/content/documentation/NetworkingInternetWeb/Conceptual/NetworkingOverview/UnderstandingandPreparingfortheIPv6Transition/UnderstandingandPreparingfortheIPv6Transition.html#__/apple_ref/doc/uid/TP40010220-CH213-SW1).
 
@@ -41,7 +41,7 @@ Adobe Mobile SDK använder iOS och Android-standardnätverksstackarna. För iOS 
 
 ### Vad är Lifecycle Metrics?
 
-Livscykelstatistik är körklara mått som samlas in automatiskt när SDK implementeras första gången i din app. Mer information finns i [Lifecycle Metrics (Android)](/help/android/metrics.md) och [Lifecycle Metrics (iOS)](/help/ios/metrics.md).
+Livscykelstatistik är körklara mått som samlas in automatiskt när SDK implementeras första gången i din app.
 
 ### Hur felsöker jag bearbetningsregler?
 
@@ -49,9 +49,9 @@ Se [Tips och tricks för bearbetningsregler](https://experienceleague.adobe.com/
 
 ### Kan jag skicka analysdata till flera rapportsviter?
 
-Ja. Med SDK:erna kan du skicka data till flera Adobe Analytics rapporteringsprogram. Om du vill samla in data i flera rapportsviter med hjälp av en bildbegäran anger du flera rapportsvits-ID:n i **[!UICONTROL rsids]** fält under **[!UICONTROL analytics]** i `ADBMobileConfig.json` -fil, avgränsad med kommatecken och utan mellanslag. Mer information finns i [ADBMomobile JSON-konfiguration](/help/ios/configuration/json-config/json-config.md).
+Ja. Med SDK:erna kan du skicka data till flera Adobe Analytics rapporteringsprogram. Om du vill samla in data i flera rapportsviter med hjälp av en bildbegäran anger du flera rapportsvits-ID:n i **[!UICONTROL rsids]** fält under **[!UICONTROL analytics]** i `ADBMobileConfig.json` -fil, avgränsad med kommatecken och utan mellanslag.
 
-### Hur skiljer sig Mobile besök från lanseringar?
+### Hur skiljer sig mobilbesöken från lanseringar?
 
 SDK:n mäter när en användare öppnar appen för första gången eller återgår till appen efter att ha varit utanför appen längre tid än det angivna timeoutvärdet. Den vanliga tidsgränsen är 5 minuter (300 sekunder) på **[!UICONTROL lifecycleTimeout]** -fältet, som finns i `ADBMobileConfig.json` -fil. Ett besök är en beräkning på serversidan som görs av Adobe Analytics och som baseras på det första och sista dataträffet som skickas av SDK utan att tidsgränsen för besöket överskrids. Sessionstimeout anges vanligtvis till 30 minuter för en rapportsvit. Även om besök kommer från traditionell webbanalys ger de här träffarna fortfarande värdefulla insikter om hur användarna kommer in i och avslutar er app.
 
@@ -93,7 +93,7 @@ Det finns ingen specifik begränsning, men för idealiska prestanda och på grun
 
 ### Kan jag attribuera kampanjer till aktiviteter i appen?
 
-Ja. Adobe Mobile Services kan hjälpa er att bygga marknadsföringstester som hjälper er att marknadsföra och driva trafik till era appar och koppla kundvärvningskampanjer till analyser och konverteringar i appen. Mer information finns i [Förvärv](/help/using/acquisition-main/acquisition-main.md).
+Ja. Adobe mobiltjänster kan hjälpa er att bygga marknadsföringstricks som hjälper er att marknadsföra och driva trafik till era appar och koppla kundvärvningskampanjer till analyser och konverteringar i appen. Mer information finns i [Förvärv](/help/using/acquisition-main/acquisition-main.md).
 
 ### Hur skapar jag länkar för att skaffa och spåra nya appanvändare?
 

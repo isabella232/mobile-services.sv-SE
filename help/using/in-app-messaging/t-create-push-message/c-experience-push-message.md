@@ -6,9 +6,9 @@ title: Experience Push-meddelande
 topic-fix: Metrics
 uuid: 1a8baf3e-9fea-452c-b0fc-4ba8ac270861
 exl-id: 9158487e-6ac5-4f17-a8ff-15de0360ab60
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
 workflow-type: tm+mt
-source-wordcount: '714'
+source-wordcount: '689'
 ht-degree: 0%
 
 ---
@@ -60,6 +60,7 @@ Här följer kraven för att skicka omfattande push-meddelanden:
       >[!IMPORTANT]
       >
       >Kom ihåg följande information:
+      >
       >* Rich push-meddelanden som skickas till tidigare versioner skickas fortfarande, men endast texten visas.
       >* Det finns för närvarande inget stöd för bevakning.
 
@@ -77,18 +78,13 @@ Här följer kraven för att skicka omfattande push-meddelanden:
 * **Storleksändring**
    * Bilderna måste ha formatet 2:1, annars beskärs de.
 
-Mer information om hur du konfigurerar avancerade push-meddelanden finns i följande innehåll:
-
-* [Ta emot push-meddelanden i Android](/help/android/messaging-main/push-messaging/c-set-up-rich-push-notif-android.md)
-* [Ta emot omfattande push-meddelanden i iOS](/help/ios/messaging-main/push-messaging/c-set-up-rich-push-notif-ios.md)
-
 Så här konfigurerar du ett push-meddelande på Experience-sidan:
 
 1. (**Valfritt**) Klicka på **[!UICONTROL Show Advanced Options]** länk för att konfigurera ytterligare alternativ:
 
    * **[!UICONTROL Payload: Data]**
 
-      Ange en anpassad push-nyttolast i JSON som skickas till appen via en push-sändning eller ett lokalt meddelande. Gränsvärdet för Android och iOS är 4 kB.
+      Ange en anpassad push-nyttolast i JSON som skickas till appen via ett push-meddelande eller ett lokalt meddelande. Gränsvärdet för Android och iOS är 4 kB.
 
    * **[!UICONTROL Apple Options: Category]**
 
@@ -102,7 +98,7 @@ Så här konfigurerar du ett push-meddelande på Experience-sidan:
 
       Välj det här alternativet så att iOS, när meddelandet kommer, aktiverar din app i bakgrunden och låter din app köra kod baserat på meddelandets nyttolast. Mer information finns i [Apple Push Notification Service](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW1) i *iOS Developer Library*.
 
-1. (Valfritt) Förhandsgranska layouten för meddelandet genom att klicka på följande ikoner:
+2. (Valfritt) Förhandsgranska layouten för meddelandet genom att klicka på följande ikoner:
 
    * **[!UICONTROL x Summary]**
 
@@ -125,11 +121,11 @@ Så här konfigurerar du ett push-meddelande på Experience-sidan:
       Om du vill förhandsgranska meddelandet på en surfplatta klickar du på ![ikon för surfplatta](assets/icon_tablet.png).
    Längst ned i förhandsgranskningsfönstret kan du visa en beskrivning av målgruppen som du valde i föregående steg.
 
-1. (**Valfritt**) Klicka **[!UICONTROL Test]** för att skicka meddelandet till angivna enheter för testning.
-1. Markera tjänsten och skriv push-tokens för minst en enhet som du vill skicka meddelandet till.
+3. (**Valfritt**) Klicka **[!UICONTROL Test]** för att skicka meddelandet till angivna enheter för testning.
+4. Markera tjänsten och skriv push-tokens för minst en enhet som du vill skicka meddelandet till.
 
    Ange token i en kommaavgränsad lista för att skicka meddelandet till mer än en enhet.
 
-1. Konfigurera schemaläggningsalternativen för meddelandet.
+5. Konfigurera schemaläggningsalternativen för meddelandet.
 
    Mer information finns i [Schema: push-meddelande](/help/using/in-app-messaging/t-create-push-message/c-schedule-push-message.md).

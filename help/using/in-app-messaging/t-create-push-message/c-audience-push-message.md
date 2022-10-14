@@ -6,9 +6,9 @@ title: Målgrupper Definiera och konfigurera målgruppssegment för push-meddela
 topic-fix: Metrics
 uuid: efd410e7-3b6c-4cf4-a26f-b11688adc491
 exl-id: d1062a76-2e72-4649-8497-58617a7a47cb
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
 workflow-type: tm+mt
-source-wordcount: '944'
+source-wordcount: '926'
 ht-degree: 0%
 
 ---
@@ -85,11 +85,6 @@ Här är några exempel som hjälper dig att förstå hur du definierar segment 
       Detta innebär att SDK har skickat värdet `True` för Push Message Opt-In evar.
 
    * Även om enheten har en giltig enhetstoken skickas inte meddelandet till enheten, såvida inte Adobe Analytics har angett den valda flaggan.
-
-   * Mer information om felsökning av push-meddelanden finns i:
-
-      * [Push-meddelanden i iOS](/help/ios/messaging-main/push-messaging/push-messaging.md)
-      * [Push-meddelanden i Android](/help/android/messaging-main/push-messaging/push-messaging.md)
 
 2. Skriv information i följande fält:
 

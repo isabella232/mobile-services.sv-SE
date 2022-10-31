@@ -1,118 +1,120 @@
 ---
-description: In Adobe Analytics, you can manage roles on the Admin Tools Home page.
-title: Roles and Permissions
+description: I Adobe Analytics kan du hantera roller på startsidan för Admin Tools.
+title: Roller och behörigheter
 uuid: ad350f8d-ef51-4519-98aa-3025bc0f5588
 exl-id: 70f0b427-60d5-4a79-a8d3-e03274edd917
-source-git-commit: 7b26c852dd9dba67a8b5e3228c1fecadfb465dca
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '553'
 ht-degree: 1%
 
 ---
 
-# Roles and permissions{#roles-and-permissions}
+# Roller och behörigheter{#roles-and-permissions}
 
-In Adobe Analytics, you can manage roles on the Admin Tools Home page.
+{#eol}
+
+I Adobe Analytics kan du hantera roller på startsidan för Admin Tools.
 
 ## Översikt {#section_91B8192891E14E5285718C8118912500}
 
-The following roles manage permissions in the Mobile Services UI:
+Följande roller hanterar behörigheter i gränssnittet för mobila tjänster:
 
-### Analytics Admin
+### Analysadministratör
 
-An Analytics Admin manages user groups and assigns permissions, one of which is the Mobile App Admin. The Experience Cloud Admin links your Adobe ID to your Adobe Analytics account, which allows you to log in to the Mobile Services UI by using your Adobe ID. [](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html)
+En Analytics Admin hanterar användargrupper och tilldelar behörigheter, varav en är Mobile App Admin. Experience Cloud Admin länkar din Adobe ID till ditt Adobe Analytics-konto så att du kan logga in på användargränssnittet för mobila tjänster med hjälp av din Adobe ID. Mer information om Experience Cloud Administrator finns i [Hantera användare och produkter i Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html) i guiden Komponenter i Experience Cloud Central Interface.
 
 >[!TIP]
 >
->An existing Analytics Admin has the ability to assign the Analytics Admin role to any user.
+>En befintlig Analytics Admin kan tilldela rollen Analytics Admin till alla användare.
 
-### Mobile App Admin
+### Administratör för mobilapp
 
-This role is the Admin for the Mobile Services UI.
+Den här rollen är administratör för användargränssnittet för mobila tjänster.
 
 >[!IMPORTANT]
 >
->**[!UICONTROL Segment Creation]**
+>För vissa funktioner, till exempel push-meddelanden, måste Analytics Admin välja **[!UICONTROL Segment Creation]** kryssrutan i Användarhantering.
 
-## Managing access {#section_E6939C2695AA4A0DBF432D50B2670920}
+## Hantera åtkomst {#section_E6939C2695AA4A0DBF432D50B2670920}
 
-Here is some additional information about accessing options in the Mobile Services UI:
+Här finns mer information om hur du får tillgång till alternativ i gränssnittet för mobila tjänster:
 
-### Apps and report suites
+### Program och rapportsviter
 
-All Mobile Service apps are tied to report suites. If users do not have access to a report suite, they will not have access to that report suite&#39;s associated app.
+Alla mobiltjänstappar är knutna till rapportsviter. Om användarna inte har tillgång till en rapportsserie har de inte tillgång till den rapportsvitens associerade app.
 
-### Mobile Services and Analytics features
+### Mobiltjänster och analysfunktioner
 
-If your company does not have an Analytics contract to access a feature in the UI, such as Push Messaging, no user in your company will have access to that feature, regardless of permission level.
+Om ditt företag inte har något Analytics-avtal för att komma åt en funktion i användargränssnittet, till exempel Push Messaging, har ingen användare i ditt företag åtkomst till den funktionen, oavsett behörighetsnivå.
 
-## Roles and permissions {#section_20AA029D5B8C413C8659777E79B11620}
+## Roller och behörigheter {#section_20AA029D5B8C413C8659777E79B11620}
 
-Here are the roles in the Mobile Services UI, with their relevant permissions:
+Här är rollerna i gränssnittet för mobila tjänster, med deras relevanta behörigheter:
 
-### Analytics Admin permissions
+### Administratörsbehörigheter för analyser
 
-* All User and Mobile App Admin Permissions
-* Create App with new report suite
-* Delete App from Mobile Services
+* Alla administratörsbehörigheter för användare och mobilappar
+* Skapa app med nytt rapportpaket
+* Ta bort app från mobiltjänster
 
    >[!IMPORTANT]
    >
-   >Although the app has been deleted in the Mobile Services UI, the report suite still exists in Analytics.
+   >Även om appen har tagits bort i gränssnittet för mobiltjänster finns rapportsviten fortfarande i Analytics.
 
-* Manage App Settings
+* Hantera appinställningar
 
-   * Enable Lifecycle Reporting
-   * Enable Location Reporting
-   * Create/Update/Delete Variables and Metrics
+   * Aktivera livscykelrapportering
+   * Aktivera platsrapportering
+   * Skapa/uppdatera/ta bort variabler och mätvärden
 
-### Mobile App Admin permissions
+### Administratörsbehörigheter för mobilappar
 
-* All User Permissions
-* Create App with existing report suite
-* Manage App Settings
+* Alla användarbehörigheter
+* Skapa app med befintlig rapportsvit
+* Hantera appinställningar
 
-   * Configure App&#39;s Mobile SDK options
-   * Configure App&#39;s UI settings
-   * Configure linked App Store apps
-   * Configure App&#39;s Universal Link options
-   * Configure Push Services certs and API keys
-   * Create/Update/Activate/Deactivate/Duplicate/Archive/Delete Postbacks
-   * Create/Update/Archive/Delete Link Destinations
+   * Konfigurera appens SDK-alternativ för mobiler
+   * Konfigurera appens gränssnittsinställningar
+   * Konfigurera länkade App Store-program
+   * Konfigurera alternativ för Universal Link för appen
+   * Konfigurera push-tjänstcertifikat och API-nycklar
+   * Skapa/uppdatera/aktivera/inaktivera/duplicera/arkivera/ta bort återanslag
+   * Skapa/uppdatera/arkivera/ta bort länkmål
 
-* Create/Update/Archive Marketing Links
-* Create/Import/Update/Delete Legacy Acquisition Links
-* Create/Import/Update/Delete Places (Points of Interest) configuration
-* Create/Update/Send/Schedule/Cancel/Duplicate/Archive/Delete Push Messages
-* Create/Update/Activate/Deactivate/Duplicate/Archive/Delete In-App Messages
+* Skapa/uppdatera/arkivera marknadsföringslänkar
+* Skapa/importera/uppdatera/ta bort länkar för äldre anskaffning
+* Skapa/importera/uppdatera/ta bort platser (intressepunkter), konfiguration
+* Skapa/Uppdatera/Skicka/Schemalägg/Avbryt/Duplicera/Arkivera/Ta bort push-meddelanden
+* Skapa/uppdatera/aktivera/inaktivera/duplicera/arkivera/ta bort meddelanden i appen
 
-For more information about groups and users, see the following content in the Adobe Analytics documentation:
+Mer information om grupper och användare finns i följande innehåll i Adobe Analytics-dokumentationen:
 
-* [](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html)
+* [Inställningar för användargrupp (äldre)](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html)
 * [Lägga till en användare i en grupp](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html)
 
-### Mobile Services user
+### Användare av mobiltjänster
 
-This role has view-only permissions and can provide feedback in the Mobile Services UI.
+Den här rollen har endast behörighet att visa och kan ge feedback i gränssnittet för mobila tjänster.
 
-* Provide Feedback on Mobile Services UI
-* View Apps
+* Ge feedback om gränssnittet för mobiltjänster
+* Visa appar
 
    >[!IMPORTANT]
    >
-   >Users can only see the report suites for which they have access in Adobe Analytics.
+   >Användare kan bara se de rapportsviter som de har tillgång till i Adobe Analytics.
 
-* View App Settings
+* Visa appinställningar
 
-   * Download App SDK configuration
-   * View all UI and SDK settings
-   * View Variables and Metrics configuration
-   * View Postbacks
-   * View Link Destinations
+   * Hämta app-SDK-konfiguration
+   * Visa alla inställningar för användargränssnitt och SDK
+   * Visa konfiguration för variabler och mått
+   * Visa återanslag
+   * Visa länkmål
 
-* View and Run Reports
-* View Marketing Links
-* View and Export Legacy Acquisition Links
-* View and Export Places (Points of Interest) configuration
-* View Push Messages
-* View In-App Messages
+* Visa och kör rapporter
+* Visa marknadsföringslänkar
+* Visa och exportera länkar för äldre förvärv
+* Visa och exportera platser (intressepunkter), konfiguration
+* Visa push-meddelanden
+* Visa meddelanden i appen

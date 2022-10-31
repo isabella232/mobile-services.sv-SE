@@ -6,7 +6,7 @@ title: Insticksannonser
 topic-fix: Metrics
 uuid: 7dce8ab2-2a5d-4384-ac1e-e31dfaa33654
 exl-id: b6d4588f-4f28-4c1b-9291-f4b9154d84f7
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '341'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Insticksannonser{#interstitials}
+
+{#eol}
 
 Du kan dirigera användare till ett mål beroende på om de har appen installerad (en applänk) eller inte (till en webbplats eller en appbutik). Användarna får bäst val av routning. Marknadsförarna kan erbjuda användaren valmöjligheter genom att konfigurera en interstitiell sida som visar vilka landningsdestinationer som är tillgängliga för användarna.
 
@@ -63,5 +65,5 @@ Så här konfigurerar du en interstititet när du skapar en marknadsföringslän
 
 1. (**Valfritt**) Klicka på ikonerna ovanför bilden för att se hur det interaktiva ser ut att rotera och på olika enheter.
 
-   Du kan ändra eller redigera bilden utanför Mobile Services för att se till att den visas korrekt i olika situationer.
+   Du kan ändra eller redigera bilden utanför Mobiltjänster för att se till att bilden visas korrekt i olika situationer.
 1. Klicka på **[!UICONTROL Save]**.

@@ -6,7 +6,7 @@ title: Hantera intressepunkter
 topic-fix: Metrics
 uuid: 7b362534-54fb-43a3-b6b2-dfc8f45ff7c6
 exl-id: 9598b06b-fb6a-436c-811c-f74015cc2ab0
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '481'
 ht-degree: 1%
@@ -15,11 +15,13 @@ ht-degree: 1%
 
 # Hantera intressepunkter {#manage-points-of-interest}
 
+{#eol}
+
 Du kan skapa och hantera POI:er, som gör att du kan definiera geografiska platser som du kan använda för korrelationssyften, rikta dig mot meddelanden i appen och så vidare. När en träff skickas i en POI kopplas POI till träffen.
 
 Kontrollera följande krav innan du kan använda Plats:
 
-* Du måste ha Analytics - Mobile Apps eller Analytics Premium.
+* Ni måste ha Analytics - Mobile Apps eller Analytics Premium.
 * Du måste aktivera **[!UICONTROL Location Reports]** för appen.
 * Om du använder en version av iOS SDK eller Android SDK som är äldre än version 4.2, efter att ha lagt till ny **[!UICONTROL Points of Interest]** måste du hämta en ny konfigurationsfil och ge den till programutvecklarna.
 
@@ -66,4 +68,4 @@ Gör så här om du vill använda Plats:
 
 Om du vill ta bort en eller flera POI:er markerar du de tillämpliga kryssrutorna och klickar på **[!UICONTROL Remove Selected]**.
 
-Klicka **[!UICONTROL Import]** eller **[!UICONTROL Export]** arbeta med data genom att använda en `.csv` i stället för att använda användargränssnittet i Adobe Mobile.
+Klicka **[!UICONTROL Import]** eller **[!UICONTROL Export]** arbeta med data genom att använda en `.csv` i stället för att använda användargränssnittet för Adobe Mobile.

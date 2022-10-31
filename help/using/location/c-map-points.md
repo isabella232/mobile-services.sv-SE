@@ -6,7 +6,7 @@ title: Mappa
 topic-fix: Metrics
 uuid: 3c271738-eb8d-4c26-baaf-54b247bfc4da
 exl-id: a7e75333-2919-44bf-9963-f40cdee2d6b6
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '277'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Mappa {#map}
+
+{#eol}
 
 Du kan visa en interaktiv karta som visar POI och andra datamarkörer.
 

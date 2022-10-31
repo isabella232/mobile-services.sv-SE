@@ -6,7 +6,7 @@ title: Loggar in
 topic-fix: Metrics
 uuid: d6ea0ca1-3511-4133-9d41-21ea2d2f7b3a
 exl-id: 12b447bd-f53b-43b4-b333-6b805f42fb75
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '311'
 ht-degree: 4%
@@ -15,15 +15,17 @@ ht-degree: 4%
 
 # Loggar in {#signing-in}
 
+{#eol}
+
 Du kan logga in på Adobe Mobile Services med en webbläsare.
 
 ## Logga in på Adobe Mobile Services {#section_09ACF2A8FBA44BAEA8EC86604C2A5F30}
 
-Du kan logga in på användargränssnittet för Mobile-tjänster i Adobe med ditt Adobe ID, ditt Enterprise ID eller ditt Analytics-ID:
+Du kan logga in på användargränssnittet för Adobe Mobile Services med ditt Adobe ID-, Enterprise IDS- eller analys-ID:
 
 ### Adobe ID
 
-Så här loggar du in på användargränssnittet för Mobile-tjänster i Adobe med din Adobe ID:
+Så här loggar du in på användargränssnittet för Adobe Mobile Services med din Adobe ID:
 
 1. I en webbläsare skriver du [https://mobilemarketing.adobe.com](https://mobilemarketing.adobe.com).
 1. Klicka på **[!UICONTROL Sign in with your Adobe ID]**.
@@ -51,7 +53,7 @@ Så här loggar du in på användargränssnittet för Adobe Mobile Services med 
 
 ### Analys-ID
 
-Så här loggar du in på användargränssnittet för Mobile Services i Adobe med ditt Analytics-ID:
+Så här loggar du in på användargränssnittet för Adobe Mobile Services med ditt Analytics-ID:
 
 1. I en webbläsare skriver du [https://mobilemarketing.adobe.com/](https://mobilemarketing.adobe.com/).
 1. Klicka på **[!UICONTROL Sign In with your Analytics account]**.

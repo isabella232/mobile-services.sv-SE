@@ -6,7 +6,7 @@ title: Skapa en förvärvslänk
 topic-fix: Metrics
 uuid: bb603013-fca9-44a2-820a-59e1c85d9444
 exl-id: bc351d1e-c7da-4418-ac5a-9e5f989dd566
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '414'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Skapa en förvärvslänk{#create-an-acquisition-link}
+
+{#eol}
 
 Du kan skapa appbutikslänkar som gör att du kan hämta program direkt från Apple App Store och Google Play. Med de länkar du skapar kan du attribuera dina lyckade händelser till hämtningarna.
 
@@ -50,13 +52,13 @@ Ange betalda villkor eller andra sökvillkor för annonsen.
 
       Ange en särskild lokal appbutik för webbläsare på stationära datorer.
 
-      Med den här inställningen kan du definiera den regionspecifika appbutik som du vill att en länk för förvärv ska dirigera till när en användare klickar på länken från en webbläsare på datorn. Mobile-enheter omdirigeras automatiskt baserat på enhetsinställningarna.
+      Med den här inställningen kan du definiera den regionspecifika appbutik som du vill att en länk för förvärv ska dirigera till när en användare klickar på länken från en webbläsare på datorn. Automatisk omdirigering av mobila enheter baserat på enhetsinställningarna.
 
    * **[!UICONTROL Browser Language (Google Language (Google Play Only))]**
 
       Välj ett språk i listrutan.
 
-      Med den här inställningen kan du definiera ett specifikt språk som ska visas i Google Play Store för webbläsare på stationära datorer. Mobile-enheter visar språk baserat på enhetsinställningar.
+      Med den här inställningen kan du definiera ett specifikt språk som ska visas i Google Play Store för webbläsare på stationära datorer. Mobilenheter visar språk baserat på enhetsinställningar.
 
    * **[!UICONTROL Search by Name ]**
 

@@ -6,7 +6,7 @@ title: Mobile Metrics and Dimensions Reference
 topic-fix: Metrics
 uuid: 96170ae7-8553-4f3e-ae01-65e5b664adf4
 exl-id: ddfbf11e-a4c3-4d59-92b3-1d192dc3e7cd
-source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '601'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Mobilstatistik och dimensionsreferens {#mobile-metrics-and-dimensions-reference}
+
+{#eol}
 
 Den här informationen hjälper dig att förstå mer om standardvärden och -dimensioner för mobila enheter.
 

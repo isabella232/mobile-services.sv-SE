@@ -6,7 +6,7 @@ title: Visa rapport om sökvägar
 topic-fix: Reports,Metrics
 uuid: bc73edce-0cc0-4349-9a48-e0a40cbe1b67
 exl-id: 475dbe01-fa4d-433c-ac77-68f2a6972c0c
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '468'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Visa rapport om sökvägar {#view-paths}
+
+{#eol}
 
 The **[!UICONTROL View Paths]** rapporten, som baseras på sökvägsanalys, visar ett målningsdiagram som representerar de sökvägar som har tagits mellan lägena i appen.
 

@@ -6,7 +6,7 @@ title: Rapporten Handlingsvägar
 topic-fix: Reports,Metrics
 uuid: a21e5d9e-fd57-4178-9d64-87181b7f988b
 exl-id: 4c97b07f-17df-49cb-b2f7-dcb682d9d3c6
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '500'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Rapporten Handlingsvägar{#action-paths}
+
+{#eol}
 
 Rapporten Åtgärdssökvägar baseras på sökvägsanalys och visar ett bandiagram som representerar de sökvägar som har tagits från ett läge till ett annat i appen.
 

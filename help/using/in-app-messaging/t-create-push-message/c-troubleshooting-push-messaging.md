@@ -6,7 +6,7 @@ title: Felsökning av push-meddelanden
 topic-fix: Metrics
 uuid: c7be4ab7-0cfe-4296-84a8-01412f4fd93f
 exl-id: 56feb8e1-e196-4b70-8240-6e41581ca602
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '708'
 ht-degree: 0%
@@ -15,17 +15,19 @@ ht-degree: 0%
 
 # Felsöka push-meddelanden{#troubleshooting-push-messaging}
 
+{#eol}
+
 Den här informationen kan hjälpa dig att felsöka push-meddelanden.
 
 ## Varför dröjer det ibland med att skicka push-meddelanden?
 
-Följande typer av fördröjningar kan vara kopplade till push-meddelanden för Mobile Services:
+Följande typer av fördröjningar kan associeras med push-meddelanden för mobiltjänster:
 
 * **Väntar på Analytics-träffar**
 
    Varje rapportsvit har en inställning som avgör när inkommande Analytics-träffar ska behandlas. Standardvärdet är var 1 timme.
 
-   Den faktiska bearbetningen av Analytics-träffar kan ta upp till 30 minuter, men är vanligtvis 15-20 minuter. En rapportserie träffar till exempel varje timme. När du anger den nödvändiga bearbetningstiden på högst 30 minuter kan det ta upp till 90 minuter innan en inkommande träff blir tillgänglig för ett push-meddelande. Om en användare startade appen kl. 9.01 visas träffen i användargränssnittet för Mobile Services som en ny unik användare mellan kl. 10.15 och kl. 10.30.
+   Den faktiska bearbetningen av Analytics-träffar kan ta upp till 30 minuter, men är vanligtvis 15-20 minuter. En rapportserie träffar till exempel varje timme. När du anger den nödvändiga bearbetningstiden på högst 30 minuter kan det ta upp till 90 minuter innan en inkommande träff blir tillgänglig för ett push-meddelande. Om en användare startade appen kl. 9.01 visas träffen i gränssnittet för mobila tjänster som en ny unik användare mellan kl. 10.15 och kl. 10.30.
 
 * **Väntar på push-tjänsten**
 

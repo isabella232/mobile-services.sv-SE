@@ -6,7 +6,7 @@ title: Hantera marknadsföringslänkar
 topic-fix: Metrics
 uuid: 98ac3520-89ed-4513-83f6-120dda9d0157
 exl-id: 678c18fe-b282-4eab-a248-e00dfd53cecd
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '172'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Hantera marknadsföringslänkar{#manage-marketing-links}
+
+{#eol}
 
 Du kan använda sidan Marketing Links för att skapa, använda och arkivera marknadsföringslänkar.
 
@@ -25,7 +27,7 @@ Utför följande uppgifter på sidan Marketing Links:
 
 * **Display Marketing Links**
 
-   Om du vill visa en lista över marknadsföringslänkar klickar du på **[!UICONTROL Acquisition]** > **[!UICONTROL Marketing Links Builder]**.
+   Om du vill visa listan över marknadsföringslänkar klickar du på **[!UICONTROL Acquisition]** > **[!UICONTROL Marketing Links Builder]**.
 
    The **[!UICONTROL Clicks]** visas antalet användare som har klickat på Marketing Link. The **[!UICONTROL First Launches]** -kolumnen visar antalet första starter för programmet. Detta värde visar antalet användare som valde att installera appen och starta den efter att ha klickat på länken Marketing.
 

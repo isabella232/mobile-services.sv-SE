@@ -6,7 +6,7 @@ title: Översiktsrapport
 topic-fix: Reports,Metrics
 uuid: 5f7088af-4b25-4fe5-afda-4844597c78f9
 exl-id: db681d0e-b784-4415-b248-f92df5b780cc
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '104'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Översiktsrapport{#overview}
+
+{#eol}
 
 Översiktsrapporten innehåller en ögonblicksbild av dina nyckeltal.
 

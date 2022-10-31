@@ -6,7 +6,7 @@ title: Lägg till serier (mått) i rapporter
 topic-fix: Reports,Metrics
 uuid: 84fdfb1f-70e6-4c02-9b3b-526e9c924f74
 exl-id: 1b1356c6-7f62-4b88-996a-09ed33b19c9d
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '269'
 ht-degree: 2%
@@ -15,11 +15,13 @@ ht-degree: 2%
 
 # Lägg till serier (mätvärden) i rapporter{#add-series-metrics-to-reports}
 
+{#eol}
+
 Den här informationen hjälper er att anpassa de inbyggda rapporterna genom att lägga till ytterligare serier (mätvärden) eller appar i olika rapportsviter för att jämföra data.
 
 >[!IMPORTANT]
 >
->Mobile appstatistik finns också i marketing reports and analytics, ad hoc-analyser, data warehouse och andra analysrapporteringsgränssnitt. Om det inte finns någon nedbrytning- eller rapporttyp i Adobe Mobile kan den genereras med ett annat rapporteringsgränssnitt.
+>Mätvärden för mobilappar finns också i marketing reports and analytics, ad hoc-analyser, data warehouse och andra analysrapporteringsgränssnitt. Om det inte finns någon nedbrytning- eller rapporttyp i Adobe Mobile kan den genereras med ett annat rapporteringsgränssnitt.
 
 I det här exemplet anpassar vi **[!UICONTROL Users & Sessions]** -rapport, men instruktionerna kan gälla för alla rapporter.
 

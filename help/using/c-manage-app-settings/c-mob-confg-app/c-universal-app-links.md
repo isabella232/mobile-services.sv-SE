@@ -5,7 +5,7 @@ title: Handbok för universallänkar och applänkar
 topic-fix: Metrics
 uuid: 8d6441dc-4307-4454-95ea-d77ec796f918
 exl-id: 6613189f-7a14-4066-89e9-996d4fe7f128
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '997'
 ht-degree: 0%
@@ -13,6 +13,8 @@ ht-degree: 0%
 ---
 
 # Universallänkar jämfört med applänkar: Hur fungerar de? {#universal-links-and-app-links}
+
+{#eol}
 
 Med universella länkar (iOS) och applänkar (Android) kan du ansluta till djupa länkar i dina iOS- eller Android-appar.
 
@@ -36,9 +38,9 @@ Du kan skapa en marknadsföringslänk som använder en universell länk eller en
 
 1. Om du vill konfigurera universallänkar i din iOS-app går du till [Hantera universallänkar i Apple](https://developer.apple.com/documentation/uikit/inter-process_communication/allowing_apps_and_websites_to_link_to_your_content/handling_universal_links).
 
-2. I Adobe Mobile Services ställer du in webbplatsassociationsdokumenten:
+2. Konfigurera webbplatsassociationsdokumenten i Adobe Mobile Services:
 
-   a. På startsidan för Mobile Services väljer du den app som du vill konfigurera universallänkar för.
+   a. På startsidan för Mobiltjänster väljer du den app som du vill konfigurera universallänkar för.
 
    b. Klicka **[!UICONTROL Manage App Settings]**.
 
@@ -62,7 +64,7 @@ Du kan skapa en marknadsföringslänk som använder en universell länk eller en
 
 1. Skapa en Marketing Link som använder universallänkar i Adobe Mobile Services:
 
-   a. Välj appen från startsidan för Mobile Services och klicka på **[!UICONTROL Acquisition]** > **[!UICONTROL Marketing Link Builder]**.
+   a. Välj appen från startsidan för Mobiltjänster och klicka på **[!UICONTROL Acquisition]** > **[!UICONTROL Marketing Link Builder]**.
 
    b. Klicka **[!UICONTROL Create New]**.
 
@@ -91,9 +93,9 @@ Du kan skapa en marknadsföringslänk som använder en universell länk eller en
 
 1. Om du vill konfigurera applänkar i din Android-app går du till [Lägg till Android-applänkar](https://developer.android.com/studio/write/app-link-indexing).
 
-1. I Adobe Mobile Services ställer du in webbplatsassociationsdokumenten:
+1. Konfigurera webbplatsassociationsdokumenten i Adobe Mobile Services:
 
-   a. På startsidan för Mobile Services väljer du den app som du vill konfigurera applänkar för.
+   a. På startsidan för Mobiltjänster väljer du det program som du vill konfigurera applänkar för.
 
    b. Klicka **[!UICONTROL Manage App Settings]**.
 
@@ -119,9 +121,9 @@ Du kan skapa en marknadsföringslänk som använder en universell länk eller en
 
 ### Använd en applänk
 
-1. I Adobe Mobile Services skapar du en Marketing Link som använder App Links:
+1. Skapa en Marketing Link som använder applänkar i Adobe Mobile Services:
 
-   a. Välj appen från startsidan för Mobile Services och klicka på **[!UICONTROL Acquisition]** > **[!UICONTROL Marketing Link Builder]**.
+   a. Välj appen från startsidan för Mobiltjänster och klicka på **[!UICONTROL Acquisition]** > **[!UICONTROL Marketing Link Builder]**.
 
    b. Klicka **[!UICONTROL Create New]**.
 

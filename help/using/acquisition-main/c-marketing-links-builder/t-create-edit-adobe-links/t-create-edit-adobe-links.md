@@ -6,7 +6,7 @@ title: Skapa eller redigera marknadsföringslänkar
 topic-fix: Metrics
 uuid: 305a8265-38de-4d19-8c79-b3912f5aae7c
 exl-id: a9b5c98d-77c1-4a40-96e5-f9e234d55ec5
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '545'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Skapa eller redigera marknadsföringslänkar{#create-or-edit-marketing-links}
+
+{#eol}
 
 Du kan skapa eller redigera marknadsföringslänkar för att skapa en djup länk till din mobilapp eller webbplats. Mer information finns i [Apple Universal Links and Android App Links](/help/using/c-manage-app-settings/c-mob-confg-app/c-universal-app-links.md).
 
@@ -27,7 +29,7 @@ Du kan skapa eller redigera marknadsföringslänkar för att skapa en djup länk
 
    * **[!UICONTROL Marketing Link Name]**:
 
-      (**Obligatoriskt**) Ange ett beskrivande namn för din Marketing Link. Namnet visas bara på sidan Marketing Links i användargränssnittet för Mobile Services i Adobe. Ett beskrivande namn hjälper dig eller andra i organisationen att snabbt hitta en specifik länk och kan ge dig insikt i dess syfte.
+      (**Obligatoriskt**) Ange ett beskrivande namn för din Marketing Link. Namnet visas bara på sidan Marketing Links i användargränssnittet för Adobe Mobile Services. Ett beskrivande namn hjälper dig eller andra i organisationen att snabbt hitta en specifik länk och kan ge dig insikt i dess syfte.
 
    * **[!UICONTROL Unique Tracking Code]**:
 

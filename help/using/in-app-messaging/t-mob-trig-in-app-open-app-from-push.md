@@ -3,7 +3,7 @@ description: Du kan ange att utlösaren för meddelanden i appen ska vara det pu
 title: Utlös ett meddelande i appen när appen öppnas från ett push-meddelande
 uuid: e1c8e29d-1c2b-47b2-8ab2-6b6e15df86f6
 exl-id: 4496222f-b6f0-4fa1-86c6-149b590244d3
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '269'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Utlös ett meddelande i appen när appen öppnas från ett push-meddelande{#trigger-an-in-app-message-when-the-app-is-opened-from-a-push-message}
+
+{#eol}
 
 Du kan ange att utlösaren för meddelanden i appen ska vara det push-meddelande-ID som skickas när en användare öppnar appen från push-meddelandet.
 
@@ -30,7 +32,7 @@ Du kan ange att utlösaren för meddelanden i appen ska vara det push-meddelande
    >
    >ID:t för push-meddelandet är det ID som du placerade i steg 1.
 
-   Den här utlösaren måste läggas till manuellt eftersom den inte är tillgänglig i listrutan **[!UICONTROL Trigger]**.
+   Den här utlösaren måste läggas till manuellt eftersom den inte är tillgänglig i **[!UICONTROL Trigger]** nedrullningsbar lista.
 
    ![](assets/brandon_task2.png)
 
@@ -40,5 +42,5 @@ Du kan ange att utlösaren för meddelanden i appen ska vara det push-meddelande
    Tänk på följande information när du testar:
 
    * När du har sparat meddelandet i appen tar det ca 45 sekunder för den värdbaserade konfigurationsfilen att uppdateras med det nya meddelandet.
-   * Programmet söker efter uppdateringar av konfigurationsfiler (det nya meddelandet i appen) när det finns en **ny**-start, så du måste se till att programmet startar en ny start när du klickar på push-meddelandet.
+   * Programmet söker efter uppdateringar av konfigurationsfiler (det nya meddelandet i appen) när det finns ett **new** starta så att du måste se till att programmet startar en ny start när du klickar på push-meddelandet.
    Det innebär vanligtvis att du måste se till att tidsgränsen för sessionen har uppnåtts. Standardtidsgränsen är 5 minuter.

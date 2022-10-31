@@ -6,7 +6,7 @@ title: Skapa nytt länkmål
 topic-fix: Metrics
 uuid: 390e3dea-0221-4f97-980d-a90ca9f162fa
 exl-id: 2d2f5938-1461-43e2-a375-45c18afc9d5a
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 0%
@@ -15,16 +15,18 @@ ht-degree: 0%
 
 # Skapa ett nytt länkmål {#create-new-link-destination}
 
+{#eol}
+
 Du kan skapa ett nytt länkmål som dirigerar användarna till en webbsida eller en djup länk i appen.
 
-1. I användargränssnittet för Mobile Services klickar du på **[!UICONTROL Manage Apps]**.
+1. I gränssnittet för mobila tjänster klickar du på **[!UICONTROL Manage Apps]**.
 1. Klicka på appens namn för att visa dess app informationssida.
 1. Klicka på **[!UICONTROL Manage Link Destinations]**.
 1. Klicka på **[!UICONTROL Create New]**.
 1. Skriv information i följande fält:
    * **[!UICONTROL Title]**
 
-      Ange ett beskrivande namn för applänkens mål. Titeln visas bara på sidan Hantera länkmål i användargränssnittet för Mobile-tjänster i Adobe. Ett beskrivande namn hjälper dig eller andra i organisationen att snabbt hitta ett specifikt länkmål och kan ge dig insikt i dess syfte.
+      Ange ett beskrivande namn för applänkens mål. Titeln visas bara på sidan Hantera länkmål i användargränssnittet för Adobe Mobile Services. Ett beskrivande namn hjälper dig eller andra i organisationen att snabbt hitta ett specifikt länkmål och kan ge dig insikt i dess syfte.
 
    * **[!UICONTROL Link Type]**
 
@@ -54,7 +56,7 @@ Välj det program som är associerat med länken som du ska ange.
 
    * **[!UICONTROL Notes]**
 
-      Ange valfria anteckningar för destinationen. Ytterligare anteckningar visas endast på sidan Hantera länkmål i användargränssnittet för Mobile-tjänster i Adobe. Ytterligare anteckningar kan hjälpa dig eller andra i organisationen att snabbt hitta ett specifikt länkmål och kan ge insikt i dess syfte, vilken kampanj det är knutet till eller något annat som du anser vara viktigt.
+      Ange valfria anteckningar för destinationen. Ytterligare anteckningar visas endast på sidan Hantera länkmål i användargränssnittet för Adobe Mobile Services. Ytterligare anteckningar kan hjälpa dig eller andra i organisationen att snabbt hitta ett specifikt länkmål och kan ge insikt i dess syfte, vilken kampanj det är knutet till eller något annat som du anser vara viktigt.
 
 
 1. Klicka **Spara**.

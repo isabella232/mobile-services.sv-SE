@@ -6,7 +6,7 @@ title: Rapporter
 topic-fix: Reports,Metrics
 uuid: 2abc2bd1-dbae-4af1-9b8d-1df2f6d3a81f
 exl-id: a95dd9c9-49f3-41df-87bf-6a2ac0d46c5c
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '130'
 ht-degree: 4%
@@ -15,9 +15,11 @@ ht-degree: 4%
 
 # Rapporter{#reports}
 
+{#eol}
+
 Användningsrapporter visar genomsnittlig sessionslängd, dagliga och månatliga användare, uppgraderingar och andra insikter som hjälper dig att förstå hur och hur ofta appen används. Kvarhållningsrapporter visar snabbt användarnas kvarhållningsnivåer 1 dag, 7 dagar och 28 dagar efter den första starten.
 
-Du kan generera följande rapporter i Mobile-gränssnittet:
+Du kan generera följande rapporter i gränssnittet för mobila enheter:
 
 * [Översikt](/help/using/usage/usage-overview.md)
 * [Användare och sessioner](/help/using/usage/users-sessions.md)

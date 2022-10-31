@@ -6,7 +6,7 @@ title: Översiktsrapport för App Store
 topic-fix: Metrics
 uuid: ac066f31-ec4b-4b67-b839-780c2cd1574e
 exl-id: da8663d6-9da8-440b-b7b8-06ff11e74b9f
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 0%
@@ -15,11 +15,13 @@ ht-degree: 0%
 
 # App Store - översikt{#app-store-overview-report}
 
+{#eol}
+
 The **[!UICONTROL App Store Overview]** rapporten ger er en ögonblicksbild av appbutikens statistik, inklusive antalet nedladdningar, köp i appen, genomsnittlig klassificering, nedladdningsintäkter, intäkter i appen, nedladdningar per land, nedladdningar per appbutik och köp i appen per namn.
 
 >[!TIP]
 >
->I användargränssnittet för Mobile Services **[!UICONTROL App Store]** menyalternativ och **[!UICONTROL Overview]** -rapporten visas i den vänstra navigeringsmenyn när du har konfigurerat integreringen.
+>I gränssnittet för mobila tjänster finns **[!UICONTROL App Store]** menyalternativ och **[!UICONTROL Overview]** -rapporten visas i den vänstra navigeringsmenyn när du har konfigurerat integreringen.
 
 The **[!UICONTROL Overview]** rapporten innehåller ett övertidsdiagram som visar information om antalet appbutikshämtningar, köp i appen som gjorts med din app och appens genomsnittliga klassificering.
 

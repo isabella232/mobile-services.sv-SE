@@ -6,7 +6,7 @@ title: Rapporttyper
 topic-fix: Reports,Metrics
 uuid: 8747b11e-31b1-47bc-ad55-db5ab4ef7078
 exl-id: ba7af2f5-8c84-4c49-a793-5fbaa8947566
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '738'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Rapporttyper {#report-types}
+
+{#eol}
 
 När du anpassar rapporter kan den breda flexibiliteten skapa frågor om vilken typ av rapport som passar bäst för att få de data du behöver.
 
@@ -27,7 +29,7 @@ Innan du anpassar rapporter måste du förstå skillnaden mellan ett mått och e
 
    En dimension används för att beskriva dina data. Dimensioner representeras av en sträng, eller ett tal som fungerar som en sträng (t.ex. ett postnummer), och används för att ordna och segmentera data. Exempel på vanliga dimensioner är OS-version, kampanjnamn, produktnamn och mobiloperatör. Varje dimension har ett antal specifika värden som är kopplade till den dimensionen. OS-versionsdimensionen har till exempel värden som _iOS 7_ och _Android 4.1.2_.
 
-Här är de typer av rapporter som du kan generera i Mobile-gränssnittet:
+Här är de typer av rapporter som du kan generera i gränssnittet för mobila enheter:
 
 ## Övertidsrapport {#section_2741DA54C90C49AFB17C7B9BC7AD627D}
 

@@ -6,7 +6,7 @@ title: Lägg till anteckningsfilter
 topic-fix: Reports,Metrics
 uuid: f3935c8a-811d-4080-8468-b8850202dd1e
 exl-id: 5f6f725a-a1ae-40c2-abe0-87ebabdc582a
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '154'
 ht-degree: 0%
@@ -15,11 +15,13 @@ ht-degree: 0%
 
 # Lägga till ett klisterfilter{#add-sticky-filter}
 
+{#eol}
+
 Skapa ett filter som spänner över olika rapporter för att se hur ett visst segment fungerar i alla mobilrapporter. Med ett klisterlappsfilter kan du definiera ett filter som ska användas på alla rapporter som inte är målningsrapporter.
 
 I följande exempel läggs klisterfilter för iOS och Android till i **[!UICONTROL Users & Sessions]** men instruktionerna gäller alla rapporter och mätvärden.
 
-1. Klicka på **[!UICONTROL Filter]** överst i en rapport i Adobe Mobile.
+1. Klicka på **[!UICONTROL Filter]** -ikonen längst upp i en rapport i Adobe Mobile.
 
    ![](assets/sticky-filters.png)
 

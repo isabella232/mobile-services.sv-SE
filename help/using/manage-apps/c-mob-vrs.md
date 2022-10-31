@@ -3,7 +3,7 @@ description: En virtuell rapportsvit (VRS) är en rapportsserie som skapas genom
 title: Virtual Report Suites
 uuid: 3f467cad-43e7-4cd0-889b-89f8c61febbd
 exl-id: c9ce7f7c-2023-4a9d-9e4d-bacc21f9ad40
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '1000'
 ht-degree: 4%
@@ -11,6 +11,8 @@ ht-degree: 4%
 ---
 
 # Virtuella rapportsviter {#virtual-report-suites}
+
+{#eol}
 
 En virtuell rapportsvit (VRS) är en rapportsserie som skapas genom att en eller flera segmentdefinitioner tillämpas på en rapportsvit. På så sätt kan användare underhålla sina data i en rapportserie, men hantera data som om de fanns i separata rapportsviter.
 
@@ -51,9 +53,9 @@ Ett VRS kan hjälpa dig att utföra följande uppgifter:
 
 >[!IMPORTANT]
 >
->Endast Adobe Analytics-administratörer kan skapa och ändra virtuella rapportsviter i Adobe Analytics. Mer information om hur du skapar en virtuell rapportserie finns i [Skapa virtuella rapportsviter](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-workflow/vrs-create.html) i Adobe Analytics-dokumentationen.
+>Endast Adobe Analytics-administratörer kan skapa och ändra virtuella rapportsviter i Adobe Analytics. Information om hur du skapar en virtuell rapportserie finns i [Skapa virtuella rapportsviter](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-workflow/vrs-create.html) i Adobe Analytics-dokumentationen.
 
-Varje VRS har ett unikt ID. Om du vill visa det överordnade rapportsvitens-ID i användargränssnittet för Adobe Mobile Services klickar du på **[!UICONTROL More Details]** på sidan Hantera appinställningar i avsnittet **[!UICONTROL App Information]**.
+Varje VRS har ett unikt ID. Om du vill visa den överordnade rapportens programpaket-ID i användargränssnittet för Adobe Mobile Services går du till sidan Hantera appinställningar på **[!UICONTROL App Information]** avsnitt, klicka **[!UICONTROL More Details]**.
 
 I användargränssnittet för Adobe-mobiltjänster kan du använda ett VRS-system för att skapa en app och segmentera data till en viss grupp i organisationen. På så sätt kan t.ex. en affärsanvändare i Spanien inte se de data som är relevanta för en affärsanvändare i Japan.
 
@@ -79,11 +81,11 @@ Tidszonsegenskapen på sidan Hantera programinställningar skiljer sig från tid
 
 ## Välj en virtuell rapportsvit i gränssnittet för mobila tjänster {#section_3212D0FC01FD43DCAF30FBAA354CD6E4}
 
-Om du vill använda ett VRS-system när du skapar ett program väljer du VRS i listrutan **[!UICONTROL Report Suite]** på sidan Appinformation. Den här listan innehåller överordnade och virtuella rapporteringsprogram.
+Om du vill använda ett VRS-system när du skapar en app väljer du VRS från **[!UICONTROL Report Suite]** nedrullningsbar lista på sidan App Information. Den här listan innehåller överordnade och virtuella rapporteringsprogram.
 
 >[!IMPORTANT]
 >
->Om du vill välja ett VRS-system från listan letar du reda på ett alternativ med den blå punkten och namnkonventionen `vrs_` *`<company_name>`* `_` *`<unique name>`*.
+>Om du vill välja ett VRS-system från listan letar du reda på ett alternativ med den blå punkten och `vrs_` *`<company_name>`* `_` *`<unique name>`* namnkonvention.
 
 ## Egenskaper för Virtual Report Suite {#section_20ECE6243F664C4FB4347ADB4FF0458A}
 
@@ -120,4 +122,4 @@ Här är egenskaperna för VRS:
 Här är ytterligare information om virtuella rapportsviter:
 
 * Mer information om VRS finns i [Översikt över virtuella rapportsviter](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-about.html).
-* Mer information om planering av VRS-implementering finns i [Arbetsflöde för virtuell rapportsvit](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-workflow/vrs-workflow.html).
+* Mer information om planering av VRS-implementering finns i [Arbetsflöde för virtuella rapportsviter](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-workflow/vrs-workflow.html).

@@ -3,7 +3,7 @@ description: På sidan Hantera appinställningar kan du göra följande typer av
 title: Konfigurera din app
 uuid: c088e12d-73b6-40c4-b8cc-ec3bb3d3aa4a
 exl-id: 52fd58ad-87b8-499b-9c46-c3176bcda37c
-source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Konfigurera din app {#configuring-your-app}
+
+{#eol}
 
 På sidan Hantera appinställningar kan du göra följande typer av ändringar:
 

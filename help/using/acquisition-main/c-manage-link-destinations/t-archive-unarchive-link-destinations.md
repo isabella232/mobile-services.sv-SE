@@ -6,7 +6,7 @@ title: Hantera länkmål
 topic-fix: Metrics
 uuid: 3a38d40d-b4c7-4f9f-aa6e-979613faaba2
 exl-id: 5d2ab0db-6371-434e-bf92-6013e78c8d8f
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 1%
@@ -15,11 +15,13 @@ ht-degree: 1%
 
 # Hantera länkmål{#manage-link-destinations}
 
+{#eol}
+
 Du kan använda sidan Länkmål för att redigera, arkivera, ta bort eller arkivera befintliga mål.
 
 Så här visar du sidan Hantera länkmål:
 
-1. I användargränssnittet för Mobile Services klickar du på **[!UICONTROL Manage Apps]**.
+1. I gränssnittet för mobila tjänster klickar du på **[!UICONTROL Manage Apps]**.
 1. På appinformationssidan klickar du på **[!UICONTROL Manage Link Destinations]**.
 
    ![Länka mål](assets/link_destinations_list.png)

@@ -6,7 +6,7 @@ title: Meddelanden
 topic-fix: Metrics
 uuid: e32d3e35-2d09-4ddf-8919-75dc895abcb3
 exl-id: e6d076fc-3176-4591-8388-314b936c58cd
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '459'
 ht-degree: 1%
@@ -15,20 +15,22 @@ ht-degree: 1%
 
 # Meddelanden {#messaging}
 
+{#eol}
+
 Du kan skapa, hantera och rapportera om meddelanden i programmet och push-meddelanden.
 
 ## Ny Adobe Experience Cloud SDK-version
 
 Letar du efter information och dokumentation om Adobe Experience Platform Mobile SDK? Klicka [här](https://aep-sdks.gitbook.io/docs/) för vår senaste dokumentation.
 
-Från om med september 2018 har vi släppt en ny större version av SDK. Dessa nya Adobe Experience Platform Mobile SDK kan konfigureras via [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
+Från om med september 2018 har vi släppt en ny större version av SDK. Dessa nya Adobe Experience Platform Mobile SDK:er kan konfigureras via [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
 
 * För att komma igång, gå till [Starta](https://launch.adobe.com/).
 * Om du vill se vad som finns i Experience Platform SDK-databaserna går du till [Github: Adobe Experience Platform SDKs](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
 
 >[!IMPORTANT]
 >
-> Om du använder Adobe Experience Platform Mobile SDK:er med Adobe Launch ska du **måste** installera också Adobe Analytics Mobile Services-tillägget om du vill använda Adobe Mobile Services-funktioner som förvärvarlänkar. Mer information finns i [Adobe Analytics - Mobile Services](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services). Mer information om hur du använder push-meddelanden och meddelanden i appen med SDK:n för Experience Platform finns i [Konfigurera push-meddelanden](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services#set-up-push-messaging) och [Konfigurera meddelanden i appen](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services#set-up-in-app-messaging).
+> Om du använder Adobe Experience Platform Mobile SDK:er med Adobe Launch ska du **måste** installera också Adobe Analytics-tillägget för mobiltjänster om du vill använda Adobe-funktioner för mobiltjänster, som t.ex. förvärvslänkar. Mer information finns i [Adobe Analytics - Mobiltjänster](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services). Mer information om hur du använder push-meddelanden och meddelanden i appen med SDK:n för Experience Platform finns i [Konfigurera push-meddelanden](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services#set-up-push-messaging) och [Konfigurera meddelanden i appen](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services#set-up-in-app-messaging).
 
 ## Meddelanden i appen {#section_8984F4568BC24D32A87429FFCB5184A6}
 
@@ -44,7 +46,7 @@ Följande meddelandetyper stöds:
 Här finns ytterligare information som hjälper dig att förstå hur meddelanden i appen fungerar:
 
 * Meddelanden i appen kräver SDK version 4.2 eller senare.
-* Du måste ange vem som har Mobile App Admin-rättigheter.
+* Du måste ange vem som har administratörsbehörighet för mobilappar.
 
    Dessa rättigheter ger åtkomst till länkar för förvärv och meddelanden i appen. Mer information finns i [Roller och behörigheter](/help/using/gs/c-mob-roles-and-permissions.md).
 * När ett meddelande har godkänts publiceras det automatiskt till programmet.

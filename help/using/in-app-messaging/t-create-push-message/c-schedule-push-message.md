@@ -1,12 +1,12 @@
 ---
-description: I Adobe Mobile Services-gränssnittet kan du schemalägga att ett push-meddelande ska levereras omedelbart, skickas senare och som en återkommande händelse. Dessa händelser kan schemaläggas varje dag, vecka eller månad.
+description: I användargränssnittet för Adobe Mobile Services kan du schemalägga att ett push-meddelande ska levereras omedelbart, skickas senare och som en återkommande händelse. Dessa händelser kan schemaläggas varje dag, vecka eller månad.
 keywords: mobil
 solution: Experience Cloud Services,Analytics
 title: Schemalägg push-meddelande
 topic-fix: Metrics
 uuid: 6810e27a-016f-4286-8fe2-9972d85fa326
 exl-id: 36f263a0-4aad-423e-bb78-9c532c98df19
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '642'
 ht-degree: 0%
@@ -15,7 +15,9 @@ ht-degree: 0%
 
 # Schema: push-meddelanden{#schedule-push-message}
 
-I Adobe Mobile Services-gränssnittet kan du schemalägga att ett push-meddelande ska levereras omedelbart, skickas senare och som en återkommande händelse. Dessa händelser kan schemaläggas varje dag, vecka eller månad.
+{#eol}
+
+I användargränssnittet för Adobe Mobile Services kan du schemalägga att ett push-meddelande ska levereras omedelbart, skickas senare och som en återkommande händelse. Dessa händelser kan schemaläggas varje dag, vecka eller månad.
 
 >[!TIP]
 >

@@ -6,7 +6,7 @@ title: Målgruppsmeddelande i appen
 topic-fix: Metrics
 uuid: 6c815d4c-7626-4cf4-9158-3f059c79317a
 exl-id: c85f2c0d-9c88-4d5a-8247-d8a101195d3a
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '518'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Målgrupp: meddelande i appen {#audience-in-app-message}
+
+{#eol}
 
 Du kan konfigurera målgruppsalternativ för meddelanden i appen, inklusive alternativ för visning, utlösare och egenskaper.
 
@@ -53,7 +55,7 @@ Du kan bestämma vem som ska se meddelandet i appen när det utlöses och filtre
 >
 >Utlösare och traits använder data som skickas till Analytics från er app. Dessa värden skickas som kontextdata, mappade variabler och mätvärden. En variabel är ett textbaserat värde och ett mätvärde är ett numeriskt värde.
 
-Om du vill se mappningen av dessa nyckelvärdepar i användargränssnittet för Mobile Services och validera värdet för utlösaren klickar du på **[!UICONTROL Manage App Settings]** >  **[!UICONTROL Manage Variables & Metrics]** >, som visar följande flikar:
+Om du vill se mappningen av dessa nyckelvärdepar i gränssnittet för mobila tjänster och validera värdet för utlösaren klickar du på **[!UICONTROL Manage App Settings]** >  **[!UICONTROL Manage Variables & Metrics]** >, som visar följande flikar:
 
 * **[!UICONTROL Standard Variables & Metrics]**
 * **[!UICONTROL Custom Variables]**

@@ -1,21 +1,23 @@
 ---
-description: Du kan mäta olika mätvärden genom att använda Adobe Mobile och samla in mätvärden som du vill spåra för din app.
+description: Du kan mäta olika mätvärden med Adobe Mobile och samla in mätvärden som du vill spåra för din app.
 keywords: mobil
 solution: Experience Cloud Services,Analytics
-title: Mobile Metrics
+title: Mobila mått
 topic-fix: Metrics
 uuid: c4457f4a-9d1c-4fe9-ad4a-9eb2e37feab7
 exl-id: 13912d5e-9813-4f8f-80d5-1f3cfcdd6aa3
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '529'
 ht-degree: 0%
 
 ---
 
-# Mobile metrics{#mobile-metrics}
+# Mobilstatistik{#mobile-metrics}
 
-Du kan mäta olika mätvärden genom att använda Adobe Mobile och samla in mätvärden som du vill spåra för din app.
+{#eol}
+
+Du kan mäta olika mätvärden med Adobe Mobile och samla in mätvärden som du vill spåra för din app.
 
 Följande typer av mätvärden mäts:
 

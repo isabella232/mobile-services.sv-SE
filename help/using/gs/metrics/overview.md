@@ -2,11 +2,11 @@
 description: Du kan visa nyckeltal för prestandamått för de appar som du senast visade. Som standard kan du visa upp till 12 appar. Du kan ändra datumintervallet och skapa filter för att segmentera data och redigera alla program på sidan Översikt.
 keywords: mobil
 solution: Experience Cloud Services,Analytics
-title: Visa Mobile-mått
+title: Visa mobilmått
 topic-fix: Metrics
 uuid: 57db0b77-6b0a-4a0c-9aad-0731275233fd
 exl-id: aab6448d-4362-4c75-949a-7a519da76606
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '421'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Visa mobilstatistik {#display-mobile-metrics}
+
+{#eol}
 
 Du kan visa nyckeltal för prestandamått för de appar som du senast visade. Som standard kan du visa upp till 12 appar. Du kan ändra datumintervallet och skapa filter för att segmentera data och redigera alla program på sidan Översikt.
 

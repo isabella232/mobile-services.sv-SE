@@ -6,7 +6,7 @@ title: Lägg till en ny app
 topic-fix: Metrics
 uuid: 706b5e4d-1318-4a9e-8c69-ffabf51fa02c
 exl-id: 30dca517-61ac-495b-aa91-3febd1cb8639
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '632'
 ht-degree: 0%
@@ -15,11 +15,13 @@ ht-degree: 0%
 
 # Lägg till en ny app{#add-a-new-app}
 
+{#eol}
+
 Du kan använda den här informationen för att skapa en ny app och konfigurera dess nyckelmått; konfigurera SDK-alternativen för Adobe Analytics och Adobe Audience Manager; konfigurera alternativ för förvärv och ID-tjänster, och hämta konfigurationsfilen, SDK:er samt utvecklar- och provverktygen.
 
 De här instruktionerna hjälper dig att lägga till en ny app och konfigurera integreringar med Adobe Analytics och Adobe Audience Manager.
 
-Innan du kan konfigurera din app måste du lägga till den i användargränssnittet för Mobile Services i Adobe. När du har skapat appen skapas rätt konfiguration, och du kan tillhandahålla den här konfigurationen till utvecklare som implementerar Mobile SDK för appen.
+Innan du kan konfigurera din app måste du lägga till den i användargränssnittet för Adobe Mobile Services. När du har skapat appen skapas rätt konfiguration, och du kan tillhandahålla den här konfigurationen till utvecklare som implementerar Mobile SDK för appen.
 
 1. Logga in på Adobe Mobile Services och utför någon av följande uppgifter:
 
@@ -46,7 +48,7 @@ Innan du kan konfigurera din app måste du lägga till den i användargränssnit
 
    * **[!UICONTROL Copy Settings From]**
 
-      Variabler, händelser, bearbetningsregler och andra inställningar ställs in i den nya rapportsviten precis som i den här rapportsviten. En rapportsvit som skapats i Mobile Services är endast offline-aktiverad (eller tidsstämplad) om **[!UICONTROL Copy Settings From]** rapportsviten som användes var Mobile App Template eller om du skapar en rapportsvit som är offline-aktiverad.
+      Variabler, händelser, bearbetningsregler och andra inställningar ställs in i den nya rapportsviten precis som i den här rapportsviten. En rapportsvit som skapats i Mobile Services är endast offline-aktiverad (eller tidsstämplad) om **[!UICONTROL Copy Settings From]** den rapportsvit som användes var Mobile App Template eller om du skapar en rapportsvit som är offline-aktiverad.
 
    * **[!UICONTROL Timezone]**
 

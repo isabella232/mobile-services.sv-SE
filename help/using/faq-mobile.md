@@ -6,7 +6,7 @@ title: Vanliga frågor
 topic-fix: Metrics
 uuid: 62a9241c-2ada-483a-a594-b023916cb0b6
 exl-id: d7dfc36e-56f0-498a-ad50-93fee90cb6ff
-source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '1010'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Vanliga frågor {#frequently-asked-questions}
+
+{#eol}
 
 Följande tabell innehåller en lista med vanliga frågor och svar om Adobe Mobile Services:
 

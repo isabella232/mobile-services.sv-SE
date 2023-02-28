@@ -1,17 +1,17 @@
 ---
 audience: end-user
-user-guide-title: Handbok för mobiltjänster
-breadcrumb-title: Handbok för mobiltjänster
-user-guide-description: Mobiltjänster är en totallösning som hjälper er att värva och engagera mobilappsanvändare och optimera deras upplevelser.
+user-guide-title: Användarhandbok om Mobile Services
+breadcrumb-title: Användarhandbok om Mobile Services
+user-guide-description: Mobile Services är en totallösning som hjälper dig att värva och engagera användare av mobilappar och optimera deras upplevelser.
 source-git-commit: 8c74c479c357e008dbbaaee8eb11097582072470
 workflow-type: tm+mt
 source-wordcount: '343'
-ht-degree: 8%
+ht-degree: 16%
 
 ---
 
 
-# Handbok för mobiltjänster {#using}
+# Användarhandbok om Mobile Services {#using}
 
 + [Adobe Mobile Services](home.md)
 + [Meddelande om att produkten är slut](eol.md)

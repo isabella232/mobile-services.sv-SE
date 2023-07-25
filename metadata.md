@@ -4,8 +4,8 @@ product: experience cloud
 solution: Experience Cloud Services
 type: Documentation
 git-repo: https://github.com/AdobeDocs/mobile-services.sv-SE
-index: true
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+hide: true
+source-git-commit: 0a4e0c9e6172231d8a9f9b561d0a7b7fb230473a
 workflow-type: tm+mt
 source-wordcount: '157'
 ht-degree: 73%
